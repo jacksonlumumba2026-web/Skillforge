@@ -8,13 +8,6 @@
 // `Database[Schema] extends GenericSchema` inference and silently collapses
 // every `.from()` call's row types to `never`.
 
-export type SubscriptionStatus =
-  | "trialing"
-  | "active"
-  | "past_due"
-  | "canceled"
-  | "incomplete";
-
 export type SkillLevel = "beginner" | "intermediate" | "advanced";
 
 export type ChecklistItem = {
@@ -26,10 +19,29 @@ export type Profile = {
   id: string;
   email: string;
   full_name: string | null;
+  /** Frictionless trial window, set automatically at signup — no payment required. */
   trial_ends_at: string | null;
-  subscription_status: SubscriptionStatus | null;
-  stripe_customer_id: string | null;
-  stripe_subscription_id: string | null;
+  /** End of the current paid M-Pesa period, extended on each successful STK push. */
+  current_period_end: string | null;
+  mpesa_phone: string | null;
+  created_at: string;
+  updated_at: string;
+};
+
+export type MpesaPlan = "monthly" | "annual";
+export type MpesaTransactionStatus = "pending" | "success" | "failed" | "cancelled";
+
+export type MpesaTransaction = {
+  id: string;
+  user_id: string;
+  plan: MpesaPlan;
+  amount_kes: number;
+  phone: string;
+  merchant_request_id: string | null;
+  checkout_request_id: string | null;
+  status: MpesaTransactionStatus;
+  mpesa_receipt_number: string | null;
+  result_desc: string | null;
   created_at: string;
   updated_at: string;
 };
@@ -111,6 +123,7 @@ export type Database = {
       user_paths: Table<UserPath>;
       step_progress: Table<StepProgress>;
       certificates: Table<Certificate>;
+      mpesa_transactions: Table<MpesaTransaction>;
     };
     Views: Record<string, never>;
     Functions: {

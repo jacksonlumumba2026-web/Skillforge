@@ -361,7 +361,7 @@ export default function LandingPage() {
             <div className="m-section-head" data-reveal>
               <span className="tag">Simple pricing</span>
               <h2>Try any skill path free for 7 days</h2>
-              <p>Full access, no restrictions. Cancel anytime before your trial ends and you won&apos;t be charged.</p>
+              <p>No card, no M-Pesa PIN needed to start. Pay only if you want to keep going after your trial.</p>
             </div>
             <div
               className="m-feature-grid"
@@ -370,12 +370,12 @@ export default function LandingPage() {
               <div className="card card-hover m-card" data-reveal>
                 <div className="m-icon-box">🎓</div>
                 <h3>Monthly</h3>
-                <p style={{ marginBottom: 18 }}>Full access to every skill path, updated monthly.</p>
+                <p style={{ marginBottom: 18 }}>Full access to every skill path, renews every 30 days.</p>
                 <div style={{ fontFamily: "var(--font-space-grotesk)", fontSize: "2.2rem", fontWeight: 700, marginBottom: 4 }}>
-                  $19<span style={{ fontSize: "1rem", color: "var(--text-3)", fontFamily: "var(--font-inter)", fontWeight: 500 }}>/mo</span>
+                  KSh 2,500<span style={{ fontSize: "1rem", color: "var(--text-3)", fontFamily: "var(--font-inter)", fontWeight: 500 }}>/mo</span>
                 </div>
-                <div style={{ color: "var(--text-3)", fontSize: ".82rem", marginBottom: 24 }}>after your free 7-day trial</div>
-                <Link href="/signup?plan=monthly" className="btn btn-primary btn-block">
+                <div style={{ color: "var(--text-3)", fontSize: ".82rem", marginBottom: 24 }}>after your free 7-day trial · pay with M-Pesa</div>
+                <Link href="/signup" className="btn btn-primary btn-block">
                   Start Free Trial
                 </Link>
               </div>
@@ -396,12 +396,12 @@ export default function LandingPage() {
                 </span>
                 <div className="m-icon-box">🚀</div>
                 <h3>Annual</h3>
-                <p style={{ marginBottom: 18 }}>Same full access — 2 months free versus paying monthly.</p>
+                <p style={{ marginBottom: 18 }}>Same full access for a full year — 2 months free versus paying monthly.</p>
                 <div style={{ fontFamily: "var(--font-space-grotesk)", fontSize: "2.2rem", fontWeight: 700, marginBottom: 4 }}>
-                  $15<span style={{ fontSize: "1rem", color: "var(--text-3)", fontFamily: "var(--font-inter)", fontWeight: 500 }}>/mo</span>
+                  KSh 24,000<span style={{ fontSize: "1rem", color: "var(--text-3)", fontFamily: "var(--font-inter)", fontWeight: 500 }}>/yr</span>
                 </div>
-                <div style={{ color: "var(--text-3)", fontSize: ".82rem", marginBottom: 24 }}>billed annually, after trial</div>
-                <Link href="/signup?plan=annual" className="btn btn-primary btn-block">
+                <div style={{ color: "var(--text-3)", fontSize: ".82rem", marginBottom: 24 }}>billed once a year, after trial · pay with M-Pesa</div>
+                <Link href="/signup" className="btn btn-primary btn-block">
                   Start Free Trial
                 </Link>
               </div>
@@ -424,7 +424,11 @@ export default function LandingPage() {
                 },
                 {
                   q: "Is the free trial really free?",
-                  a: "Yes — you get full access to every skill path for 7 days. Cancel any time before the trial ends and you won't be charged.",
+                  a: "Yes — no card or M-Pesa PIN required. You get full access to every skill path for 7 days, no strings attached.",
+                },
+                {
+                  q: "How do I pay after the trial?",
+                  a: "With M-Pesa. Choose monthly or annual on your billing page, enter your Safaricom number, and approve the STK push prompt on your phone.",
                 },
                 {
                   q: "Do I need a YouTube account?",
@@ -439,8 +443,8 @@ export default function LandingPage() {
                   a: "A hand-picked, growing set of paths across design, marketing, development, video, writing, and AI tools — with new paths added regularly based on learner requests.",
                 },
                 {
-                  q: "Can I cancel anytime?",
-                  a: "Yes, cancel with one click from your billing settings — no calls, no forms, no hassle.",
+                  q: "Does my plan auto-renew?",
+                  a: "No — M-Pesa doesn't support silent recurring charges. We'll remind you a few days before your period ends so you can renew with one more STK push.",
                 },
               ].map((item, i) => (
                 <details key={item.q} open={i === 0}>
@@ -463,7 +467,7 @@ export default function LandingPage() {
                   Start Free Trial →
                 </Link>
               </div>
-              <div className="m-cta-note">No credit card charge until your 7-day trial ends · Cancel anytime</div>
+              <div className="m-cta-note">No card or M-Pesa PIN needed to start · 7 days free</div>
             </div>
           </div>
         </section>

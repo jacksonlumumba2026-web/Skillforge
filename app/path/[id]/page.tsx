@@ -1,6 +1,7 @@
 import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
+import { hasActiveAccess } from "@/lib/access";
 import AppNav from "@/app/_components/AppNav";
 import PathPlayer from "./PathPlayer";
 
@@ -14,11 +15,10 @@ export default async function PathPage({ params }: { params: Promise<{ id: strin
 
   const { data: profile } = await supabase
     .from("profiles")
-    .select("subscription_status")
+    .select("trial_ends_at, current_period_end")
     .eq("id", user.id)
     .single();
-  const hasAccess =
-    profile?.subscription_status === "trialing" || profile?.subscription_status === "active";
+  const hasAccess = hasActiveAccess(profile);
 
   const { data: path } = await supabase
     .from("learning_paths")
@@ -40,10 +40,10 @@ export default async function PathPage({ params }: { params: Promise<{ id: strin
             <div className="text-3xl mb-4">{skill.icon}</div>
             <h1 className="text-2xl mb-3">{path.title}</h1>
             <p className="text-[var(--text-2)] mb-8">
-              Start your free trial to unlock every step, video, and checklist in this path.
+              Pay with M-Pesa to unlock every step, video, and checklist in this path.
             </p>
             <Link href="/billing" className="btn btn-primary">
-              Start Free Trial →
+              Activate access →
             </Link>
           </div>
         </main>

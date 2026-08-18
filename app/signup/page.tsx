@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, Suspense } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import AuthShell from "@/app/_components/AuthShell";
@@ -9,8 +9,6 @@ import GoogleButton from "@/app/_components/GoogleButton";
 
 function SignupForm() {
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const plan = searchParams.get("plan") === "annual" ? "annual" : "monthly";
 
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -42,7 +40,7 @@ function SignupForm() {
       return;
     }
 
-    router.push(`/billing?welcome=1&plan=${plan}`);
+    router.push("/onboarding");
   }
 
   return (
@@ -106,8 +104,8 @@ function SignupForm() {
       <GoogleButton label="Sign up with Google" />
 
       <p className="text-xs text-[var(--text-3)] mt-6">
-        Next you&apos;ll add a card to start your 7-day free trial — you won&apos;t be charged
-        until it ends.
+        No payment info needed — your 7-day free trial starts right away. Pay with M-Pesa only
+        if you want to keep going after that.
       </p>
       <p className="text-sm text-[var(--text-2)] mt-6 text-center">
         Already have an account?{" "}
@@ -123,11 +121,9 @@ export default function SignupPage() {
   return (
     <AuthShell
       title="Start your free trial"
-      subtitle="7 days free, full access. Cancel anytime before it ends."
+      subtitle="7 days free, full access, no card required."
     >
-      <Suspense fallback={null}>
-        <SignupForm />
-      </Suspense>
+      <SignupForm />
     </AuthShell>
   );
 }

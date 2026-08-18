@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { hasActiveAccess } from "@/lib/access";
 import OnboardingForm from "./OnboardingForm";
 
 export default async function OnboardingPage() {
@@ -11,12 +12,10 @@ export default async function OnboardingPage() {
 
   const { data: profile } = await supabase
     .from("profiles")
-    .select("subscription_status")
+    .select("trial_ends_at, current_period_end")
     .eq("id", user.id)
     .single();
-  const hasAccess =
-    profile?.subscription_status === "trialing" || profile?.subscription_status === "active";
-  if (!hasAccess) redirect("/billing?required=1");
+  if (!hasActiveAccess(profile)) redirect("/billing?required=1");
 
   const { data: skills } = await supabase
     .from("skills")

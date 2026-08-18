@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { createClient } from "@/lib/supabase/server";
 import { getOrCreatePath } from "@/lib/path-generator";
+import { hasActiveAccess } from "@/lib/access";
 
 const bodySchema = z.object({
   skillId: z.string().uuid(),
@@ -17,12 +18,10 @@ export async function POST(request: Request) {
 
   const { data: profile } = await supabase
     .from("profiles")
-    .select("subscription_status")
+    .select("trial_ends_at, current_period_end")
     .eq("id", user.id)
     .single();
-  const hasAccess =
-    profile?.subscription_status === "trialing" || profile?.subscription_status === "active";
-  if (!hasAccess) {
+  if (!hasActiveAccess(profile)) {
     return NextResponse.json({ error: "subscription_required" }, { status: 402 });
   }
 

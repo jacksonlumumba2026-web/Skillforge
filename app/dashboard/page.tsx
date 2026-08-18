@@ -1,13 +1,8 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { accessState, daysLeft, hasActiveAccess } from "@/lib/access";
 import AppNav from "@/app/_components/AppNav";
-
-function daysLeft(iso: string | null): number | null {
-  if (!iso) return null;
-  const ms = new Date(iso).getTime() - Date.now();
-  return Math.max(0, Math.ceil(ms / 86_400_000));
-}
 
 export default async function DashboardPage() {
   const supabase = await createClient();
@@ -22,8 +17,8 @@ export default async function DashboardPage() {
     .eq("id", user.id)
     .single();
 
-  const hasAccess =
-    profile?.subscription_status === "trialing" || profile?.subscription_status === "active";
+  const hasAccess = hasActiveAccess(profile);
+  const state = accessState(profile);
 
   const { data: userPaths } = await supabase
     .from("user_paths")
@@ -58,7 +53,7 @@ export default async function DashboardPage() {
   );
 
   const bestStreak = pathCards.reduce((max, p) => Math.max(max, p.userPath.streak_count), 0);
-  const trialDays = profile?.subscription_status === "trialing" ? daysLeft(profile.trial_ends_at) : null;
+  const trialDays = state === "trialing" ? daysLeft(profile?.trial_ends_at ?? null) : null;
 
   return (
     <div className="min-h-screen relative">
@@ -73,14 +68,13 @@ export default async function DashboardPage() {
             style={{ borderColor: "var(--accent-warm)" }}
           >
             <div>
-              <div className="font-semibold mb-1">Start your 7-day free trial</div>
+              <div className="font-semibold mb-1">Your free trial has ended</div>
               <p className="text-sm text-[var(--text-2)]">
-                Add a card to unlock every skill path — you won&apos;t be charged until the trial
-                ends.
+                Pay with M-Pesa to keep access to every skill path.
               </p>
             </div>
             <Link href="/billing" className="btn btn-primary btn-sm">
-              Start Free Trial
+              Activate access
             </Link>
           </div>
         )}
@@ -118,7 +112,7 @@ export default async function DashboardPage() {
               instantly.
             </p>
             <Link href={hasAccess ? "/onboarding" : "/billing"} className="btn btn-primary">
-              {hasAccess ? "Choose your first skill →" : "Start Free Trial →"}
+              {hasAccess ? "Choose your first skill →" : "Activate access →"}
             </Link>
           </div>
         ) : (

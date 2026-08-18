@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SkillForge — Master Any Digital Skill, One Guided Path at a Time</title>
+<meta name="description" content="SkillForge turns YouTube's best tutorials into structured, step-by-step learning paths. Choose a skill, get a custom curriculum, and start mastering — free for 7 days." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%233b82f6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='56' font-family='sans-serif' font-weight='800' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#05060a;
+    --bg-alt:#0a0c14;
+    --bg-elevated:#0d0f1a;
+    --surface:rgba(255,255,255,.045);
+    --surface-hover:rgba(255,255,255,.07);
+    --border:rgba(255,255,255,.09);
+    --border-strong:rgba(255,255,255,.16);
+    --text-1:#f5f6fb;
+    --text-2:#a6acc4;
+    --text-3:#6d7390;
+    --accent-1:#8b5cf6;
+    --accent-2:#6366f1;
+    --accent-3:#22d3ee;
+    --accent-warm:#f59e0b;
+    --grad-main:linear-gradient(135deg,#8b5cf6 0%,#6366f1 55%,#3b82f6 100%);
+    --grad-warm:linear-gradient(135deg,#f59e0b 0%,#f97316 100%);
+    --grad-text:linear-gradient(120deg,#f5f6fb 0%,#c9cdf0 45%,#8b5cf6 100%);
+    --radius-xl:28px;
+    --radius-lg:20px;
+    --radius-md:14px;
+    --radius-sm:10px;
+    --shadow-soft:0 20px 60px -20px rgba(0,0,0,.6);
+    --shadow-glow:0 0 0 1px rgba(139,92,246,.15), 0 20px 80px -20px rgba(139,92,246,.35);
+    --ease:cubic-bezier(.16,1,.3,1);
+    --pad-section:120px;
+  }
+  @media (max-width:1024px){ :root{ --pad-section:80px; } }
+  @media (max-width:640px){ :root{ --pad-section:60px; } }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--text-1);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  .display{font-family:'Space Grotesk',sans-serif;letter-spacing:-.02em;}
+  h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;letter-spacing:-.02em;font-weight:600;line-height:1.08;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  ul{list-style:none;}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+  .container{max-width:1240px;margin:0 auto;padding:0 32px;}
+  @media (max-width:640px){ .container{padding:0 20px;} }
+  section{padding:var(--pad-section) 0;position:relative;}
+
+  /* background ambience */
+  .bg-glow{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;}
+  .bg-glow::before,.bg-glow::after{
+    content:'';position:absolute;width:60vw;height:60vw;max-width:900px;max-height:900px;border-radius:50%;
+    filter:blur(120px);opacity:.16;
+  }
+  .bg-glow::before{background:#8b5cf6;top:-15%;left:-10%;}
+  .bg-glow::after{background:#22d3ee;bottom:0%;right:-15%;opacity:.10;}
+  .grain{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+
+  /* ---------- Nav ---------- */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    padding:20px 0;transition:all .4s var(--ease);
+  }
+  header.scrolled{
+    background:rgba(5,6,10,.72);
+    backdrop-filter:blur(16px) saturate(140%);
+    -webkit-backdrop-filter:blur(16px) saturate(140%);
+    border-bottom:1px solid var(--border);
+    padding:14px 0;
+  }
+  nav{display:flex;align-items:center;justify-content:space-between;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.15rem;}
+  .logo-mark{width:34px;height:34px;border-radius:10px;background:var(--grad-main);display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk';font-weight:700;font-size:1rem;box-shadow:0 8px 24px -8px rgba(139,92,246,.6);}
+  .nav-links{display:flex;align-items:center;gap:36px;}
+  .nav-links a{font-size:.92rem;color:var(--text-2);font-weight:500;transition:color .25s var(--ease);}
+  .nav-links a:hover{color:var(--text-1);}
+  .nav-cta{display:flex;align-items:center;gap:14px;}
+  .nav-toggle{display:none;flex-direction:column;gap:5px;width:26px;}
+  .nav-toggle span{height:2px;background:var(--text-1);border-radius:2px;transition:all .3s var(--ease);}
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:14px 26px;border-radius:100px;font-weight:600;font-size:.95rem;
+    transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .35s var(--ease),border-color .35s var(--ease);
+    white-space:nowrap;
+  }
+  .btn-primary{
+    background:var(--grad-main);color:#fff;box-shadow:0 8px 30px -8px rgba(99,102,241,.6);
+  }
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 40px -10px rgba(99,102,241,.75);}
+  .btn-ghost{
+    background:var(--surface);border:1px solid var(--border-strong);color:var(--text-1);
+  }
+  .btn-ghost:hover{background:var(--surface-hover);border-color:rgba(255,255,255,.28);transform:translateY(-2px);}
+  .btn-sm{padding:10px 20px;font-size:.85rem;}
+  .btn-block{width:100%;}
+
+  /* ---------- Reveal animation ---------- */
+  /* Only hide content pre-animation once JS confirms it can reveal it (progressive enhancement:
+     if JS fails to load, content stays visible by default instead of stuck at opacity:0). */
+  .js [data-reveal]{opacity:0;transform:translateY(40px);transition:opacity .8s var(--ease),transform .8s var(--ease);}
+  [data-reveal].is-visible{opacity:1;transform:translateY(0);}
+  @media (prefers-reduced-motion:reduce){
+    .js [data-reveal]{opacity:1;transform:none;transition:none;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{padding-top:calc(var(--pad-section) + 70px);position:relative;z-index:2;}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;}
+  @media (max-width:960px){ .hero-grid{grid-template-columns:1fr;gap:56px;} }
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;padding:7px 16px 7px 8px;border-radius:100px;
+    background:var(--surface);border:1px solid var(--border);font-size:.8rem;font-weight:600;color:var(--text-2);margin-bottom:24px;
+  }
+  .eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--grad-warm);box-shadow:0 0 12px var(--accent-warm);}
+  .hero h1{font-size:clamp(2.4rem,5.2vw,4.2rem);margin-bottom:22px;}
+  .hero h1 .grad{background:var(--grad-text);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .hero p.lead{font-size:1.15rem;color:var(--text-2);max-width:520px;margin-bottom:36px;}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:44px;}
+  .trust-row{display:flex;flex-wrap:wrap;align-items:center;gap:28px;}
+  .trust-item{display:flex;align-items:center;gap:10px;color:var(--text-2);font-size:.88rem;font-weight:500;}
+  .stars{color:var(--accent-warm);letter-spacing:2px;font-size:.95rem;}
+  .avatars{display:flex;}
+  .avatars span{width:30px;height:30px;border-radius:50%;border:2px solid var(--bg);margin-left:-8px;background:var(--grad-main);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;}
+  .avatars span:first-child{margin-left:0;}
+
+  /* hero mockup */
+  .hero-visual{position:relative;}
+  .mock-frame{
+    background:linear-gradient(180deg,var(--bg-elevated),var(--bg-alt));
+    border:1px solid var(--border);border-radius:var(--radius-xl);
+    padding:22px;box-shadow:var(--shadow-glow);position:relative;z-index:2;
+  }
+  .mock-frame-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;}
+  .mock-dots{display:flex;gap:6px;}
+  .mock-dots span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.18);}
+  .mock-path-title{font-size:.78rem;color:var(--text-3);font-weight:600;}
+  .progress-track{height:7px;border-radius:100px;background:rgba(255,255,255,.08);overflow:hidden;margin-bottom:20px;}
+  .progress-fill{height:100%;width:42%;border-radius:100px;background:var(--grad-main);}
+  .lesson-row{display:flex;align-items:center;gap:12px;padding:12px;border-radius:var(--radius-md);margin-bottom:8px;background:rgba(255,255,255,.02);border:1px solid transparent;transition:border-color .3s;}
+  .lesson-row:hover{border-color:var(--border);}
+  .lesson-thumb{width:44px;height:44px;border-radius:10px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.85rem;position:relative;}
+  .lesson-row:nth-child(2) .lesson-thumb{background:linear-gradient(135deg,#8b5cf6,#6366f1);}
+  .lesson-row:nth-child(3) .lesson-thumb{background:linear-gradient(135deg,#f59e0b,#f97316);}
+  .lesson-row:nth-child(4) .lesson-thumb{background:linear-gradient(135deg,#22d3ee,#3b82f6);}
+  .lesson-row:nth-child(5) .lesson-thumb{background:rgba(255,255,255,.06);}
+  .lesson-meta{flex:1;min-width:0;}
+  .lesson-meta .t{font-size:.85rem;font-weight:600;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .lesson-meta .d{font-size:.72rem;color:var(--text-3);}
+  .lesson-status{font-size:.7rem;color:var(--text-3);flex-shrink:0;}
+  .float-card{
+    position:absolute;background:rgba(13,15,26,.85);backdrop-filter:blur(14px);
+    border:1px solid var(--border-strong);border-radius:var(--radius-md);padding:14px 16px;
+    box-shadow:var(--shadow-soft);z-index:3;display:flex;align-items:center;gap:10px;
+  }
+  .float-card.streak{top:-24px;right:-18px;}
+  .float-card.rate{bottom:-20px;left:-24px;}
+  .float-card .num{font-family:'Space Grotesk';font-weight:700;font-size:1.1rem;}
+  .float-card .lbl{font-size:.68rem;color:var(--text-3);}
+  @media (max-width:640px){ .float-card{padding:10px 12px;} .float-card.streak{right:-8px;top:-16px;} .float-card.rate{left:-8px;bottom:-16px;} }
+
+  /* ---------- Section headers ---------- */
+  .section-head{max-width:640px;margin:0 auto 64px;text-align:center;}
+  .section-head.left{margin:0 0 56px;text-align:left;}
+  .tag{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-3);margin-bottom:14px;}
+  .section-head h2{font-size:clamp(1.8rem,3.4vw,2.6rem);margin-bottom:16px;}
+  .section-head p{color:var(--text-2);font-size:1.05rem;}
+
+  /* ---------- Stats / social proof ---------- */
+  .stats-bar{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+    background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;
+  }
+  .stat{background:var(--bg-elevated);padding:36px 24px;text-align:center;}
+  .stat .n{font-family:'Space Grotesk';font-weight:700;font-size:clamp(1.8rem,3vw,2.4rem);background:var(--grad-text);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .stat .l{color:var(--text-2);font-size:.85rem;margin-top:6px;}
+  @media (max-width:760px){ .stats-bar{grid-template-columns:repeat(2,1fr);} }
+
+  /* ---------- Features ---------- */
+  .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  @media (max-width:960px){ .feature-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:640px){ .feature-grid{grid-template-columns:1fr;} }
+  .card{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);
+    padding:32px 28px;transition:transform .4s var(--ease),border-color .4s var(--ease),background .4s var(--ease),box-shadow .4s var(--ease);
+  }
+  .card:hover{transform:translateY(-6px);border-color:var(--border-strong);background:var(--surface-hover);box-shadow:var(--shadow-soft);}
+  .icon-box{
+    width:52px;height:52px;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;
+    background:var(--grad-main);margin-bottom:22px;font-size:1.35rem;box-shadow:0 10px 26px -10px rgba(139,92,246,.55);
+  }
+  .card h3{font-size:1.15rem;margin-bottom:10px;font-weight:600;}
+  .card p{color:var(--text-2);font-size:.92rem;}
+
+  /* ---------- Process ---------- */
+  .timeline{position:relative;max-width:900px;margin:0 auto;}
+  .timeline::before{
+    content:'';position:absolute;left:29px;top:10px;bottom:10px;width:2px;
+    background:linear-gradient(180deg,var(--accent-1),var(--accent-3) 60%,transparent);
+  }
+  @media (max-width:700px){ .timeline::before{left:21px;} }
+  .step{display:grid;grid-template-columns:60px 1fr;gap:26px;padding-bottom:52px;position:relative;}
+  @media (max-width:700px){ .step{grid-template-columns:44px 1fr;} }
+  .step:last-child{padding-bottom:0;}
+  .step-num{
+    width:60px;height:60px;border-radius:50%;background:var(--bg-elevated);border:1px solid var(--border-strong);
+    display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk';font-weight:700;font-size:1.2rem;
+    z-index:2;box-shadow:0 0 0 8px var(--bg);
+  }
+  @media (max-width:700px){ .step-num{width:44px;height:44px;font-size:1rem;} }
+  .step-body{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:26px 28px;}
+  .step-body h3{font-size:1.15rem;margin-bottom:8px;}
+  .step-body p{color:var(--text-2);font-size:.92rem;}
+
+  /* ---------- Skill paths ---------- */
+  .path-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  @media (max-width:960px){ .path-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:640px){ .path-grid{grid-template-columns:1fr;} }
+  .path-card{
+    border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);background:var(--surface);
+    transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .45s var(--ease);position:relative;
+  }
+  .path-card:hover{transform:translateY(-8px) scale(1.01);box-shadow:var(--shadow-soft);border-color:var(--border-strong);}
+  .path-thumb{height:150px;position:relative;display:flex;align-items:flex-end;padding:16px;}
+  .path-thumb::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.5));}
+  .path-thumb .lvl{position:relative;z-index:2;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;background:rgba(0,0,0,.35);backdrop-filter:blur(6px);padding:5px 10px;border-radius:100px;}
+  .path-thumb.g1{background:linear-gradient(135deg,#8b5cf6,#3b82f6);}
+  .path-thumb.g2{background:linear-gradient(135deg,#f59e0b,#ef4444);}
+  .path-thumb.g3{background:linear-gradient(135deg,#22d3ee,#6366f1);}
+  .path-thumb.g4{background:linear-gradient(135deg,#34d399,#22d3ee);}
+  .path-thumb.g5{background:linear-gradient(135deg,#f97316,#f59e0b);}
+  .path-thumb.g6{background:linear-gradient(135deg,#6366f1,#8b5cf6);}
+  .path-body{padding:22px 24px 26px;}
+  .path-body h3{font-size:1.08rem;margin-bottom:8px;}
+  .path-body .meta{display:flex;gap:14px;color:var(--text-3);font-size:.8rem;}
+
+  /* ---------- Testimonials ---------- */
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  @media (max-width:960px){ .testi-grid{grid-template-columns:1fr;} }
+  .testi-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;display:flex;flex-direction:column;gap:16px;}
+  .testi-card .stars{font-size:.85rem;}
+  .testi-card p.quote{color:var(--text-2);font-size:.95rem;flex:1;}
+  .testi-person{display:flex;align-items:center;gap:12px;}
+  .testi-avatar{width:42px;height:42px;border-radius:50%;background:var(--grad-main);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;flex-shrink:0;}
+  .testi-person .name{font-size:.88rem;font-weight:600;}
+  .testi-person .role{font-size:.76rem;color:var(--text-3);}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{max-width:760px;margin:0 auto;}
+  details{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-md);margin-bottom:14px;overflow:hidden;}
+  summary{
+    list-style:none;cursor:pointer;padding:22px 26px;display:flex;justify-content:space-between;align-items:center;
+    font-weight:600;font-size:.98rem;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:'+';font-size:1.3rem;color:var(--text-3);transition:transform .3s var(--ease);font-weight:400;}
+  details[open] summary::after{transform:rotate(45deg);}
+  details[open] summary{border-bottom:1px solid var(--border);}
+  .faq-a{padding:20px 26px 24px;color:var(--text-2);font-size:.92rem;}
+
+  /* ---------- Final CTA ---------- */
+  .cta-panel{
+    background:linear-gradient(135deg,rgba(139,92,246,.18),rgba(34,211,238,.10));
+    border:1px solid var(--border-strong);border-radius:var(--radius-xl);
+    padding:80px 40px;text-align:center;position:relative;overflow:hidden;
+  }
+  .cta-panel::before{content:'';position:absolute;width:500px;height:500px;background:var(--accent-1);opacity:.18;filter:blur(120px);top:-30%;left:50%;transform:translateX(-50%);}
+  .cta-panel h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:18px;position:relative;}
+  .cta-panel p{color:var(--text-2);font-size:1.05rem;margin-bottom:36px;position:relative;}
+  .cta-panel .hero-ctas{justify-content:center;position:relative;}
+  .cta-note{margin-top:18px;font-size:.8rem;color:var(--text-3);position:relative;}
+
+  /* ---------- Footer ---------- */
+  footer{padding:80px 0 40px;border-top:1px solid var(--border);}
+  .footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:40px;margin-bottom:60px;}
+  @media (max-width:760px){ .footer-grid{grid-template-columns:repeat(2,1fr);} }
+  .footer-brand p{color:var(--text-2);font-size:.88rem;margin:16px 0 20px;max-width:280px;}
+  .social-row{display:flex;gap:10px;}
+  .social-row a{width:36px;height:36px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:.85rem;transition:all .3s var(--ease);}
+  .social-row a:hover{background:var(--surface-hover);border-color:var(--border-strong);transform:translateY(-3px);}
+  .footer-col h4{font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-3);margin-bottom:18px;font-family:'Inter';font-weight:700;}
+  .footer-col a{display:block;color:var(--text-2);font-size:.9rem;margin-bottom:12px;transition:color .25s;}
+  .footer-col a:hover{color:var(--text-1);}
+  .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;padding-top:32px;border-top:1px solid var(--border);color:var(--text-3);font-size:.82rem;}
+
+  /* ---------- Mobile nav ---------- */
+  @media (max-width:860px){
+    .nav-links{position:fixed;top:0;right:0;height:100vh;width:78%;max-width:340px;background:rgba(8,9,15,.98);backdrop-filter:blur(20px);flex-direction:column;justify-content:center;align-items:flex-start;gap:28px;padding:40px;transform:translateX(100%);transition:transform .45s var(--ease);border-left:1px solid var(--border);}
+    .nav-links.open{transform:translateX(0);}
+    .nav-links a{font-size:1.1rem;}
+    .nav-toggle{display:flex;}
+    .nav-cta .btn-ghost{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="bg-glow"></div>
+<div class="grain"></div>
+
+<header id="siteHeader">
+  <div class="container">
+    <nav>
+      <a href="#top" class="logo"><span class="logo-mark">S</span>SkillForge</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#process">How it works</a></li>
+        <li><a href="#paths">Skill paths</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#pricing" class="btn btn-ghost btn-sm">Log in</a>
+        <a href="#pricing" class="btn btn-primary btn-sm">Start Free Trial</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div data-reveal>
+          <span class="eyebrow"><span class="dot"></span> New — AI-curated learning paths from YouTube</span>
+          <h1>Master any <span class="grad">digital skill</span>, one guided path at a time.</h1>
+          <p class="lead">Pick a skill. SkillForge instantly builds the clearest, fastest route to mastery — hand-picked YouTube lessons, ordered step-by-step, with plain-English breakdowns at every stage.</p>
+          <div class="hero-ctas">
+            <a href="#pricing" class="btn btn-primary">Start Free Trial →</a>
+            <a href="#process" class="btn btn-ghost">See how it works</a>
+          </div>
+          <div class="trust-row">
+            <div class="trust-item">
+              <div class="avatars">
+                <span>JD</span><span>MK</span><span>AR</span>
+              </div>
+              <span>12,000+ learners</span>
+            </div>
+            <div class="trust-item"><span class="stars">★★★★★</span> 4.9/5 average rating</div>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="mock-frame">
+            <div class="float-card streak">
+              <div>🔥</div>
+              <div><div class="num">7 days</div><div class="lbl">learning streak</div></div>
+            </div>
+            <div class="mock-frame-top">
+              <div class="mock-dots"><span></span><span></span><span></span></div>
+              <div class="mock-path-title">YOUR PATH · GRAPHIC DESIGN</div>
+            </div>
+            <div class="progress-track"><div class="progress-fill"></div></div>
+            <div class="lesson-row"><div class="lesson-thumb">✓</div><div class="lesson-meta"><div class="t">Design fundamentals & color theory</div><div class="d">12 min · Step 1</div></div><div class="lesson-status">Done</div></div>
+            <div class="lesson-row"><div class="lesson-thumb">▶</div><div class="lesson-meta"><div class="t">Typography that doesn't look amateur</div><div class="d">18 min · Step 2</div></div><div class="lesson-status">Now</div></div>
+            <div class="lesson-row"><div class="lesson-thumb">▶</div><div class="lesson-meta"><div class="t">Layout, grids & visual hierarchy</div><div class="d">21 min · Step 3</div></div><div class="lesson-status">Next</div></div>
+            <div class="lesson-row"><div class="lesson-thumb">🔒</div><div class="lesson-meta"><div class="t">Build your first client project</div><div class="d">34 min · Step 4</div></div><div class="lesson-status">Locked</div></div>
+            <div class="float-card rate">
+              <div>📈</div>
+              <div><div class="num">98%</div><div class="lbl">path completion rate</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF / STATS -->
+  <section>
+    <div class="container">
+      <div class="stats-bar" data-reveal>
+        <div class="stat"><div class="n">12,400+</div><div class="l">active learners</div></div>
+        <div class="stat"><div class="n">300+</div><div class="l">curated skill paths</div></div>
+        <div class="stat"><div class="n">4.9 / 5</div><div class="l">average path rating</div></div>
+        <div class="stat"><div class="n">6.2×</div><div class="l">faster than self-guided search</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="tag">Why SkillForge</span>
+        <h2>Stop searching. Start mastering.</h2>
+        <p>Every path is built to remove the guesswork — so your time goes into learning, not into deciding what to watch next.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="card" data-reveal><div class="icon-box">🧭</div><h3>Personalized skill paths</h3><p>Tell us what you want to learn and your current level — get a custom curriculum built just for you, not a generic playlist.</p></div>
+        <div class="card" data-reveal><div class="icon-box">🎬</div><h3>Best-of-YouTube curation</h3><p>We scan and rank thousands of tutorials so you only ever watch the clearest, most highly-rated lesson for each step.</p></div>
+        <div class="card" data-reveal><div class="icon-box">📋</div><h3>Step-by-step breakdowns</h3><p>Every video comes with a plain-English summary and action checklist, so nothing gets lost in a 40-minute tutorial.</p></div>
+        <div class="card" data-reveal><div class="icon-box">📊</div><h3>Progress you can see</h3><p>Track streaks, completion, and mastery milestones — the same dopamine loop that makes habits stick, built for learning.</p></div>
+        <div class="card" data-reveal><div class="icon-box">🕒</div><h3>Learn at your own pace</h3><p>Bite-sized sessions fit around a job, school, or family life. Ten focused minutes a day compounds fast.</p></div>
+        <div class="card" data-reveal><div class="icon-box">🏆</div><h3>Certificates of mastery</h3><p>Finish a path and earn a shareable certificate — proof of skill you can add straight to your resume or LinkedIn.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="tag">How it works</span>
+        <h2>From "no idea where to start" to mastery in four steps.</h2>
+        <p>No fluff, no decision fatigue — SkillForge does the planning so you can just press play.</p>
+      </div>
+      <div class="timeline">
+        <div class="step" data-reveal>
+          <div class="step-num">01</div>
+          <div class="step-body"><h3>Choose your skill</h3><p>Browse 300+ digital skills — from graphic design to copywriting, video editing to AI tools — or search for exactly what you need.</p></div>
+        </div>
+        <div class="step" data-reveal>
+          <div class="step-num">02</div>
+          <div class="step-body"><h3>Get your custom path</h3><p>Our engine builds a step-by-step curriculum from the best YouTube lessons available, ordered from fundamentals to fluency.</p></div>
+        </div>
+        <div class="step" data-reveal>
+          <div class="step-num">03</div>
+          <div class="step-body"><h3>Learn with guided breakdowns</h3><p>Watch each lesson with a plain-English summary and action checklist alongside it, so every minute of video counts.</p></div>
+        </div>
+        <div class="step" data-reveal>
+          <div class="step-num">04</div>
+          <div class="step-body"><h3>Track progress & master it</h3><p>Hit milestones, keep your streak alive, and finish with a certificate that proves what you've learned.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILL PATHS -->
+  <section id="paths">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="tag">Popular right now</span>
+        <h2>Explore in-demand skill paths</h2>
+        <p>A sample of the 300+ curated paths learners are working through this month.</p>
+      </div>
+      <div class="path-grid">
+        <div class="path-card" data-reveal>
+          <div class="path-thumb g1"><span class="lvl">Beginner</span></div>
+          <div class="path-body"><h3>Graphic Design Fundamentals</h3><div class="meta"><span>🕒 6 weeks</span><span>📚 24 lessons</span></div></div>
+        </div>
+        <div class="path-card" data-reveal>
+          <div class="path-thumb g2"><span class="lvl">Intermediate</span></div>
+          <div class="path-body"><h3>Copywriting That Converts</h3><div class="meta"><span>🕒 4 weeks</span><span>📚 18 lessons</span></div></div>
+        </div>
+        <div class="path-card" data-reveal>
+          <div class="path-thumb g3"><span class="lvl">Beginner</span></div>
+          <div class="path-body"><h3>Video Editing with Premiere</h3><div class="meta"><span>🕒 5 weeks</span><span>📚 22 lessons</span></div></div>
+        </div>
+        <div class="path-card" data-reveal>
+          <div class="path-thumb g4"><span class="lvl">Beginner</span></div>
+          <div class="path-body"><h3>No-Code App Development</h3><div class="meta"><span>🕒 7 weeks</span><span>📚 28 lessons</span></div></div>
+        </div>
+        <div class="path-card" data-reveal>
+          <div class="path-thumb g5"><span class="lvl">Intermediate</span></div>
+          <div class="path-body"><h3>Digital Marketing & SEO</h3><div class="meta"><span>🕒 6 weeks</span><span>📚 26 lessons</span></div></div>
+        </div>
+        <div class="path-card" data-reveal>
+          <div class="path-thumb g6"><span class="lvl">Beginner</span></div>
+          <div class="path-body"><h3>AI Tools & Prompt Engineering</h3><div class="meta"><span>🕒 3 weeks</span><span>📚 15 lessons</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="tag">Learner stories</span>
+        <h2>Loved by people building real skills</h2>
+        <p>A few examples of the outcomes SkillForge paths are designed to deliver.</p>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card" data-reveal>
+          <span class="stars">★★★★★</span>
+          <p class="quote">"I'd bookmarked a dozen 'learn design' playlists and never finished one. SkillForge turned it into an actual path — I shipped my first freelance project in six weeks."</p>
+          <div class="testi-person"><div class="testi-avatar">NA</div><div><div class="name">Nia A.</div><div class="role">Freelance Designer</div></div></div>
+        </div>
+        <div class="testi-card" data-reveal>
+          <span class="stars">★★★★★</span>
+          <p class="quote">"The step-by-step breakdowns are the whole thing for me. I stopped rewatching videos trying to catch what I missed — it's all summarized right there."</p>
+          <div class="testi-person"><div class="testi-avatar">DT</div><div><div class="name">Daniel T.</div><div class="role">Marketing Associate</div></div></div>
+        </div>
+        <div class="testi-card" data-reveal>
+          <span class="stars">★★★★★</span>
+          <p class="quote">"I'm learning no-code development ten minutes a day between meetings. The streak tracker is annoyingly effective at keeping me consistent."</p>
+          <div class="testi-person"><div class="testi-avatar">RK</div><div><div class="name">Rina K.</div><div class="role">Product Manager</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING / FREE TRIAL -->
+  <section id="pricing">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="tag">Simple pricing</span>
+        <h2>Try any skill path free for 7 days</h2>
+        <p>Full access, no restrictions. Cancel anytime before your trial ends and you won't be charged.</p>
+      </div>
+      <div class="feature-grid" style="max-width:900px;margin:0 auto;grid-template-columns:1fr 1fr;">
+        <div class="card" data-reveal>
+          <div class="icon-box">🎓</div>
+          <h3>Monthly</h3>
+          <p style="margin-bottom:18px;">Full access to every skill path, updated monthly.</p>
+          <div style="font-family:'Space Grotesk';font-size:2.2rem;font-weight:700;margin-bottom:4px;">$19<span style="font-size:1rem;color:var(--text-3);font-family:'Inter';font-weight:500;">/mo</span></div>
+          <div style="color:var(--text-3);font-size:.82rem;margin-bottom:24px;">after your free 7-day trial</div>
+          <a href="#" class="btn btn-primary btn-block">Start Free Trial</a>
+        </div>
+        <div class="card" data-reveal style="border-color:var(--accent-1);position:relative;">
+          <span style="position:absolute;top:-12px;right:24px;background:var(--grad-main);padding:4px 14px;border-radius:100px;font-size:.72rem;font-weight:700;">BEST VALUE</span>
+          <div class="icon-box">🚀</div>
+          <h3>Annual</h3>
+          <p style="margin-bottom:18px;">Same full access — 2 months free versus paying monthly.</p>
+          <div style="font-family:'Space Grotesk';font-size:2.2rem;font-weight:700;margin-bottom:4px;">$15<span style="font-size:1rem;color:var(--text-3);font-family:'Inter';font-weight:500;">/mo</span></div>
+          <div style="color:var(--text-3);font-size:.82rem;margin-bottom:24px;">billed annually, after trial</div>
+          <a href="#" class="btn btn-primary btn-block">Start Free Trial</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="tag">Questions</span>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq-list" data-reveal>
+        <details open>
+          <summary>How does SkillForge actually work?</summary>
+          <div class="faq-a">You choose a digital skill and your current level. SkillForge builds a step-by-step path from the best available YouTube tutorials, each with a plain-English breakdown and checklist so you know exactly what to do at every stage.</div>
+        </details>
+        <details>
+          <summary>Is the free trial really free?</summary>
+          <div class="faq-a">Yes — you get full access to every skill path for 7 days. Cancel any time before the trial ends and you won't be charged.</div>
+        </details>
+        <details>
+          <summary>Do I need a YouTube account?</summary>
+          <div class="faq-a">No. Videos play right inside SkillForge using YouTube's official player — you don't need a separate YouTube login to follow a path.</div>
+        </details>
+        <details>
+          <summary>How long does it take to learn a skill?</summary>
+          <div class="faq-a">It depends on the skill and your pace, but most paths are designed to take you from fundamentals to a real, usable project in 3–7 weeks at 15–30 minutes a day.</div>
+        </details>
+        <details>
+          <summary>What skills can I learn?</summary>
+          <div class="faq-a">300+ paths across design, marketing, development, video, writing, and AI tools — with new paths added every month based on learner requests.</div>
+        </details>
+        <details>
+          <summary>Can I cancel anytime?</summary>
+          <div class="faq-a">Yes, cancel with one click from your account settings — no calls, no forms, no hassle.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section>
+    <div class="container">
+      <div class="cta-panel" data-reveal>
+        <h2>Your next skill is one path away.</h2>
+        <p>Join 12,000+ learners already mastering digital skills the guided way.</p>
+        <div class="hero-ctas">
+          <a href="#" class="btn btn-primary">Start Free Trial →</a>
+        </div>
+        <div class="cta-note">No credit card charge until your 7-day trial ends · Cancel anytime</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="logo"><span class="logo-mark">S</span>SkillForge</a>
+        <p>The fastest way to go from curious to competent — one guided, YouTube-powered learning path at a time.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#process">How it works</a>
+        <a href="#paths">Skill paths</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 SkillForge. All rights reserved.</span>
+      <span>Built for learners everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mark JS as available so the CSS only hides [data-reveal] content when it can be revealed
+  document.documentElement.classList.add('js');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Sticky header background on scroll
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    navToggle.classList.toggle('active');
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  // Scroll-triggered reveal with staggered timing (fade + slide up, animate once)
+  const revealEls = document.querySelectorAll('[data-reveal]');
+  const groups = new Map();
+  revealEls.forEach(el => {
+    const parent = el.closest('section');
+    if (!groups.has(parent)) groups.set(parent, []);
+    groups.get(parent).push(el);
+  });
+  groups.forEach(list => {
+    list.forEach((el, i) => {
+      el.style.transitionDelay = (i * 90) + 'ms';
+    });
+  });
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+  revealEls.forEach(el => io.observe(el));
+
+  // Animated stat counters
+  const stats = document.querySelectorAll('.stat .n');
+  const statIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const raw = el.textContent.trim();
+      const match = raw.match(/([\d.]+)/);
+      if (match) {
+        const target = parseFloat(match[1]);
+        const suffix = raw.replace(match[1], '');
+        const isDecimal = match[1].includes('.');
+        let cur = 0;
+        const steps = 40;
+        const inc = target / steps;
+        let n = 0;
+        const timer = setInterval(() => {
+          n++;
+          cur += inc;
+          if (n >= steps) { cur = target; clearInterval(timer); }
+          el.textContent = (isDecimal ? cur.toFixed(1) : Math.round(cur)) + suffix;
+        }, 30);
+      }
+      statIO.unobserve(el);
+    });
+  }, { threshold: 0.4 });
+  stats.forEach(s => statIO.observe(s));
+
+  // Subtle parallax on hero floating cards
+  const streak = document.querySelector('.float-card.streak');
+  const rate = document.querySelector('.float-card.rate');
+  window.addEventListener('mousemove', (e) => {
+    if (window.innerWidth < 960) return;
+    const x = (e.clientX / window.innerWidth - 0.5) * 14;
+    const y = (e.clientY / window.innerHeight - 0.5) * 14;
+    if (streak) streak.style.transform = `translate(${x}px, ${y}px)`;
+    if (rate) rate.style.transform = `translate(${-x}px, ${-y}px)`;
+  }, { passive: true });
+</script>
+
+</body>
+</html>

@@ -27,9 +27,14 @@ export default async function Navbar() {
               <LogoutButton />
             </>
           ) : (
-            <Link href="/login" className="btn btn-primary" style={{ padding: "8px 18px" }}>
-              Login
-            </Link>
+            <>
+              <Link href="/login" className="hidden sm:inline">
+                Login
+              </Link>
+              <Link href="/register" className="btn btn-primary" style={{ padding: "8px 18px" }}>
+                Get Started
+              </Link>
+            </>
           )}
         </nav>
       </div>

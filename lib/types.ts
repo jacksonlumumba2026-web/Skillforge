@@ -7,24 +7,28 @@
 // every `.from()` call's row types to `never`.
 
 export type CourseLevel = "beginner" | "intermediate" | "advanced";
+export type UserRole = "student" | "admin";
+export type EnrollmentStatus = "active" | "completed";
 export type PaymentStatus = "pending" | "success" | "failed";
 
 export type Profile = {
   id: string;
-  email: string;
+  user_id: string;
   full_name: string | null;
-  is_admin: boolean;
+  email: string;
+  role: UserRole;
   created_at: string;
 };
 
 export type Course = {
   id: string;
-  slug: string;
   title: string;
+  slug: string;
   description: string;
   level: CourseLevel;
-  price_kes: number;
-  is_published: boolean;
+  price: number;
+  thumbnail_url: string | null;
+  published: boolean;
   created_at: string;
   updated_at: string;
 };
@@ -33,7 +37,8 @@ export type CourseModule = {
   id: string;
   course_id: string;
   title: string;
-  order_index: number;
+  description: string;
+  order_number: number;
   created_at: string;
 };
 
@@ -43,15 +48,16 @@ export type Lesson = {
   title: string;
   description: string;
   youtube_url: string;
-  order_index: number;
+  order_number: number;
   created_at: string;
+  updated_at: string;
 };
 
 /** Public curriculum preview row (public.lesson_previews view) — title/order only, no gated content. */
 export type LessonPreview = {
   id: string;
   module_id: string;
-  order_index: number;
+  order_number: number;
   title: string;
 };
 
@@ -59,6 +65,7 @@ export type Enrollment = {
   id: string;
   user_id: string;
   course_id: string;
+  status: EnrollmentStatus;
   created_at: string;
 };
 
@@ -66,7 +73,9 @@ export type LessonProgress = {
   id: string;
   user_id: string;
   lesson_id: string;
+  completed: boolean;
   completed_at: string;
+  created_at: string;
 };
 
 export type Payment = {
@@ -77,14 +86,26 @@ export type Payment = {
   amount: number;
   status: PaymentStatus;
   created_at: string;
-  updated_at: string;
 };
 
-type Table<Row> = {
+type Relationship = {
+  foreignKeyName: string;
+  columns: string[];
+  isOneToOne: boolean;
+  referencedRelation: string;
+  referencedColumns: string[];
+};
+
+// Real foreign-key metadata for every FK that stays inside the `public`
+// schema (auth.users FKs are omitted — we don't type that schema). This is
+// what supabase-js's embedded-select parser (`.select("courses(...)")`)
+// needs to resolve joins; without it, any query using an embed collapses
+// to `never` instead of erroring loudly, which is a much worse failure mode.
+type Table<Row, Rel extends Relationship[] = []> = {
   Row: Row;
   Insert: Partial<Row>;
   Update: Partial<Row>;
-  Relationships: [];
+  Relationships: Rel;
 };
 
 export type Database = {
@@ -92,17 +113,81 @@ export type Database = {
     Tables: {
       profiles: Table<Profile>;
       courses: Table<Course>;
-      modules: Table<CourseModule>;
-      lessons: Table<Lesson>;
-      enrollments: Table<Enrollment>;
-      lesson_progress: Table<LessonProgress>;
-      payments: Table<Payment>;
+      modules: Table<
+        CourseModule,
+        [
+          {
+            foreignKeyName: "modules_course_id_fkey";
+            columns: ["course_id"];
+            isOneToOne: false;
+            referencedRelation: "courses";
+            referencedColumns: ["id"];
+          },
+        ]
+      >;
+      lessons: Table<
+        Lesson,
+        [
+          {
+            foreignKeyName: "lessons_module_id_fkey";
+            columns: ["module_id"];
+            isOneToOne: false;
+            referencedRelation: "modules";
+            referencedColumns: ["id"];
+          },
+        ]
+      >;
+      enrollments: Table<
+        Enrollment,
+        [
+          {
+            foreignKeyName: "enrollments_course_id_fkey";
+            columns: ["course_id"];
+            isOneToOne: false;
+            referencedRelation: "courses";
+            referencedColumns: ["id"];
+          },
+        ]
+      >;
+      lesson_progress: Table<
+        LessonProgress,
+        [
+          {
+            foreignKeyName: "lesson_progress_lesson_id_fkey";
+            columns: ["lesson_id"];
+            isOneToOne: false;
+            referencedRelation: "lessons";
+            referencedColumns: ["id"];
+          },
+        ]
+      >;
+      payments: Table<
+        Payment,
+        [
+          {
+            foreignKeyName: "payments_course_id_fkey";
+            columns: ["course_id"];
+            isOneToOne: false;
+            referencedRelation: "courses";
+            referencedColumns: ["id"];
+          },
+        ]
+      >;
     };
     Views: {
-      lesson_previews: { Row: LessonPreview; Relationships: [] };
+      lesson_previews: {
+        Row: LessonPreview;
+        Relationships: [
+          {
+            foreignKeyName: "lessons_module_id_fkey";
+            columns: ["module_id"];
+            isOneToOne: false;
+            referencedRelation: "modules";
+            referencedColumns: ["id"];
+          },
+        ];
+      };
     };
-    Functions: {
-      is_admin: { Args: { uid: string }; Returns: boolean };
-    };
+    Functions: Record<string, never>;
   };
 };

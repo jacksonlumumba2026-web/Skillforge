@@ -4,7 +4,7 @@
 -- against. YouTube URLs are placeholders — swap them for real videos from
 -- the admin dashboard once that's built (Phase 5).
 
-insert into public.courses (slug, title, description, level, price_kes, is_published) values
+insert into public.courses (slug, title, description, level, price, published) values
   ('web-development-for-beginners', 'Web Development for Beginners', 'Learn to build and publish real websites from scratch — HTML, CSS, JavaScript, and how to put it all together.', 'beginner', 500, true),
   ('digital-marketing', 'Digital Marketing', 'Learn how businesses find and win customers online — social media, ads, and content that converts.', 'beginner', 500, true),
   ('graphic-design', 'Graphic Design', 'Design logos, social posts, and simple branding — the practical skills clients actually pay for.', 'beginner', 500, true),
@@ -23,20 +23,20 @@ declare
 begin
   select id into v_course_id from public.courses where slug = 'web-development-for-beginners';
 
-  insert into public.modules (course_id, title, order_index) values
-    (v_course_id, 'Introduction to Web Development', 1) returning id into v_m1;
-  insert into public.modules (course_id, title, order_index) values
-    (v_course_id, 'HTML Basics', 2) returning id into v_m2;
-  insert into public.modules (course_id, title, order_index) values
-    (v_course_id, 'CSS Basics', 3) returning id into v_m3;
-  insert into public.modules (course_id, title, order_index) values
-    (v_course_id, 'JavaScript Basics', 4) returning id into v_m4;
-  insert into public.modules (course_id, title, order_index) values
-    (v_course_id, 'Building a Website', 5) returning id into v_m5;
-  insert into public.modules (course_id, title, order_index) values
-    (v_course_id, 'Publishing a Website', 6) returning id into v_m6;
+  insert into public.modules (course_id, title, description, order_number) values
+    (v_course_id, 'Introduction to Web Development', 'What web development is and how the web works.', 1) returning id into v_m1;
+  insert into public.modules (course_id, title, description, order_number) values
+    (v_course_id, 'HTML Basics', 'Structuring a web page with HTML.', 2) returning id into v_m2;
+  insert into public.modules (course_id, title, description, order_number) values
+    (v_course_id, 'CSS Basics', 'Styling and laying out a page with CSS.', 3) returning id into v_m3;
+  insert into public.modules (course_id, title, description, order_number) values
+    (v_course_id, 'JavaScript Basics', 'Making a page interactive with JavaScript.', 4) returning id into v_m4;
+  insert into public.modules (course_id, title, description, order_number) values
+    (v_course_id, 'Building a Website', 'Putting it all together into a real project.', 5) returning id into v_m5;
+  insert into public.modules (course_id, title, description, order_number) values
+    (v_course_id, 'Publishing a Website', 'Getting your finished site online.', 6) returning id into v_m6;
 
-  insert into public.lessons (module_id, title, description, youtube_url, order_index) values
+  insert into public.lessons (module_id, title, description, youtube_url, order_number) values
     (v_m1, 'What is Web Development?', 'An overview of what web developers actually do, and the difference between frontend and backend work.', 'https://www.youtube.com/watch?v=REPLACE_ME_01', 1),
     (v_m1, 'How the Web Works', 'Browsers, servers, and HTTP requests — the basic flow behind every website you visit.', 'https://www.youtube.com/watch?v=REPLACE_ME_02', 2),
 
@@ -62,5 +62,5 @@ begin
 
     (v_m6, 'Choosing a Hosting Provider', 'What hosting is and how to pick a simple, affordable option.', 'https://www.youtube.com/watch?v=REPLACE_ME_19', 1),
     (v_m6, 'Deploying Your Website Live', 'Publishing your finished website so anyone can visit it.', 'https://www.youtube.com/watch?v=REPLACE_ME_20', 2)
-  on conflict (module_id, order_index) do nothing;
+  on conflict (module_id, order_number) do nothing;
 end $$;

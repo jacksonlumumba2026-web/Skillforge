@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { getOrderedLessons } from "@/lib/courses";
 
 export default async function DashboardPage() {
   const supabase = await createClient();
@@ -26,31 +27,27 @@ export default async function DashboardPage() {
       const course = enrollment.courses as unknown as { id: string; title: string } | null;
       if (!course) return null;
 
-      const { count: totalLessons } = await supabase
-        .from("lessons")
-        .select("id, modules!inner(course_id)", { count: "exact", head: true })
-        .eq("modules.course_id", course.id);
+      const orderedLessons = await getOrderedLessons(supabase, course.id);
+      const lessonIds = orderedLessons.map((l) => l.id);
 
-      const { count: completedLessons } = await supabase
+      const { data: progressRows } = await supabase
         .from("lesson_progress")
-        .select("id, lessons!inner(modules!inner(course_id))", { count: "exact", head: true })
+        .select("lesson_id")
         .eq("user_id", user.id)
         .eq("completed", true)
-        .eq("lessons.modules.course_id", course.id);
+        .in("lesson_id", lessonIds.length > 0 ? lessonIds : ["00000000-0000-0000-0000-000000000000"]);
+      const completedIds = new Set((progressRows ?? []).map((p) => p.lesson_id));
 
-      const { data: firstLesson } = await supabase
-        .from("lessons")
-        .select("id, modules!inner(course_id, order_number)")
-        .eq("modules.course_id", course.id)
-        .eq("modules.order_number", 1)
-        .eq("order_number", 1)
-        .maybeSingle();
-
-      const total = totalLessons ?? 0;
-      const done = completedLessons ?? 0;
+      const total = orderedLessons.length;
+      const done = completedIds.size;
       const pct = total > 0 ? Math.round((done / total) * 100) : 0;
 
-      return { enrollment, course, total, done, pct, firstLessonId: firstLesson?.id ?? null };
+      // Continue where you left off: first not-yet-completed lesson, or the
+      // last lesson (to revisit) if the whole course is already done.
+      const nextUp =
+        orderedLessons.find((l) => !completedIds.has(l.id)) ?? orderedLessons[orderedLessons.length - 1];
+
+      return { enrollment, course, total, done, pct, continueLessonId: nextUp?.id ?? null };
     }),
   );
 
@@ -74,7 +71,7 @@ export default async function DashboardPage() {
         </div>
       ) : (
         <div className="grid sm:grid-cols-2 gap-5">
-          {courses.map(({ enrollment, course, total, done, pct, firstLessonId }) => (
+          {courses.map(({ enrollment, course, total, done, pct, continueLessonId }) => (
             <div key={enrollment.id} className="card p-6">
               <h3 className="font-semibold mb-3">{course.title}</h3>
               <div className="h-2 rounded-full bg-[var(--surface)] overflow-hidden mb-2">
@@ -87,7 +84,7 @@ export default async function DashboardPage() {
                 Progress: {pct}% ({done}/{total} lessons)
               </p>
               <Link
-                href={firstLessonId ? `/learn/${course.id}/${firstLessonId}` : `/courses/${course.id}`}
+                href={continueLessonId ? `/learn/${course.id}/${continueLessonId}` : `/courses/${course.id}`}
                 className="btn btn-primary"
                 style={{ padding: "8px 18px" }}
               >

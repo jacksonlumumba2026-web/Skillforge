@@ -11,7 +11,7 @@ Kept deliberately simple: no microservices, no unnecessary abstractions, one
 Postgres database, server-enforced access control instead of clever
 frontend tricks.
 
-## Status: Phase 1 + Phase 2 complete
+## Status: Phase 1, 2 + 3 complete
 
 - [x] **Phase 0** — Project structure, config, DB schema, Supabase clients,
       middleware, stub pages/routes for everything in the plan.
@@ -23,7 +23,12 @@ frontend tricks.
 - [x] **Phase 2** — Live Supabase project, full schema, email/password
       auth (register/login/logout), profiles auto-created on signup,
       protected `/dashboard`, RLS on every table.
-- [ ] **Phase 3** — Lesson player, progress tracking UI.
+- [x] **Phase 3** — Lesson player (`/learn/[courseId]/[lessonId]`): YouTube
+      embed, description, Mark Lesson Complete, Next Lesson, progress bar,
+      "Course Completed!" state. `/learn` is auth-protected; a locked
+      lesson (exists but not enrolled) shows a clear message instead of a
+      bare 404. Dashboard's Continue Learning now points at the next
+      *incomplete* lesson, not always the first.
 - [ ] **Phase 4** — Paystack payment + webhook + course access.
 - [ ] **Phase 5** — Admin dashboard (create/edit/delete courses, modules,
       lessons).
@@ -39,7 +44,9 @@ app/
   courses/
     page.tsx                            Course grid, real data + lesson counts
     [courseId]/page.tsx                 Course detail — curriculum, lock icons, CTA
-  learn/[courseId]/[lessonId]/page.tsx  Lesson player (Phase 3 placeholder)
+  learn/[courseId]/[lessonId]/
+    page.tsx                            Real — lesson player
+    LessonControls.tsx                  Real — mark complete / next lesson / progress
   login/page.tsx                        Real — email/password login
   register/page.tsx                     Real — full name/email/password
   dashboard/page.tsx                    Real — welcome, enrolled courses, progress
@@ -47,14 +54,16 @@ app/
   api/
     payments/initiate/route.ts          Phase 4 (stub, 501)
     payments/webhook/route.ts           Phase 4 (stub, 501)
-    progress/complete-lesson/route.ts   Phase 3 (stub, 501)
+    progress/complete-lesson/route.ts   Real — upserts lesson_progress
 components/
   Navbar.tsx                            Real — auth-aware nav
   Footer.tsx, LogoutButton.tsx          Real
   CourseCard.tsx                        Real — shared by home + /courses
+  YouTubeEmbed.tsx                      Real — responsive iframe embed
 lib/
   types.ts                              Hand-written DB types
-  courses.ts                            getPublishedCourses() w/ lesson counts
+  courses.ts                            getPublishedCourses() + getOrderedLessons()
+  youtube.ts                            getYouTubeVideoId() — parses watch/youtu.be/embed URLs
   supabase/{client,server,admin}.ts     Browser / server / service-role clients
   paystack.ts                           (Phase 4)
 supabase/migrations/

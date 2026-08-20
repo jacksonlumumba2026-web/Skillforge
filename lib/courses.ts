@@ -17,6 +17,7 @@ export async function getPublishedCourses(
     .from("courses")
     .select("*")
     .eq("published", true)
+    .order("display_order", { ascending: true })
     .order("created_at", { ascending: true });
   if (limit) query = query.limit(limit);
 

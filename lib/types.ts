@@ -31,6 +31,8 @@ export type Course = {
   published: boolean;
   /** Set when a learner's course request triggered AI generation; null for seeded/manual courses. */
   generated_by: string | null;
+  /** Lower sorts first on /courses; curated independently of created_at. */
+  display_order: number;
   created_at: string;
   updated_at: string;
 };

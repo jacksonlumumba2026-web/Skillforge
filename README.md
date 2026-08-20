@@ -38,19 +38,29 @@ frontend tricks.
       the same topic+level again reuses the existing course instead of
       generating a duplicate. `courses.generated_by` records who triggered
       it, for future admin visibility.
+- [x] **Curated catalog** — 10 real, hand-researched courses (not
+      placeholders): Freelancing, Web Development for Beginners, Graphic
+      Design, Digital Marketing, AI Tools for Everyday Work, Video Editing,
+      Social Media Management, Virtual Assistance & Data Entry, Copywriting
+      & Content Writing, Excel & Spreadsheets for Work. Each has 3 modules
+      of 2 lessons, backed by real YouTube tutorials from established
+      channels (`0006_curated_catalog.sql`). Written once by hand instead
+      of spending Anthropic/YouTube API calls on topics already known to be
+      wanted — the AI generator is reserved for topics outside this set.
+      `courses.display_order` controls the deliberate ordering on
+      `/courses` so it alternates between quick-win/business, creative, and
+      technical skills instead of reading as a wall of similar courses.
 - [ ] **Phase 4** — Paystack payment + webhook + course access.
 - [ ] **Phase 5** — Admin dashboard (create/edit/delete courses, modules,
       lessons).
 
 **Live Supabase project:** `skillpath-africa` (`xzncootldgqhghokxcrd`,
-`us-east-1`) — migrations `0001`–`0004` applied.
+`us-east-1`) — migrations `0001`–`0006` applied.
 
-**Still needed to actually run AI generation:** `ANTHROPIC_API_KEY` and
-`SUPABASE_SERVICE_ROLE_KEY` in `.env.local` (generation writes
-courses/modules/lessons server-side via the service role, bypassing RLS
-the same way the admin dashboard eventually will). `YOUTUBE_API_KEY` is
-already set. Without these two, everything else in the app still works —
-`/courses/request` will just fail at generation time.
+**AI generation credentials are live:** `YOUTUBE_API_KEY`,
+`ANTHROPIC_API_KEY`, and `SUPABASE_SERVICE_ROLE_KEY` are all set (locally
+in `.env.local`, and in Vercel for production), so `/courses/request`
+works end to end for topics outside the curated 10.
 
 ## File structure
 

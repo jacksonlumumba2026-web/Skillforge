@@ -11,7 +11,7 @@ Kept deliberately simple: no microservices, no unnecessary abstractions, one
 Postgres database, server-enforced access control instead of clever
 frontend tricks.
 
-## Status: Phase 1, 2, 3 + AI course generator complete
+## Status: Phase 1, 2, 3, 4 + AI course generator + curated catalog complete
 
 - [x] **Phase 0** — Project structure, config, DB schema, Supabase clients,
       middleware, stub pages/routes for everything in the plan.
@@ -50,7 +50,17 @@ frontend tricks.
       `courses.display_order` controls the deliberate ordering on
       `/courses` so it alternates between quick-win/business, creative, and
       technical skills instead of reading as a wall of similar courses.
-- [ ] **Phase 4** — Paystack payment + webhook + course access.
+- [x] **Phase 4** — Paystack payment + webhook + course access.
+      `POST /api/payments/initiate` creates a `pending` payment row and
+      starts a Paystack transaction, redirecting the browser to Paystack's
+      hosted checkout (`authorization_url` — no client-side Paystack JS or
+      public key needed). Both `POST /api/payments/webhook` (signature-
+      verified) and `GET /api/payments/callback` (the browser redirect back
+      from checkout) call the same `finalizePayment()` — which always
+      re-verifies the transaction directly with Paystack's API rather than
+      trusting the webhook payload or the redirect alone — before marking
+      the payment `success` and upserting the `active` enrollment.
+      Idempotent, so whichever of the two arrives first wins.
 - [ ] **Phase 5** — Admin dashboard (create/edit/delete courses, modules,
       lessons).
 
@@ -61,6 +71,12 @@ frontend tricks.
 `ANTHROPIC_API_KEY`, and `SUPABASE_SERVICE_ROLE_KEY` are all set (locally
 in `.env.local`, and in Vercel for production), so `/courses/request`
 works end to end for topics outside the curated 10.
+
+**Still needed to actually run payments:** `PAYSTACK_SECRET_KEY` (test or
+live) in `.env.local` and Vercel. Once it's set, add
+`https://<your-domain>/api/payments/webhook` as the webhook URL in the
+Paystack dashboard (Settings → API Keys & Webhooks) — that's a one-time
+manual step in Paystack's dashboard, nothing to configure in this repo.
 
 ## File structure
 
@@ -79,8 +95,9 @@ app/
   dashboard/page.tsx                    Real — welcome, enrolled courses, progress
   admin/                                Phase 5 placeholders
   api/
-    payments/initiate/route.ts          Phase 4 (stub, 501)
-    payments/webhook/route.ts           Phase 4 (stub, 501)
+    payments/initiate/route.ts          Real — starts a Paystack transaction
+    payments/webhook/route.ts           Real — signature-verified, finalizes payment
+    payments/callback/route.ts          Real — browser redirect back from checkout
     progress/complete-lesson/route.ts   Real — upserts lesson_progress
     courses/generate/route.ts           Real — AI course generator endpoint (auth + zod)
 components/
@@ -88,6 +105,7 @@ components/
   Footer.tsx, LogoutButton.tsx          Real
   CourseCard.tsx                        Real — shared by home + /courses
   YouTubeEmbed.tsx                      Real — responsive iframe embed
+  PayButton.tsx                         Real — starts checkout, redirects to Paystack
 lib/
   types.ts                              Hand-written DB types
   courses.ts                            getPublishedCourses() + getOrderedLessons()
@@ -98,13 +116,16 @@ lib/
   courseGenerator.ts                    generateCourseForRequest() — orchestrates
                                          curation + content + persistence via admin client
   supabase/{client,server,admin}.ts     Browser / server / service-role clients
-  paystack.ts                           (Phase 4)
+  paystack.ts                           Real — initialize/verify transaction, webhook signature
+  payments.ts                           Real — finalizePayment(): verify + mark success + enroll
 supabase/migrations/
   0001_init.sql                         Schema + RLS
   0002_seed_courses.sql                 Sample courses + full "Web
                                          Development for Beginners" course
   0003_harden_function_search_path.sql  Security advisor fix
   0004_ai_course_generation.sql         courses.generated_by column
+  0005_course_display_order.sql         courses.display_order column
+  0006_curated_catalog.sql              10-course curated catalog content
 middleware.ts                           Session refresh + route protection
 ```
 
@@ -113,13 +134,26 @@ middleware.ts                           Session refresh + route protection
 ```
 profiles.user_id → auth.users
 courses → modules → lessons
-users → enrollments → courses   (status: active | completed — created only
-                                  after a verified payment; Phase 4)
+users → enrollments → courses   (status: active | completed — created by
+                                  finalizePayment() after a verified payment)
 users → lesson_progress → lessons
-users → payments → courses      (table exists; Paystack logic is Phase 4)
+users → payments → courses      (status: pending | success | failed)
 courses.generated_by → auth.users (nullable — set when a learner's course
                                     request triggered AI generation)
 ```
+
+**Payments** (`/api/payments/{initiate,webhook,callback}`, `lib/paystack.ts`,
+`lib/payments.ts`): `initiate` creates a `pending` payments row and starts a
+Paystack transaction, redirecting to Paystack's hosted checkout page — no
+client-side Paystack JS or public key needed. After checkout, two paths can
+finalize the payment, both calling the same `finalizePayment()`: Paystack's
+webhook (`charge.success`, HMAC-signature-verified) and the browser
+redirect back from checkout. Either way, `finalizePayment()` always calls
+Paystack's own verify-transaction endpoint before trusting the result —
+never the webhook payload or redirect query params alone — then marks the
+payment `success` and upserts an `active` enrollment. It's idempotent
+(checks `payments.status` first), so whichever of the two arrives first
+does the work and the other is a no-op.
 
 **AI course generator** (`/courses/request`, `lib/courseGenerator.ts`):
 runs synchronously inside the request (`maxDuration = 60` on the API
@@ -150,9 +184,9 @@ There's no admin promotion UI yet; do it directly in SQL:
 update public.profiles set role = 'admin' where email = 'you@example.com';
 ```
 
-**Test enrollments**: Phase 4 will create these automatically after a real
-Paystack payment. Until then, insert one manually to test the dashboard/
-lesson-gating flow:
+**Test enrollments**: a real Paystack payment now creates these
+automatically (`finalizePayment()`). To test the dashboard/lesson-gating
+flow without going through checkout, you can still insert one manually:
 
 ```sql
 insert into public.enrollments (user_id, course_id, status)
@@ -171,11 +205,12 @@ cp .env.example .env.local   # fill in Supabase + Paystack keys
 npm run dev
 ```
 
-Supabase URL/anon key are for the live project above. You still need to add
-your own `SUPABASE_SERVICE_ROLE_KEY` (Project Settings → API — not exposed
-by tooling, get it yourself) for any Phase 3/4 server-side work; it's not
-required for Phase 2 (register/login/logout/dashboard all work with just
-the anon key). Paystack keys are for Phase 4.
+Supabase URL/anon key are for the live project above. `SUPABASE_SERVICE_ROLE_KEY`
+is required for payments, the AI course generator, and progress tracking
+(server-side writes that bypass RLS); it's not required for Phase 2
+(register/login/logout/dashboard all work with just the anon key).
+`PAYSTACK_SECRET_KEY` is required for payments — get it from your Paystack
+dashboard and also set the webhook URL there (see Status above).
 
 ## Explicitly out of scope for v1
 

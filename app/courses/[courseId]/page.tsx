@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import PayButton from "@/components/PayButton";
 import type { LessonPreview } from "@/lib/types";
 
 const LEVEL_LABEL: Record<string, string> = {
@@ -11,10 +12,13 @@ const LEVEL_LABEL: Record<string, string> = {
 
 export default async function CourseDetailPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ courseId: string }>;
+  searchParams: Promise<{ payment?: string }>;
 }) {
   const { courseId } = await params;
+  const { payment } = await searchParams;
   const supabase = await createClient();
 
   const { data: course } = await supabase
@@ -76,6 +80,17 @@ export default async function CourseDetailPage({
       </span>
       <h1 className="text-3xl font-bold mb-3">{course.title}</h1>
       <p className="text-[var(--muted)] mb-6">{course.description}</p>
+
+      {payment === "success" && !isEnrolled && (
+        <p className="text-sm mb-6 p-3 rounded-lg" style={{ background: "var(--surface)", color: "var(--success)" }}>
+          Payment received — confirming your access, this can take a few seconds. Refresh if it doesn&apos;t update shortly.
+        </p>
+      )}
+      {payment === "error" && (
+        <p className="text-sm mb-6 p-3 rounded-lg text-red-600" style={{ background: "var(--surface)" }}>
+          We couldn&apos;t confirm that payment. If you were charged, contact support — otherwise, try again below.
+        </p>
+      )}
       <div className="flex items-center gap-6 text-sm text-[var(--muted)] mb-10">
         <span>
           {lessonCount} lesson{lessonCount === 1 ? "" : "s"}
@@ -131,14 +146,7 @@ export default async function CourseDetailPage({
             Continue Learning
           </Link>
         ) : user ? (
-          <>
-            <button className="btn btn-primary" disabled>
-              Get Full Access — KSh {course.price.toLocaleString()}
-            </button>
-            <p className="text-xs text-[var(--muted)] mt-3">
-              Payments are launching soon — check back shortly.
-            </p>
-          </>
+          <PayButton courseId={course.id} price={course.price} />
         ) : (
           <Link href="/register" className="btn btn-primary">
             Get Full Access — KSh {course.price.toLocaleString()}

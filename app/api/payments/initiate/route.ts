@@ -1,6 +1,76 @@
 import { NextResponse } from "next/server";
+import { z } from "zod";
+import { createClient } from "@/lib/supabase/server";
+import { createAdminClient } from "@/lib/supabase/admin";
+import { initializeTransaction } from "@/lib/paystack";
 
-// Starts a Paystack transaction for a course purchase. Implemented in Phase 4.
-export async function POST() {
-  return NextResponse.json({ error: "not_implemented" }, { status: 501 });
+const requestSchema = z.object({
+  courseId: z.string().uuid(),
+});
+
+export async function POST(request: Request) {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user || !user.email) {
+    return NextResponse.json({ error: "You must be logged in to buy a course." }, { status: 401 });
+  }
+
+  const body = await request.json().catch(() => null);
+  const parsed = requestSchema.safeParse(body);
+  if (!parsed.success) {
+    return NextResponse.json({ error: "Invalid request." }, { status: 400 });
+  }
+
+  const { data: course } = await supabase
+    .from("courses")
+    .select("id, price")
+    .eq("id", parsed.data.courseId)
+    .eq("published", true)
+    .maybeSingle();
+  if (!course) {
+    return NextResponse.json({ error: "Course not found." }, { status: 404 });
+  }
+
+  const { data: existingEnrollment } = await supabase
+    .from("enrollments")
+    .select("id")
+    .eq("user_id", user.id)
+    .eq("course_id", course.id)
+    .in("status", ["active", "completed"])
+    .maybeSingle();
+  if (existingEnrollment) {
+    return NextResponse.json({ error: "You already have access to this course." }, { status: 400 });
+  }
+
+  const reference = `spa_${course.id.slice(0, 8)}_${Date.now()}`;
+  const admin = createAdminClient();
+  const { error: insertError } = await admin.from("payments").insert({
+    user_id: user.id,
+    course_id: course.id,
+    reference,
+    amount: course.price,
+    status: "pending",
+  });
+  if (insertError) {
+    return NextResponse.json({ error: "Could not start payment. Please try again." }, { status: 500 });
+  }
+
+  try {
+    const transaction = await initializeTransaction({
+      email: user.email,
+      amountKes: course.price,
+      reference,
+      callbackUrl: `${new URL(request.url).origin}/api/payments/callback`,
+      metadata: { course_id: course.id, user_id: user.id },
+    });
+    return NextResponse.json({ authorizationUrl: transaction.data.authorization_url });
+  } catch {
+    await admin.from("payments").update({ status: "failed" }).eq("reference", reference);
+    return NextResponse.json(
+      { error: "Could not start payment with Paystack. Please try again." },
+      { status: 500 },
+    );
+  }
 }

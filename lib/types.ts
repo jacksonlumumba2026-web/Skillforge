@@ -53,16 +53,26 @@ export type Lesson = {
   description: string;
   youtube_url: string;
   order_number: number;
+  /** Video length in seconds, when known. Null for lessons added before this was tracked. */
+  duration_seconds: number | null;
   created_at: string;
   updated_at: string;
 };
 
-/** Public curriculum preview row (public.lesson_previews view) — title/order only, no gated content. */
+/**
+ * Public curriculum preview row (public.lesson_previews view). Deliberately
+ * includes `description` and `duration_seconds` — short marketing-style
+ * teasers, not the lesson's actual paid content — so a visitor can
+ * understand a course before buying. `youtube_url` stays gated to enrolled
+ * users via the `lessons` table's RLS policy.
+ */
 export type LessonPreview = {
   id: string;
   module_id: string;
   order_number: number;
   title: string;
+  description: string;
+  duration_seconds: number | null;
 };
 
 export type Enrollment = {

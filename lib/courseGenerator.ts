@@ -103,6 +103,7 @@ export async function generateCourseForRequest(input: {
       description: content.lessonDescriptions[lessonCursor + j] ?? `Watch and follow along with "${video.title}".`,
       youtube_url: `https://www.youtube.com/watch?v=${video.videoId}`,
       order_number: j + 1,
+      duration_seconds: video.durationSeconds,
     }));
     const { error: lessonError } = await admin.from("lessons").insert(lessonRows);
     if (lessonError) {

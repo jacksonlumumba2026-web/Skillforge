@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { formatDuration } from "@/lib/courses";
 import PayButton from "@/components/PayButton";
 import type { LessonPreview } from "@/lib/types";
 
@@ -107,28 +108,30 @@ export default async function CourseDetailPage({
             <h3 className="font-semibold mb-3 text-sm uppercase tracking-wide text-[var(--muted)]">
               Module {module.order_number} — {module.title}
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {(lessonsByModule.get(module.id) ?? []).map((lesson, i) => {
                 const label = `Lesson ${i + 1} — ${lesson.title}`;
-                if (isEnrolled) {
-                  return (
-                    <li key={lesson.id}>
+                const duration = lesson.duration_seconds ? formatDuration(lesson.duration_seconds) : null;
+                return (
+                  <li key={lesson.id}>
+                    {isEnrolled ? (
                       <Link
                         href={`/learn/${course.id}/${lesson.id}`}
-                        className="flex items-center gap-2 text-sm py-1.5"
+                        className="flex items-center gap-2 text-sm"
                         style={{ color: "var(--primary)" }}
                       >
                         <span aria-hidden>▶</span> {label}
+                        {duration && <span className="text-[var(--muted)]">· {duration}</span>}
                       </Link>
-                    </li>
-                  );
-                }
-                return (
-                  <li
-                    key={lesson.id}
-                    className="flex items-center gap-2 text-sm py-1.5 text-[var(--muted)]"
-                  >
-                    <span aria-hidden>🔒</span> {label}
+                    ) : (
+                      <div className="flex items-center gap-2 text-sm text-[var(--muted)]">
+                        <span aria-hidden>🔒</span> {label}
+                        {duration && <span>· {duration}</span>}
+                      </div>
+                    )}
+                    {lesson.description && (
+                      <p className="text-xs text-[var(--muted)] mt-1 pl-6">{lesson.description}</p>
+                    )}
                   </li>
                 );
               })}

@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import { getOrderedLessons } from "@/lib/courses";
+import { getOrderedLessons, formatDuration } from "@/lib/courses";
+import type { LessonPreview } from "@/lib/types";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import LessonControls from "./LessonControls";
+import CourseSidebar from "./CourseSidebar";
 
 export default async function LessonPage({
   params,
@@ -75,29 +77,55 @@ export default async function LessonPage({
     .in("lesson_id", lessonIds.length > 0 ? lessonIds : ["00000000-0000-0000-0000-000000000000"]);
   const completedIds = new Set((progressRows ?? []).map((p) => p.lesson_id));
 
+  const { data: modules } = await supabase
+    .from("modules")
+    .select("id, title, order_number")
+    .eq("course_id", courseId)
+    .order("order_number", { ascending: true });
+  const lessonsByModule = new Map<string, LessonPreview[]>();
+  for (const previewLesson of orderedLessons) {
+    const list = lessonsByModule.get(previewLesson.module_id) ?? [];
+    list.push(previewLesson);
+    lessonsByModule.set(previewLesson.module_id, list);
+  }
+
+  const duration = lesson.duration_seconds ? formatDuration(lesson.duration_seconds) : null;
+
   return (
-    <div className="container-page py-10 max-w-3xl">
-      <p className="text-sm text-[var(--muted)] mb-1">
-        {course.title} · {lessonModule.title}
-      </p>
-      <h1 className="text-2xl font-bold mb-6">{lesson.title}</h1>
+    <div className="container-page py-10 grid gap-10 lg:grid-cols-[1fr_320px] lg:items-start max-w-6xl">
+      <div>
+        <p className="text-sm text-[var(--muted)] mb-1">
+          {course.title} · {lessonModule.title}
+        </p>
+        <h1 className="text-2xl font-bold mb-6">{lesson.title}</h1>
 
-      <YouTubeEmbed url={lesson.youtube_url} title={lesson.title} />
+        <div className="card p-6 mb-6">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-[var(--muted)] mb-2">
+            What you&apos;ll learn{duration && <span className="normal-case font-normal"> · {duration}</span>}
+          </h2>
+          <p className="text-sm">{lesson.description || "No description yet."}</p>
+        </div>
 
-      <div className="card p-6 mt-6 mb-8">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-[var(--muted)] mb-2">
-          What you&apos;ll learn
-        </h2>
-        <p className="text-sm">{lesson.description || "No description yet."}</p>
+        <YouTubeEmbed url={lesson.youtube_url} title={lesson.title} />
+
+        <div className="mt-8">
+          <LessonControls
+            lessonId={lesson.id}
+            courseId={courseId}
+            initialCompleted={completedIds.has(lesson.id)}
+            nextLessonId={nextLesson?.id ?? null}
+            totalLessons={orderedLessons.length}
+            initialCompletedCount={completedIds.size}
+          />
+        </div>
       </div>
 
-      <LessonControls
-        lessonId={lesson.id}
+      <CourseSidebar
         courseId={courseId}
-        initialCompleted={completedIds.has(lesson.id)}
-        nextLessonId={nextLesson?.id ?? null}
-        totalLessons={orderedLessons.length}
-        initialCompletedCount={completedIds.size}
+        currentLessonId={lesson.id}
+        modules={modules ?? []}
+        lessonsByModule={lessonsByModule}
+        completedIds={completedIds}
       />
     </div>
   );

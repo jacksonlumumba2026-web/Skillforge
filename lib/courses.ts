@@ -3,6 +3,15 @@ import type { Database, Course, LessonPreview } from "@/lib/types";
 
 export type CourseWithLessonCount = Course & { lessonCount: number };
 
+/** "8 min" / "1h 5m" — never fabricated, only called when duration_seconds is set. */
+export function formatDuration(seconds: number): string {
+  const totalMinutes = Math.round(seconds / 60);
+  const hours = Math.floor(totalMinutes / 60);
+  const minutes = totalMinutes % 60;
+  if (hours === 0) return `${Math.max(minutes, 1)} min`;
+  return minutes === 0 ? `${hours}h` : `${hours}h ${minutes}m`;
+}
+
 /**
  * Published courses with a real lesson count. Counts go through the public
  * `lesson_previews` view (not `lessons` directly) because `lessons` rows

@@ -6,6 +6,7 @@ import type { CourseLevel } from "@/lib/types";
 
 const PRICE_KES = 500;
 const LESSONS_PER_MODULE = 2;
+const DAILY_GENERATION_LIMIT = 3;
 
 function slugify(topic: string): string {
   return topic
@@ -48,6 +49,22 @@ export async function generateCourseForRequest(input: {
     .maybeSingle();
   if (existing) {
     return { ok: true, courseId: existing.id, slug: existing.slug, reused: true };
+  }
+
+  // Cap actual generations (not cache hits above) per learner per day —
+  // each one is a real cost (YouTube quota + an Anthropic call), and
+  // nothing else here rate-limits repeated requests.
+  const since = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
+  const { count: generatedToday } = await admin
+    .from("courses")
+    .select("id", { count: "exact", head: true })
+    .eq("generated_by", input.requestedBy)
+    .gte("created_at", since);
+  if ((generatedToday ?? 0) >= DAILY_GENERATION_LIMIT) {
+    return {
+      ok: false,
+      error: `You've reached today's limit of ${DAILY_GENERATION_LIMIT} new course requests. Try again tomorrow, or check if one of your existing courses already covers this.`,
+    };
   }
 
   const videos = await curateVideosForTopic(topic, input.level);

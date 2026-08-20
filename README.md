@@ -37,7 +37,10 @@ frontend tricks.
       (`lib/courseGenerator.ts`, `POST /api/courses/generate`). Requesting
       the same topic+level again reuses the existing course instead of
       generating a duplicate. `courses.generated_by` records who triggered
-      it, for future admin visibility.
+      it, for future admin visibility. Capped at 3 new generations per
+      learner per 24h (cache hits on an already-generated topic don't
+      count) — each real generation costs an Anthropic call plus YouTube
+      quota, so nothing else here rate-limits repeated requests.
 - [x] **Curated catalog** — 10 real, hand-researched courses (not
       placeholders): Freelancing, Web Development for Beginners, Graphic
       Design, Digital Marketing, AI Tools for Everyday Work, Video Editing,

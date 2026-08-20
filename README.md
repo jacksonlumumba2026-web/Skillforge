@@ -11,7 +11,7 @@ Kept deliberately simple: no microservices, no unnecessary abstractions, one
 Postgres database, server-enforced access control instead of clever
 frontend tricks.
 
-## Status: Phase 1, 2 + 3 complete
+## Status: Phase 1, 2, 3 + AI course generator complete
 
 - [x] **Phase 0** — Project structure, config, DB schema, Supabase clients,
       middleware, stub pages/routes for everything in the plan.
@@ -29,12 +29,28 @@ frontend tricks.
       lesson (exists but not enrolled) shows a clear message instead of a
       bare 404. Dashboard's Continue Learning now points at the next
       *incomplete* lesson, not always the first.
+- [x] **AI course generator** — `/courses/request`: a logged-in learner
+      types a topic, level, and optional goal; the server curates real
+      YouTube tutorials (`lib/youtube.ts`), writes course/module/lesson
+      copy with Claude (`lib/courseContent.ts`), and persists the whole
+      thing as a normal published, paid (KES 500) course
+      (`lib/courseGenerator.ts`, `POST /api/courses/generate`). Requesting
+      the same topic+level again reuses the existing course instead of
+      generating a duplicate. `courses.generated_by` records who triggered
+      it, for future admin visibility.
 - [ ] **Phase 4** — Paystack payment + webhook + course access.
 - [ ] **Phase 5** — Admin dashboard (create/edit/delete courses, modules,
       lessons).
 
 **Live Supabase project:** `skillpath-africa` (`xzncootldgqhghokxcrd`,
-`us-east-1`) — migrations `0001`–`0003` applied.
+`us-east-1`) — migrations `0001`–`0004` applied.
+
+**Still needed to actually run AI generation:** `ANTHROPIC_API_KEY` and
+`SUPABASE_SERVICE_ROLE_KEY` in `.env.local` (generation writes
+courses/modules/lessons server-side via the service role, bypassing RLS
+the same way the admin dashboard eventually will). `YOUTUBE_API_KEY` is
+already set. Without these two, everything else in the app still works —
+`/courses/request` will just fail at generation time.
 
 ## File structure
 
@@ -44,6 +60,7 @@ app/
   courses/
     page.tsx                            Course grid, real data + lesson counts
     [courseId]/page.tsx                 Course detail — curriculum, lock icons, CTA
+    request/page.tsx                    Real — AI course request form (auth-protected)
   learn/[courseId]/[lessonId]/
     page.tsx                            Real — lesson player
     LessonControls.tsx                  Real — mark complete / next lesson / progress
@@ -55,6 +72,7 @@ app/
     payments/initiate/route.ts          Phase 4 (stub, 501)
     payments/webhook/route.ts           Phase 4 (stub, 501)
     progress/complete-lesson/route.ts   Real — upserts lesson_progress
+    courses/generate/route.ts           Real — AI course generator endpoint (auth + zod)
 components/
   Navbar.tsx                            Real — auth-aware nav
   Footer.tsx, LogoutButton.tsx          Real
@@ -63,7 +81,12 @@ components/
 lib/
   types.ts                              Hand-written DB types
   courses.ts                            getPublishedCourses() + getOrderedLessons()
-  youtube.ts                            getYouTubeVideoId() — parses watch/youtu.be/embed URLs
+  youtube.ts                            getYouTubeVideoId(); curateVideosForTopic()
+                                         — search/score/dedupe YouTube videos per stage
+  courseContent.ts                      generateCourseContent() — Claude writes course/
+                                         module/lesson copy from curated videos
+  courseGenerator.ts                    generateCourseForRequest() — orchestrates
+                                         curation + content + persistence via admin client
   supabase/{client,server,admin}.ts     Browser / server / service-role clients
   paystack.ts                           (Phase 4)
 supabase/migrations/
@@ -71,6 +94,7 @@ supabase/migrations/
   0002_seed_courses.sql                 Sample courses + full "Web
                                          Development for Beginners" course
   0003_harden_function_search_path.sql  Security advisor fix
+  0004_ai_course_generation.sql         courses.generated_by column
 middleware.ts                           Session refresh + route protection
 ```
 
@@ -83,7 +107,18 @@ users → enrollments → courses   (status: active | completed — created only
                                   after a verified payment; Phase 4)
 users → lesson_progress → lessons
 users → payments → courses      (table exists; Paystack logic is Phase 4)
+courses.generated_by → auth.users (nullable — set when a learner's course
+                                    request triggered AI generation)
 ```
+
+**AI course generator** (`/courses/request`, `lib/courseGenerator.ts`):
+runs synchronously inside the request (`maxDuration = 60` on the API
+route) — no background job queue, kept deliberately simple per the "don't
+over-engineer it" brief. Generation takes roughly 20-40 seconds (six
+YouTube searches + one Claude call), during which the request page shows
+a loading state. If a learner requests a topic+level that already has a
+generated course, the existing course is reused instead of generating a
+duplicate (matched by slug).
 
 **Access control is enforced in Postgres (RLS), not just hidden in the UI.**
 A lesson's real content (`youtube_url`, `description`) is only readable via
@@ -134,8 +169,7 @@ the anon key). Paystack keys are for Phase 4.
 
 ## Explicitly out of scope for v1
 
-- AI course generator (auto-creating modules/lessons/quizzes from a topic).
-  The schema is already shaped to support it later — course/module/lesson
-  are separate tables an admin (or eventually an AI) fills in the same way.
-- Automatic YouTube video search/selection — admins paste URLs manually.
 - Quizzes.
+- Certificates.
+- A background job queue for course generation — it runs synchronously in
+  the request instead (see "AI course generator" note under Data model).

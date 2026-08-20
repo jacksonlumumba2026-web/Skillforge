@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { getPublishedCourses } from "@/lib/courses";
 import CourseCard from "@/components/CourseCard";
@@ -24,6 +25,13 @@ export default async function CoursesPage() {
           ))}
         </div>
       )}
+
+      <p className="text-center text-[var(--muted)] mt-12">
+        Can&apos;t find what you want to learn?{" "}
+        <Link href="/courses/request" className="font-medium" style={{ color: "var(--primary)" }}>
+          Request a course
+        </Link>
+      </p>
     </div>
   );
 }

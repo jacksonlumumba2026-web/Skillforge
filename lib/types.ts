@@ -29,6 +29,8 @@ export type Course = {
   price: number;
   thumbnail_url: string | null;
   published: boolean;
+  /** Set when a learner's course request triggered AI generation; null for seeded/manual courses. */
+  generated_by: string | null;
   created_at: string;
   updated_at: string;
 };

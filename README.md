@@ -11,13 +11,15 @@ Kept deliberately simple: no microservices, no unnecessary abstractions, one
 Postgres database, server-enforced access control instead of clever
 frontend tricks.
 
-## Status: Phase 2 (Supabase + auth) complete
+## Status: Phase 1 + Phase 2 complete
 
 - [x] **Phase 0** — Project structure, config, DB schema, Supabase clients,
       middleware, stub pages/routes for everything in the plan.
-- [ ] **Phase 1** — Homepage, courses grid, course detail + curriculum
-      content. *(Not built yet — Phase 2 was requested next; homepage/
-      courses pages are still Phase 0 placeholders.)*
+- [x] **Phase 1** — Homepage (hero, why-learn section, popular courses),
+      `/courses` grid, `/courses/[courseId]` detail with real curriculum
+      (modules + lesson titles via the public `lesson_previews` view,
+      locked with a 🔒 for non-enrolled visitors, unlocked with links into
+      `/learn` for enrolled ones).
 - [x] **Phase 2** — Live Supabase project, full schema, email/password
       auth (register/login/logout), profiles auto-created on signup,
       protected `/dashboard`, RLS on every table.
@@ -33,10 +35,10 @@ frontend tricks.
 
 ```
 app/
-  page.tsx                              Home (Phase 1 placeholder)
+  page.tsx                              Home — hero, why-learn, popular courses
   courses/
-    page.tsx                            Course grid (Phase 1 placeholder)
-    [courseId]/page.tsx                 Course detail (Phase 1 placeholder)
+    page.tsx                            Course grid, real data + lesson counts
+    [courseId]/page.tsx                 Course detail — curriculum, lock icons, CTA
   learn/[courseId]/[lessonId]/page.tsx  Lesson player (Phase 3 placeholder)
   login/page.tsx                        Real — email/password login
   register/page.tsx                     Real — full name/email/password
@@ -49,8 +51,10 @@ app/
 components/
   Navbar.tsx                            Real — auth-aware nav
   Footer.tsx, LogoutButton.tsx          Real
+  CourseCard.tsx                        Real — shared by home + /courses
 lib/
   types.ts                              Hand-written DB types
+  courses.ts                            getPublishedCourses() w/ lesson counts
   supabase/{client,server,admin}.ts     Browser / server / service-role clients
   paystack.ts                           (Phase 4)
 supabase/migrations/

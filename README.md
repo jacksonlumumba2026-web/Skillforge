@@ -11,7 +11,7 @@ Kept deliberately simple: no microservices, no unnecessary abstractions, one
 Postgres database, server-enforced access control instead of clever
 frontend tricks.
 
-## Status: Phase 1, 2, 3, 4 + AI course generator + curated catalog complete
+## Status: All 5 phases + AI course generator + curated catalog complete
 
 - [x] **Phase 0** — Project structure, config, DB schema, Supabase clients,
       middleware, stub pages/routes for everything in the plan.
@@ -64,8 +64,19 @@ frontend tricks.
       trusting the webhook payload or the redirect alone — before marking
       the payment `success` and upserting the `active` enrollment.
       Idempotent, so whichever of the two arrives first wins.
-- [ ] **Phase 5** — Admin dashboard (create/edit/delete courses, modules,
-      lessons).
+- [x] **Phase 5** — Admin dashboard (`/admin`). Restricted to
+      `profiles.role = 'admin'` — enforced in `lib/supabase/middleware.ts`
+      (redirects non-admins to `/dashboard`) and again in every
+      `/api/admin/*` route via `lib/adminAuth.ts`'s `requireAdmin()`,
+      independent of the UI. `/admin` lists every course (published and
+      draft) with module/lesson/enrollment counts and a publish toggle;
+      `/admin/courses/new` and `/admin/courses/[courseId]` create/edit a
+      course and manage its modules and lessons inline — adding a lesson
+      auto-looks-up its real YouTube duration the same way the AI generator
+      does. Deletes are guarded: a course with real enrollments/payments,
+      or a module/lesson learners have progress on, can't be hard-deleted —
+      unpublish or edit instead, so a mistake can't erase paid access or
+      completion history.
 
 **Live Supabase project:** `skillpath-africa` (`xzncootldgqhghokxcrd`,
 `us-east-1`) — migrations `0001`–`0006` applied.
@@ -96,13 +107,16 @@ app/
   login/page.tsx                        Real — email/password login
   register/page.tsx                     Real — full name/email/password
   dashboard/page.tsx                    Real — welcome, enrolled courses, progress
-  admin/                                Phase 5 placeholders
+  admin/                                Real — course list + publish toggle
+    courses/new/page.tsx                 Real — create course form
+    courses/[courseId]/page.tsx          Real — edit course + manage modules/lessons
   api/
     payments/initiate/route.ts          Real — starts a Paystack transaction
     payments/webhook/route.ts           Real — signature-verified, finalizes payment
     payments/callback/route.ts          Real — browser redirect back from checkout
     progress/complete-lesson/route.ts   Real — upserts lesson_progress
     courses/generate/route.ts           Real — AI course generator endpoint (auth + zod)
+    admin/**                            Real — course/module/lesson CRUD, admin-only
 components/
   Navbar.tsx                            Real — auth-aware nav
   Footer.tsx, LogoutButton.tsx          Real
@@ -121,6 +135,7 @@ lib/
   supabase/{client,server,admin}.ts     Browser / server / service-role clients
   paystack.ts                           Real — initialize/verify transaction, webhook signature
   payments.ts                           Real — finalizePayment(): verify + mark success + enroll
+  adminAuth.ts                          Real — requireAdmin(), used by every /api/admin/* route
 supabase/migrations/
   0001_init.sql                         Schema + RLS
   0002_seed_courses.sql                 Sample courses + full "Web
@@ -176,12 +191,15 @@ who hasn't paid (via the public `lesson_previews` view — title and order
 only), while the actual video stays locked at the database level, not just
 behind a UI lock icon.
 
-`role` on `profiles` (`student` | `admin`) will gate the admin dashboard in
-Phase 5. It's protected against self-escalation right now by a trigger
+`role` on `profiles` (`student` | `admin`) gates `/admin` — checked in
+middleware (page access) and in every `/api/admin/*` route (`requireAdmin()`
+in `lib/adminAuth.ts`), so a non-admin can't reach the dashboard or call its
+endpoints directly. It's protected against self-escalation by a trigger
 (`protect_profile_identity`) that silently reverts `role`/`user_id` changes
 from any caller that isn't the service role — simpler and more reliable
 than trying to express "old vs new" inside an RLS `WITH CHECK` clause.
-There's no admin promotion UI yet; do it directly in SQL:
+There's no admin promotion UI (a first admin has to already exist to grant
+more, so this stays a manual step by design); do it directly in SQL:
 
 ```sql
 update public.profiles set role = 'admin' where email = 'you@example.com';

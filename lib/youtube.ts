@@ -132,6 +132,19 @@ async function fetchVideoDetails(videoIds: string[], apiKey: string): Promise<Ra
   return data.items ?? [];
 }
 
+/** Looks up a single video's real duration for the admin lesson form. Returns null if unavailable rather than guessing. */
+export async function getVideoDuration(videoId: string): Promise<number | null> {
+  const apiKey = process.env.YOUTUBE_API_KEY;
+  if (!apiKey) return null;
+  try {
+    const [video] = await fetchVideoDetails([videoId], apiKey);
+    if (!video) return null;
+    return iso8601DurationToSeconds(video.contentDetails.duration);
+  } catch {
+    return null;
+  }
+}
+
 function scoreVideo(v: RawVideoItem): number {
   const views = Number(v.statistics.viewCount ?? 0);
   const likes = Number(v.statistics.likeCount ?? 0);

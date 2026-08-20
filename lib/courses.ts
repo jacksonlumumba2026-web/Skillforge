@@ -3,6 +3,16 @@ import type { Database, Course, LessonPreview } from "@/lib/types";
 
 export type CourseWithLessonCount = Course & { lessonCount: number };
 
+export function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 /** "8 min" / "1h 5m" — never fabricated, only called when duration_seconds is set. */
 export function formatDuration(seconds: number): string {
   const totalMinutes = Math.round(seconds / 60);

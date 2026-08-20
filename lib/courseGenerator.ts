@@ -2,21 +2,12 @@ import "server-only";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { curateVideosForTopic } from "@/lib/youtube";
 import { chunkIntoModules, generateCourseContent } from "@/lib/courseContent";
+import { slugify } from "@/lib/courses";
 import type { CourseLevel } from "@/lib/types";
 
 const PRICE_KES = 500;
 const LESSONS_PER_MODULE = 2;
 const DAILY_GENERATION_LIMIT = 3;
-
-function slugify(topic: string): string {
-  return topic
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9\s-]/g, "")
-    .replace(/\s+/g, "-")
-    .replace(/-+/g, "-")
-    .replace(/^-|-$/g, "");
-}
 
 export type GenerateCourseResult =
   | { ok: true; courseId: string; slug: string; reused: boolean }

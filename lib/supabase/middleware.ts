@@ -41,6 +41,17 @@ export async function updateSession(request: NextRequest) {
     return NextResponse.redirect(redirectUrl);
   }
 
+  if (user && path.startsWith("/admin")) {
+    const { data: profile } = await supabase
+      .from("profiles")
+      .select("role")
+      .eq("user_id", user.id)
+      .maybeSingle();
+    if (profile?.role !== "admin") {
+      return NextResponse.redirect(new URL("/dashboard", request.url));
+    }
+  }
+
   if (user && (path === "/login" || path === "/register")) {
     return NextResponse.redirect(new URL("/dashboard", request.url));
   }

@@ -8,6 +8,16 @@ export default async function Navbar() {
     data: { user },
   } = await supabase.auth.getUser();
 
+  let isAdmin = false;
+  if (user) {
+    const { data: profile } = await supabase
+      .from("profiles")
+      .select("role")
+      .eq("user_id", user.id)
+      .maybeSingle();
+    isAdmin = profile?.role === "admin";
+  }
+
   return (
     <header className="border-b border-[var(--border)]">
       <div className="container-page h-16 flex items-center justify-between">
@@ -24,6 +34,11 @@ export default async function Navbar() {
               <Link href="/dashboard" className="hidden sm:inline">
                 Dashboard
               </Link>
+              {isAdmin && (
+                <Link href="/admin" className="hidden sm:inline">
+                  Admin
+                </Link>
+              )}
               <LogoutButton />
             </>
           ) : (

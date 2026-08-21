@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import LogoutButton from "@/components/LogoutButton";
+import MobileMenu from "@/components/MobileMenu";
 
 export default async function Navbar() {
   const supabase = await createClient();
@@ -19,7 +20,7 @@ export default async function Navbar() {
   }
 
   return (
-    <header className="border-b border-[var(--border)]">
+    <header className="border-b border-[var(--border)] relative">
       <div className="container-page h-16 flex items-center justify-between">
         <Link href="/" className="font-bold text-lg">
           SkillPath <span style={{ color: "var(--primary)" }}>Africa</span>
@@ -51,6 +52,7 @@ export default async function Navbar() {
               </Link>
             </>
           )}
+          <MobileMenu loggedIn={Boolean(user)} isAdmin={isAdmin} />
         </nav>
       </div>
     </header>

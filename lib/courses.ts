@@ -71,6 +71,32 @@ export async function getPublishedCourses(
 }
 
 /**
+ * Recommends one published course to try next after finishing another —
+ * the next one in the curated display_order the learner isn't already
+ * enrolled in, so "next" follows the same deliberate business/creative/
+ * technical mix the catalog was ordered for, not a random pick.
+ */
+export async function getSuggestedNextCourse(
+  supabase: SupabaseClient<Database>,
+  userId: string,
+): Promise<Course | null> {
+  const { data: enrollments } = await supabase.from("enrollments").select("course_id").eq("user_id", userId);
+  const enrolledIds = (enrollments ?? []).map((e) => e.course_id);
+
+  let query = supabase
+    .from("courses")
+    .select("*")
+    .eq("published", true)
+    .order("display_order", { ascending: true })
+    .order("created_at", { ascending: true })
+    .limit(1);
+  if (enrolledIds.length > 0) query = query.not("id", "in", `(${enrolledIds.join(",")})`);
+
+  const { data } = await query.maybeSingle();
+  return data ?? null;
+}
+
+/**
  * A course's lessons in curriculum order (module order, then lesson order
  * within each module) — used to find "next lesson" and to compute total
  * lesson counts for progress tracking. Uses the public `lesson_previews`

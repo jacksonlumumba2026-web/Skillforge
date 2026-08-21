@@ -27,6 +27,15 @@ export default function LessonControls({
 
   const pct = totalLessons > 0 ? Math.round((completedCount / totalLessons) * 100) : 0;
   const courseFinished = totalLessons > 0 && completedCount >= totalLessons;
+  const milestoneMessage = courseFinished
+    ? "🎉 Course Completed!"
+    : pct >= 75
+      ? "🚀 Almost there — just a bit more!"
+      : pct >= 50
+        ? "🔥 Halfway there — keep going!"
+        : pct >= 25
+          ? "💪 Great start — keep the momentum!"
+          : null;
 
   async function markComplete() {
     setSaving(true);
@@ -64,9 +73,12 @@ export default function LessonControls({
         </p>
       </div>
 
-      {courseFinished && (
-        <p className="text-sm font-semibold mb-4" style={{ color: "var(--success)" }}>
-          🎉 Course Completed!
+      {milestoneMessage && (
+        <p
+          className="text-sm font-semibold mb-4"
+          style={{ color: courseFinished ? "var(--success)" : "var(--primary)" }}
+        >
+          {milestoneMessage}
         </p>
       )}
 

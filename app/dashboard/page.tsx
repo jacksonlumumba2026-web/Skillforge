@@ -2,6 +2,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { getOrderedLessons } from "@/lib/courses";
+import CertificateButton from "@/components/CertificateButton";
 
 export default async function DashboardPage() {
   const supabase = await createClient();
@@ -53,6 +54,12 @@ export default async function DashboardPage() {
 
   const courses = courseCards.filter((c): c is NonNullable<typeof c> => c !== null);
 
+  const { data: certificateRows } = await supabase
+    .from("certificates")
+    .select("id, course_id")
+    .eq("user_id", user.id);
+  const certificateByCourseId = new Map((certificateRows ?? []).map((c) => [c.course_id, c.id]));
+
   return (
     <div className="container-page py-16">
       <h1 className="text-2xl font-bold mb-1">
@@ -83,13 +90,21 @@ export default async function DashboardPage() {
               <p className="text-sm text-[var(--muted)] mb-5">
                 Progress: {pct}% ({done}/{total} lessons)
               </p>
-              <Link
-                href={continueLessonId ? `/learn/${course.id}/${continueLessonId}` : `/courses/${course.id}`}
-                className="btn btn-primary"
-                style={{ padding: "8px 18px" }}
-              >
-                Continue Learning
-              </Link>
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href={continueLessonId ? `/learn/${course.id}/${continueLessonId}` : `/courses/${course.id}`}
+                  className="btn btn-primary"
+                  style={{ padding: "8px 18px" }}
+                >
+                  {pct >= 100 ? "Review Course" : "Continue Learning"}
+                </Link>
+                {pct >= 100 && (
+                  <CertificateButton
+                    courseId={course.id}
+                    existingCertificateId={certificateByCourseId.get(course.id) ?? null}
+                  />
+                )}
+              </div>
             </div>
           ))}
         </div>

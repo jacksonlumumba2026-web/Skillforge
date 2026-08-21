@@ -102,6 +102,15 @@ export type Payment = {
   created_at: string;
 };
 
+/** Shareable completion certificate — publicly readable, issued only after real completion. */
+export type Certificate = {
+  id: string;
+  user_id: string;
+  course_id: string;
+  learner_name: string;
+  issued_at: string;
+};
+
 /** "Apply to teach" waitlist row — a lead, not a real seller account. */
 export type InstructorApplication = {
   id: string;
@@ -198,6 +207,18 @@ export type Database = {
         ]
       >;
       instructor_applications: Table<InstructorApplication>;
+      certificates: Table<
+        Certificate,
+        [
+          {
+            foreignKeyName: "certificates_course_id_fkey";
+            columns: ["course_id"];
+            isOneToOne: false;
+            referencedRelation: "courses";
+            referencedColumns: ["id"];
+          },
+        ]
+      >;
     };
     Views: {
       lesson_previews: {

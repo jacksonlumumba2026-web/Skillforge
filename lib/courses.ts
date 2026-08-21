@@ -1,7 +1,11 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { Database, Course, CourseLevel, LessonPreview } from "@/lib/types";
 
-export type CourseWithLessonCount = Course & { lessonCount: number };
+export type CourseWithLessonCount = Course & {
+  lessonCount: number;
+  averageRating: number | null;
+  reviewCount: number;
+};
 
 export function slugify(text: string): string {
   return text
@@ -65,7 +69,16 @@ export async function getPublishedCourses(
         lessonCount = count ?? 0;
       }
 
-      return { ...course, lessonCount };
+      const { data: reviewRows } = await supabase
+        .from("course_reviews")
+        .select("rating")
+        .eq("course_id", course.id);
+      const reviews = reviewRows ?? [];
+      const reviewCount = reviews.length;
+      const averageRating =
+        reviewCount > 0 ? reviews.reduce((sum, r) => sum + r.rating, 0) / reviewCount : null;
+
+      return { ...course, lessonCount, averageRating, reviewCount };
     }),
   );
 }

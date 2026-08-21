@@ -5,6 +5,8 @@ import { createClient } from "@/lib/supabase/server";
 import { formatDuration } from "@/lib/courses";
 import { SITE_URL } from "@/lib/site";
 import PayButton from "@/components/PayButton";
+import StarRating from "@/components/StarRating";
+import ReviewForm from "./ReviewForm";
 import type { LessonPreview } from "@/lib/types";
 
 const LEVEL_LABEL: Record<string, string> = {
@@ -96,6 +98,16 @@ export default async function CourseDetailPage({
 
   const firstLesson = modules?.[0] ? lessonsByModule.get(modules[0].id)?.[0] : undefined;
 
+  const { data: reviewRows } = await supabase
+    .from("course_reviews")
+    .select("*")
+    .eq("course_id", course.id)
+    .order("created_at", { ascending: false });
+  const reviews = reviewRows ?? [];
+  const averageRating =
+    reviews.length > 0 ? reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length : null;
+  const myReview = user ? reviews.find((r) => r.user_id === user.id) : undefined;
+
   const courseJsonLd = {
     "@context": "https://schema.org",
     "@type": "Course",
@@ -103,6 +115,13 @@ export default async function CourseDetailPage({
     description: course.description,
     provider: { "@type": "Organization", name: "SkillPath Africa", sameAs: SITE_URL },
     offers: { "@type": "Offer", price: course.price, priceCurrency: "KES" },
+    ...(averageRating !== null && {
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: averageRating.toFixed(1),
+        reviewCount: reviews.length,
+      },
+    }),
   };
 
   return (
@@ -118,6 +137,11 @@ export default async function CourseDetailPage({
         {LEVEL_LABEL[course.level] ?? course.level}
       </span>
       <h1 className="text-3xl font-bold mb-3">{course.title}</h1>
+      {averageRating !== null && (
+        <div className="mb-3">
+          <StarRating rating={averageRating} reviewCount={reviews.length} />
+        </div>
+      )}
       <p className="text-[var(--muted)] mb-6">{course.description}</p>
 
       {payment === "success" && !isEnrolled && (
@@ -194,6 +218,36 @@ export default async function CourseDetailPage({
           </Link>
         )}
       </div>
+
+      <h2 className="text-lg font-semibold mt-14 mb-5">
+        Reviews{reviews.length > 0 && ` (${reviews.length})`}
+      </h2>
+
+      {isEnrolled && (
+        <div className="mb-6">
+          <ReviewForm
+            courseId={course.id}
+            initialRating={myReview?.rating ?? 0}
+            initialComment={myReview?.comment ?? ""}
+          />
+        </div>
+      )}
+
+      {reviews.length === 0 ? (
+        <p className="text-sm text-[var(--muted)]">No reviews yet.</p>
+      ) : (
+        <div className="space-y-4">
+          {reviews.map((review) => (
+            <div key={review.id} className="card p-5">
+              <div className="flex items-center justify-between mb-2">
+                <span className="font-medium text-sm">{review.reviewer_name}</span>
+                <StarRating rating={review.rating} />
+              </div>
+              {review.comment && <p className="text-sm text-[var(--muted)]">{review.comment}</p>}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

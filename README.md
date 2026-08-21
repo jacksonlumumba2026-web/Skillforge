@@ -7,11 +7,28 @@ course (Paystack) to unlock it.
 Next.js (App Router) + TypeScript + Tailwind CSS, Supabase (auth + Postgres +
 RLS), Paystack (payments), plain YouTube embeds. Deploys to Vercel.
 
-Kept deliberately simple: no microservices, no unnecessary abstractions, one
-Postgres database, server-enforced access control instead of clever
-frontend tricks.
+Architecturally simple by design — no microservices, one Postgres database,
+server-enforced access control (RLS) instead of clever frontend tricks —
+even as the feature set has deliberately grown well past the original v1
+scope (AI course generation, an admin dashboard, certificates, reviews,
+SEO). Every new table still follows the same access pattern: RLS enforces
+who can read/write directly, and privileged server-side writes go through
+either the caller's own RLS-respecting client or the service role, never a
+custom authorization layer bolted on top.
 
-## Status: All 5 phases + AI course generator + curated catalog + SEO complete
+## Status: All 5 phases + AI course generator + curated catalog + SEO + engagement features complete
+
+- [x] **Ratings & reviews** — an enrolled learner can rate (1-5 stars) and
+      review a course from its detail page (`/api/reviews`, upsert —
+      editing overwrites their own review). Enforced entirely by RLS
+      (`course_reviews_insert_own_enrolled`), the same "caller's own client,
+      not the service role" pattern as `lesson_progress` — verified live
+      that an enrolled insert succeeds and a non-enrolled one is rejected.
+      Reviews are public (social proof for buyers who haven't purchased
+      yet); `reviewer_name` is snapshotted at write time since `profiles`
+      has no public read policy to join a live name from — same approach
+      as `certificates.learner_name`. Average rating shows on `CourseCard`,
+      the course detail page, and in the page's `AggregateRating` JSON-LD.
 
 - [x] **SEO** — real per-page metadata (title template, description,
       Open Graph, Twitter card) via `metadataBase` in `app/layout.tsx`;

@@ -111,6 +111,19 @@ export type Certificate = {
   issued_at: string;
 };
 
+/** Public course rating/review — writable only by an enrolled learner, for their own row. */
+export type CourseReview = {
+  id: string;
+  user_id: string;
+  course_id: string;
+  rating: number;
+  comment: string;
+  /** Snapshotted at write time — profiles has no public read policy to join a live name from. */
+  reviewer_name: string;
+  created_at: string;
+  updated_at: string;
+};
+
 /** "Apply to teach" waitlist row — a lead, not a real seller account. */
 export type InstructorApplication = {
   id: string;
@@ -212,6 +225,18 @@ export type Database = {
         [
           {
             foreignKeyName: "certificates_course_id_fkey";
+            columns: ["course_id"];
+            isOneToOne: false;
+            referencedRelation: "courses";
+            referencedColumns: ["id"];
+          },
+        ]
+      >;
+      course_reviews: Table<
+        CourseReview,
+        [
+          {
+            foreignKeyName: "course_reviews_course_id_fkey";
             columns: ["course_id"];
             isOneToOne: false;
             referencedRelation: "courses";

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { CourseWithLessonCount } from "@/lib/courses";
+import StarRating from "@/components/StarRating";
 
 const LEVEL_LABEL: Record<string, string> = {
   beginner: "Beginner",
@@ -20,6 +21,11 @@ export default function CourseCard({ course }: { course: CourseWithLessonCount }
       </div>
 
       <h3 className="font-semibold text-lg mb-2">{course.title}</h3>
+      {course.averageRating !== null && (
+        <div className="mb-2">
+          <StarRating rating={course.averageRating} reviewCount={course.reviewCount} />
+        </div>
+      )}
       <p className="text-sm text-[var(--muted)] mb-5 flex-1">{course.description}</p>
 
       <div className="flex items-center justify-between text-sm text-[var(--muted)] mb-5">

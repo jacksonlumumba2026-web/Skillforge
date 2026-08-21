@@ -77,13 +77,19 @@ custom authorization layer bolted on top.
       learner per 24h (cache hits on an already-generated topic don't
       count) — each real generation costs an Anthropic call plus YouTube
       quota, so nothing else here rate-limits repeated requests.
-- [x] **Curated catalog** — 10 real, hand-researched courses (not
-      placeholders): Freelancing, Web Development for Beginners, Graphic
-      Design, Digital Marketing, AI Tools for Everyday Work, Video Editing,
-      Social Media Management, Virtual Assistance & Data Entry, Copywriting
-      & Content Writing, Excel & Spreadsheets for Work. Each has 3 modules
-      of 2 lessons, backed by real YouTube tutorials from established
-      channels (`0006_curated_catalog.sql`). Written once by hand instead
+- [x] **Curated catalog** — real, hand-researched courses (not
+      placeholders), added in daily batches of 10 by an automated job
+      (`trig_01XLqpWy1SvSGEFaiTqEhPrC`, 6 days total). Day 1
+      (`0006_curated_catalog.sql`): Freelancing, Web Development for
+      Beginners, Graphic Design, Digital Marketing, AI Tools for Everyday
+      Work, Video Editing, Social Media Management, Virtual Assistance &
+      Data Entry, Copywriting & Content Writing, Excel & Spreadsheets for
+      Work. Day 2 (`0012_curated_catalog_day2.sql`): UI/UX Design (Figma),
+      E-commerce & Online Selling, Email Marketing, Cybersecurity & Online
+      Safety, Presentation Design, SEO, Google Ads & Facebook Ads, Project
+      Management Tools, Instagram & TikTok Growth, Google Workspace
+      Productivity. Each course has 3 modules of 2 lessons, backed by real
+      YouTube tutorials from established channels. Written by hand instead
       of spending Anthropic/YouTube API calls on topics already known to be
       wanted — the AI generator is reserved for topics outside this set.
       `courses.display_order` controls the deliberate ordering on
@@ -179,7 +185,8 @@ supabase/migrations/
   0003_harden_function_search_path.sql  Security advisor fix
   0004_ai_course_generation.sql         courses.generated_by column
   0005_course_display_order.sql         courses.display_order column
-  0006_curated_catalog.sql              10-course curated catalog content
+  0006_curated_catalog.sql              10-course curated catalog content (day 1)
+  0012_curated_catalog_day2.sql         10-course curated catalog content (day 2)
 middleware.ts                           Session refresh + route protection
 ```
 

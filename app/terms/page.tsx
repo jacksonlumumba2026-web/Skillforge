@@ -113,8 +113,8 @@ export default function TermsPage() {
           <h2 className="font-semibold mb-2">12. Contact</h2>
           <p>
             Questions about these Terms:{" "}
-            <a href="mailto:support@skillpathafrica.com" style={{ color: "var(--primary)" }}>
-              support@skillpathafrica.com
+            <a href="mailto:jacksonlumumba275@gmail.com" style={{ color: "var(--primary)" }}>
+              jacksonlumumba275@gmail.com
             </a>
           </p>
         </section>

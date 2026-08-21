@@ -1,5 +1,5 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
-import type { Database, Course, LessonPreview } from "@/lib/types";
+import type { Database, Course, CourseLevel, LessonPreview } from "@/lib/types";
 
 export type CourseWithLessonCount = Course & { lessonCount: number };
 
@@ -30,7 +30,7 @@ export function formatDuration(seconds: number): string {
  */
 export async function getPublishedCourses(
   supabase: SupabaseClient<Database>,
-  limit?: number,
+  options?: { limit?: number; search?: string; level?: CourseLevel },
 ): Promise<CourseWithLessonCount[]> {
   let query = supabase
     .from("courses")
@@ -38,7 +38,12 @@ export async function getPublishedCourses(
     .eq("published", true)
     .order("display_order", { ascending: true })
     .order("created_at", { ascending: true });
-  if (limit) query = query.limit(limit);
+  if (options?.level) query = query.eq("level", options.level);
+  if (options?.search) {
+    const term = options.search.trim().replace(/[%_]/g, "");
+    if (term) query = query.or(`title.ilike.%${term}%,description.ilike.%${term}%`);
+  }
+  if (options?.limit) query = query.limit(options.limit);
 
   const { data: courses } = await query;
   if (!courses) return [];

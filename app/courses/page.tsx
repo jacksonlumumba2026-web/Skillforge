@@ -2,10 +2,26 @@ import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { getPublishedCourses } from "@/lib/courses";
 import CourseCard from "@/components/CourseCard";
+import CourseFilters from "./CourseFilters";
+import type { CourseLevel } from "@/lib/types";
 
-export default async function CoursesPage() {
+const VALID_LEVELS: CourseLevel[] = ["beginner", "intermediate", "advanced"];
+
+export default async function CoursesPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ q?: string; level?: string }>;
+}) {
+  const { q, level } = await searchParams;
+  const search = q ?? "";
+  const validLevel = VALID_LEVELS.includes(level as CourseLevel) ? (level as CourseLevel) : "";
+
   const supabase = await createClient();
-  const courses = await getPublishedCourses(supabase);
+  const courses = await getPublishedCourses(supabase, {
+    search: search || undefined,
+    level: validLevel || undefined,
+  });
+  const isFiltered = Boolean(search || validLevel);
 
   return (
     <div className="container-page py-16">
@@ -16,8 +32,12 @@ export default async function CoursesPage() {
         </p>
       </div>
 
+      <CourseFilters initialSearch={search} initialLevel={validLevel} />
+
       {courses.length === 0 ? (
-        <p className="text-center text-[var(--muted)]">No courses available yet.</p>
+        <p className="text-center text-[var(--muted)]">
+          {isFiltered ? "No courses match your search." : "No courses available yet."}
+        </p>
       ) : (
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {courses.map((course) => (

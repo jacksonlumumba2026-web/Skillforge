@@ -13,7 +13,7 @@ const WHY_LEARN = [
 
 export default async function HomePage() {
   const supabase = await createClient();
-  const popularCourses = await getPublishedCourses(supabase, 3);
+  const popularCourses = await getPublishedCourses(supabase, { limit: 3 });
 
   return (
     <div>

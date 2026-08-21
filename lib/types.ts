@@ -102,6 +102,16 @@ export type Payment = {
   created_at: string;
 };
 
+/** "Apply to teach" waitlist row — a lead, not a real seller account. */
+export type InstructorApplication = {
+  id: string;
+  name: string;
+  email: string;
+  topic: string;
+  message: string;
+  created_at: string;
+};
+
 type Relationship = {
   foreignKeyName: string;
   columns: string[];
@@ -187,6 +197,7 @@ export type Database = {
           },
         ]
       >;
+      instructor_applications: Table<InstructorApplication>;
     };
     Views: {
       lesson_previews: {

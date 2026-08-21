@@ -11,7 +11,26 @@ Kept deliberately simple: no microservices, no unnecessary abstractions, one
 Postgres database, server-enforced access control instead of clever
 frontend tricks.
 
-## Status: All 5 phases + AI course generator + curated catalog complete
+## Status: All 5 phases + AI course generator + curated catalog + SEO complete
+
+- [x] **SEO** — real per-page metadata (title template, description,
+      Open Graph, Twitter card) via `metadataBase` in `app/layout.tsx`;
+      `/courses/[courseId]` gets `generateMetadata()` per course plus
+      `Course` JSON-LD structured data; `app/sitemap.ts` lists every
+      published course (regenerated on each request, so new courses from
+      the daily catalog job or `/courses/request` show up automatically);
+      `app/robots.ts` disallows the private routes
+      (`/dashboard`, `/admin`, `/learn`, `/courses/request`). No OG image
+      yet — social previews are text-only until one's added.
+- [x] **"Teach on SkillPath Africa" waitlist** (`/sell`) — a lead-capture
+      form, not real seller accounts. Submissions go into
+      `instructor_applications` (service-role only — no RLS read/write
+      policies for anon/authenticated at all) via `POST
+      /api/instructor-applications`, viewable at
+      `/admin/instructor-applications`. Deliberately just a waitlist so we
+      can gauge real demand before building the much bigger marketplace
+      machinery a real multi-seller model would need (seller onboarding,
+      content review, revenue splits, payouts).
 
 - [x] **Phase 0** — Project structure, config, DB schema, Supabase clients,
       middleware, stub pages/routes for everything in the plan.

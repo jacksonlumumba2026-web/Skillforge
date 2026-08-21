@@ -49,9 +49,14 @@ export default async function AdminPage() {
     <div className="container-page py-16">
       <div className="flex items-center justify-between mb-8">
         <h1 className="text-2xl font-bold">Admin — Courses</h1>
-        <Link href="/admin/courses/new" className="btn btn-primary">
-          + New Course
-        </Link>
+        <div className="flex items-center gap-3">
+          <Link href="/admin/instructor-applications" className="text-sm" style={{ color: "var(--primary)" }}>
+            Instructor applications
+          </Link>
+          <Link href="/admin/courses/new" className="btn btn-primary">
+            + New Course
+          </Link>
+        </div>
       </div>
 
       <div className="card overflow-x-auto">

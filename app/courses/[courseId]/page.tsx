@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { createClient } from "@/lib/supabase/server";
 import { formatDuration } from "@/lib/courses";
+import { SITE_URL } from "@/lib/site";
 import PayButton from "@/components/PayButton";
 import type { LessonPreview } from "@/lib/types";
 
@@ -10,6 +12,29 @@ const LEVEL_LABEL: Record<string, string> = {
   intermediate: "Intermediate",
   advanced: "Advanced",
 };
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ courseId: string }>;
+}): Promise<Metadata> {
+  const { courseId } = await params;
+  const supabase = await createClient();
+  const { data: course } = await supabase
+    .from("courses")
+    .select("title, description")
+    .eq("id", courseId)
+    .eq("published", true)
+    .maybeSingle();
+  if (!course) return {};
+
+  return {
+    title: course.title,
+    description: course.description,
+    alternates: { canonical: `${SITE_URL}/courses/${courseId}` },
+    openGraph: { title: course.title, description: course.description, type: "website" },
+  };
+}
 
 export default async function CourseDetailPage({
   params,
@@ -71,8 +96,21 @@ export default async function CourseDetailPage({
 
   const firstLesson = modules?.[0] ? lessonsByModule.get(modules[0].id)?.[0] : undefined;
 
+  const courseJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: course.title,
+    description: course.description,
+    provider: { "@type": "Organization", name: "SkillPath Africa", sameAs: SITE_URL },
+    offers: { "@type": "Offer", price: course.price, priceCurrency: "KES" },
+  };
+
   return (
     <div className="container-page py-16 max-w-3xl">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseJsonLd) }}
+      />
       <span
         className="inline-block text-xs font-semibold px-2.5 py-1 rounded-full mb-4"
         style={{ background: "var(--surface)", color: "var(--muted)" }}

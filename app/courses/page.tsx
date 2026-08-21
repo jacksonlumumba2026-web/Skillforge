@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { createClient } from "@/lib/supabase/server";
 import { getPublishedCourses } from "@/lib/courses";
 import CourseCard from "@/components/CourseCard";
@@ -6,6 +7,12 @@ import CourseFilters from "./CourseFilters";
 import type { CourseLevel } from "@/lib/types";
 
 const VALID_LEVELS: CourseLevel[] = ["beginner", "intermediate", "advanced"];
+
+export const metadata: Metadata = {
+  title: "Courses",
+  description:
+    "Browse practical digital skills courses — web development, digital marketing, design, freelancing, and more.",
+};
 
 export default async function CoursesPage({
   searchParams,

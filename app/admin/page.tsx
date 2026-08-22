@@ -50,6 +50,9 @@ export default async function AdminPage() {
       <div className="flex items-center justify-between mb-8">
         <h1 className="text-2xl font-bold">Admin — Courses</h1>
         <div className="flex items-center gap-3">
+          <Link href="/admin/users" className="text-sm" style={{ color: "var(--primary)" }}>
+            Users
+          </Link>
           <Link href="/admin/instructor-applications" className="text-sm" style={{ color: "var(--primary)" }}>
             Instructor applications
           </Link>

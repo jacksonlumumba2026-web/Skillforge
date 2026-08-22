@@ -140,6 +140,12 @@ custom authorization layer bolted on top.
       or a module/lesson learners have progress on, can't be hard-deleted —
       unpublish or edit instead, so a mistake can't erase paid access or
       completion history.
+- [x] **Admin: users** (`/admin/users`) — ban/unban via Supabase Auth's own
+      `ban_duration` (`PATCH /api/admin/users/[userId]`), not a hard
+      delete: a banned user is signed out and can't log back in, but their
+      account, enrollments, payments, and certificates all stay intact and
+      reversible. Admins can't be banned from the UI, and an admin can't
+      ban their own account (server-side guard, not just hidden UI).
 
 **Live Supabase project:** `skillpath-africa` (`xzncootldgqhghokxcrd`,
 `us-east-1`) — migrations `0001`–`0006` applied.

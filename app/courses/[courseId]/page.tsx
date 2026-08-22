@@ -220,6 +220,13 @@ export default async function CourseDetailPage({
               <span className="flex-1 h-px" style={{ background: "var(--border)" }} />
             </div>
             <PayButton courseId={course.id} price={course.price} />
+            <p className="text-xs text-[var(--muted)]">
+              All sales are final — please review the curriculum above before buying. See our{" "}
+              <Link href="/refund-policy" style={{ color: "var(--primary)" }}>
+                Refund Policy
+              </Link>
+              .
+            </p>
           </div>
         ) : (
           <Link href="/register" className="btn btn-primary">

@@ -28,7 +28,11 @@ export default async function AdminPaymentsPage() {
 
   return (
     <div className="container-page py-16">
-      <h1 className="text-2xl font-bold mb-8">Admin — Payments</h1>
+      <h1 className="text-2xl font-bold mb-2">Admin — Payments</h1>
+      <p className="text-sm text-[var(--muted)] mb-8">
+        The public policy is no refunds. &quot;Refund&quot; here is for our own billing errors only —
+        a duplicate charge, or a payment that went through without granting access.
+      </p>
 
       <div className="card overflow-x-auto">
         <table className="w-full text-sm">

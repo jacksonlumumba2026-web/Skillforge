@@ -3,10 +3,12 @@ import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { requireAdmin } from "@/lib/adminAuth";
 
-// This is bookkeeping only — it marks the payment `refunded` and revokes
-// the learner's access, but it does not move any money. The actual refund
-// (Paystack dashboard, or an M-Pesa reversal) has to happen separately;
-// this just keeps our own records and access in sync with that.
+// For billing errors (duplicate charge, or payment succeeded without
+// granting access) — not general refunds. The public /refund-policy page
+// states purchases are final; this exists so admin can correct our own
+// mistakes. Bookkeeping only: marks the payment `refunded` and revokes
+// access, but does not move any money. The actual correction (Paystack
+// dashboard, or an M-Pesa reversal) has to happen separately.
 export async function POST(_request: Request, { params }: { params: Promise<{ paymentId: string }> }) {
   const { paymentId } = await params;
   const supabase = await createClient();

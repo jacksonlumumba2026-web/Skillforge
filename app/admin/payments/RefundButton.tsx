@@ -10,7 +10,7 @@ export default function RefundButton({ paymentId }: { paymentId: string }) {
   async function handleClick() {
     if (
       !confirm(
-        "Mark this payment refunded and revoke the learner's access? This doesn't move any money — refund them via Paystack or M-Pesa first, then confirm here.",
+        "Only use this for a genuine billing error — a duplicate charge, or a payment that succeeded without granting access. We don't offer refunds for buyer's remorse. This doesn't move any money on its own; refund them via Paystack or M-Pesa first, then confirm here to revoke access and mark the payment refunded.",
       )
     ) {
       return;

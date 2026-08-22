@@ -146,17 +146,24 @@ custom authorization layer bolted on top.
       account, enrollments, payments, and certificates all stay intact and
       reversible. Admins can't be banned from the UI, and an admin can't
       ban their own account (server-side guard, not just hidden UI).
-- [x] **Admin: payments / refunds** (`/admin/payments`) — lists every
-      payment (learner, course, amount, provider, status) with a "Refund"
-      action on successful ones (`POST /api/admin/payments/[paymentId]/refund`).
-      This is bookkeeping only — it marks the payment `refunded` and the
-      matching enrollment `revoked` (new statuses, added alongside the
-      existing ones rather than replacing them), it does not call
-      Paystack's or Safaricom's refund APIs to move real money. `revoked`
-      needs no new access-control code anywhere: every enrollment check in
-      the app (RLS's `lessons_select_enrolled` policy included) already
-      only allows `active`/`completed`, so a revoked enrollment is
-      automatically excluded everywhere access is gated.
+- [x] **No-refunds policy + admin billing-error correction**
+      (`/refund-policy`, `/admin/payments`). The public policy is all
+      sales final — stated on `/refund-policy` and again right above the
+      pay buttons on every course page, before checkout, not just buried
+      in a footer link. The one exception is our own mistakes (duplicate
+      charge, or a payment that succeeded without granting access), which
+      admin can correct from `/admin/payments`: a "Refund" action on
+      successful payments (`POST /api/admin/payments/[paymentId]/refund`),
+      explicitly scoped in its own confirm dialog to billing errors, not
+      buyer's remorse. It's bookkeeping only — marks the payment
+      `refunded` and the matching enrollment `revoked` (new statuses,
+      added alongside the existing ones), it does not call Paystack's or
+      Safaricom's refund APIs to move real money; that still happens
+      separately. `revoked` needs no new access-control code anywhere:
+      every enrollment check in the app (RLS's `lessons_select_enrolled`
+      policy included) already only allows `active`/`completed`, so a
+      revoked enrollment is automatically excluded everywhere access is
+      gated.
 
 **Live Supabase project:** `skillpath-africa` (`xzncootldgqhghokxcrd`,
 `us-east-1`) — migrations `0001`–`0006` applied.

@@ -8,8 +8,8 @@
 
 export type CourseLevel = "beginner" | "intermediate" | "advanced";
 export type UserRole = "student" | "admin";
-export type EnrollmentStatus = "active" | "completed";
-export type PaymentStatus = "pending" | "success" | "failed";
+export type EnrollmentStatus = "active" | "completed" | "revoked";
+export type PaymentStatus = "pending" | "success" | "failed" | "refunded";
 
 export type Profile = {
   id: string;

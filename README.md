@@ -146,6 +146,17 @@ custom authorization layer bolted on top.
       account, enrollments, payments, and certificates all stay intact and
       reversible. Admins can't be banned from the UI, and an admin can't
       ban their own account (server-side guard, not just hidden UI).
+- [x] **Admin: payments / refunds** (`/admin/payments`) — lists every
+      payment (learner, course, amount, provider, status) with a "Refund"
+      action on successful ones (`POST /api/admin/payments/[paymentId]/refund`).
+      This is bookkeeping only — it marks the payment `refunded` and the
+      matching enrollment `revoked` (new statuses, added alongside the
+      existing ones rather than replacing them), it does not call
+      Paystack's or Safaricom's refund APIs to move real money. `revoked`
+      needs no new access-control code anywhere: every enrollment check in
+      the app (RLS's `lessons_select_enrolled` policy included) already
+      only allows `active`/`completed`, so a revoked enrollment is
+      automatically excluded everywhere access is gated.
 
 **Live Supabase project:** `skillpath-africa` (`xzncootldgqhghokxcrd`,
 `us-east-1`) — migrations `0001`–`0006` applied.
@@ -217,6 +228,7 @@ supabase/migrations/
   0012_curated_catalog_day2.sql         10-course curated catalog content (day 2)
   0013_vibe_coding_curriculum.sql       Backfilled real curriculum for a manually-created empty course
   0014_mpesa_payments.sql               payments.provider/phone/checkout_request_id/mpesa_receipt columns
+  0015_refunds.sql                      payments 'refunded' + enrollments 'revoked' statuses
 middleware.ts                           Session refresh + route protection
 ```
 

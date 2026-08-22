@@ -21,6 +21,7 @@ export default async function DashboardPage() {
     .from("enrollments")
     .select("id, course_id, status, courses(id, title)")
     .eq("user_id", user.id)
+    .in("status", ["active", "completed"])
     .order("created_at", { ascending: false });
 
   const courseCards = await Promise.all(

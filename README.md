@@ -88,7 +88,13 @@ custom authorization layer bolted on top.
       E-commerce & Online Selling, Email Marketing, Cybersecurity & Online
       Safety, Presentation Design, SEO, Google Ads & Facebook Ads, Project
       Management Tools, Instagram & TikTok Growth, Google Workspace
-      Productivity. Each course has 3 modules of 2 lessons, backed by real
+      Productivity. Day 3 (`0016_curated_catalog_day3.sql`): Python
+      Programming for Beginners, Data Analysis & Visualization, Bookkeeping
+      & QuickBooks, Mobile Photography & Content Creation, Podcasting &
+      Voice-Over Basics, Transcription & Translation Freelancing, YouTube
+      Channel Growth & Video SEO, Customer Service & Virtual Call Center
+      Skills, Resume Writing/LinkedIn/Personal Branding, 3D Design &
+      Animation (Blender). Each course has 3 modules of 2 lessons, backed by real
       YouTube tutorials from established channels. Written by hand instead
       of spending Anthropic/YouTube API calls on topics already known to be
       wanted — the AI generator is reserved for topics outside this set.
@@ -233,6 +239,7 @@ supabase/migrations/
   0005_course_display_order.sql         courses.display_order column
   0006_curated_catalog.sql              10-course curated catalog content (day 1)
   0012_curated_catalog_day2.sql         10-course curated catalog content (day 2)
+  0016_curated_catalog_day3.sql         10-course curated catalog content (day 3)
   0013_vibe_coding_curriculum.sql       Backfilled real curriculum for a manually-created empty course
   0014_mpesa_payments.sql               payments.provider/phone/checkout_request_id/mpesa_receipt columns
   0015_refunds.sql                      payments 'refunded' + enrollments 'revoked' statuses

@@ -5,6 +5,7 @@ import { createClient } from "@/lib/supabase/server";
 import { formatDuration } from "@/lib/courses";
 import { SITE_URL } from "@/lib/site";
 import PayButton from "@/components/PayButton";
+import MpesaPayButton from "@/components/MpesaPayButton";
 import StarRating from "@/components/StarRating";
 import ReviewForm from "./ReviewForm";
 import type { LessonPreview } from "@/lib/types";
@@ -211,7 +212,15 @@ export default async function CourseDetailPage({
             Continue Learning
           </Link>
         ) : user ? (
-          <PayButton courseId={course.id} price={course.price} />
+          <div className="max-w-xs mx-auto space-y-4">
+            <MpesaPayButton courseId={course.id} price={course.price} />
+            <div className="flex items-center gap-3 text-xs text-[var(--muted)]">
+              <span className="flex-1 h-px" style={{ background: "var(--border)" }} />
+              or
+              <span className="flex-1 h-px" style={{ background: "var(--border)" }} />
+            </div>
+            <PayButton courseId={course.id} price={course.price} />
+          </div>
         ) : (
           <Link href="/register" className="btn btn-primary">
             Get Full Access — KSh {course.price.toLocaleString()}

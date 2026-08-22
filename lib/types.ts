@@ -92,6 +92,8 @@ export type LessonProgress = {
   created_at: string;
 };
 
+export type PaymentProvider = "paystack" | "mpesa";
+
 export type Payment = {
   id: string;
   user_id: string;
@@ -99,6 +101,13 @@ export type Payment = {
   reference: string;
   amount: number;
   status: PaymentStatus;
+  provider: PaymentProvider;
+  /** M-Pesa only — the phone number the STK push was sent to. */
+  phone: string | null;
+  /** M-Pesa only — Safaricom's id for the checkout request, used to match its async callback. */
+  checkout_request_id: string | null;
+  /** M-Pesa only — the human-facing receipt code, stored for support/reconciliation only. */
+  mpesa_receipt: string | null;
   created_at: string;
 };
 

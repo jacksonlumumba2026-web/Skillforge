@@ -27,8 +27,8 @@ export default function PayButton({ courseId, price }: { courseId: string; price
 
   return (
     <div>
-      <button className="btn btn-primary" onClick={handleClick} disabled={loading}>
-        {loading ? "Redirecting to payment…" : `Get Full Access — KSh ${price.toLocaleString()}`}
+      <button className="btn btn-secondary w-full" onClick={handleClick} disabled={loading}>
+        {loading ? "Redirecting to payment…" : `Pay by Card — KSh ${price.toLocaleString()}`}
       </button>
       {error && <p className="text-xs text-red-600 mt-3">{error}</p>}
     </div>

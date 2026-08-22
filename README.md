@@ -106,6 +106,27 @@ custom authorization layer bolted on top.
       trusting the webhook payload or the redirect alone — before marking
       the payment `success` and upserting the `active` enrollment.
       Idempotent, so whichever of the two arrives first wins.
+- [x] **M-Pesa (Daraja STK Push)** — a second payment option next to
+      Paystack, since Paystack's business approval can take days and this
+      is a Kenya-first product. `POST /api/payments/mpesa/initiate`
+      creates a `pending` payment row (`provider='mpesa'`) and triggers
+      the PIN prompt on the customer's phone (`lib/mpesa.ts`,
+      `initiateStkPush`). Unlike Paystack's webhook, Safaricom's async
+      callback (`POST /api/payments/mpesa/callback`) carries no signature
+      to verify it's genuine, so `finalizeMpesaPayment()` never trusts it
+      alone — it re-queries Safaricom directly (`stkpushquery`) before
+      marking a payment `success`. The frontend (`MpesaPayButton`) polls
+      `GET /api/payments/mpesa/status` every 3s while waiting, which
+      nudges the same finalize-and-re-verify path in case the callback is
+      slow or never arrives — so either path resolves the payment.
+      Business account is a Till (Buy Goods), so `TransactionType`
+      defaults to `CustomerBuyGoodsOnline`; set
+      `MPESA_TRANSACTION_TYPE=CustomerPayBillOnline` if that ever changes,
+      or while testing against Safaricom's shared sandbox shortcode (which
+      is provisioned as a Paybill). Currently configured with sandbox
+      Daraja credentials — real money only moves once `MPESA_ENV=production`
+      and the real Till's production Consumer Key/Secret/passkey (issued
+      after Daraja's "Go Live" approval) replace the sandbox ones.
 - [x] **Phase 5** — Admin dashboard (`/admin`). Restricted to
       `profiles.role = 'admin'` — enforced in `lib/supabase/middleware.ts`
       (redirects non-admins to `/dashboard`) and again in every
@@ -176,7 +197,8 @@ lib/
                                          curation + content + persistence via admin client
   supabase/{client,server,admin}.ts     Browser / server / service-role clients
   paystack.ts                           Real — initialize/verify transaction, webhook signature
-  payments.ts                           Real — finalizePayment(): verify + mark success + enroll
+  mpesa.ts                              Real — Daraja OAuth, STK push, stkpushquery re-verify
+  payments.ts                           Real — finalizePayment()/finalizeMpesaPayment(): verify + mark success + enroll
   adminAuth.ts                          Real — requireAdmin(), used by every /api/admin/* route
 supabase/migrations/
   0001_init.sql                         Schema + RLS
@@ -187,6 +209,8 @@ supabase/migrations/
   0005_course_display_order.sql         courses.display_order column
   0006_curated_catalog.sql              10-course curated catalog content (day 1)
   0012_curated_catalog_day2.sql         10-course curated catalog content (day 2)
+  0013_vibe_coding_curriculum.sql       Backfilled real curriculum for a manually-created empty course
+  0014_mpesa_payments.sql               payments.provider/phone/checkout_request_id/mpesa_receipt columns
 middleware.ts                           Session refresh + route protection
 ```
 
@@ -215,6 +239,19 @@ never the webhook payload or redirect query params alone — then marks the
 payment `success` and upserts an `active` enrollment. It's idempotent
 (checks `payments.status` first), so whichever of the two arrives first
 does the work and the other is a no-op.
+
+**M-Pesa** (`/api/payments/mpesa/{initiate,callback,status}`, `lib/mpesa.ts`):
+same `payments` table (`provider='mpesa'`), same idempotent shape, different
+transport. `initiate` triggers Safaricom's STK Push (the PIN prompt on the
+customer's phone) and stores Safaricom's `CheckoutRequestID` — the id its
+async callback carries back, since the callback has no way to echo our own
+`reference`. Daraja's callback has no signature to verify, so
+`finalizeMpesaPayment()` treats it only as a nudge: it re-queries Safaricom's
+`stkpushquery` endpoint directly before ever marking a payment `success`.
+`GET /api/payments/mpesa/status` (polled by the browser every 3s while
+`MpesaPayButton` shows "check your phone") calls the same finalize function,
+so a slow or missing callback still resolves — the poll does the same
+authoritative re-check the callback would have triggered.
 
 **AI course generator** (`/courses/request`, `lib/courseGenerator.ts`):
 runs synchronously inside the request (`maxDuration = 60` on the API

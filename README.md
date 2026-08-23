@@ -94,7 +94,14 @@ custom authorization layer bolted on top.
       Voice-Over Basics, Transcription & Translation Freelancing, YouTube
       Channel Growth & Video SEO, Customer Service & Virtual Call Center
       Skills, Resume Writing/LinkedIn/Personal Branding, 3D Design &
-      Animation (Blender). Backed by real YouTube tutorials from established
+      Animation (Blender). Day 4 (`0028_curated_catalog_day4.sql`):
+      Affiliate Marketing, WordPress Website Building (No-Code), No-Code App
+      Building (Adalo, Glide & FlutterFlow), Online Tutoring & Course
+      Creation, Personal Finance & Budgeting Basics, Public Speaking &
+      Communication Skills, WhatsApp Business & Facebook Marketplace
+      Selling, Time Management & Productivity for Remote Workers, Digital
+      Illustration (Procreate & Adobe Fresco), Virtual Event Planning &
+      Webinar Hosting. Backed by real YouTube tutorials from established
       channels. Written by hand instead of spending Anthropic/YouTube API
       calls on topics already known to be wanted — the AI generator is
       reserved for topics outside this set. `courses.display_order`

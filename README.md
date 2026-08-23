@@ -94,13 +94,30 @@ custom authorization layer bolted on top.
       Voice-Over Basics, Transcription & Translation Freelancing, YouTube
       Channel Growth & Video SEO, Customer Service & Virtual Call Center
       Skills, Resume Writing/LinkedIn/Personal Branding, 3D Design &
-      Animation (Blender). Each course has 3 modules of 2 lessons, backed by real
-      YouTube tutorials from established channels. Written by hand instead
-      of spending Anthropic/YouTube API calls on topics already known to be
-      wanted — the AI generator is reserved for topics outside this set.
-      `courses.display_order` controls the deliberate ordering on
-      `/courses` so it alternates between quick-win/business, creative, and
-      technical skills instead of reading as a wall of similar courses.
+      Animation (Blender). Backed by real YouTube tutorials from established
+      channels. Written by hand instead of spending Anthropic/YouTube API
+      calls on topics already known to be wanted — the AI generator is
+      reserved for topics outside this set. `courses.display_order`
+      controls the deliberate ordering on `/courses` so it alternates
+      between quick-win/business, creative, and technical skills instead of
+      reading as a wall of similar courses.
+- [x] **Beginner-to-professional depth expansion** — every course in the
+      catalog was widened from 3 modules/6 lessons (beginner only) to 6
+      modules/12 lessons spanning beginner → intermediate → professional,
+      so a learner finishes job-ready instead of just aware of the basics.
+      For each course, the original module 3 ("Working Like a Pro" or
+      equivalent, already solid professional-tier content) is bumped to
+      `order_number = 5`, and three new modules are inserted: an
+      intermediate-technique module (order 3), a real-world applied-project
+      module (order 4), and a freelance/career/scaling module (order 6).
+      Shipped in 5 migrations (`0020`-`0024`, ~6 courses each). Every one of
+      the 150+ new lesson videos was sourced via web research and
+      independently verified (two separate corroborating searches per
+      video, plus personal re-verification of anything only single-sourced)
+      before being added — this project also caught and fixed a live bug
+      where an entire course ("Web Development for Beginners") had 20 fake
+      `REPLACE_ME` placeholder video URLs from the original scaffold,
+      undetected until a full-catalog video-health audit.
 - [x] **Phase 4** — Paystack payment + webhook + course access.
       `POST /api/payments/initiate` creates a `pending` payment row and
       starts a Paystack transaction, redirecting the browser to Paystack's

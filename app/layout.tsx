@@ -19,6 +19,15 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: { default: TITLE, template: "%s — SkillPath Africa" },
   description: DESCRIPTION,
+  manifest: "/manifest.json",
+  appleWebApp: {
+    // iOS only fires Web Push for a site added to the home screen —
+    // this is what makes "Add to Home Screen" turn the site into a
+    // real installable app instead of just a bookmark.
+    capable: true,
+    statusBarStyle: "default",
+    title: "SkillPath",
+  },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

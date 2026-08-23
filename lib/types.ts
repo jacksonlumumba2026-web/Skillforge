@@ -133,6 +133,27 @@ export type CourseReview = {
   updated_at: string;
 };
 
+/** A browser's Web Push endpoint/keys — one row per device/browser the learner enabled notifications on. */
+export type PushSubscription = {
+  id: string;
+  user_id: string;
+  endpoint: string;
+  p256dh: string;
+  auth: string;
+  created_at: string;
+};
+
+/** A learner's daily study-reminder schedule. */
+export type StudyReminder = {
+  user_id: string;
+  reminder_time: string;
+  utc_offset_minutes: number;
+  enabled: boolean;
+  last_sent_date: string | null;
+  created_at: string;
+  updated_at: string;
+};
+
 /** "Apply to teach" waitlist row — a lead, not a real seller account. */
 export type InstructorApplication = {
   id: string;
@@ -229,6 +250,8 @@ export type Database = {
         ]
       >;
       instructor_applications: Table<InstructorApplication>;
+      push_subscriptions: Table<PushSubscription>;
+      study_reminders: Table<StudyReminder>;
       certificates: Table<
         Certificate,
         [

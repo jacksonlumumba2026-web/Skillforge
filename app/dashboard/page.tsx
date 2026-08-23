@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { getOrderedLessons } from "@/lib/courses";
 import CertificateButton from "@/components/CertificateButton";
+import ReminderSetup from "@/components/ReminderSetup";
 
 export default async function DashboardPage() {
   const supabase = await createClient();
@@ -61,12 +62,23 @@ export default async function DashboardPage() {
     .eq("user_id", user.id);
   const certificateByCourseId = new Map((certificateRows ?? []).map((c) => [c.course_id, c.id]));
 
+  // Prompt to set up a daily study reminder once — right after their
+  // first course, before they've made any choice about reminders yet.
+  const { data: existingReminder } = await supabase
+    .from("study_reminders")
+    .select("user_id")
+    .eq("user_id", user.id)
+    .maybeSingle();
+  const showReminderSetup = courses.length > 0 && !existingReminder;
+
   return (
     <div className="container-page py-16">
       <h1 className="text-2xl font-bold mb-1">
         Welcome{profile?.full_name ? `, ${profile.full_name.split(" ")[0]}` : ""}
       </h1>
       <p className="text-[var(--muted)] mb-10">Here&apos;s where you left off.</p>
+
+      {showReminderSetup && <ReminderSetup />}
 
       <h2 className="text-lg font-semibold mb-4">My Courses</h2>
 

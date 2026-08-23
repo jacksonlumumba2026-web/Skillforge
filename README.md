@@ -170,6 +170,29 @@ custom authorization layer bolted on top.
       policy included) already only allows `active`/`completed`, so a
       revoked enrollment is automatically excluded everywhere access is
       gated.
+- [x] **Daily study reminders** (Web Push) — after a learner's first
+      course, `/dashboard` prompts them once to pick an hour (6am–10pm);
+      if they haven't completed a lesson yet that day by then, a real
+      push notification lands on their phone. `public/sw.js` is the
+      service worker that shows the notification; on iPhone, Web Push
+      only works for a site added to the Home Screen (a Safari
+      limitation, not ours) — `ReminderSetup` detects that case and
+      prompts for it. `vercel.json` defines 17 separate hourly cron
+      entries (03:00–19:00 UTC) all hitting `/api/cron/study-reminders`,
+      rather than one `*/15`-style entry — Vercel's Hobby plan only
+      allows a single cron entry to fire once a day, so many
+      once-a-day entries at different hours is the documented way to get
+      hourly coverage without a paid plan. Each firing checks
+      `study_reminders` (RLS: own-row only, read via the service role
+      here since this is a cross-user batch job) for anyone due this
+      hour who hasn't already been notified today (`last_sent_date`) and
+      hasn't completed a lesson today (`lesson_progress.completed_at`),
+      then sends via `lib/webpush.ts` (VAPID) to every row in
+      `push_subscriptions` for that user — deleting the row on a
+      410/404 (dead subscription) instead of retrying it forever.
+      `CRON_SECRET` gates the route: Vercel sends it automatically as
+      `Authorization: Bearer <value>` on every cron invocation once the
+      env var is set, so the route just checks it matches.
 
 **Live Supabase project:** `skillpath-africa` (`xzncootldgqhghokxcrd`,
 `us-east-1`) — migrations `0001`–`0006` applied.
@@ -230,6 +253,11 @@ lib/
   mpesa.ts                              Real — Daraja OAuth, STK push, stkpushquery re-verify
   payments.ts                           Real — finalizePayment()/finalizeMpesaPayment(): verify + mark success + enroll
   adminAuth.ts                          Real — requireAdmin(), used by every /api/admin/* route
+  webpush.ts                             Real — VAPID-signed push send, deletes dead subscriptions on 410/404
+public/
+  sw.js                                  Service worker — shows the push notification, handles its click
+  manifest.json                          PWA manifest — required for Web Push to work on iOS (Add to Home Screen)
+vercel.json                             17 hourly cron entries -> /api/cron/study-reminders (Hobby-plan workaround)
 supabase/migrations/
   0001_init.sql                         Schema + RLS
   0002_seed_courses.sql                 Sample courses + full "Web
@@ -243,6 +271,9 @@ supabase/migrations/
   0013_vibe_coding_curriculum.sql       Backfilled real curriculum for a manually-created empty course
   0014_mpesa_payments.sql               payments.provider/phone/checkout_request_id/mpesa_receipt columns
   0015_refunds.sql                      payments 'refunded' + enrollments 'revoked' statuses
+  0017_fix_private_2fa_video.sql         Data fix: one video had gone private
+  0018_fix_web_dev_placeholder_videos.sql Data fix: 20 fake seed-data video ids replaced with real ones
+  0019_study_reminders.sql              push_subscriptions + study_reminders tables
 middleware.ts                           Session refresh + route protection
 ```
 

@@ -122,6 +122,36 @@ export type Payment = {
   checkout_request_id: string | null;
   /** M-Pesa only — the human-facing receipt code, stored for support/reconciliation only. */
   mpesa_receipt: string | null;
+  /** Set when a discount/scholarship code was applied — `amount` above is
+   *  already the discounted total actually charged (or 0 for a full
+   *  scholarship). */
+  discount_code_id: string | null;
+  /** The course's full price before the discount code, for admin visibility. Null when no code was applied. */
+  original_amount: number | null;
+  created_at: string;
+};
+
+/** Admin-issued percent-off code — the affordability lever for learners who
+ *  can't pay full price. A 100% code is a full scholarship. */
+export type DiscountCode = {
+  id: string;
+  code: string;
+  percent_off: number;
+  max_redemptions: number | null;
+  redemption_count: number;
+  active: boolean;
+  expires_at: string | null;
+  note: string | null;
+  created_by: string | null;
+  created_at: string;
+};
+
+/** One (code, learner) redemption — enforces "once per user per code" and gives an audit trail. */
+export type DiscountCodeRedemption = {
+  id: string;
+  discount_code_id: string;
+  user_id: string;
+  payment_id: string;
   created_at: string;
 };
 
@@ -264,6 +294,26 @@ export type Database = {
         ]
       >;
       instructor_applications: Table<InstructorApplication>;
+      discount_codes: Table<DiscountCode>;
+      discount_code_redemptions: Table<
+        DiscountCodeRedemption,
+        [
+          {
+            foreignKeyName: "discount_code_redemptions_discount_code_id_fkey";
+            columns: ["discount_code_id"];
+            isOneToOne: false;
+            referencedRelation: "discount_codes";
+            referencedColumns: ["id"];
+          },
+          {
+            foreignKeyName: "discount_code_redemptions_payment_id_fkey";
+            columns: ["payment_id"];
+            isOneToOne: false;
+            referencedRelation: "payments";
+            referencedColumns: ["id"];
+          },
+        ]
+      >;
       push_subscriptions: Table<PushSubscription>;
       study_reminders: Table<StudyReminder>;
       certificates: Table<
@@ -305,6 +355,11 @@ export type Database = {
         ];
       };
     };
-    Functions: Record<string, never>;
+    Functions: {
+      increment_discount_redemption: {
+        Args: { p_discount_code_id: string };
+        Returns: void;
+      };
+    };
   };
 };

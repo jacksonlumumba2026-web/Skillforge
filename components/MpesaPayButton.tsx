@@ -5,7 +5,15 @@ import { useRouter } from "next/navigation";
 
 type Status = "idle" | "pushing" | "waiting" | "error";
 
-export default function MpesaPayButton({ courseId, price }: { courseId: string; price: number }) {
+export default function MpesaPayButton({
+  courseId,
+  price,
+  discountCode,
+}: {
+  courseId: string;
+  price: number;
+  discountCode?: string;
+}) {
   const router = useRouter();
   const [phone, setPhone] = useState("");
   const [status, setStatus] = useState<Status>("idle");
@@ -26,12 +34,18 @@ export default function MpesaPayButton({ courseId, price }: { courseId: string; 
     const res = await fetch("/api/payments/mpesa/initiate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ courseId, phone }),
+      body: JSON.stringify({ courseId, phone, discountCode: discountCode || undefined }),
     });
     const data = await res.json();
     if (!res.ok) {
       setError(data.error ?? "Could not start M-Pesa payment.");
       setStatus("error");
+      return;
+    }
+
+    if (data.free) {
+      router.push(`/courses/${data.courseId}?payment=success`);
+      router.refresh();
       return;
     }
 

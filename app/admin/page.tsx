@@ -53,6 +53,9 @@ export default async function AdminPage() {
           <Link href="/admin/payments" className="text-sm" style={{ color: "var(--primary)" }}>
             Payments
           </Link>
+          <Link href="/admin/discount-codes" className="text-sm" style={{ color: "var(--primary)" }}>
+            Discount Codes
+          </Link>
           <Link href="/admin/users" className="text-sm" style={{ color: "var(--primary)" }}>
             Users
           </Link>

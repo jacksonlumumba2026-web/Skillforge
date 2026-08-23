@@ -1,8 +1,18 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
-export default function PayButton({ courseId, price }: { courseId: string; price: number }) {
+export default function PayButton({
+  courseId,
+  price,
+  discountCode,
+}: {
+  courseId: string;
+  price: number;
+  discountCode?: string;
+}) {
+  const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -12,7 +22,7 @@ export default function PayButton({ courseId, price }: { courseId: string; price
     const res = await fetch("/api/payments/initiate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ courseId }),
+      body: JSON.stringify({ courseId, discountCode: discountCode || undefined }),
     });
     const data = await res.json();
 
@@ -22,6 +32,11 @@ export default function PayButton({ courseId, price }: { courseId: string; price
       return;
     }
 
+    if (data.free) {
+      router.push(`/courses/${data.courseId}?payment=success`);
+      router.refresh();
+      return;
+    }
     window.location.href = data.authorizationUrl;
   }
 

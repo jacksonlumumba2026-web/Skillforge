@@ -2,6 +2,7 @@ import "server-only";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { verifyTransaction } from "@/lib/paystack";
 import { queryStkPushStatus } from "@/lib/mpesa";
+import { recordDiscountRedemption } from "@/lib/discountCodes";
 
 /**
  * Finalizes a Paystack payment by re-verifying it directly with Paystack
@@ -17,7 +18,7 @@ export async function finalizePayment(
 
   const { data: payment } = await admin
     .from("payments")
-    .select("user_id, course_id, status")
+    .select("id, user_id, course_id, status, discount_code_id")
     .eq("reference", reference)
     .maybeSingle();
   if (!payment) return { ok: false, error: "Unknown payment reference." };
@@ -41,6 +42,9 @@ export async function finalizePayment(
       { user_id: payment.user_id, course_id: payment.course_id, status: "active" },
       { onConflict: "user_id,course_id" },
     );
+  if (payment.discount_code_id) {
+    await recordDiscountRedemption(payment.discount_code_id, payment.user_id, payment.id);
+  }
 
   return { ok: true, courseId: payment.course_id };
 }
@@ -62,7 +66,7 @@ export async function finalizeMpesaPayment(
 
   const { data: payment } = await admin
     .from("payments")
-    .select("user_id, course_id, status")
+    .select("id, user_id, course_id, status, discount_code_id")
     .eq("checkout_request_id", checkoutRequestId)
     .maybeSingle();
   if (!payment) return { ok: false, error: "Unknown M-Pesa transaction." };
@@ -94,6 +98,9 @@ export async function finalizeMpesaPayment(
       { user_id: payment.user_id, course_id: payment.course_id, status: "active" },
       { onConflict: "user_id,course_id" },
     );
+  if (payment.discount_code_id) {
+    await recordDiscountRedemption(payment.discount_code_id, payment.user_id, payment.id);
+  }
 
   return { ok: true, courseId: payment.course_id };
 }

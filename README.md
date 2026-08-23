@@ -157,6 +157,25 @@ custom authorization layer bolted on top.
       Daraja credentials — real money only moves once `MPESA_ENV=production`
       and the real Till's production Consumer Key/Secret/passkey (issued
       after Daraja's "Go Live" approval) replace the sandbox ones.
+- [x] **Manual M-Pesa fallback** — for while STK Push isn't usable
+      (Daraja needs a live production shortcode; a Till/PayBill approval
+      can take a while, and Safaricom has no API to auto-verify a payment
+      into a personal number regardless). Two independent channels, each
+      optional via env vars: Buy Goods (`MPESA_TILL_NUMBER`/`_NAME`) and
+      Send Money to a personal number (`MPESA_MANUAL_NUMBER`/`_NAME`).
+      Buyer pays by hand on their phone, types the M-Pesa confirmation
+      code back into `ManualMpesaPayment`, and gets access immediately
+      (`POST /api/payments/mpesa-manual/submit`) — grant-then-audit, not
+      verify-then-grant, since there's no API path to verify either
+      channel programmatically. `payments.mpesa_manual_code` is unique
+      (a code only works once across the whole platform) and
+      `manual_channel` records which one so the admin knows which
+      statement page to check. `/admin/payments` shows the code +
+      verified/not-yet-checked status with a "Mark Verified" audit
+      action (`manual_verified_at`) — access was already granted by
+      submission time, so this is a record of the spot-check, not a
+      gate; the existing refund tool revokes access if a code turns out
+      fake or reused.
 - [x] **Phase 5** — Admin dashboard (`/admin`). Restricted to
       `profiles.role = 'admin'` — enforced in `lib/supabase/middleware.ts`
       (redirects non-admins to `/dashboard`) and again in every

@@ -23,7 +23,7 @@ export default async function AdminPaymentsPage() {
   const { data: payments } = await admin
     .from("payments")
     .select(
-      "id, user_id, reference, amount, status, provider, phone, mpesa_manual_code, manual_verified_at, created_at, courses(title)",
+      "id, user_id, reference, amount, status, provider, phone, mpesa_manual_code, manual_channel, manual_verified_at, created_at, courses(title)",
     )
     .order("created_at", { ascending: false })
     .limit(200);
@@ -70,7 +70,8 @@ export default async function AdminPaymentsPage() {
                     {payment.phone && <span className="text-[var(--muted)]"> · {payment.phone}</span>}
                     {payment.mpesa_manual_code && (
                       <div className="text-xs text-[var(--muted)] mt-0.5">
-                        Code: <span className="font-mono">{payment.mpesa_manual_code}</span>
+                        {payment.manual_channel === "till" ? "Till" : "Send Money"} · Code:{" "}
+                        <span className="font-mono">{payment.mpesa_manual_code}</span>
                         {payment.manual_verified_at ? (
                           <span style={{ color: "var(--success)" }}> · Verified</span>
                         ) : (

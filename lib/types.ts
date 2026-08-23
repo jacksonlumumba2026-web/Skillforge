@@ -124,6 +124,8 @@ export type Payment = {
   mpesa_receipt: string | null;
   /** Manual M-Pesa only — the confirmation code the buyer typed in themselves (self-reported, not Safaricom-confirmed). */
   mpesa_manual_code: string | null;
+  /** Manual M-Pesa only — which channel the buyer says they paid through (informational, for statement lookup). */
+  manual_channel: "till" | "send_money" | null;
   /** Manual M-Pesa only — set by an admin once they've checked the code against the real M-Pesa statement. */
   manual_verified_at: string | null;
   /** Set when a discount/scholarship code was applied — `amount` above is

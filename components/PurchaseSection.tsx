@@ -12,11 +12,13 @@ type Applied = { code: string; percentOff: number; discountedPrice: number };
 export default function PurchaseSection({
   courseId,
   price,
-  manualMpesa,
+  manualMpesaTill,
+  manualMpesaSendMoney,
 }: {
   courseId: string;
   price: number;
-  manualMpesa?: { number: string; name: string };
+  manualMpesaTill?: { number: string; name: string };
+  manualMpesaSendMoney?: { number: string; name: string };
 }) {
   const t = useTranslate();
   const [showCodeField, setShowCodeField] = useState(false);
@@ -64,13 +66,13 @@ export default function PurchaseSection({
       </div>
       <PayButton courseId={courseId} price={effectivePrice} discountCode={applied?.code} />
 
-      {manualMpesa && effectivePrice > 0 && (
+      {(manualMpesaTill || manualMpesaSendMoney) && effectivePrice > 0 && (
         <ManualMpesaPayment
           courseId={courseId}
           price={effectivePrice}
           discountCode={applied?.code}
-          mpesaNumber={manualMpesa.number}
-          mpesaName={manualMpesa.name}
+          till={manualMpesaTill}
+          sendMoney={manualMpesaSendMoney}
         />
       )}
 

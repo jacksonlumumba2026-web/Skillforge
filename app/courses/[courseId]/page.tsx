@@ -240,7 +240,12 @@ export default async function CourseDetailPage({
           <PurchaseSection
             courseId={course.id}
             price={course.price}
-            manualMpesa={
+            manualMpesaTill={
+              process.env.MPESA_TILL_NUMBER && process.env.MPESA_TILL_NAME
+                ? { number: process.env.MPESA_TILL_NUMBER, name: process.env.MPESA_TILL_NAME }
+                : undefined
+            }
+            manualMpesaSendMoney={
               process.env.MPESA_MANUAL_NUMBER && process.env.MPESA_MANUAL_NAME
                 ? { number: process.env.MPESA_MANUAL_NUMBER, name: process.env.MPESA_MANUAL_NAME }
                 : undefined

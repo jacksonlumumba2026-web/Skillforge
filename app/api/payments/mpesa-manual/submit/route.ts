@@ -15,6 +15,7 @@ const requestSchema = z.object({
     .trim()
     .toUpperCase()
     .regex(/^[A-Z0-9]{10}$/, "That doesn't look like a valid M-Pesa confirmation code."),
+  channel: z.enum(["till", "send_money"]),
   discountCode: z.string().trim().max(50).optional(),
 });
 
@@ -27,14 +28,16 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "You must be logged in to buy a course." }, { status: 401 });
   }
 
-  if (!process.env.MPESA_MANUAL_NUMBER) {
-    return NextResponse.json({ error: "This payment option isn't available right now." }, { status: 400 });
-  }
-
   const body = await request.json().catch(() => null);
   const parsed = requestSchema.safeParse(body);
   if (!parsed.success) {
     return NextResponse.json({ error: parsed.error.issues[0]?.message ?? "Invalid request." }, { status: 400 });
+  }
+
+  const channelConfigured =
+    parsed.data.channel === "till" ? Boolean(process.env.MPESA_TILL_NUMBER) : Boolean(process.env.MPESA_MANUAL_NUMBER);
+  if (!channelConfigured) {
+    return NextResponse.json({ error: "This payment option isn't available right now." }, { status: 400 });
   }
 
   const { data: course } = await supabase
@@ -83,6 +86,7 @@ export async function POST(request: Request) {
       status: "success",
       provider: "mpesa_manual",
       mpesa_manual_code: parsed.data.code,
+      manual_channel: parsed.data.channel,
       discount_code_id: discountCodeId,
       original_amount: originalAmount,
     })

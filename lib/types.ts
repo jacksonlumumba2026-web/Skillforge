@@ -42,6 +42,10 @@ export type Course = {
   generated_by: string | null;
   /** Lower sorts first on /courses; curated independently of created_at. */
   display_order: number;
+  /** Short name for the capstone task, e.g. "Security Audit & Hardening Plan". Null until a brief is written for this course. */
+  capstone_title: string | null;
+  /** The actual task description — a real thing to go build/do, not another video. Null until a brief is written for this course. */
+  capstone_brief: string | null;
   /** True once a course has been widened past `level` into a full 6-module
    *  beginner→intermediate→professional→freelance progression (see the
    *  course-depth-expansion migrations). False for courses that are still
@@ -135,6 +139,17 @@ export type Payment = {
   /** The course's full price before the discount code, for admin visibility. Null when no code was applied. */
   original_amount: number | null;
   created_at: string;
+};
+
+/** A learner's proof-of-work for a course's capstone brief — a link to
+ *  something they actually built, not a video-watch checkbox. */
+export type CapstoneSubmission = {
+  id: string;
+  user_id: string;
+  course_id: string;
+  submission_url: string;
+  note: string | null;
+  submitted_at: string;
 };
 
 /** Admin-issued percent-off code — the affordability lever for learners who
@@ -301,6 +316,18 @@ export type Database = {
       >;
       instructor_applications: Table<InstructorApplication>;
       discount_codes: Table<DiscountCode>;
+      capstone_submissions: Table<
+        CapstoneSubmission,
+        [
+          {
+            foreignKeyName: "capstone_submissions_course_id_fkey";
+            columns: ["course_id"];
+            isOneToOne: false;
+            referencedRelation: "courses";
+            referencedColumns: ["id"];
+          },
+        ]
+      >;
       discount_code_redemptions: Table<
         DiscountCodeRedemption,
         [

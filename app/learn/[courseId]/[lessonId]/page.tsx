@@ -6,6 +6,7 @@ import type { LessonPreview, Course } from "@/lib/types";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import DataSaverNote from "@/components/DataSaverNote";
 import CertificateButton from "@/components/CertificateButton";
+import CapstoneCard from "@/components/CapstoneCard";
 import LessonControls from "./LessonControls";
 import CourseSidebar from "./CourseSidebar";
 
@@ -24,10 +25,21 @@ export default async function LessonPage({
 
   const { data: course } = await supabase
     .from("courses")
-    .select("id, title")
+    .select("id, title, capstone_title, capstone_brief")
     .eq("id", courseId)
     .maybeSingle();
   if (!course) notFound();
+
+  let capstoneSubmission: { submission_url: string; note: string | null } | null = null;
+  if (course.capstone_brief) {
+    const { data: submission } = await supabase
+      .from("capstone_submissions")
+      .select("submission_url, note")
+      .eq("user_id", user.id)
+      .eq("course_id", courseId)
+      .maybeSingle();
+    capstoneSubmission = submission ?? null;
+  }
 
   // Full lesson content is RLS-gated to enrolled users. If this comes back
   // empty, distinguish "doesn't exist" from "exists but you haven't paid"
@@ -164,13 +176,23 @@ export default async function LessonPage({
         )}
       </div>
 
-      <CourseSidebar
-        courseId={courseId}
-        currentLessonId={lesson.id}
-        modules={modules ?? []}
-        lessonsByModule={lessonsByModule}
-        completedIds={completedIds}
-      />
+      <div className="space-y-6">
+        {course.capstone_title && course.capstone_brief && (
+          <CapstoneCard
+            courseId={courseId}
+            title={course.capstone_title}
+            brief={course.capstone_brief}
+            existingSubmission={capstoneSubmission}
+          />
+        )}
+        <CourseSidebar
+          courseId={courseId}
+          currentLessonId={lesson.id}
+          modules={modules ?? []}
+          lessonsByModule={lessonsByModule}
+          completedIds={completedIds}
+        />
+      </div>
     </div>
   );
 }

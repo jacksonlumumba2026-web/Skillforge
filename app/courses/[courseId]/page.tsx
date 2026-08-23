@@ -179,6 +179,16 @@ export default async function CourseDetailPage({
         <DataSaverNote compact />
       </div>
 
+      {course.capstone_title && course.capstone_brief && (
+        <div className="card p-5 mb-10">
+          <p className="text-xs font-semibold uppercase tracking-wide text-[var(--muted)] mb-1">
+            What you&apos;ll build
+          </p>
+          <p className="font-semibold mb-2">{course.capstone_title}</p>
+          <p className="text-sm text-[var(--muted)] whitespace-pre-line">{course.capstone_brief}</p>
+        </div>
+      )}
+
       <h2 className="text-lg font-semibold mb-5">Curriculum</h2>
       <div className="space-y-6 mb-10">
         {(modules ?? []).map((module) => (

@@ -4,6 +4,7 @@ import { createClient } from "@/lib/supabase/server";
 import { getOrderedLessons, getSuggestedNextCourse, formatDuration } from "@/lib/courses";
 import type { LessonPreview, Course } from "@/lib/types";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
+import DataSaverNote from "@/components/DataSaverNote";
 import CertificateButton from "@/components/CertificateButton";
 import LessonControls from "./LessonControls";
 import CourseSidebar from "./CourseSidebar";
@@ -124,6 +125,9 @@ export default async function LessonPage({
         </div>
 
         <YouTubeEmbed url={lesson.youtube_url} title={lesson.title} />
+        <div className="mt-3">
+          <DataSaverNote />
+        </div>
 
         <div className="mt-8">
           <LessonControls

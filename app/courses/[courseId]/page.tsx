@@ -7,6 +7,7 @@ import { SITE_URL } from "@/lib/site";
 import PayButton from "@/components/PayButton";
 import MpesaPayButton from "@/components/MpesaPayButton";
 import StarRating from "@/components/StarRating";
+import DataSaverNote from "@/components/DataSaverNote";
 import ReviewForm from "./ReviewForm";
 import type { LessonPreview } from "@/lib/types";
 
@@ -173,6 +174,10 @@ export default async function CourseDetailPage({
         <span className="font-semibold text-[var(--foreground)] text-base">
           KSh {course.price.toLocaleString()}
         </span>
+      </div>
+
+      <div className="mb-10">
+        <DataSaverNote compact />
       </div>
 
       <h2 className="text-lg font-semibold mb-5">Curriculum</h2>

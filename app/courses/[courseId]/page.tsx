@@ -237,7 +237,15 @@ export default async function CourseDetailPage({
             Continue Learning
           </Link>
         ) : user ? (
-          <PurchaseSection courseId={course.id} price={course.price} />
+          <PurchaseSection
+            courseId={course.id}
+            price={course.price}
+            manualMpesa={
+              process.env.MPESA_MANUAL_NUMBER && process.env.MPESA_MANUAL_NAME
+                ? { number: process.env.MPESA_MANUAL_NUMBER, name: process.env.MPESA_MANUAL_NAME }
+                : undefined
+            }
+          />
         ) : (
           <Link href="/register" className="btn btn-primary">
             Get Full Access — KSh {course.price.toLocaleString()}

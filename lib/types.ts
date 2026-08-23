@@ -106,7 +106,7 @@ export type LessonProgress = {
   created_at: string;
 };
 
-export type PaymentProvider = "paystack" | "mpesa";
+export type PaymentProvider = "paystack" | "mpesa" | "mpesa_manual";
 
 export type Payment = {
   id: string;
@@ -120,8 +120,12 @@ export type Payment = {
   phone: string | null;
   /** M-Pesa only — Safaricom's id for the checkout request, used to match its async callback. */
   checkout_request_id: string | null;
-  /** M-Pesa only — the human-facing receipt code, stored for support/reconciliation only. */
+  /** M-Pesa STK only — the human-facing receipt code, stored for support/reconciliation only. */
   mpesa_receipt: string | null;
+  /** Manual M-Pesa only — the confirmation code the buyer typed in themselves (self-reported, not Safaricom-confirmed). */
+  mpesa_manual_code: string | null;
+  /** Manual M-Pesa only — set by an admin once they've checked the code against the real M-Pesa statement. */
+  manual_verified_at: string | null;
   /** Set when a discount/scholarship code was applied — `amount` above is
    *  already the discounted total actually charged (or 0 for a full
    *  scholarship). */

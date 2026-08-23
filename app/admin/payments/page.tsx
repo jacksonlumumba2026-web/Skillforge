@@ -1,11 +1,18 @@
 import { createAdminClient } from "@/lib/supabase/admin";
 import RefundButton from "./RefundButton";
+import MarkVerifiedButton from "./MarkVerifiedButton";
 
 const STATUS_STYLE: Record<string, { background: string; color: string }> = {
   success: { background: "var(--success)", color: "white" },
   pending: { background: "var(--surface)", color: "var(--muted)" },
   failed: { background: "#dc2626", color: "white" },
   refunded: { background: "#f59e0b", color: "white" },
+};
+
+const PROVIDER_LABEL: Record<string, string> = {
+  paystack: "Paystack",
+  mpesa: "M-Pesa (STK)",
+  mpesa_manual: "M-Pesa (manual)",
 };
 
 // Service-role read, same reasoning as the rest of /admin: payments has no
@@ -15,7 +22,9 @@ export default async function AdminPaymentsPage() {
 
   const { data: payments } = await admin
     .from("payments")
-    .select("id, user_id, reference, amount, status, provider, phone, created_at, courses(title)")
+    .select(
+      "id, user_id, reference, amount, status, provider, phone, mpesa_manual_code, manual_verified_at, created_at, courses(title)",
+    )
     .order("created_at", { ascending: false })
     .limit(200);
 
@@ -56,9 +65,19 @@ export default async function AdminPaymentsPage() {
                   <td className="p-4 font-medium">{emailByUser.get(payment.user_id) ?? "—"}</td>
                   <td className="p-4">{course?.title ?? "—"}</td>
                   <td className="p-4">KSh {Number(payment.amount).toLocaleString()}</td>
-                  <td className="p-4 capitalize">
-                    {payment.provider}
+                  <td className="p-4">
+                    {PROVIDER_LABEL[payment.provider] ?? payment.provider}
                     {payment.phone && <span className="text-[var(--muted)]"> · {payment.phone}</span>}
+                    {payment.mpesa_manual_code && (
+                      <div className="text-xs text-[var(--muted)] mt-0.5">
+                        Code: <span className="font-mono">{payment.mpesa_manual_code}</span>
+                        {payment.manual_verified_at ? (
+                          <span style={{ color: "var(--success)" }}> · Verified</span>
+                        ) : (
+                          <span> · Not yet checked</span>
+                        )}
+                      </div>
+                    )}
                   </td>
                   <td className="p-4">{new Date(payment.created_at).toLocaleDateString()}</td>
                   <td className="p-4">
@@ -67,7 +86,12 @@ export default async function AdminPaymentsPage() {
                     </span>
                   </td>
                   <td className="p-4 text-right">
-                    {payment.status === "success" && <RefundButton paymentId={payment.id} />}
+                    <div className="flex justify-end gap-2">
+                      {payment.provider === "mpesa_manual" && !payment.manual_verified_at && (
+                        <MarkVerifiedButton paymentId={payment.id} />
+                      )}
+                      {payment.status === "success" && <RefundButton paymentId={payment.id} />}
+                    </div>
                   </td>
                 </tr>
               );

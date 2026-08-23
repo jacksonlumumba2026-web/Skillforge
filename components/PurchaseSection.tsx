@@ -4,10 +4,19 @@ import { useState } from "react";
 import Link from "next/link";
 import MpesaPayButton from "@/components/MpesaPayButton";
 import PayButton from "@/components/PayButton";
+import ManualMpesaPayment from "@/components/ManualMpesaPayment";
 
 type Applied = { code: string; percentOff: number; discountedPrice: number };
 
-export default function PurchaseSection({ courseId, price }: { courseId: string; price: number }) {
+export default function PurchaseSection({
+  courseId,
+  price,
+  manualMpesa,
+}: {
+  courseId: string;
+  price: number;
+  manualMpesa?: { number: string; name: string };
+}) {
   const [showCodeField, setShowCodeField] = useState(false);
   const [codeInput, setCodeInput] = useState("");
   const [applying, setApplying] = useState(false);
@@ -52,6 +61,16 @@ export default function PurchaseSection({ courseId, price }: { courseId: string;
         <span className="flex-1 h-px" style={{ background: "var(--border)" }} />
       </div>
       <PayButton courseId={courseId} price={effectivePrice} discountCode={applied?.code} />
+
+      {manualMpesa && effectivePrice > 0 && (
+        <ManualMpesaPayment
+          courseId={courseId}
+          price={effectivePrice}
+          discountCode={applied?.code}
+          mpesaNumber={manualMpesa.number}
+          mpesaName={manualMpesa.name}
+        />
+      )}
 
       {showCodeField ? (
         <form onSubmit={handleApply} className="space-y-2">

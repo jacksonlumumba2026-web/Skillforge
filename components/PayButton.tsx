@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { useTranslate } from "@/components/LocaleProvider";
 
 export default function PayButton({
   courseId,
@@ -13,6 +14,7 @@ export default function PayButton({
   discountCode?: string;
 }) {
   const router = useRouter();
+  const t = useTranslate();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -43,7 +45,7 @@ export default function PayButton({
   return (
     <div>
       <button className="btn btn-secondary w-full" onClick={handleClick} disabled={loading}>
-        {loading ? "Redirecting to payment…" : `Pay by Card — KSh ${price.toLocaleString()}`}
+        {loading ? "Redirecting to payment…" : `${t("purchase.payByCard")} — KSh ${price.toLocaleString()}`}
       </button>
       {error && <p className="text-xs text-red-600 mt-3">{error}</p>}
     </div>

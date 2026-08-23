@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
+import { useTranslate } from "@/components/LocaleProvider";
 
 function friendlyError(message: string): string {
   const lower = message.toLowerCase();
@@ -18,6 +19,7 @@ function friendlyError(message: string): string {
 
 export default function RegisterPage() {
   const router = useRouter();
+  const t = useTranslate();
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -68,13 +70,13 @@ export default function RegisterPage() {
 
   return (
     <div className="container-page py-16 max-w-md">
-      <h1 className="text-2xl font-bold mb-2">Create your account</h1>
-      <p className="text-[var(--muted)] mb-8">Start learning practical digital skills today.</p>
+      <h1 className="text-2xl font-bold mb-2">{t("register.title")}</h1>
+      <p className="text-[var(--muted)] mb-8">{t("register.subtitle")}</p>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label className="field-label" htmlFor="fullName">
-            Full name
+            {t("register.fullNameLabel")}
           </label>
           <input
             id="fullName"
@@ -87,7 +89,7 @@ export default function RegisterPage() {
         </div>
         <div>
           <label className="field-label" htmlFor="email">
-            Email
+            {t("register.emailLabel")}
           </label>
           <input
             id="email"
@@ -100,7 +102,7 @@ export default function RegisterPage() {
         </div>
         <div>
           <label className="field-label" htmlFor="password">
-            Password
+            {t("register.passwordLabel")}
           </label>
           <input
             id="password"
@@ -113,7 +115,7 @@ export default function RegisterPage() {
         </div>
         <div>
           <label className="field-label" htmlFor="confirmPassword">
-            Confirm password
+            {t("register.confirmPasswordLabel")}
           </label>
           <input
             id="confirmPassword"
@@ -128,14 +130,14 @@ export default function RegisterPage() {
         {error && <p className="text-sm text-red-600">{error}</p>}
 
         <button type="submit" className="btn btn-primary w-full" disabled={loading}>
-          {loading ? "Creating account…" : "Create account"}
+          {loading ? t("register.submitting") : t("register.submit")}
         </button>
       </form>
 
       <p className="text-sm text-[var(--muted)] mt-6 text-center">
-        Already have an account?{" "}
+        {t("register.alreadyHaveAccount")}{" "}
         <Link href="/login" className="font-medium" style={{ color: "var(--primary)" }}>
-          Log in
+          {t("register.logIn")}
         </Link>
       </p>
     </div>

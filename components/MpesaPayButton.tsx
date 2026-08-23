@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import { useTranslate } from "@/components/LocaleProvider";
 
 type Status = "idle" | "pushing" | "waiting" | "error";
 
@@ -15,6 +16,7 @@ export default function MpesaPayButton({
   discountCode?: string;
 }) {
   const router = useRouter();
+  const t = useTranslate();
   const [phone, setPhone] = useState("");
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
@@ -96,7 +98,7 @@ export default function MpesaPayButton({
         disabled={status === "pushing"}
       />
       <button type="submit" className="btn btn-secondary w-full" disabled={status === "pushing"}>
-        {status === "pushing" ? "Sending prompt to your phone…" : `Pay KSh ${price.toLocaleString()} with M-Pesa`}
+        {status === "pushing" ? "Sending prompt to your phone…" : `${t("purchase.payWithMpesa")} — KSh ${price.toLocaleString()}`}
       </button>
       {error && <p className="text-xs text-red-600">{error}</p>}
     </form>

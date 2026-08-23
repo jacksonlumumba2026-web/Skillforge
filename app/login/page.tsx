@@ -4,6 +4,7 @@ import { Suspense, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
+import { useTranslate } from "@/components/LocaleProvider";
 
 function friendlyError(message: string): string {
   const lower = message.toLowerCase();
@@ -19,6 +20,7 @@ function friendlyError(message: string): string {
 function LoginForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const t = useTranslate();
   const redirectTo = searchParams.get("redirect") || "/dashboard";
   const justRegistered = searchParams.get("confirm") === "1";
 
@@ -54,14 +56,14 @@ function LoginForm() {
     <>
       {justRegistered && (
         <p className="text-sm mb-4" style={{ color: "var(--primary)" }}>
-          Check your inbox to confirm your email, then log in below.
+          {t("login.confirmEmail")}
         </p>
       )}
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label className="field-label" htmlFor="email">
-            Email
+            {t("login.emailLabel")}
           </label>
           <input
             id="email"
@@ -74,7 +76,7 @@ function LoginForm() {
         </div>
         <div>
           <label className="field-label" htmlFor="password">
-            Password
+            {t("login.passwordLabel")}
           </label>
           <input
             id="password"
@@ -89,14 +91,14 @@ function LoginForm() {
         {error && <p className="text-sm text-red-600">{error}</p>}
 
         <button type="submit" className="btn btn-primary w-full" disabled={loading}>
-          {loading ? "Logging in…" : "Log in"}
+          {loading ? t("login.submitting") : t("login.submit")}
         </button>
       </form>
 
       <p className="text-sm text-[var(--muted)] mt-6 text-center">
-        New here?{" "}
+        {t("login.newHere")}{" "}
         <Link href="/register" className="font-medium" style={{ color: "var(--primary)" }}>
-          Create an account
+          {t("login.createAccount")}
         </Link>
       </p>
     </>
@@ -104,10 +106,11 @@ function LoginForm() {
 }
 
 export default function LoginPage() {
+  const t = useTranslate();
   return (
     <div className="container-page py-16 max-w-md">
-      <h1 className="text-2xl font-bold mb-2">Log in</h1>
-      <p className="text-[var(--muted)] mb-8">Welcome back — keep learning where you left off.</p>
+      <h1 className="text-2xl font-bold mb-2">{t("login.title")}</h1>
+      <p className="text-[var(--muted)] mb-8">{t("login.subtitle")}</p>
       <Suspense fallback={null}>
         <LoginForm />
       </Suspense>

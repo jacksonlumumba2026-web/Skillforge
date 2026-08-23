@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { cookies } from "next/headers";
 import { createClient } from "@/lib/supabase/server";
 import { getOrderedLessons } from "@/lib/courses";
 import CertificateButton from "@/components/CertificateButton";
 import ReminderSetup from "@/components/ReminderSetup";
+import { t, LOCALE_COOKIE, type Locale } from "@/lib/i18n";
 
 export default async function DashboardPage() {
   const supabase = await createClient();
@@ -71,12 +73,16 @@ export default async function DashboardPage() {
     .maybeSingle();
   const showReminderSetup = courses.length > 0 && !existingReminder;
 
+  const cookieStore = await cookies();
+  const locale: Locale = cookieStore.get(LOCALE_COOKIE)?.value === "sw" ? "sw" : "en";
+
   return (
     <div className="container-page py-16">
       <h1 className="text-2xl font-bold mb-1">
-        Welcome{profile?.full_name ? `, ${profile.full_name.split(" ")[0]}` : ""}
+        {t(locale, "dashboard.welcome")}
+        {profile?.full_name ? `, ${profile.full_name.split(" ")[0]}` : ""}
       </h1>
-      <p className="text-[var(--muted)] mb-10">Here&apos;s where you left off.</p>
+      <p className="text-[var(--muted)] mb-10">{t(locale, "dashboard.subtitle")}</p>
 
       {showReminderSetup && <ReminderSetup />}
 

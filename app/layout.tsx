@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { cookies } from "next/headers";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { LocaleProvider } from "@/components/LocaleProvider";
+import { LOCALE_COOKIE, type Locale } from "@/lib/i18n";
 import { SITE_URL } from "@/lib/site";
 
 const inter = Inter({
@@ -43,13 +46,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
+  const cookieStore = await cookies();
+  const locale: Locale = cookieStore.get(LOCALE_COOKIE)?.value === "sw" ? "sw" : "en";
+
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+    <html lang={locale} className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <LocaleProvider initialLocale={locale}>
+          <Navbar locale={locale} />
+          <main className="flex-1">{children}</main>
+          <Footer locale={locale} />
+        </LocaleProvider>
       </body>
     </html>
   );

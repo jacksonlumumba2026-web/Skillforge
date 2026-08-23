@@ -2,8 +2,9 @@
 
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
+import { t, type Locale } from "@/lib/i18n";
 
-export default function LogoutButton() {
+export default function LogoutButton({ locale }: { locale: Locale }) {
   const router = useRouter();
 
   async function handleLogout() {
@@ -15,7 +16,7 @@ export default function LogoutButton() {
 
   return (
     <button onClick={handleLogout} className="btn btn-secondary" style={{ padding: "8px 18px" }}>
-      Log out
+      {t(locale, "nav.logout")}
     </button>
   );
 }

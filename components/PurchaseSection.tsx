@@ -5,6 +5,7 @@ import Link from "next/link";
 import MpesaPayButton from "@/components/MpesaPayButton";
 import PayButton from "@/components/PayButton";
 import ManualMpesaPayment from "@/components/ManualMpesaPayment";
+import { useTranslate } from "@/components/LocaleProvider";
 
 type Applied = { code: string; percentOff: number; discountedPrice: number };
 
@@ -17,6 +18,7 @@ export default function PurchaseSection({
   price: number;
   manualMpesa?: { number: string; name: string };
 }) {
+  const t = useTranslate();
   const [showCodeField, setShowCodeField] = useState(false);
   const [codeInput, setCodeInput] = useState("");
   const [applying, setApplying] = useState(false);
@@ -57,7 +59,7 @@ export default function PurchaseSection({
       <MpesaPayButton courseId={courseId} price={effectivePrice} discountCode={applied?.code} />
       <div className="flex items-center gap-3 text-xs text-[var(--muted)]">
         <span className="flex-1 h-px" style={{ background: "var(--border)" }} />
-        or
+        {t("purchase.or")}
         <span className="flex-1 h-px" style={{ background: "var(--border)" }} />
       </div>
       <PayButton courseId={courseId} price={effectivePrice} discountCode={applied?.code} />
@@ -100,7 +102,7 @@ export default function PurchaseSection({
           className="text-xs font-medium"
           style={{ color: "var(--primary)" }}
         >
-          Have a discount code?
+          {t("purchase.haveDiscountCode")}
         </button>
       )}
 

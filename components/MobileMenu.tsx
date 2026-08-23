@@ -2,13 +2,16 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { t, type Locale } from "@/lib/i18n";
 
 export default function MobileMenu({
   loggedIn,
   isAdmin,
+  locale,
 }: {
   loggedIn: boolean;
   isAdmin: boolean;
+  locale: Locale;
 }) {
   const [open, setOpen] = useState(false);
 
@@ -29,22 +32,22 @@ export default function MobileMenu({
         <div className="absolute left-0 right-0 top-16 border-b border-[var(--border)] bg-[var(--background)] shadow-sm">
           <nav className="container-page py-4 flex flex-col gap-1 text-sm font-medium">
             <Link href="/courses" className="py-2" onClick={() => setOpen(false)}>
-              Courses
+              {t(locale, "nav.courses")}
             </Link>
             {loggedIn ? (
               <>
                 <Link href="/dashboard" className="py-2" onClick={() => setOpen(false)}>
-                  Dashboard
+                  {t(locale, "nav.dashboard")}
                 </Link>
                 {isAdmin && (
                   <Link href="/admin" className="py-2" onClick={() => setOpen(false)}>
-                    Admin
+                    {t(locale, "nav.admin")}
                   </Link>
                 )}
               </>
             ) : (
               <Link href="/login" className="py-2" onClick={() => setOpen(false)}>
-                Login
+                {t(locale, "nav.login")}
               </Link>
             )}
           </nav>

@@ -2,8 +2,10 @@ import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import LogoutButton from "@/components/LogoutButton";
 import MobileMenu from "@/components/MobileMenu";
+import LanguageToggle from "@/components/LanguageToggle";
+import { t, type Locale } from "@/lib/i18n";
 
-export default async function Navbar() {
+export default async function Navbar({ locale }: { locale: Locale }) {
   const supabase = await createClient();
   const {
     data: { user },
@@ -28,31 +30,32 @@ export default async function Navbar() {
 
         <nav className="flex items-center gap-6 text-sm font-medium">
           <Link href="/courses" className="hidden sm:inline">
-            Courses
+            {t(locale, "nav.courses")}
           </Link>
           {user ? (
             <>
               <Link href="/dashboard" className="hidden sm:inline">
-                Dashboard
+                {t(locale, "nav.dashboard")}
               </Link>
               {isAdmin && (
                 <Link href="/admin" className="hidden sm:inline">
-                  Admin
+                  {t(locale, "nav.admin")}
                 </Link>
               )}
-              <LogoutButton />
+              <LogoutButton locale={locale} />
             </>
           ) : (
             <>
               <Link href="/login" className="hidden sm:inline">
-                Login
+                {t(locale, "nav.login")}
               </Link>
               <Link href="/register" className="btn btn-primary" style={{ padding: "8px 18px" }}>
-                Get Started
+                {t(locale, "nav.getStarted")}
               </Link>
             </>
           )}
-          <MobileMenu loggedIn={Boolean(user)} isAdmin={isAdmin} />
+          <LanguageToggle />
+          <MobileMenu loggedIn={Boolean(user)} isAdmin={isAdmin} locale={locale} />
         </nav>
       </div>
     </header>

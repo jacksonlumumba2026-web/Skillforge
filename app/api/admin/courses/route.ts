@@ -14,6 +14,10 @@ const courseSchema = z.object({
     .regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, "Slug must be lowercase letters, numbers, and hyphens only."),
   description: z.string().trim().min(1).max(2000),
   level: z.enum(["beginner", "intermediate", "advanced"]),
+  category: z
+    .enum(["business-freelancing", "marketing-growth", "design-creative", "tech-programming", "productivity-tools"])
+    .nullable()
+    .default(null),
   price: z.number().int().min(0),
   published: z.boolean().default(false),
   display_order: z.number().int().default(0),

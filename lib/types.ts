@@ -7,6 +7,12 @@
 // every `.from()` call's row types to `never`.
 
 export type CourseLevel = "beginner" | "intermediate" | "advanced";
+export type CourseCategory =
+  | "business-freelancing"
+  | "marketing-growth"
+  | "design-creative"
+  | "tech-programming"
+  | "productivity-tools";
 export type UserRole = "student" | "admin";
 export type EnrollmentStatus = "active" | "completed" | "revoked";
 export type PaymentStatus = "pending" | "success" | "failed" | "refunded";
@@ -26,6 +32,9 @@ export type Course = {
   slug: string;
   description: string;
   level: CourseLevel;
+  /** Browsing bucket for /courses filter chips. Null for courses (mainly
+   *  admin-created or AI-generated) that haven't been assigned one yet. */
+  category: CourseCategory | null;
   price: number;
   thumbnail_url: string | null;
   published: boolean;

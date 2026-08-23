@@ -1,5 +1,13 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
-import type { Database, Course, CourseLevel, LessonPreview } from "@/lib/types";
+import type { Database, Course, CourseCategory, CourseLevel, LessonPreview } from "@/lib/types";
+
+export const COURSE_CATEGORY_LABEL: Record<CourseCategory, string> = {
+  "business-freelancing": "Business & Freelancing",
+  "marketing-growth": "Marketing & Growth",
+  "design-creative": "Design & Creative",
+  "tech-programming": "Tech & Programming",
+  "productivity-tools": "Productivity & Tools",
+};
 
 export type CourseWithLessonCount = Course & {
   lessonCount: number;
@@ -34,7 +42,7 @@ export function formatDuration(seconds: number): string {
  */
 export async function getPublishedCourses(
   supabase: SupabaseClient<Database>,
-  options?: { limit?: number; search?: string; level?: CourseLevel },
+  options?: { limit?: number; search?: string; level?: CourseLevel; category?: CourseCategory },
 ): Promise<CourseWithLessonCount[]> {
   let query = supabase
     .from("courses")
@@ -43,6 +51,7 @@ export async function getPublishedCourses(
     .order("display_order", { ascending: true })
     .order("created_at", { ascending: true });
   if (options?.level) query = query.eq("level", options.level);
+  if (options?.category) query = query.eq("category", options.category);
   if (options?.search) {
     const term = options.search.trim().replace(/[%_]/g, "");
     if (term) query = query.or(`title.ilike.%${term}%,description.ilike.%${term}%`);

@@ -15,6 +15,10 @@ const updateSchema = z.object({
     .optional(),
   description: z.string().trim().min(1).max(2000).optional(),
   level: z.enum(["beginner", "intermediate", "advanced"]).optional(),
+  category: z
+    .enum(["business-freelancing", "marketing-growth", "design-creative", "tech-programming", "productivity-tools"])
+    .nullable()
+    .optional(),
   price: z.number().int().min(0).optional(),
   published: z.boolean().optional(),
   display_order: z.number().int().optional(),

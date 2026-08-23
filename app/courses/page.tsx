@@ -4,9 +4,15 @@ import { createClient } from "@/lib/supabase/server";
 import { getPublishedCourses } from "@/lib/courses";
 import CourseCard from "@/components/CourseCard";
 import CourseFilters from "./CourseFilters";
-import type { CourseLevel } from "@/lib/types";
+import type { CourseCategory } from "@/lib/types";
 
-const VALID_LEVELS: CourseLevel[] = ["beginner", "intermediate", "advanced"];
+const VALID_CATEGORIES: CourseCategory[] = [
+  "business-freelancing",
+  "marketing-growth",
+  "design-creative",
+  "tech-programming",
+  "productivity-tools",
+];
 
 export const metadata: Metadata = {
   title: "Courses",
@@ -17,18 +23,20 @@ export const metadata: Metadata = {
 export default async function CoursesPage({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string; level?: string }>;
+  searchParams: Promise<{ q?: string; category?: string }>;
 }) {
-  const { q, level } = await searchParams;
+  const { q, category } = await searchParams;
   const search = q ?? "";
-  const validLevel = VALID_LEVELS.includes(level as CourseLevel) ? (level as CourseLevel) : "";
+  const validCategory = VALID_CATEGORIES.includes(category as CourseCategory)
+    ? (category as CourseCategory)
+    : "";
 
   const supabase = await createClient();
   const courses = await getPublishedCourses(supabase, {
     search: search || undefined,
-    level: validLevel || undefined,
+    category: validCategory || undefined,
   });
-  const isFiltered = Boolean(search || validLevel);
+  const isFiltered = Boolean(search || validCategory);
 
   return (
     <div className="container-page py-16">
@@ -39,7 +47,7 @@ export default async function CoursesPage({
         </p>
       </div>
 
-      <CourseFilters initialSearch={search} initialLevel={validLevel} />
+      <CourseFilters initialSearch={search} initialCategory={validCategory} />
 
       {courses.length === 0 ? (
         <p className="text-center text-[var(--muted)]">

@@ -2,7 +2,10 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import type { Course, CourseLevel } from "@/lib/types";
+import { COURSE_CATEGORY_LABEL } from "@/lib/courses";
+import type { Course, CourseCategory, CourseLevel } from "@/lib/types";
+
+const CATEGORIES = Object.keys(COURSE_CATEGORY_LABEL) as CourseCategory[];
 
 function slugify(text: string): string {
   return text
@@ -23,6 +26,7 @@ export default function CourseForm({ course }: { course?: Course }) {
   const [slugTouched, setSlugTouched] = useState(isEdit);
   const [description, setDescription] = useState(course?.description ?? "");
   const [level, setLevel] = useState<CourseLevel>(course?.level ?? "beginner");
+  const [category, setCategory] = useState<CourseCategory | "">(course?.category ?? "");
   const [price, setPrice] = useState(course?.price ?? 500);
   const [displayOrder, setDisplayOrder] = useState(course?.display_order ?? 0);
   const [published, setPublished] = useState(course?.published ?? false);
@@ -34,7 +38,16 @@ export default function CourseForm({ course }: { course?: Course }) {
     setSaving(true);
     setError(null);
 
-    const body = { title, slug, description, level, price, display_order: displayOrder, published };
+    const body = {
+      title,
+      slug,
+      description,
+      level,
+      category: category || null,
+      price,
+      display_order: displayOrder,
+      published,
+    };
     const res = await fetch(isEdit ? `/api/admin/courses/${course!.id}` : "/api/admin/courses", {
       method: isEdit ? "PATCH" : "POST",
       headers: { "Content-Type": "application/json" },
@@ -130,6 +143,25 @@ export default function CourseForm({ course }: { course?: Course }) {
             onChange={(e) => setPrice(Number(e.target.value))}
           />
         </div>
+      </div>
+
+      <div>
+        <label className="field-label" htmlFor="category">
+          Category (controls the /courses filter chips)
+        </label>
+        <select
+          id="category"
+          className="field-input"
+          value={category}
+          onChange={(e) => setCategory(e.target.value as CourseCategory | "")}
+        >
+          <option value="">Uncategorized</option>
+          {CATEGORIES.map((cat) => (
+            <option key={cat} value={cat}>
+              {COURSE_CATEGORY_LABEL[cat]}
+            </option>
+          ))}
+        </select>
       </div>
 
       <div className="grid grid-cols-2 gap-4 items-end">

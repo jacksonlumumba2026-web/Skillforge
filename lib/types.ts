@@ -33,6 +33,11 @@ export type Course = {
   generated_by: string | null;
   /** Lower sorts first on /courses; curated independently of created_at. */
   display_order: number;
+  /** True once a course has been widened past `level` into a full 6-module
+   *  beginner→intermediate→professional→freelance progression (see the
+   *  course-depth-expansion migrations). False for courses that are still
+   *  a single-tier walkthrough at just their `level`. */
+  has_career_path: boolean;
   created_at: string;
   updated_at: string;
 };

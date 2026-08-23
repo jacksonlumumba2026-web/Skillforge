@@ -16,7 +16,7 @@ export default function CourseCard({ course }: { course: CourseWithLessonCount }
           className="text-xs font-semibold px-2.5 py-1 rounded-full"
           style={{ background: "var(--surface)", color: "var(--muted)" }}
         >
-          {LEVEL_LABEL[course.level] ?? course.level}
+          {course.has_career_path ? "Beginner → Professional" : LEVEL_LABEL[course.level] ?? course.level}
         </span>
       </div>
 

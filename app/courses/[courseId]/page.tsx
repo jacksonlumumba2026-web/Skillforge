@@ -16,6 +16,17 @@ const LEVEL_LABEL: Record<string, string> = {
   advanced: "Advanced",
 };
 
+/** Tier label per module position for courses with the full 6-module
+ *  beginner→professional→freelance progression (see has_career_path). */
+const MODULE_TIER_LABEL: Record<number, string> = {
+  1: "Beginner",
+  2: "Beginner",
+  3: "Intermediate",
+  4: "Professional",
+  5: "Capstone Project",
+  6: "Freelance-Ready",
+};
+
 export async function generateMetadata({
   params,
 }: {
@@ -135,7 +146,7 @@ export default async function CourseDetailPage({
         className="inline-block text-xs font-semibold px-2.5 py-1 rounded-full mb-4"
         style={{ background: "var(--surface)", color: "var(--muted)" }}
       >
-        {LEVEL_LABEL[course.level] ?? course.level}
+        {course.has_career_path ? "Beginner → Professional" : LEVEL_LABEL[course.level] ?? course.level}
       </span>
       <h1 className="text-3xl font-bold mb-3">{course.title}</h1>
       {averageRating !== null && (
@@ -168,8 +179,18 @@ export default async function CourseDetailPage({
       <div className="space-y-6 mb-10">
         {(modules ?? []).map((module) => (
           <div key={module.id} className="card p-5">
-            <h3 className="font-semibold mb-3 text-sm uppercase tracking-wide text-[var(--muted)]">
-              Module {module.order_number} — {module.title}
+            <h3 className="font-semibold mb-3 text-sm uppercase tracking-wide text-[var(--muted)] flex items-center gap-2">
+              <span>
+                Module {module.order_number} — {module.title}
+              </span>
+              {course.has_career_path && MODULE_TIER_LABEL[module.order_number] && (
+                <span
+                  className="normal-case text-[10px] font-semibold px-2 py-0.5 rounded-full"
+                  style={{ background: "var(--surface)", color: "var(--primary)" }}
+                >
+                  {MODULE_TIER_LABEL[module.order_number]}
+                </span>
+              )}
             </h3>
             <ul className="space-y-3">
               {(lessonsByModule.get(module.id) ?? []).map((lesson, i) => {

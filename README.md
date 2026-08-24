@@ -255,12 +255,20 @@ custom authorization layer bolted on top.
       Cybersecurity- or Blender-specific by name; any course can be
       migrated onto the Level model the same way, and the ~38 courses that
       haven't been are completely unaffected (flat module list, unchanged).
-      Cybersecurity & Online Safety is the first course rebuilt: Level 1
-      "Foundations" (4 modules, 26 real lessons) and Level 2 "Core
-      Security" (3 modules, 20 real lessons — Common Threats & Attacks,
-      Authentication & Access Control, Cryptography Basics) are both fully
-      built (46 lessons total so far); Levels 3-5 (Practical Security,
-      Defensive Security, Projects) aren't built yet. Rebuilding Level 1
+      Three courses are being migrated onto it so far, one at a time —
+      the build order is depth-first per course (finish every level of one
+      course, publish it, then start the next) rather than spreading a
+      single level across many courses. Web Development for Beginners:
+      Level 1 "Foundations" built (3 modules, 15 real lessons — How the Web
+      Works, Developer Tools & Workflow, Thinking Like a Developer), with
+      Levels 2-9 (HTML, CSS, JavaScript, Frontend, Backend & Databases,
+      APIs/Auth/Security, Deployment & Projects, Portfolio & Freelancing)
+      still to build. Cybersecurity & Online Safety: Level 1 "Foundations"
+      (4 modules, 26 real lessons) and Level 2 "Core Security" (3 modules,
+      20 real lessons — Common Threats & Attacks, Authentication & Access
+      Control, Cryptography Basics) are both fully built (46 lessons so
+      far); Levels 3-5 (Practical Security, Defensive Security, Projects)
+      aren't built yet. Rebuilding Level 1
       deleted the old 6-module/12-lesson structure outright (it didn't map
       onto the new one), cascading to reset the one enrolled learner's
       lesson progress on this course — confirmed to be the site owner's own

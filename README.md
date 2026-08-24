@@ -261,7 +261,19 @@ custom authorization layer bolted on top.
       6-module/12-lesson structure outright (it didn't map onto the new
       one), which cascaded to reset the one enrolled learner's lesson
       progress on this course — confirmed to be the site owner's own test
-      enrollment before doing this.
+      enrollment before doing this. "3D Design & Animation (Blender)" is the
+      second course rebuilt: 9 levels (Foundations → Modeling → Materials,
+      Texturing & Shading → Lighting & Rendering → Animation → Rigging &
+      Character Animation → Advanced 3D Workflow → Real-World Projects →
+      Portfolio & Freelancing), with Level 1 "Blender Foundations" fully
+      built — 3 modules, 19 real, individually-verified lessons culminating
+      in Blender Guru's well-known "Donut" beginner project. Videos for both
+      courses were sourced and cross-verified with two independent web
+      searches per video (not the paid Anthropic-generated content
+      pipeline — that path exists separately for `/courses/request` but
+      wasn't used for these rebuilds) rather than an LLM API call, since no
+      lesson count is fabricated to hit a target: depth is driven by what
+      the subject actually needs to teach, module by module.
 - [x] **"Learning Path" terminology** — renamed "Course"/"Courses" to
       "Learning Path"/"Learning Paths" throughout learner-facing UI copy
       (nav, homepage, course/lesson pages, dashboard, certificates) and the

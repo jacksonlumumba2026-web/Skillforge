@@ -337,11 +337,47 @@ custom authorization layer bolted on top.
 in `.env.local`, and in Vercel for production), so `/courses/request`
 works end to end for topics outside the curated 10.
 
-**Still needed to actually run payments:** `PAYSTACK_SECRET_KEY` (test or
-live) in `.env.local` and Vercel. Once it's set, add
-`https://<your-domain>/api/payments/webhook` as the webhook URL in the
-Paystack dashboard (Settings → API Keys & Webhooks) — that's a one-time
-manual step in Paystack's dashboard, nothing to configure in this repo.
+### Going live with Paystack
+
+The Paystack account is **approved and switched to Live**. Nothing in this
+repo needs changing for that — the whole flow is server-side (the browser is
+redirected to Paystack's `authorization_url`), so there is no publishable key
+to wire up, and `callback_url` is derived from the request origin so preview
+and production both work without config. The only variable is
+`PAYSTACK_SECRET_KEY`.
+
+Checklist for taking real money:
+
+1. **Vercel → Settings → Environment Variables**: set `PAYSTACK_SECRET_KEY`
+   to the live key (`sk_live_…`) for **Production**, then redeploy — env var
+   changes don't apply to already-built deployments.
+2. **Paystack → Settings → API Keys & Webhooks, on the Live tab**: set the
+   webhook URL to `https://skillforge-delta-nine.vercel.app/api/payments/webhook`.
+   Paystack keeps test and live webhook config separate, so a URL registered
+   on the test tab will never fire for a live payment.
+3. **Leave `.env.local` on the test key** (`sk_test_…`) so local development
+   never charges a real card.
+
+⚠️ **The failure mode to avoid:** a live dashboard paired with a test key in
+the app. `isValidWebhookSignature` verifies Paystack's HMAC using
+`PAYSTACK_SECRET_KEY`, and Paystack signs live events with the *live* secret
+— so a test key makes every live webhook fail signature validation and return
+401. The customer is charged, `finalizePayment()` never runs, and no
+enrollment is created. Money in, no access. Swapping the key in Vercel is
+what prevents this, and it's why the key and the dashboard mode must always
+match.
+
+Worth doing once, after switching: buy the cheapest course with a real card,
+confirm access is granted, then refund it from `/admin/payments`. That
+exercises initialize → charge → webhook → signature check → enrollment
+end to end, which test mode can't fully prove.
+
+Two safeguards already in place and not dependent on any of the above: the
+webhook never trusts its own payload (`finalizePayment()` re-queries Paystack
+directly before granting access — the signature only proves the request came
+from Paystack, not that the transaction succeeded), and the M-Pesa paths
+(STK Push and the manual Till/Send Money fallback) are entirely independent
+of Paystack's status.
 
 ## File structure
 

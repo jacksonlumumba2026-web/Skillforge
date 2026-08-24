@@ -101,8 +101,16 @@ custom authorization layer bolted on top.
       Communication Skills, WhatsApp Business & Facebook Marketplace
       Selling, Time Management & Productivity for Remote Workers, Digital
       Illustration (Procreate & Adobe Fresco), Virtual Event Planning &
-      Webinar Hosting. Backed by real YouTube tutorials from established
-      channels. Written by hand instead of spending Anthropic/YouTube API
+      Webinar Hosting. Day 5 (`0041_curated_catalog_day5.sql`): IT Support
+      & Help Desk Fundamentals, SQL & Databases for Beginners, Cloud
+      Computing Fundamentals (AWS), Workflow Automation with Zapier, Sales
+      & Lead Generation for Small Business, Technical Writing &
+      Documentation — six, not ten: four researched topics (Motion
+      Graphics, GA4, Grant Writing, Digital Products) were dropped because
+      their videos' channels couldn't be confirmed by two independent
+      searches, and shipping guessed attribution into a paid product is
+      worse than shipping fewer courses. Backed by real YouTube tutorials
+      from established channels. Written by hand instead of spending Anthropic/YouTube API
       calls on topics already known to be wanted — the AI generator is
       reserved for topics outside this set. `courses.display_order`
       controls the deliberate ordering on `/courses` so it alternates

@@ -68,7 +68,7 @@ export default async function CertificatePage({
 
       <div className="text-center mt-8">
         <Link href="/courses" className="text-sm" style={{ color: "var(--primary)" }}>
-          Explore more courses on SkillPath Africa
+          Explore more Learning Paths on SkillPath Africa
         </Link>
       </div>
     </div>

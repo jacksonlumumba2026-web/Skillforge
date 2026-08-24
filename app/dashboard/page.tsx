@@ -86,13 +86,13 @@ export default async function DashboardPage() {
 
       {showReminderSetup && <ReminderSetup />}
 
-      <h2 className="text-lg font-semibold mb-4">My Courses</h2>
+      <h2 className="text-lg font-semibold mb-4">My Learning Paths</h2>
 
       {courses.length === 0 ? (
         <div className="card p-10 text-center">
-          <p className="text-[var(--muted)] mb-6">You haven&apos;t started any courses yet.</p>
+          <p className="text-[var(--muted)] mb-6">You haven&apos;t started any learning paths yet.</p>
           <Link href="/courses" className="btn btn-primary">
-            Browse Courses
+            Browse Learning Paths
           </Link>
         </div>
       ) : (
@@ -107,7 +107,7 @@ export default async function DashboardPage() {
                 />
               </div>
               <p className="text-sm text-[var(--muted)] mb-5">
-                Progress: {pct}% ({done}/{total} lessons)
+                Learning Path Progress: {pct}% ({done}/{total} lessons)
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -115,7 +115,7 @@ export default async function DashboardPage() {
                   className="btn btn-primary"
                   style={{ padding: "8px 18px" }}
                 >
-                  {pct >= 100 ? "Review Course" : "Continue Learning"}
+                  {pct >= 100 ? "Review Learning Path" : "Continue Learning"}
                 </Link>
                 {pct >= 100 && (
                   <CertificateButton

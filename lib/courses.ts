@@ -1,5 +1,5 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
-import type { Database, Course, CourseCategory, CourseLevel, LessonPreview } from "@/lib/types";
+import type { Database, Course, CourseCategory, CourseLevel, CourseModule, Level, LessonPreview } from "@/lib/types";
 
 export const COURSE_CATEGORY_LABEL: Record<CourseCategory, string> = {
   "business-freelancing": "Business & Freelancing",
@@ -116,6 +116,44 @@ export async function getSuggestedNextCourse(
 
   const { data } = await query.maybeSingle();
   return data ?? null;
+}
+
+export type LevelWithModules = Level & { modules: CourseModule[] };
+
+/**
+ * A course's Levels, each with its Modules attached — the grouping used to
+ * render the Learning Path progression (Foundations, Core Skills, ...).
+ * Returns [] for the many courses that haven't been migrated onto the
+ * Level model yet (no rows in `levels`); callers should fall back to a
+ * flat module list in that case, exactly like the page rendered before
+ * Levels existed.
+ */
+export async function getLevelsForCourse(
+  supabase: SupabaseClient<Database>,
+  courseId: string,
+): Promise<LevelWithModules[]> {
+  const { data: levels } = await supabase
+    .from("levels")
+    .select("*")
+    .eq("course_id", courseId)
+    .order("order_number", { ascending: true });
+  if (!levels || levels.length === 0) return [];
+
+  const { data: modules } = await supabase
+    .from("modules")
+    .select("*")
+    .eq("course_id", courseId)
+    .order("order_number", { ascending: true });
+
+  const modulesByLevel = new Map<string, CourseModule[]>();
+  for (const courseModule of modules ?? []) {
+    if (!courseModule.level_id) continue;
+    const list = modulesByLevel.get(courseModule.level_id) ?? [];
+    list.push(courseModule);
+    modulesByLevel.set(courseModule.level_id, list);
+  }
+
+  return levels.map((level) => ({ ...level, modules: modulesByLevel.get(level.id) ?? [] }));
 }
 
 /**

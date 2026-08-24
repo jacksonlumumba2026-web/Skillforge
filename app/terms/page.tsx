@@ -49,9 +49,9 @@ export default function TermsPage() {
         </section>
 
         <section>
-          <h2 className="font-semibold mb-2">5. Course access</h2>
+          <h2 className="font-semibold mb-2">5. Learning Path access</h2>
           <p>
-            Once you&apos;ve paid for a course, you have ongoing access to it through your account for
+            Once you&apos;ve paid for a Learning Path, you have ongoing access to it through your account for
             as long as SkillPath Africa operates, subject to these Terms. We may occasionally update,
             swap, or remove individual lesson videos (for example, if a video is taken down by its
             original creator) without changing the price you paid.

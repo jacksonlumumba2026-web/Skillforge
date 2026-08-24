@@ -1,14 +1,16 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import { getOrderedLessons, getSuggestedNextCourse, formatDuration } from "@/lib/courses";
+import { getOrderedLessons, getSuggestedNextCourse, getLevelsForCourse, formatDuration } from "@/lib/courses";
 import type { LessonPreview, Course } from "@/lib/types";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import DataSaverNote from "@/components/DataSaverNote";
 import CertificateButton from "@/components/CertificateButton";
 import CapstoneCard from "@/components/CapstoneCard";
+import KnowledgeCheck from "@/components/KnowledgeCheck";
 import LessonControls from "./LessonControls";
 import CourseSidebar from "./CourseSidebar";
+import type { KnowledgeCheckQuestion } from "@/lib/types";
 
 export default async function LessonPage({
   params,
@@ -65,7 +67,7 @@ export default async function LessonPage({
           You need access to {course.title} to watch this lesson.
         </p>
         <Link href={`/courses/${course.id}`} className="btn btn-primary">
-          View course
+          View Learning Path
         </Link>
       </div>
     );
@@ -96,6 +98,7 @@ export default async function LessonPage({
     .select("id, title, order_number")
     .eq("course_id", courseId)
     .order("order_number", { ascending: true });
+  const levels = await getLevelsForCourse(supabase, courseId);
   const lessonsByModule = new Map<string, LessonPreview[]>();
   for (const previewLesson of orderedLessons) {
     const list = lessonsByModule.get(previewLesson.module_id) ?? [];
@@ -133,13 +136,43 @@ export default async function LessonPage({
           <h2 className="text-sm font-semibold uppercase tracking-wide text-[var(--muted)] mb-2">
             What you&apos;ll learn{duration && <span className="normal-case font-normal"> · {duration}</span>}
           </h2>
-          <p className="text-sm">{lesson.description || "No description yet."}</p>
+          <p className="text-sm mb-3">{lesson.description || "No description yet."}</p>
+          {lesson.learning_objectives && lesson.learning_objectives.length > 0 && (
+            <ul className="text-sm list-disc list-inside space-y-1">
+              {lesson.learning_objectives.map((objective, i) => (
+                <li key={i}>{objective}</li>
+              ))}
+            </ul>
+          )}
         </div>
 
         <YouTubeEmbed url={lesson.youtube_url} title={lesson.title} />
         <div className="mt-3">
           <DataSaverNote />
         </div>
+
+        {lesson.notes && (
+          <div className="card p-6 mt-6">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-[var(--muted)] mb-2">Notes</h2>
+            <p className="text-sm whitespace-pre-line">{lesson.notes}</p>
+          </div>
+        )}
+
+        {lesson.practice_activity && (
+          <div className="card p-6 mt-6">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-[var(--muted)] mb-2">Practice</h2>
+            <p className="text-sm whitespace-pre-line">{lesson.practice_activity}</p>
+          </div>
+        )}
+
+        {lesson.knowledge_check && lesson.knowledge_check.length > 0 && (
+          <div className="card p-6 mt-6">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-[var(--muted)] mb-3">
+              Knowledge Check
+            </h2>
+            <KnowledgeCheck questions={lesson.knowledge_check as KnowledgeCheckQuestion[]} />
+          </div>
+        )}
 
         <div className="mt-8">
           <LessonControls
@@ -168,7 +201,7 @@ export default async function LessonPage({
                   className="text-sm font-medium"
                   style={{ color: "var(--primary)" }}
                 >
-                  View course →
+                  View Learning Path →
                 </Link>
               </div>
             )}
@@ -189,6 +222,7 @@ export default async function LessonPage({
           courseId={courseId}
           currentLessonId={lesson.id}
           modules={modules ?? []}
+          levels={levels}
           lessonsByModule={lessonsByModule}
           completedIds={completedIds}
         />

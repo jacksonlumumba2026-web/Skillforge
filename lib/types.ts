@@ -55,13 +55,37 @@ export type Course = {
   updated_at: string;
 };
 
-export type CourseModule = {
+/**
+ * A progression tier within one course's Learning Path (Foundations, Core
+ * Skills, ...). Optional — most courses have no levels yet (their modules'
+ * level_id is null) and render as a flat module list, same as before this
+ * existed. Only a course deliberately migrated onto the deeper model has
+ * rows here.
+ */
+export type Level = {
   id: string;
   course_id: string;
   title: string;
   description: string;
   order_number: number;
   created_at: string;
+};
+
+export type CourseModule = {
+  id: string;
+  course_id: string;
+  title: string;
+  description: string;
+  order_number: number;
+  /** Which Level this module belongs to. Null for courses not yet on the Level model. */
+  level_id: string | null;
+  created_at: string;
+};
+
+export type KnowledgeCheckQuestion = {
+  question: string;
+  options: string[];
+  correct_index: number;
 };
 
 export type Lesson = {
@@ -73,16 +97,25 @@ export type Lesson = {
   order_number: number;
   /** Video length in seconds, when known. Null for lessons added before this was tracked. */
   duration_seconds: number | null;
+  /** 2-3 short "by the end of this lesson you'll be able to..." objectives. Null for lessons written before this existed. */
+  learning_objectives: string[] | null;
+  /** Short plain-English explanation of the core concept, supplementing the video. Null when not yet written. */
+  notes: string | null;
+  /** One concrete thing to go DO, not just watch. Null when not yet written. */
+  practice_activity: string | null;
+  /** Self-check questions, display-only for now (no scoring/persistence yet). Null when not yet written. */
+  knowledge_check: KnowledgeCheckQuestion[] | null;
   created_at: string;
   updated_at: string;
 };
 
 /**
  * Public curriculum preview row (public.lesson_previews view). Deliberately
- * includes `description` and `duration_seconds` — short marketing-style
- * teasers, not the lesson's actual paid content — so a visitor can
- * understand a course before buying. `youtube_url` stays gated to enrolled
- * users via the `lessons` table's RLS policy.
+ * includes `description`, `duration_seconds`, and `learning_objectives` —
+ * short marketing-style teasers, not the lesson's actual paid content — so
+ * a visitor can understand a course before buying. `youtube_url`, `notes`,
+ * `practice_activity`, and `knowledge_check` stay gated to enrolled users
+ * via the `lessons` table's RLS policy.
  */
 export type LessonPreview = {
   id: string;
@@ -91,6 +124,7 @@ export type LessonPreview = {
   title: string;
   description: string;
   duration_seconds: number | null;
+  learning_objectives: string[] | null;
 };
 
 export type Enrollment = {
@@ -254,6 +288,18 @@ export type Database = {
     Tables: {
       profiles: Table<Profile>;
       courses: Table<Course>;
+      levels: Table<
+        Level,
+        [
+          {
+            foreignKeyName: "levels_course_id_fkey";
+            columns: ["course_id"];
+            isOneToOne: false;
+            referencedRelation: "courses";
+            referencedColumns: ["id"];
+          },
+        ]
+      >;
       modules: Table<
         CourseModule,
         [
@@ -262,6 +308,13 @@ export type Database = {
             columns: ["course_id"];
             isOneToOne: false;
             referencedRelation: "courses";
+            referencedColumns: ["id"];
+          },
+          {
+            foreignKeyName: "modules_level_id_fkey";
+            columns: ["level_id"];
+            isOneToOne: false;
+            referencedRelation: "levels";
             referencedColumns: ["id"];
           },
         ]

@@ -28,7 +28,7 @@ export default function LessonControls({
   const pct = totalLessons > 0 ? Math.round((completedCount / totalLessons) * 100) : 0;
   const courseFinished = totalLessons > 0 && completedCount >= totalLessons;
   const milestoneMessage = courseFinished
-    ? "🎉 Course Completed!"
+    ? "🎉 Learning Path Completed!"
     : pct >= 75
       ? "🚀 Almost there — just a bit more!"
       : pct >= 50

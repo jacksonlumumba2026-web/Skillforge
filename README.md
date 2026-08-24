@@ -236,6 +236,41 @@ custom authorization layer bolted on top.
       `CRON_SECRET` gates the route: Vercel sends it automatically as
       `Authorization: Bearer <value>` on every cron invocation once the
       env var is set, so the route just checks it matches.
+- [x] **Curriculum model: Course → Level → Module → Lesson** — a course can
+      optionally have `levels` (a new table, `course_id` + `order_number`)
+      sitting above its modules; entirely optional, so all ~40 pre-existing
+      courses have zero level rows and keep rendering exactly as before (a
+      flat module list) — only a course deliberately migrated onto the
+      model shows level grouping, with "Coming soon." for any level that
+      has no modules yet. Lessons gained four nullable columns for real
+      depth beyond "title + video": `learning_objectives text[]` (also
+      exposed on the public `lesson_previews` view, like `description`),
+      `notes text`, `practice_activity text`, and `knowledge_check jsonb`
+      (self-check quiz questions, rendered client-side by
+      `KnowledgeCheck.tsx` — not scored or saved, just a way to test your
+      own understanding right now). No fixed lesson-count rule anywhere in
+      the schema or UI — a level/module can hold as many lessons as the
+      subject actually needs. Cybersecurity & Online Safety is the first
+      (and so far only) course rebuilt onto this model: Level 1
+      "Foundations" (4 modules, 26 real, individually-verified lessons —
+      Intro to Cybersecurity, Computer Fundamentals, Networking
+      Fundamentals, Linux Fundamentals) is fully built; Levels 2–5 (Core
+      Security, Practical Security, Defensive Security, Projects) are
+      scaffolded with real titles/descriptions so the path shows its full
+      intended shape, content to follow. Rebuilding it deleted the old
+      6-module/12-lesson structure outright (it didn't map onto the new
+      one), which cascaded to reset the one enrolled learner's lesson
+      progress on this course — confirmed to be the site owner's own test
+      enrollment before doing this.
+- [x] **"Learning Path" terminology** — renamed "Course"/"Courses" to
+      "Learning Path"/"Learning Paths" throughout learner-facing UI copy
+      (nav, homepage, course/lesson pages, dashboard, certificates) and the
+      i18n dictionary (English + Swahili). Deliberately *not* renamed: the
+      `courses`/`modules`/`lessons` table and TypeScript type names, any
+      internal function/variable names, the admin panel's copy, or the
+      schema.org `"@type": "Course"` JSON-LD (an external vocabulary term,
+      not internal branding) — this is a learner-facing relabel, not a
+      data-model rename.
 
 **Live Supabase project:** `skillpath-africa` (`xzncootldgqhghokxcrd`,
 `us-east-1`) — migrations `0001`–`0006` applied.

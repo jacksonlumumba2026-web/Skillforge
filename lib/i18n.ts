@@ -12,7 +12,7 @@ export const DEFAULT_LOCALE: Locale = "en";
 type Dictionary = Record<string, string>;
 
 const en: Dictionary = {
-  "nav.courses": "Courses",
+  "nav.courses": "Learning Paths",
   "nav.dashboard": "Dashboard",
   "nav.admin": "Admin",
   "nav.login": "Login",
@@ -27,7 +27,7 @@ const en: Dictionary = {
   "home.heroTitle": "Learn Digital Skills. Build Your Future.",
   "home.heroSubtitle":
     "Learn practical digital skills step by step through simple, structured courses designed for beginners.",
-  "home.exploreCourses": "Explore Courses",
+  "home.exploreCourses": "Explore Learning Paths",
   "home.startLearning": "Start Learning",
   "home.whyLearnTitle": "Why Learn Digital Skills?",
   "home.why.jobReady": "Get job-ready skills",
@@ -35,8 +35,8 @@ const en: Dictionary = {
   "home.why.business": "Build online businesses",
   "home.why.tech": "Work with modern technology",
   "home.why.income": "Create new income opportunities",
-  "home.popularCoursesTitle": "Popular Courses",
-  "home.browseAllCourses": "Browse all courses",
+  "home.popularCoursesTitle": "Popular Learning Paths",
+  "home.browseAllCourses": "Browse all Learning Paths",
 
   "login.title": "Log in",
   "login.subtitle": "Welcome back — keep learning where you left off.",
@@ -69,7 +69,7 @@ const en: Dictionary = {
 };
 
 const sw: Dictionary = {
-  "nav.courses": "Kozi",
+  "nav.courses": "Njia za Kujifunza",
   "nav.dashboard": "Dashibodi",
   "nav.admin": "Msimamizi",
   "nav.login": "Ingia",
@@ -84,7 +84,7 @@ const sw: Dictionary = {
   "home.heroTitle": "Jifunze Ujuzi wa Kidijitali. Jenga Maisha Yako Ijayo.",
   "home.heroSubtitle":
     "Jifunze ujuzi wa kidijitali wa vitendo hatua kwa hatua kupitia kozi rahisi zilizoandaliwa kwa ajili ya wanaoanza.",
-  "home.exploreCourses": "Angalia Kozi",
+  "home.exploreCourses": "Angalia Njia za Kujifunza",
   "home.startLearning": "Anza Kujifunza",
   "home.whyLearnTitle": "Kwa Nini Ujifunze Ujuzi wa Kidijitali?",
   "home.why.jobReady": "Pata ujuzi unaotafutwa kazini",
@@ -92,8 +92,8 @@ const sw: Dictionary = {
   "home.why.business": "Jenga biashara mtandaoni",
   "home.why.tech": "Fanya kazi na teknolojia ya kisasa",
   "home.why.income": "Pata fursa mpya za mapato",
-  "home.popularCoursesTitle": "Kozi Maarufu",
-  "home.browseAllCourses": "Angalia kozi zote",
+  "home.popularCoursesTitle": "Njia za Kujifunza Maarufu",
+  "home.browseAllCourses": "Angalia njia zote za kujifunza",
 
   "login.title": "Ingia",
   "login.subtitle": "Karibu tena — endelea kujifunza pale ulipoishia.",

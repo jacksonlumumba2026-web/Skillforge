@@ -38,7 +38,7 @@ export default function CourseCard({ course }: { course: CourseWithLessonCount }
       </div>
 
       <Link href={`/courses/${course.id}`} className="btn btn-secondary w-full">
-        View Course
+        View Learning Path
       </Link>
     </div>
   );

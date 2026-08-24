@@ -40,10 +40,10 @@ export default function RequestCoursePage() {
 
   return (
     <div className="container-page py-16 max-w-md">
-      <h1 className="text-2xl font-bold mb-2">Request a course</h1>
+      <h1 className="text-2xl font-bold mb-2">Request a Learning Path</h1>
       <p className="text-[var(--muted)] mb-8">
-        Can&apos;t find what you want to learn? Tell us the topic and we&apos;ll build a course for
-        you from real tutorial videos.
+        Can&apos;t find what you want to learn? Tell us the topic and we&apos;ll build a Learning
+        Path for you from real tutorial videos.
       </p>
 
       <form onSubmit={handleSubmit} className="space-y-4">

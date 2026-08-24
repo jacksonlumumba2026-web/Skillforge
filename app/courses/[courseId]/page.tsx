@@ -2,13 +2,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { createClient } from "@/lib/supabase/server";
-import { formatDuration } from "@/lib/courses";
+import { formatDuration, getLevelsForCourse } from "@/lib/courses";
 import { SITE_URL } from "@/lib/site";
 import PurchaseSection from "@/components/PurchaseSection";
 import StarRating from "@/components/StarRating";
 import DataSaverNote from "@/components/DataSaverNote";
 import ReviewForm from "./ReviewForm";
-import type { LessonPreview } from "@/lib/types";
+import type { CourseModule, LessonPreview } from "@/lib/types";
 
 const LEVEL_LABEL: Record<string, string> = {
   beginner: "Beginner",
@@ -75,6 +75,8 @@ export default async function CourseDetailPage({
     .eq("course_id", course.id)
     .order("order_number", { ascending: true });
 
+  const levels = await getLevelsForCourse(supabase, course.id);
+
   const moduleIds = (modules ?? []).map((m) => m.id);
   let lessonsByModule = new Map<string, LessonPreview[]>();
   if (moduleIds.length > 0) {
@@ -119,6 +121,66 @@ export default async function CourseDetailPage({
   const averageRating =
     reviews.length > 0 ? reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length : null;
   const myReview = user ? reviews.find((r) => r.user_id === user.id) : undefined;
+
+  const renderModuleCard = (courseModule: Pick<CourseModule, "id" | "title" | "order_number">) => {
+    const moduleLessons = lessonsByModule.get(courseModule.id) ?? [];
+    return (
+      <div key={courseModule.id} className="card p-5">
+        <h3 className="font-semibold mb-3 text-sm uppercase tracking-wide text-[var(--muted)] flex items-center gap-2">
+          <span>
+            Module {courseModule.order_number} — {courseModule.title}
+          </span>
+          {levels.length === 0 && course.has_career_path && MODULE_TIER_LABEL[courseModule.order_number] && (
+            <span
+              className="normal-case text-[10px] font-semibold px-2 py-0.5 rounded-full"
+              style={{ background: "var(--surface)", color: "var(--primary)" }}
+            >
+              {MODULE_TIER_LABEL[courseModule.order_number]}
+            </span>
+          )}
+        </h3>
+        {moduleLessons.length === 0 ? (
+          <p className="text-xs text-[var(--muted)] italic">Coming soon.</p>
+        ) : (
+          <ul className="space-y-3">
+            {moduleLessons.map((lesson, i) => {
+              const label = `Lesson ${i + 1} — ${lesson.title}`;
+              const duration = lesson.duration_seconds ? formatDuration(lesson.duration_seconds) : null;
+              return (
+                <li key={lesson.id}>
+                  {isEnrolled ? (
+                    <Link
+                      href={`/learn/${course.id}/${lesson.id}`}
+                      className="flex items-center gap-2 text-sm"
+                      style={{ color: "var(--primary)" }}
+                    >
+                      <span aria-hidden>▶</span> {label}
+                      {duration && <span className="text-[var(--muted)]">· {duration}</span>}
+                    </Link>
+                  ) : (
+                    <div className="flex items-center gap-2 text-sm text-[var(--muted)]">
+                      <span aria-hidden>🔒</span> {label}
+                      {duration && <span>· {duration}</span>}
+                    </div>
+                  )}
+                  {lesson.description && (
+                    <p className="text-xs text-[var(--muted)] mt-1 pl-6">{lesson.description}</p>
+                  )}
+                  {lesson.learning_objectives && lesson.learning_objectives.length > 0 && (
+                    <ul className="text-xs text-[var(--muted)] mt-1 pl-6 list-disc list-inside">
+                      {lesson.learning_objectives.map((objective, oi) => (
+                        <li key={oi}>{objective}</li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </div>
+    );
+  };
 
   const courseJsonLd = {
     "@context": "https://schema.org",
@@ -189,54 +251,30 @@ export default async function CourseDetailPage({
         </div>
       )}
 
-      <h2 className="text-lg font-semibold mb-5">Curriculum</h2>
-      <div className="space-y-6 mb-10">
-        {(modules ?? []).map((module) => (
-          <div key={module.id} className="card p-5">
-            <h3 className="font-semibold mb-3 text-sm uppercase tracking-wide text-[var(--muted)] flex items-center gap-2">
-              <span>
-                Module {module.order_number} — {module.title}
-              </span>
-              {course.has_career_path && MODULE_TIER_LABEL[module.order_number] && (
-                <span
-                  className="normal-case text-[10px] font-semibold px-2 py-0.5 rounded-full"
-                  style={{ background: "var(--surface)", color: "var(--primary)" }}
-                >
-                  {MODULE_TIER_LABEL[module.order_number]}
-                </span>
+      {levels.length > 0 ? (
+        <div className="space-y-10 mb-10">
+          {levels.map((level) => (
+            <div key={level.id}>
+              <h2 className="text-lg font-semibold">
+                Level {level.order_number} — {level.title}
+              </h2>
+              {level.description && (
+                <p className="text-sm text-[var(--muted)] mt-1 mb-5">{level.description}</p>
               )}
-            </h3>
-            <ul className="space-y-3">
-              {(lessonsByModule.get(module.id) ?? []).map((lesson, i) => {
-                const label = `Lesson ${i + 1} — ${lesson.title}`;
-                const duration = lesson.duration_seconds ? formatDuration(lesson.duration_seconds) : null;
-                return (
-                  <li key={lesson.id}>
-                    {isEnrolled ? (
-                      <Link
-                        href={`/learn/${course.id}/${lesson.id}`}
-                        className="flex items-center gap-2 text-sm"
-                        style={{ color: "var(--primary)" }}
-                      >
-                        <span aria-hidden>▶</span> {label}
-                        {duration && <span className="text-[var(--muted)]">· {duration}</span>}
-                      </Link>
-                    ) : (
-                      <div className="flex items-center gap-2 text-sm text-[var(--muted)]">
-                        <span aria-hidden>🔒</span> {label}
-                        {duration && <span>· {duration}</span>}
-                      </div>
-                    )}
-                    {lesson.description && (
-                      <p className="text-xs text-[var(--muted)] mt-1 pl-6">{lesson.description}</p>
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        ))}
-      </div>
+              {level.modules.length === 0 ? (
+                <p className="text-sm text-[var(--muted)] italic">Coming soon.</p>
+              ) : (
+                <div className="space-y-6 mt-5">{level.modules.map((courseModule) => renderModuleCard(courseModule))}</div>
+              )}
+            </div>
+          ))}
+        </div>
+      ) : (
+        <>
+          <h2 className="text-lg font-semibold mb-5">Curriculum</h2>
+          <div className="space-y-6 mb-10">{(modules ?? []).map((courseModule) => renderModuleCard(courseModule))}</div>
+        </>
+      )}
 
       <div className="card p-6 text-center">
         {isEnrolled ? (

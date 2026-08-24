@@ -15,9 +15,9 @@ const VALID_CATEGORIES: CourseCategory[] = [
 ];
 
 export const metadata: Metadata = {
-  title: "Courses",
+  title: "Learning Paths",
   description:
-    "Browse practical digital skills courses — web development, digital marketing, design, freelancing, and more.",
+    "Browse practical digital skills Learning Paths — web development, digital marketing, design, freelancing, and more.",
 };
 
 export default async function CoursesPage({
@@ -41,9 +41,9 @@ export default async function CoursesPage({
   return (
     <div className="container-page py-16">
       <div className="text-center mb-12">
-        <h1 className="text-3xl font-bold mb-3">Courses</h1>
+        <h1 className="text-3xl font-bold mb-3">Learning Paths</h1>
         <p className="text-[var(--muted)]">
-          Practical, beginner-friendly courses to help you build real digital skills.
+          Practical, beginner-friendly Learning Paths to help you build real digital skills.
         </p>
       </div>
 
@@ -51,7 +51,7 @@ export default async function CoursesPage({
 
       {courses.length === 0 ? (
         <p className="text-center text-[var(--muted)]">
-          {isFiltered ? "No courses match your search." : "No courses available yet."}
+          {isFiltered ? "No Learning Paths match your search." : "No Learning Paths available yet."}
         </p>
       ) : (
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -64,7 +64,7 @@ export default async function CoursesPage({
       <p className="text-center text-[var(--muted)] mt-12">
         Can&apos;t find what you want to learn?{" "}
         <Link href="/courses/request" className="font-medium" style={{ color: "var(--primary)" }}>
-          Request a course
+          Request a Learning Path
         </Link>
       </p>
     </div>

@@ -250,30 +250,65 @@ custom authorization layer bolted on top.
       `KnowledgeCheck.tsx` — not scored or saved, just a way to test your
       own understanding right now). No fixed lesson-count rule anywhere in
       the schema or UI — a level/module can hold as many lessons as the
-      subject actually needs. Cybersecurity & Online Safety is the first
-      (and so far only) course rebuilt onto this model: Level 1
-      "Foundations" (4 modules, 26 real, individually-verified lessons —
-      Intro to Cybersecurity, Computer Fundamentals, Networking
-      Fundamentals, Linux Fundamentals) is fully built; Levels 2–5 (Core
-      Security, Practical Security, Defensive Security, Projects) are
-      scaffolded with real titles/descriptions so the path shows its full
-      intended shape, content to follow. Rebuilding it deleted the old
-      6-module/12-lesson structure outright (it didn't map onto the new
-      one), which cascaded to reset the one enrolled learner's lesson
-      progress on this course — confirmed to be the site owner's own test
-      enrollment before doing this. "3D Design & Animation (Blender)" is the
-      second course rebuilt: 9 levels (Foundations → Modeling → Materials,
-      Texturing & Shading → Lighting & Rendering → Animation → Rigging &
-      Character Animation → Advanced 3D Workflow → Real-World Projects →
-      Portfolio & Freelancing), with Level 1 "Blender Foundations" fully
-      built — 3 modules, 19 real, individually-verified lessons culminating
-      in Blender Guru's well-known "Donut" beginner project. Videos for both
-      courses were sourced and cross-verified with two independent web
-      searches per video (not the paid Anthropic-generated content
-      pipeline — that path exists separately for `/courses/request` but
-      wasn't used for these rebuilds) rather than an LLM API call, since no
+      subject actually needs. The schema, `getLevelsForCourse()`, and every
+      rendering component are 100% generic — nothing anywhere is
+      Cybersecurity- or Blender-specific by name; any course can be
+      migrated onto the Level model the same way, and the ~38 courses that
+      haven't been are completely unaffected (flat module list, unchanged).
+      Cybersecurity & Online Safety is the first course rebuilt: Level 1
+      "Foundations" (4 modules, 26 real lessons) and Level 2 "Core
+      Security" (3 modules, 20 real lessons — Common Threats & Attacks,
+      Authentication & Access Control, Cryptography Basics) are both fully
+      built (46 lessons total so far); Levels 3-5 (Practical Security,
+      Defensive Security, Projects) aren't built yet. Rebuilding Level 1
+      deleted the old 6-module/12-lesson structure outright (it didn't map
+      onto the new one), cascading to reset the one enrolled learner's
+      lesson progress on this course — confirmed to be the site owner's own
+      test enrollment first. "3D Design & Animation (Blender)" is the
+      second course rebuilt: 9 levels designed (Foundations → Modeling →
+      Materials, Texturing & Shading → Lighting & Rendering → Animation →
+      Rigging & Character Animation → Advanced 3D Workflow → Real-World
+      Projects → Portfolio & Freelancing), with Level 1 "Blender
+      Foundations" fully built — 3 modules, 19 real lessons culminating in
+      Blender Guru's well-known "Donut" beginner project (this course had
+      zero enrollments, so no progress was at risk). Both courses are
+      marked `curriculum_status = 'draft'` (see below) until every level is
+      real. Every lesson's video was found and cross-verified by two
+      independent web searches (not the paid Anthropic-generated content
+      pipeline — see below for why) rather than an LLM API call, since no
       lesson count is fabricated to hit a target: depth is driven by what
       the subject actually needs to teach, module by module.
+- [x] **Curriculum draft/published status** — a course's *curriculum*
+      (separate from `courses.published`, which still gates purchasability
+      for the ~38 legacy-structure courses) can be `'draft'` while its
+      Level model is incomplete. A draft course is hidden from `/courses`,
+      the homepage, "what to try next," and the sitemap — nobody buys into
+      or gets pushed toward a half-built path — but an already-enrolled
+      learner keeps full, unaffected access to whatever's already built,
+      since enrollment access was never tied to catalog visibility. This
+      exists because an earlier version of the Level rebuild pre-created
+      empty placeholder levels ("Level 2 — Coming soon") on a live, sellable
+      page, which is misleading; the fix removed those empty levels and
+      only shows a level once it actually has content. Cybersecurity and
+      Blender are both `draft` right now, honestly, since neither has a
+      complete level set yet.
+- [x] **Curriculum generation, without the paid API** — `ANTHROPIC_API_KEY`
+      ran out of credits mid-project, and the ask was explicit: don't fake
+      content to hit a lesson-count target, and don't require topping up
+      billing to keep going. So lesson research runs on parallel
+      `WebSearch`-only agents (real video existence + title/channel
+      cross-verified by a second, independently-worded search each), and
+      the mechanical last step — turning a plan of
+      `{ level, modules: [{ lessons: [...] }] }` into correctly-escaped
+      SQL — is `scripts/curriculum/build-level-sql.mjs`, a small, reusable,
+      course-agnostic generator (not hand-typed SQL per course). It
+      computes each new module's `order_number` from the course's current
+      max rather than assuming a level starts fresh, so it's safe to run
+      against a course that already has other levels built. The
+      `/courses/request` AI generator (`lib/courseContent.ts`,
+      `lib/youtube.ts`) is untouched and still exists as a separate,
+      Anthropic-API-backed path for quick single-tier course generation —
+      it just isn't what's building out the Level-model courses right now.
 - [x] **"Learning Path" terminology** — renamed "Course"/"Courses" to
       "Learning Path"/"Learning Paths" throughout learner-facing UI copy
       (nav, homepage, course/lesson pages, dashboard, certificates) and the

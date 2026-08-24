@@ -51,6 +51,13 @@ export type Course = {
    *  course-depth-expansion migrations). False for courses that are still
    *  a single-tier walkthrough at just their `level`. */
   has_career_path: boolean;
+  /** 'draft' while a course's Level-model curriculum is incomplete (e.g. only
+   *  Level 1 built) — hidden from the catalog/sitemap so nobody buys into an
+   *  unfinished path, but doesn't affect already-enrolled learners' access.
+   *  'published' (default) for everything else, including all the courses
+   *  still on the legacy flat module structure — that structure is complete
+   *  as-is, so it was never draft to begin with. */
+  curriculum_status: "draft" | "published";
   created_at: string;
   updated_at: string;
 };

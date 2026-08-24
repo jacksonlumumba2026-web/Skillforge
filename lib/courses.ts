@@ -48,6 +48,7 @@ export async function getPublishedCourses(
     .from("courses")
     .select("*")
     .eq("published", true)
+    .eq("curriculum_status", "published")
     .order("display_order", { ascending: true })
     .order("created_at", { ascending: true });
   if (options?.level) query = query.eq("level", options.level);
@@ -109,6 +110,7 @@ export async function getSuggestedNextCourse(
     .from("courses")
     .select("*")
     .eq("published", true)
+    .eq("curriculum_status", "published")
     .order("display_order", { ascending: true })
     .order("created_at", { ascending: true })
     .limit(1);

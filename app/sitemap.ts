@@ -7,7 +7,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const { data: courses } = await supabase
     .from("courses")
     .select("id, updated_at")
-    .eq("published", true);
+    .eq("published", true)
+    .eq("curriculum_status", "published");
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: SITE_URL, changeFrequency: "weekly", priority: 1 },

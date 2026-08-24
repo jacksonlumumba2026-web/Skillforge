@@ -284,6 +284,10 @@ export default async function CourseDetailPage({
           >
             Continue Learning
           </Link>
+        ) : course.curriculum_status === "draft" ? (
+          <p className="text-sm text-[var(--muted)]">
+            This Learning Path&apos;s curriculum is still being built out — check back soon.
+          </p>
         ) : user ? (
           <PurchaseSection
             courseId={course.id}

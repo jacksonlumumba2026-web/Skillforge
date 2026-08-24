@@ -286,20 +286,22 @@ custom authorization layer bolted on top.
       pipeline — see below for why) rather than an LLM API call, since no
       lesson count is fabricated to hit a target: depth is driven by what
       the subject actually needs to teach, module by module.
-- [x] **Curriculum draft/published status** — a course's *curriculum*
-      (separate from `courses.published`, which still gates purchasability
-      for the ~38 legacy-structure courses) can be `'draft'` while its
-      Level model is incomplete. A draft course is hidden from `/courses`,
-      the homepage, "what to try next," and the sitemap — nobody buys into
-      or gets pushed toward a half-built path — but an already-enrolled
-      learner keeps full, unaffected access to whatever's already built,
-      since enrollment access was never tied to catalog visibility. This
-      exists because an earlier version of the Level rebuild pre-created
-      empty placeholder levels ("Level 2 — Coming soon") on a live, sellable
-      page, which is misleading; the fix removed those empty levels and
-      only shows a level once it actually has content. Cybersecurity and
-      Blender are both `draft` right now, honestly, since neither has a
-      complete level set yet.
+- [x] **No placeholder levels** — the rule that keeps a partly-built
+      Learning Path honest without hiding it: a `levels` row is only ever
+      created in the same migration that fills it with real modules and
+      lessons. A published course can therefore only display real content,
+      adding a level later is purely additive, and no "Level 2 — Coming
+      soon" placeholder can appear on a live sellable page. An earlier
+      attempt solved this the wrong way, by pre-creating empty levels and
+      then hiding the whole course behind `curriculum_status = 'draft'`
+      — which pulled Cybersecurity (46 real lessons, the deepest course on
+      the platform) out of the catalog entirely. Migration 0039 reversed
+      that; courses now stay visible and sellable while being deepened.
+      `curriculum_status` remains in the schema (default `'published'`,
+      hides a course from `/courses`, the homepage, "what to try next," and
+      the sitemap without affecting enrolled learners' access) for the case
+      it was really meant for: deliberately withholding a course from sale,
+      set on purpose rather than as a side effect of incremental work.
 - [x] **Curriculum generation, without the paid API** — `ANTHROPIC_API_KEY`
       ran out of credits mid-project, and the ask was explicit: don't fake
       content to hit a lesson-count target, and don't require topping up

@@ -267,9 +267,11 @@ custom authorization layer bolted on top.
       the build order is depth-first per course (finish every level of one
       course, publish it, then start the next) rather than spreading a
       single level across many courses. Web Development for Beginners:
-      Level 1 "Foundations" built (3 modules, 15 real lessons — How the Web
-      Works, Developer Tools & Workflow, Thinking Like a Developer), with
-      Levels 2-9 (HTML, CSS, JavaScript, Frontend, Backend & Databases,
+      Level 1 "Foundations" (3 modules, 15 lessons — How the Web Works,
+      Developer Tools & Workflow, Thinking Like a Developer) and Level 2
+      "HTML" (3 modules, 18 lessons — HTML Structure & Text, Links/Images/
+      Media, Forms & Semantic HTML) are both built, 33 lessons so far;
+      Levels 3-9 (CSS, JavaScript, Frontend, Backend & Databases,
       APIs/Auth/Security, Deployment & Projects, Portfolio & Freelancing)
       still to build. Cybersecurity & Online Safety: Level 1 "Foundations"
       (4 modules, 26 real lessons) and Level 2 "Core Security" (3 modules,

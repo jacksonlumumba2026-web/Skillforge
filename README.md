@@ -283,9 +283,11 @@ custom authorization layer bolted on top.
       "HTML" (3 modules, 18 lessons — HTML Structure & Text, Links/Images/
       Media, Forms & Semantic HTML) and Level 3 "CSS" (3 modules, 20
       lessons — CSS Fundamentals, Layout with Flexbox and Grid, Responsive
-      Design and Polish) are built, 53 lessons so far; Levels 4-9
-      (JavaScript, Frontend, Backend & Databases, APIs/Auth/Security,
-      Deployment & Projects, Portfolio & Freelancing) still to build.
+      Design and Polish) and Level 4 "JavaScript Fundamentals" (3 modules,
+      19 lessons — JavaScript Basics, Control Flow and Functions, Arrays/
+      Objects/Working with Data) are built, 72 lessons so far; Levels 5-9
+      (Frontend, Backend & Databases, APIs/Auth/Security, Deployment &
+      Projects, Portfolio & Freelancing) still to build.
       Level 3 is anchored on Dave Gray's full CSS course for the
       fundamentals (learners navigate by named chapter rather than a
       timestamp, which is what could actually be verified) and on Kevin
@@ -294,7 +296,15 @@ custom authorization layer bolted on top.
       than what the plan originally named — "Grid in Practice" became
       "Building a Responsive Card Grid", and z-index was dropped from the
       positioning lesson's title because no video could be confirmed to
-      teach it. Cybersecurity & Online Safety: Level 1 "Foundations"
+      teach it. Level 4 is anchored on two independently verified full
+      courses — Dave Gray's for control flow and Kevin Powell-style
+      chaptered navigation, SuperSimpleDev's for data structures — chosen
+      over a third candidate whose channel was confirmed but whose exact
+      title could not be pinned down, because that creator renames uploads
+      and two near-identical courses exist. Where a topic genuinely has no
+      confirmable video chapter anywhere (null/undefined, for instance),
+      it is taught in the written lesson notes rather than promised to a
+      video that does not cover it. Cybersecurity & Online Safety: Level 1 "Foundations"
       (4 modules, 26 real lessons) and Level 2 "Core Security" (3 modules,
       20 real lessons — Common Threats & Attacks, Authentication & Access
       Control, Cryptography Basics) are both fully built (46 lessons so

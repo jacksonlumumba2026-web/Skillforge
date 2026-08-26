@@ -79,7 +79,7 @@ custom authorization layer bolted on top.
       quota, so nothing else here rate-limits repeated requests.
 - [x] **Curated catalog** — real, hand-researched courses (not
       placeholders), added in daily batches of 10 by an automated job
-      (`trig_01XLqpWy1SvSGEFaiTqEhPrC`, 6 days total). Day 1
+      (`trig_01XLqpWy1SvSGEFaiTqEhPrC`, 11 days total). Day 1
       (`0006_curated_catalog.sql`): Freelancing, Web Development for
       Beginners, Graphic Design, Digital Marketing, AI Tools for Everyday
       Work, Video Editing, Social Media Management, Virtual Assistance &
@@ -109,7 +109,18 @@ custom authorization layer bolted on top.
       Graphics, GA4, Grant Writing, Digital Products) were dropped because
       their videos' channels couldn't be confirmed by two independent
       searches, and shipping guessed attribution into a paid product is
-      worse than shipping fewer courses. Backed by real YouTube tutorials
+      worse than shipping fewer courses. Day 6
+      (`0043_curated_catalog_day6.sql`): Motion Graphics with After Effects
+      — one, not six. Five researched topics (Google Analytics 4, Grant &
+      Proposal Writing, Creating & Selling Digital Products, Notion for Work
+      & Business, Proofreading & Editing) were dropped on the same rule.
+      The constraint is environmental rather than a shortage of good
+      topics: `WebFetch` to youtube.com is blocked by the egress proxy, so
+      a video's channel can never be read off its page and verification is
+      always circumstantial. Motion Graphics shipped precisely because
+      every one of its six videos is on an official Adobe channel, and
+      Adobe embeds the channel in the video title ("| Adobe Video"), which
+      is the strongest attribution signal available here. Backed by real YouTube tutorials
       from established channels. Written by hand instead of spending Anthropic/YouTube API
       calls on topics already known to be wanted — the AI generator is
       reserved for topics outside this set. `courses.display_order`

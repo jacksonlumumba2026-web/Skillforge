@@ -281,10 +281,20 @@ custom authorization layer bolted on top.
       Level 1 "Foundations" (3 modules, 15 lessons — How the Web Works,
       Developer Tools & Workflow, Thinking Like a Developer) and Level 2
       "HTML" (3 modules, 18 lessons — HTML Structure & Text, Links/Images/
-      Media, Forms & Semantic HTML) are both built, 33 lessons so far;
-      Levels 3-9 (CSS, JavaScript, Frontend, Backend & Databases,
-      APIs/Auth/Security, Deployment & Projects, Portfolio & Freelancing)
-      still to build. Cybersecurity & Online Safety: Level 1 "Foundations"
+      Media, Forms & Semantic HTML) and Level 3 "CSS" (3 modules, 20
+      lessons — CSS Fundamentals, Layout with Flexbox and Grid, Responsive
+      Design and Polish) are built, 53 lessons so far; Levels 4-9
+      (JavaScript, Frontend, Backend & Databases, APIs/Auth/Security,
+      Deployment & Projects, Portfolio & Freelancing) still to build.
+      Level 3 is anchored on Dave Gray's full CSS course for the
+      fundamentals (learners navigate by named chapter rather than a
+      timestamp, which is what could actually be verified) and on Kevin
+      Powell for layout and responsive design. Several lessons were
+      retitled to match what their verified video genuinely teaches rather
+      than what the plan originally named — "Grid in Practice" became
+      "Building a Responsive Card Grid", and z-index was dropped from the
+      positioning lesson's title because no video could be confirmed to
+      teach it. Cybersecurity & Online Safety: Level 1 "Foundations"
       (4 modules, 26 real lessons) and Level 2 "Core Security" (3 modules,
       20 real lessons — Common Threats & Attacks, Authentication & Access
       Control, Cryptography Basics) are both fully built (46 lessons so

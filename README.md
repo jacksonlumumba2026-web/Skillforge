@@ -272,12 +272,37 @@ custom authorization layer bolted on top.
       subject actually needs. The schema, `getLevelsForCourse()`, and every
       rendering component are 100% generic — nothing anywhere is
       Cybersecurity- or Blender-specific by name; any course can be
-      migrated onto the Level model the same way, and the ~38 courses that
-      haven't been are completely unaffected (flat module list, unchanged).
-      Three courses are being migrated onto it so far, one at a time —
-      the build order is depth-first per course (finish every level of one
-      course, publish it, then start the next) rather than spreading a
-      single level across many courses. Web Development for Beginners:
+      migrated onto the Level model the same way.
+
+      **All 48 courses are now on the Level model.** Migration
+      `0046_backfill_levels_all_courses.sql` converted the 45 remaining
+      courses in one pass, and it is worth being precise about what that
+      did and did not do. Those courses already had a uniform
+      beginner-to-professional tier structure, so their tiers are fully
+      derivable from module count plus `order_number` — six-module courses
+      become four levels (Foundations m1-2, Intermediate Skills m3,
+      Professional Practice m4-5, Freelance & Career m6), three-module
+      courses become three (Foundations, Core Skills, Professional
+      Practice). The migration only inserts level rows and sets
+      `modules.level_id`; it touches no lesson, enrollment, or
+      `lesson_progress` row, so every lesson id survives and the two
+      learners with completed lessons in converted courses (Graphic Design
+      and Google Ads & Facebook Ads) keep their progress. It skips courses
+      that already have levels, so it is idempotent and left the three
+      hand-built courses alone. A course with an unexpected module count
+      would be left flat and reported rather than guessed at; none were.
+
+      **A converted level is real but thin.** It is existing, already-
+      verified content re-parented into a hierarchy — not newly researched
+      depth. Only Web Development, Cybersecurity and Blender were built
+      lesson-by-lesson. The build order is now **breadth-first**: a routine
+      firing three times daily deepens Level 1 across 2-3 courses at a
+      time until every course's Level 1 is genuinely substantial, then
+      sweeps Level 2, then Level 3. Deepening is strictly additive —
+      modules are appended to the existing level row, never deleted or
+      re-created — which is what keeps learner progress safe. Depth
+      therefore varies by course, and the hand-built three are the quality
+      bar the rest are working toward. Web Development for Beginners:
       Level 1 "Foundations" (3 modules, 15 lessons — How the Web Works,
       Developer Tools & Workflow, Thinking Like a Developer) and Level 2
       "HTML" (3 modules, 18 lessons — HTML Structure & Text, Links/Images/

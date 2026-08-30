@@ -21,6 +21,9 @@
 // {
 //   "courseId": "uuid",
 //   "level": { "title": "...", "description": "...", "orderNumber": 2 },
+//   // ...or, to APPEND modules to a level that already exists (the
+//   // breadth-first deepening case), name it instead of describing it:
+//   "level": { "orderNumber": 1, "existing": true },
 //   "modules": [
 //     {
 //       "title": "...", "description": "...",
@@ -82,13 +85,41 @@ declare
   v_module_offset int;
   ${moduleVarNames.map((v) => `${v} uuid;`).join("\n  ")}
 begin
+${
+  plan.level.existing
+    ? `  -- Appending to a level that already exists. Looked up rather than
+  -- inserted, so this adds to the learner's current Level ${plan.level.orderNumber} instead of
+  -- creating a duplicate one, and no existing module is re-parented.
+  select id into v_level from public.levels
+    where course_id = v_course_id and order_number = ${plan.level.orderNumber};
+
+  if v_level is null then
+    raise exception 'Level % not found for course % -- refusing to guess', ${plan.level.orderNumber}, v_course_id;
+  end if;
+
+  -- The new modules must sit INSIDE this level, not at the end of the
+  -- course. getOrderedLessons() builds the learner's lesson sequence from
+  -- modules.order_number alone and ignores level, so a module appended at
+  -- the course's max order would put beginner content after the final
+  -- level's material. Insert straight after this level's last module and
+  -- shift everything below it down instead.
   select coalesce(max(order_number), 0) into v_module_offset
+    from public.modules where level_id = v_level;
+
+  -- Two-phase shift: (course_id, order_number) is unique, and a single
+  -- "+ N" update can trip that constraint mid-statement, so park the rows
+  -- out of range first and bring them back afterwards.
+  update public.modules set order_number = order_number + 1000
+   where course_id = v_course_id and order_number > v_module_offset;
+`
+    : `  select coalesce(max(order_number), 0) into v_module_offset
     from public.modules where course_id = v_course_id;
 
   insert into public.levels (course_id, title, description, order_number) values
     (v_course_id, ${sqlStr(plan.level.title)}, ${sqlStr(plan.level.description)}, ${plan.level.orderNumber})
   returning id into v_level;
-
+`
+}
 `;
 
 plan.modules.forEach((mod, i) => {
@@ -103,6 +134,14 @@ ${mod.lessons.map((l, li) => lessonRow(moduleVarNames[i], l, li + 1)).join(",\n"
 `;
 });
 
+if (plan.level.existing) {
+  sql += `  -- Bring the shifted modules back, now sitting after the ${plan.modules.length} new one(s).
+  update public.modules set order_number = order_number - 1000 + ${plan.modules.length}
+   where course_id = v_course_id and order_number > 1000;
+
+`;
+}
+
 sql += `end $$;\n`;
 
 writeFileSync(outPath, sql);
@@ -110,6 +149,10 @@ writeFileSync(outPath, sql);
 const totalModules = plan.modules.length;
 const totalLessons = plan.modules.reduce((sum, m) => sum + m.lessons.length, 0);
 console.log(`Wrote ${outPath}`);
-console.log(`Level: ${plan.level.title}`);
+console.log(
+  plan.level.existing
+    ? `Level: appending to existing level ${plan.level.orderNumber}`
+    : `Level: ${plan.level.title}`
+);
 console.log(`Modules: ${totalModules}`);
 console.log(`Lessons: ${totalLessons}`);

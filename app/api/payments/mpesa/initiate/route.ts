@@ -126,8 +126,17 @@ export async function POST(request: Request) {
       .update({ checkout_request_id: stk.CheckoutRequestID })
       .eq("reference", reference);
     return NextResponse.json({ reference });
-  } catch {
-    await admin.from("payments").update({ status: "failed" }).eq("reference", reference);
+  } catch (err) {
+    // Capture WHY. This used to be a bare `catch {}`, which is how 14
+    // consecutive STK-push failures produced no diagnostic trace at all.
+    // A null checkout_request_id alongside a reason here means Daraja never
+    // accepted the request, so the customer's phone never showed a prompt.
+    const reason = err instanceof Error ? err.message : String(err);
+    console.error("[mpesa/initiate] STK push failed", { reference, reason });
+    await admin
+      .from("payments")
+      .update({ status: "failed", failure_reason: reason })
+      .eq("reference", reference);
     return NextResponse.json(
       { error: "Could not start payment with M-Pesa. Please try again." },
       { status: 500 },

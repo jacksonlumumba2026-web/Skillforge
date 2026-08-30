@@ -78,6 +78,20 @@ export async function verifyTransaction(reference: string): Promise<PaystackVeri
 }
 
 /** Confirms a webhook request actually came from Paystack (HMAC SHA512 over the raw body). */
+/**
+ * Which Paystack key mode the server is configured with, derived from the key
+ * prefix alone -- never the key itself. Exists so a webhook signature failure
+ * can say WHY: a live charge signed with a live key will never match a test
+ * key, which is exactly how 10 real payments sat `pending` for a week with no
+ * trace of the rejection.
+ */
+export function secretKeyMode(): "test" | "live" | "unknown" {
+  const key = process.env.PAYSTACK_SECRET_KEY ?? "";
+  if (key.startsWith("sk_test_")) return "test";
+  if (key.startsWith("sk_live_")) return "live";
+  return "unknown";
+}
+
 export function isValidWebhookSignature(rawBody: string, signature: string | null): boolean {
   if (!signature) return false;
   const expected = Buffer.from(

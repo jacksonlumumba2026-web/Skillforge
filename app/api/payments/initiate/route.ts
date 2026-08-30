@@ -109,8 +109,13 @@ export async function POST(request: Request) {
       metadata: { course_id: course.id, user_id: user.id },
     });
     return NextResponse.json({ authorizationUrl: transaction.data.authorization_url });
-  } catch {
-    await admin.from("payments").update({ status: "failed" }).eq("reference", reference);
+  } catch (err) {
+    const reason = err instanceof Error ? err.message : String(err);
+    console.error("[payments/initiate] Paystack init failed", { reference, reason });
+    await admin
+      .from("payments")
+      .update({ status: "failed", failure_reason: reason })
+      .eq("reference", reference);
     return NextResponse.json(
       { error: "Could not start payment with Paystack. Please try again." },
       { status: 500 },

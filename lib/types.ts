@@ -173,6 +173,10 @@ export type Payment = {
   manual_channel: "till" | "send_money" | null;
   /** Manual M-Pesa only — set by an admin once they've checked the code against the real M-Pesa statement. */
   manual_verified_at: string | null;
+  /** Provider error text captured when an attempt fails. Server-written,
+   *  admin-visible only — never render this to the paying user, since
+   *  provider errors can leak configuration detail. */
+  failure_reason: string | null;
   /** Set when a discount/scholarship code was applied — `amount` above is
    *  already the discounted total actually charged (or 0 for a full
    *  scholarship). */

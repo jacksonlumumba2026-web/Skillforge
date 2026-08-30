@@ -2,11 +2,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { createClient } from "@/lib/supabase/server";
-import { formatDuration, getLevelsForCourse } from "@/lib/courses";
+import { formatDuration, getFreePreviewLesson, getLevelsForCourse } from "@/lib/courses";
 import { SITE_URL } from "@/lib/site";
 import PurchaseSection from "@/components/PurchaseSection";
 import StarRating from "@/components/StarRating";
 import DataSaverNote from "@/components/DataSaverNote";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 import ReviewForm from "./ReviewForm";
 import type { CourseModule, LessonPreview } from "@/lib/types";
 
@@ -76,6 +77,7 @@ export default async function CourseDetailPage({
     .order("order_number", { ascending: true });
 
   const levels = await getLevelsForCourse(supabase, course.id);
+  const previewLesson = await getFreePreviewLesson(supabase, course.id);
 
   const moduleIds = (modules ?? []).map((m) => m.id);
   let lessonsByModule = new Map<string, LessonPreview[]>();
@@ -236,6 +238,26 @@ export default async function CourseDetailPage({
           KSh {course.price.toLocaleString()}
         </span>
       </div>
+
+      {previewLesson?.youtube_url && !isEnrolled && (
+        <section className="mb-10">
+          <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-3">
+            <h2 className="text-lg font-semibold">Watch the first lesson free</h2>
+            <span className="text-sm text-[var(--muted)]">
+              No account needed — see the real teaching before you pay.
+            </span>
+          </div>
+          <YouTubeEmbed url={previewLesson.youtube_url} title={previewLesson.title} />
+          <p className="text-sm mt-3">
+            <span className="font-medium">{previewLesson.title}</span>
+            <span className="text-[var(--muted)]"> — {previewLesson.description}</span>
+          </p>
+          <p className="text-sm text-[var(--muted)] mt-2">
+            The other {lessonCount - 1} lesson{lessonCount - 1 === 1 ? "" : "s"} come with written notes,
+            a practice task and a knowledge check.
+          </p>
+        </section>
+      )}
 
       <div className="mb-10">
         <DataSaverNote compact />

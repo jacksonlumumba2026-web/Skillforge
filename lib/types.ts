@@ -132,6 +132,11 @@ export type LessonPreview = {
   description: string;
   duration_seconds: number | null;
   learning_objectives: string[] | null;
+  /** True for the one lesson per course that anyone may watch before paying. */
+  is_free_preview: boolean;
+  /** Only ever non-null when `is_free_preview` is true — the view emits NULL
+   *  for every other lesson, so this cannot leak a paid video by mistake. */
+  youtube_url: string | null;
 };
 
 export type Enrollment = {

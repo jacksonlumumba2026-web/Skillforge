@@ -159,6 +159,34 @@ export async function getLevelsForCourse(
 }
 
 /**
+ * The one lesson per course that anyone may watch before paying, if the course
+ * has one. Reads the public `lesson_previews` view, which emits `youtube_url`
+ * only where `is_free_preview` is set — so this is safe to call for a signed-out
+ * visitor and cannot return a paid lesson's video.
+ */
+export async function getFreePreviewLesson(
+  supabase: SupabaseClient<Database>,
+  courseId: string,
+): Promise<LessonPreview | null> {
+  const { data: modules } = await supabase
+    .from("modules")
+    .select("id")
+    .eq("course_id", courseId);
+  const moduleIds = (modules ?? []).map((m) => m.id);
+  if (moduleIds.length === 0) return null;
+
+  const { data } = await supabase
+    .from("lesson_previews")
+    .select("*")
+    .in("module_id", moduleIds)
+    .eq("is_free_preview", true)
+    .not("youtube_url", "is", null)
+    .limit(1)
+    .maybeSingle();
+  return data ?? null;
+}
+
+/**
  * A course's lessons in curriculum order (module order, then lesson order
  * within each module) — used to find "next lesson" and to compute total
  * lesson counts for progress tracking. Uses the public `lesson_previews`

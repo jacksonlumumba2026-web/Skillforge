@@ -302,7 +302,26 @@ custom authorization layer bolted on top.
       modules are appended to the existing level row, never deleted or
       re-created — which is what keeps learner progress safe. Depth
       therefore varies by course, and the hand-built three are the quality
-      bar the rest are working toward. Web Development for Beginners:
+      bar the rest are working toward. Deepened so far beyond those three:
+      Graphic Design Level 1 (4 modules / 10 lessons, `0047`) and
+      Presentation Design Level 1 (4 / 11, `0048`).
+
+      Two things worth knowing before adding modules by hand. First,
+      `getOrderedLessons()` builds the learner's lesson sequence from
+      `modules.order_number` ALONE and ignores level — so a module appended
+      at the course's max order lands *after* the final level's material,
+      and the course page (which groups by level) still looks correct while
+      the real learning path is scrambled. `build-level-sql.mjs` handles
+      this in its `existing: true` mode by inserting after the target
+      level's last module and shifting the rest down, via a two-phase
+      `+1000` / `-1000+N` offset because `(course_id, order_number)` is
+      unique and a single `+N` update can trip it mid-statement. Second,
+      **438 lessons across 45 courses still carry no notes, learning
+      objectives or knowledge check** — they are a title plus an embedded
+      video. That is the whole pre-existing catalog; only the hand-built
+      levels and new deepening lessons have teaching material around the
+      video, and this routine is the only thing reducing that number.
+      Web Development for Beginners:
       Level 1 "Foundations" (3 modules, 15 lessons — How the Web Works,
       Developer Tools & Workflow, Thinking Like a Developer) and Level 2
       "HTML" (3 modules, 18 lessons — HTML Structure & Text, Links/Images/
@@ -403,7 +422,57 @@ custom authorization layer bolted on top.
 in `.env.local`, and in Vercel for production), so `/courses/request`
 works end to end for topics outside the curated 10.
 
+### Free preview lessons
+
+Every published course exposes its genuine first lesson publicly, so a visitor
+can judge the teaching before paying or even creating an account.
+
+The gate is in the database, not in application code. `lessons` and its
+enrolled-only RLS policy are untouched, so notes, practice activity and
+knowledge check stay inaccessible to non-enrolled users. The public
+`lesson_previews` view — already `security_invoker = false` with a deliberately
+safe column subset — carries `youtube_url` wrapped in a `CASE` that emits it
+only where `lessons.is_free_preview` is set. For every other lesson the column
+is literally NULL in the view, rather than filtered in a query a later change
+could get wrong.
+
+Migration `0050` adds the flag and backfills the first lesson of the first
+module of each published course, skipping any course that already has one so
+re-running never overrides a manual choice. Verified on production: 588 view
+rows, 48 videos exposed, **0 paid videos leaked**.
+
+The notes, practice task and knowledge check stay withheld even on the preview
+lesson — the visitor gets the real video, which is what they need to judge
+quality, and the course page says plainly that the rest comes with purchase.
+
+### Diagnosing failed payments
+
+Both payment initiate routes used to end in a bare `catch {}` that discarded the
+provider's error, and nothing in the payment path logged anything — so three
+days of M-Pesa failures and a week of stuck Paystack payments produced nothing
+to debug from. Now:
+
+- `payments.failure_reason` (migration `0049`) stores the provider error.
+  Server-written and admin-visible only; the customer-facing message stays
+  generic because provider errors can leak configuration detail.
+- The Paystack webhook logs signature failures with `secretKeyMode()`, which
+  reports test/live from the key **prefix** only, never the key itself — so the
+  log names a mode mismatch outright instead of failing silently.
+- For M-Pesa, a `NULL` `checkout_request_id` means Daraja rejected the STK push
+  before Safaricom queued it, so no phone ever showed a PIN prompt. That points
+  at credentials, shortcode, passkey, `MPESA_ENV` or the callback URL — not at
+  buyer behaviour.
+
 ### Going live with Paystack
+
+> **⚠️ This is not done yet, and the live data shows the cost.** As of 30 Aug:
+> **29 payment attempts, 4 successes, none since 22 August.** M-Pesa is 14
+> attempts and **0** successes; Paystack has **10 rows stuck `pending`** from
+> 20-27 Aug, which is exactly what the test-key-in-production failure below
+> looks like from the database side — the customer is charged, the webhook
+> 401s, `finalizePayment()` never runs, and nobody finds out. Those 10 need
+> reconciling against the Paystack dashboard: some of those people may have
+> paid and received nothing. Do this before driving any traffic.
 
 The Paystack account is **approved and switched to Live**. Nothing in this
 repo needs changing for that — the whole flow is server-side (the browser is

@@ -463,16 +463,31 @@ to debug from. Now:
   at credentials, shortcode, passkey, `MPESA_ENV` or the callback URL — not at
   buyer behaviour.
 
+**Reading payment status correctly.** `pending` is written at *initiate* time,
+before the buyer reaches the provider, so an abandoned checkout leaves a
+`pending` row forever. It does **not** mean someone was charged. Only `success`
+and `refunded` represent money that actually moved; measure conversion on those,
+and treat a pile of `pending` rows as abandonment to investigate in the funnel,
+not as failed payments to refund.
+
 ### Going live with Paystack
 
-> **⚠️ This is not done yet, and the live data shows the cost.** As of 30 Aug:
-> **29 payment attempts, 4 successes, none since 22 August.** M-Pesa is 14
-> attempts and **0** successes; Paystack has **10 rows stuck `pending`** from
-> 20-27 Aug, which is exactly what the test-key-in-production failure below
-> looks like from the database side — the customer is charged, the webhook
-> 401s, `finalizePayment()` never runs, and nobody finds out. Those 10 need
-> reconciling against the Paystack dashboard: some of those people may have
-> paid and received nothing. Do this before driving any traffic.
+> **Status as of 31 Aug: Paystack works end to end.** Of 5 completed Paystack
+> payments, **5 produced an active enrollment** — including a full
+> pay → access → refund → revoke cycle verified on 24 Aug. Enrollment lands
+> 30-90 seconds after payment.
+>
+> **Reading `pending` correctly:** there are 10 `pending` Paystack rows, and
+> they are *not* stuck payments. The row is inserted at *initiate* time,
+> before the buyer is redirected to Paystack, so an abandoned checkout leaves
+> a `pending` row permanently. All 10 have a null `checkout_request_id`,
+> meaning they never came back. Treat `pending` as "started checkout", not
+> "charged". Only `success` and `refunded` represent money that moved.
+>
+> **M-Pesa, by contrast, is genuinely broken:** 14 attempts, **0** successes,
+> every row with a null `checkout_request_id` — Daraja rejected the STK push
+> before Safaricom queued it, so no customer's phone ever showed a prompt.
+> Do not promote M-Pesa as a payment option until that is fixed.
 
 The Paystack account is **approved and switched to Live**. Nothing in this
 repo needs changing for that — the whole flow is server-side (the browser is

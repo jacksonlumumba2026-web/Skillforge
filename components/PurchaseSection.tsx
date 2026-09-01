@@ -50,6 +50,13 @@ export default function PurchaseSection({
 
   return (
     <div className="max-w-xs mx-auto space-y-4">
+      {/* Mirrors the buttons rendered below -- M-Pesa (STK, or the manual till /
+          send-money fallback) and Paystack card. Keep the two in step: a method
+          named here that has no button below is a promise the page cannot keep. */}
+      <p className="text-xs text-[var(--muted)]">
+        {t("purchase.acceptedMethods")}: M-Pesa · Visa · Mastercard
+      </p>
+
       {applied && (
         <p className="text-sm p-3 rounded-lg" style={{ background: "var(--surface)", color: "var(--success)" }}>
           {applied.percentOff === 100

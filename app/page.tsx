@@ -5,12 +5,16 @@ import { getPublishedCourses } from "@/lib/courses";
 import CourseCard from "@/components/CourseCard";
 import { t, LOCALE_COOKIE, type Locale } from "@/lib/i18n";
 
-const WHY_LEARN_KEYS = [
-  "home.why.jobReady",
-  "home.why.freelance",
-  "home.why.business",
-  "home.why.tech",
-  "home.why.income",
+// Replaces the old aspirational "why learn digital skills" checks. These are
+// claims about the product rather than about the learner's future, so each one
+// can be checked against the running site -- see the note in lib/i18n.ts for
+// what backs each key, and what deliberately is not claimed.
+const PROOF_KEYS = [
+  "home.proof.preview",
+  "home.proof.levels",
+  "home.proof.language",
+  "home.proof.data",
+  "home.proof.oneTime",
 ];
 
 export default async function HomePage() {
@@ -37,14 +41,15 @@ export default async function HomePage() {
             {t(locale, "home.startLearning")}
           </Link>
         </div>
+        <p className="text-sm text-[var(--muted)] mt-5">{t(locale, "home.paymentLine")}</p>
       </section>
 
-      {/* Why learn digital skills */}
+      {/* What you actually get */}
       <section className="border-t border-[var(--border)]">
         <div className="container-page py-16">
-          <h2 className="text-2xl font-bold text-center mb-10">{t(locale, "home.whyLearnTitle")}</h2>
+          <h2 className="text-2xl font-bold text-center mb-10">{t(locale, "home.proofTitle")}</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-6 max-w-4xl mx-auto">
-            {WHY_LEARN_KEYS.map((key) => (
+            {PROOF_KEYS.map((key) => (
               <div key={key} className="text-center">
                 <div
                   className="w-10 h-10 rounded-full mx-auto mb-3 flex items-center justify-center"

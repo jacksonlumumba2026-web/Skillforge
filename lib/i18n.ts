@@ -29,12 +29,22 @@ const en: Dictionary = {
     "Learn practical digital skills step by step through simple, structured courses designed for beginners.",
   "home.exploreCourses": "Explore Learning Paths",
   "home.startLearning": "Start Learning",
-  "home.whyLearnTitle": "Why Learn Digital Skills?",
-  "home.why.jobReady": "Get job-ready skills",
-  "home.why.freelance": "Start freelancing",
-  "home.why.business": "Build online businesses",
-  "home.why.tech": "Work with modern technology",
-  "home.why.income": "Create new income opportunities",
+  // Every claim below is checkable against what the product actually does
+  // today -- deliberately, because there is nothing else honest to say yet.
+  // preview  -> lessons.is_free_preview, exposed via the lesson_previews view
+  // levels   -> the levels table, populated for every published path
+  // language -> this file plus components/LanguageToggle
+  // data     -> components/DataSaverNote
+  // oneTime  -> courses.price in KES; there is no recurring billing anywhere
+  // Do NOT add "notes and a practice task on every lesson" here: 438 lessons
+  // across 45 paths are still a title plus a video, so that would be false.
+  "home.proofTitle": "What you actually get",
+  "home.proof.preview": "Watch a full first lesson free — no account, no card",
+  "home.proof.levels": "Built in levels, from zero to working professional",
+  "home.proof.language": "Learn in English or Kiswahili",
+  "home.proof.data": "Made for slow connections — every lesson shows its data cost",
+  "home.proof.oneTime": "One payment in shillings — no subscription",
+  "home.paymentLine": "Pay in Kenyan shillings — M-Pesa or card. One payment, no subscription.",
   "home.popularCoursesTitle": "Popular Learning Paths",
   "home.browseAllCourses": "Browse all Learning Paths",
 
@@ -66,6 +76,7 @@ const en: Dictionary = {
   "purchase.payWithMpesa": "Pay with M-Pesa",
   "purchase.or": "or",
   "purchase.haveDiscountCode": "Have a discount code?",
+  "purchase.acceptedMethods": "Accepted here",
 };
 
 const sw: Dictionary = {
@@ -86,12 +97,13 @@ const sw: Dictionary = {
     "Jifunze ujuzi wa kidijitali wa vitendo hatua kwa hatua kupitia kozi rahisi zilizoandaliwa kwa ajili ya wanaoanza.",
   "home.exploreCourses": "Angalia Njia za Kujifunza",
   "home.startLearning": "Anza Kujifunza",
-  "home.whyLearnTitle": "Kwa Nini Ujifunze Ujuzi wa Kidijitali?",
-  "home.why.jobReady": "Pata ujuzi unaotafutwa kazini",
-  "home.why.freelance": "Anza kufanya kazi za kujitegemea (freelance)",
-  "home.why.business": "Jenga biashara mtandaoni",
-  "home.why.tech": "Fanya kazi na teknolojia ya kisasa",
-  "home.why.income": "Pata fursa mpya za mapato",
+  "home.proofTitle": "Unachopata Hasa",
+  "home.proof.preview": "Tazama somo la kwanza zima bila malipo — bila akaunti, bila kadi",
+  "home.proof.levels": "Imejengwa kwa viwango, kutoka sifuri hadi mtaalamu",
+  "home.proof.language": "Jifunze kwa Kiingereza au Kiswahili",
+  "home.proof.data": "Kwa mtandao wa polepole — kila somo linaonyesha kiasi cha data",
+  "home.proof.oneTime": "Malipo mara moja kwa shilingi — hakuna usajili wa kila mwezi",
+  "home.paymentLine": "Lipa kwa shilingi za Kenya — M-Pesa au kadi. Malipo mara moja, hakuna usajili wa kila mwezi.",
   "home.popularCoursesTitle": "Njia za Kujifunza Maarufu",
   "home.browseAllCourses": "Angalia njia zote za kujifunza",
 
@@ -123,6 +135,7 @@ const sw: Dictionary = {
   "purchase.payWithMpesa": "Lipa kwa M-Pesa",
   "purchase.or": "au",
   "purchase.haveDiscountCode": "Una msimbo wa punguzo?",
+  "purchase.acceptedMethods": "Njia za malipo",
 };
 
 export const dictionaries: Record<Locale, Dictionary> = { en, sw };

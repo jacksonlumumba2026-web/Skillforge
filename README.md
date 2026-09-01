@@ -445,6 +445,55 @@ The notes, practice task and knowledge check stay withheld even on the preview
 lesson — the visitor gets the real video, which is what they need to judge
 quality, and the course page says plainly that the rest comes with purchase.
 
+### Homepage claims, and the rule they follow
+
+The homepage used to run five aspirational checks — "Get job-ready skills",
+"Start freelancing", "Build online businesses" and so on. They said nothing a
+visitor could verify, and nothing another learning site could not also say.
+
+They are replaced by `PROOF_KEYS` in `app/page.tsx`: five claims about the
+product rather than about the learner's future, each one backed by something
+already shipped.
+
+| Claim | What makes it true |
+|---|---|
+| Watch a full first lesson free, no account, no card | `lessons.is_free_preview` (migration `0050`), rendered on every course page |
+| Built in levels, zero → working professional | the `levels` table, populated for every published path (`0046`) |
+| Learn in English or Kiswahili | `lib/i18n.ts` + `components/LanguageToggle` |
+| Made for slow connections — every lesson shows its data cost | `components/DataSaverNote` |
+| One payment in shillings, no subscription | per-path `courses.price` in KES; there is no recurring billing in the codebase |
+
+**The rule: a claim here must be checkable against the running site.** Two things
+were deliberately left out under it:
+
+- *"Notes, a practice task and a knowledge check on every lesson."* False today —
+  438 lessons across 45 paths are still a title plus a video. It becomes true as
+  the deepening routine works through them, and can be added then.
+- *Testimonials, student projects, ratings.* There are 0 reviews and 1 learner
+  with a completed lesson. `course_reviews` is already rendered — star ratings on
+  the course cards, average and individual reviews on the course page, and a
+  `ReviewForm` for enrolled learners — so real proof will appear on its own as it
+  is earned. Nothing is invented to fill the gap in the meantime.
+
+Every key lives in **both** the `en` and `sw` blocks of `lib/i18n.ts`. `t()` falls
+back to English on a missing key, so a Swahili gap renders English rather than
+erroring and the build will not catch it — check key parity between the two
+blocks when adding any.
+
+### Payment methods on the page
+
+The hero carries one line naming what a buyer can pay with, and
+`components/PurchaseSection` repeats it above the buttons. That line must mirror
+the buttons rendered below it: a method named with no button under it is a
+promise the page cannot keep.
+
+Note the M-Pesa split when reading that line. **Manual M-Pesa works** — the till
+and send-money channels take a real payment and are gated on
+`MPESA_TILL_NUMBER` / `MPESA_MANUAL_NUMBER`. The **Daraja STK push does not**: all
+14 attempts have `checkout_request_id = NULL`, which is only written after Daraja
+accepts a push, so no phone ever showed a PIN prompt. Card via Paystack works and
+is proven end to end, refunds included.
+
 ### Diagnosing failed payments
 
 Both payment initiate routes used to end in a bare `catch {}` that discarded the

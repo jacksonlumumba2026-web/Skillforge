@@ -445,6 +445,39 @@ The notes, practice task and knowledge check stay withheld even on the preview
 lesson — the visitor gets the real video, which is what they need to judge
 quality, and the course page says plainly that the rest comes with purchase.
 
+### Verifying a lesson video: use the YouTube Data API first
+
+Video attribution is the slowest part of building curriculum, and for a long
+time it was done by running paired web searches and a falsification control. That
+method is still documented below and still catches real errors — but it is a
+fallback, not the first move.
+
+`YOUTUBE_API_KEY` is already configured, and `googleapis.com` is reachable from
+the build environment. One call settles id, exact title, channel, duration and
+whether the video still exists:
+
+```
+curl -sS "https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,status&id=<comma-separated-ids>&key=$YOUTUBE_API_KEY"
+```
+
+Run this on every candidate before writing a single lesson. On the batch that
+built migrations `0051` and `0052` it overturned four research verdicts in a row:
+
+| Video | Search-based verdict | API truth |
+|---|---|---|
+| `7kBJerjnQTk` | Unconfirmable — two candidate Google channels | **Grow with Google** |
+| `TSImtOoHssg` | Unconfirmable — prose evidence only | **LearnFree** |
+| `luH4t1kZ5CA` | Suspected a different creator reusing the title | **Simpletivity**, not Kevin Stratvert |
+| `gdrxAoqfvbA` | Possibly deleted (appeared in a dataset of dead ids) | Live, 16:49 |
+
+Two of those were videos that would have been dropped despite being fine, and one
+was a genuine title collision that the search method correctly smelled but could
+not prove. The API resolves all four in a second.
+
+The search-and-control method still matters for the question the API cannot
+answer — *does this video actually teach the thing the lesson claims?* Nothing but
+watching or reading a reliable chapter list settles that.
+
 ### Homepage claims, and the rule they follow
 
 The homepage used to run five aspirational checks — "Get job-ready skills",

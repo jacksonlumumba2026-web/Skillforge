@@ -303,8 +303,19 @@ custom authorization layer bolted on top.
       re-created — which is what keeps learner progress safe. Depth
       therefore varies by course, and the hand-built three are the quality
       bar the rest are working toward. Deepened so far beyond those three:
-      Graphic Design Level 1 (4 modules / 10 lessons, `0047`) and
-      Presentation Design Level 1 (4 / 11, `0048`).
+      Graphic Design Level 1 (4 modules / 10 lessons, `0047`),
+      Presentation Design Level 1 (4 / 11, `0048`), AI Tools for Everyday
+      Work (4 / 8, `0051`), Google Workspace Productivity (4 / 8, `0052`)
+      and Excel & Spreadsheets for Work (4 / 9, `0053`).
+
+      The gap those last three filled is the pattern to look for in the
+      rest: each was a **tool tour**. AI Tools showed four chatbots and
+      taught nothing about prompting, verifying an answer, or what is
+      unsafe to paste in. Google Workspace toured the suite and covered
+      Gmail without reaching sharing permissions or Docs collaboration.
+      Excel covered the interface and formulas without ever explaining
+      absolute references — the one thing that makes copied formulas
+      break. The buttons were all there; the principles were not.
 
       Two things worth knowing before adding modules by hand. First,
       `getOrderedLessons()` builds the learner's lesson sequence from

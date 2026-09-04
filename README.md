@@ -307,7 +307,8 @@ custom authorization layer bolted on top.
       Presentation Design Level 1 (4 / 11, `0048`), AI Tools for Everyday
       Work (4 / 8, `0051`), Google Workspace Productivity (4 / 8, `0052`),
       Excel & Spreadsheets for Work (4 / 9, `0053`), UI/UX Design (Figma)
-      (4 / 8, `0054`) and Vibe coding (4 / 8, `0055`).
+      (4 / 8, `0054`), Vibe coding (4 / 8, `0055`), SEO (4 / 9, `0056`)
+      and Google Ads & Facebook Ads (4 / 8, `0057`).
 
       The gap these filled is the pattern to look for in the rest: each was
       a **tool tour**. AI Tools showed four chatbots and
@@ -319,7 +320,11 @@ custom authorization layer bolted on top.
       break. UI/UX Design taught Figma but not UX — no user research, no
       user flows. Vibe coding showed two AI editors and never mentioned
       reviewing the generated code or using version control to undo it. The
-      buttons were all there; the principles were not.
+      buttons were all there; the principles were not. SEO taught tactics
+      without ever explaining crawling and indexing, so a learner could not
+      tell a technical problem from a ranking one. Google Ads showed how to
+      build a campaign but nothing about budgets or conversion tracking —
+      the two things that decide whether the money was wasted.
 
       Two things worth knowing before adding modules by hand. First,
       `getOrderedLessons()` builds the learner's lesson sequence from

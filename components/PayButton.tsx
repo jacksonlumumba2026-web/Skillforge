@@ -44,8 +44,8 @@ export default function PayButton({
 
   return (
     <div>
-      <button className="btn btn-secondary w-full" onClick={handleClick} disabled={loading}>
-        {loading ? "Redirecting to payment…" : `${t("purchase.payByCard")} — KSh ${price.toLocaleString()}`}
+      <button className="btn btn-primary w-full" onClick={handleClick} disabled={loading}>
+        {loading ? "Taking you to checkout…" : `${t("purchase.payNow")} — KSh ${price.toLocaleString()}`}
       </button>
       {error && <p className="text-xs text-red-600 mt-3">{error}</p>}
     </div>

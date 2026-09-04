@@ -13,12 +13,12 @@ import { recordDiscountRedemption } from "@/lib/discountCodes";
  */
 export async function finalizePayment(
   reference: string,
-): Promise<{ ok: true; courseId: string } | { ok: false; error: string }> {
+): Promise<{ ok: true; courseId: string | null } | { ok: false; error: string }> {
   const admin = createAdminClient();
 
   const { data: payment } = await admin
     .from("payments")
-    .select("id, user_id, course_id, status, discount_code_id")
+    .select("id, user_id, course_id, kind, status, discount_code_id")
     .eq("reference", reference)
     .maybeSingle();
   if (!payment) return { ok: false, error: "Unknown payment reference." };
@@ -35,18 +35,50 @@ export async function finalizePayment(
     return { ok: false, error: "Payment was not successful." };
   }
 
+  // Which courses this payment buys. A single-course payment names one; a
+  // bundle's set was fixed at checkout and is read back rather than
+  // recomputed, so a catalogue change between paying and finalizing cannot
+  // alter what the buyer receives.
+  const courseIds = await coursesForPayment(admin, payment.id, payment.course_id, payment.kind);
+  if (courseIds.length === 0) {
+    // Money took, nothing to grant — refuse to mark this successful, because
+    // a `success` row with no enrollment is exactly the state that looks
+    // fine in reporting and leaves a paying customer with nothing.
+    console.error("[finalizePayment] no courses resolved for payment", {
+      reference,
+      kind: payment.kind,
+    });
+    return { ok: false, error: "Could not work out what this payment was for." };
+  }
+
   await admin.from("payments").update({ status: "success" }).eq("reference", reference);
-  await admin
-    .from("enrollments")
-    .upsert(
-      { user_id: payment.user_id, course_id: payment.course_id, status: "active" },
-      { onConflict: "user_id,course_id" },
-    );
+  await admin.from("enrollments").upsert(
+    courseIds.map((courseId) => ({ user_id: payment.user_id, course_id: courseId, status: "active" })),
+    { onConflict: "user_id,course_id" },
+  );
   if (payment.discount_code_id) {
     await recordDiscountRedemption(payment.discount_code_id, payment.user_id, payment.id);
   }
 
   return { ok: true, courseId: payment.course_id };
+}
+
+/**
+ * Resolves a payment to the course ids it grants. Shared by the Paystack and
+ * M-Pesa finalizers so the two cannot disagree about what a bundle contains.
+ */
+async function coursesForPayment(
+  admin: ReturnType<typeof createAdminClient>,
+  paymentId: string,
+  courseId: string | null,
+  kind: string,
+): Promise<string[]> {
+  if (kind !== "bundle") return courseId ? [courseId] : [];
+  const { data } = await admin
+    .from("payment_bundle_courses")
+    .select("course_id")
+    .eq("payment_id", paymentId);
+  return (data ?? []).map((row) => row.course_id);
 }
 
 /**
@@ -60,13 +92,13 @@ export async function finalizePayment(
 export async function finalizeMpesaPayment(
   checkoutRequestId: string,
 ): Promise<
-  { ok: true; courseId: string } | { ok: false; pending: true } | { ok: false; error: string }
+  { ok: true; courseId: string | null } | { ok: false; pending: true } | { ok: false; error: string }
 > {
   const admin = createAdminClient();
 
   const { data: payment } = await admin
     .from("payments")
-    .select("id, user_id, course_id, status, discount_code_id")
+    .select("id, user_id, course_id, kind, status, discount_code_id")
     .eq("checkout_request_id", checkoutRequestId)
     .maybeSingle();
   if (!payment) return { ok: false, error: "Unknown M-Pesa transaction." };
@@ -91,13 +123,17 @@ export async function finalizeMpesaPayment(
     return { ok: false, error: query.ResultDesc || "Payment was not successful." };
   }
 
+  const courseIds = await coursesForPayment(admin, payment.id, payment.course_id, payment.kind);
+  if (courseIds.length === 0) {
+    console.error("[finalizeMpesaPayment] no courses resolved for payment", { checkoutRequestId });
+    return { ok: false, error: "Could not work out what this payment was for." };
+  }
+
   await admin.from("payments").update({ status: "success" }).eq("checkout_request_id", checkoutRequestId);
-  await admin
-    .from("enrollments")
-    .upsert(
-      { user_id: payment.user_id, course_id: payment.course_id, status: "active" },
-      { onConflict: "user_id,course_id" },
-    );
+  await admin.from("enrollments").upsert(
+    courseIds.map((cid) => ({ user_id: payment.user_id, course_id: cid, status: "active" })),
+    { onConflict: "user_id,course_id" },
+  );
   if (payment.discount_code_id) {
     await recordDiscountRedemption(payment.discount_code_id, payment.user_id, payment.id);
   }

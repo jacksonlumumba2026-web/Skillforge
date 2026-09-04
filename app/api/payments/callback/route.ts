@@ -18,5 +18,11 @@ export async function GET(request: Request) {
     return NextResponse.redirect(`${origin}/courses?payment=error`);
   }
 
-  return NextResponse.redirect(`${origin}/courses/${result.courseId}?payment=success`);
+  // A bundle payment has no single course to land on, so send those buyers to
+  // the dashboard where all ten now appear.
+  return NextResponse.redirect(
+    result.courseId
+      ? `${origin}/courses/${result.courseId}?payment=success`
+      : `${origin}/dashboard?payment=success`,
+  );
 }

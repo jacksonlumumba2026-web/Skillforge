@@ -533,6 +533,60 @@ back to English on a missing key, so a Swahili gap renders English rather than
 erroring and the build will not catch it — check key parity between the two
 blocks when adding any.
 
+### Pricing: one path KSh 500, or pick any 10 for KSh 1,000
+
+Two things to buy, and only one payment button for either.
+
+**One Learning Path — KSh 500.** Unchanged; all 48 published paths are priced
+the same.
+
+**Any 10 for KSh 1,000** at `/bundle`. The buyer chooses which ten, filtered by
+category, so the bundle matches their interests rather than being a fixed list.
+Ten bought separately would be KSh 5,000.
+
+Prices and the bundle size live in `lib/pricing.ts` so the checkout routes and
+the UI cannot drift apart. **`BUNDLE_COURSE_COUNT` is enforced server-side** in
+`app/api/payments/bundle/initiate` — the picker makes the rule visible, it does
+not enforce it. That route also de-duplicates the posted ids (so ten copies of
+one course cannot buy a bundle), re-checks every id is published, and rejects
+courses the buyer already owns rather than taking money for nothing.
+
+How a bundle is stored: `payments.kind` is `course` or `bundle`, and
+`payments.course_id` is now nullable — a bundle names no single course. Its
+chosen ten live in `payment_bundle_courses`, written **before** the redirect to
+Paystack, so a crash between paying and finalizing cannot leave a paid bundle
+granting nothing. A DB check constraint enforces that a `course` payment has a
+course_id and a `bundle` payment does not, so a malformed row cannot be written
+at all.
+
+`finalizePayment()` resolves a payment to its course ids through one shared
+helper used by both the Paystack and M-Pesa finalizers, then upserts every
+enrollment in one call. If it resolves to zero courses it refuses to mark the
+payment successful — a `success` row with no enrollment looks fine in reporting
+and leaves a paying customer with nothing, which is the worst of both.
+
+Refunds follow: `app/api/admin/payments/[paymentId]/refund` revokes all ten
+enrollments for a bundle, not one.
+
+### One payment button
+
+The purchase box has a single **Pay Now** button. Paystack's own checkout page
+offers card *and* M-Pesa, so a second in-app payment button would only duplicate
+what the gateway already does.
+
+The previous in-app "Pay with M-Pesa" button (Daraja STK push) has been removed
+along with the manual till/send-money component. The STK push never worked in
+production: all 14 attempts had `checkout_request_id = NULL`, meaning Daraja
+rejected the push before Safaricom ever queued it, so no phone ever showed a PIN
+prompt. It was showing buyers a failure message on the one screen where failure
+costs a sale.
+
+The M-Pesa **API routes** (`/api/payments/mpesa/*`, `/api/payments/mpesa-manual/*`)
+are deliberately left in place — they are unreachable from the purchase UI, but
+the manual-verification admin flow still needs to settle any historical pending
+rows, and keeping them means restoring in-app M-Pesa later is a UI change rather
+than a rebuild.
+
 ### Payment methods on the page
 
 The hero carries one line naming what a buyer can pay with, and

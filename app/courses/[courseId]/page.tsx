@@ -311,20 +311,7 @@ export default async function CourseDetailPage({
             This Learning Path&apos;s curriculum is still being built out — check back soon.
           </p>
         ) : user ? (
-          <PurchaseSection
-            courseId={course.id}
-            price={course.price}
-            manualMpesaTill={
-              process.env.MPESA_TILL_NUMBER && process.env.MPESA_TILL_NAME
-                ? { number: process.env.MPESA_TILL_NUMBER, name: process.env.MPESA_TILL_NAME }
-                : undefined
-            }
-            manualMpesaSendMoney={
-              process.env.MPESA_MANUAL_NUMBER && process.env.MPESA_MANUAL_NAME
-                ? { number: process.env.MPESA_MANUAL_NUMBER, name: process.env.MPESA_MANUAL_NAME }
-                : undefined
-            }
-          />
+          <PurchaseSection courseId={course.id} price={course.price} />
         ) : (
           <Link href="/register" className="btn btn-primary">
             Get Full Access — KSh {course.price.toLocaleString()}

@@ -2,23 +2,18 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import MpesaPayButton from "@/components/MpesaPayButton";
 import PayButton from "@/components/PayButton";
-import ManualMpesaPayment from "@/components/ManualMpesaPayment";
 import { useTranslate } from "@/components/LocaleProvider";
+import { BUNDLE_PRICE, BUNDLE_COURSE_COUNT } from "@/lib/pricing";
 
 type Applied = { code: string; percentOff: number; discountedPrice: number };
 
 export default function PurchaseSection({
   courseId,
   price,
-  manualMpesaTill,
-  manualMpesaSendMoney,
 }: {
   courseId: string;
   price: number;
-  manualMpesaTill?: { number: string; name: string };
-  manualMpesaSendMoney?: { number: string; name: string };
 }) {
   const t = useTranslate();
   const [showCodeField, setShowCodeField] = useState(false);
@@ -50,38 +45,30 @@ export default function PurchaseSection({
 
   return (
     <div className="max-w-xs mx-auto space-y-4">
-      {/* Mirrors the buttons rendered below -- M-Pesa (STK, or the manual till /
-          send-money fallback) and Paystack card. Keep the two in step: a method
-          named here that has no button below is a promise the page cannot keep. */}
-      <p className="text-xs text-[var(--muted)]">
-        {t("purchase.acceptedMethods")}: M-Pesa · Visa · Mastercard
-      </p>
-
       {applied && (
         <p className="text-sm p-3 rounded-lg" style={{ background: "var(--surface)", color: "var(--success)" }}>
           {applied.percentOff === 100
-            ? "Scholarship code applied — this course is free for you."
+            ? "Scholarship code applied — this Learning Path is free for you."
             : `${applied.percentOff}% off applied — KSh ${effectivePrice.toLocaleString()}.`}
         </p>
       )}
 
-      <MpesaPayButton courseId={courseId} price={effectivePrice} discountCode={applied?.code} />
-      <div className="flex items-center gap-3 text-xs text-[var(--muted)]">
-        <span className="flex-1 h-px" style={{ background: "var(--border)" }} />
-        {t("purchase.or")}
-        <span className="flex-1 h-px" style={{ background: "var(--border)" }} />
-      </div>
+      {/* One button, deliberately. Paystack's own checkout page offers card
+          AND M-Pesa, so a second in-app payment button would only duplicate
+          what the gateway already does — and the previous in-app M-Pesa
+          button was failing before Safaricom ever saw the request. */}
       <PayButton courseId={courseId} price={effectivePrice} discountCode={applied?.code} />
 
-      {(manualMpesaTill || manualMpesaSendMoney) && effectivePrice > 0 && (
-        <ManualMpesaPayment
-          courseId={courseId}
-          price={effectivePrice}
-          discountCode={applied?.code}
-          till={manualMpesaTill}
-          sendMoney={manualMpesaSendMoney}
-        />
-      )}
+      <p className="text-xs text-[var(--muted)]">{t("purchase.acceptedMethods")}</p>
+
+      <div className="pt-3 border-t" style={{ borderColor: "var(--border)" }}>
+        <Link href="/bundle" className="text-sm font-medium" style={{ color: "var(--primary)" }}>
+          Or pick any {BUNDLE_COURSE_COUNT} for KSh {BUNDLE_PRICE.toLocaleString()}
+        </Link>
+        <p className="text-xs text-[var(--muted)] mt-1">
+          Choose the {BUNDLE_COURSE_COUNT} that suit you — far cheaper than buying them one at a time.
+        </p>
+      </div>
 
       {showCodeField ? (
         <form onSubmit={handleApply} className="space-y-2">

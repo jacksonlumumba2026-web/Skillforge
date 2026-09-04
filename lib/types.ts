@@ -158,10 +158,21 @@ export type LessonProgress = {
 
 export type PaymentProvider = "paystack" | "mpesa" | "mpesa_manual";
 
+export type PaymentKind = "course" | "bundle";
+
+/** One course inside a bundle payment. The set is fixed at checkout time. */
+export type PaymentBundleCourse = {
+  payment_id: string;
+  course_id: string;
+};
+
 export type Payment = {
   id: string;
   user_id: string;
-  course_id: string;
+  /** Null for a bundle payment — its courses live in payment_bundle_courses. */
+  course_id: string | null;
+  /** course = one course named by course_id. bundle = the set in payment_bundle_courses. */
+  kind: PaymentKind;
   reference: string;
   amount: number;
   status: PaymentStatus;
@@ -379,6 +390,18 @@ export type Database = {
             columns: ["course_id"];
             isOneToOne: false;
             referencedRelation: "courses";
+            referencedColumns: ["id"];
+          },
+        ]
+      >;
+      payment_bundle_courses: Table<
+        PaymentBundleCourse,
+        [
+          {
+            foreignKeyName: "payment_bundle_courses_payment_id_fkey";
+            columns: ["payment_id"];
+            isOneToOne: false;
+            referencedRelation: "payments";
             referencedColumns: ["id"];
           },
         ]

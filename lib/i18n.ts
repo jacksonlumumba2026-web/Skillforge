@@ -72,11 +72,9 @@ const en: Dictionary = {
   "dashboard.welcome": "Welcome",
   "dashboard.subtitle": "Here's where you left off.",
 
-  "purchase.payByCard": "Pay by Card",
-  "purchase.payWithMpesa": "Pay with M-Pesa",
-  "purchase.or": "or",
+  "purchase.payNow": "Pay Now",
   "purchase.haveDiscountCode": "Have a discount code?",
-  "purchase.acceptedMethods": "Accepted here",
+  "purchase.acceptedMethods": "Pay by M-Pesa or card on the next screen — secured by Paystack.",
 };
 
 const sw: Dictionary = {
@@ -131,11 +129,9 @@ const sw: Dictionary = {
   "dashboard.welcome": "Karibu",
   "dashboard.subtitle": "Hapa ndipo ulipoishia.",
 
-  "purchase.payByCard": "Lipa kwa Kadi",
-  "purchase.payWithMpesa": "Lipa kwa M-Pesa",
-  "purchase.or": "au",
+  "purchase.payNow": "Lipa Sasa",
   "purchase.haveDiscountCode": "Una msimbo wa punguzo?",
-  "purchase.acceptedMethods": "Njia za malipo",
+  "purchase.acceptedMethods": "Lipa kwa M-Pesa au kadi kwenye skrini inayofuata — kupitia Paystack.",
 };
 
 export const dictionaries: Record<Locale, Dictionary> = { en, sw };

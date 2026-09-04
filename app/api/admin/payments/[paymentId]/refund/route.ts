@@ -18,7 +18,7 @@ export async function POST(_request: Request, { params }: { params: Promise<{ pa
   const admin = createAdminClient();
   const { data: payment } = await admin
     .from("payments")
-    .select("user_id, course_id, status")
+    .select("user_id, course_id, kind, status")
     .eq("id", paymentId)
     .maybeSingle();
   if (!payment) return NextResponse.json({ error: "Payment not found." }, { status: 404 });
@@ -32,11 +32,24 @@ export async function POST(_request: Request, { params }: { params: Promise<{ pa
     .eq("id", paymentId);
   if (paymentError) return NextResponse.json({ error: paymentError.message }, { status: 400 });
 
-  await admin
-    .from("enrollments")
-    .update({ status: "revoked" })
-    .eq("user_id", payment.user_id)
-    .eq("course_id", payment.course_id);
+  // Refunding a bundle has to revoke every course it granted, not just one —
+  // a bundle payment has no course_id of its own.
+  let courseIds: string[] = payment.course_id ? [payment.course_id] : [];
+  if (payment.kind === "bundle") {
+    const { data: bundleCourses } = await admin
+      .from("payment_bundle_courses")
+      .select("course_id")
+      .eq("payment_id", paymentId);
+    courseIds = (bundleCourses ?? []).map((row) => row.course_id);
+  }
 
-  return NextResponse.json({ ok: true });
+  if (courseIds.length > 0) {
+    await admin
+      .from("enrollments")
+      .update({ status: "revoked" })
+      .eq("user_id", payment.user_id)
+      .in("course_id", courseIds);
+  }
+
+  return NextResponse.json({ ok: true, revokedCourses: courseIds.length });
 }

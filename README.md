@@ -120,7 +120,25 @@ custom authorization layer bolted on top.
       always circumstantial. Motion Graphics shipped precisely because
       every one of its six videos is on an official Adobe channel, and
       Adobe embeds the channel in the video title ("| Adobe Video"), which
-      is the strongest attribution signal available here. Backed by real YouTube tutorials
+      is the strongest attribution signal available here.
+
+      Day 7 (`0060_curated_catalog_day7.sql`): Power BI for Data Reporting.
+      **The constraint has moved.** Attribution is no longer the bottleneck
+      — the YouTube Data API returns the uploading channel directly, so
+      verification now takes seconds rather than ~50 searches per video, and
+      nothing was dropped for weak sourcing. What limits a day now is TOPIC
+      SUPPLY: at 48 courses the obvious subjects are taken, and seven
+      candidates were rejected for overlapping existing courses rather than
+      for bad videos (CapCut vs video-editing, Google Sheets automation vs
+      excel-spreadsheets-for-work, Notion vs project-management-tools, and
+      four others). Power BI survived because it is genuinely absent, has a
+      vendor channel, and is a hiring keyword.
+
+      Day 7 also changed the quality bar: **every one of its six lessons
+      ships with learning objectives, notes, a practice activity and a
+      knowledge check.** Days 1-6 shipped title-plus-video lessons, which is
+      exactly how the 438-lesson content backlog was created. New courses
+      should no longer add to it. Backed by real YouTube tutorials
       from established channels. Written by hand instead of spending Anthropic/YouTube API
       calls on topics already known to be wanted — the AI generator is
       reserved for topics outside this set. `courses.display_order`

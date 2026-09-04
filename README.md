@@ -308,7 +308,8 @@ custom authorization layer bolted on top.
       Work (4 / 8, `0051`), Google Workspace Productivity (4 / 8, `0052`),
       Excel & Spreadsheets for Work (4 / 9, `0053`), UI/UX Design (Figma)
       (4 / 8, `0054`), Vibe coding (4 / 8, `0055`), SEO (4 / 9, `0056`)
-      and Google Ads & Facebook Ads (4 / 8, `0057`).
+      Google Ads & Facebook Ads (4 / 8, `0057`) and E-commerce & Online
+      Selling (4 / 9, `0059`).
 
       The gap these filled is the pattern to look for in the rest: each was
       a **tool tour**. AI Tools showed four chatbots and
@@ -324,7 +325,9 @@ custom authorization layer bolted on top.
       without ever explaining crawling and indexing, so a learner could not
       tell a technical problem from a ranking one. Google Ads showed how to
       build a campaign but nothing about budgets or conversion tracking —
-      the two things that decide whether the money was wasted.
+      the two things that decide whether the money was wasted. E-commerce
+      toured four selling platforms without covering product photography,
+      listings or pricing — the things that decide whether anyone buys.
 
       Two things worth knowing before adding modules by hand. First,
       `getOrderedLessons()` builds the learner's lesson sequence from

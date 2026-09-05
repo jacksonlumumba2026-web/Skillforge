@@ -328,8 +328,9 @@ custom authorization layer bolted on top.
       (4 / 8, `0054`), Vibe coding (4 / 8, `0055`), SEO (4 / 9, `0056`),
       Google Ads & Facebook Ads (4 / 8, `0057`), E-commerce & Online
       Selling (4 / 9, `0059`), Social Media Management (4 / 8, `0061`),
-      Project Management Tools (4 / 8, `0062`) and Email Marketing
-      (4 / 8, `0063`).
+      Project Management Tools (4 / 8, `0062`), Email Marketing
+      (4 / 8, `0063`), Python Programming (4 / 8, `0064`) and Data
+      Analysis & Visualization (4 / 8, `0065`).
 
       The gap these filled is the pattern to look for in the rest: each was
       a **tool tour**. AI Tools showed four chatbots and
@@ -355,7 +356,11 @@ custom authorization layer bolted on top.
       work into tasks, so the board had nothing sensible to hold. Email
       Marketing covered list-building and Mailchimp's buttons but not
       deliverability — the thing that decides whether the campaign is seen
-      at all.
+      at all. Python taught setup, variables and loops but neither
+      conditionals nor functions, so nothing in it could make a decision.
+      Data Analysis taught Power BI and Looker Studio without a word on
+      cleaning data or choosing a chart, which is where the analysis
+      actually happens.
 
       Two things worth knowing before adding modules by hand. First,
       `getOrderedLessons()` builds the learner's lesson sequence from

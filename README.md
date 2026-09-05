@@ -138,7 +138,24 @@ custom authorization layer bolted on top.
       ships with learning objectives, notes, a practice activity and a
       knowledge check.** Days 1-6 shipped title-plus-video lessons, which is
       exactly how the 438-lesson content backlog was created. New courses
-      should no longer add to it. Backed by real YouTube tutorials
+      should no longer add to it.
+
+      Day 8 (`0066_curated_catalog_day8.sql`): Photo Editing & Retouching
+      (Photoshop) and Notion for Work & Business — 4 topics researched, 2
+      shipped, both at day 7's quality bar. Every lesson comes from an
+      authority channel: GCFGlobal's LearnFree, Adobe's own two channels,
+      and Notion's own channel. The two dropped for sourcing were
+      **Airtable** (no vendor channel appears at all — every search result
+      was a third-party consultant) and **Proofreading & Editing** (one
+      university channel and nothing else brandable; its second failure).
+      Shopify and Git & GitHub were rejected for overlap instead:
+      `ecommerce-online-selling` already carries the official Shopify
+      tutorial parts 1-3, and `web-development-for-beginners` teaches Git
+      and GitHub basics. Notion had been rejected on day 7 for overlapping
+      `project-management-tools`; that course carries exactly one
+      introductory Notion lesson inside a three-tool tour, so a course on
+      Notion as a database and team workspace is a different subject, and
+      the overlap is one lesson rather than a course. Backed by real YouTube tutorials
       from established channels. Written by hand instead of spending Anthropic/YouTube API
       calls on topics already known to be wanted — the AI generator is
       reserved for topics outside this set. `courses.display_order`

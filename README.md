@@ -346,8 +346,10 @@ custom authorization layer bolted on top.
       Google Ads & Facebook Ads (4 / 8, `0057`), E-commerce & Online
       Selling (4 / 9, `0059`), Social Media Management (4 / 8, `0061`),
       Project Management Tools (4 / 8, `0062`), Email Marketing
-      (4 / 8, `0063`), Python Programming (4 / 8, `0064`) and Data
-      Analysis & Visualization (4 / 8, `0065`).
+      (4 / 8, `0063`), Python Programming (4 / 8, `0064`), Data
+      Analysis & Visualization (4 / 8, `0065`), Cloud Computing
+      Fundamentals (3 modules / 6 lessons, `0067`) and WordPress Website
+      Building (3 / 6, `0068`).
 
       The gap these filled is the pattern to look for in the rest: each was
       a **tool tour**. AI Tools showed four chatbots and
@@ -377,7 +379,11 @@ custom authorization layer bolted on top.
       conditionals nor functions, so nothing in it could make a decision.
       Data Analysis taught Power BI and Looker Studio without a word on
       cleaning data or choosing a chart, which is where the analysis
-      actually happens.
+      actually happens. Cloud Computing explained what the cloud is and
+      toured the console without launching anything, and said nothing
+      about the two things that actually hurt beginners — the shared
+      responsibility model and the bill. WordPress covered what it is and
+      how to pick hosting, then stopped short of building a single page.
 
       Two things worth knowing before adding modules by hand. First,
       `getOrderedLessons()` builds the learner's lesson sequence from

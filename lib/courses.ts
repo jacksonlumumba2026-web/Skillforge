@@ -11,6 +11,15 @@ export const COURSE_CATEGORY_LABEL: Record<CourseCategory, string> = {
 
 export type CourseWithLessonCount = Course & {
   lessonCount: number;
+  /**
+   * Lessons carrying written notes, a practice activity and a knowledge
+   * check — i.e. real teaching material rather than a title and a video.
+   * Shown to buyers because depth still varies widely across the catalog
+   * while the deepening pass works through it, and a paid product should
+   * not let someone guess.
+   */
+  guidedLessonCount: number;
+  levelCount: number;
   averageRating: number | null;
   reviewCount: number;
 };
@@ -66,17 +75,24 @@ export async function getPublishedCourses(
     courses.map(async (course) => {
       const { data: modules } = await supabase
         .from("modules")
-        .select("id")
+        .select("id, level_id")
         .eq("course_id", course.id);
       const moduleIds = (modules ?? []).map((m) => m.id);
+      const levelCount = new Set(
+        (modules ?? []).map((m) => m.level_id).filter((id): id is string => id !== null),
+      ).size;
 
       let lessonCount = 0;
+      let guidedLessonCount = 0;
       if (moduleIds.length > 0) {
-        const { count } = await supabase
+        // Selecting the flag rather than a head-count gets both numbers in
+        // the one round trip this loop already spends per course.
+        const { data: lessonRows } = await supabase
           .from("lesson_previews")
-          .select("id", { count: "exact", head: true })
+          .select("has_written_guide")
           .in("module_id", moduleIds);
-        lessonCount = count ?? 0;
+        lessonCount = lessonRows?.length ?? 0;
+        guidedLessonCount = (lessonRows ?? []).filter((l) => l.has_written_guide).length;
       }
 
       const { data: reviewRows } = await supabase
@@ -88,7 +104,7 @@ export async function getPublishedCourses(
       const averageRating =
         reviewCount > 0 ? reviews.reduce((sum, r) => sum + r.rating, 0) / reviewCount : null;
 
-      return { ...course, lessonCount, averageRating, reviewCount };
+      return { ...course, lessonCount, guidedLessonCount, levelCount, averageRating, reviewCount };
     }),
   );
 }

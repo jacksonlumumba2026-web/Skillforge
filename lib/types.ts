@@ -137,6 +137,11 @@ export type LessonPreview = {
   /** Only ever non-null when `is_free_preview` is true — the view emits NULL
    *  for every other lesson, so this cannot leak a paid video by mistake. */
   youtube_url: string | null;
+  /** Whether this lesson carries notes, a practice activity and a knowledge
+   *  check. A boolean derived from those three columns, never their content,
+   *  so the catalog can state depth honestly to someone deciding whether to
+   *  pay without exposing anything they have not paid for. */
+  has_written_guide: boolean;
 };
 
 export type Enrollment = {

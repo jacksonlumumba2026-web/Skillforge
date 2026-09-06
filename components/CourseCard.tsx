@@ -28,14 +28,26 @@ export default function CourseCard({ course }: { course: CourseWithLessonCount }
       )}
       <p className="text-sm text-[var(--muted)] mb-5 flex-1">{course.description}</p>
 
-      <div className="flex items-center justify-between text-sm text-[var(--muted)] mb-5">
+      <div className="flex items-center justify-between text-sm text-[var(--muted)] mb-2">
         <span>
           {course.lessonCount} lesson{course.lessonCount === 1 ? "" : "s"}
+          {course.levelCount > 1 && ` · ${course.levelCount} levels`}
         </span>
         <span className="font-semibold text-[var(--foreground)]">
           KSh {course.price.toLocaleString()}
         </span>
       </div>
+
+      {/* Depth, stated plainly. Written material varies across the catalog
+          while the deepening pass works through it, so a buyer sees what
+          they are getting rather than assuming every lesson is the same. */}
+      <p className="text-xs text-[var(--muted)] mb-5">
+        {course.guidedLessonCount === 0
+          ? "Curated video lessons"
+          : course.guidedLessonCount === course.lessonCount
+            ? "Every lesson has written notes, a practice task and a knowledge check"
+            : `${course.guidedLessonCount} with written notes, practice tasks and knowledge checks`}
+      </p>
 
       <Link href={`/courses/${course.id}`} className="btn btn-secondary w-full">
         View Learning Path

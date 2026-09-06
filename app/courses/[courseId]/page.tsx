@@ -95,6 +95,13 @@ export default async function CourseDetailPage({
     }
   }
   const lessonCount = [...lessonsByModule.values()].reduce((sum, l) => sum + l.length, 0);
+  // How much of this path carries real written teaching. Depth still varies
+  // across the catalog, and this page takes money, so it says which it is
+  // rather than letting the buyer assume.
+  const guidedLessonCount = [...lessonsByModule.values()].reduce(
+    (sum, lessons) => sum + lessons.filter((l) => l.has_written_guide).length,
+    0,
+  );
 
   const {
     data: { user },
@@ -230,14 +237,22 @@ export default async function CourseDetailPage({
           We couldn&apos;t confirm that payment. If you were charged, contact support — otherwise, try again below.
         </p>
       )}
-      <div className="flex items-center gap-6 text-sm text-[var(--muted)] mb-10">
+      <div className="flex items-center gap-6 text-sm text-[var(--muted)] mb-3">
         <span>
           {lessonCount} lesson{lessonCount === 1 ? "" : "s"}
+          {levels.length > 1 && ` · ${levels.length} levels`}
         </span>
         <span className="font-semibold text-[var(--foreground)] text-base">
           KSh {course.price.toLocaleString()}
         </span>
       </div>
+      <p className="text-sm text-[var(--muted)] mb-10">
+        {guidedLessonCount === 0
+          ? "This path is curated video lessons — hand-picked tutorials in a deliberate order, without written notes yet."
+          : guidedLessonCount === lessonCount
+            ? "Every lesson comes with written notes, a practice task and a knowledge check."
+            : `${guidedLessonCount} of the ${lessonCount} lessons come with written notes, a practice task and a knowledge check. The rest are curated videos in a deliberate order, and are being written up over time.`}
+      </p>
 
       {previewLesson?.youtube_url && !isEnrolled && (
         <section className="mb-10">
@@ -252,10 +267,13 @@ export default async function CourseDetailPage({
             <span className="font-medium">{previewLesson.title}</span>
             <span className="text-[var(--muted)]"> — {previewLesson.description}</span>
           </p>
-          <p className="text-sm text-[var(--muted)] mt-2">
-            The other {lessonCount - 1} lesson{lessonCount - 1 === 1 ? "" : "s"} come with written notes,
-            a practice task and a knowledge check.
-          </p>
+          {guidedLessonCount > 0 && (
+            <p className="text-sm text-[var(--muted)] mt-2">
+              {guidedLessonCount === lessonCount
+                ? `The other ${lessonCount - 1} lesson${lessonCount - 1 === 1 ? "" : "s"} come with written notes, a practice task and a knowledge check.`
+                : `${guidedLessonCount} of the ${lessonCount} lessons come with written notes, a practice task and a knowledge check.`}
+            </p>
+          )}
         </section>
       )}
 

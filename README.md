@@ -348,8 +348,9 @@ custom authorization layer bolted on top.
       Project Management Tools (4 / 8, `0062`), Email Marketing
       (4 / 8, `0063`), Python Programming (4 / 8, `0064`), Data
       Analysis & Visualization (4 / 8, `0065`), Cloud Computing
-      Fundamentals (3 modules / 6 lessons, `0067`) and WordPress Website
-      Building (3 / 6, `0068`).
+      Fundamentals (3 modules / 6 lessons, `0067`), WordPress Website
+      Building (3 / 6, `0068`), YouTube Channel Growth (4 / 8, `0070`) and
+      IT Support & Help Desk (3 / 6, `0071`).
 
       The gap these filled is the pattern to look for in the rest: each was
       a **tool tour**. AI Tools showed four chatbots and
@@ -384,6 +385,11 @@ custom authorization layer bolted on top.
       about the two things that actually hurt beginners — the shared
       responsibility model and the bill. WordPress covered what it is and
       how to pick hosting, then stopped short of building a single page.
+      YouTube Channel Growth taught how to get a video clicked and nothing
+      about what the analytics say afterwards or how anyone actually gets
+      paid. IT Support covered the role and the hardware inside a machine,
+      while nearly every real ticket is an operating-system or networking
+      problem.
 
       Two things worth knowing before adding modules by hand. First,
       `getOrderedLessons()` builds the learner's lesson sequence from

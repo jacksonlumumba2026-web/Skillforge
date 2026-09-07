@@ -162,6 +162,45 @@ custom authorization layer bolted on top.
       controls the deliberate ordering on `/courses` so it alternates
       between quick-win/business, creative, and technical skills instead of
       reading as a wall of similar courses.
+
+      Day 9: **nothing shipped, and that is the honest result.** Four
+      topics were researched (Looker Studio, Adobe Illustrator, Slack,
+      Upwork/Fiverr freelancing) and all four were rejected — Looker Studio
+      and Illustrator for overlapping `power-bi-data-reporting` and
+      `graphic-design`, Slack for having no teaching series worth six
+      lessons on its own channel, and Upwork/Fiverr for sitting squarely
+      inside the existing `freelancing` course. No migration was written
+      rather than pad the catalog with a course that duplicates one already
+      on sale.
+
+      Day 10 (`0078_curated_catalog_day10.sql`): Print-on-Demand with
+      Printful — 4 topics researched, 1 shipped. Rejected: **Canva** (its
+      own 10-part beginners series is good, but `graphic-design` and
+      `presentation-design` already teach Canva, so a third Canva course is
+      padding — logged instead as a sourcing lead for the deepening
+      routine), **Microsoft Word** (no official Microsoft channel surfaces;
+      the best results are individual creators), **Zendesk** (one official
+      demo video, not six) and **Adobe Firefly** (two official videos, not
+      six). All six Printful videos come from Printful Custom Printing, the
+      company's own channel, each confirmed through the Data API for
+      channel, title, duration and embeddability; a seventh official video
+      was rejected at 2:04 for falling under the three-minute floor.
+
+      Print-on-Demand carries a warning in its own description and first
+      lesson rather than buried in a late module: **Printful prints and
+      ships from the US, EU, Mexico and Japan, so a Kenyan learner using it
+      is running an export business** — designing here, selling to
+      customers abroad, earning foreign currency. Shipping to Kenya is slow
+      and expensive, so it is not a way to sell to your neighbours. A
+      learner who finds that out after paying KSh 500 has been misled, so
+      the course says it before the sale. Its lessons are also honest about
+      thin margins, currency conversion and how crowded the market is.
+
+      Across days 7-10 the pattern is settled: strong-vendor topics are
+      already in the catalog, and what remains either overlaps an existing
+      course, has no vendor publishing a teaching series, or is too
+      marginal to sell. The catalog is close to saturated at 52 courses;
+      the remaining work is depth (438 bare lessons), not breadth.
 - [x] **Beginner-to-professional depth expansion** — every course in the
       catalog was widened from 3 modules/6 lessons (beginner only) to 6
       modules/12 lessons spanning beginner → intermediate → professional,

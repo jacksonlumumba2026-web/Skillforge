@@ -352,7 +352,8 @@ custom authorization layer bolted on top.
       Building (3 / 6, `0068`), YouTube Channel Growth (4 / 8, `0070`),
       IT Support & Help Desk (3 / 6, `0071`), Digital Marketing
       (4 / 8, `0072`), Virtual Event Planning (3 / 6, `0073`) and Public
-      Speaking & Communication Skills (3 / 6, `0074`).
+      Speaking & Communication Skills (3 / 6, `0074`), Personal Finance &
+      Budgeting (3 / 6, `0075`) and Digital Illustration (3 / 6, `0076`).
 
       The gap these filled is the pattern to look for in the rest: each was
       a **tool tour**. AI Tools showed four chatbots and
@@ -397,7 +398,11 @@ custom authorization layer bolted on top.
       without covering registration, rehearsal or holding a room. Public
       Speaking covered nerves and body language — how you appear — and
       nothing about what you actually say, nor about listening, despite
-      "Communication Skills" being half the course title.
+      "Communication Skills" being half the course title. Personal Finance
+      explained what a budget is and what M-Pesa is, and nothing about
+      saving, interest or debt — the three things that decide whether a
+      budget produces anything. Digital Illustration was a single tour of
+      each app with none of the craft underneath.
 
       Two things worth knowing before adding modules by hand. First,
       `getOrderedLessons()` builds the learner's lesson sequence from

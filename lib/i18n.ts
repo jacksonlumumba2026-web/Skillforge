@@ -20,33 +20,40 @@ const en: Dictionary = {
   "nav.logout": "Log out",
 
   "footer.tagline": "Practical digital skills, one lesson at a time.",
+  "footer.blurb": "Practical digital skills for Kenyan learners. Built light so it works on any phone.",
+  "footer.learn": "Learn",
+  "footer.company": "Company",
+  "footer.allPaths": "All Learning Paths",
   "footer.teachWithUs": "Teach with us",
   "footer.terms": "Terms",
   "footer.refunds": "Refunds",
 
-  "home.heroTitle": "Learn Digital Skills. Build Your Future.",
+  "home.heroBadge": "Made in Kenya, for Kenyan phones",
+  "home.heroTitle": "Learn a skill that pays.",
+  "home.heroTitleAccent": "KSh {price} a path.",
   "home.heroSubtitle":
-    "Learn practical digital skills step by step through simple, structured courses designed for beginners.",
-  "home.exploreCourses": "Explore Learning Paths",
-  "home.startLearning": "Start Learning",
+    "Short video lessons in coding, freelancing, design, marketing and everyday work tools. Watch the first lesson free, pay once, and keep the path for life.",
+  "home.browsePaths": "Browse {count} Learning Paths",
+  "home.bundleCta": "Any {count} for KSh {price}",
   // Every claim below is checkable against what the product actually does
   // today -- deliberately, because there is nothing else honest to say yet.
-  // preview  -> lessons.is_free_preview, exposed via the lesson_previews view
-  // levels   -> the levels table, populated for every published path
-  // language -> this file plus components/LanguageToggle
-  // data     -> components/DataSaverNote
-  // oneTime  -> courses.price in KES; there is no recurring billing anywhere
+  // payOnce    -> courses.price in KES; there is no recurring billing anywhere
+  // data       -> components/DataSaverNote, shown on every path and lesson
+  // freeLesson -> lessons.is_free_preview, exposed via the lesson_previews view
+  // beginner   -> courses.level, and the levels table on every published path
   // Do NOT add "notes and a practice task on every lesson" here: 438 lessons
-  // across 45 paths are still a title plus a video, so that would be false.
-  "home.proofTitle": "What you actually get",
-  "home.proof.preview": "Watch a full first lesson free — no account, no card",
-  "home.proof.levels": "Built in levels, from zero to working professional",
-  "home.proof.language": "Learn in English or Kiswahili",
-  "home.proof.data": "Made for slow connections — every lesson shows its data cost",
-  "home.proof.oneTime": "One payment in shillings — no subscription",
-  "home.paymentLine": "Pay in Kenyan shillings — M-Pesa or card. One payment, no subscription.",
-  "home.popularCoursesTitle": "Popular Learning Paths",
-  "home.browseAllCourses": "Browse all Learning Paths",
+  // are still a title plus a video, and the course card now says so per path.
+  "home.value.payOnce": "Pay once",
+  "home.value.payOnceBody": "No subscription. KSh {price} buys a path for life.",
+  "home.value.data": "Light on data",
+  "home.value.dataBody": "Every lesson shows its data cost first.",
+  "home.value.freeLesson": "Free first lesson",
+  "home.value.freeLessonBody": "Judge the teaching before you pay.",
+  "home.value.beginner": "Beginner friendly",
+  "home.value.beginnerBody": "Plain language, step by step.",
+  "home.popularTitle": "Start with a popular path",
+  "home.seeAllPaths": "See all Learning Paths",
+  "home.browseByArea": "Browse by area",
 
   "login.title": "Log in",
   "login.subtitle": "Welcome back — keep learning where you left off.",
@@ -86,24 +93,32 @@ const sw: Dictionary = {
   "nav.logout": "Toka",
 
   "footer.tagline": "Ujuzi wa kidijitali wa vitendo, somo moja kwa wakati.",
+  "footer.blurb": "Ujuzi wa kidijitali wa vitendo kwa wanafunzi wa Kenya. Imejengwa nyepesi ili ifanye kazi kwenye simu yoyote.",
+  "footer.learn": "Jifunze",
+  "footer.company": "Kampuni",
+  "footer.allPaths": "Njia zote za kujifunza",
   "footer.teachWithUs": "Fundisha nasi",
   "footer.terms": "Masharti",
   "footer.refunds": "Marejesho",
 
-  "home.heroTitle": "Jifunze Ujuzi wa Kidijitali. Jenga Maisha Yako Ijayo.",
+  "home.heroBadge": "Imetengenezwa Kenya, kwa simu za Kenya",
+  "home.heroTitle": "Jifunze ujuzi unaolipa.",
+  "home.heroTitleAccent": "KSh {price} kwa njia.",
   "home.heroSubtitle":
-    "Jifunze ujuzi wa kidijitali wa vitendo hatua kwa hatua kupitia kozi rahisi zilizoandaliwa kwa ajili ya wanaoanza.",
-  "home.exploreCourses": "Angalia Njia za Kujifunza",
-  "home.startLearning": "Anza Kujifunza",
-  "home.proofTitle": "Unachopata Hasa",
-  "home.proof.preview": "Tazama somo la kwanza zima bila malipo — bila akaunti, bila kadi",
-  "home.proof.levels": "Imejengwa kwa viwango, kutoka sifuri hadi mtaalamu",
-  "home.proof.language": "Jifunze kwa Kiingereza au Kiswahili",
-  "home.proof.data": "Kwa mtandao wa polepole — kila somo linaonyesha kiasi cha data",
-  "home.proof.oneTime": "Malipo mara moja kwa shilingi — hakuna usajili wa kila mwezi",
-  "home.paymentLine": "Lipa kwa shilingi za Kenya — M-Pesa au kadi. Malipo mara moja, hakuna usajili wa kila mwezi.",
-  "home.popularCoursesTitle": "Njia za Kujifunza Maarufu",
-  "home.browseAllCourses": "Angalia njia zote za kujifunza",
+    "Masomo mafupi ya video kuhusu upangaji programu, kazi za kujitegemea, ubunifu, masoko na zana za kazi za kila siku. Tazama somo la kwanza bila malipo, lipa mara moja, na uweke njia yako milele.",
+  "home.browsePaths": "Angalia Njia {count} za Kujifunza",
+  "home.bundleCta": "Yoyote {count} kwa KSh {price}",
+  "home.value.payOnce": "Lipa mara moja",
+  "home.value.payOnceBody": "Hakuna usajili wa kila mwezi. KSh {price} inanunua njia milele.",
+  "home.value.data": "Data kidogo",
+  "home.value.dataBody": "Kila somo linaonyesha gharama ya data kwanza.",
+  "home.value.freeLesson": "Somo la kwanza bure",
+  "home.value.freeLessonBody": "Pima ufundishaji kabla ya kulipa.",
+  "home.value.beginner": "Rahisi kwa wanaoanza",
+  "home.value.beginnerBody": "Lugha rahisi, hatua kwa hatua.",
+  "home.popularTitle": "Anza na njia maarufu",
+  "home.seeAllPaths": "Angalia njia zote za kujifunza",
+  "home.browseByArea": "Vinjari kwa eneo",
 
   "login.title": "Ingia",
   "login.subtitle": "Karibu tena — endelea kujifunza pale ulipoishia.",
@@ -138,4 +153,16 @@ export const dictionaries: Record<Locale, Dictionary> = { en, sw };
 
 export function t(locale: Locale, key: string): string {
   return dictionaries[locale][key] ?? dictionaries[DEFAULT_LOCALE][key] ?? key;
+}
+
+/**
+ * Translate, then fill {name} placeholders. Sentences with a number in them
+ * stay as one string per language, so the translator controls word order —
+ * concatenating fragments in JSX produces English word order in Swahili.
+ */
+export function tf(locale: Locale, key: string, vars: Record<string, string | number>): string {
+  return Object.entries(vars).reduce(
+    (out, [name, value]) => out.replaceAll(`{${name}}`, String(value)),
+    t(locale, key),
+  );
 }

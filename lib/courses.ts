@@ -44,6 +44,22 @@ export function formatDuration(seconds: number): string {
 }
 
 /**
+ * How many paths are on sale, for copy that states the number. A head count
+ * rather than getPublishedCourses().length, which would run three queries per
+ * course just to size an array the homepage then throws away.
+ */
+export async function countPublishedCourses(
+  supabase: SupabaseClient<Database>,
+): Promise<number> {
+  const { count } = await supabase
+    .from("courses")
+    .select("id", { count: "exact", head: true })
+    .eq("published", true)
+    .eq("curriculum_status", "published");
+  return count ?? 0;
+}
+
+/**
  * Published courses with a real lesson count. Counts go through the public
  * `lesson_previews` view (not `lessons` directly) because `lessons` rows
  * are RLS-gated to enrolled users — an anonymous visitor browsing

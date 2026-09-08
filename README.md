@@ -196,11 +196,43 @@ custom authorization layer bolted on top.
       the course says it before the sale. Its lessons are also honest about
       thin margins, currency conversion and how crowded the market is.
 
-      Across days 7-10 the pattern is settled: strong-vendor topics are
+      Day 11, the last: **nothing shipped, and the project ends here.**
+      Three untried topics were researched and all three failed on the
+      same point — **Pinterest marketing**, **stock photography as
+      income** and **product photography** have no official Pinterest,
+      Adobe Stock or Shutterstock channel publishing teaching content;
+      every result was a third-party creator. Every other idea on the
+      original topic list is now either shipped, already covered by an
+      existing course, or twice-rejected. The routine
+      (`trig_01XLqpWy1SvSGEFaiTqEhPrC`) was deleted on completion, as its
+      own terminal step instructed.
+
+      **Final tally for the 11-day catalog project: 52 courses.** Days 1-4
+      shipped ten each on a much looser bar. Day 5 shipped 6 of 10 and day
+      6 shipped 1 of 6, both throttled by attribution cost before the
+      YouTube Data API removed that bottleneck. Days 7-11, with
+      attribution cheap, shipped 1, 2, 0, 1 and 0 — because the constraint
+      had moved from *proving who made a video* to *there being a video
+      worth using*. Nineteen-plus topics were researched and rejected
+      across those five days.
+
+      Across days 7-11 the pattern is settled: strong-vendor topics are
       already in the catalog, and what remains either overlaps an existing
       course, has no vendor publishing a teaching series, or is too
       marginal to sell. The catalog is close to saturated at 52 courses;
       the remaining work is depth (438 bare lessons), not breadth.
+
+      The deepening routine reached the same wall from the other side on 8
+      September: thirteen courses researched across three firings, three
+      shipped. The vendors that publish long-form teaching video have been
+      mined for the subjects they cover. What is left divides into topics
+      whose vendor publishes only Shorts (Zapier's own videos on
+      multi-step Zaps run 15 and 19 seconds; HubSpot's cold-email video is
+      21 seconds), topics with no vendor at all (freelancing, virtual
+      assistance, transcription, Instagram and TikTok), and topics where
+      the vendor teaches in text rather than video (Google's technical
+      writing course). Searching for new Adobe Photoshop material returned
+      only the two videos the course already used.
 - [x] **Beginner-to-professional depth expansion** — every course in the
       catalog was widened from 3 modules/6 lessons (beginner only) to 6
       modules/12 lessons spanning beginner → intermediate → professional,

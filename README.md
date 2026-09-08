@@ -394,8 +394,9 @@ custom authorization layer bolted on top.
       Speaking & Communication Skills (3 / 6, `0074`), Personal Finance &
       Budgeting (3 / 6, `0075`), Digital Illustration (3 / 6, `0076`) and
       Time Management for Remote Workers (3 / 6, `0077`),
-      Copywriting & Content Writing (4 / 8, `0079`) and Bookkeeping &
-      QuickBooks (4 / 8, `0079`).
+      Copywriting & Content Writing (4 / 8, `0079`), Bookkeeping &
+      QuickBooks (4 / 8, `0079`) and Resume Writing, LinkedIn & Personal
+      Branding (4 / 8, `0080`).
 
       The gap these filled is the pattern to look for in the rest: each was
       a **tool tour**. AI Tools showed four chatbots and
@@ -451,7 +452,13 @@ custom authorization layer bolted on top.
       asking who the copy was for, which is the cause of almost all weak
       copy. Bookkeeping never mentioned invoicing anywhere across its
       twelve lessons — the single most common thing a client asks a
-      bookkeeper to do.
+      bookkeeper to do. Resume Writing got a learner as far as a CV that
+      clears an ATS and a discoverable LinkedIn profile, then stopped —
+      before the application and before the interview, which are the two
+      things that actually decide whether anyone is hired. It gains cover
+      letters, interview preparation, the questions every interview asks,
+      and STAR, all from Indeed's own channel; STAR was absent from the
+      entire platform.
 
       **The binding constraint on this routine is now sourcing, not
       topics.** The 8 September firing researched five courses and shipped
@@ -480,7 +487,32 @@ custom authorization layer bolted on top.
       direct bank feed, so the bookkeeping lessons teach the CSV-import
       route as the normal path — and explain why the feature is still worth
       learning, since much paid remote bookkeeping is for businesses in
-      countries where the feed does work.
+      countries where the feed does work. The Indeed lessons carry the
+      same treatment: applying by email or WhatsApp rather than through a
+      formal ATS, interviewing over a connection that may drop and saying
+      so in advance, the salary question — asked earlier and more bluntly
+      here, where "whatever you offer" is the answer most likely to get
+      you underpaid — and where to find STAR examples when you have never
+      held a formal job: a chama, a committee, a family business, a side
+      hustle.
+
+      The 8 September 10:00 firing shipped **one** course, not two.
+      Virtual Assistance was dropped because no official Google channel
+      content on Gmail delegation surfaces; Mobile Photography because
+      Adobe's official Lightroom presence is a single video; Transcription
+      & Translation because no official Rev channel content exists at all.
+      **Podcasting & Voice-Over is deferred rather than rejected**, and
+      the reason is worth recording: its real gap is publishing, which is
+      exactly where sources go stale. Buzzsprout's distribution video
+      dates to 2020 and predates Google Podcasts closing, and Spotify for
+      Creators' own upload guide runs 1:47, under the floor. Teaching a
+      learner to submit to directories that no longer exist is worse than
+      not covering it. The moment a current vendor walkthrough over three
+      minutes appears, that course is ready. By contrast the Indeed videos
+      are 2020-2021 and were accepted, because cover letters, interview
+      preparation and STAR are evergreen craft that no product shutdown
+      has invalidated — that distinction, staleness of fact versus age of
+      upload, is the one to apply.
 
       Two things worth knowing before adding modules by hand. First,
       `getOrderedLessons()` builds the learner's lesson sequence from

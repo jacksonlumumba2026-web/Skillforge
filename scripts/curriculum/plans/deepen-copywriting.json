@@ -1,0 +1,154 @@
+{
+  "courseId": "b4445076-7261-419e-a401-98f30417862a",
+  "level": { "orderNumber": 1, "existing": true },
+  "modules": [
+    {
+      "title": "Knowing Who You Are Writing For",
+      "description": "Every weak piece of copy has the same cause: it was written to nobody in particular. Before you write a headline or a sentence of body copy, you need a specific person in mind. This module is the step the first two modules skipped.",
+      "lessons": [
+        {
+          "title": "Finding the Person You Are Actually Writing To",
+          "description": "A six-step framework for working out who your client's customer really is, using evidence rather than assumption. This is the research that happens before any writing, and it is the difference between copy a client pays for twice and copy they quietly rewrite themselves.",
+          "youtubeId": "6mugRyElbd0",
+          "objectives": [
+            "Describe a target audience using evidence — reviews, comments, sales conversations — rather than guesswork",
+            "Tell the difference between a market (everyone who could buy) and a target audience (who you write to)",
+            "Collect the exact words customers use, so your copy sounds like their thoughts rather than a brochure"
+          ],
+          "notes": "The single most useful habit in this video is looking at what customers already say in their own words. Reviews, WhatsApp messages, YouTube comments under a competitor's video, questions in a Facebook group — that is free research, and it hands you phrases you can put straight into copy.\n\nWhy it matters commercially: a client can tell within one line whether you understand their customer. Two writers submit a headline; the one who used the customer's own phrasing gets the repeat work. This is why research is billable time, not preparation you do for free.\n\nADDITION BEYOND THE VIDEO — doing this in Kenya without paid tools. The video mentions research tools that cost money in dollars. You do not need them to start. Free sources that work: the Questions section on a Jumia or Kilimall product page, replies under a business's Instagram or TikTok posts, Google's \"People also ask\" box, and Facebook groups for the trade you are writing about (matatu owners, salon owners, small farmers). Ten real customer sentences beat any tool.\n\nOne warning about personas, which the next lesson builds: a persona is a summary of research, not a substitute for it. Inventing \"Mary, 28, likes convenience\" without talking to anyone gives you a confident description of a person who does not exist.",
+          "practice": "Pick any small business you could plausibly write for — a salon, a phone-repair shop, an online clothes seller. Spend twenty minutes collecting TEN real sentences that its customers (or customers of a direct competitor) have written in public: reviews, comments, questions. Copy them into a document word for word, including the spelling and slang. Then write two sentences answering: what does this customer actually want, and what are they afraid of? Keep this document — the next lesson turns it into a persona.",
+          "quiz": [
+            {
+              "question": "Why is collecting customers' own words more useful than describing your audience in your own words?",
+              "options": [
+                "It saves time compared with writing a description yourself",
+                "Copy written in the customer's own language reads as understanding, which is what makes them keep reading and what makes a client rehire you",
+                "Search engines rank pages that quote customers more highly",
+                "It is the only legal way to describe an audience"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "What is the difference between a market and a target audience?",
+              "options": [
+                "There is no difference; the terms are interchangeable",
+                "A market is online and a target audience is offline",
+                "A market is everyone who could conceivably buy; a target audience is the specific group you choose to write to",
+                "A market is people who have already bought; a target audience is people who have not"
+              ],
+              "correct_index": 2
+            }
+          ]
+        },
+        {
+          "title": "Turning a Vague Audience Into One Named Reader",
+          "description": "How to build a buyer persona from scratch — a single, specific reader you write every sentence to. Built from the research in the previous lesson, not from imagination.",
+          "youtubeId": "1Un9dvxIBhs",
+          "objectives": [
+            "Build a persona from real research rather than invented detail",
+            "Identify the persona's goal and their objection — the two facts that most change what you write",
+            "Use the persona as a test: read a draft as that person and cut what they would not care about"
+          ],
+          "notes": "A persona is a working tool, not a document to file. The parts that actually change your writing are small: what this person is trying to get done, what they are worried about, and what they would have to believe before they bought. Age, favourite colour and a stock photo change nothing.\n\nHow to use it while writing: read your draft aloud as if you were that person. Every sentence that person would skip is a sentence to cut. This one habit does more for a beginner's copy than any list of persuasion techniques.\n\nADDITION BEYOND THE VIDEO — the honest limit of personas. Made-up personas are worse than none, because they give you false confidence. If you have not gathered real customer language, you do not have a persona; you have a character. Build it from the ten sentences you collected in the previous lesson, and write down where each claim came from. If you cannot cite a source for a claim, mark it as a guess.\n\nOne persona is enough when you start. Agencies build five; a beginner writing a single landing page needs one, clearly.",
+          "practice": "Using the ten customer sentences you collected, write a one-page persona: a name, what they are trying to get done, what worries them about buying, what they would need to believe before paying, and three phrases they actually use — quoted, with a note of where each came from. Then take any piece of copy you have written before (or the homepage of the business you chose) and read it as that person. Mark every line they would skip. That mark-up is your edit list.",
+          "quiz": [
+            {
+              "question": "Which parts of a persona actually change what you write?",
+              "options": [
+                "Age, location and a photograph",
+                "Their goal, their worry, and what they would need to believe before buying",
+                "Their income bracket and job title alone",
+                "Their favourite brands"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "What makes a persona actively harmful rather than merely useless?",
+              "options": [
+                "Being written on one page instead of five",
+                "Having only one persona rather than several",
+                "Being invented rather than built from real customer research, so it gives false confidence about a person who does not exist",
+                "Giving the persona a name"
+              ],
+              "correct_index": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Writing So People Actually Read It",
+      "description": "People do not read online, they scan. This module covers what that means for the way you build a sentence and a page — the craft that sits underneath headlines and body copy, from the research group that has studied how people read on screens for thirty years.",
+      "lessons": [
+        {
+          "title": "The Mistake That Makes Web Writing Fail",
+          "description": "Nielsen Norman Group on the error underneath most weak web content: writing before deciding who will read it, what they want, and what the writing is supposed to achieve. Short, and worth watching twice.",
+          "youtubeId": "dHX8RRYPHJI",
+          "objectives": [
+            "State the three things to define before writing any piece of web content",
+            "Explain why content written to impress a client's boss usually fails the customer",
+            "Apply the reader-goal test to a page you have written"
+          ],
+          "notes": "Three questions before writing anything: who reads this, what are they trying to do, and what should be different for them afterwards. Most business web copy fails the second question — it describes the company rather than helping the reader do something.\n\nADDITION BEYOND THE VIDEO — the F-pattern, and what it means for your first three words. Eye-tracking research from the same group shows people scan web pages in a rough F shape: across the top line, across again a little lower, then down the left edge. The practical consequence is blunt. The first two or three words of every heading and every paragraph do almost all the work, because that left edge is the only part reliably seen. Front-load them. \"Free delivery in Nairobi\" is read; \"We are pleased to announce that we now offer free delivery\" is not, because the first four words carry nothing.\n\nThis also explains why a wall of text fails even when the writing is good. Short paragraphs, real subheadings and bulleted lists are not decoration — they create more left-edge starting points, which is where the scanning eye actually lands.\n\nA note for this course: this is the principle underneath the headline lesson in module 2. Headlines work because of where the eye goes, not because of a magic formula.",
+          "practice": "Take the homepage or an About page of any small business website. Write down the first three words of every heading and every paragraph, in order, and nothing else. Read that list. Does it tell you what the business does and what to do next? If it does not, rewrite each of those openings so that it does — front-loading the meaningful word — and compare the two lists.",
+          "quiz": [
+            {
+              "question": "According to the video, what should you define before writing any piece of web content?",
+              "options": [
+                "The word count, the deadline and the fee",
+                "Who will read it, what their goal is, and what impact the content should have on them",
+                "The keywords, the meta description and the title tag",
+                "The brand colours and the font"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "What practical rule follows from the F-pattern in reading?",
+              "options": [
+                "Write longer paragraphs so there is more to read",
+                "Centre all text so it is easier to scan",
+                "Front-load the first two or three words of each heading and paragraph, because the left edge is what gets scanned",
+                "Put the most important information at the bottom of the page"
+              ],
+              "correct_index": 2
+            }
+          ]
+        },
+        {
+          "title": "Plain Language Beats Clever Language",
+          "description": "Why complicated wording slows readers down and costs conversions — and why plain language is a professional skill rather than dumbing down. Nielsen Norman Group.",
+          "youtubeId": "Q8e5VODJ25w",
+          "objectives": [
+            "Explain why complex wording degrades results even for expert readers",
+            "Rewrite a jargon-heavy sentence into plain language without losing meaning",
+            "Answer the client objection that plain language sounds unprofessional"
+          ],
+          "notes": "The finding that surprises most beginners: experts prefer plain language too. Simplifying does not insult a specialist reader; it saves them effort. Nobody has ever complained that a sentence was too easy to understand.\n\nThe practical moves are few and they always work. Use the word your reader would use, not the industry word. Prefer short sentences with one idea each. Say who does what — \"we will call you\" rather than \"a call will be initiated\". Cut words that carry no information: in order to, at this point in time, it should be noted that.\n\nYou will meet the client objection: \"this sounds too simple, we are a serious company.\" The answer is that clarity is what looks competent, and that the alternative is a reader who leaves. Where a client insists on a formal register, keep the formality in the vocabulary and still keep the sentences short — those are separate choices.\n\nADDITION BEYOND THE VIDEO — link text, from the same research group. The words you put in a link matter as much as the words around it, because scanning readers use links as signposts. Good link text is specific, honest, substantial and short: \"Download the price list\" tells the reader what happens; \"Click here\" and \"Read more\" tell them nothing, and a page with six \"Read more\" links is a page with six identical signposts. Never write a link that promises more than the destination delivers — a reader who is misled once stops trusting the whole page.",
+          "practice": "Find a paragraph of genuinely dense writing — a bank's terms page, an insurance product page, a government notice. Rewrite it in plain language, keeping every fact intact. Then count the words in both versions. Aim to lose at least a third without losing a single piece of information. Finally, look at any links in the original and rewrite them so each one says what the reader will get.",
+          "quiz": [
+            {
+              "question": "What does the research say about expert readers and plain language?",
+              "options": [
+                "Experts prefer complex language that matches their expertise",
+                "Experts also perform better with plain language; simplifying does not insult them",
+                "Plain language only helps readers with low literacy",
+                "Experts read at the same speed regardless of complexity"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "What makes \"Read more\" poor link text?",
+              "options": [
+                "It is too short to be clicked easily",
+                "It is not a complete sentence",
+                "It tells the scanning reader nothing about what is on the other side, so it fails as a signpost",
+                "Search engines penalise it"
+              ],
+              "correct_index": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

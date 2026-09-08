@@ -393,7 +393,9 @@ custom authorization layer bolted on top.
       (4 / 8, `0072`), Virtual Event Planning (3 / 6, `0073`) and Public
       Speaking & Communication Skills (3 / 6, `0074`), Personal Finance &
       Budgeting (3 / 6, `0075`), Digital Illustration (3 / 6, `0076`) and
-      Time Management for Remote Workers (3 / 6, `0077`).
+      Time Management for Remote Workers (3 / 6, `0077`),
+      Copywriting & Content Writing (4 / 8, `0079`) and Bookkeeping &
+      QuickBooks (4 / 8, `0079`).
 
       The gap these filled is the pattern to look for in the rest: each was
       a **tool tour**. AI Tools showed four chatbots and
@@ -445,7 +447,40 @@ custom authorization layer bolted on top.
       each app with none of the craft underneath. Time Management taught
       the Eisenhower Matrix and time blocking — two scheduling techniques
       that do nothing for someone who already knows what to do and does
-      not do it.
+      not do it. Copywriting taught headlines and body copy without ever
+      asking who the copy was for, which is the cause of almost all weak
+      copy. Bookkeeping never mentioned invoicing anywhere across its
+      twelve lessons — the single most common thing a client asks a
+      bookkeeper to do.
+
+      **The binding constraint on this routine is now sourcing, not
+      topics.** The 8 September firing researched five courses and shipped
+      two. Freelancing's real gap is pricing and contracts, and neither
+      Upwork nor Fiverr publishes teaching content — every candidate was an
+      individual creator, so it was dropped rather than attach a paid
+      lesson to unbrandable attribution. Instagram & TikTok Growth was
+      dropped for the same reason: no official Meta, Instagram or TikTok
+      teaching channel surfaces at all. Video Editing was skipped for the
+      third time; its gap is still audio, and audio is still only taught by
+      small unbranded channels. Bookkeeping was picked over those despite
+      having no enrollments, because Intuit publishes the whole syllabus on
+      its own channel — sourceability now outranks demand when demand
+      cannot be sourced.
+
+      Two Intuit videos were rejected on duration: "How to track expenses"
+      runs 17 seconds (a promo clip) and "How to track what customers owe
+      you" runs 2:38, both under the three-minute floor. Two Nielsen Norman
+      Group findings — the F-pattern in reading, and the 4 S's of link text
+      — were folded into lesson notes and labelled as additions beyond the
+      video, for the same reason: their videos run 2:41 and 2:52.
+
+      Both new courses carry country-specific honesty in the notes rather
+      than leaving a learner to discover it after paying. QuickBooks
+      Payments is not available in Kenya and most Kenyan banks have no
+      direct bank feed, so the bookkeeping lessons teach the CSV-import
+      route as the normal path — and explain why the feature is still worth
+      learning, since much paid remote bookkeeping is for businesses in
+      countries where the feed does work.
 
       Two things worth knowing before adding modules by hand. First,
       `getOrderedLessons()` builds the learner's lesson sequence from

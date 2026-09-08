@@ -1,0 +1,154 @@
+{
+  "courseId": "ebcd254b-df64-476f-b9b4-26232762a2f3",
+  "level": { "orderNumber": 1, "existing": true },
+  "modules": [
+    {
+      "title": "Money In, Money Out: Invoices and Bills",
+      "description": "The two things a small business does in QuickBooks every single week: send invoices so it gets paid, and record bills so it knows what it owes. Neither appeared anywhere in this course until now, and both are taught here by Intuit, the company that makes QuickBooks.",
+      "lessons": [
+        {
+          "title": "Sending an Invoice That Gets Paid",
+          "description": "Creating, customising and sending an invoice in QuickBooks Online — the single most common task a bookkeeping client will ask you to do.",
+          "youtubeId": "FZVBoSXSMzc",
+          "objectives": [
+            "Create an invoice in QuickBooks Online and send it to a customer",
+            "Customise an invoice so it carries the business's name, logo and payment terms",
+            "Explain what payment terms mean and why they change when a business gets paid"
+          ],
+          "notes": "An invoice in QuickBooks is not just a document — creating it also records that a customer now owes the business money. That is the part beginners miss. Sending a Word invoice and typing the sale in later gives you two chances to disagree with yourself; raising it in QuickBooks records the sale and the debt in one step.\n\nPayment terms are worth understanding properly. \"Due on receipt\" means now; \"Net 30\" means the customer has thirty days. A business that sets Net 30 without meaning to has quietly agreed to wait a month for its money. When you set up a client's invoicing, ask what terms they actually intend and set that as the default.\n\nADDITION BEYOND THE VIDEO — invoicing from Kenya. QuickBooks Payments, the pay-by-card button shown in some Intuit videos, is not available in Kenya. What still works everywhere: the invoice itself, the customer record, the outstanding-balance tracking, and emailing a PDF. For collection, most Kenyan businesses put their M-Pesa Paybill or Till number and bank details in the invoice message or a custom field, and then record the payment against the invoice by hand when it arrives. Do that consistently and the books stay correct; the automated card button is a convenience, not the substance.\n\nIf you are doing this for overseas clients, ask which currency they invoice in and whether their QuickBooks plan has multicurrency switched on before you raise anything — turning it on later is disruptive.",
+          "practice": "Open a QuickBooks Online free trial or the sample company Intuit provides. Create one customer and raise an invoice to them for two line items — say a service and a delivery charge. Customise it once: add a business name and set payment terms deliberately rather than accepting the default. Then find where QuickBooks shows that this invoice is unpaid. Write down, in one sentence, where a business owner would look to see everything they are owed.",
+          "quiz": [
+            {
+              "question": "What does creating an invoice in QuickBooks do beyond producing a document to send?",
+              "options": [
+                "Nothing else; it is only a document generator",
+                "It records the sale and records that the customer now owes the business money",
+                "It automatically takes the money from the customer's account",
+                "It files the sale with the tax authority"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "A client's invoices default to Net 30 but they expect payment immediately. What is the consequence?",
+              "options": [
+                "None — terms on an invoice are decorative",
+                "QuickBooks will refuse to send the invoice",
+                "They have told every customer in writing that thirty days is acceptable, so they will wait longer to be paid",
+                "The invoice total will be calculated incorrectly"
+              ],
+              "correct_index": 2
+            }
+          ]
+        },
+        {
+          "title": "Bills You Owe, and Paying Them On Time",
+          "description": "The other direction: entering bills from suppliers and paying them in QuickBooks Online, so a business knows what is going out before it goes out.",
+          "youtubeId": "CjcTT4H0cKA",
+          "objectives": [
+            "Enter a supplier bill in QuickBooks Online and record its due date",
+            "Distinguish a bill (owed now, paid later) from an expense (already paid)",
+            "Find what the business currently owes and what falls due next"
+          ],
+          "notes": "The distinction that matters: an EXPENSE is money already gone — you paid at the counter. A BILL is money owed but not yet paid, with a due date. Entering both as expenses is one of the most common beginner mistakes, and it makes a business look like it has more cash than it does, because nothing shows what is about to leave.\n\nOnce bills are entered properly, QuickBooks can answer the question every small business owner actually asks: what do I owe, and when. That report is often the first thing that makes an owner glad they hired a bookkeeper.\n\nADDITION BEYOND THE VIDEO — receipts, and why they matter more here than in the US. Intuit also publishes a short guide to capturing receipts by photographing them with the QuickBooks mobile app, which attaches the image to the transaction. Get into this habit early: in a cash-heavy market, the paper receipt is frequently the only evidence a purchase happened, and a faded thermal receipt in a drawer is not evidence at all after six months. Photograph it the day it arrives.\n\nA practical note on the pay-bills step: the online bill-payment features shown in the video are US banking integrations. In Kenya you will usually mark a bill as paid after paying by M-Pesa or bank transfer. The record-keeping is identical; only the button that moves the money is missing.",
+          "practice": "In the same QuickBooks trial or sample company, enter two supplier bills with different due dates — one due this week, one next month. Then find the report or screen that lists what the business owes and when it falls due. Finally, mark the first bill as paid and watch what changes. Write one sentence explaining what would have been wrong in the books if you had entered both as expenses instead of bills.",
+          "quiz": [
+            {
+              "question": "What is the difference between a bill and an expense in QuickBooks?",
+              "options": [
+                "A bill is for services and an expense is for goods",
+                "A bill is money owed but not yet paid, with a due date; an expense is money already paid",
+                "A bill is over a certain amount; an expense is below it",
+                "They are the same thing recorded on different screens"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "Why does recording unpaid bills as expenses mislead a business owner?",
+              "options": [
+                "It makes the business look like it has more available cash than it does, because nothing shows what is about to leave",
+                "It causes QuickBooks to double-count the amount",
+                "It prevents invoices from being sent",
+                "It changes the business's payment terms"
+              ],
+              "correct_index": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Letting the Bank Feed Do the Typing",
+      "description": "Bookkeeping stops being data entry when the bank sends the transactions to you. This module covers connecting an account and categorising what comes in — the manual judgement that the automation in Level 2 is built on top of.",
+      "lessons": [
+        {
+          "title": "Connecting a Bank Account, and What to Do If Yours Is Not Supported",
+          "description": "How QuickBooks Online pulls transactions straight from a bank or credit card account, and the honest position for a learner in Kenya whose bank is not on the list.",
+          "youtubeId": "LMgxbcsWANg",
+          "objectives": [
+            "Connect a bank or credit card account to QuickBooks Online",
+            "Explain what a bank feed does and does not do to the books",
+            "Import transactions manually when a bank feed is unavailable"
+          ],
+          "notes": "A bank feed imports transactions; it does not do the bookkeeping. Every imported line still has to be reviewed and categorised — which is the next lesson, and the part clients pay for.\n\nREAD THIS BEFORE YOU GET FRUSTRATED — bank feeds and Kenya. QuickBooks' direct bank feeds cover mostly US, UK, Canadian and Australian institutions. Most Kenyan banks are not on that list, and M-Pesa is not a supported feed at all. Check your own bank in the connect screen; if it is not there, this is a limitation of the product, not something you have done wrong.\n\nWhat you do instead, and it works perfectly well: download a statement from your bank as CSV, tidy the columns to date, description and amount, and use QuickBooks' file-upload option to import it. The transactions then behave exactly like a feed — they land in the same review queue and are categorised the same way. Doing this monthly is normal practice for a great many bookkeepers.\n\nWhy learn the feature at all if your own bank is unsupported? Because a large share of paid remote bookkeeping work is for businesses in those countries, and the feed is the first thing you will be asked to set up. It is also the reason bookkeeping is one of the more genuinely exportable skills on this platform.",
+          "practice": "In a QuickBooks trial, open the banking screen and search for your own bank. Write down whether it appears. Then, whichever the answer, practise the manual route: create a small CSV with five made-up transactions (date, description, amount), upload it, and confirm the five lines arrive in the review queue. That manual import is the skill you will actually use most.",
+          "quiz": [
+            {
+              "question": "What does a bank feed actually do?",
+              "options": [
+                "It categorises transactions and completes the bookkeeping automatically",
+                "It imports transactions into a review queue; each one still needs to be reviewed and categorised",
+                "It reconciles the account without any human involvement",
+                "It pays bills on the due date"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "Your bank does not appear in QuickBooks' connect screen. What is the correct next step?",
+              "options": [
+                "Conclude that QuickBooks cannot be used for this business",
+                "Enter every transaction by hand for the rest of the year",
+                "Download a statement as CSV and upload it, so transactions land in the same review queue",
+                "Create a second QuickBooks account in a supported country"
+              ],
+              "correct_index": 2
+            }
+          ]
+        },
+        {
+          "title": "Categorising Transactions Without Guessing",
+          "description": "Deciding what each imported transaction actually is. This is the judgement work of bookkeeping, and it is what the automated bank rules in Level 2 are built on top of.",
+          "youtubeId": "J6mH0vYLfGk",
+          "objectives": [
+            "Categorise imported transactions to the correct account",
+            "Recognise which transactions need an owner's input rather than a guess",
+            "Explain why a consistent category choice matters more than a perfect one"
+          ],
+          "notes": "Two rules carry most of this work. First, consistency beats perfection: if the same kind of purchase always lands in the same category, the reports are readable and a mistake is easy to correct in bulk later. Scattering similar purchases across four plausible categories produces reports nobody can use. Second, never guess on someone else's books. A transaction that could be a business cost or the owner's personal shopping is a question for the owner, not a coin toss. Keep a running list of queries and send it once a week rather than interrupting daily — clients notice both the diligence and the restraint.\n\nHow this connects to the rest of the course: Level 2 covers bank rules, which automate categorisation for transactions you have taught QuickBooks to recognise. Rules only work if you already know what the right category is — automating a wrong decision just makes it wrong faster. That is why this lesson sits in Level 1 and the rules lesson sits in Level 2.\n\nADDITION BEYOND THE VIDEO — the mixed-use problem, which is constant in small businesses here. One M-Pesa line may cover stock for the shop and airtime for the owner's personal phone. Do not split it from guesswork. Ask, then record it as two lines with the split the owner confirms, and note in the memo field who told you and when. That memo will save you an argument months later.",
+          "practice": "Using the five transactions you imported in the previous lesson, categorise each one. Deliberately make one of them ambiguous — a payment that could be business or personal. Categorise the four you are sure of, and write the fifth as a client query: one sentence naming the transaction, the date, the amount, and the specific question you would ask the owner. That query note is a real deliverable in paid bookkeeping work.",
+          "quiz": [
+            {
+              "question": "Why does consistency in categorising matter more than finding the theoretically perfect category?",
+              "options": [
+                "QuickBooks charges more for additional categories",
+                "Consistent categories produce readable reports and let a mistake be corrected in bulk, while scattered ones produce reports nobody can use",
+                "Inconsistent categories prevent the account from being reconciled",
+                "Consistency is required by law"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "A transaction could be a business cost or the owner's personal spending. What should a bookkeeper do?",
+              "options": [
+                "Choose the business category, since it is a business file",
+                "Choose the personal category to be cautious",
+                "Delete the transaction and reconcile around it",
+                "Categorise what is certain, and raise the ambiguous one as a written query for the owner"
+              ],
+              "correct_index": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

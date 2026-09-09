@@ -429,7 +429,8 @@ custom authorization layer bolted on top.
       Copywriting & Content Writing (4 / 8, `0079`), Bookkeeping &
       QuickBooks (4 / 8, `0079`) and Resume Writing, LinkedIn & Personal
       Branding (4 / 8, `0080`), Notion for Work & Business (2 / 4,
-      `0081`) and Motion Graphics with After Effects (2 / 4, `0081`).
+      `0081`), Motion Graphics with After Effects (2 / 4, `0081`) and
+      Print-on-Demand with Printful (2 / 4, `0082`).
 
       The gap these filled is the pattern to look for in the rest: each was
       a **tool tour**. AI Tools showed four chatbots and
@@ -582,6 +583,30 @@ custom authorization layer bolted on top.
       `digital-marketing` and `sales-lead-generation` already carried it.
       The three contexts differ enough in their notes to leave as is, but
       the count is now verified before any video is added.
+
+      **The Notion finding was then turned into a method and run
+      deliberately.** On 9 September every lesson id in ten previously
+      REJECTED courses was fed back through the Data API to read its
+      channel. That surfaced **Microsoft Power BI** — a real vendor
+      channel keyword search had never returned — and confirmed there is
+      no hidden vendor behind Online Tutoring, Affiliate Marketing,
+      WhatsApp Business, No-Code App Building or Virtual Assistance, so
+      those rejections now stand on evidence rather than on a failed
+      search.
+
+      Power BI was then rejected on the merits anyway, which is the point
+      worth keeping: **finding the channel is not the same as finding a
+      usable video.** Microsoft's own "Getting started with the Power BI
+      service" runs 2:50, under the floor, and the channel's Power BI
+      material dates to 2018. Guy in a Cube — run by Microsoft's own Power
+      BI team and already used once in that course — has a good workspaces
+      video, but at 2019 it shows a Service UI that has since changed.
+
+      Print-on-Demand shipped instead, from Printful's own channel. Its
+      2019 niche-selection video was accepted and its 2019 Design Maker
+      tour rejected, on the same test the Indeed videos passed the day
+      before: **staleness of fact, not age of upload.** Niche selection is
+      advice about people; a Design Maker tour is a UI that has changed.
 
       Two things worth knowing before adding modules by hand. First,
       `getOrderedLessons()` builds the learner's lesson sequence from

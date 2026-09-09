@@ -1,0 +1,80 @@
+{
+  "courseId": "e7f083f8-3f7d-4b1b-865c-651f3d09170a",
+  "level": { "orderNumber": 1, "existing": true },
+  "modules": [
+    {
+      "title": "Deciding What to Sell, and Making It Print Right",
+      "description": "Level 1 covered how print-on-demand works and how to get set up, then Level 2 jumped to creating products. This module is the step in between, and it is the one that decides whether anything sells: choosing who you are selling to, and getting the artwork onto the garment properly.",
+      "lessons": [
+        {
+          "title": "Choosing a Niche Instead of Selling to Everybody",
+          "description": "Why print-on-demand shops that sell 'nice designs' to nobody in particular fail, and how to pick a group of people specific enough to actually reach. From Printful.",
+          "youtubeId": "lY3c6EW4Iu4",
+          "objectives": [
+            "Explain why a narrow niche outsells a general store in print-on-demand",
+            "Test whether a niche is large enough to sell to and specific enough to find",
+            "Judge a niche by whether you can name where its people already gather online"
+          ],
+          "notes": "The whole argument in one line: you are not competing on price or quality, because everyone using print-on-demand has the same blank shirts and similar prices. You compete on being obviously FOR someone. A shirt that a nurse, or a Rift Valley cyclist, or a Kiswahili teacher sees and thinks \"that is about me\" outsells a well-drawn generic design every time.\n\nThe practical test for a niche has two halves, and both must pass. Is it big enough that thousands of people are in it? And can you name the specific places those people already gather — a subreddit, a Facebook group, a hashtag, a YouTube channel with comments? If you cannot name where they are, you cannot advertise to them, and the design will never be seen no matter how good it is.\n\nA note on this video's age: it was uploaded in 2019. Niche selection is advice about people rather than about software, and none of it has been invalidated — unlike Printful's interface, which has changed and is covered by newer videos elsewhere in this course.\n\nADDITION BEYOND THE VIDEO — niches that work from Kenya specifically. Remember the course's opening warning: Printful ships from the US, EU, Mexico and Japan, so you are selling to customers abroad. That shapes which niches are realistic. Two that suit a Kenyan designer well: the diaspora, who want designs about home and are already abroad where shipping is cheap; and anything where you have genuine knowledge outsiders lack — Swahili wordplay, specific football fan cultures, safari and conservation, African textile motifs done properly rather than as a stereotype. Your advantage is knowing something the average competitor does not. Do not throw that away by making the same generic slogans as everyone else.",
+          "practice": "Write down three possible niches. For each, answer both halves of the test in writing: roughly how many people are in it, and name at least two specific places online where those people gather — with a link. Then cross out any niche where you could not name a place. If all three are crossed out, they were audiences you imagined rather than found; try again with groups you actually belong to or know well.",
+          "quiz": [
+            {
+              "question": "Why does a narrow niche outsell a general store in print-on-demand?",
+              "options": [
+                "Niche products cost less to print",
+                "Everyone has the same blanks and similar prices, so you compete on being obviously for someone — a person who sees themselves in a design buys it",
+                "Printful gives priority shipping to niche stores",
+                "Search engines rank niche shops higher automatically"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "What is the second half of the niche test, after 'is it big enough'?",
+              "options": [
+                "Whether the designs can be made in under an hour",
+                "Whether the niche is trending this month",
+                "Whether you can name the specific places those people already gather online — because if you cannot, you cannot reach them",
+                "Whether competitors already sell to it"
+              ],
+              "correct_index": 2
+            }
+          ]
+        },
+        {
+          "title": "Getting the Print in the Right Place",
+          "description": "Printful's design placement guide: sizing, positioning and the file requirements that decide whether a print comes out looking professional or amateur.",
+          "youtubeId": "YnaTmDCSdh0",
+          "objectives": [
+            "Position and size a design on a garment so it looks deliberate rather than accidental",
+            "Supply artwork at a resolution and format that prints cleanly",
+            "Account for how placement shifts across garment sizes"
+          ],
+          "notes": "This is the difference between a shirt that looks bought and a shirt that looks homemade, and it is almost entirely mechanical. Get the print too small and it looks lost; too high and it rides up under the collar; too low and it disappears into the belly. The video gives the actual measurements — use them rather than eyeballing it in the mockup.\n\nResolution is where beginners lose money. A design that looks fine on screen can print blurry, because a screen shows far less detail than a print does. Work at the size and resolution Printful specifies, in a file format that keeps transparency, and never scale a small image up to fit — enlarging adds no detail, it only makes the missing detail bigger.\n\nOne thing worth knowing that the video touches on lightly: the SAME placement measurements apply across garment sizes, so a design centred perfectly on a medium will sit slightly differently on a 3XL. For most designs this does not matter. For anything that must line up with a seam or a pocket, check the extremes, not just the middle size.\n\nADDITION BEYOND THE VIDEO — order a sample of your best-selling design before you push it hard. Printful offers contributor samples at a discount. Yes, shipping to Kenya is slow and expensive, which is exactly why you do this once, for the design you are about to spend advertising money on, rather than for every product. Seeing your own print in your hands catches problems no mockup shows: colours that shifted, a print that is scratchier than expected, a placement that looked right on screen and sits wrong on a body.",
+          "practice": "Take one design and place it on a t-shirt in Printful three times: once at the recommended size and position, once noticeably too small, and once too high. Generate a mockup of each and put them side by side. Write one sentence on what specifically gives the two wrong ones away. Then check your design file: what is its actual pixel size, and does it meet the requirement without being scaled up?",
+          "quiz": [
+            {
+              "question": "Why can a design that looks fine on screen still print blurry?",
+              "options": [
+                "Printers reduce the quality of all uploaded files",
+                "A print shows far more detail than a screen does, so a low-resolution file that looks acceptable on a monitor has no detail to print",
+                "Transparency is removed during printing",
+                "The mockup generator compresses the image"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "Why order a physical sample of your best design despite slow, expensive shipping to Kenya?",
+              "options": [
+                "Printful requires a sample before a design can be listed",
+                "It is cheaper than generating mockups",
+                "Because it catches colour shifts, print texture and placement problems that no mockup reveals — and you do it once, for the design you are about to spend advertising money on",
+                "Samples arrive faster than customer orders"
+              ],
+              "correct_index": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

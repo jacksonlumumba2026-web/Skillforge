@@ -1,0 +1,80 @@
+{
+  "courseId": "b186978e-b75b-40bd-baad-1d906e88f197",
+  "level": { "orderNumber": 1, "existing": true },
+  "modules": [
+    {
+      "title": "Using Notion Day to Day",
+      "description": "Level 1 explained what Notion is and how to share it, then jumped straight to databases. This module fills the gap in between: finding your way around a workspace, and actually writing a page well. Both taught by Notion.",
+      "lessons": [
+        {
+          "title": "Where Everything Lives: the Sidebar",
+          "description": "How a Notion workspace is organised and how to move around it — the mental model that stops a workspace turning into a pile of lost pages after three weeks.",
+          "youtubeId": "2aDk-misv58",
+          "objectives": [
+            "Explain the difference between private, shared and teamspace areas of the sidebar",
+            "Nest pages inside pages, and find a page again when you have forgotten where you put it",
+            "Use favourites and search rather than scrolling to reach frequent pages"
+          ],
+          "notes": "The idea worth holding onto: in Notion almost everything is a page, and pages nest inside other pages. The sidebar is just a view of that nesting. Once that clicks, the tool stops feeling arbitrary.\n\nThe failure everyone hits in month one is a sidebar with forty top-level pages and no idea which is which. The fix is boring and it works: a small number of top-level pages that mean something to you — say Work, Clients, Personal, Archive — with everything else nested underneath. Favourite the three or four you open daily. Use search rather than hunting; Notion's search is fast and reaches page content, not just titles.\n\nADDITION BEYOND THE VIDEO — what a paying client sees. If you set Notion up for a client or an employer, the sidebar IS the product as far as they are concerned. Somebody who opens the workspace and cannot find this week's work will conclude the system does not work, whatever is inside it. Before you hand a workspace over, open it as someone else would (the sharing lesson in module 1 covers how) and check that the first screen answers \"where do I start\". That single check is the difference between a workspace that gets used and one that gets abandoned.\n\nOne practical note on cost: Notion's free plan is generous for one person and small teams, but guests and some team features are limited. Check what plan a client is on before designing something that needs a paid tier.",
+          "practice": "Create a workspace with four top-level pages that reflect how you actually think about your work — not a template you copied. Nest at least three pages under one of them. Favourite two. Then close everything, reopen Notion, and time how long it takes you to reach one specific nested page. If it takes more than a few seconds, the structure is wrong, not you: flatten it and try again.",
+          "quiz": [
+            {
+              "question": "What is the underlying structure the sidebar is showing you?",
+              "options": [
+                "A folder system separate from your pages",
+                "Pages nested inside other pages — in Notion almost everything is a page",
+                "A database of files",
+                "A list of recently opened documents only"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "Why does the sidebar matter most when you build a workspace for a client?",
+              "options": [
+                "Because it affects how much Notion charges them",
+                "Because the sidebar is what they see first, and a workspace they cannot navigate gets abandoned regardless of what is inside it",
+                "Because search does not work on shared workspaces",
+                "Because clients cannot nest pages themselves"
+              ],
+              "correct_index": 1
+            }
+          ]
+        },
+        {
+          "title": "Writing a Page That Reads Well",
+          "description": "Document editing in Notion: blocks, formatting, and the small set of shortcuts that make writing fast instead of fiddly.",
+          "youtubeId": "PyXoQVc21cQ",
+          "objectives": [
+            "Build a page from blocks — headings, lists, toggles, callouts, dividers",
+            "Use the slash command and drag handles instead of hunting through menus",
+            "Structure a document so a reader can scan it"
+          ],
+          "notes": "Everything on a Notion page is a block, and every block can be dragged, duplicated or turned into a different kind of block. That is the whole editing model. Typing \"/\" opens the block menu, and learning three or four commands — /h2, /todo, /toggle, /callout — covers most of what you will ever type.\n\nStructure matters more than decoration. A page with real headings, short paragraphs and a toggle hiding the detail is readable; the same content as one long block is not, however nicely coloured. This is the same principle the copywriting path teaches about scanning readers, applied to internal documents: people skim work documents even harder than they skim marketing.\n\nADDITION BEYOND THE VIDEO — writing for the person who reads this in three months. Most internal documents are read by someone with no memory of why they were written, often the author. Two habits fix that cheaply: put the conclusion or current status at the top rather than the bottom, and date any section that will go stale. A page that opens with \"Status as of 4 March: waiting on supplier quote\" is worth more than three paragraphs of background above the same fact.\n\nOn a slow connection, Notion pages with many images load slowly. Keep images to what the page needs, and prefer a linked file over an embedded preview when the image is reference material rather than the point.",
+          "practice": "Take something you have already written elsewhere — notes from a meeting, a plan, a list of instructions — and rebuild it as a Notion page using at least four different block types, including one toggle and one callout. Put the conclusion or status in the first line. Then read only the headings and the first line: does that alone tell someone what they need? If not, rewrite the headings until it does.",
+          "quiz": [
+            {
+              "question": "What is the editing model in Notion?",
+              "options": [
+                "A word processor with page breaks and margins",
+                "Everything is a block, and any block can be moved, duplicated or converted into another type",
+                "A spreadsheet grid that accepts text",
+                "A markdown file you edit as plain text"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "Why put the conclusion or current status at the top of an internal document?",
+              "options": [
+                "Notion requires the first block to be a summary",
+                "It makes the page load faster",
+                "Because readers skim work documents, and the person reading in three months needs the current state before the background",
+                "It improves the page's ranking in search engines"
+              ],
+              "correct_index": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

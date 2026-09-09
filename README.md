@@ -428,7 +428,8 @@ custom authorization layer bolted on top.
       Time Management for Remote Workers (3 / 6, `0077`),
       Copywriting & Content Writing (4 / 8, `0079`), Bookkeeping &
       QuickBooks (4 / 8, `0079`) and Resume Writing, LinkedIn & Personal
-      Branding (4 / 8, `0080`).
+      Branding (4 / 8, `0080`), Notion for Work & Business (2 / 4,
+      `0081`) and Motion Graphics with After Effects (2 / 4, `0081`).
 
       The gap these filled is the pattern to look for in the rest: each was
       a **tool tour**. AI Tools showed four chatbots and
@@ -545,6 +546,42 @@ custom authorization layer bolted on top.
       preparation and STAR are evergreen craft that no product shutdown
       has invalidated — that distinction, staleness of fact versus age of
       upload, is the one to apply.
+
+      The 9 September 02:00 firing turned to the **day-7/8 curated
+      courses**, built as 3 levels x 1 module x 2 lessons — a structure
+      that leaves their Level 1 thinner than the legacy converted courses,
+      at two lessons before the first level ends. Notion gained navigating
+      a workspace and writing a page (its Level 1 explained what Notion is
+      and how sharing works, then Level 2 jumped straight to databases);
+      After Effects gained parenting and null objects, the concept that
+      separates animation you can edit from animation you have to redo.
+
+      **That firing also corrected a search failure worth recording.**
+      Keyword queries for Notion returned only third-party creators, and
+      the conclusion "no official channel" would have been wrong — day 8
+      had already used six videos from the "Notion" channel. Confirming
+      the course's existing lesson ids through the Data API surfaced the
+      channel that keyword search had missed. **Check what a course
+      already uses before concluding a vendor does not publish.** The same
+      check applied in reverse the previous evening: a hunt for new Adobe
+      Photoshop material returned only the two videos that course already
+      had.
+
+      Four vendor videos were rejected on duration that firing — Notion's
+      "Projects & tasks" (2:56), "Add projects & tasks to your workspace"
+      (2:19) and "Introducing AI Meeting Notes" (1:21). Notion's "AI
+      Meeting Notes" (4:02) cleared the floor and was dropped on a
+      different ground: it teaches a paid AI feature, and a learner on the
+      free plan would get nothing actionable from a lesson built on it.
+
+      A standing check was added after the 8 September firings: **the same
+      video must not be reused across courses without a deliberate
+      reason.** Five videos currently appear in two courses each, and one
+      — HubSpot's audience-research video — in three, having been added to
+      `copywriting-content-writing` without checking that
+      `digital-marketing` and `sales-lead-generation` already carried it.
+      The three contexts differ enough in their notes to leave as is, but
+      the count is now verified before any video is added.
 
       Two things worth knowing before adding modules by hand. First,
       `getOrderedLessons()` builds the learner's lesson sequence from

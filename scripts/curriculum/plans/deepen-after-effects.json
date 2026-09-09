@@ -1,0 +1,80 @@
+{
+  "courseId": "92455839-190c-4801-8aac-acfa44579671",
+  "level": { "orderNumber": 1, "existing": true },
+  "modules": [
+    {
+      "title": "Making Layers Work Together",
+      "description": "Level 1 covered the interface and how a keyframe works. This module covers the next thing every real animation needs: getting layers to move in relation to each other, and making separate pieces look like one shot. Both from Adobe's own video channel.",
+      "lessons": [
+        {
+          "title": "Parenting and Null Objects",
+          "description": "How to make one layer follow another, and why a null object — an invisible layer that controls visible ones — is the tool professionals reach for constantly.",
+          "youtubeId": "TP1fEnJkzmQ",
+          "objectives": [
+            "Parent one layer to another so it inherits position, rotation and scale",
+            "Create a null object and use it to control several layers at once",
+            "Recognise when parenting is the right fix rather than animating each layer separately"
+          ],
+          "notes": "This is the concept that separates animation you can edit from animation you have to redo. Parent a layer to another and it inherits that layer's movement — move the parent, the child follows. A null object is an invisible layer that exists purely to be a parent, so you can move, rotate or scale a whole group of things by animating one control instead of six.\n\nThe practical test for whether you need it: if changing your mind about a movement means editing keyframes on more than one layer, parent them to a null and animate the null instead. Ten minutes spent rigging saves an hour of re-keying when the client asks for the logo to enter from the left instead.\n\nOne thing the video will not spell out: parenting inherits transform properties, not opacity or effects. If you want several layers to fade together, that is a different technique — put them in a pre-composition and fade the composition.\n\nADDITION BEYOND THE VIDEO — this matters more on a modest machine. After Effects is heavy, and older laptops common in Kenya will struggle with long previews. Rigging with nulls means fewer keyframes to evaluate and fewer full re-renders while you experiment, so a well-rigged composition previews noticeably faster than a badly rigged one doing the same thing. If your previews are still slow, the render lesson in Level 3 covers the settings that help.",
+          "practice": "Build a simple scene with three shape layers — say a phone, a hand and a shadow. Animate them individually so they move across the screen together, and note how many keyframes you needed. Then undo it, create a null object, parent all three to the null, and animate only the null. Compare the keyframe counts. Finally, change your mind about the direction of travel and see how long each version takes to fix.",
+          "quiz": [
+            {
+              "question": "What does a layer inherit when you parent it to another layer?",
+              "options": [
+                "All properties including opacity and effects",
+                "Transform properties — position, rotation and scale — but not opacity or effects",
+                "Only position",
+                "Nothing; parenting is only an organisational label"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "When is a null object the right tool?",
+              "options": [
+                "When you want a layer to be invisible in the final render",
+                "When you need to add a new colour to the composition",
+                "When changing your mind about a movement would otherwise mean re-keying several layers, so you animate one control instead",
+                "When the composition has more than ten layers"
+              ],
+              "correct_index": 2
+            }
+          ]
+        },
+        {
+          "title": "Making Separate Pieces Look Like One Shot",
+          "description": "Essential compositing techniques from Adobe — the adjustments that stop layered elements looking pasted on top of each other.",
+          "youtubeId": "vJ8X58uknsk",
+          "objectives": [
+            "Name the cues that make a composited element look fake",
+            "Match a foreground element to its background using colour, grain and light",
+            "Apply an adjustment layer so a correction affects everything beneath it"
+          ],
+          "notes": "Compositing is the craft of making things that were never together look like they were filmed together. The cues that give it away are consistent and few: the added element is too clean, too sharp, lit from the wrong direction, or slightly the wrong colour temperature. Fixing those in that order fixes most shots.\n\nThe single most useful tool here is the adjustment layer — a layer that applies its effects to everything below it in the stack. Grading the whole shot on one adjustment layer, rather than applying the same effect five times, is both faster and the only way to keep it consistent when you change your mind.\n\nA short video like this shows the techniques rather than drilling them. Watch it once for the list, then work through the practice below, then watch it again — the second viewing is where it lands.\n\nADDITION BEYOND THE VIDEO — where this earns money here. Straight compositing work is rare for a beginner, but the same skills sell constantly in a smaller form: dropping a client's logo onto footage so it sits in the scene rather than floating over it, replacing a phone screen in a product video, or cleaning a distracting object out of a shot. Those are ordinary paid requests for small businesses and content creators, and they are worth more per job than basic cuts-only editing.",
+          "practice": "Take any photograph of a room and any cut-out object — a product, a logo, a person. Place the object into the scene. Then work through the four cues in order: add a little blur so it is not sharper than the background, add grain to match, adjust its colour temperature towards the room's light, and add a soft shadow on the side away from the light. Screenshot before and after. Finally, add an adjustment layer over both and grade the whole thing together.",
+          "quiz": [
+            {
+              "question": "What does an adjustment layer do?",
+              "options": [
+                "It adjusts the composition's frame rate",
+                "It applies its effects to every layer beneath it in the stack",
+                "It stores a backup copy of the layers below",
+                "It converts shape layers into footage"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "Which set of cues most commonly makes a composited element look fake?",
+              "options": [
+                "The file format and codec of the source image",
+                "The number of keyframes used to place it",
+                "Being too clean and sharp, lit from the wrong direction, and slightly the wrong colour temperature",
+                "The resolution of the composition"
+              ],
+              "correct_index": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

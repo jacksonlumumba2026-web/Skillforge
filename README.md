@@ -608,6 +608,23 @@ custom authorization layer bolted on top.
       before: **staleness of fact, not age of upload.** Niche selection is
       advice about people; a Design Maker tour is a UI that has changed.
 
+      The 9 September 18:00 firing shipped **nothing**, and its near
+      misses are recorded here so they are not re-searched. **Photoshop**
+      is one video short: Adobe's own "How to Use Selection Tools" (4:08)
+      is a clean fit for the Level 1 gap — the course goes interface →
+      layers → masks without ever teaching selection — but the only other
+      Adobe beginner-series video found, "How To Customize Your Photoshop
+      Workspace", runs 2:19. **Technical Writing** fails on altitude
+      rather than sourcing: Write the Docs is a real authority, but its
+      talks run 29-34 minutes and are aimed at practising writers, which
+      is the wrong level for a learner who has just met the job title.
+      Nielsen Norman Group's "Information Architecture: 3 Key Models"
+      would have paired well at the right level but runs 2:53.
+
+      That is the shape of what remains: not an absence of authorities,
+      but a shortage of authority videos that are simultaneously long
+      enough, current enough, and pitched at a beginner.
+
       Two things worth knowing before adding modules by hand. First,
       `getOrderedLessons()` builds the learner's lesson sequence from
       `modules.order_number` ALONE and ignores level — so a module appended

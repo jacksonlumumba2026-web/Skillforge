@@ -430,7 +430,8 @@ custom authorization layer bolted on top.
       QuickBooks (4 / 8, `0079`) and Resume Writing, LinkedIn & Personal
       Branding (4 / 8, `0080`), Notion for Work & Business (2 / 4,
       `0081`), Motion Graphics with After Effects (2 / 4, `0081`) and
-      Print-on-Demand with Printful (2 / 4, `0082`).
+      Print-on-Demand with Printful (2 / 4, `0082`) and Photo Editing &
+      Retouching (Photoshop) (2 / 4, `0083`).
 
       The gap these filled is the pattern to look for in the rest: each was
       a **tool tour**. AI Tools showed four chatbots and
@@ -624,6 +625,26 @@ custom authorization layer bolted on top.
       That is the shape of what remains: not an absence of authorities,
       but a shortage of authority videos that are simultaneously long
       enough, current enough, and pitched at a beginner.
+
+      **Photoshop's missing video was found on 15 September, and where it
+      was hiding is the point.** The 9 September firing had Adobe's
+      selection-tools video and recorded the course as one video short.
+      The second came from **"Adobe Creative Cloud" — a different official
+      Adobe channel from "Adobe Photoshop"**, which none of the earlier
+      searches had surfaced. A single vendor can run several channels, and
+      finding one does not mean you have found them all.
+
+      The gap it closed was a genuine hole rather than a nicety: Level 1
+      taught the interface and layers, Level 2 went straight to masks and
+      retouching, and **selection — which both of those depend on — was
+      never taught**. A mask is a selection made permanent; the course was
+      teaching the second thing without the first.
+
+      Rejected on the way: Adobe's "How to Remove Unwanted Objects" (4:57)
+      overlaps Level 2's spot-healing lesson; "Photoshop CC Overview" runs
+      1:47 and dates to 2014; "How To Customize Your Photoshop Workspace"
+      runs 2:19. All three are official Adobe uploads — attribution was
+      never the constraint on this course.
 
       Two things worth knowing before adding modules by hand. First,
       `getOrderedLessons()` builds the learner's lesson sequence from

@@ -1,0 +1,80 @@
+{
+  "courseId": "b7d42222-30d1-4966-8f60-a5e348d88053",
+  "level": { "orderNumber": 1, "existing": true },
+  "modules": [
+    {
+      "title": "Choosing What to Change",
+      "description": "Level 1 taught the interface and layers, then Level 2 went straight to masks and retouching. Selection — telling Photoshop which part of the picture you mean — is the skill both of those depend on, and it was missing. This module adds it, and then puts it to work on the job clients ask for most.",
+      "lessons": [
+        {
+          "title": "Selection Tools: Telling Photoshop What You Mean",
+          "description": "The selection tools and when each one is the right choice. From Adobe.",
+          "youtubeId": "PQtDXAQs37U",
+          "objectives": [
+            "Choose between the object, quick, lasso and marquee selection tools for a given subject",
+            "Refine a rough selection rather than restarting it",
+            "Explain why a selection is the foundation of masking and local adjustments"
+          ],
+          "notes": "A selection is just Photoshop's way of knowing which pixels you are talking about. Almost everything precise you will ever do — cutting a product out of its background, brightening one face, recolouring a shirt — starts here. The masking lesson in Level 2 is selections made permanent and editable; that is all a mask is.\n\nWhich tool, quickly. Object selection when the subject is distinct and Photoshop can find it for you — start here, because it is often right and costs seconds. Quick selection when you want to paint the area roughly and let it snap to edges. Lasso when the shape is irregular and you will do it by hand. Marquee when you genuinely want a rectangle or an ellipse.\n\nThe habit that separates fast work from slow: do not restart a selection when it comes out imperfect. Hold Shift to add to it and Alt (Option on a Mac) to subtract. Nearly every real selection is built up in three or four passes rather than captured in one.\n\nADDITION BEYOND THE VIDEO — hair, and when to stop. Hair, fur and motion blur defeat every quick tool, and the honest answer for a beginner is not to fight them: Select and Mask with Refine Edge exists for this, and even with it, hair on a busy background can take twenty minutes. Price accordingly. When a client sends you a product shot on a plain white background, that is a five-minute job; when they send a person with curly hair against a tree, it is not the same job and should not be the same price.",
+          "practice": "Take one photo with a clear subject and select it three ways: with the object selection tool, with quick selection, and with the lasso. Time each. Then deliberately make a bad selection and repair it using Shift to add and Alt to subtract rather than starting again. Finally, put the selection on a new layer so you can see exactly what you captured — the edges will tell you the truth that the marching ants hide.",
+          "quiz": [
+            {
+              "question": "What is the relationship between a selection and a layer mask?",
+              "options": [
+                "They are unrelated features",
+                "A mask is a selection made permanent and editable — which is why selection is the foundation of masking",
+                "A mask can only be made from a rectangular selection",
+                "A selection replaces the need for a mask"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "Your selection comes out imperfect. What should you do?",
+              "options": [
+                "Start again with a different tool",
+                "Accept it and fix the result later with the eraser",
+                "Add to it with Shift and subtract with Alt — most real selections are built in several passes",
+                "Increase the image resolution and retry"
+              ],
+              "correct_index": 2
+            }
+          ]
+        },
+        {
+          "title": "Changing the Colour of One Thing",
+          "description": "Recolouring a specific object — a shirt, a product, a logo — without touching the rest of the picture. From Adobe.",
+          "youtubeId": "4jG77DO8Jcw",
+          "objectives": [
+            "Recolour a selected object using a targeted adjustment rather than painting over it",
+            "Keep the object's shadows and texture intact while changing its hue",
+            "Explain why this is a non-destructive adjustment and not a paint job"
+          ],
+          "notes": "This is the request a beginner gets paid for more than any other: the client likes the photo but wants the shirt in blue, or the packaging in the new brand colour, or six colourways of one product from a single shoot.\n\nThe method that works keeps the original pixels. You select the object, then add a Hue/Saturation adjustment clipped to that selection, and shift the hue. Because the adjustment only changes colour values and leaves lightness alone, the folds, shadows and texture survive — which is exactly what painting over the object with the brush destroys, and why painted recolours look like stickers.\n\nOne limit worth knowing before you promise a client anything: hue shifting works beautifully on saturated colours and poorly on white, black and grey, because there is no hue there to shift. Turning a white shirt red is a different and harder job than turning a red shirt blue. Say so before quoting.\n\nHOW THIS RELATES TO THE REST OF THE COURSE: Level 3 covers Levels and Curves, which adjust exposure and colour across the WHOLE image. This lesson is the local version — one object, everything else untouched. Same idea, different scope, and knowing which one a job needs is most of the skill.\n\nADDITION BEYOND THE VIDEO — a warning about honesty in product work. Recolouring a product photo to a colour the product does not come in is misrepresentation, and a customer who receives the wrong colour will say so publicly. Use this to show real variants, not imaginary ones. If you sell on Jumia, Instagram or WhatsApp, that review is the whole business.",
+          "practice": "Find a photo of something with a strong, saturated colour — a jacket, a bag, a painted wall. Select it, add a clipped Hue/Saturation adjustment, and produce three different colourways. Check each at full size: do the shadows and creases still read, or has it gone flat? Then try the same technique on something white and write one sentence on what happened and why.",
+          "quiz": [
+            {
+              "question": "Why use a clipped Hue/Saturation adjustment rather than painting the new colour on with a brush?",
+              "options": [
+                "It uses less memory",
+                "It changes colour values while leaving lightness alone, so folds, shadows and texture survive — painting over them destroys those and looks like a sticker",
+                "Brushes cannot produce accurate colours",
+                "Adjustment layers export faster"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "Why is recolouring a white object harder than recolouring a red one?",
+              "options": [
+                "White objects are usually larger in the frame",
+                "Photoshop cannot select white objects",
+                "Hue shifting moves an existing hue, and white has no hue to shift",
+                "White reflects more light so the file is bigger"
+              ],
+              "correct_index": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

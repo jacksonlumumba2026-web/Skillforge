@@ -646,6 +646,26 @@ custom authorization layer bolted on top.
       runs 2:19. All three are official Adobe uploads — attribution was
       never the constraint on this course.
 
+      The 16 September 02:00 firing shipped nothing and produced the
+      clearest evidence yet on the duration floor. Applying the
+      several-channels-per-vendor lesson found **HubSpot Academy**, a real
+      official channel distinct from HubSpot Marketing. Its sales-process
+      videos are exactly the gap in `sales-lead-generation` — "What is an
+      Inbound Sales Process?" by HubSpot's former CRO, and "How to
+      Increase Close Rates with Prospecting and Qualifying" — and they run
+      **2:53 and 2:38**, blocked by a 3:00 threshold that exists to
+      exclude Shorts. Its videos that DO clear the floor are 19-20 minute
+      tutorials for **Sales Hub, a paid tier**, and a 1h44m CRM setup —
+      dropped on the same ground as Notion's AI Meeting Notes, since a
+      learner on the free tier gets nothing actionable.
+
+      Also settled that firing: **Google's technical writing course is
+      deliberately text**, and its only videos are 2:10-2:17 facilitator
+      briefings for people teaching it, plus a 38-second Workspace clip.
+      And **Power BI has no alternate official channel** — the Microsoft
+      Fabric search returned only third-party creators and Guy in a Cube.
+      Both rejections are now final rather than provisional.
+
       Two things worth knowing before adding modules by hand. First,
       `getOrderedLessons()` builds the learner's lesson sequence from
       `modules.order_number` ALONE and ignores level — so a module appended

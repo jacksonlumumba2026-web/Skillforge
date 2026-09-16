@@ -431,7 +431,8 @@ custom authorization layer bolted on top.
       Branding (4 / 8, `0080`), Notion for Work & Business (2 / 4,
       `0081`), Motion Graphics with After Effects (2 / 4, `0081`) and
       Print-on-Demand with Printful (2 / 4, `0082`) and Photo Editing &
-      Retouching (Photoshop) (2 / 4, `0083`).
+      Retouching (Photoshop) (2 / 4, `0083`) and Online Tutoring & Course
+      Creation (2 / 4, `0084`).
 
       The gap these filled is the pattern to look for in the rest: each was
       a **tool tour**. AI Tools showed four chatbots and
@@ -665,6 +666,21 @@ custom authorization layer bolted on top.
       And **Power BI has no alternate official channel** — the Microsoft
       Fabric search returned only third-party creators and Guy in a Cube.
       Both rejections are now final rather than provisional.
+
+      The 16 September 10:00 firing found **Thinkific**, a course-platform
+      vendor whose own channel carries a genuine course-design series.
+      That filled a real hole in `online-tutoring-course-creation`, which
+      went from "what online tutoring is" straight to "recording your
+      first lesson" with **no planning step at all** — the order most
+      people work in, and the reason most first courses are abandoned.
+      The two lessons taken are craft rather than product tour, so the
+      advice transfers to Udemy, Preply or a YouTube channel.
+
+      The same firing closed **Zapier** for good. Its newest beginner
+      video, "New to Zapier? Build Your First Lead Automation", runs **22
+      seconds**; with the earlier 15s and 19s finds, the channel is
+      Shorts-only and `workflow-automation-zapier` cannot be deepened from
+      the vendor at any duration floor this project would accept.
 
       Two things worth knowing before adding modules by hand. First,
       `getOrderedLessons()` builds the learner's lesson sequence from

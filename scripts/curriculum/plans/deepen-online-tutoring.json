@@ -1,0 +1,80 @@
+{
+  "courseId": "77eae361-a386-4ebb-b130-cb43b73e3421",
+  "level": { "orderNumber": 1, "existing": true },
+  "modules": [
+    {
+      "title": "Planning a Course Before You Record It",
+      "description": "Level 1 went straight from what online tutoring is to recording your first lesson — which is the order most people do it in, and the reason most first courses are abandoned halfway through. This module is the planning that belongs before the camera comes out. Both lessons from Thinkific, a course-hosting platform, but the craft transfers to Udemy, Preply, a YouTube channel or a WhatsApp group.",
+      "lessons": [
+        {
+          "title": "Deciding What the Course Is Actually For",
+          "description": "How to plan a course around the outcome a student wants, and turn that into an outline you can actually finish.",
+          "youtubeId": "9GiIT-0b3Ks",
+          "objectives": [
+            "State a course's promise as a specific outcome rather than a topic",
+            "Turn that outcome into an ordered outline of lessons",
+            "Cut material that does not serve the outcome, however interesting it is"
+          ],
+          "notes": "The single decision that makes a course finishable is the promise. \"Excel\" is a topic and has no end. \"By the end of this, you can build a stock sheet for a small shop that totals itself\" is an outcome, and it tells you exactly which lessons belong and which do not.\n\nWork backwards from the outcome. What must someone be able to do at the end? What must they be able to do just before that? Keep going until you reach what they can already do on day one. That chain, reversed, is your outline — and it is usually far shorter than the course you imagined, which is a good thing.\n\nThe most common beginner mistake is teaching everything you know. Your knowledge is not the curriculum; the student's destination is. Material you love that does not serve the outcome goes in a second course, or nowhere.\n\nADDITION BEYOND THE VIDEO — what sells here. A course promising a specific, checkable outcome sells better in this market than a broad survey, because the buyer can tell whether it worked. \"Pass the CPA Section 1 mock\" or \"set up an M-Pesa Till and reconcile it weekly\" are promises someone can judge. It also protects you: a student who wanted something you never promised cannot fairly complain, and a refund request usually traces back to a vague promise rather than bad teaching.\n\nOn scope, be realistic about your own time. A five-hour course you never finish earns nothing. A forty-minute course that delivers one outcome cleanly can be published this month and improved later.",
+          "practice": "Write one sentence: \"By the end of this course, you will be able to ___.\" It must contain a verb someone could be watched doing. Then work backwards and list every step from that outcome to what a beginner can already do, in reverse order. Reverse the list — that is your outline. Finally, cross out every item that does not move the student toward the outcome, and count what is left. If it is under ten lessons, you have a course you can actually finish.",
+          "quiz": [
+            {
+              "question": "What is wrong with planning a course around a topic like \"Excel\"?",
+              "options": [
+                "Topics are harder to film than outcomes",
+                "A topic has no end, so nothing tells you which lessons belong and which do not — an outcome does",
+                "Platforms reject topic-based courses",
+                "Topics cannot be priced"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "How do you build the outline from the outcome?",
+              "options": [
+                "List everything you know about the subject, then order it",
+                "Copy the structure of a competitor's course",
+                "Work backwards from the outcome to what the student can already do, then reverse that chain",
+                "Start with the easiest lessons and keep going until you run out of ideas"
+              ],
+              "correct_index": 2
+            }
+          ]
+        },
+        {
+          "title": "Scripting So You Sound Like Yourself",
+          "description": "How much to script, what to write down, and why reading a full script aloud almost always sounds worse than planning one properly.",
+          "youtubeId": "aIA9LwGMAHY",
+          "objectives": [
+            "Choose between a full script, a beat sheet and bullet notes for a given lesson",
+            "Write an opening that tells the student what this lesson gives them",
+            "Plan a lesson so a mistake mid-recording costs one take, not the whole file"
+          ],
+          "notes": "Most people go to one of two extremes: no plan at all, which produces rambling and long silences, or a word-for-word script read aloud, which sounds like a hostage video. The middle is what works — know your opening line exactly, know the two or three beats you must hit, and improvise the connective tissue.\n\nThe opening earns the rest. In the first fifteen seconds say what this lesson lets the student do, not who you are. \"In this lesson you will build the formula that totals your stock sheet automatically\" beats a minute of introduction, and it is also what makes a free preview lesson convert.\n\nRecord in short segments with a natural break between beats. If you fluff a sentence twenty minutes into a single take, you either re-record everything or spend an hour editing; if your beats are three minutes each, you re-record three minutes. This one habit saves more time than any editing skill.\n\nA note on this video's age: it is from 2016. Scripting is craft about speaking and planning, not about software, and nothing in it has been overtaken — the same test this platform applies elsewhere, staleness of fact rather than age of upload.\n\nADDITION BEYOND THE VIDEO — recording in a real Kenyan room. Your phone is a good enough camera; the audio is what makes a course sound cheap. Record in a small room with soft things in it — a bedroom with a mattress and curtains beats a large tiled hall every time. Turn off the fan. Record a few seconds of silence before you start so an editor can use it. And if there is generator noise or matatu traffic outside, wait rather than push on: viewers forgive shaky video and abandon bad sound.",
+          "practice": "Take the first lesson from the outline you built. Write its opening line word for word — it must name what the student will be able to do. Then write only the two or three beats the lesson must hit, as bullets, and nothing else. Record it on your phone in one three-minute take. Play it back and mark where you rambled. Re-record only the beat that went wrong, not the whole thing.",
+          "quiz": [
+            {
+              "question": "Why does a full word-for-word script usually sound worse than a planned outline?",
+              "options": [
+                "Scripts take longer to write",
+                "Reading aloud flattens delivery; knowing the opening line and the required beats while improvising the rest sounds like a person talking",
+                "Platforms penalise scripted courses",
+                "A script cannot include technical terms"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "Why record in short segments rather than one long take?",
+              "options": [
+                "Short files upload faster",
+                "Platforms limit video length",
+                "A fluffed sentence costs you one short re-record instead of the whole take or an hour of editing",
+                "Short segments score better in search"
+              ],
+              "correct_index": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

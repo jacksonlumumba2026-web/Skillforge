@@ -432,7 +432,8 @@ custom authorization layer bolted on top.
       `0081`), Motion Graphics with After Effects (2 / 4, `0081`) and
       Print-on-Demand with Printful (2 / 4, `0082`) and Photo Editing &
       Retouching (Photoshop) (2 / 4, `0083`) and Online Tutoring & Course
-      Creation (2 / 4, `0084`).
+      Creation (2 / 4, `0084`), Affiliate Marketing (2 / 4, `0085`) and
+      No-Code App Building (2 / 4, `0085`).
 
       The gap these filled is the pattern to look for in the rest: each was
       a **tool tour**. AI Tools showed four chatbots and
@@ -681,6 +682,23 @@ custom authorization layer bolted on top.
       seconds**; with the earlier 15s and 19s finds, the channel is
       Shorts-only and `workflow-automation-zapier` cannot be deepened from
       the vendor at any duration floor this project would accept.
+
+      The 16 September 18:00 firing shipped two, both found by pointing
+      the several-channels-per-vendor lesson at **adjacent categories**:
+      Ahrefs publishes a numbered affiliate-marketing course, not only
+      SEO, and FlutterFlow runs a separate "FlutterFlow University"
+      teaching series. Affiliate Marketing gains the site blueprint and —
+      deliberately — Ahrefs' 2026 piece on what Google's updates did to
+      affiliate sites, because a course teaching this model without saying
+      so is out of date. No-Code gains the two concepts every tool shares,
+      which also partly offsets a known defect: its Level 2 Glide lessons
+      use Glide's older product.
+
+      Rejected on duration from those same two channels: Ahrefs' course
+      parts [1.1] (1:59), [1.2] (2:33) and [1.3] (1:56) — a numbered
+      series whose early parts sit under the floor — and its 1h48m
+      complete course, too long for a Level 1 lesson when data costs
+      money.
 
       Two things worth knowing before adding modules by hand. First,
       `getOrderedLessons()` builds the learner's lesson sequence from

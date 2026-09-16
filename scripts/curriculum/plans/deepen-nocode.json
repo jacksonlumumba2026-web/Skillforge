@@ -1,0 +1,80 @@
+{
+  "courseId": "ba71d7b5-d813-4429-bda5-c97e9fb1fc14",
+  "level": { "orderNumber": 1, "existing": true },
+  "modules": [
+    {
+      "title": "What Every App Is Actually Made Of",
+      "description": "Level 1 asked what no-code is and compared the tools, then Level 2 went straight to building in specific apps. The concepts underneath — that a screen is made of components, and that an app needs somewhere to keep its data — are the same in every no-code tool, and were never taught. FlutterFlow is used here as the worked example because its own channel teaches these properly; the ideas transfer to Glide, Adalo, Bubble or anything else.",
+      "lessons": [
+        {
+          "title": "Screens Are Made of Components",
+          "description": "The building-block idea behind every app screen: containers, text, images and buttons arranged inside each other. From FlutterFlow's own channel.",
+          "youtubeId": "2TGhJEUA0uY",
+          "objectives": [
+            "Describe a screen as a tree of nested components rather than a picture",
+            "Name the handful of component types that make up most screens",
+            "Recognise the same idea in a different no-code tool"
+          ],
+          "notes": "The mental shift that makes no-code click: a screen is not a drawing, it is a structure. A card is a container holding an image, some text and a button. A list is one design repeated for each row of data. Once you see screens as nested boxes, every tool's editor stops being mysterious, because they are all editing the same structure with different names for it.\n\nFlutterFlow calls them widgets. Glide calls them components. Adalo calls them components too. Bubble calls them elements. The vocabulary differs; the idea does not. That is why this lesson sits in Level 1, before the course picks a tool.\n\nADDITION BEYOND THE VIDEO — why this matters for getting unstuck. Most beginner frustration in no-code is a layout that will not do what you want, and almost all of it comes from not knowing which container a thing is sitting inside. When something will not move, will not centre, or will not resize, the answer is nearly always in the structure tree, not in the settings panel you are staring at. Learn to read that tree first and you will solve your own problems instead of searching for a tutorial that matches your exact screen.\n\nA note on this course's tools: the Glide lessons in Level 2 use Glide's older product, which the vendor has since moved on from. The concepts in this module are the durable part; specific button positions in any tool will drift, and that is normal.",
+          "practice": "Open any app on your phone and pick one screen. On paper, draw it as nested boxes: what contains what. Mark every repeated row as one design plus data. Then open any no-code tool's free tier and rebuild just that structure — no colours, no polish, only the boxes in the right arrangement. Getting the tree right is the skill; decoration is the easy part.",
+          "quiz": [
+            {
+              "question": "What is the underlying idea behind every app screen?",
+              "options": [
+                "A picture that the tool converts into code",
+                "A tree of components nested inside each other — a card is a container holding an image, text and a button",
+                "A single template chosen from a gallery",
+                "A spreadsheet with formatting applied"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "Your element will not centre or resize the way you want. Where is the answer usually found?",
+              "options": [
+                "In the settings panel for that element",
+                "In the tool's colour and theme settings",
+                "In the structure tree — which container the element is sitting inside",
+                "In the app's export settings"
+              ],
+              "correct_index": 2
+            }
+          ]
+        },
+        {
+          "title": "Where the App Keeps Its Data",
+          "description": "Connecting an app to a database and showing real, saved information — built as a to-do app, the smallest example that needs everything. From FlutterFlow's own channel.",
+          "youtubeId": "TFsDJAhvAKQ",
+          "objectives": [
+            "Explain why an app needs a database separate from its screens",
+            "Set up a collection and connect a screen to it",
+            "Tell the difference between data that is saved and data that only looks saved"
+          ],
+          "notes": "This is the half of app-building that beginners skip and then cannot understand why nothing works. Screens display; the database remembers. If a to-do list loses its items when you close the app, the items were never in a database — they were only ever on screen.\n\nA to-do app is the standard teaching example for a reason: it is the smallest thing that needs all the pieces. Something to store items, a screen that lists them, a way to add one, a way to mark it done. Every business app you will ever be asked for — a stock list, a client register, an attendance sheet, a delivery tracker — is the same shape with different words.\n\nFlutterFlow uses Firebase and Firestore here, which is Google's database service. Other tools bundle their own: Glide sits on a sheet, Adalo has its own collections, Bubble has a built-in database. The concepts you need are identical — collections of records, each with fields — and only the setup screens differ.\n\nADDITION BEYOND THE VIDEO — two things to check before you build for a paying client. First, cost: free tiers are generous for learning and can become billable when an app has real users, and a Firebase bill arrives in dollars. Read the pricing page before you promise anything. Second, where the data lives: a client storing customer names and phone numbers has obligations under Kenya's Data Protection Act. Know what you are storing and why, do not collect what you do not need, and be able to tell the client where it is kept.",
+          "practice": "Build the smallest possible data-backed app: one collection with two fields, one screen that lists the records, and one button that adds a record. Then close the app completely and reopen it. If your records are still there, you have understood this lesson. If they are gone, you built a screen, not an app — find where the save step was missed.",
+          "quiz": [
+            {
+              "question": "Your to-do list loses its items when the app is closed. What does that tell you?",
+              "options": [
+                "The app needs more memory",
+                "The items were never saved to a database — they only ever existed on screen",
+                "The screen layout is wrong",
+                "The database is too small"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "Why is a to-do app the standard teaching example?",
+              "options": [
+                "It is the most commonly requested business app",
+                "It requires no database",
+                "It is the smallest thing that needs all the pieces — storage, a list, adding and updating — and every business app is that same shape",
+                "It can be built without any screens"
+              ],
+              "correct_index": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

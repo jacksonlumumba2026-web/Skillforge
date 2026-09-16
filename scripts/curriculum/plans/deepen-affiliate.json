@@ -1,0 +1,80 @@
+{
+  "courseId": "4dead527-2b53-4173-8bd9-e0b20707c738",
+  "level": { "orderNumber": 1, "existing": true },
+  "modules": [
+    {
+      "title": "What It Actually Takes, in 2026",
+      "description": "Level 1 explained what affiliate marketing is and how to pick a niche, then stopped. This module covers the two things a learner needs before spending months on it: what you actually build, and the honest state of the business now that Google's updates have wiped out a great many affiliate sites. Both from Ahrefs.",
+      "lessons": [
+        {
+          "title": "The Blueprint: What You Are Actually Building",
+          "description": "The concrete shape of an affiliate site — the pages, the structure and the order to build them in — so the plan stops being abstract.",
+          "youtubeId": "559bgY-8aV8",
+          "objectives": [
+            "Describe the page types an affiliate site needs and what each one is for",
+            "Order the build so the first pages published are the ones that can earn",
+            "Recognise why a pile of unstructured posts does not become a business"
+          ],
+          "notes": "The useful shift here is from \"I will write about my niche\" to \"I will build these specific pages\". Affiliate sites that earn are structured: pages that answer a buying question, pages that compare options, and pages that catch people who are still learning. They link to each other on purpose.\n\nBuild order matters more than people expect. Publishing twenty general articles before a single page that could earn is the most common way a year disappears with no income. Start with the pages closest to a purchase decision, because those are the ones an affiliate link belongs on at all.\n\nADDITION BEYOND THE VIDEO — the money question nobody answers for Kenyan learners. Most large affiliate programmes pay by bank transfer, PayPal or cheque. Amazon Associates does not pay to Kenyan bank accounts by default and its threshold and methods vary by country, so CHECK THE PAYOUT METHOD BEFORE you build anything around a programme. This is the single most wasted effort in affiliate marketing here: months of work for a balance that cannot be withdrawn. Programmes that pay via PayPal, Wise or direct international transfer are the practical starting point, and you should confirm it in writing from the programme's own terms page, not from a YouTube video.\n\nAlso worth planning for: a site takes months to earn anything. If you need money this quarter, the freelancing, virtual assistance or print-on-demand paths on this platform pay sooner. Affiliate marketing is a slow asset, and treating it as quick income is how people give up at month three.",
+          "practice": "Sketch your site on one page: list the first five pages you would publish, and next to each write which one could carry an affiliate link and why someone reading it would be close to buying. Then pick one affiliate programme in your niche, find its terms page, and write down its payout methods, minimum threshold and whether it pays to Kenya. If you cannot find that in writing, that is your answer about the programme.",
+          "quiz": [
+            {
+              "question": "Why does build order matter on an affiliate site?",
+              "options": [
+                "Search engines index older pages first",
+                "Publishing many general articles before any page close to a purchase decision is how a year passes with no income",
+                "Affiliate programmes require a minimum page count",
+                "Hosting costs rise with the number of pages"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "What should you confirm about an affiliate programme before building around it?",
+              "options": [
+                "How many other affiliates it has",
+                "Whether its website looks professional",
+                "Its payout methods, threshold and whether it actually pays to Kenya — in writing, from its own terms",
+                "Whether it offers a mobile app"
+              ],
+              "correct_index": 2
+            }
+          ]
+        },
+        {
+          "title": "What Google's Updates Did, and What Still Works",
+          "description": "An honest look at the affiliate business after the search updates that destroyed many affiliate sites — and what the ones that survived did differently.",
+          "youtubeId": "Sk8MAbD39Qw",
+          "objectives": [
+            "Explain why large numbers of affiliate sites lost their traffic",
+            "Identify what distinguished the sites that kept growing",
+            "Decide honestly whether this model suits what you can actually offer"
+          ],
+          "notes": "This lesson exists because the alternative is selling you a dream. Google's helpful-content and spam updates removed the traffic from an enormous number of affiliate sites, including ones built exactly as older tutorials taught. Any course that teaches affiliate marketing without saying so is out of date.\n\nWhat the survivors had in common is not a trick. It is first-hand experience worth reading — actually using the product, actually knowing the field, showing something a summary of other people's reviews cannot show. Sites that rewrote what was already online lost. Sites with something of their own kept going.\n\nThat is a demanding bar, and it is also an opportunity if you take it seriously: you know things about your market that an overseas affiliate writer does not. Prices in Nairobi shops, which models actually survive local conditions, what the warranty situation really is, which seller delivers. That is first-hand content by definition, and almost nobody is writing it.\n\nADDITION BEYOND THE VIDEO — decide now, before the work. Ask yourself honestly: can I write something about this niche that is not already on the internet? If the answer is no, affiliate marketing will be a long, unpaid apprenticeship. If the answer is yes — you repair phones, you farm, you teach, you have used the thing — then you have the one asset the surviving sites have, and the rest of this course is worth your time.",
+          "practice": "Write down three things you know about your chosen niche from direct experience that you could not have got from reading — a price you paid, a product that failed, a step everyone gets wrong. Then search for each one and see whether anyone has written it. What you cannot find is your actual advantage. If you could not fill all three lines, consider a different niche, one you have genuinely lived.",
+          "quiz": [
+            {
+              "question": "What did the affiliate sites that kept growing have in common?",
+              "options": [
+                "They published more often than their competitors",
+                "First-hand experience worth reading — something a summary of other people's reviews cannot show",
+                "They used paid advertising instead of search",
+                "They targeted less competitive countries"
+              ],
+              "correct_index": 1
+            },
+            {
+              "question": "Why is local, lived knowledge an advantage in affiliate content now?",
+              "options": [
+                "Search engines rank local domains higher",
+                "It is cheaper to produce than researched content",
+                "It is first-hand by definition — prices, failures and conditions an overseas writer cannot know — which is exactly what survived the updates",
+                "Affiliate programmes pay more for local traffic"
+              ],
+              "correct_index": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

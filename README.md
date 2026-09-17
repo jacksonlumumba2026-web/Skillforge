@@ -433,7 +433,8 @@ custom authorization layer bolted on top.
       Print-on-Demand with Printful (2 / 4, `0082`) and Photo Editing &
       Retouching (Photoshop) (2 / 4, `0083`) and Online Tutoring & Course
       Creation (2 / 4, `0084`), Affiliate Marketing (2 / 4, `0085`) and
-      No-Code App Building (2 / 4, `0085`).
+      No-Code App Building (2 / 4, `0085`) and SQL & Databases for
+      Beginners (2 / 4, `0086`).
 
       The gap these filled is the pattern to look for in the rest: each was
       a **tool tour**. AI Tools showed four chatbots and
@@ -699,6 +700,21 @@ custom authorization layer bolted on top.
       series whose early parts sit under the floor — and its 1h48m
       complete course, too long for a Level 1 lesson when data costs
       money.
+
+      **SQL reopened a course that had been closed, without new
+      sourcing.** It was rejected on 9 September for having no vendor
+      channel, which is still true — but its own lesson 1 already points
+      at freeCodeCamp's 4h20m SQL course, and that video publishes a named
+      chapter list. The new lessons send the learner to "Tables & Keys",
+      then "Creating Tables" and "Inserting Data", closing the largest gap
+      found in this sweep: every lesson after Level 1 READS data, and
+      nothing taught how to create any, so a learner could never build a
+      database to practise on.
+
+      That also costs the learner no new download, since they opened the
+      same video in lesson 1 — which the notes point out, because data
+      costs money here. **A course with no vendor channel may still have a
+      long course video with named chapters already in it.**
 
       ### A duplication defect found on 17 September, not yet fixed
 

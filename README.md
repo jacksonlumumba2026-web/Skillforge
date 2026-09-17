@@ -700,6 +700,41 @@ custom authorization layer bolted on top.
       complete course, too long for a Level 1 lesson when data costs
       money.
 
+      ### A duplication defect found on 17 September, not yet fixed
+
+      A catalogue-wide check for the same video appearing twice **within
+      one course** turned up three live courses where a learner pays KSh
+      500 and watches the same video twice under two different titles,
+      with no notes to distinguish them:
+
+      - `python-programming-for-beginners` — **four lessons, two videos**.
+        "3 Python Automation Projects for Beginners" (m6) and "Build 3
+        Python Automation Scripts" (m7) are the same video; "How to Land
+        Freelance Jobs with Python" (m6) and "Landing Freelance Jobs with
+        Python" (m8) are the same video.
+      - `mobile-photography-content-creation` — "How To Shoot Epic Product
+        Photography With a Phone" (m4) and "Product Photography Shoot With
+        Just a Phone" (m5) are the same video.
+      - `google-workspace-productivity` — m6 embeds whole the same video
+        that two m4 lessons already teach by chapter.
+
+      All the offending lessons are **bare** — part of the 438 backlog —
+      which is why nothing flagged them: with no notes, there is nothing
+      to tell the two apart. They are legacy from the original catalogue
+      build, not from the deepening work.
+
+      **Web Development's much larger reuse is NOT a defect and must not
+      be "fixed".** Its two JavaScript course videos appear nine times
+      each and a CSS one four times, but every lesson's notes name the
+      specific chapter to watch — "Watch the **Link JavaScript to HTML**
+      chapter", "**Lesson 5 — Variables**". That is the documented
+      method for long course videos, and it works.
+
+      The fix requires editing or removing existing lessons, which the
+      deepening routine is forbidden to do (additive only, never touch a
+      lesson id), so it is left for a decision rather than done
+      unilaterally.
+
       Two things worth knowing before adding modules by hand. First,
       `getOrderedLessons()` builds the learner's lesson sequence from
       `modules.order_number` ALONE and ignores level — so a module appended

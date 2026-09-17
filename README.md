@@ -716,6 +716,46 @@ custom authorization layer bolted on top.
       costs money here. **A course with no vendor channel may still have a
       long course video with named chapters already in it.**
 
+      ### Backfilling the 438 bare lessons — started 17 September
+
+      **The bare-lesson count has moved for the first time: 438 → 432.**
+
+      Two different things were both being called "depth". One is Level 1
+      breadth, which the routine has been adding — 50 new lessons across
+      15 courses in ten days. The other is the quality of the lessons
+      already on the site, and 438 of 735 (60%) were a title and a video
+      with no notes, objectives, practice task or knowledge check. That
+      second number had not moved by a single lesson.
+
+      Backfilling needs **no video sourcing at all** — the videos are
+      already there; what is missing is the written teaching around them.
+      That sidesteps the sourcing wall entirely, and it is also the root of
+      the duplicate-lesson defect below: with no notes, two lessons on the
+      same video are indistinguishable.
+
+      `freelancing` was the first target — 12 of 12 lessons bare, on a
+      course with a live enrollment. Levels 1-2 are now written
+      (`0087_backfill_freelancing_levels_1_2.sql`); Levels 3-4 to follow.
+
+      This also resolves something the sourcing work could not. Freelancing
+      was dropped twice for having no authoritative video on pricing,
+      contracts and getting paid. Those are now taught in the NOTES, which
+      is what the method prescribes when a topic has no usable video —
+      including what no international video covers: Wise and Payoneer
+      rather than PayPal, a deposit as the only real protection when
+      chasing a cross-border debt is impossible, and the Data Protection
+      Act applying to a freelancer holding a client's customer list.
+
+      `scripts/curriculum/build-backfill-sql.py` generates the SQL. It
+      emits UPDATEs addressed by lesson id — nothing inserted, deleted or
+      re-parented, no id changed — so `lesson_progress` is untouched.
+
+      **Note for the deepening routine:** its standing check "the
+      bare-lesson count must still read 438" is now stale. The invariant it
+      protects still holds — new lessons must not ADD to the backlog — but
+      the number will keep falling as backfilling proceeds. Treat this
+      README as the current figure.
+
       ### A duplication defect found on 17 September, not yet fixed
 
       A catalogue-wide check for the same video appearing twice **within

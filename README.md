@@ -718,7 +718,8 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **The bare-lesson count has moved for the first time: 438 → 432.**
+      **Bare-lesson count: 438 → 426. `freelancing` is the first course
+      taken to zero — all 12 lessons fully written.**
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -734,8 +735,14 @@ custom authorization layer bolted on top.
       same video are indistinguishable.
 
       `freelancing` was the first target — 12 of 12 lessons bare, on a
-      course with a live enrollment. Levels 1-2 are now written
-      (`0087_backfill_freelancing_levels_1_2.sql`); Levels 3-4 to follow.
+      course with a live enrollment, so someone had paid for a course in
+      which every lesson was a title and a link. It is now **complete**:
+      `0087` covered Levels 1-2 and `0088` Levels 3-4.
+
+      Order of attack for the rest: courses that have enrollments and are
+      wholly bare, since those are the ones a paying learner is in right
+      now. `presentation-design`, `ai-tools` and `vibe-coding` each carry 2
+      enrollments and 12 bare lessons.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

@@ -1,0 +1,203 @@
+{
+  "course": "vibe-coding",
+  "lessons": [
+    {
+      "id": "fb4d85b9-05b5-42c8-9d03-e106dcc8f8a2",
+      "title": "The Ultimate Beginner's Guide to Vibe Coding",
+      "objectives": [
+        "Say what vibe coding is and what it is not",
+        "Judge which kinds of project it suits and which it does not",
+        "Set an honest expectation of what you will be able to build by the end"
+      ],
+      "notes": "Vibe coding means describing what you want in plain language and letting an AI write the code, while you steer, check and decide. You are not typing the code. You are deciding what gets built, judging what comes back, and owning the result.\n\nWhat has actually changed is the cost of the FIRST version. Something that would have taken a beginner three months of tutorials now takes an afternoon. That is real and it is not hype.\n\nWhat has not changed: understanding what your program does, why it broke, whether it is safe to put customer data in it, and whether it still works after the last change. Those were always the hard parts and they are still the hard parts.\n\nWhere it works well: small web apps and sites, internal tools, dashboards, form-and-database applications, automations, prototypes to show a client or test an idea. Most useful software for a small business is exactly this shape.\n\nWhere it goes badly: anything handling money or sensitive personal data without someone experienced reviewing it; anything that must keep running unattended; anything you cannot afford to have quietly break.\n\nBe clear about what this course can honestly give you. You will be able to build and deploy a working application, and you will be able to charge for that. You will NOT be a software engineer at the end of eight modules, and anyone promising that is selling something. What you will have is a real, usable skill with a real market — and a clear view of its edges, which is worth more than confidence.\n\nOne warning to carry through every module: the AI is fast and it is confident and it is sometimes wrong. Speed without judgement produces an app that works on your laptop and falls over in front of a client.",
+      "practice": "Write down three things you would genuinely like to exist — a booking form for a business you know, a tool that saves you a repeated task, a simple site for someone. For each, note whether it handles money or personal data. Keep the list; the ones that do not touch money or personal data are your first projects, and you will build one of them in Module 7.",
+      "quiz": [
+        {
+          "question": "What has vibe coding actually changed?",
+          "options": [
+            "The cost of building a first working version — not the difficulty of understanding, debugging or securing it",
+            "The need to understand what your program does",
+            "Whether software needs testing",
+            "Everything about software development"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Which project is the WORST fit for a beginner vibe coding alone?",
+          "options": [
+            "Anything handling money or sensitive personal data",
+            "A simple booking form",
+            "An internal dashboard",
+            "A prototype to show a client"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "3f2fcde2-49a2-4200-b473-8fd8c2e8c511",
+      "title": "Vibe Coding Fundamentals In 33 Minutes",
+      "objectives": [
+        "Name the parts of a web application and what each one does",
+        "Describe a project in the terms an AI coding tool responds to",
+        "Recognise the vocabulary you need so the AI's answers make sense"
+      ],
+      "notes": "You do not need to write code. You do need enough vocabulary to say what you want and to understand what comes back, or you cannot steer. This is the shortest useful version.\n\nA web app has a FRONTEND (what people see and click, running in their browser), a BACKEND (the logic running on a server, deciding what is allowed and what happens), and a DATABASE (where information is stored so it survives a refresh). When an AI says it is 'adding an endpoint', it is working on the backend; 'the component' is frontend; 'the schema' or 'the table' is the database.\n\nDEPLOYMENT is the step that moves your app from your machine to somewhere other people can reach it. Until you deploy, only you can use it. Module 7 gets you there.\n\nA DEPENDENCY is someone else's code your project uses. The AI adds these freely. Each one is code you did not write and did not read, which is worth noticing.\n\nAn ENVIRONMENT VARIABLE is a secret — a password or key — kept outside your code. This one matters enormously: a key pasted straight into the code and then pushed to a public repository is the single most common way beginners get burned, and it is expensive when it is a paid service key.\n\nAn API is how one program asks another for something — how your app sends a message, takes a payment, or reads a spreadsheet.\n\nADDITION BEYOND THE VIDEO — build a habit of asking the AI to explain, in your own terms, on your own project: 'in plain English, what does this file do?', 'what did you just change and why?', 'what would break if I deleted this?'. It will answer, patiently, every time. That is the cheapest tutor you will ever have, and using it is what separates someone who can steer from someone who can only prompt.",
+      "practice": "Take one app you use daily — M-Pesa, a bank app, a food delivery app. Write down what you think its frontend, backend and database each do, and name three pieces of information it must be storing. Then ask an AI to check your answer and explain anything you got wrong. Ten minutes of this is worth more than an hour of watching.",
+      "quiz": [
+        {
+          "question": "Where should a secret key live?",
+          "options": [
+            "In an environment variable, outside the code and never pushed to a public repository",
+            "In the code, clearly commented so you can find it",
+            "In the database",
+            "In the frontend so the app can reach it quickly"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What is the most valuable habit for understanding a codebase you did not write?",
+          "options": [
+            "Asking the AI to explain, in plain language, what each file and change does",
+            "Reading every line yourself before continuing",
+            "Avoiding files you did not create",
+            "Trusting that working code needs no explanation"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "71653f2f-615a-4acf-b13e-82286a88ad52",
+      "title": "Cursor Tutorial for Beginners (AI Code Editor)",
+      "objectives": [
+        "Get a project open in an AI code editor and make one working change",
+        "Tell the difference between asking, editing and letting the tool act on its own",
+        "Read a proposed change before accepting it"
+      ],
+      "notes": "An AI code editor is an ordinary code editor with the AI built into it, and the reason that matters is CONTEXT: it can see your actual files, so its answers fit your project instead of being generic. Cursor is the one used here; several others work the same way and the skills transfer.\n\nThere are three distinct ways to work in one, and knowing which you are in is most of the skill:\n\nASK — a conversation about your code. Nothing changes. Use it to understand something, plan an approach, or ask why something broke. This is where beginners should spend more time than they do.\n\nEDIT — you select code or name a file and describe the change. It proposes a specific edit and you accept or reject it. Use it for anything you can point at.\n\nAGENT — you describe a goal and it works across multiple files on its own, creating, editing, running things. Powerful, and the one that will get away from you. Use it for well-defined tasks, not for 'build my app'.\n\nWhatever you use, the proposed change is shown as a DIFF: red for what goes, green for what arrives. Read it before you accept. Not every line — but enough to know which files are touched, whether anything was deleted that you wanted, and whether it added something you did not ask for.\n\nADDITION BEYOND THE VIDEO — the rejection habit is the one to build early. Rejecting a change and re-asking with more detail costs thirty seconds. Accepting a change you did not understand costs you the evening you spend later working out why the app broke. Beginners accept everything because rejecting feels like failing. It is the opposite.",
+      "practice": "Open any small existing project, or have the tool create a starter one. Do one task in each of the three modes: ASK it to explain what a file does; EDIT one specific thing, like changing a heading and a colour; then give the AGENT one small well-defined job, such as adding a new page with a form. Read every diff before accepting, and deliberately reject one and re-ask with more detail.",
+      "quiz": [
+        {
+          "question": "Which mode should you use to understand code without changing anything?",
+          "options": [
+            "Ask — a conversation about the code, with no edits made",
+            "Edit",
+            "Agent",
+            "Any of them; they are the same"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why is rejecting a proposed change a good habit?",
+          "options": [
+            "Re-asking with more detail costs seconds; accepting something you do not understand costs far more later",
+            "Rejecting makes the AI learn your preferences permanently",
+            "Accepted changes cannot be undone",
+            "It reduces what the tool costs to run"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "9ad45c5e-ac84-4cc8-b161-4be3ce185100",
+      "title": "How To Use Cursor AI (Full Tutorial For Beginners)",
+      "objectives": [
+        "Point the AI at the right files instead of hoping it finds them",
+        "Write down your project's conventions once so you stop repeating them",
+        "Keep a long session from drifting away from what you asked for"
+      ],
+      "notes": "The last lesson covered the modes. This one is about the thing that actually decides output quality: WHAT THE AI CAN SEE.\n\nThese tools do not read your whole project on every request. They work from what you give them and what they can find. So point deliberately — name the files that matter, attach the ones the change touches, reference the existing page you want the new page to resemble. Vague requests on a project the AI has not looked at produce code that works in isolation and fits nothing.\n\nThe highest-value habit here is a PROJECT RULES FILE — a short document in your project saying how things are done: what stack you are on, how files are organised, how you name things, what to always do and never do. Every serious user of these tools has one, and the reason is simple: it stops you retyping the same five corrections into every prompt. Start it the first time you correct the AI twice for the same thing, and add a line each time it happens again.\n\nLONG SESSIONS DRIFT. After an hour of back-and-forth, the earliest instructions carry less weight and the AI starts contradicting decisions you made at the start. The fix is not a cleverer prompt: finish the piece of work, commit it (Module 4), and start a fresh conversation for the next one. A clean session with a rules file beats a long one every time.\n\nADDITION BEYOND THE VIDEO — pricing and plans on these tools change constantly, so treat any figure in a tutorial as out of date. What is worth knowing structurally is that heavier use costs more, and that agent mode working across many files is the expensive mode. Doing focused work in ask and edit is both cheaper and, for a beginner, better practice.",
+      "practice": "Write a project rules file for something you are building — stack, folder layout, naming, three things to always do, three never to do. Then run the same feature request twice: once in a fresh session with the rules file in place and the relevant files attached, once vaguely with nothing attached. The difference is the whole lesson, and it is worth seeing rather than being told.",
+      "quiz": [
+        {
+          "question": "What most determines the quality of an AI code editor's output?",
+          "options": [
+            "What the AI can see — the files you point it at and the conventions you have written down",
+            "How politely the request is worded",
+            "How long the conversation has been running",
+            "Which mode you chose"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What should you do when a long session starts contradicting earlier decisions?",
+          "options": [
+            "Finish and commit the current piece of work, then start a fresh conversation",
+            "Repeat the original instructions more forcefully",
+            "Switch to agent mode",
+            "Delete the project and start again"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "24d25e3f-a470-4107-aa75-80fe24ffe390",
+      "title": "How To Write Perfect Prompts For AI Coding Agents",
+      "objectives": [
+        "State what 'done' means before asking for any feature",
+        "Specify behaviour and constraints rather than describing an outcome vaguely",
+        "Plan a change in conversation before letting an agent execute it"
+      ],
+      "notes": "Module 3 told you to work in small steps. This lesson is about what goes INSIDE one of those steps.\n\nA weak request is 'add login'. A workable one states:\n\nWHAT IT DOES — 'users sign in with email and password, and are sent to the dashboard afterwards'.\nWHAT HAPPENS WHEN IT GOES WRONG — wrong password, email already registered, no network. Beginners describe only the happy path, and the code that comes back handles only the happy path. Most bugs in vibe-coded apps live in exactly the cases nobody described.\nWHERE IT FITS — which files, which existing pattern to match.\nWHAT NOT TO DO — 'do not add a new library for this', 'do not change the existing user table'. Constraints are as important as instructions with an agent, because it will otherwise solve your problem in the largest way available.\nWHAT DONE LOOKS LIKE — 'I can register, sign out, sign back in, and a wrong password shows an error'. If you cannot write this sentence, you are not ready to ask for the feature.\n\nPLAN BEFORE YOU BUILD. For anything beyond a small change, ask first: 'how would you approach this, what files would change, and what are the tradeoffs?' Read the plan, correct it, and only then say go. Correcting a plan costs a message. Correcting six files of finished code costs an afternoon.\n\nADDITION BEYOND THE VIDEO — keep your good prompts. When a request produces clean work first time, save it. Feature requests rhyme across projects, and within a few weeks you will have a small library of requests that reliably work — the same idea as the prompt file in the AI Tools course, applied to code.",
+      "practice": "Take a feature you want and write the full request: behaviour, error cases, where it fits, constraints, and the sentence describing what done looks like. Before running it, ask the AI for its plan and read it. Change at least one thing in that plan before saying go — there is almost always something.",
+      "quiz": [
+        {
+          "question": "Which part of a feature request do beginners most often leave out?",
+          "options": [
+            "What should happen when things go wrong — the error cases",
+            "The name of the feature",
+            "The programming language",
+            "The deadline"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why ask an agent for its plan before letting it build?",
+          "options": [
+            "Correcting a plan costs one message; correcting finished code across several files costs far more",
+            "Plans make the agent run faster",
+            "The plan is required before the agent will act",
+            "It reduces the number of files created"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "34f2b18d-b095-4c5f-8c74-3636971d1858",
+      "title": "How To Fix Bugs in Your Vibe Coding Projects",
+      "objectives": [
+        "Give the AI an error message and the steps to reproduce, rather than 'it is broken'",
+        "Change one thing at a time when debugging",
+        "Get out of a loop where each fix creates a new problem"
+      ],
+      "notes": "Debugging is where vibe coding either works for you or falls apart, and the difference is method rather than knowledge.\n\nSTART WITH THE ACTUAL ERROR. There is almost always a real error message — in the terminal, or in the browser console, which you open with F12 and look at the Console and Network tabs. Paste the whole thing. 'It does not work' gives the AI nothing and it will guess; the error text usually names the file and the line.\n\nSAY WHAT YOU DID. 'I click Submit with an empty email field and the page goes blank.' Reproduction steps turn guessing into diagnosis.\n\nCHANGE ONE THING AT A TIME. When three fixes go in together and the problem goes away, you do not know which one worked, and you may have introduced two new problems. This is the discipline that separates a fixable project from a haunted one.\n\nTHE DOOM LOOP — every fix breaks something else, and after an hour the app is worse than when you started. Get out of it deliberately:\n1. STOP. Do not send another prompt.\n2. Go back to the last commit that worked (Module 4 — this is why you commit before each change).\n3. Ask, in ask mode, not edit mode: 'why would this happen?' Understand the cause before touching anything.\n4. Then make one small, targeted change.\n\nThe loop is caused by fixing symptoms without understanding causes, which is exactly what the AI will help you do very quickly if you let it.\n\nADDITION BEYOND THE VIDEO — when you are truly stuck, describe the problem out loud as if to a person: what should happen, what does happen, what you have tried. You will solve a surprising share of bugs in the act of explaining them, before the AI answers at all.",
+      "practice": "Deliberately break something small in a project — remove a variable, rename a file. Then fix it properly: read the actual error, write the reproduction steps, ask why before asking for a fix, and change one thing. Then practise the recovery: make three changes at once without committing, and reset back to the last working commit. Knowing that escape route exists is what makes you calm later.",
+      "quiz": [
+        {
+          "question": "What is the first thing to give the AI when something breaks?",
+          "options": [
+            "The actual error message plus the exact steps that reproduce it",
+            "A description of how the app used to work",
+            "The whole codebase",
+            "A request to rewrite the feature"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "You are in a loop where every fix breaks something else. What is the first move?",
+          "options": [
+            "Stop prompting and return to the last commit that worked",
+            "Ask the AI to fix everything at once",
+            "Switch to a different AI tool",
+            "Delete the broken files"
+          ],
+          "correct_index": 0
+        }
+      ]
+    }
+  ]
+}

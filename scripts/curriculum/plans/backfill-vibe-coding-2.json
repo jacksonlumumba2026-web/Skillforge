@@ -1,0 +1,203 @@
+{
+  "course": "vibe-coding",
+  "lessons": [
+    {
+      "id": "75b04643-899b-4097-9d44-d8b49f3aa664",
+      "title": "Lovable AI Website Builder — Full Tutorial for Beginners",
+      "objectives": [
+        "Build and publish a working app from a browser, with nothing installed",
+        "Describe an app in screens and actions rather than in features",
+        "Know what you are trading away for that speed"
+      ],
+      "notes": "A no-code AI app builder runs in the browser. You describe an app, it builds and hosts it, and you get a live link. Nothing to install, which matters if you are working from a modest laptop or a borrowed machine.\n\nThe skill is in HOW YOU DESCRIBE IT. Do not list features. Walk through the app as a person using it:\n\n'A booking page for a salon. A visitor picks a service from a list, picks a date and time, enters their name and phone number, and sees a confirmation. The owner signs in on a separate page and sees today''s bookings as a list, newest first, and can mark one as done.'\n\nThat is screens and actions, and it is the shape these tools respond to. 'A salon management system' is not.\n\nThen build in the same small steps as anywhere else: get one screen right, check it, then ask for the next. Asking for everything at once produces something impressive-looking and wrong in six places you will spend the evening finding.\n\nWHAT YOU TRADE. Speed and simplicity, in exchange for: you do not own the environment, you are inside their pricing and their limits, moving the project elsewhere later ranges from awkward to impractical, and there are things you simply cannot change. For a prototype, an internal tool, or a client''s first version, that is a good trade. For something a business will depend on for years, think harder.\n\nADDITION BEYOND THE VIDEO — the practical Kenyan use is the DEMO. Building a working prototype in an evening, showing it to a business on your phone, and only then discussing price changes the conversation entirely. You are no longer selling an idea; you are showing a thing that exists. The Module 8 lessons build directly on this.",
+      "practice": "Pick the simplest item from the list you made in Module 1. Write its description as screens and actions — every screen, what the person does on it, what they see next. Then build it one screen at a time and publish it. Open the live link on your phone, on mobile data, and note anything that looks wrong or loads slowly. That gap between laptop and phone is where most of the work is.",
+      "quiz": [
+        {
+          "question": "How should you describe an app to a no-code AI builder?",
+          "options": [
+            "As screens and actions — what a person does, and what they see next",
+            "As a list of features",
+            "As a category, such as 'a management system'",
+            "As a comparison to an existing product"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What is the main tradeoff of a hosted no-code builder?",
+          "options": [
+            "You do not own the environment and moving the project elsewhere later is hard",
+            "It cannot produce a working app",
+            "It requires installing developer tools",
+            "The app cannot be shared with anyone"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "b7e049b2-ce81-4294-b57f-c9cef160607c",
+      "title": "The Ultimate Guide to Bolt.new — Build Apps with AI",
+      "objectives": [
+        "Use a second builder and recognise what is common to all of them",
+        "Choose between a browser builder and a code editor for a given job",
+        "Get a project out of a builder before you are locked into it"
+      ],
+      "notes": "Bolt is a second browser-based builder. Working through two is deliberate: you should be able to see the pattern rather than learn one product. Describe the app, it generates it, you refine in conversation, you publish. The differences between these tools are real but small next to what they share.\n\nWHEN TO USE WHICH — the honest version:\n\nA BROWSER BUILDER suits the first version of something, a demo for a client, an internal tool, a project where nothing needs to be unusual, and any situation where installing software is not practical.\n\nAN AI CODE EDITOR (Modules 2 and 5) suits anything that must integrate with something specific, anything you will maintain for a long time, anything where you need full control of the code, and any project that has outgrown what the builder will let you change.\n\nA normal, sensible path is to START in a builder to get something real in front of someone, then move to an editor when the project justifies it.\n\nWHICH IS WHY EXPORT MATTERS. Before you build anything you care about, find out how to get the code out — most of these tools can push a project to GitHub. Do it early, while the project is small. A client project that exists only inside a builder account is a project you do not fully control, and discovering that at the point you need to move is an expensive lesson.\n\nADDITION BEYOND THE VIDEO — free tiers on these tools are generous until your app has real users, and then they are not. Before you promise a business you will host their tool for free forever, find out what it costs when it is being used. Quote the hosting cost as part of the job, or hand the account to the client and let them own it. Getting this wrong quietly turns a paid project into a bill you pay.",
+      "practice": "Build the same small app you built in the last lesson, in this second tool, and stop the moment you notice something that behaves differently. Write down three differences you actually hit. Then push the project to GitHub and confirm the code is really there — that is the step that keeps your options open, and it takes five minutes now versus a week later.",
+      "quiz": [
+        {
+          "question": "When is an AI code editor the better choice over a browser builder?",
+          "options": [
+            "When the project must integrate with something specific, be maintained long-term, or needs full control of the code",
+            "Whenever the app has a database",
+            "Whenever the client is paying",
+            "Always — builders are only for practice"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why should you export a project to GitHub early?",
+          "options": [
+            "A project that exists only inside a builder account is one you do not fully control",
+            "It makes the app run faster",
+            "Builders delete inactive projects",
+            "It is required before publishing"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "8b38916d-2062-4789-98d2-d53309f837d2",
+      "title": "Build a Full App with AI in 30 Minutes (5-Step Workflow)",
+      "objectives": [
+        "Take a project from idea to a live link other people can open",
+        "Scope a first version down to what one person actually needs",
+        "Check an app the way a stranger will use it, not the way you built it"
+      ],
+      "notes": "This is the module where everything so far becomes one thing. The workflow, with the parts tutorials skip:\n\n1. DEFINE. One sentence on who it is for and what it lets them do. Then the screens and actions, as in Module 6. Then — most important — cut it. Your first version should do ONE job completely, not five jobs partly. Scope is the beginner killer, not difficulty.\n\n2. SET UP. Create the project, get it into Git before anything else (Module 4), write the rules file (Module 2).\n\n3. BUILD IN SLICES. One feature at a time: ask for it, read the diff, check it works, commit. Never start a second feature with the first one uncommitted.\n\n4. TEST LIKE A STRANGER. You test the path you built. Real users do not. Submit the form empty. Type letters where a number goes. Enter a phone number with spaces in it. Click Submit twice. Open it on a phone on mobile data, not on your laptop on wifi — most of your users are on a phone, on a bundle, and a heavy page they abandon is a page that failed.\n\n5. DEPLOY. Push it live and open the link on a device you did not build it on. This step is not optional: an app on your laptop is homework, an app on a link is a portfolio piece you can send to a client on WhatsApp.\n\nADDITION BEYOND THE VIDEO — before anyone else''s data goes into it, ask the AI directly: 'what security problems does this application have, and what is exposed publicly?' Then act on the answer. If your app stores other people''s names, phone numbers or ID details, you are responsible for protecting them, and Kenya''s data protection law treats that as a real obligation rather than a courtesy. The safest first project is one that stores no personal data at all.",
+      "practice": "Build and deploy one complete small app today. Define it in a sentence, cut the scope until it does one job, build it in committed slices, then test it as a stranger — empty fields, wrong formats, double clicks, on a phone on mobile data. Send the live link to one person who was not involved and watch what they do with it without helping them.",
+      "quiz": [
+        {
+          "question": "What most often sinks a beginner's first project?",
+          "options": [
+            "Scope — trying to do five jobs partly instead of one job completely",
+            "Choosing the wrong AI tool",
+            "Not knowing enough programming",
+            "Deploying too early"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why test the app on a phone using mobile data?",
+          "options": [
+            "Most users are on a phone on a data bundle, and a heavy page they abandon is a failure you would not see on a laptop",
+            "Phones run different code",
+            "It is the only way to find security problems",
+            "Desktop browsers do not show errors"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "32d93cc1-b437-484c-9dc7-be1f5aca6095",
+      "title": "How I Built a Full App in One Week Using AI",
+      "objectives": [
+        "Set a realistic expectation of how long a real project takes",
+        "Recognise the gap between a working demo and something people can rely on",
+        "Decide what to finish and what to leave out when time runs out"
+      ],
+      "notes": "The previous lesson was thirty minutes. This one is a week, and the difference between those two numbers is the most useful thing in this module.\n\nThe first working version arrives fast — that part of the hype is true. What takes the rest of the week is everything between 'it works when I do it right' and 'other people can use it':\n\n- What happens when someone does something unexpected\n- What the app says when something fails, instead of going blank\n- Making it work properly on a phone\n- Accounts, permissions, and who is allowed to see what\n- Loading states, so a slow connection does not look like a broken app\n- The dozen small fixes that each take ten minutes\n\nThis is the 80/20 in its original, unflattering form: the last 20% of the visible work takes most of the time. Budget for it, and quote for it.\n\nWHAT THIS MEANS FOR PRICING. When a client asks how long, the demo is not the answer. If you can build the demo in a day, the usable version is usually a week. Quote the week. Beginners who quote the demo lose money and deliver something fragile, and then discover they have promised support they cannot afford to give.\n\nWHEN TIME RUNS OUT, cut FEATURES, never QUALITY. An app that does three things properly is a deliverable. An app that does eight things unreliably is a complaint, and it will cost you the next job from the same person.\n\nADDITION BEYOND THE VIDEO — decide up front what happens after you hand it over. Who fixes it when it breaks in a month? If that is you, say so and price it. If it is not you, say that clearly, in writing, before you start. Most freelance disputes in small software work are about this one unasked question.",
+      "practice": "Take the app you deployed in the last lesson and spend a focused session on only the unglamorous half: error messages instead of blank pages, a loading state, the phone layout, and what happens on the three worst inputs you can think of. Time it honestly. That number is what you should be quoting for, and it is usually a surprise the first time.",
+      "quiz": [
+        {
+          "question": "Where does most of the time on a real project actually go?",
+          "options": [
+            "The work between 'it works when I do it right' and 'other people can rely on it'",
+            "Getting the first version working",
+            "Choosing the tools",
+            "Deployment"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "The deadline is close and not everything is done. What should you cut?",
+          "options": [
+            "Features — never quality; three things done properly beats eight done unreliably",
+            "Testing",
+            "Error handling",
+            "The phone layout"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "d52847a4-d599-493b-b370-7afdcfbb4a2f",
+      "title": "How To Land Your First AI Client As A Freelancer",
+      "objectives": [
+        "Find a first client without competing on price with the whole internet",
+        "Lead with a working thing rather than with a proposal",
+        "Talk about what a business loses, not about the technology you used"
+      ],
+      "notes": "The first client is the hardest one, and most of the standard advice is written for a market you are not in.\n\nGLOBAL FREELANCE PLATFORMS are a bad first move. You have no reviews, no history, and you are bidding against thousands of people, many of them cheaper. You can get there eventually, with a portfolio behind you. Do not start there.\n\nSTART WITH WHO YOU CAN REACH. A business you already buy from. Someone in your family''s network. A church, a school, a sacco, a chama. The salon, the hardware shop, the clinic, the M-Pesa agent. Every one of them has something on paper or in a WhatsApp group that would work better as a simple app, and none of them has ever spoken to a developer.\n\nLEAD WITH THE THING. This is the whole method and it is what the tools have made possible: build a working prototype BEFORE you approach them. An evening''s work. Then show it on your phone — 'I built this for you, have a look'. You have skipped the entire problem of being an unknown with no portfolio, because the portfolio is in your hand and it has their name on it.\n\nTALK ABOUT THEIR PROBLEM. Not AI, not Cursor, not the stack. 'You are losing bookings because people call when you are with a customer.' 'You are writing the same order details into a book three times.' The technology is your business; the loss is theirs.\n\nADDITION BEYOND THE VIDEO — price the first one low but never free, and be explicit that it is an introductory rate for your first project. Free work is treated as worthless and generates endless changes. A small real payment makes both of you take it seriously — and ask for the testimonial and permission to show the work while they are still pleased, on the day you deliver, not three months later.",
+      "practice": "List five businesses or groups you can physically walk into or message directly. Pick the one whose problem you understand best and build them a working prototype this week — real, with their name on it, not a mockup. Show it in person, on your phone. Ask one question: 'would this be useful?' Then name a price. Do this once and you will have learned more than any amount of reading about freelancing.",
+      "quiz": [
+        {
+          "question": "What is the strongest way to approach a first client?",
+          "options": [
+            "Build a working prototype for their actual problem first, then show it to them",
+            "Send a well-written proposal",
+            "Bid on global freelance platforms until one lands",
+            "Offer the lowest price in the market"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What should you talk about when pitching?",
+          "options": [
+            "What the business is currently losing — missed bookings, repeated work",
+            "Which AI tools you use",
+            "How fast AI is improving",
+            "Your learning journey"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "9dedee08-6134-4f77-89dd-9461600da499",
+      "title": "How To Make Money Vibe Coding With Cursor AI",
+      "objectives": [
+        "Price a build on its value to the business rather than on your hours",
+        "Write down scope, payment terms and what happens after handover",
+        "Turn one-off builds into income that recurs"
+      ],
+      "notes": "Module 8''s first lesson got you a client. This one is about not losing money on them.\n\nPRICE THE OUTCOME. If an app saves a shop five hours a week, or stops it losing three bookings a month, that is the number the price should relate to — not how long the AI took. Hourly pricing punishes you precisely for being fast, which is your entire advantage.\n\nWHAT MUST BE IN WRITING before you start, even for a small job, even for someone you know:\n- Exactly what is being built. Screens and actions, listed. This is your defence against scope creep, which is the thing that actually eats beginners'' profits.\n- The price, and the payment terms. Take a DEPOSIT — commonly half up front. It filters out people who were never going to pay and it funds any costs you carry.\n- How many rounds of changes are included. Two. Then it is a new quote.\n- What happens after handover: who fixes what breaks, for how long, and at what price.\n- Who owns the accounts and pays the hosting.\n\nThat list is not bureaucracy. Every item on it is there because leaving it out is how small software jobs go wrong, and a one-page agreement on WhatsApp is enough.\n\nINCOME THAT RECURS is the real goal. One-off builds mean hunting every month. The things that recur: hosting and maintenance for a monthly fee; small changes on retainer; the same app rebuilt for similar businesses, which gets faster every time — a booking system for one salon is a booking system for every salon. Charge each one the full price; you are selling the working result, not your remaining effort.\n\nADDITION BEYOND THE VIDEO — before you take money for anything that holds other people''s personal data, understand that you are taking on responsibility for protecting it, and that Kenyan law treats that seriously. Either keep personal data out of your early projects, or get someone experienced to review the app before real customer details go into it. This is the one place in the course where moving fast is genuinely the wrong instinct.",
+      "practice": "Write your one-page agreement template now, before you need it: scope as a list of screens and actions, price, deposit, two revision rounds, what happens after handover, who owns the accounts. Then price the prototype you built in the last lesson two ways — by the hours it took, and by what it is worth to that business over a year. Quote the second number.",
+      "quiz": [
+        {
+          "question": "Which item in a written agreement most protects your profit on a small build?",
+          "options": [
+            "An exact list of what is being built, which is what stops scope creep",
+            "A longer deadline",
+            "A list of the tools used",
+            "A discount for early payment"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why is hourly pricing wrong for AI-assisted building?",
+          "options": [
+            "It penalises you for the speed that is your main advantage",
+            "Clients refuse to pay hourly",
+            "The hours cannot be measured",
+            "It is unprofessional"
+          ],
+          "correct_index": 0
+        }
+      ]
+    }
+  ]
+}

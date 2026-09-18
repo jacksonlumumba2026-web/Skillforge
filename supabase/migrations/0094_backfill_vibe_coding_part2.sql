@@ -11,13 +11,13 @@ update public.lessons set
 
 The skill is in HOW YOU DESCRIBE IT. Do not list features. Walk through the app as a person using it:
 
-''A booking page for a salon. A visitor picks a service from a list, picks a date and time, enters their name and phone number, and sees a confirmation. The owner signs in on a separate page and sees today''''s bookings as a list, newest first, and can mark one as done.''
+''A booking page for a salon. A visitor picks a service from a list, picks a date and time, enters their name and phone number, and sees a confirmation. The owner signs in on a separate page and sees today''s bookings as a list, newest first, and can mark one as done.''
 
 That is screens and actions, and it is the shape these tools respond to. ''A salon management system'' is not.
 
 Then build in the same small steps as anywhere else: get one screen right, check it, then ask for the next. Asking for everything at once produces something impressive-looking and wrong in six places you will spend the evening finding.
 
-WHAT YOU TRADE. Speed and simplicity, in exchange for: you do not own the environment, you are inside their pricing and their limits, moving the project elsewhere later ranges from awkward to impractical, and there are things you simply cannot change. For a prototype, an internal tool, or a client''''s first version, that is a good trade. For something a business will depend on for years, think harder.
+WHAT YOU TRADE. Speed and simplicity, in exchange for: you do not own the environment, you are inside their pricing and their limits, moving the project elsewhere later ranges from awkward to impractical, and there are things you simply cannot change. For a prototype, an internal tool, or a client''s first version, that is a good trade. For something a business will depend on for years, think harder.
 
 ADDITION BEYOND THE VIDEO — the practical Kenyan use is the DEMO. Building a working prototype in an evening, showing it to a business on your phone, and only then discussing price changes the conversation entirely. You are no longer selling an idea; you are showing a thing that exists. The Module 8 lessons build directly on this.',
   practice_activity = 'Pick the simplest item from the list you made in Module 1. Write its description as screens and actions — every screen, what the person does on it, what they see next. Then build it one screen at a time and publish it. Open the live link on your phone, on mobile data, and note anything that looks wrong or loads slowly. That gap between laptop and phone is where most of the work is.',
@@ -59,7 +59,7 @@ update public.lessons set
 
 5. DEPLOY. Push it live and open the link on a device you did not build it on. This step is not optional: an app on your laptop is homework, an app on a link is a portfolio piece you can send to a client on WhatsApp.
 
-ADDITION BEYOND THE VIDEO — before anyone else''''s data goes into it, ask the AI directly: ''what security problems does this application have, and what is exposed publicly?'' Then act on the answer. If your app stores other people''''s names, phone numbers or ID details, you are responsible for protecting them, and Kenya''''s data protection law treats that as a real obligation rather than a courtesy. The safest first project is one that stores no personal data at all.',
+ADDITION BEYOND THE VIDEO — before anyone else''s data goes into it, ask the AI directly: ''what security problems does this application have, and what is exposed publicly?'' Then act on the answer. If your app stores other people''s names, phone numbers or ID details, you are responsible for protecting them, and Kenya''s data protection law treats that as a real obligation rather than a courtesy. The safest first project is one that stores no personal data at all.',
   practice_activity = 'Build and deploy one complete small app today. Define it in a sentence, cut the scope until it does one job, build it in committed slices, then test it as a stranger — empty fields, wrong formats, double clicks, on a phone on mobile data. Send the live link to one person who was not involved and watch what they do with it without helping them.',
   knowledge_check = '[{"question": "What most often sinks a beginner''s first project?", "options": ["Scope — trying to do five jobs partly instead of one job completely", "Choosing the wrong AI tool", "Not knowing enough programming", "Deploying too early"], "correct_index": 0}, {"question": "Why test the app on a phone using mobile data?", "options": ["Most users are on a phone on a data bundle, and a heavy page they abandon is a failure you would not see on a laptop", "Phones run different code", "It is the only way to find security problems", "Desktop browsers do not show errors"], "correct_index": 0}]'::jsonb
 where id = '8b38916d-2062-4789-98d2-d53309f837d2';
@@ -96,9 +96,9 @@ update public.lessons set
 
 GLOBAL FREELANCE PLATFORMS are a bad first move. You have no reviews, no history, and you are bidding against thousands of people, many of them cheaper. You can get there eventually, with a portfolio behind you. Do not start there.
 
-START WITH WHO YOU CAN REACH. A business you already buy from. Someone in your family''''s network. A church, a school, a sacco, a chama. The salon, the hardware shop, the clinic, the M-Pesa agent. Every one of them has something on paper or in a WhatsApp group that would work better as a simple app, and none of them has ever spoken to a developer.
+START WITH WHO YOU CAN REACH. A business you already buy from. Someone in your family''s network. A church, a school, a sacco, a chama. The salon, the hardware shop, the clinic, the M-Pesa agent. Every one of them has something on paper or in a WhatsApp group that would work better as a simple app, and none of them has ever spoken to a developer.
 
-LEAD WITH THE THING. This is the whole method and it is what the tools have made possible: build a working prototype BEFORE you approach them. An evening''''s work. Then show it on your phone — ''I built this for you, have a look''. You have skipped the entire problem of being an unknown with no portfolio, because the portfolio is in your hand and it has their name on it.
+LEAD WITH THE THING. This is the whole method and it is what the tools have made possible: build a working prototype BEFORE you approach them. An evening''s work. Then show it on your phone — ''I built this for you, have a look''. You have skipped the entire problem of being an unknown with no portfolio, because the portfolio is in your hand and it has their name on it.
 
 TALK ABOUT THEIR PROBLEM. Not AI, not Cursor, not the stack. ''You are losing bookings because people call when you are with a customer.'' ''You are writing the same order details into a book three times.'' The technology is your business; the loss is theirs.
 
@@ -110,12 +110,12 @@ where id = 'd52847a4-d599-493b-b370-7afdcfbb4a2f';
 -- How To Make Money Vibe Coding With Cursor AI
 update public.lessons set
   learning_objectives = array['Price a build on its value to the business rather than on your hours', 'Write down scope, payment terms and what happens after handover', 'Turn one-off builds into income that recurs'],
-  notes = 'Module 8''''s first lesson got you a client. This one is about not losing money on them.
+  notes = 'Module 8''s first lesson got you a client. This one is about not losing money on them.
 
 PRICE THE OUTCOME. If an app saves a shop five hours a week, or stops it losing three bookings a month, that is the number the price should relate to — not how long the AI took. Hourly pricing punishes you precisely for being fast, which is your entire advantage.
 
 WHAT MUST BE IN WRITING before you start, even for a small job, even for someone you know:
-- Exactly what is being built. Screens and actions, listed. This is your defence against scope creep, which is the thing that actually eats beginners'''' profits.
+- Exactly what is being built. Screens and actions, listed. This is your defence against scope creep, which is the thing that actually eats beginners'' profits.
 - The price, and the payment terms. Take a DEPOSIT — commonly half up front. It filters out people who were never going to pay and it funds any costs you carry.
 - How many rounds of changes are included. Two. Then it is a new quote.
 - What happens after handover: who fixes what breaks, for how long, and at what price.
@@ -125,7 +125,7 @@ That list is not bureaucracy. Every item on it is there because leaving it out i
 
 INCOME THAT RECURS is the real goal. One-off builds mean hunting every month. The things that recur: hosting and maintenance for a monthly fee; small changes on retainer; the same app rebuilt for similar businesses, which gets faster every time — a booking system for one salon is a booking system for every salon. Charge each one the full price; you are selling the working result, not your remaining effort.
 
-ADDITION BEYOND THE VIDEO — before you take money for anything that holds other people''''s personal data, understand that you are taking on responsibility for protecting it, and that Kenyan law treats that seriously. Either keep personal data out of your early projects, or get someone experienced to review the app before real customer details go into it. This is the one place in the course where moving fast is genuinely the wrong instinct.',
+ADDITION BEYOND THE VIDEO — before you take money for anything that holds other people''s personal data, understand that you are taking on responsibility for protecting it, and that Kenyan law treats that seriously. Either keep personal data out of your early projects, or get someone experienced to review the app before real customer details go into it. This is the one place in the course where moving fast is genuinely the wrong instinct.',
   practice_activity = 'Write your one-page agreement template now, before you need it: scope as a list of screens and actions, price, deposit, two revision rounds, what happens after handover, who owns the accounts. Then price the prototype you built in the last lesson two ways — by the hours it took, and by what it is worth to that business over a year. Quote the second number.',
   knowledge_check = '[{"question": "Which item in a written agreement most protects your profit on a small build?", "options": ["An exact list of what is being built, which is what stops scope creep", "A longer deadline", "A list of the tools used", "A discount for early payment"], "correct_index": 0}, {"question": "Why is hourly pricing wrong for AI-assisted building?", "options": ["It penalises you for the speed that is your main advantage", "Clients refuse to pay hourly", "The hours cannot be measured", "It is unprofessional"], "correct_index": 0}]'::jsonb
 where id = '9dedee08-6134-4f77-89dd-9461600da499';

@@ -718,8 +718,8 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 426. `freelancing` is the first course
-      taken to zero — all 12 lessons fully written.**
+      **Bare-lesson count: 438 → 414. Two courses are now fully written:
+      `freelancing` (12 lessons) and `presentation-design` (19).**
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -739,10 +739,23 @@ custom authorization layer bolted on top.
       which every lesson was a title and a link. It is now **complete**:
       `0087` covered Levels 1-2 and `0088` Levels 3-4.
 
+      `presentation-design` followed — 12 bare lessons on a course with 2
+      enrollments — and is now complete at 19 of 19 (`0089`, `0090`). Its
+      notes carry what presentation advice made elsewhere assumes away: a
+      dim projector in a lit room rather than a dark auditorium, 24-point
+      minimum and a three-metre readability test, fonts that reflow on a
+      venue laptop, PDF as the delivery format because it opens on a phone
+      and uses less data, and the fact that most decks here are first
+      reviewed on WhatsApp on a phone. The funding lesson states plainly
+      that the standard investor-deck format is built for Silicon Valley
+      venture capital, and names what actually funds small businesses here
+      — savings and family, chamas and SACCOs, grants, microfinance,
+      development programmes.
+
       Order of attack for the rest: courses that have enrollments and are
       wholly bare, since those are the ones a paying learner is in right
-      now. `presentation-design`, `ai-tools` and `vibe-coding` each carry 2
-      enrollments and 12 bare lessons.
+      now. `ai-tools` and `vibe-coding` are next, 2 enrollments and 12 bare
+      lessons each.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

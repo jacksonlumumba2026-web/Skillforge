@@ -1,0 +1,203 @@
+{
+  "course": "presentation-design",
+  "lessons": [
+    {
+      "id": "a4201269-e7bb-4f64-badf-49de0ac2ddd7",
+      "title": "6 Things You're Doing WRONG in PowerPoint",
+      "objectives": [
+        "Identify the six common faults in a deck you did not make",
+        "Fix clutter, poor contrast and font problems in an existing slide",
+        "Use a checklist pass before sending any deck out"
+      ],
+      "notes": "This lesson is best used as a checklist rather than a lecture. The faults it names — cluttered slides, too many fonts, weak contrast, decorative nonsense, inconsistent sizing, text nobody can read — are the same six that appear in nearly every deck made by someone who has not been taught.\n\nThe habit worth forming is a final pass. Before any deck leaves your hands, go through every slide once looking only for these six things. It takes five minutes on a twenty-slide deck and it catches most of what a client would otherwise notice.\n\nADDITION BEYOND THE VIDEO — the seventh fault, which the video does not cover and which matters most in paid work: the deck has no argument. A deck can be beautifully designed, perfectly consistent, and still fail because the slides are a list of topics rather than a case being made. Before you fix the fonts, read your slide titles in order, on their own. They should tell a story that makes sense. If the titles read \"Introduction / Background / Our Services / Pricing / Thank You\", you have an agenda, not an argument.\n\nSpecifically for this market: check the deck opens and reads on a PHONE. A great many decks here are reviewed on WhatsApp on a phone before anyone opens a laptop, and a slide designed for a 27-inch monitor is unreadable at that size. Export to PDF and look at it on your own phone before you send it. That single check has more practical effect than any of the six.",
+      "practice": "Take a deck — ideally one you did not write — and score it against all seven faults, one line per fault, noting which slides offend. Then read only the slide titles in order and write one sentence on whether they form an argument or a list. Fix the three worst things you found.",
+      "quiz": [
+        {
+          "question": "What is the seventh fault, beyond the six design ones?",
+          "options": [
+            "The deck is too long",
+            "The deck has no argument — the slides are a list of topics rather than a case being made",
+            "The file has not been compressed",
+            "The deck lacks a title slide"
+          ],
+          "correct_index": 1
+        },
+        {
+          "question": "Why check the deck on a phone before sending it?",
+          "options": [
+            "Phones display colours more accurately",
+            "It is required for email delivery",
+            "Many decks here are first reviewed on WhatsApp on a phone, where a slide designed for a large monitor is unreadable",
+            "It compresses the file automatically"
+          ],
+          "correct_index": 2
+        }
+      ]
+    },
+    {
+      "id": "160a92de-f0eb-4de6-a7a0-6668da77bf90",
+      "title": "Canva Presentations: Perfect your pitch",
+      "objectives": [
+        "Shape a deck around a narrative rather than a list of sections",
+        "Open with the problem your audience already feels",
+        "Decide what the audience should do at the end and build toward it"
+      ],
+      "notes": "This is the lesson that matters most in the whole course, because design serves the story and not the reverse. A well-designed deck with no argument persuades nobody.\n\nThe structure that works almost everywhere: the problem, why it matters now, what you propose, why you are the one to do it, and what you want the listener to do next. Notice the problem comes first — not your background, not your agenda. Start with what the audience already feels and they will listen to the rest.\n\nDecide the ASK before you build anything. Money? A decision? A meeting? Permission? Every slide either moves toward that ask or is cut. Most weak decks are weak because the maker never decided what they were asking for, so the audience is left to work it out.\n\nADDITION BEYOND THE VIDEO — the pitch in the real room. You will often get less time than you were promised: the meeting runs late, the client takes a call, the panel cuts you short. Build the deck so the first three slides carry the whole argument in miniature, and the rest is supporting detail. If you are stopped after three minutes, you have still made your case.\n\nHave a one-page version too — a single PDF page that says the problem, the proposal and the ask. It can be sent ahead, left behind, or forwarded by the person you pitched to when they explain it to someone who was not in the room. That forwarding is how most decisions actually get made, and the deck you present is rarely the thing that persuades the person who was absent.",
+      "practice": "Take any idea you would genuinely pitch — a service, a product, a request to a chama or an employer. Write the five slide titles in the narrative order: problem, why now, proposal, why you, the ask. Then write the ask as one sentence, and check that every one of the five moves toward it. Finally, compress the whole thing onto one page.",
+      "quiz": [
+        {
+          "question": "Why does the problem come before your background in a pitch?",
+          "options": [
+            "Convention requires it",
+            "Starting with what the audience already feels earns their attention for everything after",
+            "Backgrounds are usually too long",
+            "It shortens the deck"
+          ],
+          "correct_index": 1
+        },
+        {
+          "question": "Why should the first three slides carry the whole argument in miniature?",
+          "options": [
+            "Audiences only remember the beginning",
+            "It reduces the total number of slides needed",
+            "You will often get less time than promised, so the case must be made before you are cut short",
+            "Projectors are most reliable at the start"
+          ],
+          "correct_index": 2
+        }
+      ]
+    },
+    {
+      "id": "4812dca3-043e-4de3-91bb-22192941beb7",
+      "title": "How to Make a Pitch Deck That Gets Funded",
+      "objectives": [
+        "List the slides an investor deck is expected to contain",
+        "Explain what an investor is actually assessing on each slide",
+        "Adapt the format for the funding that is realistically available to you"
+      ],
+      "notes": "The standard investor deck has a settled shape — problem, solution, market, product, traction, business model, team, competition, the ask — and investors expect it because it lets them compare. Departing from it without reason reads as inexperience.\n\nWhat matters is understanding what is really being assessed. Traction is the slide investors look at first, because it is the only one that is evidence rather than claim. Team is assessed for whether you specifically can execute this. The market slide is checking whether the prize justifies the risk, and a vague enormous number damages you more than a modest specific one.\n\nADDITION BEYOND THE VIDEO — the honest position on funding, which this video will not give you. Almost all advice of this kind is built for Silicon Valley venture capital, and that is not the realistic path for most businesses here. The money that actually reaches small Kenyan businesses comes from savings and family, chamas and SACCOs, grants and competitions, bank or microfinance lending, development-agency programmes, and a small number of Africa-focused funds and accelerators. Each wants something different: a SACCO wants to know you can repay, a grant panel wants impact and a budget, an accelerator wants a team that can move.\n\nSo learn this format, because it is the common language and the discipline is genuinely useful — but before you build, find out who you are actually pitching to and what they need to see. Sending a venture-style deck to a microfinance officer is a wasted meeting.\n\nThe skill is transferable regardless: making a clear case with evidence is the same whether the audience is an investor, a bank, a grant panel or a large customer.",
+      "practice": "Build the nine-slide skeleton for a real or plausible business — titles and one line of content each. Then write at the top of the page who you would actually pitch it to, and go back and mark the three slides that audience would care about most. Rewrite those three properly. That is where your effort belongs.",
+      "quiz": [
+        {
+          "question": "Which slide do investors typically look at first, and why?",
+          "options": [
+            "The team slide, because people matter most",
+            "Traction, because it is the only slide that is evidence rather than claim",
+            "The market slide, because size determines returns",
+            "The ask, because it sets the terms"
+          ],
+          "correct_index": 1
+        },
+        {
+          "question": "What should you establish before building a funding deck?",
+          "options": [
+            "The valuation you want",
+            "How many slides the format allows",
+            "Who you are actually pitching to — a SACCO, grant panel, bank or fund each need to see different things",
+            "Which template to use"
+          ],
+          "correct_index": 2
+        }
+      ]
+    },
+    {
+      "id": "e00af365-16d7-4d72-91c2-e9bbd5d83661",
+      "title": "Create Professional PowerPoint Slides for Business & Finance",
+      "objectives": [
+        "Use the action-title convention that consulting decks rely on",
+        "Lay out a dense business slide so it can still be read quickly",
+        "Present financial figures without overwhelming the reader"
+      ],
+      "notes": "Consulting-style decks look different from the minimal decks earlier in this course, and the difference is purpose. A conference talk supports a speaker. A business or finance deck is often read alone, without anybody presenting it, so it must carry its own explanation.\n\nThe defining convention is the ACTION TITLE: every slide's heading states the conclusion, not the topic. \"Cash tightens in Q3 unless collections improve\" rather than \"Q3 Cash Flow\". Done consistently, someone can read only the titles and get the whole argument — which is exactly what a busy decision-maker does.\n\nFor figures: round them. Nobody reads 4,732,918; they read \"KSh 4.7m\". Full precision belongs in the appendix or the spreadsheet you attach. Show the number that carries the decision and put the rest where it can be checked.\n\nADDITION BEYOND THE VIDEO — where this skill actually earns money in this market. Full-time consulting-deck work is rare here, but the same skill sells constantly in smaller forms: a loan application to a bank or SACCO, a tender or proposal document, a board or committee report, a grant application. All of them are read alone by someone deciding, and all of them are usually done badly. Being the person who can produce a clear, well-structured document of that kind is quietly valuable, and it is a service you can offer to businesses that would never hire a designer.\n\nWhen you build one, always ask: who reads this with nobody there to explain it? Write for that person.",
+      "practice": "Take any five-slide deck and rewrite every title as an action title stating the conclusion. Then read only those five titles, in order, and ask whether a stranger would get the argument. Finally, find every long number and round it to the level that actually informs a decision.",
+      "quiz": [
+        {
+          "question": "What is an action title?",
+          "options": [
+            "A title with a verb in it",
+            "A heading that states the slide's conclusion rather than its topic, so the titles alone carry the argument",
+            "A title that prompts the audience to do something",
+            "A heading animated on entry"
+          ],
+          "correct_index": 1
+        },
+        {
+          "question": "Why do business and finance decks need to carry their own explanation?",
+          "options": [
+            "They are longer than other decks",
+            "Finance audiences prefer detail",
+            "They are often read alone by a decision-maker with nobody presenting them",
+            "They cannot use images"
+          ],
+          "correct_index": 2
+        }
+      ]
+    },
+    {
+      "id": "25d9a489-c099-4627-98de-1473c77e552e",
+      "title": "How to Get Clients for PowerPoint Presentations",
+      "objectives": [
+        "Name the kinds of organisation that regularly pay for deck design",
+        "Make a first approach that shows rather than describes your ability",
+        "Price deck work in a way that does not punish you for being fast"
+      ],
+      "notes": "Deck design is one of the better freelance niches for a beginner, for a simple reason: almost every organisation needs decks, almost nobody enjoys making them, and the quality bar in most places is low enough that competent work stands out immediately.\n\nWho actually buys: consultants and trainers, NGOs and development programmes (who produce constant reporting decks), schools and colleges, churches, small businesses pitching for contracts, and anyone applying for funding. Look for organisations that must present regularly, not ones that present once.\n\nThe approach that works is showing, not telling. Find a real deck an organisation has published — many NGOs and companies post theirs — redesign three slides of it, and send those three slides with a short note. That is a demonstration, and it is far more persuasive than any description of your services.\n\nADDITION BEYOND THE VIDEO — pricing this specific work. Charge per deck or per slide, never per hour, because you will get much faster and hourly billing would cut your income as you improve. A common structure is a base price covering a set number of slides, then a per-slide rate beyond it — which also handles the scope problem neatly, since decks grow.\n\nAgree how many rounds of changes are included before you start. Decks attract revisions more than almost any other design work, because everyone in the organisation has an opinion about them, and it is the fastest way for a well-priced job to become unpaid. Say it kindly and early: \"Two rounds are included, further rounds are KSh X.\"\n\nThe freelancing path on this platform covers proposals, contracts and getting paid in more depth.",
+      "practice": "Find three organisations near you that must present regularly — an NGO, a training company, a school. For one of them, find a real deck or report they have published, redesign three slides of it, and write the two-sentence note you would send with it. Then write your price: a base for ten slides, and a rate per slide after that.",
+      "quiz": [
+        {
+          "question": "Why is showing a redesign more effective than describing your services?",
+          "options": [
+            "It takes less time to prepare",
+            "It is a demonstration of the actual work rather than a claim about it",
+            "Organisations are required to respond to samples",
+            "It avoids discussing price"
+          ],
+          "correct_index": 1
+        },
+        {
+          "question": "Why charge per deck or per slide rather than per hour?",
+          "options": [
+            "Clients find hourly rates confusing",
+            "Hourly billing is not allowed for design work",
+            "You will get much faster, and hourly billing would cut your income as you improve",
+            "Per-slide pricing is always higher"
+          ],
+          "correct_index": 2
+        }
+      ]
+    },
+    {
+      "id": "6c2ee676-ab63-41d4-b01e-61eddfd1a9e1",
+      "title": "How to Become a Presentation Designer",
+      "objectives": [
+        "Describe what a presentation designer actually does day to day",
+        "Assemble a portfolio for this specific niche",
+        "Plan a realistic path from first paid deck to steady work"
+      ],
+      "notes": "The job is less about making things pretty than most people expect. A good presentation designer spends much of the time working out what the client is actually trying to say, because clients usually arrive with a pile of content and no argument. The design follows once that is settled.\n\nThat is also why the work pays: anyone can apply a template, but turning a confused brief into a clear case is a skill, and it is what makes clients come back.\n\nBUILDING THE PORTFOLIO for this niche is straightforward because your raw material is everywhere. Take real published decks and reports — NGOs, government, listed companies all publish them — and redesign them. Show before and after. Label them honestly as self-directed redesigns. Three good before-and-afters are enough to start.\n\nADDITION BEYOND THE VIDEO — a realistic path from here, and an honest note on time. Expect the first paid deck to come from someone you know, at a modest price. Expect the second and third from that person's recommendation. Steady work generally comes from a handful of repeat clients who present constantly rather than from a stream of new ones, so the follow-up habit matters more than the marketing.\n\nOn earning: at the modest end this supplements income rather than replacing it, and honest expectation management matters. What makes it worth learning even if you do not go freelance is that it transfers everywhere — into a job, a funding application, a tender, or your own business. A person in an office who makes clear decks gets noticed, and that is worth something regardless of whether anyone ever pays you for a slide.",
+      "practice": "Choose three published decks or reports from organisations you can name. Redesign the strongest three slides of each — nine slides total — and assemble the before-and-afters into one PDF. Label it clearly as self-directed work. That PDF is a portfolio you can send today.",
+      "quiz": [
+        {
+          "question": "What does a presentation designer spend much of the time doing?",
+          "options": [
+            "Choosing fonts and colour palettes",
+            "Working out what the client is actually trying to say, because they usually arrive with content and no argument",
+            "Building templates for reuse",
+            "Sourcing stock photography"
+          ],
+          "correct_index": 1
+        },
+        {
+          "question": "Where does steady work in this niche usually come from?",
+          "options": [
+            "A constant stream of new clients found through advertising",
+            "Design contests and marketplaces",
+            "A handful of repeat clients who present constantly, which is why the follow-up habit matters more than marketing",
+            "Agencies subcontracting overflow"
+          ],
+          "correct_index": 2
+        }
+      ]
+    }
+  ]
+}

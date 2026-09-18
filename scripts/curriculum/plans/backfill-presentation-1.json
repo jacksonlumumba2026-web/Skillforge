@@ -1,0 +1,203 @@
+{
+  "course": "presentation-design",
+  "lessons": [
+    {
+      "id": "39f4cd32-50da-47a3-b80f-c1dce5d2c5b1",
+      "title": "Make a Better Slide Presentation - 10 Easy Tips",
+      "objectives": [
+        "Put one idea on one slide instead of packing several",
+        "Cut a slide's text down to what the audience cannot get from listening",
+        "Judge a slide by whether it helps the speaker rather than replaces them"
+      ],
+      "notes": "The rule underneath all ten tips: slides support a speaker, they do not substitute for one. If your slide contains everything you are going to say, the audience reads ahead, finishes before you, and stops listening. That is the whole problem with dense slides, and it is not a matter of taste.\n\nOne idea per slide. More slides with less on each is better than fewer, crowded ones — and it costs nothing, because you are not paying by the slide.\n\nText goes on a slide only when seeing it helps: a number, a name, a term, a short quote. Everything else is what you say out loud.\n\nADDITION BEYOND THE VIDEO — designing for the room you will actually be in. A great deal of presentation advice assumes a bright screen in a dim room. In many offices, schools and halls here you will be on a dim projector in a room with the curtains open, and half your audience will be at the back. Two consequences: use strong contrast, dark text on light or the reverse, never mid-grey on white; and set your smallest text at around 24 point. A quick test that takes ten seconds — stand back three metres from your own laptop. If you cannot read it there, nobody at the back will.\n\nAlso assume the projector may not work at all. Have the deck as a PDF on your phone, and know your three main points well enough to deliver them with no slides. That has saved more presentations than any design tip.",
+      "practice": "Take any deck you have — or make three quick slides — and apply two rules only: one idea per slide, and no sentence on a slide that you are going to say out loud anyway. Count the words you removed. Then stand three metres back from the screen and check every slide is still readable.",
+      "quiz": [
+        {
+          "question": "Why do dense slides stop an audience listening?",
+          "options": [
+            "They take longer to load",
+            "People read faster than you speak, so they finish the slide and disengage before you have made the point",
+            "Projectors cannot display small text",
+            "It breaks presentation software conventions"
+          ],
+          "correct_index": 1
+        },
+        {
+          "question": "What is the ten-second test for slide readability?",
+          "options": [
+            "Print the slide and read it at arm's length",
+            "Check the file size is under 10MB",
+            "Stand three metres back from your own screen — if you cannot read it there, the back row cannot either",
+            "View it on a phone"
+          ],
+          "correct_index": 2
+        }
+      ]
+    },
+    {
+      "id": "ebbc5463-d584-4a1e-a353-9fe159b62e26",
+      "title": "PowerPoint Tutorial for Beginners",
+      "objectives": [
+        "Find your way around the PowerPoint ribbon and slide panel",
+        "Use slide layouts and the Slide Master instead of positioning everything by hand",
+        "Save and share a deck in the format the situation actually needs"
+      ],
+      "notes": "The single feature worth learning early is LAYOUTS, and most beginners never touch them. A layout is a reusable slide skeleton — title here, content there. Use layouts and your deck is automatically consistent; drag every text box by hand and it never quite is, and fixing it later means touching forty slides.\n\nThe Slide Master sits behind layouts: change the font or the logo position once there, and every slide follows. Twenty minutes learning it saves hours on any deck longer than ten slides.\n\nADDITION BEYOND THE VIDEO — three practical things for working here.\n\nFONTS TRAVEL BADLY. A deck built with a font you downloaded will reflow into something else on the client's machine or the venue laptop, and your careful spacing collapses. Stick to fonts that ship with the system — Calibri, Arial, Georgia, Verdana — or export to PDF, which embeds everything.\n\nPDF IS USUALLY THE RIGHT DELIVERY FORMAT. It opens on any phone, looks identical everywhere, uses less data, and cannot be accidentally edited. Send the PowerPoint file only when someone actually needs to edit it.\n\nFILE SIZE MATTERS. Photos straight from a phone are several megabytes each; twenty of them make a deck nobody can WhatsApp. PowerPoint has a built-in compress-pictures option — use it before sending, and check the result still looks right.",
+      "practice": "Open PowerPoint and build a five-slide deck using only layouts — no manually dragged text boxes. Then open the Slide Master and change the heading font once; confirm all five slides update. Finally export to PDF, check the size, and send it to your own phone to confirm it opens and reads well.",
+      "quiz": [
+        {
+          "question": "Why use layouts rather than positioning text boxes by hand?",
+          "options": [
+            "Hand-positioned boxes cannot contain images",
+            "Layouts keep the deck consistent automatically and let you change all slides at once instead of editing each",
+            "PowerPoint charges for manual positioning",
+            "Layouts reduce the file size"
+          ],
+          "correct_index": 1
+        },
+        {
+          "question": "Why is PDF usually the right format to send a finished deck?",
+          "options": [
+            "It allows the client to edit more easily",
+            "It supports animation better",
+            "It opens on any phone, looks identical everywhere, uses less data and cannot be accidentally edited",
+            "It is the only format email accepts"
+          ],
+          "correct_index": 2
+        }
+      ]
+    },
+    {
+      "id": "13e1932f-89ae-4c51-b28e-65156dcfe9df",
+      "title": "Perfect your presentations",
+      "objectives": [
+        "Build a presentation from a Canva template without it looking like a template",
+        "Set up brand colours and fonts so a deck is consistent from the start",
+        "Choose between Canva and PowerPoint for a given job"
+      ],
+      "notes": "Canva's advantage is that its templates are made by designers, so a beginner's deck starts at a competent level rather than a blank white rectangle. The risk is that a template used unchanged looks like a template, and clients recognise them.\n\nThree edits make a template yours: replace the colours with the actual brand's, swap the stock photos for real ones, and delete the slides you do not need rather than filling them because they are there. That third one matters most — most bad decks are bad because someone felt obliged to use all twenty slides.\n\nWHICH TOOL, honestly. Canva is faster for something attractive, works entirely in a browser, and is easier on a phone. PowerPoint is what most employers and clients actually use, handles very long decks better, and works offline — which matters when the internet is unreliable. Learn both; this course teaches both for that reason.\n\nADDITION BEYOND THE VIDEO — two things about Canva to know before you rely on it. First, it needs a connection to work well, so do not plan to build a deck on the morning of a presentation over patchy data; export to PDF the night before. Second, check whether elements you have used are free or Pro. A design full of Pro elements will export with watermarks, or stop being available if you cancel the subscription. If you are building for a client, either stay on free elements or tell them the deck depends on a paid account.",
+      "practice": "Pick a Canva template and make it unrecognisable in three edits: change the colour palette to a real business's colours, replace every stock image with your own photo or a plain block of colour, and delete at least half the slides. Put the original and yours side by side — the difference is the skill this lesson teaches.",
+      "quiz": [
+        {
+          "question": "What most often makes a template-built deck look like a template?",
+          "options": [
+            "Using more than ten slides",
+            "Leaving the stock colours and photos in place, and keeping slides you do not need just because they came with it",
+            "Exporting to PDF",
+            "Using Canva rather than PowerPoint"
+          ],
+          "correct_index": 1
+        },
+        {
+          "question": "Why check whether your Canva elements are free or Pro before delivering to a client?",
+          "options": [
+            "Pro elements load more slowly",
+            "Free elements cannot be exported",
+            "A deck full of Pro elements exports with watermarks or stops being available if the subscription ends",
+            "Clients are charged separately for each element"
+          ],
+          "correct_index": 2
+        }
+      ]
+    },
+    {
+      "id": "aeb1deee-a143-4fca-8836-6a27a35106e4",
+      "title": "5 QUICK Ways to Improve Your PowerPoint Design",
+      "objectives": [
+        "Use alignment and consistent spacing to make a slide look deliberate",
+        "Limit a deck to a small, consistent set of colours and sizes",
+        "Apply the five fixes to an existing slide in a few minutes"
+      ],
+      "notes": "What separates an amateur slide from a professional one is almost never talent. It is alignment, spacing and restraint — three things anyone can do on purpose.\n\nALIGNMENT: things that are nearly lined up look like mistakes; things that are exactly lined up look intentional. Use the guides that appear as you drag, and align a group of items to each other rather than by eye.\n\nSPACING: equal gaps between equal things. Uneven gaps are the most common reason a slide feels wrong to a viewer who cannot say why.\n\nRESTRAINT: two fonts at most, and about three colours. Every extra one makes the deck noisier without making it clearer.\n\nADDITION BEYOND THE VIDEO — colour that survives a bad projector. Choose your palette assuming it will be shown on a washed-out projector in a lit room. Pale grey on white, light yellow on white, and thin light-coloured text all vanish under those conditions, and they are exactly what looks elegant on your laptop. Test one slide on an actual projector if you can borrow one; otherwise turn your screen brightness down to about a quarter and look again. What survives that will survive the room.\n\nIf the business has brand colours, use them — but if the brand colour is pale, use it for blocks and accents rather than for text.",
+      "practice": "Take one ugly slide — your own or any you can find. Apply the five fixes in order, saving a screenshot after each. Line the five screenshots up afterwards: this is the clearest demonstration you will get that slide design is a procedure, not a talent.",
+      "quiz": [
+        {
+          "question": "Why do uneven gaps make a slide feel wrong even to viewers who cannot explain why?",
+          "options": [
+            "They increase the file size",
+            "Equal things are expected to have equal spacing, so unevenness reads as a mistake",
+            "Projectors distort uneven layouts",
+            "Software renders them incorrectly"
+          ],
+          "correct_index": 1
+        },
+        {
+          "question": "How should you test whether a colour palette will survive a poor projector?",
+          "options": [
+            "Print the slide in black and white",
+            "Check the hex codes against a standard",
+            "Turn your screen brightness down to about a quarter and see what is still readable",
+            "View it on a phone at full brightness"
+          ],
+          "correct_index": 2
+        }
+      ]
+    },
+    {
+      "id": "e2117b94-93b7-4fac-bf97-ff744e14e8fe",
+      "title": "How to Add a Chart or Graph to Your PowerPoint Presentation",
+      "objectives": [
+        "Insert and edit a chart inside PowerPoint",
+        "Choose a chart type that matches the comparison being made",
+        "Strip a chart down so the point is visible at a glance"
+      ],
+      "notes": "Microsoft's own walkthrough covers the mechanics. The judgement it does not cover is which chart, and how much to remove.\n\nCHART CHOICE follows the comparison. Bars compare separate things. Lines show change over time. Pie shows parts of one whole, and only works with a few slices — more than about five and nobody can read it. A pie chart of twelve months is the single most common chart mistake in business decks.\n\nSTRIPPING DOWN is where most of the gain is. Default charts arrive with gridlines, a legend, axis clutter and a border, most of which the audience does not need. Delete everything that is not carrying meaning, label the bars directly instead of using a legend where you can, and put the point of the chart in the slide TITLE — \"Sales doubled after March\" rather than \"Monthly Sales\". The title should say the finding; the chart should show it.\n\nADDITION BEYOND THE VIDEO — one chart, one point, per slide. If a chart needs two sentences of explanation before anyone understands it, it is two slides. And never show a chart you cannot explain in one sentence, because someone will ask, and the answer \"that is just what the data does\" is the fastest way to lose a room's confidence.\n\nIf your data lives in Excel, the Excel path on this platform covers building the numbers; this lesson is about presenting them.",
+      "practice": "Take any small set of real numbers — a month of sales, marks in a class, weekly expenses. Build one chart in PowerPoint. Then delete the gridlines, the legend and the border, label directly, and rewrite the slide title so it states the finding rather than naming the data. Compare the before and after.",
+      "quiz": [
+        {
+          "question": "When is a pie chart the wrong choice?",
+          "options": [
+            "Whenever percentages are involved",
+            "When there are more than about five slices, or when the data is a series over time rather than parts of one whole",
+            "When the chart is in PowerPoint rather than Excel",
+            "When the audience is large"
+          ],
+          "correct_index": 1
+        },
+        {
+          "question": "What should a chart slide's title say?",
+          "options": [
+            "The name of the data set",
+            "The source of the figures",
+            "The finding — \"Sales doubled after March\" rather than \"Monthly Sales\"",
+            "The chart type used"
+          ],
+          "correct_index": 2
+        }
+      ]
+    },
+    {
+      "id": "e8e5a6e8-0414-4005-a3ab-eaba4732a177",
+      "title": "Too Much Animation Ruins Your Presentation",
+      "objectives": [
+        "Explain what animation is actually for in a presentation",
+        "Use one simple build to control when the audience sees each point",
+        "Recognise the animations that make a deck look unprofessional"
+      ],
+      "notes": "Animation has exactly one legitimate job: controlling WHEN the audience sees something. Revealing bullet points one at a time keeps people with you instead of reading ahead. That is the whole useful case.\n\nEverything else — spinning entrances, bouncing text, slides that swirl — costs you credibility. It reads as someone who found the menu rather than someone with something to say, and in a business or investor setting that impression is expensive.\n\nIf you use anything, use Appear or a simple Fade, consistently, throughout. Mixing effects is worse than using none.\n\nADDITION BEYOND THE VIDEO — animation and the real world. Animations often break when a deck is opened in a different version of PowerPoint, in Google Slides, or on a venue laptop. They are lost entirely in PDF, which is how you will most often send the deck. So never let your meaning depend on an animation: if the slide does not make sense when everything appears at once, it is not a good slide.\n\nOn video and sound: embedded video frequently fails on someone else's machine or without internet. If a video is essential, have it downloaded locally as well, test it on the actual machine before the room fills, and be ready to describe it if it will not play. Presenting over Zoom on a patchy connection, assume it will not play at all.",
+      "practice": "Take a slide with four bullet points. Apply a simple Appear or Fade so they arrive one at a time, and nothing else. Then export the deck to PDF and look at that same slide — all four visible at once. If it still makes sense and still looks right, you have used animation correctly.",
+      "quiz": [
+        {
+          "question": "What is animation's one legitimate job in a presentation?",
+          "options": [
+            "Making the deck more memorable",
+            "Controlling when the audience sees something, so they do not read ahead",
+            "Demonstrating skill with the software",
+            "Filling time while you speak"
+          ],
+          "correct_index": 1
+        },
+        {
+          "question": "Why should a slide still make sense with every element visible at once?",
+          "options": [
+            "Some audiences dislike animation",
+            "It makes the file smaller",
+            "Animations are lost in PDF and often break on another machine, so meaning must never depend on them",
+            "PowerPoint limits the number of animations per slide"
+          ],
+          "correct_index": 2
+        }
+      ]
+    }
+  ]
+}

@@ -718,8 +718,9 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 414. Two courses are now fully written:
-      `freelancing` (12 lessons) and `presentation-design` (19).**
+      **Bare-lesson count: 438 → 402. Three courses are now fully written:
+      `freelancing` (12 lessons), `presentation-design` (19) and
+      `ai-tools` (16).**
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -752,10 +753,28 @@ custom authorization layer bolted on top.
       — savings and family, chamas and SACCOs, grants, microfinance,
       development programmes.
 
+      `ai-tools` was third — 12 bare lessons of 16, on a course with 2
+      enrollments — and is now complete at 16 of 16 (`0091`, `0092`). The
+      four lessons already written (Modules 3 and 4, on prompting and on
+      what AI gets wrong) set the house style and the new twelve were
+      written to build on them rather than restate them.
+
+      One deliberate constraint on this course in particular: **the notes
+      name no model versions, prices or free-tier limits.** Those change
+      every few months and would date a course that charges KSh 500. What
+      is taught instead is what survives the next release — a chat is a
+      conversation and not a search box; state the format you want; bring
+      your own material and let the tool transform it rather than invent
+      it; a citation proves a page was found, not that it is right; chain
+      a long job into steps and check each one. The two Module 8 lessons
+      carry the custom-assistant work from Module 5 through to a costed
+      package with a stated revision limit, and say plainly that the first
+      sale comes from a business you can walk into rather than from a
+      global freelance platform.
+
       Order of attack for the rest: courses that have enrollments and are
       wholly bare, since those are the ones a paying learner is in right
-      now. `ai-tools` and `vibe-coding` are next, 2 enrollments and 12 bare
-      lessons each.
+      now. `vibe-coding` is next — 2 enrollments, 12 bare lessons.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

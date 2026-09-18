@@ -718,9 +718,9 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 402. Three courses are now fully written:
-      `freelancing` (12 lessons), `presentation-design` (19) and
-      `ai-tools` (16).**
+      **Bare-lesson count: 438 → 390. Four courses are now fully written:
+      `freelancing` (12 lessons), `presentation-design` (19),
+      `ai-tools` (16) and `vibe-coding` (16).**
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -772,9 +772,34 @@ custom authorization layer bolted on top.
       sale comes from a business you can walk into rather than from a
       global freelance platform.
 
+      `vibe-coding` was fourth — 12 bare lessons of 16, 2 enrollments —
+      and is now complete at 16 of 16 (`0093`, `0094`). Modules 3 and 4
+      were already written, so the new twelve build on them rather than
+      restate them: the debugging lesson's recovery procedure depends on
+      the commit-before-each-change habit from Module 4, and the prompting
+      lesson fills in what goes inside one of Module 3's small steps.
+
+      Two things a paid course should say and the source videos do not.
+      **Security and data protection** — an app holding customers' names,
+      phone numbers or ID details makes its builder responsible for
+      protecting them, Kenyan law treats that as a real obligation, and
+      the safest first project stores no personal data at all. And **the
+      gap between the demo and the deliverable** — the thirty-minute build
+      is real, the week that follows is where error states, phone layout
+      and permissions live, and the pricing rule is to quote the week and
+      cut features rather than quality when time runs out.
+
+      A defect was caught here by the fingerprint check and fixed in the
+      same session: ten apostrophes had been written doubled in the source
+      plan (`today''s`, `Kenya''s`), which would have rendered literally on
+      the page. The doubling is SQL escaping, added by the generator, and
+      must never appear in plan JSON. All 735 lessons were scanned; the
+      only other match is a genuine JavaScript empty-string literal in Web
+      Development and is correct.
+
       Order of attack for the rest: courses that have enrollments and are
       wholly bare, since those are the ones a paying learner is in right
-      now. `vibe-coding` is next — 2 enrollments, 12 bare lessons.
+      now.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

@@ -1,0 +1,203 @@
+{
+  "course": "graphic-design",
+  "lessons": [
+    {
+      "id": "c34d280b-a3ee-4623-8490-e66a0835d7c1",
+      "title": "Beginning Graphic Design: Fundamentals",
+      "objectives": [
+        "State what a piece of design is for before making it",
+        "Name the elements every design is built from",
+        "Judge your own work against a purpose instead of against taste"
+      ],
+      "notes": "Graphic design is not decoration. It is arranging things so a message reaches someone and is understood. Everything else follows from that, including whether a design is any good.\n\nThe elements you are arranging: LINE, SHAPE, COLOUR, TEXTURE, SPACE and TYPE. Modules 3 and 4 take colour, type, layout and space seriously; this lesson is the frame they sit in.\n\nTHE FIRST QUESTION, before any tool opens: what is this for, and who is it for? A poster to be read from across a matatu stage, a flyer held in the hand, a logo that must survive being printed small on a receipt, an Instagram post seen for one second while scrolling. Each demands something different, and they are not interchangeable. Most bad design is not ugly — it is well made for the wrong job.\n\nTHE SECOND QUESTION: what is the ONE thing the viewer must take away? A design with three equally important messages communicates none of them. Decide the one, make it the largest and clearest thing, and let everything else support it.\n\nHOW TO JUDGE YOUR OWN WORK, which is the hard part. Not 'do I like it' — you will always like what you just made. Instead: can a stranger say what this is for in three seconds? Is the most important thing the most visible thing? Would it still work in black and white, at half the size, on a cracked phone screen?\n\nADDITION BEYOND THE VIDEO — design here has constraints that most tutorials never mention, and they are not limitations to apologise for. Work is printed by small local printers on ordinary paper, so fine detail and pale colours disappear. It is seen on phone screens of every quality, often in bright sun, so low contrast fails. It is shared on WhatsApp, which compresses images hard, so thin text and subtle gradients break up. And it is often read by people for whom English is a second or third language, so plain words beat clever ones. Designing well for those conditions is a skill, and it is the one clients here actually pay for.",
+      "practice": "Find three pieces of design you pass every day — a shop sign, a flyer, a poster. For each, write down what it is for, who it is for, and the one thing it wants you to take away. Then note whether it succeeds from the distance it is actually seen from. You will learn more from three honest judgements of real work than from an hour of tutorials.",
+      "quiz": [
+        {
+          "question": "What makes most bad design bad?",
+          "options": [
+            "It is well made for the wrong job — the purpose was never settled",
+            "It uses the wrong colours",
+            "It uses too few effects",
+            "The designer lacked software skill"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "How should you judge your own design?",
+          "options": [
+            "Whether a stranger can say what it is for in three seconds",
+            "Whether you are pleased with it",
+            "Whether it follows current trends",
+            "Whether it took a long time"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "78002c3e-2a1d-46b2-b779-4546b76f0b99",
+      "title": "How To Use Canva For BEGINNERS",
+      "objectives": [
+        "Produce a finished design in Canva from a blank canvas",
+        "Use a template without producing something that looks like a template",
+        "Export at the right size and format for where the design is going"
+      ],
+      "notes": "Canva runs in a browser or on a phone, is free to start, and is what most paid design work in this market is actually made in. There is no shame in it whatsoever — the client is buying a result, not a software licence.\n\nSTART FROM THE RIGHT SIZE. Choose the dimensions before you design, based on where it will be seen: a social post, a story, an A4 flyer, a business card, a banner. Resizing a finished design is where things get stretched and cropped badly.\n\nTEMPLATES ARE A STARTING POINT, NOT A DESTINATION. A template used as-is with the words swapped is recognisable to everyone, including your client. The way to use one properly is to take its LAYOUT — the structure that already works — and replace the colours, the fonts and the images with the client's own. What you keep is the arrangement; what you change is everything that identifies it as someone else's.\n\nThe handful of things that do most of the work: text and font size, uploading your own images, the colour picker with a specific hex code rather than a guess from the palette, alignment guides, and grouping so elements move together.\n\nEXPORT PROPERLY, which is where beginners quietly lose quality: PNG for anything with text or a logo; JPG for photographs where file size matters; PDF for print. Check the exported file, not the editor preview.\n\nADDITION BEYOND THE VIDEO — three practical things. First, keep the ORIGINAL EDITABLE FILE for every client job; they will come back in four months wanting the phone number changed, and rebuilding it is unpaid work. Second, understand what you may use commercially: free-tier libraries contain elements that are not free for commercial use, and putting one in a client's logo is a problem that surfaces later. Third, design on a phone if that is what you have — Canva works properly on one, and plenty of people earning from design here have never used anything else.",
+      "practice": "Pick a real local business and make them a social post and an A4 flyer for the same message. Use a template for the flyer but change every colour, font and image so it no longer resembles the original. Export the post as PNG and the flyer as PDF, open both files, and check the text is sharp. Save the editable versions somewhere you will find them again.",
+      "quiz": [
+        {
+          "question": "How do you use a template without the result looking like a template?",
+          "options": [
+            "Keep its layout, replace the colours, fonts and images with the client's own",
+            "Change the words only",
+            "Use the least popular template",
+            "Combine several templates"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why keep the editable file after delivering a job?",
+          "options": [
+            "The client will return wanting a small change, and rebuilding it is unpaid work",
+            "It proves the work is yours",
+            "It reduces the export file size",
+            "Canva deletes exports after a time"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "39876205-f998-4d95-94e2-9e5eda2f82cb",
+      "title": "Modern Logo Design Tutorial - Start To Finish",
+      "objectives": [
+        "Design a logo that works at every size it will actually be used at",
+        "Deliver the file formats a client will need",
+        "Avoid the mistakes that make a logo unusable rather than merely ugly"
+      ],
+      "notes": "A logo is not a picture of what the business does. It is a mark that identifies it, and it has to keep working in conditions the designer does not control.\n\nTHE TEST THAT MATTERS: does it work SMALL, in ONE COLOUR, and in BLACK AND WHITE? A logo will appear on a receipt from a thermal printer, stamped on a delivery box, embroidered on a shirt, and as a circle nineteen pixels wide on WhatsApp. If it only works large and in full colour on a white background, it is an illustration, not a logo.\n\nSIMPLE SURVIVES. Fine lines disappear when printed small. Gradients turn to mud on a cheap print and band badly on compression. Detailed drawings become a smudge. The logos you recognise instantly are almost all simple enough to draw from memory, and that is not a coincidence.\n\nWHAT BEGINNERS GET WRONG, beyond taste: using a font that is not licensed for commercial use; making it in a photo editor instead of as a shape, so it cannot be enlarged without going blurry; and designing it on a white background only, then discovering it is invisible on the client's dark signage.\n\nWHAT TO DELIVER. A client needs more than one file: a version for light backgrounds and one for dark, a one-colour version, a horizontal arrangement and a compact or square one for profile pictures, and both a high-quality file for print and a smaller one for screens. Handing over a single PNG is the commonest complaint clients have about cheap logo work.\n\nADDITION BEYOND THE VIDEO — two things that are business, not craft. CHECK THE NAME AND MARK ARE NOT ALREADY IN USE locally before delivering; a client who builds signage around a logo that copies another business in the same town has a real problem and will blame you. And AGREE OWNERSHIP IN WRITING: when the client has paid in full the logo is theirs to use, and you keep the right to show it in your portfolio. One sentence, agreed at the start, prevents the argument entirely.",
+      "practice": "Design one logo for a real or imagined local business, then run the test properly: print it at two centimetres wide, convert it to black and white, put it on a dark background, and shrink it to a profile picture. Fix whatever breaks — something will. Then assemble the full delivery set: light, dark, one-colour, horizontal and square.",
+      "quiz": [
+        {
+          "question": "What is the test a logo must pass?",
+          "options": [
+            "Working small, in one colour, and in black and white",
+            "Looking modern and current",
+            "Showing what the business does",
+            "Using the client's favourite colours"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What is the commonest complaint about cheap logo work?",
+          "options": [
+            "Being handed a single PNG rather than a full set of files for different uses",
+            "The colours being wrong",
+            "Taking too long to deliver",
+            "The logo being too simple"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "762efc6f-c0fa-46af-8e03-0cdd1915b289",
+      "title": "Canva Tutorial for Beginners 2026",
+      "objectives": [
+        "Work faster by setting up brand colours and fonts once",
+        "Produce a consistent set of designs rather than one-off pieces",
+        "Keep files organised so repeat work is quick"
+      ],
+      "notes": "The first Canva lesson got you to a finished design. This one is about the habits that make design a job rather than a series of separate efforts.\n\nSET UP THE BRAND ONCE. Put the client's colours in as exact hex codes and their fonts in a saved set, then every new design starts correct instead of being matched by eye. Matching a colour by eye across ten designs produces ten slightly different colours, and clients notice the inconsistency even when they cannot name it.\n\nWORK IN SETS. A business rarely needs one design; it needs a post, a story, a flyer and a profile image saying the same thing. Build the first one properly, then adapt it for each size, adjusting the layout each time rather than stretching it. A matched set looks professional in a way that one excellent isolated design does not.\n\nORGANISE FROM THE FIRST JOB. One folder per client, designs named so you can tell what they are without opening them, a date in the name. The value shows up in month three, when a client asks for 'the one from Easter' and you find it in ten seconds.\n\nREUSE YOUR OWN WORK. When you build something good, keep it as your own template. Your second flyer for a similar business should take a quarter of the time — that saved time is your profit, and it is the same idea as the productised package in the other business courses.\n\nADDITION BEYOND THE VIDEO — two practical constraints. Canva is online, so check what it does when your connection drops and save often; losing an hour of work to a dropout is a lesson everyone learns once. And know what is behind the paid tier before you promise a client something — an element or font that requires a subscription will either watermark the export or quietly stop being available. Either build with what is genuinely free to you, or price the subscription into the job.",
+      "practice": "Take the business you designed for in the last lesson and build a full set: a square social post, a vertical story, an A4 flyer and a profile image, all sharing colours, fonts and one message. Set the brand colours and fonts up first, before designing. Time how long the fourth piece takes compared with the first.",
+      "quiz": [
+        {
+          "question": "Why set brand colours as exact hex codes rather than matching by eye?",
+          "options": [
+            "Eye-matching across several designs produces slightly different colours, which clients notice",
+            "It is faster to type a code",
+            "Hex codes print more accurately",
+            "It is required for export"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What makes the second similar job profitable?",
+          "options": [
+            "Reusing your own work as a template, so it takes a fraction of the time at the same price",
+            "Charging a higher rate",
+            "Using more templates",
+            "Working longer hours"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "0eb7a144-7c9d-49d2-828a-b3028e8bd59b",
+      "title": "How to Pair Fonts (And Create Typographic Hierarchy)",
+      "objectives": [
+        "Choose two fonts that work together for a specific job",
+        "Build a hierarchy so the reader knows what to read first",
+        "Apply type decisions consistently across a set of designs"
+      ],
+      "notes": "Module 3 covered the vocabulary and the rule that two fonts is plenty, with contrast in role rather than similarity. This lesson is about doing it deliberately.\n\nHIERARCHY IS THE POINT. Pairing fonts is not about finding two attractive fonts; it is about making the reader's eye travel in the right order. Every design has a first thing, a second thing and a supporting thing, and the type should make that order obvious without the reader deciding.\n\nThe levers, and you rarely need more than two at once: SIZE (the bluntest and most effective), WEIGHT (bold against regular), COLOUR or tone, SPACE around an element, and CASE. Using all of them at once on the same element is shouting.\n\nA RELIABLE PAIRING METHOD: pick the body font first — the one that has to be read comfortably in quantity — and make it plain and unremarkable. Then choose a heading font that differs clearly from it. If you cannot tell at a glance that they are different fonts, they are too similar and the design will look like an accident.\n\nONE FONT IS ALSO AN ANSWER. A single well-chosen family used at three weights and three sizes produces a clean, coherent design and removes an entire category of mistake. Plenty of professional work is done this way.\n\nCONSISTENCY ACROSS A SET. Decide your heading size, subheading size and body size once, then use those same three everywhere. Type decided afresh on each design is what makes a set of otherwise decent pieces look like they came from four different people.\n\nADDITION BEYOND THE VIDEO — the constraints that decide this locally. Check the LICENCE on any font going into paid work; a font that is free for personal use is not free in a client's logo. Test your heading font at the size it will really be seen — a thin elegant face that reads well on your laptop can vanish on a phone in sunlight or break up after WhatsApp compression. And where a design carries Kiswahili, Sheng or a local-language name, check the font actually renders every character and accent properly before you deliver it.",
+      "practice": "Take one flyer and set it three ways: two contrasting fonts, one font at three weights, and two fonts that are deliberately too similar. Put the three side by side and note what each does to the reading order. Then write down your three sizes — heading, subheading, body — and apply them to every design in your set from the last lesson.",
+      "quiz": [
+        {
+          "question": "What is font pairing actually for?",
+          "options": [
+            "Making the reader's eye travel in the right order",
+            "Making the design look more interesting",
+            "Showing knowledge of typography",
+            "Filling the space available"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Two fonts look similar but not identical. What is the problem?",
+          "options": [
+            "The difference reads as an accident rather than a deliberate choice",
+            "Similar fonts are harder to read",
+            "It uses more file space",
+            "It breaks the licence terms"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "3f0a501f-ed5c-49c3-96a1-e99db86c7a5e",
+      "title": "Color Theory Practice Project: Create Better Color Palettes",
+      "objectives": [
+        "Build a working palette rather than picking colours one at a time",
+        "Assign each colour a job so the palette stays consistent",
+        "Check a palette for contrast before using it"
+      ],
+      "notes": "Module 3 covered colour theory and readability. This lesson turns that into a palette you can actually work from.\n\nA PALETTE IS ROLES, NOT A COLLECTION. Assign each colour a job and use it only for that: one DOMINANT colour for large areas, one or two SUPPORTING colours, one ACCENT used sparingly for the thing you want clicked or noticed, plus a near-black for text and a near-white for background. Four or five in total. Beginners collect eight colours they like and then have to decide afresh on every element, which is why the result looks unsettled.\n\nA ROUGH PROPORTION that works: most of the design in the dominant, a smaller share in the supporting colours, a very small share in the accent. The accent stops working the moment it is everywhere — its power is entirely in being rare.\n\nCHECK CONTRAST, DO NOT TRUST YOUR EYE. Text must be clearly darker or lighter than what is behind it. There are free contrast checkers that give you a number; use one on every text-and-background combination before you commit. This is the single most common readability failure in beginner work and it is the easiest to prevent.\n\nWHERE TO START A PALETTE. From the client's existing materials, if they have any — matching what they already use is usually the job. From a photograph of their product, pulling colours that already sit together. Or from one colour you are committed to, building the rest around it.\n\nADDITION BEYOND THE VIDEO — the local checks worth doing before delivery. View the palette on a phone screen in bright daylight, because pale-on-pale that is elegant indoors becomes unreadable outside. Remember that colour prints differently from how it glows on a screen, and small local printers vary; for anything important, get one proof printed before ordering two hundred. And think about what colours already mean to the audience — political party colours, a rival business's colours, or associations attached to a particular combination — because a design can be technically excellent and still be the wrong choice on the street.",
+      "practice": "Build one palette of five colours with a stated role for each: dominant, two supporting, accent, and text. Write the hex codes down. Run every text-on-background pair through a free contrast checker and fix anything that fails. Then rebuild one of your earlier designs using only those five colours in their assigned roles, and view it on a phone outdoors.",
+      "quiz": [
+        {
+          "question": "What makes a palette work?",
+          "options": [
+            "Each colour having an assigned role, so decisions are not remade on every element",
+            "Having as many colours as possible",
+            "Using only colours you like",
+            "Copying a palette from another design"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why check contrast with a tool rather than by eye?",
+          "options": [
+            "Low contrast is the most common readability failure and the eye adapts to it",
+            "Tools are required by clients",
+            "It measures file size",
+            "Screens display colour identically"
+          ],
+          "correct_index": 0
+        }
+      ]
+    }
+  ]
+}

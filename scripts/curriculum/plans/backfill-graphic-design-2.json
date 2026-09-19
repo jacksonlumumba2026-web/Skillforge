@@ -1,0 +1,203 @@
+{
+  "course": "graphic-design",
+  "lessons": [
+    {
+      "id": "caa3a89c-4cd7-4a0d-a433-c0e7a5108886",
+      "title": "What to Include in your Brand Style Guide",
+      "objectives": [
+        "Write a style guide a non-designer can follow",
+        "Decide what a small business genuinely needs in one",
+        "Sell a style guide as a deliverable in its own right"
+      ],
+      "notes": "A style guide is the document that lets a business stay consistent when you are not there. It is also one of the easiest things to charge properly for, because it is a finished object rather than an hour of work.\n\nWHAT A SMALL BUSINESS ACTUALLY NEEDS — one page or two, not forty:\n\nTHE LOGO. Every version you delivered, with two or three rules on use: minimum size, clear space around it, and what not to do — do not stretch it, do not recolour it, do not put it on a busy photograph.\n\nCOLOURS, as exact hex codes, with each one's role stated, exactly as in the palette lesson. Codes, not swatches, because someone will need to type them into a form.\n\nFONTS, named, with the heading, subheading and body sizes, plus a stated fallback for when the real font is not available — because it will not be, on the owner's phone.\n\nVOICE, in three or four lines. How the business sounds: formal or friendly, English or mixed with Kiswahili, what it never says.\n\nEXAMPLES. One correct layout and one wrong one, side by side. This page teaches more than all the rules above it.\n\nWRITE IT FOR A NON-DESIGNER. The reader is the owner, or the nephew who posts on Instagram. No jargon. 'Leave a gap around the logo the width of the letter M' is a rule someone can follow; 'maintain adequate clear space' is not.\n\nADDITION BEYOND THE VIDEO — the commercial reason to build one for every client. Without a guide, the business drifts within a month, and then it is your logo sitting in a badly made poster with the wrong colours, which is your work being blamed for someone else's. With a guide, you have given them something durable, you can charge for it, and you have made yourself the obvious person to call for the next thing. Deliver it as a PDF they can send to anyone, along with the logo files and the colour codes in plain text they can copy.",
+      "practice": "Write a two-page style guide for the business you have been designing for: logo versions and three usage rules, colours as hex codes with roles, fonts with sizes and a fallback, three lines on voice, and one page showing a correct and an incorrect example. Then give it to someone who is not a designer and ask them to make a simple post following it. Whatever they get wrong is a rule you wrote badly.",
+      "quiz": [
+        {
+          "question": "Who should a small business style guide be written for?",
+          "options": [
+            "A non-designer - the owner or whoever posts for them - so the rules must be concrete",
+            "Other designers",
+            "The printer",
+            "Whoever replaces you"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why does a style guide protect your reputation?",
+          "options": [
+            "Without one the business drifts, and your logo ends up in badly made work that reflects on you",
+            "It proves you designed the logo",
+            "It prevents others copying your work",
+            "It locks the client into using you"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "f7c6a63f-43e2-4bd0-8a08-f9e1f2ac645f",
+      "title": "20 Design Tips You NEED to Stop Being Amateur",
+      "objectives": [
+        "Recognise the small faults that mark work as amateur",
+        "Run a check over a design before it leaves you",
+        "Fix the problems that are invisible to you and obvious to everyone else"
+      ],
+      "notes": "Most amateur design is not badly conceived. It is well-intentioned work with four or five small faults, all of them fixable in minutes once you know to look.\n\nTHE USUAL SUSPECTS:\n\nTHINGS NOT ALIGNED. Elements a few pixels off look wrong without the viewer knowing why. Use the guides; align deliberately, never by eye.\n\nINCONSISTENT SPACING. Gaps of 12, 15 and 18 pixels where they should all be the same. Pick one spacing unit and use multiples of it.\n\nTOO MANY FONTS, TOO MANY SIZES, TOO MANY COLOURS. Three of anything is usually two too many.\n\nNO BREATHING ROOM. Beginners fill the space because empty space feels wasted. It is not; it is what makes the important thing readable, as Module 4 covered.\n\nSTRETCHED IMAGES AND LOGOS. Hold the proportions. A stretched logo is the single fastest way to look careless.\n\nTEXT ON A BUSY PHOTOGRAPH with nothing behind it. Darken the image, add a panel, or move the text.\n\nDEFAULT EVERYTHING. The template's stock photo, the default drop shadow, the first font in the list.\n\nCENTRING EVERYTHING by default. Left-aligned text is easier to read in quantity; centre it when you mean to.\n\nA CHECK BEFORE ANYTHING LEAVES YOU, which is the actual deliverable of this lesson: read every word aloud for typos and the client's name spelled correctly; check the phone number and any date by comparing against the source, not from memory; confirm alignment and consistent spacing; view it at the real size; and look at it on a phone. A typo in a printed run of five hundred flyers is your cost, not the client's.\n\nADDITION BEYOND THE VIDEO — get a second pair of eyes. You stop seeing your own work after twenty minutes with it. Show it to anyone, designer or not, and ask what it says rather than whether they like it. And leave it overnight where the deadline allows — the faults are obvious in the morning and invisible at midnight.",
+      "practice": "Take three designs you have already made and run the full check on each, writing down every fault you find. Count them. Then fix all of them and compare before and after. Keep the check as a written list and run it on every job from now on - it is the difference between work that is good and work that is delivered good.",
+      "quiz": [
+        {
+          "question": "Why does slightly misaligned work look wrong?",
+          "options": [
+            "The viewer senses it without being able to name it, so the work reads as careless",
+            "It breaks when printed",
+            "It increases the file size",
+            "It only matters on screens"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What is the most reliable way to catch faults in your own design?",
+          "options": [
+            "A written pre-delivery check plus a second pair of eyes, since you stop seeing your own work",
+            "Working more slowly",
+            "Using more guides",
+            "Reviewing it immediately after finishing"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "870ac812-14d6-4ae2-9b61-e63863a1eae2",
+      "title": "How to Nail Your Design Brief and the Questions to Ask",
+      "objectives": [
+        "Get the information you need before starting a job",
+        "Turn a vague request into a defined piece of work",
+        "Prevent the disagreements that come from an unwritten brief"
+      ],
+      "notes": "Most design jobs that go wrong went wrong at the brief, not at the design. A client who says 'make me something nice' has told you nothing, and it is your job, not theirs, to fix that.\n\nTHE QUESTIONS THAT MATTER:\n\nWHAT IS IT FOR? Not 'a poster' — what should happen when someone sees it. Come to the shop, call this number, know about the sale.\n\nWHO IS IT FOR? Age, language, where they will see it. A flyer for parents at a school gate is a different object from a post aimed at students.\n\nWHERE WILL IT APPEAR, and at what size? Printed A4, a banner across a road, a phone screen. This decides everything and is the question most often skipped.\n\nWHAT MUST BE ON IT? Get the exact text, the phone number, the logo, any prices — in writing, from them. Never retype a phone number you were told verbally.\n\nWHAT DO THEY ALREADY HAVE? Existing colours, an old logo, previous materials. Matching what exists is often the actual job.\n\nWHAT DO THEY LIKE? Ask for two examples they admire and one they dislike. Two minutes of looking tells you more than an hour of adjectives.\n\nWHEN, and WHO APPROVES IT? If the person briefing you is not the person deciding, you have a second review coming that nobody has budgeted for.\n\nWRITE IT DOWN AND SEND IT BACK. Summarise the brief in a short message and ask them to confirm. This single habit prevents most disputes, because the disagreement surfaces before you have spent six hours.\n\nADDITION BEYOND THE VIDEO — settle the commercial terms in the same message: the price, how many rounds of changes are included (two is normal), the deadline, and that final files follow final payment. A deposit before starting is standard. And beware the brief that arrives as eleven WhatsApp voice notes over two days — listen, then write it out as a numbered list and send it back for confirmation. Whatever is not in that list is not in the job.",
+      "practice": "Write your brief form once, as a list of questions you can send to any client. Then use it on a real request, however small, and notice how many answers you did not have before asking. Finish by writing the brief back as a numbered summary with price, revision count and deadline, and get a yes in writing before you open any design tool.",
+      "quiz": [
+        {
+          "question": "Which brief question is most often skipped and most consequential?",
+          "options": [
+            "Where it will appear and at what size",
+            "What colours the client likes",
+            "Who the designer reports to",
+            "How long the job should take"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What single habit prevents most client disputes?",
+          "options": [
+            "Writing the brief back as a summary and getting it confirmed before starting",
+            "Charging a higher price",
+            "Delivering faster than promised",
+            "Offering unlimited revisions"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "a8c1ab35-7f47-4f2d-9c81-f62960b1e2d5",
+      "title": "How to Present Graphic Design Projects to Clients",
+      "objectives": [
+        "Present work so it is judged on the brief rather than on taste",
+        "Handle feedback without becoming defensive or losing the design",
+        "Close a project cleanly with the right files and final payment"
+      ],
+      "notes": "How you present decides how the work is received. The same design shown two ways gets approved or picked apart.\n\nSHOW IT IN CONTEXT, not as a flat file. The logo on a shopfront, the flyer in a hand, the post inside a phone frame. A client who cannot picture the finished thing will invent objections instead.\n\nPRESENT ONE, OR AT MOST TWO. Beginners show six options hoping one lands. It reads as uncertainty and it invites the client to design by committee — they will take the heading from one, the colour from another, and the result will be worse than any of them. Show the one you recommend, and be able to say why.\n\nEXPLAIN AGAINST THE BRIEF. 'You said this must be readable from across the road, so the text is large and the contrast is strong.' Now the conversation is about whether it meets the goal, not whether they like blue. This is the single most useful sentence pattern in client work.\n\nWHEN THE FEEDBACK COMES, and it will:\n- Listen to the whole thing before answering.\n- Find the problem behind the request. 'Make the logo bigger' usually means 'it does not feel important enough', which may be better solved with space or contrast.\n- Where you disagree, say so once, with a reason tied to the brief. Then, if they still want it, do it. It is their business and their money.\n- Collect all the feedback for a round together, rather than acting on messages as they arrive.\n\nCLOSE CLEANLY: agreed files in every format they need, the style guide, the editable file kept by you, and final payment before the final full-quality files. Then ask for the testimonial and the referral while they are pleased.\n\nADDITION BEYOND THE VIDEO — two local realities. Approval often runs through a group chat where several people comment, so name one decision-maker at the brief stage and route all feedback through them, or you will be revising for a committee that never agrees. And when presenting on a phone over WhatsApp, send the file as a document rather than an image, because the compression will make your careful work look poor and you will be judged on that.",
+      "practice": "Take one finished design and present it two ways to someone: once as a bare file, once in context with a sentence explaining each choice against the brief. Note the difference in what they say. Then practise the feedback move - take one piece of criticism you received and work out what the real problem behind it was.",
+      "quiz": [
+        {
+          "question": "Why present one option rather than six?",
+          "options": [
+            "Six reads as uncertainty and invites design by committee, producing something worse than any one of them",
+            "Six takes too long to prepare",
+            "Clients cannot compare options",
+            "It reduces the price you can charge"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "A client says 'make the logo bigger'. What is the useful response?",
+          "options": [
+            "Find the problem behind it — usually that it does not feel important enough, which space or contrast may solve better",
+            "Enlarge it immediately without discussion",
+            "Explain why they are wrong about design",
+            "Offer a discount instead"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "d30077e9-acb8-459f-ae90-a9d27e4279ac",
+      "title": "How to Get Clients as a Freelance Graphic Designer",
+      "objectives": [
+        "Find design work without competing globally on price",
+        "Approach a business with something specific rather than an offer",
+        "Price design work so it is worth doing"
+      ],
+      "notes": "Design has the lowest barrier to entry of any skill in this catalogue, which means the market is crowded at the bottom and thin in the middle. The way up is not being cheaper.\n\nWHERE THE WORK IS, close to you: every small business with a badly made sign or a poorly designed flyer; churches, schools and saccos with events; shops selling on Instagram and WhatsApp with inconsistent posts; event organisers; anyone printing anything. None of them are on a global freelance platform, and most have never worked with a designer.\n\nLEAD WITH THE WORK. Redesign something of theirs, unasked, and show them. 'I redrew your menu so the prices are readable from the counter — here it is.' You have demonstrated the skill, removed the risk, and skipped the entire problem of having no reputation. Three of these beat a hundred messages offering your services.\n\nBE SPECIFIC ABOUT WHAT YOU DO. 'Graphic designer' is forgettable. 'I make menus and price lists for restaurants' gets remembered and referred, and specialising makes each job faster because you stop solving the same problem from scratch.\n\nPRICING. Charge per job, not per hour — you will get faster, and hourly punishes that. Count everything: the brief, the revisions, the exports, the messages. Set a floor from what you need monthly divided by what you can genuinely deliver, and do not go below it. The cheapest designer in any market gets the most difficult clients and the least respect, which is a rule with very few exceptions.\n\nADDITION BEYOND THE VIDEO — three things specific to working here. Take a deposit before starting, especially for print work where you may be carrying the printer's cost. Be explicit about what is included: two rounds of changes, then it is a new quote, or you will be revising a poster for three weeks. And treat print as a service you can sell alongside the design — knowing a reliable printer, handling the order and delivering the finished flyers is worth more to a busy shop owner than the design alone, and it is income no overseas competitor can touch.",
+      "practice": "Pick three local businesses whose printed or posted material you have actually seen and could improve. Redesign one piece for each — a menu, a price list, a poster — and take it to them finished. Ask one question: would this be useful? Then name a price. Also write your one-line specialisation and your price floor, and do not quote below it.",
+      "quiz": [
+        {
+          "question": "What is the most effective way to approach a local business?",
+          "options": [
+            "Redesign something of theirs unasked and show them the finished result",
+            "Send a message listing your services",
+            "Offer the lowest price in the area",
+            "Wait for a referral"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why charge per job rather than per hour?",
+          "options": [
+            "You will get faster, and hourly pricing penalises exactly that",
+            "Clients prefer round numbers",
+            "Hourly work cannot be tracked",
+            "Per-job pricing is always higher"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "48f13e06-431c-4d99-abb1-5dcf4f990f51",
+      "title": "The Best Way to Build a Graphic Design Portfolio (No Clients Needed)",
+      "objectives": [
+        "Build a portfolio before anyone has paid you",
+        "Show work in a way that demonstrates thinking, not just output",
+        "Choose what to leave out"
+      ],
+      "notes": "The portfolio problem is circular — clients want to see work, and you have no work because no client has hired you — and it is broken the same way it is broken in every other field: make the work anyway.\n\nWHAT TO MAKE. Redesign real things that exist badly: a local restaurant's menu, a school's notice, a poster you saw on a pole. Invent a business and brand it fully — logo, colours, type, a set of materials. Set yourself a brief a week. Nobody asks whether you were paid, and self-directed work is often better because there was no committee.\n\nSHOW THE THINKING, NOT ONLY THE PICTURE. For each piece, three or four lines: what the problem was, what you decided, and why. 'The original menu used pale grey text at eight points and customers were asking staff to read out the prices. I raised the contrast, increased the size, and grouped the dishes so the page can be scanned from the counter.' That paragraph is what tells a client you will solve their problem rather than decorate it. Most beginner portfolios are a wall of pictures with no reasoning, and they all look the same.\n\nSHOW IT IN CONTEXT, as in the presentation lesson — the menu on a table, the sign on a wall.\n\nSIX GOOD PIECES, NOT TWENTY. You are judged on your weakest piece, not your best. Remove anything you are unsure about; a portfolio gets stronger by deletion more often than by addition.\n\nBE HONEST about what was a real job and what was self-directed. Say 'concept' where it is a concept. Getting caught inflating your history costs far more than the work it wins.\n\nADDITION BEYOND THE VIDEO — where to put it. A website is optional; what matters is that it can be sent to someone who asks. A well-organised PDF works, opens on any phone, and can be sent over WhatsApp. A dedicated Instagram page works, because that is where local businesses already look — post each piece with the short reasoning as the caption. Choose whatever you will actually keep updated, and make sure whatever you choose loads on a modest connection.",
+      "practice": "Build six pieces this month: three redesigns of real local material and one invented brand delivered as three pieces. Write three or four lines of reasoning for each — problem, decision, why. Assemble it as a PDF under five megabytes and send it to one person, then remove your weakest piece and send it to the next.",
+      "quiz": [
+        {
+          "question": "What separates a strong portfolio from a wall of pictures?",
+          "options": [
+            "A few lines per piece on the problem, the decision and the reason",
+            "More pieces",
+            "Better software",
+            "Only showing paid work"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "How many pieces should a portfolio hold?",
+          "options": [
+            "About six strong ones, since you are judged on your weakest piece",
+            "As many as possible",
+            "Only work that was paid for",
+            "One per type of design"
+          ],
+          "correct_index": 0
+        }
+      ]
+    }
+  ]
+}

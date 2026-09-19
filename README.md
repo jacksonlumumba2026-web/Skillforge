@@ -718,9 +718,9 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 390. Four courses are now fully written:
+      **Bare-lesson count: 438 → 378. Five courses are now fully written:
       `freelancing` (12 lessons), `presentation-design` (19),
-      `ai-tools` (16) and `vibe-coding` (16).**
+      `ai-tools` (16), `vibe-coding` (16) and `video-editing` (12).**
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -797,9 +797,32 @@ custom authorization layer bolted on top.
       only other match is a genuine JavaScript empty-string literal in Web
       Development and is correct.
 
-      Order of attack for the rest: courses that have enrollments and are
-      wholly bare, since those are the ones a paying learner is in right
-      now.
+      `video-editing` was fifth and is complete at 12 of 12 (`0095`,
+      `0096`). It was **wholly** bare — every one of its twelve lessons a
+      title and a link, on a course with a live enrollment — which is now
+      the discriminator that matters more than enrollment count.
+
+      The notes are written for the equipment a learner here actually
+      owns. A phone editor is treated as a legitimate professional tool
+      rather than a stepping stone; proxies are named as the technique
+      that makes a modest laptop viable; the mix is judged on a phone
+      speaker at low volume in a noisy place and the grade on a phone
+      screen outdoors, because that is where the audience is. Delivery
+      covers what WhatsApp compression does to a client's file. The
+      freelance module leads with re-cutting a business's own video
+      unasked, because the first client problem is circular and that is
+      what breaks it.
+
+      **Generator hardened.** `build-backfill-sql.py` now refuses a plan
+      whose notes or practice contain a doubled apostrophe, naming the
+      lesson and field. That escaping is the generator's job; in a plan it
+      is content and renders literally on the page. It shipped once, in
+      four Vibe Coding lessons, and the fingerprint check is what caught
+      it.
+
+      Order of attack for the rest: wholly bare courses first, then the
+      partially bare ones. `virtual-assistance-data-entry` is next — 12 of
+      12 bare.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

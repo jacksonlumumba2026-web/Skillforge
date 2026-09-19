@@ -1,0 +1,203 @@
+{
+  "course": "virtual-assistance-data-entry",
+  "lessons": [
+    {
+      "id": "6680fa77-ad5c-4eb2-a04d-1c63eefd575c",
+      "title": "What is a Virtual Assistant?",
+      "objectives": [
+        "Describe what a virtual assistant is hired to do and how the arrangement works",
+        "Tell the difference between being an employee and being a contractor",
+        "Judge whether the work suits your circumstances before you invest months in it"
+      ],
+      "notes": "A virtual assistant does support work for a business remotely — administration, inbox and calendar, data entry, research, customer messages, scheduling, bookkeeping support. The word virtual only means you are not in their office.\n\nWhat matters far more than the job title is that YOU ARE A CONTRACTOR, NOT AN EMPLOYEE. Nobody deducts your tax, nobody pays you when you are sick, nobody gives you leave, and nobody guarantees next month. In exchange you choose your clients, set your rate and work from anywhere. Both halves of that are real, and beginners who only hear the second half are the ones who struggle in month four.\n\nWhat the work actually looks like day to day: repetitive tasks done reliably, on time, without being chased. That is the whole product. Clients are not buying brilliance; they are buying the thing being done, correctly, without them having to think about it again. Reliability is the skill.\n\nWHO IT SUITS: someone organised, literate in writing, comfortable saying when something is unclear, and able to work alone without a supervisor in the room. That last one is genuinely difficult and it is where most people underestimate the job.\n\nADDITION BEYOND THE VIDEO — the three practical questions to settle before you commit, because they decide whether this works from here:\n\nPOWER AND INTERNET. A client with a deadline does not care about a blackout. Before you take paid work, know your backup — a charged phone with a bundle and hotspot, a place you can go, a neighbour. Arrange it in advance, not on the morning it fails.\n\nTIME ZONES. Kenya is UTC+3. A client in London is two to three hours behind; one on the US east coast is seven or eight behind, so their morning is your evening. That is workable and many people prefer it, but decide what hours you will actually keep and say so before you agree to anything.\n\nGETTING PAID ACROSS BORDERS. International payment costs money and takes days. Find out how you will be paid, what the transfer costs and how long it takes BEFORE you agree a rate. It is part of the rate.",
+      "practice": "Write down three things honestly: the hours you can genuinely work each week, what you will do when the power or internet fails, and how you expect to receive money from a client abroad. Then find out the actual answer to the third — the real method, the real cost, the real number of days — rather than assuming. That single hour of research prevents the commonest first-client disaster.",
+      "quiz": [
+        {
+          "question": "What is a virtual assistant actually selling?",
+          "options": [
+            "Reliability — the task done correctly and on time without the client thinking about it again",
+            "Creativity and new ideas",
+            "The lowest price available",
+            "Availability at all hours"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "When should you find out how international payment reaches you?",
+          "options": [
+            "Before agreeing a rate, since the cost and delay are part of the rate",
+            "After the first invoice",
+            "Only if the client asks",
+            "Once you have several clients"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "09872bcc-2fa5-4fb7-a4d9-3eb35dd64dc1",
+      "title": "What Can Virtual Assistants Do (And Definitely Not Do)",
+      "objectives": [
+        "List the services you can credibly offer now and the ones you cannot yet",
+        "Recognise a request that is outside what you agreed to",
+        "Refuse work that would put you or the client at risk"
+      ],
+      "notes": "Knowing where your job ends is what separates a VA who lasts from one who burns out in a quarter.\n\nWHAT YOU CAN OFFER FROM THE START: inbox management, calendar and scheduling, data entry, internet research and list building, formatting documents, basic social media scheduling, customer email replies from a template, travel arrangements, transcription, simple invoice preparation.\n\nWHAT NEEDS REAL SKILL FIRST, and should not be promised until you have it: bookkeeping, design, writing that is published under the client's name, paid advertising, anything technical. Saying yes to these before you can do them is the single fastest way to lose a client and a reference at the same time.\n\nWHAT IS NOT YOURS TO DO, ever: making decisions that belong to the business owner, signing or agreeing anything on their behalf, or handling money in a way that leaves no record. Be careful and explicit here. If you are given access to accounts or payments, insist on a written instruction for every transaction. It protects both of you, and a client who objects to that is one you should not have.\n\nSCOPE CREEP is the everyday version of this problem. It begins with 'could you just...' and ends with you doing eleven hours of work for a five-hour fee. The fix is not confrontation. It is a written list of what is included, agreed at the start, and a calm sentence when something falls outside it: 'Happy to do that — it is outside our current hours, shall I add it at the usual rate?' Said early and pleasantly, that question almost never causes a problem. Said after three months of silent extra work, it causes a row.\n\nADDITION BEYOND THE VIDEO — you will be handling other people's private information: customer lists, email accounts, sometimes payment details. Treat it as borrowed, not given. Never move client data onto your personal accounts, never share a login over WhatsApp, and use a password manager rather than a notebook or a phone note. Kenya has a data protection law, and beyond the law, a VA who is careless with a client's data has nothing left to sell.",
+      "practice": "Write two lists: services you could deliver well starting tomorrow, and services you would need to learn first. Be honest, and pick ONE from the second list to learn next. Then write your 'outside scope' sentence in your own words and say it out loud until it sounds calm and normal rather than confrontational. You will need it within your first month.",
+      "quiz": [
+        {
+          "question": "What is the correct response to a request outside the agreed scope?",
+          "options": [
+            "A calm early question offering to add it at the usual rate",
+            "Doing it quietly to keep the client happy",
+            "Refusing without explanation",
+            "Renegotiating the whole contract"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "How should you handle a client's login details?",
+          "options": [
+            "In a password manager, never shared over chat, and never moved to your personal accounts",
+            "In a note on your phone for convenience",
+            "Shared over WhatsApp so both of you have them",
+            "Memorised and written in a notebook"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "b0ae4fce-6ff9-4067-8ff1-cdff1a6e223a",
+      "title": "The ACTUAL Virtual Assistant Skills Paying Clients Want",
+      "objectives": [
+        "Name the skills that decide whether a client keeps you",
+        "Communicate in a way that reduces a client's work rather than adding to it",
+        "Write down a process so a task can be repeated identically"
+      ],
+      "notes": "Clients do not hire software knowledge. They hire someone who removes work from their day, and the skills that do that are mostly not technical.\n\nCOMMUNICATION, and specifically communication that COSTS THE CLIENT NOTHING. Confirm when you receive a task. Say when it will be done. Say immediately if it will not be. Ask questions in one batch rather than six messages across an afternoon. A client who has to chase you, or who gets interrupted eleven times, is doing work — which is exactly what they paid you to remove.\n\nACCURACY. In data work, wrong is worse than slow. A spreadsheet with three bad phone numbers is worse than no spreadsheet, because nobody knows which three. Build the habit of checking your own work before it leaves you.\n\nFOLLOWING INSTRUCTIONS EXACTLY. If they ask for the file named a certain way, name it that way. Beginners improve on instructions and think they are being helpful. They are creating a second version of a process the client already has.\n\nWRITING THINGS DOWN. When you work out how to do a recurring task, write the steps. This is the highest-value habit in the whole course: it makes you consistent, it makes you faster, it means you can hand work over when you grow, and it is the beginning of charging for a system rather than for hours.\n\nBASIC TOOL LITERACY: spreadsheets, shared documents, a shared drive, a scheduling tool, a messaging tool. Enough to be useful, learned properly rather than broadly.\n\nADDITION BEYOND THE VIDEO — the skill that is nearly invisible and most valuable: ANTICIPATION. Noticing that the meeting has no agenda and drafting one. Noticing that a form keeps producing the same error and saying so. The VA who spots the thing before being asked stops being a cost the client thinks about and becomes someone they cannot easily replace. That is what converts a trial into a retainer, and no tutorial can hand it to you — it comes from paying attention to the business rather than only to the task.",
+      "practice": "Take a task you already do for anyone, paid or not, and write it as a numbered procedure precise enough that a stranger could follow it and get the same result. Then give it to someone and watch them try, without helping. Every place they hesitate is a step you left out. Fix it. That document is the first item in what will become your working system.",
+      "quiz": [
+        {
+          "question": "Why does batching questions matter?",
+          "options": [
+            "Interrupting the client repeatedly is work — the thing they paid you to remove",
+            "It makes you look more competent",
+            "Fewer messages cost less data",
+            "Clients dislike being asked questions"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What is the highest-value habit for a growing VA?",
+          "options": [
+            "Writing recurring tasks down as repeatable procedures",
+            "Learning more software",
+            "Replying faster than anyone else",
+            "Offering the widest range of services"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "938e3df6-3903-4856-9d96-baf9ae19cce5",
+      "title": "Simple Excel Data Entry Work Form Tutorial",
+      "objectives": [
+        "Enter data accurately and check it before delivering",
+        "Set up a sheet so wrong entries are hard to make",
+        "Keep formatting consistent so the data is actually usable"
+      ],
+      "notes": "Data entry looks like the simplest work available and is the easiest to do badly. What a client is buying is not typing. It is TRUSTWORTHY DATA — a file they can act on without checking.\n\nCONSISTENCY IS THE WHOLE JOB. One date written 03/04/2026 and another 3 April 2026 makes a column that cannot be sorted. Phone numbers as 0712345678, +254712345678 and 254 712 345 678 cannot be matched or messaged in bulk. Agree the format for every column before you start, write it at the top of the sheet, and never vary it.\n\nMAKE MISTAKES HARD TO MAKE. Use the spreadsheet against yourself: data validation to restrict a column to a list or a date, a dropdown instead of free typing for anything with fixed options, freeze the header row so you never enter a value in the wrong column, and a duplicate check on whatever should be unique. Ten minutes of setup removes an entire class of error from a week of work.\n\nCHECK BEFORE YOU DELIVER. Sort each column and look at the top and bottom — errors surface at the extremes. Filter for blanks. Spot-check ten random rows against the source. On anything critical, the professional method is DOUBLE ENTRY: enter it twice, compare the two, and investigate every difference. Slow, and the reason banks do it.\n\nNEVER OVERWRITE THE SOURCE. Keep the original file untouched and work in a copy. You cannot undo your way out of a save from yesterday.\n\nADDITION BEYOND THE VIDEO — two things that earn money here. First, this work is bid on globally and the cheapest typist always exists, so do not compete on speed alone; compete on a clean, validated, correctly formatted file that needs no checking, and say that is what you deliver. Second, watch for the task that repeats. When the same entry job comes every week, that is a monthly arrangement waiting to be proposed — and it is also the moment to build a template with validation already in place, so the same fee takes less of your time every month.",
+      "practice": "Take any list of at least thirty rows — contacts, stock, expenses — and build it properly: agreed formats written at the top, validation on at least two columns, a dropdown on one, frozen headers, and a duplicate check. Then deliberately try to enter three bad values and confirm the sheet stops you. Finally, verify the whole thing by sorting each column and spot-checking ten rows.",
+      "quiz": [
+        {
+          "question": "What is a client actually buying in a data entry job?",
+          "options": [
+            "Trustworthy data they can act on without checking it",
+            "The fastest possible typing",
+            "The lowest price per row",
+            "A large volume of rows"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What is double entry and when is it used?",
+          "options": [
+            "Entering data twice and investigating every difference — used where accuracy is critical",
+            "Entering data in two files as a backup",
+            "Typing each row twice to build speed",
+            "Recording both a date and a time for each row"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "85cc8536-7f23-4980-9f1d-0592367fd2bc",
+      "title": "Trello Tutorial for Virtual Assistants",
+      "objectives": [
+        "Track work on a board so nothing is lost and the client can see progress",
+        "Set up a board that answers a client's questions without them asking",
+        "Keep one system rather than several half-used ones"
+      ],
+      "notes": "Once you have more than a few tasks, memory and a chat thread stop working. A board is the cheapest fix: columns for stages, a card per task, moved across as it progresses.\n\nA structure that works for almost any VA: TO DO, DOING, WAITING ON CLIENT, DONE. That third column is the one beginners leave out and the one that saves you. It shows, without argument, exactly what is blocked on the client and since when — which is how you answer 'why is this not finished' calmly and with evidence.\n\nWhat belongs on a card: what the task actually is, when it is due, and any link or file needed to do it. Then put the decisions in the comments as they happen. Six weeks later, when the client asks why something was done a particular way, the answer is on the card rather than lost in a WhatsApp thread.\n\nSHARE THE BOARD WITH THE CLIENT. It feels like exposure and it is the opposite: they can see progress whenever they wonder, so they stop asking, and you stop writing status updates. That is less work for both of you.\n\nONE SYSTEM, NOT THREE. Half your tasks on a board, some in a notebook and the rest in your head is worse than any one of them alone. Pick one, put everything in it. And if a client already uses a different tool, use theirs — arriving with your own preferred system and asking them to adopt it is a beginner move.\n\nADDITION BEYOND THE VIDEO — these boards sync constantly, which uses data and needs a connection. Learn what your tool does offline before you rely on it, and keep a plain written list of today's tasks as a fallback. Also: at the end of each week, look at DONE. It is your record of what you actually delivered, which is what you use when you renew a contract, raise a rate, or ask for a referral — and it is the honest answer when you feel you achieved nothing this week.",
+      "practice": "Set up one board with the four columns and put every task you currently owe anyone on it — work, personal, everything. Notice how many were only in your head. Run it for one week, moving cards as things change and putting decisions in the comments, then look at DONE on Friday and write down what you delivered.",
+      "quiz": [
+        {
+          "question": "Why is a 'waiting on client' column valuable?",
+          "options": [
+            "It shows exactly what is blocked on the client and since when, without argument",
+            "It makes the board look fuller",
+            "It reminds you to chase the client daily",
+            "It separates urgent from non-urgent work"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "A client already uses a different task tool. What should you do?",
+          "options": [
+            "Use theirs — asking a client to adopt your preferred system is a beginner move",
+            "Insist on your own, since you know it best",
+            "Run both in parallel",
+            "Keep your tasks in chat instead"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "93798177-510c-4dbe-8d2b-42151a3db531",
+      "title": "Managing Client Emails & Calendars as a Virtual Assistant",
+      "objectives": [
+        "Take over an inbox without losing anything important",
+        "Schedule across time zones without double-booking",
+        "Write on someone else's behalf in their voice"
+      ],
+      "notes": "Inbox and calendar are the classic VA jobs, and they are trust work: you are inside someone's correspondence and their day.\n\nTAKING OVER AN INBOX. Do not start deleting. Start by sorting into what you can answer yourself, what needs the client, and what can be filed. Agree those three categories with them first, and agree a rule for anything you are unsure about — usually 'flag it and ask'. For the first two weeks, show them your replies before sending. It feels slow and it is how you learn their judgement, which is what they are actually delegating.\n\nWRITING AS SOMEBODY ELSE. Read twenty of their sent emails before you write one. Notice length, greeting, sign-off, how formal, whether they use exclamation marks. Then match it. Clients notice immediately when an email does not sound like them, and it is the fastest way to lose an inbox.\n\nCALENDARS ACROSS TIME ZONES. This is where real damage happens, and the rule is absolute: ALWAYS CONFIRM THE TIME IN THE OTHER PERSON'S ZONE, in writing. 'Tuesday 4pm your time, which is 11pm here' leaves no room for the mistake. Set your calendar to show a second time zone for the client's location. Remember that many countries change their clocks twice a year and Kenya does not, so the gap between you and a client in Europe or North America moves by an hour in spring and autumn — a meeting that was fine in July is wrong in November. And watch public holidays on both sides.\n\nPROTECT THE CLIENT'S TIME. A calendar packed with no gaps is a calendar that fails at the first overrun. Leave space between meetings, and guard whatever block they say is for focused work.\n\nADDITION BEYOND THE VIDEO — the boundary that matters most: you are managing the inbox, not making the decisions in it. Anything committing money, agreeing terms, or answering a complaint goes to the client, every time, no matter how obvious the answer looks. And agree explicitly what happens to your access when the work ends. Handing back access cleanly is part of the job, and doing it well is remembered.",
+      "practice": "Take any inbox you control and sort a week of it into the three categories — answer, escalate, file. Time how long it takes and how many you were unsure about; those are the ones needing a rule. Then find two real time zones and write out three meeting confirmations stating both times explicitly, including one that crosses midnight.",
+      "quiz": [
+        {
+          "question": "How should a cross-time-zone meeting be confirmed?",
+          "options": [
+            "In writing, stating the time in both zones explicitly",
+            "In the client's zone only, since it is their meeting",
+            "In your own zone, since you are scheduling it",
+            "Using the calendar invite alone"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "An email needs a decision about money. What do you do?",
+          "options": [
+            "Escalate it to the client every time, however obvious the answer seems",
+            "Answer it if the amount is small",
+            "Answer it in the client's voice",
+            "File it until the client asks"
+          ],
+          "correct_index": 0
+        }
+      ]
+    }
+  ]
+}

@@ -718,10 +718,10 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 366. Six courses are now fully written:
+      **Bare-lesson count: 438 → 354. Seven courses are now fully written:
       `freelancing` (12 lessons), `presentation-design` (19),
-      `ai-tools` (16), `vibe-coding` (16), `video-editing` (12) and
-      `virtual-assistance-data-entry` (12).**
+      `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
+      `virtual-assistance-data-entry` (12) and `graphic-design` (18).**
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -850,10 +850,49 @@ custom authorization layer bolted on top.
       (question text, option text and order). That false alarm cost a
       round of investigation once; it should not cost another.
 
-      Order of attack for the rest: no wholly bare course remains with an
-      enrollment. The backlog is now partially bare courses at 12 bare
+      `graphic-design` was seventh and is complete at 18 of 18 (`0100`,
+      `0101`). Modules 3 and 4 were already written — colour, readability,
+      typography, layout, negative space, grids — so the new twelve build
+      on them: font pairing turns Module 3's "two fonts is plenty" into a
+      method, and the palette lesson turns its colour theory into roles
+      with assigned jobs.
+
+      The constraints named are the ones this market imposes and tutorials
+      never mention: small local printers on ordinary paper lose fine
+      detail and pale colours, WhatsApp compression breaks thin text and
+      gradients, phone screens in sun punish low contrast, and a logo must
+      survive a thermal receipt and a nineteen-pixel profile circle. Font
+      licensing, commercial-use limits on free-tier assets, and whether a
+      font renders Kiswahili characters are treated as delivery
+      requirements rather than footnotes. Print is presented as a service
+      to sell alongside the design — income no overseas competitor can
+      reach.
+
+      ### A rendering defect, found and fixed — migration `0099`
+
+      Lesson text renders as **plain text**, not markdown:
+
+          app/learn/[courseId]/[lessonId]/page.tsx:157
+          <p className="text-sm whitespace-pre-line">{lesson.notes}</p>
+
+      React escapes the string, so lessons written with markdown emphasis
+      were showing the markers to the learner — "**leading** is the space
+      between lines". 36 lessons across four paid courses were affected,
+      including Web Development, the platform's deepest course, and
+      Graphic Design, which carries a completion.
+
+      Checked before replacing: every affected field had an even number of
+      `**`, none contained `***`, and none matched a digit-`**`-digit
+      pattern, so no JavaScript exponent operator was caught. Only the
+      markers were removed.
+
+      **Write lesson text as plain prose.** Capitals for emphasis, blank
+      lines for structure. No `**`, no `#` headings, no markdown lists —
+      the page does not render them.
+
+      Order of attack for the rest: partially bare courses at 12 bare
       lessons each — `digital-marketing`, `copywriting-content-writing`,
-      `google-facebook-ads` and nine others.
+      `google-facebook-ads`, `social-media-management` and eight others.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

@@ -718,9 +718,10 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 378. Five courses are now fully written:
+      **Bare-lesson count: 438 → 366. Six courses are now fully written:
       `freelancing` (12 lessons), `presentation-design` (19),
-      `ai-tools` (16), `vibe-coding` (16) and `video-editing` (12).**
+      `ai-tools` (16), `vibe-coding` (16), `video-editing` (12) and
+      `virtual-assistance-data-entry` (12).**
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -820,9 +821,39 @@ custom authorization layer bolted on top.
       four Vibe Coding lessons, and the fingerprint check is what caught
       it.
 
-      Order of attack for the rest: wholly bare courses first, then the
-      partially bare ones. `virtual-assistance-data-entry` is next — 12 of
-      12 bare.
+      `virtual-assistance-data-entry` was sixth and is complete at 12 of
+      12 (`0097`, `0098`). Also wholly bare, also with a live enrollment.
+
+      This course sends a learner to work for strangers abroad, so the
+      notes carry what that actually requires from here. Kenya is UTC+3
+      and does not change its clocks, so the gap to a European or North
+      American client moves by an hour twice a year — a meeting that was
+      right in July is wrong in November. Cross-border payment costs money
+      and takes days, so it is part of the rate and is established before
+      the rate is agreed. A power cut is not an excuse a client accepts,
+      so the backup is arranged in advance. And the rate that matters is
+      what reaches you after the platform cut and the transfer, not the
+      quoted figure.
+
+      The protections are named rather than implied: a fee to start, an
+      open-ended unpaid trial, a client who will not say what the work is,
+      and anyone asking you to receive money and forward it on. The
+      defence taught is scope and rate in writing, then a small paid piece
+      before committing to a large one. Local clients are presented as a
+      real option rather than a consolation — shillings, no transfer cost,
+      no time-zone gap, and you can meet them in person.
+
+      **Verification widened.** Checks now cover all four written fields
+      rather than notes alone. `knowledge_check` cannot be compared by raw
+      md5 — Postgres normalises jsonb key order and whitespace, so a
+      literal hash never matches — and is compared semantically instead
+      (question text, option text and order). That false alarm cost a
+      round of investigation once; it should not cost another.
+
+      Order of attack for the rest: no wholly bare course remains with an
+      enrollment. The backlog is now partially bare courses at 12 bare
+      lessons each — `digital-marketing`, `copywriting-content-writing`,
+      `google-facebook-ads` and nine others.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

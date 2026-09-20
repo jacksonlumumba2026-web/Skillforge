@@ -718,11 +718,12 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 330. Nine courses are now fully written:
+      **Bare-lesson count: 438 → 318. Ten courses are now fully written:
       `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
-      `social-media-management` (16) and `digital-marketing` (16).**
+      `social-media-management` (16), `digital-marketing` (16) and
+      `copywriting-content-writing` (16).**
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -940,10 +941,33 @@ custom authorization layer bolted on top.
       created; and the marketer's fee is separated from ad spend in
       writing, with the budget taken in advance and never self-funded.
 
+      `copywriting-content-writing` was tenth and is complete at 16 of 16
+      (`0106`, `0107`). Modules 3 and 4 were already written — the named
+      reader, how people read on screens, plain language.
+
+      Three things the source videos do not say. **Imported persuasion
+      backfires here**: countdown timers, manufactured scarcity and
+      exaggerated promises come from a market that rewards pressure, and
+      they read as untrustworthy where buying runs partly on personal
+      reputation. **WhatsApp and SMS are taught as paid copy formats**,
+      because they are the real sales channel for many businesses and no
+      international course lists them — the first line of a WhatsApp
+      message carries the whole weight, since that is what shows in the
+      notification. And the course names **the most reliable content niche
+      available to a Kenyan writer**: questions whose current top results
+      were written by people who have never been here, with converted
+      prices and foreign procedures.
+
+      This is also the course where AI drafting bites, so the position is
+      stated plainly: a legitimate tool most working writers use, but raw
+      output carries exactly the faults the mistakes lesson lists, and
+      what the writer is paid for is judgement. A writer asked about it
+      should answer matter-of-factly — evasiveness is what loses trust.
+
       Order of attack for the rest: partially bare courses at 12 bare
-      lessons each — `copywriting-content-writing`, `google-facebook-ads`
-      (carries completions, so baseline recorded and re-checked),
-      `ecommerce-online-selling`, `seo-search-engine-optimization` and six
+      lessons each — `google-facebook-ads` (carries completions, so
+      baseline recorded and re-checked), `ecommerce-online-selling`,
+      `seo-search-engine-optimization`, `instagram-tiktok-growth` and five
       others.
 
       This also resolves something the sourcing work could not. Freelancing

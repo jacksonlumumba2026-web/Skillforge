@@ -1,0 +1,203 @@
+{
+  "course": "copywriting-content-writing",
+  "lessons": [
+    {
+      "id": "fea570c7-c21e-4818-900e-5f814dfabcaf",
+      "title": "10 Huge Copywriting Mistakes That Kill Sales Page Conversions",
+      "objectives": [
+        "Recognise the faults that stop copy converting",
+        "Edit your own work against a checklist instead of by feel",
+        "Diagnose a page that is read but does not sell"
+      ],
+      "notes": "The faults below are common, specific, and all fixable in an afternoon once you can see them.\n\nTALKING ABOUT YOURSELF. Counted in the fundamentals lesson; still the commonest fault in practice.\n\nNO SINGLE CLEAR ACTION. Three buttons doing different things means the reader chooses none.\n\nVAGUE CLAIMS. 'High quality', 'affordable', 'world-class'. Every competitor says the same words, so they carry no information. Replace each with something checkable.\n\nNO PROOF. A page of assertions with nothing to believe them on.\n\nBURYING THE PRICE, or hiding it entirely. Readers who cannot find a price assume it is bad news and leave. Stating it filters out the wrong people, which is a benefit.\n\nWRITING FOR EVERYONE, so it persuades nobody.\n\nTOO MUCH BEFORE THE POINT. Three paragraphs of warm-up before the offer appears. Cut to it.\n\nJARGON THE READER DOES NOT USE, which Module 4 covered and which reappears whenever the writer wants to sound expert.\n\nNO OBJECTION HANDLING, so the reader resolves their doubts alone.\n\nA WEAK ENDING that trails off instead of asking.\n\nDIAGNOSING A PAGE THAT IS READ BUT DOES NOT SELL, which is the useful skill here: if people arrive and leave immediately, the headline promised something the page does not deliver. If they read and do not act, the problem is proof or price or the objections. If they act and then do not complete, the problem is friction — a slow form, an unexpected cost, or a payment method they do not have.\n\nADDITION BEYOND THE VIDEO — a caution on using AI to draft. It is a legitimate tool and most working writers use it, but raw AI output has exactly the faults on this list: vague claims, no proof, no local detail, generic reassurance, and a register that reads as foreign here. Clients are increasingly able to spot it, and sending it unedited is how a writer loses an account. What you are paid for is judgement — the real customer phrases, the checked price, the objection you know this audience has, the cut. Use the tool to get past the blank page, then do the work that makes it worth money.",
+      "practice": "Take one real sales page or product listing - your own or a business you know - and mark it against all ten faults, counting each occurrence. Fix every one. Then run the diagnosis: decide from the evidence whether its problem is the headline promise, the proof, or friction at the point of action, and write one sentence saying which and why.",
+      "quiz": [
+        {
+          "question": "People read the page but do not act. Where is the problem?",
+          "options": [
+            "Proof, price, or unanswered objections",
+            "The headline",
+            "The page loading speed",
+            "The payment method"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What is wrong with sending raw AI-drafted copy to a client?",
+          "options": [
+            "It carries exactly these faults - vague claims, no proof, no local detail - and clients can spot it",
+            "It is not permitted by most contracts",
+            "It takes longer than writing from scratch",
+            "It cannot be edited afterwards"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "14b0097f-2606-4f7c-a91d-b3768547c30f",
+      "title": "Use These Blog Post Templates to Write Better SEO Content",
+      "objectives": [
+        "Structure an article so it answers a search properly",
+        "Write for a reader and a search engine at the same time",
+        "Use a template without producing something formulaic"
+      ],
+      "notes": "An article that ranks and an article worth reading are the same article, because a search engine is trying to return what the reader wanted. Write the best answer to a real question and the structure follows.\n\nSTART FROM ONE QUESTION. One article, one question, answered thoroughly. An article covering four questions ranks for none and satisfies nobody.\n\nANSWER IT IN THE FIRST PARAGRAPH. Do not save the answer for the end. Someone searching 'how much does a business permit cost' wants the figure immediately; give it, then explain the detail. Withholding the answer to keep people reading does the opposite.\n\nSTRUCTURES THAT WORK: the how-to, as ordered steps with what is needed first; the comparison, with a table and a recommendation; the list, where each item genuinely differs; and the explainer, which defines, gives an example, then covers the exceptions.\n\nHEADINGS AS QUESTIONS. People scan. If each heading is a question the reader has, they find their section instantly, and it maps neatly onto how people search.\n\nA TEMPLATE IS A SKELETON, NOT A STYLE. Use it for structure and keep your own voice, specific examples and real numbers in the flesh. Formulaic writing is what happens when the template supplies the sentences too.\n\nADDITION BEYOND THE VIDEO — where a Kenyan writer has an unfair advantage. Most articles ranking for local questions were written by people who have never been here: currency conversions rather than real prices, foreign regulations, and advice that assumes infrastructure that is not present. An article that gives the actual price in shillings, names the actual office, and describes what really happens will outrank and out-serve them, because it is genuinely the better answer. Find questions where the existing results are foreign and vague, and answer them properly — that is the most reliable content niche available to you, and it pays because businesses need it.",
+      "practice": "Choose one question people in your area genuinely search for and read the current top three results. Write down everything they get wrong or leave out for a Kenyan reader - prices, places, procedures. Then write the article that is actually the best answer, giving the answer in the first paragraph and using headings that are the questions readers have.",
+      "quiz": [
+        {
+          "question": "Where should an article answer the question it is about?",
+          "options": [
+            "In the first paragraph, then explain the detail",
+            "At the end, so people read the whole piece",
+            "In the middle, after context",
+            "In the conclusion only"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What is the most reliable content niche for a Kenyan writer?",
+          "options": [
+            "Questions where existing results were written by people who have never been here and are vague or wrong",
+            "Highly competitive international topics",
+            "Anything with high search volume",
+            "Topics with no existing articles"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "9be967b2-04b1-46cb-8274-37c97b9d735c",
+      "title": "Writing Better Copy With Thorough Copywriting Briefs",
+      "objectives": [
+        "Get the information you need before writing a word",
+        "Turn a vague request into a defined piece of work",
+        "Use the brief to prevent disputes about revisions"
+      ],
+      "notes": "Bad copy is usually a briefing failure, not a writing failure. Getting the brief right is the highest-return half hour in the job.\n\nWHAT TO ASK, every time:\n- What is this for, and what should the reader DO after reading it?\n- Who is the reader? Module 3 did this work; ask the client who actually buys rather than who they wish bought.\n- What are we selling, exactly, and at what price?\n- Why should someone choose this over the alternative? If the client cannot answer, that is the first problem to solve, and answering it is often the most valuable thing you do.\n- What do customers ask before buying? These become the objections you answer.\n- What must be included — a phone number, a legal line, a guarantee, an exact product name.\n- Where will it appear, and how long should it be?\n- Who approves it, and by when?\n\nGET THE MATERIAL, NOT JUST THE ANSWERS. Their existing copy, real customer messages, photographs, the price list. Ten real customer messages are worth more than any description of the audience.\n\nTALK TO A CUSTOMER IF YOU CAN. One ten-minute conversation gives you phrases you would never invent, and using a customer's own words is the closest thing to a guarantee that copy will land.\n\nCONFIRM IT IN WRITING, summarised back, before starting. This is what prevents a dispute later: the argument surfaces at the brief, when it costs nothing.\n\nADDITION BEYOND THE VIDEO — the commercial lines to settle in the same message. How many rounds of revision are included — two is standard, and without a number stated, revisions continue until someone gives up. Whether you are writing from scratch or editing existing text, because those are different jobs at different prices. And who owns the copy when it is paid for: normally the client, with your right to show it as a sample, which should be agreed in one sentence rather than assumed. Where a client briefs by voice note, listen, write it back as a numbered list, and get a yes. Whatever is not on that list is not in the job.",
+      "practice": "Write your brief form once, as a reusable list of questions. Use it on a real request, however small, and note how many answers you did not have before asking. Then ask the client for ten real customer messages and read them before writing anything. Finish by sending the brief back as a numbered summary with the revision count and deadline, and get a yes in writing.",
+      "quiz": [
+        {
+          "question": "What is the usual cause of bad copy?",
+          "options": [
+            "A briefing failure rather than a writing failure",
+            "Insufficient writing skill",
+            "Too little time to write",
+            "The wrong format chosen"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why confirm the brief in writing before starting?",
+          "options": [
+            "Any disagreement surfaces at the brief, when it costs nothing to resolve",
+            "It is required for payment",
+            "It shortens the writing time",
+            "Clients expect formal documents"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "81af1621-f87c-4853-88f6-ee833ce47002",
+      "title": "How to Structure Your Copy for Every Project",
+      "objectives": [
+        "Apply a repeatable process from brief to delivery",
+        "Outline before writing so structural problems surface early",
+        "Deliver copy in a form the client can actually use"
+      ],
+      "notes": "A process is what lets you write well on a day you do not feel like it, which is most days.\n\nTHE PROCESS:\n1. BRIEF, from the last lesson.\n2. RESEARCH. The product, the competitors, and above all the customer's own words.\n3. OUTLINE. Headline, each section in order, one line on what each does, and where the action sits. Show this to the client before writing prose — restructuring an outline takes ten minutes, restructuring a finished draft takes an afternoon and feels like an argument.\n4. DRAFT FAST. Get it all down badly.\n5. EDIT COLD, ideally the next morning. Cut a third, check every objection is answered, read it aloud.\n6. CHECK THE FACTS. Every price, phone number, date and name against the source, not from memory. A wrong price in published copy is your mistake and the client's cost.\n7. DELIVER PROPERLY.\n\nDELIVERING PROPERLY MATTERS MORE THAN BEGINNERS THINK. Label every section so the client knows what goes where. Where there are variants, mark them clearly. Say what you assumed and why you made any notable choice — two sentences of reasoning turns 'I do not like it' into a conversation about the brief. Send it in a format they can open on a phone.\n\nADDITION BEYOND THE VIDEO — handling feedback, which is where writers lose clients they should have kept. Take all the notes for a round together rather than reacting to messages as they arrive. Look for the problem behind the request: 'make it punchier' usually means it is too long or the benefit is buried. Where you disagree, say so once with a reason tied to the brief, then do what they ask if they still want it — it is their business and their money. And keep the version they approved. When someone edits your copy afterwards and it stops working, you will want to be able to show what was delivered, without argument.",
+      "practice": "Run one piece of copy through all seven steps, writing down how long each takes. Send the outline for approval before writing prose and note whether anything changed at that stage - it usually does, and cheaply. At delivery, label every section and add two sentences explaining your main choice. Keep the approved version somewhere safe.",
+      "quiz": [
+        {
+          "question": "Why show an outline before writing prose?",
+          "options": [
+            "Restructuring an outline takes minutes; restructuring a finished draft takes an afternoon",
+            "Clients prefer to see progress early",
+            "It reduces the number of revisions allowed",
+            "Outlines are easier to price"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "A client says 'make it punchier'. What is the useful reading?",
+          "options": [
+            "It is probably too long or the benefit is buried",
+            "They want more exclamation marks",
+            "They dislike the product description",
+            "The headline should be shorter"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "0a27331f-bfcf-4765-93ed-7b8a51dc77f8",
+      "title": "How to Get Freelance Copywriting Clients — 4 Strategies",
+      "objectives": [
+        "Find writing work without competing globally on price",
+        "Approach a business with rewritten work rather than an offer",
+        "Price writing so it is worth doing"
+      ],
+      "notes": "Writing has one of the most crowded entry markets in this catalogue, and almost all of that crowd is competing on price. The way out is not to join them.\n\nSPECIALISE. 'Copywriter' is forgettable. 'I write product listings for online clothing shops' is memorable, referable, and gets faster every time because the problems repeat. Pick a type of business or a type of copy, and you stop competing with everyone.\n\nLEAD WITH REWRITTEN WORK. Take a real business's actual copy — their listing, their page, their bio — rewrite it properly, and send it to them finished. You have demonstrated the skill, removed the risk, and made the improvement visible. Three of these beat a hundred applications, and it is the only approach that works reliably with no reputation.\n\nWHERE THE WORK IS, near you: online shops with poorly written listings, which is most of them; businesses with a page that does not say what they sell; anyone running ads with weak copy; agencies who need overflow writers; and other freelancers — designers and web builders whose clients always need words.\n\nPRICING. Per project, not per word. Per word rewards volume and punishes the editing that makes copy good; per project is honest about what is being bought. Count the brief, the research, the drafting, the revisions and the client messages when you set the number. Set a floor from what you need monthly divided by what you can genuinely deliver, and do not quote below it. The cheapest writer in any market gets the most difficult clients, which is a rule with very few exceptions.\n\nADDITION BEYOND THE VIDEO — the practical path here. Local businesses pay in shillings with no transfer cost and are reachable in person, which is an advantage over anyone bidding from abroad; a shop owner who can meet you and see your work will choose you over a stranger with a better profile. International platforms pay more per piece but you start with no history among thousands, so treat them as a later step, once you have real samples and a specialisation. And be explicit about AI: if a client asks, say plainly how you work — that you use it as a tool and that the judgement, the research and the editing are yours. Writers who are evasive about it lose trust; writers who are matter-of-fact keep the work.",
+      "practice": "Pick three online shops or businesses whose written copy you can actually see and improve. Rewrite one real piece for each - a listing, a page section, a bio - and send it finished with one sentence on what you changed and why. Also write your one-line specialisation and calculate your price floor before you quote anyone.",
+      "quiz": [
+        {
+          "question": "What is the most reliable approach with no reputation?",
+          "options": [
+            "Rewrite a real business's actual copy and send it to them finished",
+            "Apply to many listings on freelance platforms",
+            "Offer the lowest rate available",
+            "Build a large personal following first"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why price per project rather than per word?",
+          "options": [
+            "Per word rewards volume and punishes the editing that makes copy good",
+            "Clients dislike word counts",
+            "Projects are easier to invoice",
+            "Per-word rates are always lower"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "01c9057b-20b0-4439-a49a-f957b989c71c",
+      "title": "Start a Copywriting Portfolio from Scratch with No Experience",
+      "objectives": [
+        "Build samples before any client has paid you",
+        "Present work so the thinking is visible, not just the words",
+        "Choose what to leave out"
+      ],
+      "notes": "Nobody asks whether you were paid for a sample. They ask whether it is good. So write the samples.\n\nWHAT TO MAKE, in order of usefulness:\n- REWRITES of real copy that exists badly, shown as before and after. The comparison does the persuading for you.\n- SPEC PIECES for real businesses that do not know you wrote them: a product listing, a page section, an email.\n- REAL WORK done free for a church, school, sacco or family business — which has the advantage of having actually been published.\n\nSHOW THE THINKING. For each sample, three or four lines: who the reader was, what the problem was, what you decided and why. 'The original listing gave dimensions but never said what fits inside it, so buyers were asking in the comments. I led with what it holds and moved the measurements below.' That paragraph is what tells a client you will solve their problem. Most beginner portfolios are a wall of text samples with no reasoning and they all look the same.\n\nSIX PIECES, NOT TWENTY. You are judged on the weakest one. A portfolio improves by deletion more often than by addition.\n\nSHOW RANGE WITHIN A SPECIALISM, not range across everything. Four listings, an email and a page for the same kind of business is a stronger signal than one each of six unrelated things.\n\nBE HONEST about what was a real job and what was written on spec. Say 'spec piece' where it is one. Getting caught inflating is far more expensive than the work it wins.\n\nADDITION BEYOND THE VIDEO — where to put it, and the constraint that decides. It does not need to be a website. A well-organised PDF under a few megabytes opens on any phone and sends over WhatsApp, which is how most local clients will actually look at it. Whatever you use, it must load on a modest connection and be sendable in one message. And put the before-and-after rewrites first: they are the fastest proof of value a reader can absorb, and most people will not reach page three.",
+      "practice": "Build six pieces this month within one specialism: three before-and-after rewrites of real copy, two spec pieces, and one thing actually published for a real organisation. Write three lines of reasoning for each - reader, problem, decision. Assemble it as a PDF under five megabytes, send it to one person, then delete your weakest piece before sending it to the next.",
+      "quiz": [
+        {
+          "question": "Which sample type persuades fastest?",
+          "options": [
+            "A before-and-after rewrite, where the comparison does the persuading",
+            "A long spec sales page",
+            "A list of topics you can write about",
+            "A published article"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "How should range be shown in a portfolio?",
+          "options": [
+            "Range within one specialism, not one piece each of six unrelated things",
+            "As many different formats as possible",
+            "By covering every industry",
+            "With the longest pieces first"
+          ],
+          "correct_index": 0
+        }
+      ]
+    }
+  ]
+}

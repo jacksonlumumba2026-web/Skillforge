@@ -1,0 +1,203 @@
+{
+  "course": "digital-marketing",
+  "lessons": [
+    {
+      "id": "20d9ac74-9c5d-42ca-8e6d-34d51374a0fa",
+      "title": "Digital Marketing 101 - A Complete Beginner's Guide",
+      "objectives": [
+        "Name the main channels and what each one is actually good at",
+        "Tell paid reach apart from earned reach and know what each costs",
+        "Choose a channel from the business goal rather than from habit"
+      ],
+      "notes": "Digital marketing is getting the right people to notice a business and then to act. The channels are just the routes, and each is good at something different.\n\nSEARCH. Someone typing 'plumber Kasarani' has already decided to buy. This is the highest-intent traffic there is, which is why it is the most competitive and often the most expensive.\n\nSOCIAL. People are not looking for you; you are interrupting them. Good for making a business known and for products people can be persuaded to want. Poor for urgent needs.\n\nEMAIL AND MESSAGING. Talking to people who already gave you permission. Cheapest per person by a wide margin and the most neglected.\n\nCONTENT. Something useful that draws people in and keeps working for months after it is published. Slow to start, compounding afterwards.\n\nPAID VERSUS EARNED. Paid reach is instant, controllable and stops the moment you stop paying. Earned reach — search rankings, shares, word of mouth — is slow, uncontrollable and keeps working. Every serious plan uses both: paid to find out quickly what message works, earned to make it durable.\n\nCHOOSE FROM THE GOAL. A business needing sales this month runs ads to people with intent. A business building something over a year invests in content and search. Running the wrong one for your goal is how budgets get wasted while everything looks busy.\n\nADDITION BEYOND THE VIDEO — the shape of this is different here in one important way: the conversion usually happens in a CONVERSATION, not on a website. An ad's job is frequently to start a WhatsApp chat or a phone call, where the actual selling happens, and payment lands on M-Pesa rather than a card checkout. International courses assume a website with a card payment at the end, and building that for a small Kenyan business is often solving a problem it does not have. Judge a campaign on enquiries and sales, not on website visits — and make sure whoever answers that WhatsApp number knows the campaign is running.",
+      "practice": "Take one real business and write what it needs in the next month: to be known, to get enquiries, or to sell something specific. Then choose one channel that matches and one that does not, and write a sentence on why each would or would not work. Finish by writing down where the sale would actually close - website, WhatsApp, phone, or in person.",
+      "quiz": [
+        {
+          "question": "What distinguishes search traffic from social traffic?",
+          "options": [
+            "Search reaches people who have already decided to buy; social interrupts people who were not looking",
+            "Search is always cheaper",
+            "Social reaches more people",
+            "Search requires no budget"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "For many small businesses here, where does the sale actually close?",
+          "options": [
+            "In a WhatsApp conversation or phone call, with payment by M-Pesa",
+            "On a website with a card checkout",
+            "In the comments of the advert",
+            "By email"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "4bdfc6bd-1f3f-4a52-aef5-2f51ca79bbab",
+      "title": "The ONLY Video You Need To Understand SEO",
+      "objectives": [
+        "Explain what search engines are trying to do and why that decides everything",
+        "Name the three things SEO is actually made of",
+        "Set an honest expectation of how long it takes"
+      ],
+      "notes": "SEO is making a business findable when someone searches for what it sells. The whole field follows from one fact: a search engine's business is returning the result that best answers the question. Work out what a searcher actually wants and give it to them better than the current results, and you are doing SEO. Everything else is detail.\n\nTHE THREE PARTS:\n\nTECHNICAL. Can the search engine reach and read the pages, and do they load quickly? On a market where most people are on phones and modest connections, speed is not a refinement — a slow page loses the visitor before the content matters.\n\nCONTENT. Pages that answer real questions, using the words people actually type. Which is the part that matters most and the part beginners skip in favour of tricks.\n\nAUTHORITY. Other sites referring to yours. Slow to build, and the single hardest part to fake — attempts to buy it are the commonest way small sites get penalised.\n\nKEYWORDS ARE QUESTIONS. Do not think in words, think in what someone is trying to achieve. 'Best laptop for college Kenya' is a person mid-decision. Answer that question properly and the ranking follows.\n\nHOW LONG IT TAKES: months, not weeks. Anyone promising page one in a fortnight is selling something. Tell a client that plainly at the start, because the alternative is losing them at week six having promised what nobody can deliver.\n\nADDITION BEYOND THE VIDEO — two things shaped by this market. First, LOCAL SEARCH is where most small businesses actually win: a properly filled-out business profile with the right location, real opening hours, photographs and reviews will out-earn any amount of blog writing for a shop, a clinic or a garage. Set that up before anything else. Second, tactics chase algorithm changes and date fast, so learn the durable question — what does this searcher want, and is this genuinely the best answer? — because that has survived every update there has ever been.",
+      "practice": "Pick one local business and write the ten questions a customer would actually type before buying from it. Search three of them yourself and look at what ranks - note what those pages have that this business does not. Then check whether the business has a complete local profile with hours, location, photographs and reviews. That is usually the largest available win.",
+      "quiz": [
+        {
+          "question": "What is the underlying logic of all SEO?",
+          "options": [
+            "Search engines return the result that best answers the question, so be that answer",
+            "Using the right keywords enough times",
+            "Building as many links as possible",
+            "Publishing frequently"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What is usually the biggest SEO win for a local shop or clinic?",
+          "options": [
+            "A complete local business profile with hours, location, photographs and reviews",
+            "A blog updated weekly",
+            "Buying links from other sites",
+            "Using more keywords on the homepage"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "d44dfa18-f59a-4b9b-a897-5b41e21f7224",
+      "title": "The BEST Facebook Ads Tutorial for Beginners",
+      "objectives": [
+        "Set up an advert with a goal, an audience and a budget you have chosen deliberately",
+        "Judge an advert by cost per result rather than by likes",
+        "Avoid the beginner mistakes that waste a small budget fastest"
+      ],
+      "notes": "Paid social lets you put a message in front of people who have never heard of the business, today, for money. That is its strength and its danger — it spends whether or not it is working.\n\nTHE THREE DECISIONS that matter more than any setting:\n\nWHAT RESULT YOU WANT. Messages, calls, visits to a page, a form filled. Choose one, and choose the one closest to money. Choosing 'engagement' because the numbers look good is how beginners produce campaigns that are busy and worthless.\n\nWHO SEES IT. Modules 3 and 4 already did the audience work — use it. Start reasonably broad, because an audience narrowed too far on a small budget never gathers enough data to learn from.\n\nWHAT IT SAYS. The creative decides most of the outcome. Stop the scroll in the first second, say one thing, make the next step obvious.\n\nJUDGE BY COST PER RESULT. Not likes, not reach. What did one enquiry cost? Then compare that with what a customer is worth. An enquiry at KSh 200 is a disaster for a business selling KSh 150 items and a bargain for one selling KSh 20,000 services. The number is meaningless without that comparison.\n\nTHE MISTAKES THAT BURN A SMALL BUDGET: changing everything daily so nothing ever gathers enough data; running one advert with no alternative to compare it against; sending people to a slow page or an unanswered WhatsApp number; and spending on people who cannot buy — the wrong town, the wrong language, the wrong price bracket.\n\nADDITION BEYOND THE VIDEO — the practical barriers here. Ad accounts are billed in foreign currency and usually require a card, which is a genuine obstacle; sort that out before promising a client a campaign. Budgets are small, so treat the first spend as buying information rather than sales: a modest amount across two or three different messages tells you which one works, and then you put the rest behind the winner. And check the destination before you spend a shilling — an advert pointing at a WhatsApp number nobody answers by evening is money set on fire.",
+      "practice": "Set up one real campaign with the smallest budget you can honestly test with. Write three different first lines and run them against the same audience. Leave it alone for several days - do not adjust it daily. Then compare cost per enquiry across the three, and work out what one customer is worth to that business so you can say whether the result was good.",
+      "quiz": [
+        {
+          "question": "How should an advert be judged?",
+          "options": [
+            "Cost per result, compared against what a customer is worth",
+            "Likes and comments",
+            "Total reach",
+            "How many people saw it in the first hour"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What should a first small budget be treated as?",
+          "options": [
+            "Buying information about which message works, before putting the rest behind the winner",
+            "An attempt to make immediate sales",
+            "A test of the audience size",
+            "A way to gain followers"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "46fed459-94a7-4120-b430-39e3ad5a0d5b",
+      "title": "HubSpot Academy: Content Marketing Framework",
+      "objectives": [
+        "Plan content against what customers are trying to decide",
+        "Get repeated value out of one piece of work",
+        "Judge content by whether it moves someone closer to buying"
+      ],
+      "notes": "Content marketing is being useful in public so that people come to you. It is the slow half of the work and it compounds, which is the opposite of advertising.\n\nSTART FROM QUESTIONS, NOT FROM TOPICS. Every customer asks the same things before buying: does this solve my problem, how much, why you rather than the other one, what if it goes wrong. Answer those honestly and publicly and you have built most of what the business needs. The questions are already sitting in the messages and comments.\n\nMATCH CONTENT TO THE STAGE. Module 4 covered the funnel; this is where it becomes a plan. Someone who does not yet know they have a problem needs something different from someone comparing two suppliers. Publishing only for people already deciding means nobody discovers you; publishing only introductions means nobody ever buys.\n\nMAKE ONE PIECE INTO MANY. One good answer becomes a post, a short video, a Status update, a section of the website and an answer you paste into WhatsApp for the next year. Beginners write a new thing every time and exhaust themselves; the work is in the making, so take the return.\n\nJUDGE IT PROPERLY. Content that is read and changes nothing is a hobby. The measure is whether it moves someone closer — enquiries, saves, people arriving already knowing what you charge.\n\nADDITION BEYOND THE VIDEO — two adaptations that matter here. Content does not require a blog. For most small businesses the highest-value content is a clear price list, a set of photographs of real work, and honest answers to the three questions every customer asks, published where people already are — WhatsApp Business, a Facebook page, a pinned post. Second, PRICE TRANSPARENCY is itself content: many businesses hide prices and lose people who will not ask. Publishing them filters out those who cannot afford it and brings the rest already half-decided, which makes every conversation shorter.",
+      "practice": "List the ten questions customers ask a real business before buying, taken from its actual messages rather than imagined. Answer the three most common ones properly, in writing. Then turn one of those answers into four things: a post, a short video script, a WhatsApp reply you can reuse, and a section for the page. Note how much less work the fourth one was than the first.",
+      "quiz": [
+        {
+          "question": "Where should content ideas come from?",
+          "options": [
+            "The questions customers actually ask before buying",
+            "Topics that are trending",
+            "What competitors are publishing",
+            "What the business finds interesting"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why does publishing prices act as content?",
+          "options": [
+            "It filters out those who cannot afford it and brings the rest already half-decided",
+            "It improves search rankings",
+            "It is required by law",
+            "It stops competitors undercutting"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "650d3dc2-e5f2-4501-ae2c-6339cf77cec3",
+      "title": "Google Ads Audience Targeting: The Complete Guide",
+      "objectives": [
+        "Reach people by what they are searching for rather than who they are",
+        "Use negative keywords to stop paying for the wrong clicks",
+        "Decide when search advertising is worth the money"
+      ],
+      "notes": "Search advertising works on a different principle from social. You are not choosing an audience by age and interests; you are buying the moment someone types a question. Intent is the targeting.\n\nMATCH THE AD TO THE SEARCH. Someone searching 'laptop repair Westlands' should see an advert about laptop repair in Westlands and land on a page about exactly that. Every step away from what they typed costs you conversions, and beginners send all their adverts to the homepage, which is the commonest waste in the whole discipline.\n\nNEGATIVE KEYWORDS ARE WHERE THE MONEY IS SAVED. These are the words that stop your advert showing. Without them you pay for 'free', 'jobs', 'salary', 'training', 'second hand' and a dozen other searches from people who will never buy. Check what searches actually triggered your adverts, weekly, and add the wasteful ones to the list. This one habit routinely saves a third of a small budget.\n\nLAYER THE OTHER TARGETING ON TOP: location tightened to where you can actually serve, hours limited to when someone answers the phone, and where useful, people who have visited before.\n\nWHEN SEARCH IS WORTH IT: when people actively search for what you sell, when a customer is worth enough to cover a click that may cost real money, and when whatever they land on can actually convert them. When those are not true, put the money into social or content instead — that judgement is what you are paid for.\n\nADDITION BEYOND THE VIDEO — the local realities. Search volumes for a specific service in a specific Kenyan town can be genuinely small, which is not failure; it means a modest budget can own that search entirely, and it also means a campaign may take longer to gather data. Watch out for competitors and international sites bidding on the same broad terms with much larger budgets — going narrow and local is how you win. And include the way people actually search: place names, landmarks, estate names, and phrases in mixed English and Kiswahili.",
+      "practice": "For one real business, write twenty search phrases someone would type before buying, including place names and mixed-language phrasing. Then write twenty negative keywords - the searches you never want to pay for. Finally, for your three best phrases, name the exact page each advert should send someone to, and check that page actually answers what they typed.",
+      "quiz": [
+        {
+          "question": "What is the targeting in search advertising?",
+          "options": [
+            "Intent - the moment someone types a question",
+            "Age and interests",
+            "Location alone",
+            "Time of day"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What do negative keywords do?",
+          "options": [
+            "Stop your advert showing for searches that will never buy, saving a large share of a small budget",
+            "Lower the cost of each click",
+            "Improve your ad position",
+            "Hide your advert from competitors"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "3d0ffc8e-6207-47a4-9e37-6d3260e2a901",
+      "title": "Google Retargeting Ads For Beginners",
+      "objectives": [
+        "Advertise to people who have already shown interest",
+        "Set sensible limits so retargeting does not become harassment",
+        "Understand what has to be in place before it can work"
+      ],
+      "notes": "Retargeting shows adverts to people who already interacted — visited the page, watched the video, started an enquiry and stopped. It is almost always the cheapest advertising a business runs, for an obvious reason: these people already know who you are.\n\nWHY IT WORKS. Most people do not buy on first contact. They were interested, then the matatu arrived, or they wanted to check with someone, or they simply forgot. Retargeting is a reminder to people who were already interested, not persuasion of strangers.\n\nWHAT HAS TO EXIST FIRST. Enough traffic to build an audience from, and the tracking to record it — a tag on the site, or the platform's own record of who watched or engaged. Set that up on day one of any campaign, even before you advertise, because you cannot retarget people you did not record. A business that starts tracking in month three has thrown away two months of audience.\n\nSEGMENT BY WHAT THEY DID. Someone who abandoned an enquiry is much closer to buying than someone who read one page. Treat them differently and say something different to each.\n\nSET LIMITS. Cap how often a person sees it and how long they stay in the audience. Retargeting without limits is the advert that follows people for six weeks after they bought, which is irritating and makes the business look inept. Exclude people who already converted.\n\nADDITION BEYOND THE VIDEO — a real constraint here: where traffic is small, retargeting audiences take a long time to fill, and the platforms will not run to an audience below a minimum size. So build the pool deliberately — count video views and engagement, not only website visits, since many campaigns here never touch a website. And be careful about what an advert reveals: an advert that follows someone with a product they viewed can be awkward on a shared phone, and shared devices are common. Keep the creative general enough not to expose what an individual was looking at.",
+      "practice": "Check whether a real business you can access has any tracking or audience recording in place. If not, that is the first job and it costs nothing. Then plan three retargeting audiences with a different message for each - engaged but never enquired, enquired but did not buy, and bought before - and write the frequency cap and time limit you would set for each.",
+      "quiz": [
+        {
+          "question": "Why is retargeting usually the cheapest advertising?",
+          "options": [
+            "It reaches people who already know the business and showed interest",
+            "It uses less ad budget per day",
+            "Platforms charge less for it",
+            "It requires no creative work"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What must be in place before retargeting can work at all?",
+          "options": [
+            "Tracking or audience recording, set up before the campaign, since you cannot retarget people you did not record",
+            "A large advertising budget",
+            "A finished website",
+            "A completed sale"
+          ],
+          "correct_index": 0
+        }
+      ]
+    }
+  ]
+}

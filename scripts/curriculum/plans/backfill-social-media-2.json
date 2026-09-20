@@ -1,0 +1,203 @@
+{
+  "course": "social-media-management",
+  "lessons": [
+    {
+      "id": "4c140275-6d8b-426c-abfe-c7ddff076faf",
+      "title": "Social Media Engagement Analysis: The Only Metrics That Matter",
+      "objectives": [
+        "Separate the numbers that indicate progress from the ones that only flatter",
+        "Choose the metric that matches what the business actually wants",
+        "Diagnose a problem from the numbers rather than guessing at it"
+      ],
+      "notes": "Module 4 taught you to read analytics and report them. This lesson is about which numbers deserve to be in the report at all.\n\nVANITY METRICS look impressive and change nothing. FOLLOWER COUNT is the worst offender: a shop with two thousand followers and no enquiries is worse off than one with two hundred who buy. Total likes belongs in the same category. Neither pays anyone, and both can be bought, which tells you what they are worth.\n\nMETRICS THAT ACTUALLY INDICATE SOMETHING:\n- SAVES AND SHARES. Someone thought it was worth keeping or worth passing on. The strongest ordinary signal there is.\n- REACH OF NON-FOLLOWERS. Whether the account is finding new people or talking to the same room.\n- PROFILE VISITS AND LINK TAPS. Interest moving toward action.\n- MESSAGES AND ENQUIRIES. For most small businesses here, this is the real number, because the sale happens in the DM.\n- REPEAT VIEWERS on Status and Stories. Quiet, unglamorous, and the best measure of whether existing customers still care.\n\nPICK THE METRIC THAT MATCHES THE GOAL. A business wanting to be known watches reach. One wanting enquiries watches messages. One wanting loyalty watches repeat viewers. Reporting all of them equally is how a client learns nothing.\n\nDIAGNOSE, DO NOT JUST REPORT. Good reach and no engagement means the content is being seen and is not interesting enough. Good engagement and no enquiries means the content entertains but never asks. Falling reach usually means posting has become irregular or repetitive. Each of those points at a different fix, and naming the fix is what separates a manager from a poster.\n\nADDITION BEYOND THE VIDEO — measure what happens off the platform too, because it often is the result. Ask the client to note how many people mention seeing the account, count the WhatsApp enquiries, put a simple 'saw us online' question at the counter. When your report can say 'fourteen people came in mentioning the Friday post', you are no longer arguing about whether social media works.",
+      "practice": "Take any account you can see the numbers for and list its last ten posts against saves, shares, non-follower reach and messages. Rank them by saves, then by likes. Note that the orders differ - that gap is the whole lesson. Then write one diagnosis: what the pattern says to do differently next month.",
+      "quiz": [
+        {
+          "question": "Why is follower count a poor measure?",
+          "options": [
+            "It can be bought and does not indicate buying interest - two hundred who buy beat two thousand who do not",
+            "Platforms hide it from clients",
+            "It changes too slowly",
+            "It is hard to measure accurately"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Reach is good but engagement is low. What does that indicate?",
+          "options": [
+            "The content is being seen and is not interesting enough",
+            "The posting schedule is wrong",
+            "The audience is too small",
+            "The account needs more followers"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "400221d5-0c7f-4bae-b597-9e9a20a9e9ae",
+      "title": "Avoid These 5 Common Mistakes in Social Media Management",
+      "objectives": [
+        "Recognise the failures that lose accounts rather than merely underperform",
+        "Handle the client relationship faults as carefully as the content ones",
+        "Build the checks that prevent the expensive mistakes"
+      ],
+      "notes": "Some mistakes cost engagement. Others cost the client, and those are the ones to learn first.\n\nINCONSISTENCY. Eleven posts one week, nothing for a month. The audience stops expecting you and the platform stops showing you. Fewer posts on a rhythm you can actually keep beats a burst followed by silence.\n\nNOT REPLYING. Comments and messages left for days, while the account keeps broadcasting. For a small business this is the most expensive mistake on the list, because an unanswered message here is usually a customer who went elsewhere. Replying is not admin around the job; it is the job.\n\nALL SELLING. Covered in the pillars lesson, still the commonest fault in practice.\n\nPOSTING FROM THE WRONG ACCOUNT. Personal opinion published on a client's page. It happens, it is humiliating, and it can end a contract in one tap. Keep client accounts in a separate browser profile or a separate app login, and never post to a client account from the same place you post personally.\n\nDELETING CRITICISM. Removing a complaint makes one unhappy customer into a public fight about censorship. The next lesson covers what to do instead.\n\nTHE EXPENSIVE ONES CLIENTS NEVER FORGET: a wrong price posted publicly; a customer's private details visible in a screenshot; a scheduled promotional post going out during a tragedy or a national emergency; and posting anything political or inflammatory on a business account. That last one deserves particular care here — businesses can lose a large part of their customers over a perceived political alignment, and it is not your alignment to spend.\n\nADDITION BEYOND THE VIDEO — the prevention is boring and it works. Keep a written pre-publish check: right account, right price, no private details visible, nothing that reads badly against today's news. Agree with the client in advance who decides on anything sensitive. And when something does go wrong, tell the client immediately and yourself — before a customer does. Being the person who reports their own mistake preserves far more trust than being the person who was caught.",
+      "practice": "Write your own pre-publish check as a short list and put it where you will actually see it. Then audit one account you or someone you know runs against the five mistakes, and note which are happening. Fix the reply backlog first, since that is the one with a customer at the other end of it.",
+      "quiz": [
+        {
+          "question": "Which mistake costs a small business most directly?",
+          "options": [
+            "Leaving comments and messages unanswered, since an unanswered message is usually a lost customer",
+            "Posting too few times a week",
+            "Using the wrong hashtags",
+            "Inconsistent visual style"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Something has gone wrong on a client account. What preserves the most trust?",
+          "options": [
+            "Telling the client immediately yourself, before a customer does",
+            "Fixing it quietly and saying nothing",
+            "Waiting to see whether anyone noticed",
+            "Deleting the post and moving on"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "8c262c11-dbbb-44c8-97ce-dbd16eba10e8",
+      "title": "Social Media Manager Workflow: Create & Schedule Content for Clients",
+      "objectives": [
+        "Run a client month as a repeatable process",
+        "Get content out of a client who is busy and unresponsive",
+        "Keep approval from becoming the bottleneck"
+      ],
+      "notes": "This is the month, assembled from everything so far: pillars decide what, the calendar decides when, the scheduler publishes, the analytics judge.\n\nA MONTH THAT WORKS:\n- Look at last month's numbers and decide one thing to change.\n- Plan the month against the pillars, with dates and events marked.\n- Collect the raw material — photographs, prices, news from the client.\n- Write everything in one sitting. Batching is where the profit is.\n- Send the batch for approval, once, as a whole.\n- Schedule the approved batch.\n- Reply daily. This is the part that cannot be batched.\n- Report at month end, as Module 4 covers.\n\nGETTING MATERIAL OUT OF A CLIENT is the real difficulty, and 'send me some photos' never works. What works: a standing request with a deadline, a shared folder they can drop into from a phone, a WhatsApp group used only for this, and a short list of exactly what you need this month — three photographs of new stock, one of the team, the updated price list. Ask for specific things and you get them; ask for 'content' and you get nothing.\n\nAPPROVAL IS THE USUAL BOTTLENECK. Send the month as one batch rather than post by post. Set a rule that silence past a stated date means approved, agreed at the start. And for businesses that move fast, ask for standing permission on routine posts, keeping approval for anything with a price or a claim in it.\n\nADDITION BEYOND THE VIDEO — where the client is a small business owner who is genuinely busy, meet them where they are: collect material by WhatsApp voice note if that is what they will actually do, and transcribe it yourself. Fighting to move someone onto a tidier system usually ends with no content at all. And build a buffer — stay a week ahead, so that a day without power, a failed connection or a sick child does not become a gap on the client's account.",
+      "practice": "Run one full month for a real or imagined client, writing each stage down as you go, and time each one. Pay attention to the material-collection step: write the exact list you would send, with three specific items and a deadline. At the end, note which stage took longest - that is the one to systematise before you take a second client.",
+      "quiz": [
+        {
+          "question": "Why does 'send me some photos' fail?",
+          "options": [
+            "Clients respond to specific requests with deadlines, not general ones",
+            "Clients do not have photographs",
+            "Photographs are the wrong content type",
+            "It should be sent by email instead"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "How should a month of content be approved?",
+          "options": [
+            "As one batch, with a rule that silence past a stated date means approved",
+            "Post by post as each is written",
+            "After publishing, retrospectively",
+            "Only in a face-to-face meeting"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "9aa45b79-448a-4f31-8d3e-1d3e09103417",
+      "title": "How to Handle Negative Comments & Social Media Backlash",
+      "objectives": [
+        "Tell a complaint apart from an attack and respond to each correctly",
+        "Answer publicly in a way that reassures the people watching",
+        "Know when to escalate to the client instead of replying"
+      ],
+      "notes": "Negative comments are inevitable, and how they are handled is visible to everyone who reads them. The audience for your reply is not the complainer — it is the hundred people reading silently and deciding what kind of business this is.\n\nSORT IT FIRST:\n- A GENUINE COMPLAINT. Something went wrong. This is an opportunity, handled well.\n- A QUESTION THAT SOUNDS RUDE. Often just brevity. Answer the question.\n- A TROLL. Provoking for its own sake, with no interest in resolution.\n- SOMETHING SERIOUS: an allegation about safety, fraud, or a person. Not yours to answer.\n\nFOR A GENUINE COMPLAINT: reply publicly, quickly, once. Acknowledge it, do not argue the facts in public, and move it to a private channel — 'I am sorry that happened. Please send me a message with your order number and we will sort it out.' Then actually sort it out. A complaint resolved publicly and visibly is worth more than the complaint cost.\n\nFOR A TROLL: do not argue. One polite reply at most, then leave it. Hide rather than delete where the platform allows; hiding removes it from public view without the person knowing they were silenced, which avoids the second fight.\n\nDO NOT DELETE genuine criticism. Being seen to delete is a bigger story than the complaint.\n\nESCALATE, DO NOT IMPROVISE, on anything alleging harm, illegality, or naming a staff member, and anything touching politics, religion or ethnicity. Agree with the client in advance who handles those and how fast you will reach them. You are the manager of the account, not the spokesperson of the business.\n\nADDITION BEYOND THE VIDEO — three things this market makes more likely. Complaints often arrive in the DMs rather than in public, so check message requests daily; an unanswered complaint there becomes a public post later. Anger travels through screenshots into WhatsApp groups where you cannot see or answer it, so respond fast while it is still where you can reach it. And keep a record of anything serious — screenshots, times, what was said — before it is deleted, because the client will need it.",
+      "practice": "Write your response templates now, before you need them: one for a genuine complaint, one for a rude question, one for a troll, and one line escalating to the client. Then find three real negative comments on any business account and draft your reply to each. Read them back asking whether they reassure the silent readers, not whether they win the argument.",
+      "quiz": [
+        {
+          "question": "Who is the real audience for a reply to a complaint?",
+          "options": [
+            "The people reading silently and deciding what kind of business this is",
+            "The person complaining",
+            "The platform's algorithm",
+            "The client"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "A comment alleges something serious about safety or a named member of staff. What do you do?",
+          "options": [
+            "Escalate to the client rather than improvising a reply",
+            "Answer it quickly to control the story",
+            "Delete it",
+            "Reply with the standard complaint template"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "26d2f413-59c5-40a0-a482-501029b2c80f",
+      "title": "How to Get Social Media Management Clients With No Experience",
+      "objectives": [
+        "Show competence before anyone has hired you",
+        "Approach a business with a specific observation rather than an offer",
+        "Choose a first client you can actually succeed with"
+      ],
+      "notes": "Nobody hands an account to someone with nothing to show. The way in is to produce the evidence yourself.\n\nRUN AN ACCOUNT FOR REAL. Your own, a family business, a church, a school, a chama, a friend's shop — anything where you can post consistently for two months and record what happened. That record is your case study, and it is worth more than any certificate: 'I ran this account for eight weeks. Enquiries went from two a week to nine. Here is what I changed.'\n\nBUILD A SAMPLE MONTH. For a specific real business, produce what you would actually deliver: pillars, a month of posts written and designed, a posting schedule. Take it to them finished. It is a day of work, it demonstrates everything, and it converts far better than any message offering services.\n\nBE SPECIFIC ABOUT WHO YOU SERVE. 'Social media manager' is forgettable. 'I run Instagram and WhatsApp for salons and beauty shops' gets remembered, gets referred, and gets faster with every client because the problems repeat.\n\nCHOOSE A FIRST CLIENT YOU CAN WIN WITH. Not the most prestigious — the one with an actual product people want, a willingness to send you material, and reasonable expectations. A first client whose business is failing for reasons you cannot fix will end badly and teach you nothing.\n\nADDITION BEYOND THE VIDEO — where these clients actually are, which is not on a global platform. They are the shops whose posts you already see and could obviously improve; the businesses that post once a month and then stop; the churches and schools running events; the salons, chemists, hardware shops and eateries near you. The approach that works is specific and already done: 'I noticed your Friday posts get the most questions, so I wrote a month of content built around that. Here it is.' You have demonstrated the thinking, done the work, and removed the risk of hiring you. Three of those beat a hundred messages.",
+      "practice": "Run one real account for the next eight weeks and record the numbers weekly from day one, before you change anything - without a baseline you cannot prove what you did. Meanwhile, build one complete sample month for a specific local business and take it to them finished. Write your one-line specialisation before either.",
+      "quiz": [
+        {
+          "question": "What is the strongest evidence for someone with no clients?",
+          "options": [
+            "A real account run for weeks with recorded numbers before and after",
+            "A list of courses completed",
+            "A large personal following",
+            "A professionally designed profile"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "How should a first client be chosen?",
+          "options": [
+            "One with a real product, willingness to supply material, and reasonable expectations",
+            "The most prestigious business available",
+            "The one offering the most money",
+            "The one with the largest existing following"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "44fb40dd-a88d-4e2d-a52d-291430ad9b6b",
+      "title": "What to Charge for Social Media Management Packages",
+      "objectives": [
+        "Build a monthly package with a defined scope",
+        "Price the work so it remains worth doing in month six",
+        "Set the boundaries that stop a fixed fee becoming unlimited work"
+      ],
+      "notes": "Social media management is naturally a monthly arrangement, which makes it one of the better incomes in this catalogue — but only if the scope is defined. An undefined retainer becomes unlimited work at a fixed price, and that is the commonest way people leave this field.\n\nWHAT A PACKAGE MUST STATE, countable and in writing:\n- How many posts, on which platforms, per month. Twelve posts across two platforms, not 'regular posting'.\n- Whether Stories or Status are included, and how often. These are daily work and are usually forgotten in the quote.\n- Who creates the content: are you designing and writing, or arranging material they supply? Photography is a separate job.\n- Whether replying to comments and messages is included, and within what hours. Name the hours or you have sold yourself to a phone that never stops.\n- Reporting: one report a month.\n- What is NOT included: paid advertising and its budget, photography, responding at weekends, running competitions.\n\nCOUNT THE WHOLE JOB when pricing. The visible part is the posts. The rest is planning, chasing material, writing, designing, scheduling, daily replies, the report, and the client's messages. Beginners price the posts and quietly do the rest for nothing.\n\nPRICE MONTHLY, NOT HOURLY, and expect to start lower than you will end. Raise on new clients first, as the other courses in this catalogue cover.\n\nOFFER TWO OR THREE LEVELS, not one. A smaller package for businesses with little money and a fuller one for those with more lets a client choose rather than decline, and the middle option is usually taken.\n\nADDITION BEYOND THE VIDEO — three local specifics. Be explicit that ADVERTISING BUDGET IS THE CLIENT'S and separate from your fee; this misunderstanding is common and expensive. Take payment monthly in advance, not in arrears, because chasing a small monthly fee costs more in time than the fee. And be honest in the first conversation about what a month can achieve — social media compounds slowly, results take months, and a client expecting sales in three weeks will leave in week four blaming you. Saying so up front loses you a few clients and saves you every one of them.",
+      "practice": "Write three packages - small, medium, full - each stating post counts per platform, whether Status and Stories are included, who makes the content, reply hours, reporting, and exclusions. Then price the middle one by listing every task in a month and honestly estimating the hours, including replies and chasing material. Check the result against what you need to earn.",
+      "quiz": [
+        {
+          "question": "What turns a monthly retainer into unlimited work?",
+          "options": [
+            "An undefined scope - no stated post counts, reply hours or exclusions",
+            "Charging too little",
+            "Having too many clients",
+            "Reporting monthly rather than weekly"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What should be made explicit about advertising budget?",
+          "options": [
+            "That it is the client's cost and separate from your management fee",
+            "That it is included in the package",
+            "That it should be paid to you in advance",
+            "That it replaces the need for organic posting"
+          ],
+          "correct_index": 0
+        }
+      ]
+    }
+  ]
+}

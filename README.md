@@ -718,11 +718,11 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 342. Eight courses are now fully written:
+      **Bare-lesson count: 438 → 330. Nine courses are now fully written:
       `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
-      `virtual-assistance-data-entry` (12), `graphic-design` (18) and
-      `social-media-management` (16).**
+      `virtual-assistance-data-entry` (12), `graphic-design` (18),
+      `social-media-management` (16) and `digital-marketing` (16).**
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -913,9 +913,38 @@ custom authorization layer bolted on top.
       spokesperson — anything alleging harm, illegality or naming a staff
       member goes to the client, with who handles it agreed in advance.
 
+      `digital-marketing` was ninth and is complete at 16 of 16 (`0104`,
+      `0105`). Modules 3 and 4 were already written — audience, buyer
+      persona, the funnel, the customer journey — so the new twelve build
+      on them.
+
+      The structural correction this market needs runs through the whole
+      course: **the conversion happens in a conversation, not on a
+      website.** An advert's job here is often to start a WhatsApp chat or
+      a phone call, with payment landing on M-Pesa rather than a card
+      checkout, so campaigns are judged on enquiries and sales rather than
+      website visits. International courses assume a site with a card
+      payment at the end, and building that for a small Kenyan business is
+      frequently solving a problem it does not have.
+
+      The same correction shapes measurement. Most of the result is
+      invisible to analytics — WhatsApp, walk-ins, calls, word of mouth —
+      so the course teaches counting enquiries by hand, asking every
+      enquirer where they heard, and putting offline results in the
+      report. A marketer who reports only the dashboard is reporting the
+      less impressive fraction of their own work.
+
+      Other local requirements: ad accounts bill in foreign currency and
+      need a card; campaign timing follows school fee periods, harvest and
+      end-of-month salaries; capacity is confirmed before demand is
+      created; and the marketer's fee is separated from ad spend in
+      writing, with the budget taken in advance and never self-funded.
+
       Order of attack for the rest: partially bare courses at 12 bare
-      lessons each — `digital-marketing`, `copywriting-content-writing`,
-      `google-facebook-ads`, `ecommerce-online-selling` and seven others.
+      lessons each — `copywriting-content-writing`, `google-facebook-ads`
+      (carries completions, so baseline recorded and re-checked),
+      `ecommerce-online-selling`, `seo-search-engine-optimization` and six
+      others.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

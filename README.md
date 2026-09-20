@@ -718,10 +718,11 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 354. Seven courses are now fully written:
+      **Bare-lesson count: 438 → 342. Eight courses are now fully written:
       `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
-      `virtual-assistance-data-entry` (12) and `graphic-design` (18).**
+      `virtual-assistance-data-entry` (12), `graphic-design` (18) and
+      `social-media-management` (16).**
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -890,9 +891,31 @@ custom authorization layer bolted on top.
       lines for structure. No `**`, no `#` headings, no markdown lists —
       the page does not render them.
 
+      `social-media-management` was eighth and is complete at 16 of 16
+      (`0102`, `0103`). Modules 3 and 4 were already written — content
+      calendar, automation, reading analytics, reporting — so the new
+      twelve build on them: pillars are what fills the existing calendar,
+      and the metrics lesson covers which numbers deserve to be in the
+      existing report at all.
+
+      The channel advice departs from the international courses
+      deliberately. **WhatsApp is named as a primary selling channel**:
+      Status reaches customers who already saved the number, Business
+      catalogues and quick replies do real work, and for many shops
+      WhatsApp plus one public platform beats an elaborate presence
+      elsewhere. It also cannot be scheduled by third-party tools, so it
+      is daily manual work that belongs in the routine and the price.
+
+      Two risks are stated plainly because they end contracts here rather
+      than merely underperform. Posting anything political on a business
+      account can cost a large part of its customers, and that is not the
+      manager's alignment to spend. And the account manager is not the
+      spokesperson — anything alleging harm, illegality or naming a staff
+      member goes to the client, with who handles it agreed in advance.
+
       Order of attack for the rest: partially bare courses at 12 bare
       lessons each — `digital-marketing`, `copywriting-content-writing`,
-      `google-facebook-ads`, `social-media-management` and eight others.
+      `google-facebook-ads`, `ecommerce-online-selling` and seven others.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

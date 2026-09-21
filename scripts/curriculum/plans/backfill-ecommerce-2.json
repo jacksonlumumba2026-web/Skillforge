@@ -1,0 +1,203 @@
+{
+  "course": "ecommerce-online-selling",
+  "lessons": [
+    {
+      "id": "c5f79f1c-41b1-4b48-b9f4-ed5db53b60d3",
+      "title": "The OFFICIAL Shopify Tutorial (Part 3)",
+      "objectives": [
+        "Run a store day to day once orders are arriving",
+        "Keep stock accurate so you never cancel an order",
+        "Handle the parts of the job that are not selling"
+      ],
+      "notes": "Parts 1 and 2 built the shop. This is what the work actually becomes once orders arrive, which is mostly operations rather than selling.\n\nORDER HANDLING, every day: confirm, pack, dispatch, tell the customer it is coming and how to track it. The message saying the order is on its way does more for repeat custom than any discount, because the anxious gap between paying and receiving is where trust is won or lost.\n\nSTOCK ACCURACY IS THE WHOLE OPERATION. Selling something you do not have is the most damaging ordinary mistake in this business: you refund, you apologise, and that customer does not come back. Update stock the moment something leaves, count physically at least monthly, and where you sell on several channels at once, decide how you will avoid selling the same item twice.\n\nTHE UNGLAMOROUS PARTS that decide whether the business survives: answering messages, chasing a delayed delivery, handling a return, reconciling what was paid against what was delivered, and keeping records for tax.\n\nKNOW YOUR NUMBERS MONTHLY: what came in, what stock cost, delivery, fees, packaging, advertising, and what is left. Sellers who feel busy and end the month with no money almost always have not done this arithmetic — the business was working, the margins were not.\n\nADDITION BEYOND THE VIDEO — the operational realities here. DELIVERY IS PARTLY OUTSIDE YOUR CONTROL: boda, courier and parcel services all fail occasionally, and the customer blames you, so keep the tracking information, tell the customer early when something slips, and have a second option ready. PLAN FOR PAY ON DELIVERY: some parcels come back, so track how often and price it in. And FORMALISE AS YOU GROW — registration, permits and tax obligations become real once the business does, and dealing with that while small is far cheaper than being caught up with later. Set aside money for it from the start rather than discovering the liability at the end of a good year.",
+      "practice": "Write your daily order routine as a checklist and your monthly numbers as a simple sheet: money in, stock cost, delivery, fees, packaging, advertising, what is left. Run the numbers for last month honestly. Then write your plan for the three failures that will happen - a delayed delivery, a returned pay-on-delivery parcel, and an item sold that you do not have.",
+      "quiz": [
+        {
+          "question": "What is the most damaging ordinary mistake in running a store?",
+          "options": [
+            "Selling something you do not actually have in stock",
+            "Pricing slightly too high",
+            "Slow replies to comments",
+            "Using too few product photographs"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why do sellers who feel busy often end the month with no money?",
+          "options": [
+            "They have not done the monthly arithmetic - the business was working, the margins were not",
+            "They are not advertising enough",
+            "They have too few products",
+            "They reply to messages too slowly"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "3ede522d-42b1-4529-b2ee-ddf2034636d5",
+      "title": "10 Biggest Mistakes New Shopify Store Owners Make",
+      "objectives": [
+        "Recognise the errors that quietly kill a new store",
+        "Prioritise the fixes that actually move sales",
+        "Judge your own store as a stranger would"
+      ],
+      "notes": "Most failing stores are not badly built. They fail on a small number of predictable faults.\n\nNO TRAFFIC PLAN. The commonest by far: the store is built and then nobody comes. A shop is not a marketing plan. Decide before launch how the first hundred people will arrive.\n\nTOO MANY PRODUCTS. Fifty items nobody has heard of is a warehouse, not a shop. A small range explained well outsells a large range described badly, and it costs far less to stock.\n\nBAD PHOTOGRAPHS, or the supplier's stock images that twelve other sellers are also using.\n\nHIDDEN OR SURPRISE DELIVERY COSTS.\n\nNO TRUST SIGNALS: no address, no real phone number, no customer photographs, no policies. For a Kenyan buyer deciding whether to send money to an unknown shop, this is the decisive category, and most beginners fill it last.\n\nCOPYING PRICES WITHOUT COPYING COSTS. Someone else's price may reflect buying in bulk, importing directly, or losing money.\n\nCOMPETING ONLY ON PRICE, which a bigger seller wins by waiting.\n\nIGNORING THE PEOPLE WHO ALREADY BOUGHT.\n\nREBUILDING THE SITE INSTEAD OF SELLING. Changing the theme for a fourth week is a way of avoiding the harder work of finding customers.\n\nNOT MEASURING, so nothing is ever learned.\n\nHOW TO SEE YOUR OWN STORE HONESTLY: give it to someone who has never seen it, on their own phone, and ask them to buy something without help. Watch where they hesitate. Every hesitation is a fault you had stopped being able to see.\n\nADDITION BEYOND THE VIDEO — the mistake that matters most here and is not on the standard list: SELLING SOMETHING YOU CANNOT RELIABLY GET. A supplier who is sometimes out of stock, an import that clears customs unpredictably, a price that moves every month — each one turns into cancelled orders, which costs you the customer and the reputation. Before promising anything publicly, check you can actually get it again, at a price you can hold, within the delivery time you advertised. Stock reliability beats product range every time.",
+      "practice": "Give your store or listings to someone who has never seen them and ask them to buy something on their own phone, without help. Write down every hesitation. Then score yourself against all ten mistakes and fix the three worst. Separately, check one product honestly: can you get it again, at the same price, within your advertised delivery time?",
+      "quiz": [
+        {
+          "question": "What is the commonest reason a new store fails?",
+          "options": [
+            "No plan for how anyone will arrive - a shop is not a marketing plan",
+            "Poor theme choice",
+            "Too few payment options",
+            "Prices set too high"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Which mistake matters most in this market and is missing from the standard list?",
+          "options": [
+            "Selling something you cannot reliably restock at a price you can hold",
+            "Using too many product categories",
+            "Writing long descriptions",
+            "Not having a blog"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "d14c7ed2-5f0c-41ad-bf06-8db105cab61d",
+      "title": "Pre-Launch Strategy To Launch Your Products For Ecommerce",
+      "objectives": [
+        "Build interest before a product is available",
+        "Launch to people who are already waiting rather than to strangers",
+        "Prepare the operation so a successful launch is not a disaster"
+      ],
+      "notes": "A launch fails when it is the first time anyone hears of you. The work happens before.\n\nBUILD THE LIST BEFORE THE PRODUCT. Collect people who want it: a WhatsApp broadcast list, an Instagram following, phone numbers of people who asked. Fifty people who said 'tell me when it arrives' will outperform any amount of advertising to strangers on launch day.\n\nSHOW THE PROCESS. Sourcing, samples, packing, the shop being set up. People follow a story and arrive already interested, and it costs nothing but posting what you are doing anyway.\n\nGIVE THE EARLY ONES A REASON. A first-batch price, first access, something small included. They are taking the risk of buying from an unproven seller and should get something for it.\n\nTEST THE WHOLE OPERATION BEFORE LAUNCH DAY: order from yourself, pack one properly, send one through your delivery method, and time it. A launch that works and then cannot deliver is worse than no launch, because the disappointed customers are also your first reviewers.\n\nSTART WITH STOCK YOU CAN ACTUALLY SELL. Launching with more than you can move ties up money you will need; launching with too little means selling out and losing the momentum. A small first batch with a restock date announced is the safer version.\n\nLAUNCH TO THE LIST FIRST, then publicly. Early orders from people who were waiting produce the photographs, the messages and the proof that persuade everyone else.\n\nADDITION BEYOND THE VIDEO — three local specifics. TIME IT against when people have money: end of month, after harvest, before schools open, December. The same launch performs very differently a week either side. ASK EARLY BUYERS FOR A PHOTOGRAPH AND A LINE, with permission, because real customers holding the product is the strongest trust signal available and it is free. And use WHATSAPP STATUS as the launch channel — people who saved your number see it without you paying for reach, and they are the warmest audience you will ever have.",
+      "practice": "Before launching anything, build a list of at least thirty people who have said they want it, and post the process for two weeks. Test the full operation once - order, pack, deliver, time it. Then launch to the list before going public, and ask your first five buyers for a photograph and one line, with permission.",
+      "quiz": [
+        {
+          "question": "What makes a launch succeed?",
+          "options": [
+            "Launching to people who were already waiting, not to strangers on the day",
+            "A large advertising budget on launch day",
+            "A wide product range",
+            "A professionally designed site"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why test the whole operation before launch day?",
+          "options": [
+            "A launch that works and then cannot deliver is worse than no launch, since disappointed customers are your first reviewers",
+            "Platforms require a test order",
+            "It sets the delivery price",
+            "It generates early reviews"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "86f7bfe2-a141-49d0-88ab-c9158f802713",
+      "title": "How To Get Traffic To Your eCommerce Store",
+      "objectives": [
+        "Choose traffic sources that suit a small budget",
+        "Build the channels that keep working after you stop paying",
+        "Judge a source by orders rather than by visits"
+      ],
+      "notes": "Traffic is the hardest problem in online selling and the one beginners plan for last. The channels, honestly assessed for a small seller:\n\nPAID ADVERTISING. Fast, controllable, stops when the money stops. Useful for finding out quickly which product and which message people respond to. Expensive as a permanent solution.\n\nSOCIAL CONTENT. Slow to build, free, and compounds. Posting the product in use, the process, customer results. For most sellers here this is the main engine.\n\nSEARCH. Someone typing the product name is the best traffic there is. Get the product titles right, and complete the local business profile if there is a physical location.\n\nMARKETPLACES, covered earlier: borrowed traffic at the cost of commission and the customer relationship.\n\nWHATSAPP AND YOUR OWN LIST. Not traffic in the usual sense and the most valuable thing you have. People who already bought or already asked. Free to reach, most likely to buy.\n\nREFERRAL. Ask satisfied customers to tell one person, and give them a reason. In this market word of mouth is not a supplementary channel, it is frequently the main one.\n\nJUDGE BY ORDERS, NOT VISITS. A thousand visitors and two orders is worse than eighty visitors and nine. Track which source produced actual sales, not which produced the most traffic, or you will keep investing in the channel that looks busiest.\n\nADDITION BEYOND THE VIDEO — the cheapest traffic available to a Kenyan seller is usually not online at all. People who can see the product: a stall, a market day, a stand at a church or school event, a display in a friend's shop. Physical presence also solves the trust problem in one step, because the buyer has met you. Many successful sellers here run both, using the physical presence to win the first sale and WhatsApp to keep the customer. And do not neglect WhatsApp GROUPS you legitimately belong to — an estate group, a parents' group, a sacco — provided you have permission and are not spamming, because a recommendation inside a group people trust outperforms any advert.",
+      "practice": "List every traffic source available to you and mark each as free or paid, and fast or slow. Choose two - one fast, one compounding - and run both for a month, recording orders rather than visits for each. Also try one physical route: a market day, a stall, or a display somewhere real, and compare what it produced.",
+      "quiz": [
+        {
+          "question": "How should a traffic source be judged?",
+          "options": [
+            "By the orders it produced, not the visits",
+            "By total visitors",
+            "By cost per click",
+            "By how many followers it added"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What is often the cheapest traffic for a Kenyan seller?",
+          "options": [
+            "Physical presence where people can see the product, which also solves the trust problem",
+            "Paid social advertising",
+            "Search engine optimisation",
+            "Marketplace listings"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "856de1a9-97ce-4234-8ccc-55edd32b6309",
+      "title": "Ultimate Guide to Ecommerce Order Fulfillment",
+      "objectives": [
+        "Design a fulfilment process that works as volume grows",
+        "Choose a delivery arrangement that suits your products and margins",
+        "Handle the failures that will happen"
+      ],
+      "notes": "Fulfilment is everything between the order and the customer holding the thing. It is where reputation is made and where margins quietly disappear.\n\nTHE PROCESS, written down so it is the same every time: receive and confirm; pick and check against the order; pack properly; label with the right address and a phone number; dispatch; send the customer tracking; confirm delivery; record it. Checking against the order before packing prevents the single most common and most expensive error, which is sending the wrong thing.\n\nPACKAGING is not decoration. It must survive a boda, a parcel office and a dusty journey. Under-packing produces breakages you pay for twice — the item and the trust.\n\nDELIVERY OPTIONS, each with a real trade-off: your own delivery, which is cheap locally and does not scale; boda for same-day within a town; courier and parcel services for distance, with tracking; collection points, which are cheaper for the customer and require them to travel; and bus or matatu parcel services, which are widely used, inexpensive over distance, and carry more risk.\n\nWHO PAYS FOR DELIVERY. Charge it, include it in the price, or offer it free above a threshold. Including it usually converts best, but only if the margin genuinely carries it — free delivery that eats the profit is a popular way to be busy and broke.\n\nWHEN IT GOES WRONG, and it will: tell the customer before they ask, put it right quickly, and decide in advance who carries the cost of a breakage or a loss. A failure handled well produces a more loyal customer than a smooth delivery.\n\nADDITION BEYOND THE VIDEO — two things this market makes routine. ADDRESSES ARE DESCRIPTIVE rather than numbered, so collect a landmark, an area and a phone number that will be answered, and confirm them back in writing before dispatch; most failed deliveries here are address failures, not courier failures. And PAY ON DELIVERY means some parcels come back: track how often, add the round trip into your pricing, and consider a deposit for anything expensive or made to order.",
+      "practice": "Write your fulfilment process as a numbered checklist and use it on the next five orders, including the check against the order before packing. Then price one delivery three ways - charged, included, and free above a threshold - and see which leaves you with a real margin. Finally, send one parcel to yourself by the method you use and see what arrives.",
+      "quiz": [
+        {
+          "question": "Which step prevents the most expensive common error?",
+          "options": [
+            "Checking the picked items against the order before packing",
+            "Using better packaging tape",
+            "Dispatching earlier in the day",
+            "Sending tracking immediately"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why do most failed deliveries happen here?",
+          "options": [
+            "Address failures, since addresses are descriptive - so collect a landmark, area and answered phone number",
+            "Courier negligence",
+            "Poor packaging",
+            "Incorrect payment"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "cf9f4ffa-3ee6-488b-9351-e09be46664ee",
+      "title": "How to Start Freelancing as a Beginner Shopify Developer",
+      "objectives": [
+        "Sell store-building as a service rather than only selling products",
+        "Scope the work so a fixed price stays profitable",
+        "Find clients who actually need and can pay for a store"
+      ],
+      "notes": "Everything in this course is also a service you can sell. Businesses want to sell online and mostly cannot set it up themselves.\n\nWHAT YOU CAN OFFER, from easiest to hardest: setting up a WhatsApp Business catalogue properly; writing and photographing product listings; setting up a marketplace seller account and its listings; building a basic hosted store; and ongoing management — adding products, handling orders, running the channel.\n\nSTART WITH LISTINGS, NOT STORES. Every shop selling online has bad listings and knows it. It is quick, it is visibly better afterwards, and it gets you paid while you learn the larger job.\n\nSCOPE IT SO A FIXED PRICE HOLDS. 'A store' is unlimited work. 'A store with up to twenty products, one theme, delivery and payment set up, two rounds of changes' is a job. State what is included, what is not — photography, copywriting, ongoing changes, advertising — and how many revisions.\n\nGET THE MATERIAL UP FRONT: product list with prices, photographs, delivery areas and costs, payment details, the policies. The commonest reason a build stalls for three weeks is a client who has not sent the product information, so ask for it as a specific list with a deadline before you start.\n\nCLIENT OWNS THE ACCOUNTS, always. They pay the subscription directly. You are added to it. When the work ends they keep their shop and you keep your reputation.\n\nWHERE THE CLIENTS ARE: businesses already selling on Instagram or WhatsApp with disorganised listings; shops with real customers and no online presence; anyone whose posts you can see being done badly. Approach with something already done — restructure three of their listings and send them.\n\nADDITION BEYOND THE VIDEO — the honest advice, which is also the better business. Most small Kenyan businesses do not need a hosted store, and telling a client that when it is true earns more than the build would have. Set up WhatsApp Business properly, write the listings, organise the catalogue, teach them the routine — charge fairly for it and they will come back when they genuinely outgrow it. The build you talk someone out of is the client you keep for years. And the recurring income here is management rather than construction: updating products, handling listings, running the channel monthly is worth more over a year than any one-off site.",
+      "practice": "Pick three businesses already selling online badly and restructure three of their real listings, unasked, with better photographs and descriptions. Send each one finished. Then write your two packages - a listings package and a store setup package - each stating exactly what is included, what is excluded, and how many revisions.",
+      "quiz": [
+        {
+          "question": "What should a beginner sell first?",
+          "options": [
+            "Listings work - quick, visibly better afterwards, and it pays while you learn the larger job",
+            "A full hosted store build",
+            "Ongoing store management",
+            "Advertising campaigns"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "A small business does not actually need a hosted store. What is the better move?",
+          "options": [
+            "Tell them, set up what they do need, and charge fairly - they return when they outgrow it",
+            "Build the store anyway since they asked",
+            "Refer them elsewhere and take nothing",
+            "Build a cheaper version of the store"
+          ],
+          "correct_index": 0
+        }
+      ]
+    }
+  ]
+}

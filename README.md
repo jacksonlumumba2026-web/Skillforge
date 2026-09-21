@@ -718,12 +718,13 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 306. Eleven courses are now fully written:
+      **Bare-lesson count: 438 → 294. Twelve courses are now fully written:
       `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
       `social-media-management` (16), `digital-marketing` (16),
-      `copywriting-content-writing` (16) and `google-facebook-ads` (16).**
+      `copywriting-content-writing` (16), `google-facebook-ads` (16) and
+      `ecommerce-online-selling` (17).**
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -987,10 +988,36 @@ custom authorization layer bolted on top.
       sold advertising, because the money will be spent, it will fail, and
       the manager will be blamed.
 
+      `ecommerce-online-selling` was twelfth and is complete at 17 of 17
+      (`0110`, `0111`). Modules 3 and 4 were already written — product
+      photography, descriptions, pricing, shipping.
+
+      The course says plainly what the official Shopify tutorial cannot:
+      **a hosted store is a fixed monthly bill in foreign currency**, and
+      for a seller doing a handful of orders a week it can exceed the
+      profit. The honest sequence is to start where the customers already
+      are, prove people buy, build the list, and move to a hosted store
+      when volume makes the cost trivial. WhatsApp is treated as the main
+      channel it actually is for many sellers here, not a stepping stone.
+
+      Fulfilment is written for how delivery really works: **descriptive
+      addresses rather than numbered ones**, so a landmark, an area and an
+      answered phone number are collected and confirmed before dispatch —
+      most failed deliveries here are address failures, not courier
+      failures. Pay on delivery means some parcels come back, so that is
+      tracked and priced in. The marketplace lesson names the settlement
+      gap that actually breaks small sellers: needing cash for new stock
+      before being paid for the last.
+
+      The freelancing lesson teaches the honest advice as the better
+      business — most small businesses here do not need a hosted store,
+      and the build you talk a client out of is the client you keep for
+      years.
+
       Order of attack for the rest: partially bare courses at 12 bare
-      lessons each — `ecommerce-online-selling`,
-      `seo-search-engine-optimization`, `instagram-tiktok-growth`,
-      `excel-spreadsheets-for-work` and four others.
+      lessons each — `seo-search-engine-optimization`,
+      `instagram-tiktok-growth`, `excel-spreadsheets-for-work`,
+      `google-workspace-productivity` and three others.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

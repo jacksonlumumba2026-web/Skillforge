@@ -1,0 +1,203 @@
+{
+  "course": "google-facebook-ads",
+  "lessons": [
+    {
+      "id": "10e9dd87-ced1-4bf5-b69d-3586203f2d88",
+      "title": "5 Performance Max Mistakes Even Experts Make",
+      "objectives": [
+        "Understand what an automated campaign type does and does not let you control",
+        "Give an automated campaign the inputs it needs to work",
+        "Judge whether its reported results are real"
+      ],
+      "notes": "Automated campaign types hand placement, targeting and bidding to the platform. You supply the goal, the budget, the creative and the data; it decides the rest. That is a genuine advance and a genuine risk, and the risks are where beginners lose money.\n\nIT COUNTS WORK IT DID NOT DO. Left alone, an automated campaign will spend on people searching the business by name — people who were coming anyway — and report those as conversions. The results look excellent and nothing new was won. EXCLUDE THE BRAND NAME, then look at the numbers again. This single check reframes most impressive automated reports.\n\nIT IS ONLY AS GOOD AS ITS TRACKING. The system optimises toward whatever you told it to count. If the tracking counts page views, it buys page views. If it counts every form submission including spam, it buys spam. Get conversion tracking right — Module 4 covers it — before letting automation spend, because here a tracking error does not just mislead you, it actively steers the spending wrong.\n\nIT NEEDS VOLUME AND TIME. Automation learns from data. A small budget in a small market may never give it enough, and in that case a simple, tightly structured manual campaign will beat it.\n\nYOU CANNOT SEE MOST OF IT. Reporting is limited, so you often cannot tell which placement or audience produced a result. Accept that before you promise a client detailed answers you will not be able to give.\n\nFEED IT PROPERLY. It needs several images, several videos, several headlines. Give it weak creative and it will faithfully distribute weak creative everywhere.\n\nADDITION BEYOND THE VIDEO — the durable point, since these product names change every couple of years: whenever a platform offers to decide things for you, ask three questions. What is it optimising toward, and is that actually my goal? What data is it learning from, and is that data correct? And what would I be unable to see or control? Those questions work on whatever replaces today's automated campaign, and they are the reason a manual campaign is usually the right first one on a modest budget.",
+      "practice": "If you have access to any automated campaign, exclude the brand name and compare the reported results before and after - write down the difference. If you do not, audit a conversion setup instead: list exactly what is being counted as a conversion and whether each one is genuinely a business result. Then write the three durable questions in your own words.",
+      "quiz": [
+        {
+          "question": "Why exclude the brand name from an automated campaign?",
+          "options": [
+            "It will otherwise spend on people who were coming anyway and report them as conversions",
+            "Brand keywords are expensive",
+            "It is required by the platform",
+            "It improves the quality score"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What happens if conversion tracking counts the wrong thing?",
+          "options": [
+            "The system optimises toward it and actively steers the spending wrong",
+            "The campaign stops running",
+            "Reporting is delayed",
+            "Only the reports are affected"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "af235b6b-7955-438f-9d46-d31747a93d01",
+      "title": "How To Analyze Facebook Ads Performance (the Right Way)",
+      "objectives": [
+        "Read the numbers that indicate a real result",
+        "Diagnose which part of a campaign is failing",
+        "Decide what to change without destroying the learning"
+      ],
+      "notes": "Reading results properly is a diagnosis, not a scoreboard. The useful question is not 'is this good' but 'which part is broken'.\n\nTHE ONE NUMBER THAT MATTERS is cost per result — where the result is the thing closest to money — compared against what a customer is worth. Everything else is a clue toward explaining that number.\n\nTHE DIAGNOSIS CHAIN, in order:\n- Few people shown the advert at all: budget too small, audience too narrow, or the advert was rejected.\n- Shown to many, clicked by few: the creative or the first line is not working. This is the commonest failure and the easiest to fix.\n- Clicked but nobody enquires: the destination is the problem — slow, confusing, different from what the advert promised, or asking for too much.\n- Enquiries that never become customers: the offer, the price, or whoever is answering. This is not an advertising problem, and it is important to say so clearly rather than keep spending.\n\nWAIT FOR ENOUGH DATA before judging any of it, and compare like with like — a week against a comparable week, not against a holiday.\n\nDO NOT EDIT A LIVE CAMPAIGN CONSTANTLY. Significant edits restart the learning and you pay for that twice. Decide, change one thing, wait.\n\nWATCH FOR FATIGUE: the same audience seeing the same advert many times stops responding, and the cost per result climbs steadily. The fix is new creative, not a higher budget.\n\nADDITION BEYOND THE VIDEO — the honest limit, which matters more here than anywhere. Much of the result never appears in the dashboard: someone sees the advert, saves the number, and walks into the shop a week later. So ask the client to record how many people mention the advert, count WhatsApp enquiries by hand, and compare shop traffic against weeks without spending. Report both, and be equally plain when the numbers say the problem is not the advertising — a client who is told honestly that the phone is not being answered will respect it far more than one who is handed better-looking metrics.",
+      "practice": "Take any campaign with a week of data and run the diagnosis chain in order until you find where it breaks. Write one sentence naming the stage and the evidence. Then set up one off-platform count - asking enquirers where they heard, or tracking walk-ins - and compare it against the dashboard after a week.",
+      "quiz": [
+        {
+          "question": "Many people see the advert but few click. Where is the problem?",
+          "options": [
+            "The creative or the first line",
+            "The destination page",
+            "The budget",
+            "The conversion tracking"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Enquiries arrive but never become customers. What should you tell the client?",
+          "options": [
+            "That this is not an advertising problem - it is the offer, the price, or whoever is answering",
+            "That the budget needs increasing",
+            "That the audience must be narrowed",
+            "That more time is needed"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "26f82fdb-eef9-415a-9536-7ca3cfad699c",
+      "title": "Plan First & Then Create Your Google Ads Campaigns",
+      "objectives": [
+        "Write the plan that decides whether a campaign is worth running",
+        "Work out what a click can be worth before bidding on one",
+        "Prepare everything the campaign depends on before it spends"
+      ],
+      "notes": "The work that decides whether a campaign succeeds happens before the account is opened.\n\nDO THE ARITHMETIC FIRST. What is a customer worth? What share of enquiries become customers? Divide, and you have the most you can afford to pay for an enquiry — and from that, for a click. If a customer is worth KSh 3,000, one in four enquiries converts, and a click costs KSh 30, then an enquiry can cost up to KSh 750 and you need one in twenty-five clicks to enquire. Now you know before spending whether this can work at all. Beginners skip this and discover the answer with the client's money.\n\nPREPARE WHAT THE CAMPAIGN DEPENDS ON: the destination page that matches the search, conversion tracking that works, someone to answer the phone and the messages within the hours you are advertising, and stock or capacity to serve the people who come.\n\nWRITE THE PLAN: the goal as a number and a date; the searches you are buying; the budget and how long it runs; what a success costs; and the failure condition — the cost per enquiry at which you stop. Decide that last one while calm.\n\nSTART SMALL AND TIGHT. A few ad groups on the highest-intent searches, run properly, beats a large complicated structure on a small budget. Expand only from evidence.\n\nADDITION BEYOND THE VIDEO — three checks this market needs. CAPACITY BEFORE DEMAND: a campaign that works for a business that cannot answer forty calls produces angry customers and gets blamed on the advertising. TIMING against the local calendar — school fee periods, end-of-month salaries, harvest, December — because the same campaign performs very differently a week either side of when people are paid. And the ANSWERING PLAN: name the hours, name the person, and set the ad schedule to match. There is no point buying clicks at 9pm if nobody replies before morning, and the click is charged either way.",
+      "practice": "Do the arithmetic for one real business: value of a customer, share of enquiries that convert, and therefore the most an enquiry and a click can cost. Then write the one-page plan with the goal as a number and a date, and the failure condition. Before launching, confirm the destination page, the tracking, the answering hours and the capacity all exist.",
+      "quiz": [
+        {
+          "question": "What should be calculated before any campaign is built?",
+          "options": [
+            "The value of a customer and conversion rate, giving the most an enquiry and a click can cost",
+            "The total annual budget",
+            "The number of keywords needed",
+            "The competitors' ad spend"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why set the ad schedule to the answering hours?",
+          "options": [
+            "Clicks are charged whether or not anyone replies, so buying them when nobody answers wastes money",
+            "Platforms charge more at night",
+            "Ads perform better in the morning",
+            "It reduces the daily budget"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "af887a78-74ce-4875-962a-221b2e4d3222",
+      "title": "Google Ads Case Study — PPC Case Study For Local Business",
+      "objectives": [
+        "Follow a real local campaign from setup through to result",
+        "Recognise the changes that produced the improvement",
+        "Build your own case study from work you have done"
+      ],
+      "notes": "A case study is worth more than a tutorial because it shows the sequence: what was tried, what failed, what was changed, and what happened.\n\nWHAT TO WATCH FOR while reading any case study: what the situation was at the start, in numbers; what was changed, one thing at a time; how long before the change showed; and what was NOT said. Most published case studies omit the failures, the budget, and how long it really took. Read them knowing that.\n\nTHE PATTERN THAT REPEATS in almost every honest local campaign: tighten the structure so each ad group has one theme; cut the waste with negative keywords; match the destination to the search; get the tracking right so decisions are made on evidence; then, and only then, adjust bidding. The dull steps produce most of the improvement, which is why they are rarely the headline.\n\nLOCAL BUSINESSES ARE DIFFERENT from the large accounts most case studies feature. Small budgets, small search volumes, a phone as the main conversion, and a service area of a few kilometres. That is an advantage: the competition is thin and a modest budget can own the searches that matter, provided you are not paying for the whole country.\n\nBUILD YOUR OWN. Record the starting numbers before you change anything — this is the step that cannot be recovered later, and it is the one beginners forget. Then keep a dated log of each change and what followed. After one campaign you have a case study, which is the single most persuasive thing you can show the next client.\n\nADDITION BEYOND THE VIDEO — two honesty rules for your own case studies. State the budget and the period. A result from a large budget over six months is not comparable with a small one over three weeks, and implying otherwise is the kind of thing that ends badly when a client expects the same. And get permission before naming a client, or describe them generically — 'a hardware shop in Nakuru' — which is honest and often just as persuasive.",
+      "practice": "Take any campaign you can see and write it up properly: the starting numbers, each change with its date, what followed, and what you would do differently. Include the budget and the period. If you have no campaign yet, record the starting numbers for one you are about to run - that is the step you cannot do later.",
+      "quiz": [
+        {
+          "question": "What do most published case studies leave out?",
+          "options": [
+            "The failures, the budget, and how long it really took",
+            "The client name",
+            "The platform used",
+            "The industry"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Which step in building your own case study cannot be recovered later?",
+          "options": [
+            "Recording the starting numbers before changing anything",
+            "Writing the summary",
+            "Getting client permission",
+            "Calculating the final cost per result"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "40cee211-3ba5-4f85-ae4a-28109365d54e",
+      "title": "Becoming a Google Ads Freelancer",
+      "objectives": [
+        "Find ad management clients without competing globally",
+        "Set the terms that make paid advertising work safe to sell",
+        "Say plainly what you cannot promise"
+      ],
+      "notes": "Managing advertising is among the better-paid freelance work in this catalogue, because the client can see what it produces. It also carries the most risk, because you are spending someone else's money.\n\nWHERE THE CLIENTS ARE, near you: businesses already advertising badly — you can often see their adverts and diagnose the fault in twenty minutes; businesses with strong demand and no online presence; and other freelancers, since designers and web builders are constantly asked about advertising and have nobody to refer.\n\nLEAD WITH A DIAGNOSIS. 'I searched for your service and you are not appearing, while three competitors are. Here is what I would run and what I would expect it to cost.' That is specific, checkable and demonstrates competence. It beats any list of services.\n\nTHE TERMS THAT MAKE THIS SAFE, all in writing before starting:\n- YOUR FEE IS SEPARATE FROM AD SPEND. State it twice if necessary. This is the most common and most damaging misunderstanding in this work.\n- THE CLIENT PAYS THE PLATFORM DIRECTLY, from their own account and their own payment method. Never put a client's advertising on your card. You will not be reimbursed reliably, and you are carrying a real liability for someone else's business.\n- THE CLIENT OWNS THE ACCOUNT, and you are added to it. When the work ends, they keep the history and you keep your reputation.\n- WHAT IS INCLUDED: how many campaigns, how often you review, what reporting, over what period.\n- WHAT IS NOT: the website, the creative, answering the enquiries.\n\nWHAT YOU CANNOT PROMISE: a number of sales, a cost per result before any data exists, or results in the first fortnight. Advertising needs a learning period, and any figure quoted before it is a guess. Say that at the start; it costs you a few clients and saves you every one of them.\n\nADDITION BEYOND THE VIDEO — the honest refusal. Some businesses should not advertise yet: no capacity, no stock, a product nobody wants, a price far above the market, or nobody to answer the phone. Taking their money means spending it, watching it fail, and being blamed. Say so, explain what would need to change first, and offer to help with that instead. The reputation you keep is worth more than the month you lose, and in a market that runs on referral it is also the commercially correct decision.",
+      "practice": "Find three businesses whose advertising you can actually assess - search for their service and see who appears. Write a short diagnosis for each and one sentence on what you would run. Then write your terms in full: fee separate from spend, client pays the platform directly, client owns the account, what is included and excluded.",
+      "quiz": [
+        {
+          "question": "Who should pay the advertising platform?",
+          "options": [
+            "The client, directly from their own account and payment method",
+            "The freelancer, who invoices it back",
+            "Whichever is faster to set up",
+            "It should be split between both"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "A business has no capacity, no stock and nobody answering the phone. What is the correct response?",
+          "options": [
+            "Decline the advertising work, explain what must change first, and offer to help with that",
+            "Take the work and run a smaller budget",
+            "Run it and document the problems",
+            "Charge more to cover the risk"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "eeffdf8a-b6ed-4cb1-ba4c-824bb6e3292c",
+      "title": "How to Price Your Facebook Ads Management Services",
+      "objectives": [
+        "Choose a pricing model that suits the size of account you manage",
+        "Set a floor that covers the real work involved",
+        "Handle the money without carrying the client's risk"
+      ],
+      "notes": "Three models, each right in different circumstances.\n\nFLAT MONTHLY FEE. One price for managing the advertising each month. Best for small accounts, which is most of what you will manage here, because it is predictable for both sides and does not tie your income to how much the client spends.\n\nPERCENTAGE OF AD SPEND. Common on larger accounts and a poor fit for small ones: a small percentage of a small budget does not cover the work, and it creates an uncomfortable incentive to recommend spending more. Where you use it, set a minimum fee underneath it.\n\nSETUP FEE PLUS MONTHLY. Often the honest structure, because the first month is genuinely more work — account, tracking, structure, creative, keyword research. Charging one monthly rate for a month that takes three times the effort is how beginners lose money on exactly the clients they most wanted.\n\nCOUNT THE REAL WORK when setting the number: setup, weekly reviews, the search terms report, writing and testing adverts, monthly reporting, and the client's messages. The visible part is small; the rest is the job.\n\nSET A FLOOR from what you need monthly divided by how many accounts you can genuinely manage well, and do not go below it. Managing advertising badly because it is underpaid is worse than not taking it — the client loses money and tells people.\n\nTHE MONEY RULES, repeated because they matter most: your fee and the ad spend are separate; the client pays the platform directly; take your fee monthly in advance. Chasing a small monthly fee costs more in time than the fee is worth.\n\nADDITION BEYOND THE VIDEO — two things specific to selling this locally. Quote a PERIOD, not a month: advertising needs a learning period, so sell three months as the minimum honest engagement and explain why. A client who leaves after four weeks concluding it does not work was sold the wrong thing. And be explicit that AD BUDGET IS THEIR COST ON TOP OF YOUR FEE, with a realistic minimum — a budget too small to gather data cannot be managed into working, and it is better to say so than to take the fee and preside over a failure.",
+      "practice": "Write your three price options - flat monthly, setup plus monthly, and percentage with a minimum - and decide which you would offer a small local business. Then list every task in a month of managing one account and estimate the hours honestly, including messages and reporting. Calculate your floor and write down the minimum ad budget below which you would decline the work.",
+      "quiz": [
+        {
+          "question": "Why is a percentage of ad spend a poor fit for small accounts?",
+          "options": [
+            "A small percentage of a small budget does not cover the work, and it rewards recommending more spending",
+            "Clients refuse percentage models",
+            "It is harder to invoice",
+            "Platforms prohibit it"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why quote a period rather than a single month?",
+          "options": [
+            "Advertising needs a learning period, and a client who leaves after four weeks was sold the wrong thing",
+            "It is easier to invoice quarterly",
+            "Platforms require minimum durations",
+            "It allows a higher total fee"
+          ],
+          "correct_index": 0
+        }
+      ]
+    }
+  ]
+}

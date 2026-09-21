@@ -718,12 +718,12 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 318. Ten courses are now fully written:
+      **Bare-lesson count: 438 → 306. Eleven courses are now fully written:
       `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
-      `social-media-management` (16), `digital-marketing` (16) and
-      `copywriting-content-writing` (16).**
+      `social-media-management` (16), `digital-marketing` (16),
+      `copywriting-content-writing` (16) and `google-facebook-ads` (16).**
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -964,11 +964,33 @@ custom authorization layer bolted on top.
       what the writer is paid for is judgement. A writer asked about it
       should answer matter-of-factly — evasiveness is what loses trust.
 
+      `google-facebook-ads` was eleventh and is complete at 16 of 16
+      (`0108`, `0109`). This course carries real completions, so its own
+      baseline was recorded before the work — 1 enrollment, 2
+      lesson_progress rows — and confirmed unchanged after.
+
+      The automated-campaign lesson is written to outlive the product
+      name, since these change every couple of years. What it teaches is
+      three questions to ask whenever a platform offers to decide things
+      for you: what is it optimising toward and is that my goal, what data
+      is it learning from and is that data correct, and what would I be
+      unable to see or control. It also names the specific trap — an
+      automated campaign will spend on people searching the business by
+      name, who were coming anyway, and report them as conversions.
+
+      The money rules are stated plainly because this is the course where
+      a learner spends someone else's money: **the fee is separate from ad
+      spend, the client pays the platform directly from their own account,
+      and the manager never puts a client's advertising on their own
+      card.** The course also teaches the honest refusal — a business with
+      no capacity, no stock or nobody answering the phone should not be
+      sold advertising, because the money will be spent, it will fail, and
+      the manager will be blamed.
+
       Order of attack for the rest: partially bare courses at 12 bare
-      lessons each — `google-facebook-ads` (carries completions, so
-      baseline recorded and re-checked), `ecommerce-online-selling`,
-      `seo-search-engine-optimization`, `instagram-tiktok-growth` and five
-      others.
+      lessons each — `ecommerce-online-selling`,
+      `seo-search-engine-optimization`, `instagram-tiktok-growth`,
+      `excel-spreadsheets-for-work` and four others.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

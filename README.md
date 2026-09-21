@@ -718,14 +718,14 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 282. Thirteen courses are now fully
+      **Bare-lesson count: 438 → 270. Fourteen courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
       `social-media-management` (16), `digital-marketing` (16),
       `copywriting-content-writing` (16), `google-facebook-ads` (16),
-      `ecommerce-online-selling` (17) and
-      `seo-search-engine-optimization` (17).**
+      `ecommerce-online-selling` (17), `seo-search-engine-optimization`
+      (17) and `instagram-tiktok-growth` (12).**
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -1047,10 +1047,45 @@ custom authorization layer bolted on top.
       notes, objectives, practice and knowledge check, all twelve lessons
       — so the committed SQL is byte-identical to what production holds.
 
+      `instagram-tiktok-growth` was fourteenth and is complete at 12 of
+      12 (`0114`, `0115`) — wholly bare before this. It sits next to
+      `social-media-management`, which was already written, so Module 6
+      here is deliberately angled at selling SHORT-FORM VIDEO PRODUCTION
+      as a narrower, better-paid service rather than restating general
+      social media management. No video is shared between the two
+      courses.
+
+      The course refuses the two things short-form tutorials sell. It
+      says plainly that **platform payout programmes are largely
+      unavailable in Kenya**, so views alone pay nothing — a hundred
+      thousand views is worth exactly what you convert it into, and the
+      conversion has to be decided before you post, not after. And it
+      takes the "go viral every time" video as marketing: nobody does,
+      what is repeatable is raising the odds and being ready for the
+      spike, which is the part nobody prepares for.
+
+      The constraints are the real ones. Uploading video costs money on
+      a bundle, so filming is batched around daylight and uploaded on
+      wifi; one Saturday morning produces a fortnight. Most viewing is
+      muted on a phone, so captions are treated as compulsory rather
+      than a nicety. **Language is written as a reach decision** —
+      Kiswahili or Sheng reaches a Kenyan audience and caps the
+      international one, and a local audience of 3,000 is worth more to
+      a Nakuru business than 50,000 scattered viewers who cannot buy.
+      And the equipment argument is named as what it usually is: a way
+      of postponing the first post.
+
+      The freelance module is written for how business is actually done
+      here — WhatsApp rather than email, a voice note answered faster
+      than text, walking in at a quiet hour beating every online method
+      for a first client, three videos made unasked instead of a
+      proposal, and a deposit taken before filming because chasing the
+      balance afterwards is the commonest way freelancers here lose
+      money.
+
       Order of attack for the rest: partially bare courses at 12 bare
-      lessons each — `instagram-tiktok-growth`,
-      `excel-spreadsheets-for-work`, `google-workspace-productivity` and
-      three others.
+      lessons each — `excel-spreadsheets-for-work`,
+      `google-workspace-productivity` and three others.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

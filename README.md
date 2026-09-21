@@ -718,13 +718,14 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 294. Twelve courses are now fully written:
-      `freelancing` (12 lessons), `presentation-design` (19),
+      **Bare-lesson count: 438 → 282. Thirteen courses are now fully
+      written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
       `social-media-management` (16), `digital-marketing` (16),
-      `copywriting-content-writing` (16), `google-facebook-ads` (16) and
-      `ecommerce-online-selling` (17).**
+      `copywriting-content-writing` (16), `google-facebook-ads` (16),
+      `ecommerce-online-selling` (17) and
+      `seo-search-engine-optimization` (17).**
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -1014,10 +1015,42 @@ custom authorization layer bolted on top.
       and the build you talk a client out of is the client you keep for
       years.
 
+      `seo-search-engine-optimization` was thirteenth and is complete at
+      17 of 17 (`0112`, `0113`). Modules 3 and 4 were already written —
+      crawling, indexing and ranking, and three Search Console lessons —
+      so the twelve new lessons build on them rather than restate them.
+
+      The course is blunt about the two things SEO tutorials are not.
+      **Paid tools are priced in foreign currency at a level that can
+      exceed the whole fee for one small local client**, so the Ahrefs
+      lesson maps each question a paid tool answers to the free source
+      that answers it — Search Console is more accurate about your own
+      site than any tool — and says a beginner should let paying work
+      fund the tools rather than the reverse. And the pricing lesson
+      tells learners to **refuse pay-on-results SEO** and why: rankings
+      depend on what you do not control, and you would carry months of
+      unpaid work on a promise.
+
+      The local emphasis runs through it. Search volume for a specific
+      service in a specific town is genuinely small and tools report zero
+      for phrases people definitely type — that means the tool cannot see
+      it, not that there is no demand. The commonest real audit finding
+      is **no page naming the service and the town, or an incomplete
+      local profile**, not anything technical. The freelance lesson
+      teaches reporting leading indicators — impressions, load time,
+      indexing fixes — in month one when there is no ranking news, which
+      is what keeps a client past week six.
+
+      `0112` and `0113` were applied to production before the container
+      was recycled, and the commits were lost with it. They were
+      reconstructed from the live rows and verified field-by-field —
+      notes, objectives, practice and knowledge check, all twelve lessons
+      — so the committed SQL is byte-identical to what production holds.
+
       Order of attack for the rest: partially bare courses at 12 bare
-      lessons each — `seo-search-engine-optimization`,
-      `instagram-tiktok-growth`, `excel-spreadsheets-for-work`,
-      `google-workspace-productivity` and three others.
+      lessons each — `instagram-tiktok-growth`,
+      `excel-spreadsheets-for-work`, `google-workspace-productivity` and
+      three others.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

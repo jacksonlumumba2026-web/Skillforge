@@ -1,0 +1,202 @@
+{
+ "lessons": [
+  {
+   "id": "ce0c3b01-79c7-400f-9952-7283791bdc4a",
+   "title": "Official Ahrefs Tutorial: How to use Ahrefs to Improve SEO",
+   "objectives": [
+    "Understand what a paid SEO tool does and which questions it answers",
+    "Get most of the same answers from free sources",
+    "Decide when a subscription is actually justified"
+   ],
+   "notes": "Paid SEO tools crawl the web themselves and keep their own index, which lets them answer questions the free tools cannot: who links to a competitor, what a competitor ranks for, how hard a phrase looks to win. The tutorial is worth watching to understand what the profession looks like.\n\nBE CLEAR ABOUT THE COST. These tools are priced in foreign currency at a level that is a serious monthly commitment here, and for one small local client the subscription can exceed the fee. Do not subscribe because a tutorial made it look standard.\n\nWHAT THEY ANSWER, and what you can use instead:\n- WHAT AM I RANKING FOR? Search Console, free, and more accurate for your own site than any tool.\n- HOW IS MY SITE PERFORMING? Search Console again.\n- WHAT DO PEOPLE SEARCH? Search suggestions, related searches, the client's own messages, and the free keyword planner inside an ads account.\n- WHAT DOES A COMPETITOR RANK FOR? This is the genuine gap. You can approximate it by searching your phrases and reading who appears, and by reading their page titles, but a paid tool does it in seconds.\n- WHO LINKS TO THEM? Also a genuine gap, and most free approximations are poor.\n- IS MY SITE TECHNICALLY BROKEN? Free crawlers exist with limits generous enough for a small site.\n\nWHEN A SUBSCRIPTION IS JUSTIFIED: when you manage several paying clients and the time saved exceeds the cost, or when one client's work genuinely depends on competitor and link data. Many tools offer a limited free tier and a cheaper trial period — use those to do a concentrated research block rather than paying monthly to check occasionally.\n\nADDITION BEYOND THE VIDEO — the honest professional position. A beginner here should get paid work first and let the client fund the tools, not the reverse. Search Console plus careful manual searching will take you a long way, and a competitor analysis done by reading the actual results pages is slower but produces better judgement than a dashboard, because you see what the searcher sees. And if you do quote a client for tool costs, quote them as a separate line rather than absorbing them into a small monthly fee.",
+   "practice": "Answer four questions about one real site using only free sources: what it already ranks for, which pages get impressions but few clicks, what people search in this area, and whether anything is technically broken. Then list the two questions you genuinely could not answer for free - those, and only those, are what a subscription would buy you.",
+   "quiz": [
+    {
+     "question": "Which question can free tools answer better than a paid one?",
+     "options": [
+      "What your own site is already ranking for, via Search Console",
+      "Who links to a competitor",
+      "What a competitor ranks for",
+      "How difficult a phrase is to win"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "When is a paid SEO subscription justified for a beginner here?",
+     "options": [
+      "Once paying clients make the time saved exceed the cost - let the work fund the tool",
+      "Before taking the first client, to look professional",
+      "As soon as a tutorial recommends it",
+      "Never, under any circumstances"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "5de9fb73-50b3-456f-892e-e509d1f12ad4",
+   "title": "Technical SEO Best Practices for Beginners",
+   "objectives": [
+    "Make sure a site can be crawled, read and loaded",
+    "Fix the technical faults that actually cost rankings",
+    "Prioritise speed on the connections your visitors have"
+   ],
+   "notes": "Module 3 explained crawling and indexing. This lesson is the practical checklist, in the order that pays.\n\nSPEED, FIRST AND BY A DISTANCE, for this market. Most visitors are on a phone on a data bundle, and a page that takes many seconds is abandoned before the content loads. The usual causes, in order: uncompressed images, too many scripts and plugins, and slow hosting. Compressing images alone fixes most small business sites. Test on a phone on mobile data, not on your laptop on wifi, because the laptop test is reassuring and wrong.\n\nMOBILE USABILITY. Text large enough to read without pinching, buttons far enough apart to tap, nothing running off the side of the screen. A site that is awkward on a phone is awkward for almost all of its visitors.\n\nCAN IT BE CRAWLED AND INDEXED? Check the index report in Search Console — Module 4 covers it. Pages accidentally blocked or marked not to be indexed are a common and invisible fault.\n\nONE VERSION OF EACH PAGE. A site reachable at several different addresses splits its own signals. Pick one and redirect the rest.\n\nBROKEN LINKS AND MISSING PAGES, fixed or redirected properly.\n\nA SITEMAP submitted, and a robots file that does not accidentally block anything important.\n\nSECURE CONNECTION, which is expected and which browsers now warn about the absence of.\n\nSTRUCTURED DATA where it genuinely applies — opening hours, address, products, reviews — because it can produce richer results. Useful, and far less important than speed.\n\nADDITION BEYOND THE VIDEO — the realistic priority for a Kenyan small business site: compress the images, remove the plugins nobody uses, check it on a phone on mobile data, and make sure the phone number and address are correct and tappable. That is most of the available technical gain. Elaborate technical work on a site with four pages and no traffic is a way of looking busy. And when a client's site is genuinely too slow because of cheap or distant hosting, say so plainly rather than optimising around it — it is a real cost with a real fix, and the honest recommendation is worth more than months of tuning.",
+   "practice": "Take one real site and time it on a phone on mobile data. Compress every image, remove any plugin or script not clearly needed, and time it again - write both numbers down. Then check the index report for pages accidentally excluded, confirm there is one version of the site, and fix any broken links.",
+   "quiz": [
+    {
+     "question": "What is the highest-priority technical fix in this market?",
+     "options": [
+      "Page speed, tested on a phone on mobile data - usually image compression",
+      "Structured data markup",
+      "Sitemap submission",
+      "Fixing broken links"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "A client's site is slow because of cheap, distant hosting. What is the honest move?",
+     "options": [
+      "Say so plainly - it is a real cost with a real fix, rather than months of tuning around it",
+      "Optimise the images further and accept the speed",
+      "Reduce the number of pages",
+      "Recommend a redesign"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "522d93b1-693f-4d60-8d80-709f5f46130f",
+   "title": "How to Do a Technical SEO Audit",
+   "objectives": [
+    "Run an audit in an order that finds the important faults first",
+    "Separate faults that cost money from faults that only look untidy",
+    "Deliver findings a client can act on"
+   ],
+   "notes": "An audit is a diagnosis, not a list. A hundred-item report that nobody acts on is worth nothing; five findings in priority order with what to do about each is worth paying for.\n\nTHE ORDER TO WORK IN:\n1. IS IT INDEXED AT ALL? If the pages are not in the index, nothing else matters. Search Console's index report, from Module 4, answers this first.\n2. IS IT FAST ON A PHONE ON MOBILE DATA? Measure it, write the number down.\n3. IS IT USABLE ON A PHONE?\n4. DO THE IMPORTANT PAGES EXIST AND ANSWER SOMETHING? A site with no page for the main service cannot rank for it, and this is far commoner than any subtle technical fault.\n5. ARE THE TITLES AND HEADINGS DOING ANY WORK, or is every page called 'Home'?\n6. IS THE LOCAL PROFILE COMPLETE AND CONSISTENT with the site?\n7. THE TECHNICAL HYGIENE: one version of the site, no broken links, a sitemap, a sensible robots file, a secure connection.\n8. WHAT IS IT ALREADY RANKING FOR, and which pages are close enough to push?\n\nSEPARATE WHAT COSTS MONEY FROM WHAT IS UNTIDY. A missing service page and an eight-second load time cost customers. A missing alt attribute on a decorative image does not. Beginners report everything a crawler flags and bury the two findings that mattered.\n\nDELIVERING IT: three to five findings, each with what is wrong, why it costs them, and what to do. Put the biggest first. Include the measurement you took so the improvement can be checked later — an audit with no starting numbers cannot demonstrate its own value.\n\nADDITION BEYOND THE VIDEO — the audit finding that comes up most often here and is rarely on a standard checklist: the business is not findable because it has NO PAGE NAMING THE SERVICE AND THE TOWN, or no complete local profile, rather than because of anything technical. Check that first. And always check whether the site is even the right place to invest — for a business whose customers all arrive by WhatsApp and word of mouth, a technically perfect site may not be the best use of their money, and saying so is a better audit than the one that generates more work for you.",
+   "practice": "Audit one real site in the eight-step order, writing down a measurement at each step. Then reduce your findings to the five that actually cost the business money, ordered by consequence, each with what is wrong, why it matters and what to do. Read it back and ask whether a busy owner could act on it without asking you a single question.",
+   "quiz": [
+    {
+     "question": "What should be checked first in an audit?",
+     "options": [
+      "Whether the pages are indexed at all - if not, nothing else matters",
+      "Page speed",
+      "Broken links",
+      "Title tags"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What is the commonest real finding for a small business here?",
+     "options": [
+      "No page naming the service and the town, or an incomplete local profile",
+      "Missing structured data",
+      "Duplicate meta descriptions",
+      "An outdated sitemap"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "9668da5b-f35e-4e99-a0b9-d87274317920",
+   "title": "How I Grew Traffic 148% (Real SEO Case Study)",
+   "objectives": [
+    "Follow a real project from starting position to result",
+    "Identify which changes actually produced the growth",
+    "Build your own case study from work you have done"
+   ],
+   "notes": "A case study is more useful than a tutorial because it shows sequence and consequence. Read every one with two questions: what was the starting position in numbers, and what is not being said?\n\nWHAT IS USUALLY LEFT OUT: how long it really took, what was tried and failed, the budget, and the starting size. A percentage is meaningless without the base — a 148% increase from 40 visits is 99 visits, and from 40,000 it is a different business entirely. Always look for the absolute numbers, and be suspicious when they are absent.\n\nTHE PATTERN THAT REPEATS in almost every honest SEO project: fix what stops the site being found at all; make the pages that exist answer real searches properly; improve the pages already close to ranking rather than writing new ones; get the local profile right; then, slowly, earn some authority. The dull steps produce most of the result, which is why they rarely make the headline.\n\nTRAFFIC IS NOT THE POINT. A case study reporting only traffic growth may be reporting nothing valuable. The question is whether enquiries and customers increased. Traffic from people who will never buy is a vanity number, and a good case study connects the work to business results.\n\nBUILD YOUR OWN, which is the actual deliverable of this lesson. RECORD THE STARTING NUMBERS BEFORE YOU CHANGE ANYTHING — impressions, clicks, rankings for your main phrases, enquiries. This is the step that cannot be recovered later and the one beginners forget. Then keep a dated log of every change. After one project you have a case study, and it is the most persuasive thing you can show the next client.\n\nADDITION BEYOND THE VIDEO — two honesty rules for your own. State the period and the starting position, because a result that took nine months should not be implied to take six weeks. And where a client cannot be named, describe them generically — 'a hardware shop in Nakuru' — which is honest and just as persuasive. Get permission before naming anyone, and never present a competitor's result or a tutorial's numbers as your own.",
+   "practice": "Take any site you can access and record its full starting position today: impressions, clicks, current rankings for five phrases, and how many enquiries the business gets in a week. Save it with the date. Then make one change, log it, and check again in a month. That record is the beginning of your first real case study.",
+   "quiz": [
+    {
+     "question": "Why is a percentage increase alone misleading?",
+     "options": [
+      "Without the starting numbers, 148% could be 99 visits or 60,000",
+      "Percentages are calculated differently by each tool",
+      "It hides the time period only",
+      "Percentages exclude mobile traffic"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Which step cannot be recovered later?",
+     "options": [
+      "Recording the starting numbers before making any changes",
+      "Writing the summary",
+      "Getting client permission",
+      "Choosing which phrases to target"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "0a3f2874-f9a0-4376-9bbb-2a7c56e27d8c",
+   "title": "How To Do Client SEO As a Freelancer",
+   "objectives": [
+    "Run an SEO engagement as a defined process",
+    "Set expectations that survive the slow first months",
+    "Report progress before rankings arrive"
+   ],
+   "notes": "SEO is the hardest freelance service in this catalogue to sell honestly, because results are slow and partly outside your control. That is exactly why doing it honestly is a competitive advantage.\n\nTHE ENGAGEMENT, as a process: audit and starting numbers; fix what blocks indexing and speed; the local profile; the page-level work on the highest-intent searches; content for the questions customers ask; and slow authority building. Monthly reporting throughout.\n\nSET EXPECTATIONS AT THE START, in writing: results take months; nobody can promise a position; rankings move for reasons outside anyone's control; and you will report progress monthly whether or not rankings have moved yet. A client who accepts that is a client you can keep. A client who will not is one who will leave in week six regardless of what you deliver.\n\nREPORT LEADING INDICATORS while you wait. In month one there is no ranking news, so report the work and the early signals: pages fixed, load time before and after, indexing problems resolved, impressions rising, profile completed, reviews gathered. Impressions usually move before positions do, which makes them the honest early evidence that something is happening.\n\nWHAT IS THEIRS AND WHAT IS YOURS: you do not control whether they answer the phone, whether the product is good, whether they publish the content you asked for, or whether a competitor outspends them. Say so pleasantly and in writing at the start.\n\nGET ACCESS PROPERLY, and in their name: Search Console, the site, the business profile. The client owns all of it; you are added. When the work ends they keep their assets and their history.\n\nADDITION BEYOND THE VIDEO — three things specific to selling this here. Many small businesses do not need an SEO retainer at all; they need the local profile completed, five reviews, and a page that names the service and the town — a week of work, charged once. Say that when it is true, do it well, and you will be the person they call for everything else. Where there is a real ongoing case, sell a MINIMUM OF THREE TO SIX MONTHS and explain why, because a one-month SEO engagement cannot show a result and sells the client a disappointment. And be careful about inherited sites: check for a penalty, bought links or a previous agency's damage before you take responsibility for the rankings.",
+   "practice": "Write your engagement plan as a six-month outline with what happens each month, and your expectations paragraph in plain language. Then write a month-one report for a real or imagined client that contains no ranking news at all but still demonstrates progress - pages fixed, speed improved, profile completed, impressions moving.",
+   "quiz": [
+    {
+     "question": "What should a month-one report contain?",
+     "options": [
+      "Leading indicators - work done, speed improved, indexing fixed, impressions rising",
+      "An apology for the lack of rankings",
+      "Projected rankings for month six",
+      "Competitor rankings only"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "A small business needs its profile completed, five reviews and one good page. What should you sell?",
+     "options": [
+      "Exactly that, as a week of work charged once, and say the retainer is not needed yet",
+      "A six-month retainer anyway",
+      "A full technical audit first",
+      "Nothing, since the job is too small"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "d41bfc45-29bf-4c78-80bb-90eb631bcab0",
+   "title": "How Much To Charge For SEO",
+   "objectives": [
+    "Choose a pricing model that matches the work and the risk",
+    "Set a floor that covers months of effort before results appear",
+    "Refuse the arrangements that cannot work"
+   ],
+   "notes": "SEO pricing is difficult because the work happens months before the result, which means whoever is wrong about the timing loses money.\n\nTHE MODELS:\n\nONE-OFF PROJECT. An audit, a fix-up, a local profile setup, a set of pages. Best for beginners and best for small businesses: defined scope, defined price, visible deliverable. Start here.\n\nMONTHLY RETAINER. Ongoing work for a fixed monthly fee. The right shape once there is genuinely continuing work, and it requires the expectations conversation from the last lesson. Sell a minimum period.\n\nHOURLY. Rarely a good fit, and it punishes you for getting faster, but it is honest for ad hoc advisory work.\n\nPAY ON RESULTS. Refuse this. Rankings depend on things you do not control, the client can stop answering the phone or change the site, positions are hard to verify neutrally, and you would carry months of unpaid work on a promise. Everyone who offers it either has a definition of 'result' that is trivially achievable or is about to have an argument. Say plainly why you do not work that way.\n\nCOUNT THE REAL WORK when setting a number: the audit, the fixes, the writing, the profile work, the monthly reporting, the client's messages, and the months before anything shows. Set a floor from what you need monthly divided by how many clients you can genuinely serve, and do not quote below it — SEO delivered badly because it was underpaid produces no result, and no result is what the client remembers.\n\nADDITION BEYOND THE VIDEO — the pricing that fits this market. Lead with a small, defined first project rather than a retainer: a local profile setup with reviews and two properly written pages is affordable, visibly useful within weeks, and earns the trust that a six-month commitment requires. Take payment monthly in advance. Quote tool costs separately if you use them. And be honest when the honest answer is that they should spend the money on advertising instead for now, because it will produce enquiries this month while SEO builds — the client who is told that remembers it, and comes back when the time is right.",
+   "practice": "Write three offers - a small defined first project, a three-month engagement, and a monthly retainer - each stating what is included, what is excluded, and over what period. Then list every task in a month of SEO work and estimate the hours honestly. Calculate your floor, and write the sentence you will use to decline pay-on-results work.",
+   "quiz": [
+    {
+     "question": "Why refuse pay-on-results SEO?",
+     "options": [
+      "Rankings depend on factors outside your control and you would carry months of unpaid work on a promise",
+      "Clients never agree to it",
+      "It is prohibited by search engines",
+      "Results cannot be measured at all"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What should a beginner lead with in this market?",
+     "options": [
+      "A small defined first project that is visibly useful within weeks",
+      "A six-month retainer",
+      "An hourly advisory arrangement",
+      "A free trial month"
+     ],
+     "correct_index": 0
+    }
+   ]
+  }
+ ]
+}

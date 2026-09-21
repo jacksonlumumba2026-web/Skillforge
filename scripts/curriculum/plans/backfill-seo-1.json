@@ -1,0 +1,202 @@
+{
+ "lessons": [
+  {
+   "id": "759e678c-8c4d-4f19-be93-863176eb4f44",
+   "title": "SEO Basics: What is SEO and Why is it Important?",
+   "objectives": [
+    "Explain what search engines are trying to do and why that decides everything",
+    "Name the three parts of SEO and what each contributes",
+    "Set an honest expectation of how long results take"
+   ],
+   "notes": "SEO is making a business findable when someone searches for what it sells. Everything in the field follows from one fact: a search engine's business is returning the result that best answers the question. Be that answer, better than the current results, and you rank. The rest is detail and technique.\n\nWHY IT IS WORTH DOING: unlike advertising, it does not stop when you stop paying. A page that ranks keeps bringing people for months or years. That is also why it is slow — you are building something rather than renting attention.\n\nTHE THREE PARTS:\n\nTECHNICAL. Can a search engine reach, read and load the pages? Module 3 covers crawling and indexing properly.\n\nCONTENT. Pages that genuinely answer real questions, using the words people type. This is where most of the value is and where beginners spend the least time, because they are looking for tricks instead.\n\nAUTHORITY. Other sites referring to yours. Slow, hardest to fake, and the commonest way small sites get penalised is by trying to buy it.\n\nHOW LONG IT TAKES: months, not weeks. Anyone promising page one by a date is selling something. Say this plainly to any client at the start, because the alternative is losing them at week six having promised what nobody can deliver.\n\nADDITION BEYOND THE VIDEO — two things that shape this work here. First, LOCAL SEARCH is where most small businesses actually win. A complete business profile with the right category, real opening hours, a genuine location, photographs and reviews will out-earn any amount of article writing for a shop, a clinic, a garage or a salon. Do that before anything else. Second, tactics chase algorithm updates and date within a year, so anchor yourself to the durable question — what does this searcher want, and is this genuinely the best answer available? That has survived every update there has ever been, and it is what you should be selling.",
+   "practice": "Take one local business and search for it the way a customer would. Note where it appears, what appears above it, and whether its business profile is complete. Then write down the three parts - technical, content, authority - and score that business out of five on each. The lowest score is where you would start.",
+   "quiz": [
+    {
+     "question": "What is the underlying logic of all SEO?",
+     "options": [
+      "Search engines return the result that best answers the question, so be that answer",
+      "Using target keywords often enough",
+      "Acquiring as many links as possible",
+      "Publishing new content frequently"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What should you tell a client about timing at the start?",
+     "options": [
+      "Results take months, not weeks, and nobody can promise page one by a date",
+      "That the first month usually shows results",
+      "That timing depends entirely on budget",
+      "That rankings are unpredictable and cannot be discussed"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "abf786e4-aca5-44c2-aff3-ca63eae31b91",
+   "title": "Keyword Research: How to Find Keywords for Your Website",
+   "objectives": [
+    "Find the phrases people actually type before buying",
+    "Read the intent behind a search rather than the words",
+    "Choose phrases you can realistically rank for"
+   ],
+   "notes": "Keyword research is working out what people type, and then deciding which of those you can win.\n\nINTENT MATTERS MORE THAN VOLUME. Four kinds of search: someone learning ('what causes a fridge to leak'), someone comparing ('best fridge brands Kenya'), someone looking for a specific place ('Naivas Kilimani'), and someone ready to buy ('fridge repair Kasarani'). That last kind converts; the first brings traffic that may never buy. Match the page to the intent or the ranking is worthless.\n\nWHERE TO FIND THEM WITHOUT PAYING: the search box's own suggestions as you type; the 'people also ask' and related searches on the results page; the questions in your client's own messages, comments and phone calls; competitors' page titles; and Search Console, which Module 4 covers and which tells you what you are ALREADY being found for — usually the single most useful list available and the one nobody looks at.\n\nBE REALISTIC ABOUT WHAT YOU CAN WIN. A broad, competitive phrase is held by large sites with years of authority. A specific, longer phrase has fewer searches and far less competition, and the people typing it are closer to buying. Ten specific phrases you can rank for beat one you cannot.\n\nONE PAGE, ONE INTENT. Do not try to rank one page for six unrelated phrases; it will rank for none.\n\nADDITION BEYOND THE VIDEO — the local realities. SEARCH VOLUME HERE IS GENUINELY SMALL for a specific service in a specific town, and tools will often report zero for phrases that people definitely type. Do not conclude there is no demand — conclude the tool cannot see it. Twenty searches a month for 'plumber Ruaka' is a real business if you convert them. Include PLACE NAMES, estates, landmarks and road names, because that is how people search here and almost nobody optimises for it. Include MIXED ENGLISH AND KISWAHILI phrasing where people use it. And check what the search results actually look like before committing: if the whole first page is taken by large marketplaces or directories, that phrase is not winnable and your effort belongs elsewhere.",
+   "practice": "For one real business, build a list of thirty phrases from free sources only: search suggestions, related searches, the client's own messages, competitor titles, and Search Console if you have access. Mark each with its intent. Then search your five best ones and note what currently ranks - remove any where the whole page is marketplaces or directories.",
+   "quiz": [
+    {
+     "question": "Why does intent matter more than search volume?",
+     "options": [
+      "A high-volume phrase from people who will never buy is worth less than a small one from people ready to",
+      "Volume figures are usually inaccurate",
+      "Intent is easier to measure",
+      "High-volume phrases are always competitive"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "A tool reports zero searches for 'plumber Ruaka'. What does that mean?",
+     "options": [
+      "The tool cannot see the volume - small local volumes are real business",
+      "Nobody searches for that",
+      "The phrase is spelt wrongly",
+      "The location is too specific to target"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "9720f5ad-7584-4b76-83db-146931f0d0ca",
+   "title": "What is On-Page SEO",
+   "objectives": [
+    "Name the on-page elements that actually affect ranking and clicks",
+    "Write a title and description that earn the click",
+    "Structure a page so both readers and search engines follow it"
+   ],
+   "notes": "On-page SEO is everything you control on the page itself. It is the cheapest and most reliable part of the work, and most small business pages fail at it completely.\n\nTHE TITLE is the highest-value element on any page. It is what appears in results and what decides the click. Put the actual thing and the place in it: 'Fridge Repair in Kasarani — Same-Day Service' beats 'Home | Our Company'. An astonishing number of business pages are still titled 'Home', which is a free ranking and a free click given away.\n\nTHE DESCRIPTION does not directly affect ranking and heavily affects whether anyone clicks. Write it as an advert: what they get and why you.\n\nONE MAIN HEADING that states what the page is about, then subheadings that break the content into the questions a reader has. This helps both the reader scanning and the search engine working out what the page covers.\n\nTHE URL: short, readable, containing the topic.\n\nTHE CONTENT ITSELF has to genuinely answer the search. Repeating a phrase eleven times has not worked for many years and reads badly to the person you are trying to convince.\n\nIMAGES need descriptive alt text and, more importantly here, compression. A heavy image is the commonest cause of a slow page.\n\nINTERNAL LINKS between related pages help people find what else exists and help search engines understand how the site fits together.\n\nADDITION BEYOND THE VIDEO — the priority order for a small business here, because it is not what tutorials imply. First, put the TOWN OR NEIGHBOURHOOD in the title, because local intent is most of the opportunity and almost nobody does it. Second, make the PHONE NUMBER TAPPABLE and put it near the top, since most of your traffic is on a phone and a call is the conversion. Third, COMPRESS THE IMAGES and test the page on mobile data rather than wifi — a page that takes eight seconds on a bundle has lost the visitor before any of your writing matters. Those three take an hour and beat a month of article writing.",
+   "practice": "Take one real page and rewrite its title to name the thing and the place, write a description that earns a click, set one clear main heading with question subheadings, compress every image, and make the phone number tappable. Time the page on a phone on mobile data before and after, and write both numbers down.",
+   "quiz": [
+    {
+     "question": "Which on-page element is worth the most?",
+     "options": [
+      "The title, since it appears in results and decides the click",
+      "The meta description",
+      "The number of internal links",
+      "Keyword density in the body"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What are the three highest-priority on-page fixes for a local business?",
+     "options": [
+      "Town in the title, a tappable phone number near the top, and compressed images",
+      "A blog, a sitemap, and social links",
+      "Keyword density, alt text, and a longer page",
+      "Schema markup, redirects, and a new theme"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "b3300a28-e790-4fe9-b913-b32e4de6ff44",
+   "title": "On-Page SEO Pt 2: How to Optimize a Page for a Keyword",
+   "objectives": [
+    "Optimise a single page for a single search properly",
+    "Judge a page against what already ranks rather than against a checklist",
+    "Improve an existing page instead of always writing a new one"
+   ],
+   "notes": "The practical version: you have a phrase, you have a page, and you want the page to rank for the phrase.\n\nSTART BY LOOKING AT WHAT ALREADY RANKS. Search the phrase and read the top three results properly. What kind of page are they — a shop page, a guide, a list, a comparison? How long? What do they cover? That is the search engine telling you what it believes answers this question. If the top results are all guides and you have a product page, you have misread the intent, and no amount of optimisation will fix that.\n\nTHEN MATCH AND BEAT. Cover what they cover, and add what they missed — the local price, the real procedure, the photograph, the specific detail. Being genuinely more useful than the current answer is the only durable ranking method.\n\nWHERE THE PHRASE GOES, naturally: the title, the main heading, the first hundred words, one subheading, the URL. That is enough. Beyond that you are writing for a machine rather than a person, and it reads like it.\n\nANSWER THE QUESTION EARLY. Someone searching 'how much does X cost' wants the figure in the first paragraph, not after eight hundred words of preamble. Withholding it to keep people reading does the opposite.\n\nIMPROVING BEATS PUBLISHING. A page already ranking on the second page for something useful is usually a faster win than a new article: add what is missing, update it, improve the title. Beginners always write something new and neglect the pages already half-working, which Search Console will show you.\n\nADDITION BEYOND THE VIDEO — three things to add that foreign-written competitors cannot. Real prices in shillings rather than converted figures. The actual local procedure, office or requirement rather than a generic description. And photographs of the real place or work rather than stock images. Where the pages currently ranking for a local question were written by someone who has never been here — which is common — this is not a marginal advantage, it is the whole opportunity, and it is also simply the better answer.",
+   "practice": "Choose one phrase and one page. Read the top three ranking results and write down what kind of page they are, roughly how long, and what they cover. Then rewrite your page to cover that and add at least two things they cannot offer - a real price, the actual procedure, a genuine photograph. Publish and note the date.",
+   "quiz": [
+    {
+     "question": "What should you do before optimising a page?",
+     "options": [
+      "Read the top three ranking results to see what kind of page the search engine believes answers this",
+      "Check the keyword volume",
+      "Count competitor backlinks",
+      "Run a technical audit"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Which is usually the faster win?",
+     "options": [
+      "Improving a page already ranking on the second page",
+      "Publishing a new article",
+      "Building more links",
+      "Redesigning the site"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "b0fb903d-3e21-4073-ab91-399127a266fb",
+   "title": "Link Building for Beginners: Complete Guide to Get Backlinks",
+   "objectives": [
+    "Explain why links matter and what makes one valuable",
+    "Earn links through methods that do not risk a penalty",
+    "Recognise the schemes that will damage a site"
+   ],
+   "notes": "A link from another site is a vote. Search engines use them to judge whether anyone else thinks you are worth mentioning, which is why they are hard to fake and why so many people try.\n\nWHAT MAKES A LINK VALUABLE: it comes from a site that is itself trusted, it is relevant to your subject, it is editorial rather than paid, and it sits inside real content rather than in a footer of two hundred links. One good link beats fifty poor ones.\n\nWHAT WILL DAMAGE YOU: buying links, link exchange schemes, comment spam, and mass directory submissions. These are detectable, they are penalised, and recovering from a penalty takes longer than the shortcut saved. Any service offering hundreds of links for a small fee is selling the fastest available way to make a client's site worse.\n\nHOW TO ACTUALLY EARN THEM, in rough order of realism for a small business:\n- SUPPLIERS AND PARTNERS you already work with, who often list stockists or partners.\n- ASSOCIATIONS AND BODIES you belong to — a trade association, a chamber, a professional register.\n- LOCAL PRESS AND BLOGS, if you do something genuinely worth reporting.\n- SPONSORSHIPS: a school team, a local event, a community project, which are usually listed publicly.\n- BEING USEFUL: publishing something people cite, such as a real price guide or a genuine local resource.\n- SUPPLIERS' AND CUSTOMERS' MENTIONS, simply by asking the people who already work with you.\n\nSTART WITH WHO ALREADY KNOWS YOU. Every business has existing relationships that could produce a legitimate mention, and nobody asks.\n\nADDITION BEYOND THE VIDEO — the honest proportion for a small local business: links matter far less than the local profile, the page titles and answering the phone. A garage in Nakuru does not need a link campaign; it needs a complete business profile, reviews, and pages that name the service and the town. Spend your effort there first, and treat links as something earned slowly through real relationships rather than a project. Where you do pursue them, local and relevant beats large and generic — a mention from a Kenyan trade association or a local news site is worth more to a Kenyan business than a link from a large foreign site with no connection to it.",
+   "practice": "List every organisation that already has a real relationship with one business - suppliers, associations, partners, anyone they sponsor, customers who write publicly. Check which already have a page where a mention would fit, and ask three of them. Also write down what you would say to a client who wants to buy links, and why you will not.",
+   "quiz": [
+    {
+     "question": "What makes a link valuable?",
+     "options": [
+      "It comes from a trusted, relevant site, editorially, inside real content",
+      "It comes from a site with many outbound links",
+      "It uses the exact target phrase",
+      "It was paid for and is therefore guaranteed"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "For a small local business, what deserves effort before links?",
+     "options": [
+      "A complete local profile, reviews, and pages naming the service and the town",
+      "A monthly guest posting programme",
+      "Directory submissions",
+      "A link exchange with similar businesses"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "6f2e66ca-687d-41be-abb6-38349389d396",
+   "title": "SEO for Local Businesses — How to Rank #1 in Your City",
+   "objectives": [
+    "Set up a business profile so it can rank at all",
+    "Earn and handle reviews properly",
+    "Build the consistency that local ranking depends on"
+   ],
+   "notes": "This is the highest-return SEO available to most businesses in this catalogue, and it is mostly free.\n\nTHE BUSINESS PROFILE IS THE PRODUCT. Complete every field: the exact business name as it really is, the right primary category — which matters more than almost anything else and is usually chosen carelessly — the real address or service area, accurate opening hours including holidays, the phone number, and a description that says what you do and where.\n\nPHOTOGRAPHS, real ones, added regularly. The shopfront so people recognise it, the inside, the team, the work. Profiles with genuine recent photographs are chosen over those without.\n\nREVIEWS are the strongest local ranking and persuasion factor together. Ask every satisfied customer, at the moment they are pleased, and make it easy by sending the link. Reply to every review, including the bad ones, calmly and factually — the reply is read by everyone who comes later, which is the real audience. Never buy reviews: they are detectable, they get profiles suspended, and they are obvious to the customers you are trying to convince.\n\nCONSISTENCY OF NAME, ADDRESS AND PHONE everywhere they appear. Different versions across different listings confuse the matching and cost you ranking.\n\nLOCAL PAGES ON THE SITE: a page per service and per area served, each naming the place, rather than one page trying to cover eleven towns.\n\nADDITION BEYOND THE VIDEO — the practical edge here. VERIFY THE PROFILE PROPERLY and keep control of the login; businesses routinely lose access when whoever set it up leaves, and recovering it is tedious. Where a business has NO FIXED PREMISES — a mobile mechanic, a delivery-only kitchen — set it up as a service area rather than inventing an address, because a false address can get the profile removed entirely. Use the QUESTIONS section: seed the questions customers actually ask and answer them, since that content shows in search. And remember that for most local searches the profile outranks the website, so if a business can only maintain one thing properly, it should be the profile.",
+   "practice": "Take one business and complete every field of its profile, choosing the primary category deliberately after checking what competitors use. Add five real photographs. Then ask five recent customers for a review by sending them the direct link, and write a calm reply template for a negative review before you need one.",
+   "quiz": [
+    {
+     "question": "Which profile field is most often chosen carelessly and matters most?",
+     "options": [
+      "The primary category",
+      "The business description",
+      "The opening hours",
+      "The website link"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why reply to negative reviews?",
+     "options": [
+      "The reply is read by everyone who comes later, who are the real audience",
+      "It removes the review",
+      "It improves the star average",
+      "Platforms require a response"
+     ],
+     "correct_index": 0
+    }
+   ]
+  }
+ ]
+}

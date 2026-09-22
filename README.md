@@ -718,14 +718,14 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 270. Fourteen courses are now fully
+      **Bare-lesson count: 438 → 258. Fifteen courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
       `social-media-management` (16), `digital-marketing` (16),
       `copywriting-content-writing` (16), `google-facebook-ads` (16),
       `ecommerce-online-selling` (17), `seo-search-engine-optimization`
-      (17) and `instagram-tiktok-growth` (12).**
+      (17), `instagram-tiktok-growth` (12) and `email-marketing` (16).**
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -1083,9 +1083,51 @@ custom authorization layer bolted on top.
       balance afterwards is the commonest way freelancers here lose
       money.
 
-      Order of attack for the rest: partially bare courses at 12 bare
-      lessons each — `excel-spreadsheets-for-work`,
-      `google-workspace-productivity` and three others.
+      `email-marketing` was fifteenth and is complete at 16 of 16
+      (`0116`, `0117`). Modules 3 and 4 were already written — spam and
+      deliverability, subject lines, segmentation, reading the numbers —
+      so Module 5 builds on the segmentation lesson rather than
+      repeating it.
+
+      The course says the thing an email course is not supposed to say:
+      **for most consumer businesses here, email is the wrong channel
+      and WhatsApp is the right one**, and pretending otherwise wastes a
+      client's money. It then names where email genuinely wins —
+      business-to-business, professional services with a long decision,
+      schools, clinics, associations with a membership, the diaspora,
+      and anything sold with a written record.
+
+      Two lessons refuse their own source. The A/B testing lesson says
+      **a difference of 22 opens against 19 is noise**, that a few
+      hundred per group is the minimum for a single result to mean
+      anything, and that at Kenyan small-business list sizes you should
+      keep a log across ten sends instead of splitting the list — and it
+      notes open rates are now inflated by privacy image pre-loading, so
+      judge by clicks and replies. The segmentation lesson says a list
+      of two hundred does not need eight segments, and that saying so to
+      a client is worth more than the extra line on the invoice.
+
+      The **Data Protection Act 2019** runs through the course, which no
+      international email video covers: consent freely given and
+      informed, the purpose stated, removal honoured, a record kept of
+      when and how each address was collected. The anti-pattern lesson
+      scripts the conversation with the client who arrives holding a
+      bought list or a WhatsApp group export — what will happen to their
+      domain, what the Act says, and the opt-in invitation to offer
+      instead.
+
+      Launch timing is written for household cash rather than a generic
+      calendar: end of month, school fee terms, harvest and December
+      change whether buyers have money, so a close on the 18th and a
+      close on the 2nd are not the same launch. And the payment method
+      belongs in the launch email, because a buyer who reaches a
+      card-only checkout does not come back.
+
+      Order of attack for the rest: enrolled courses at 12 bare lessons
+      each — `excel-spreadsheets-for-work`, `project-management-tools`,
+      `ui-ux-design-figma` (`google-workspace-productivity` is held back
+      until the duplicate-lesson question below is settled), then the
+      unenrolled twelves and the sixes.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

@@ -718,15 +718,16 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 246. Sixteen courses are now fully
+      **Bare-lesson count: 438 → 234. Seventeen courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
       `social-media-management` (16), `digital-marketing` (16),
       `copywriting-content-writing` (16), `google-facebook-ads` (16),
       `ecommerce-online-selling` (17), `seo-search-engine-optimization`
-      (17), `instagram-tiktok-growth` (12), `email-marketing` (16) and
-      `excel-spreadsheets-for-work` (17).**
+      (17), `instagram-tiktok-growth` (12), `email-marketing` (16),
+      `excel-spreadsheets-for-work` (17) and `project-management-tools`
+      (16).**
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -1158,11 +1159,47 @@ custom authorization layer bolted on top.
       headline number in the message text because the attachment often
       goes unopened.
 
-      Order of attack for the rest: enrolled courses at 12 bare lessons
-      each — `project-management-tools`, `ui-ux-design-figma`
-      (`google-workspace-productivity` is held back until the
-      duplicate-lesson question below is settled), then the unenrolled
-      twelves and the sixes.
+      `project-management-tools` was seventeenth and is complete at 16
+      of 16 (`0120`, `0121`). Modules 3 and 4 were already written — what
+      a project plan contains, breaking work into assignable tasks, how
+      work should flow through a board, tracking and reporting — so the
+      tool lessons teach judgement rather than repeating the method.
+
+      The course refuses to be a tool tour. Its governing claim is that
+      **the board is only true if people move the cards**, and that an
+      out-of-date board is worse than none because decisions get made
+      from it — so when a team will not update it, the fix is fewer
+      columns and fewer fields, not more training. Every tool lesson is
+      built around that.
+
+      It also refuses to fight WhatsApp. **WhatsApp is already the
+      project tool here and is not going away**, so the course makes it
+      the conversation and the board the record, with the rule that a
+      decision is not a decision until it is a task with an owner and a
+      date, named back in the chat. Teams that try to move all talk into
+      the tool abandon the tool within a month.
+
+      Three honest limits run through it. Free tiers are genuinely
+      enough for a small team and paid seats bill per person in foreign
+      currency, so viewers get a shared link rather than a seat. Notion
+      is heavy on mobile data, so a team checking work from a phone in
+      the field will use a Trello board and often will not use a rich
+      workspace. And the relations-and-rollups lesson says plainly that
+      **a freelancer with three clients and fifteen tasks does not need
+      connected databases** — the hours would be better spent finding a
+      fourth client.
+
+      The freelance module names the market honestly: nobody here is
+      searching for a Notion consultant, so the offer is written in the
+      client's words — work gets lost between people, closing the month
+      takes two days — and the most winnable local job is small and
+      concrete: set up the board, write the routine, train the team,
+      review it monthly.
+
+      Order of attack for the rest: `ui-ux-design-figma` is the last
+      enrolled course at 12 bare lessons (`google-workspace-productivity`
+      is held back until the duplicate-lesson question below is
+      settled), then the unenrolled twelves and the sixes.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

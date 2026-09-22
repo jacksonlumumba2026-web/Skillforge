@@ -1,0 +1,203 @@
+{
+ "course": "excel-spreadsheets-for-work",
+ "lessons": [
+  {
+   "id": "b59e98b9-eb3f-4ecc-a2bb-1aeb80dda2fd",
+   "title": "Pivot Table Excel Tutorial",
+   "objectives": [
+    "Summarise a long list into an answer in under a minute",
+    "Prepare data so a pivot table will work at all",
+    "Read a pivot table critically rather than trusting it"
+   ],
+   "notes": "A pivot table takes a long list and answers a question about it - total sales by month, by product, by town, by person - without writing a single formula. It is the highest-leverage thing in this course and the one that most visibly separates someone who can use a spreadsheet from someone who cannot.\n\nIT ONLY WORKS ON A PROPER TABLE, which is why Module 3 came first. One heading row, one record per row, no merged cells, no blank rows in the middle, no subtotals mixed into the data. Most pivot table problems are data problems, and the fix is upstream.\n\nTHE FOUR PLACES you can drop a field: ROWS is what you are breaking the answer down by, COLUMNS is a second breakdown across the top, VALUES is the number being summarised, and FILTERS narrows the whole thing. Start by dragging one field into rows and one into values, then build up.\n\nCHANGE WHAT IT DOES TO THE NUMBER. The default is usually a sum; it can count, average, or find the largest. If a total looks absurd, check this first - a count where you expected a sum is the classic surprise.\n\nREFRESH AFTER THE DATA CHANGES. A pivot table does not update itself, and a stale pivot presented as current is an embarrassment that only happens once.\n\nREAD IT CRITICALLY. A blank row label usually means missing data rather than a category called nothing. Two spellings of the same town will appear as two separate rows, which is a data-cleaning job, not a pivot problem.\n\nADDITION BEYOND THE VIDEO - what to pivot first, and the trap. For a small business, three pivots answer nearly everything: SALES BY MONTH, which shows the seasonality that household and school-fee cycles create here; SALES BY PRODUCT, which almost always reveals that a small number of items earn most of the money; and SALES BY CUSTOMER, which shows how much of the business rests on a few names. Each takes a minute and each usually surprises the owner. The trap is spelling: Nakuru, nakuru and Nakuru with a trailing space are three different towns to a pivot table, so clean the column with TRIM and a consistent case before you present anything, because a pivot built on dirty data is confidently wrong and looks authoritative.",
+   "practice": "Take one real list of at least fifty transactions and build three pivots: by month, by product and by customer. Clean the text columns first with TRIM and a consistent case. Then change one value field from sum to count and note how differently the same data reads.",
+   "quiz": [
+    {
+     "question": "Why do most pivot table problems start upstream?",
+     "options": [
+      "A pivot needs a proper table - merged cells, blank rows and mixed subtotals break it",
+      "Pivots require a newer version",
+      "Pivots cannot handle dates",
+      "The default summary is always wrong"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What makes a pivot built on uncleaned text confidently wrong?",
+     "options": [
+      "Nakuru, nakuru and Nakuru with a trailing space appear as three separate rows",
+      "Text fields cannot be summarised",
+      "Pivots ignore text columns",
+      "It rounds text values"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "cfe6d603-d220-4320-9f2d-86e755d57ef5",
+   "title": "Excel Tips and Tricks",
+   "objectives": [
+    "Adopt the few shortcuts that genuinely save time",
+    "Judge a tips list rather than trying to memorise it",
+    "Build habits that stop mistakes instead of fixing them"
+   ],
+   "notes": "Take a tips video as a menu, not a syllabus. Nobody remembers forty shortcuts. Choose three, use them until they are automatic, and come back later.\n\nTHE ONES THAT ACTUALLY PAY, from most useful down:\nCOPY DOWN a formula by double-clicking the small square at the corner of the cell - it fills to the bottom of the adjacent data instantly. This alone saves hours.\nJUMP AND SELECT with the control and shift keys plus the arrows, which moves and selects to the end of a block without scrolling. Essential once a sheet is longer than a screen.\nFREEZE THE TOP ROW so headings stay visible. Trivial to set, and it removes the constant scrolling up to remember which column is which.\nPASTE VALUES ONLY, which pastes the result of a formula rather than the formula. The fix for half of all broken pasted data.\nFORMAT PAINTER to copy formatting rather than redoing it.\nUNDO, generously. Nothing in a spreadsheet is worth being cautious about when undo exists.\n\nTHE HABITS THAT MATTER MORE THAN ANY SHORTCUT: keep the raw data on its own sheet and never type over it; put workings on a second sheet and the presentable result on a third; label every assumption; and save a copy before any large change.\n\nBE SCEPTICAL OF CLEVERNESS. A formula nobody else can read is a liability, because the person who inherits the file will rebuild it by hand rather than risk touching it. The best spreadsheet is the one a colleague can pick up and follow.\n\nADDITION BEYOND THE VIDEO - three that matter particularly here. PASTE VALUES ONLY is the single most useful of the lot when you are working with data exported from a statement or a portal, because pasted formatting and hidden references are what turn a clean sheet into a mess. LEARN THE SHEETS EQUIVALENTS as you go, since most shortcuts are the same and the few that differ are worth knowing before you are in front of a client. And KEEP A LOCAL COPY of anything critical that lives online - Sheets is reliable, your connection is not, and a downloaded copy before a deadline has saved more than one presentation.",
+   "practice": "Choose three shortcuts from the list and use only those for a week of real work. Then restructure one existing spreadsheet into three sheets - raw data untouched, workings, presentable result - and check that a colleague could follow it without asking you anything.",
+   "quiz": [
+    {
+     "question": "How should a tips list be used?",
+     "options": [
+      "As a menu - take three and use them until automatic",
+      "Memorised in full before starting work",
+      "Ignored, since habits matter more",
+      "Printed and kept beside the screen"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why is a clever formula nobody can read a liability?",
+     "options": [
+      "Whoever inherits the file rebuilds it by hand rather than risk touching it",
+      "It calculates more slowly",
+      "It cannot be copied down",
+      "It breaks when the file is shared"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "9ee19b35-f95c-424f-82a9-45c2822bb7a3",
+   "title": "Build the Ultimate Budget Tracker in Excel From Scratch",
+   "objectives": [
+    "Build a working tracker from a blank sheet",
+    "Separate entry, calculation and presentation",
+    "Design something you will actually keep using"
+   ],
+   "notes": "This is the project that ties the course together. Follow the video to build it, then rebuild it once for your own money, because the second build is where the learning happens.\n\nTHE STRUCTURE THAT WORKS, and it is the same for a household budget, a shop or a client job:\nA SETTINGS SHEET holding the categories and any fixed figures, so nothing is typed into a formula.\nAN ENTRIES SHEET which is one long proper table - date, description, category, amount, and a note. This sheet is only ever added to.\nA SUMMARY SHEET with the pivots and the totals, which nobody types into at all.\n\nCATEGORIES SHOULD BE FEW AND CHOSEN FROM A LIST. Use data validation to turn the category column into a dropdown. If people can type freely you will have Transport, transport and Trasnport by the end of the month, and every total will be wrong.\n\nBUILD THE ENTRY EXPERIENCE FIRST. The tracker that fails is not the one with weak formulas, it is the one that is a nuisance to fill in. Few columns, a dropdown, and the date filled in for you.\n\nCOMPARE PLANNED AGAINST ACTUAL, because a budget that only records what happened is a diary. Put the planned figure next to the real one and show the difference.\n\nADDITION BEYOND THE VIDEO - the version that fits how money actually moves here. Most spending is M-PESA, so add a column for the transaction code and one for the method, and make reconciling against the statement a five-minute monthly job rather than an archaeology exercise. Include the TRANSACTION CHARGES as their own category - they are small individually and genuinely material over a month, and almost no budget template has a line for them. Build for IRREGULAR INCOME rather than a monthly salary, since many people here earn in uneven amounts, which means tracking against a rolling average and a cash-in-hand figure rather than a tidy monthly budget. And expect the LUMPY COSTS that break household budgets - school fees, rent paid several months at a time, harvest inputs - so give them their own planned line months ahead rather than letting them arrive as a shock.",
+   "practice": "Build your own tracker across three sheets - settings, entries, summary - with a dropdown for categories, the date filled in automatically, a column for the transaction code, and a category for charges. Enter a fortnight of your real spending, then build a summary comparing planned against actual.",
+   "quiz": [
+    {
+     "question": "Why must categories come from a dropdown?",
+     "options": [
+      "Free typing produces Transport, transport and Trasnport, and every total is wrong",
+      "Dropdowns calculate faster",
+      "It is required for pivot tables",
+      "It reduces file size"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why does a tracker usually fail?",
+     "options": [
+      "It is a nuisance to fill in, not because the formulas are weak",
+      "The formulas are too complex",
+      "It lacks charts",
+      "It is not shared widely enough"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "92e6e0b4-0e5e-4fd6-825e-67bfbf8cfd84",
+   "title": "Make a Professional Excel Dashboard From Real-World Data",
+   "objectives": [
+    "Build a dashboard in the order that prevents rework",
+    "Choose a chart because of the question it answers",
+    "Make one screen that answers what the reader came to ask"
+   ],
+   "notes": "A dashboard is one screen that answers the handful of questions someone actually has. Most dashboards fail by being beautiful and answering none of them.\n\nSTART WITH THE QUESTIONS, WRITTEN DOWN, before opening anything. Three to five, in the reader's words: are we ahead of last month, which products are moving, who owes us money, where is it going. Every element on the finished screen must answer one of them, and anything that answers none is removed however good it looks.\n\nTHE BUILD ORDER THAT AVOIDS REWORK:\n1. RAW DATA on its own sheet, untouched.\n2. CLEAN IT - trim, consistent spellings, real dates, numbers as numbers.\n3. PIVOTS that produce the figures for each question.\n4. THE DASHBOARD SHEET, which only refers to the pivots and contains no raw data at all.\nBuilding the charts first, which is what everyone does, means rebuilding all of them when the data structure changes.\n\nCHOOSE THE CHART FOR THE QUESTION. Change over time is a line. Comparing categories is a bar, and a horizontal one when the labels are long. Composition is a stacked bar, not a pie, unless there are two or three parts. Pie charts with nine slices communicate nothing. And a single important number, large and plain, is often better than any chart.\n\nRESTRAINT: no three-dimensional effects, no chart junk, axes starting at zero, and the same colour meaning the same thing throughout. Put the most important thing top left, because that is where the eye lands.\n\nSAY WHEN IT WAS UPDATED, on the dashboard itself. A dashboard with no date is untrustworthy the moment anyone suspects it might be old.\n\nADDITION BEYOND THE VIDEO - build it for the screen it will be read on. Most clients here will open this on a PHONE or have it sent as a PDF in WhatsApp, so design one screen that survives being viewed small: few elements, large type, and no wide table that needs scrolling sideways. Export a PDF and look at it on a phone before you deliver. Put the headline number in the message itself rather than only in the attachment, because a figure in the WhatsApp text gets read and an attachment often does not get opened at all. And keep the file light - a dashboard that takes a minute to load on mobile data will be opened once.",
+   "practice": "Write the five questions your dashboard must answer before building anything. Then build in the order given - raw, clean, pivots, dashboard - with one chart per question, a visible updated date, and the headline number large. Export a PDF, open it on a phone, and remove anything unreadable.",
+   "quiz": [
+    {
+     "question": "What is the correct build order?",
+     "options": [
+      "Raw data, clean it, pivots, then the dashboard sheet",
+      "Charts first, then the data behind them",
+      "Dashboard layout, then pivots, then cleaning",
+      "Pivots, raw data, charts, cleaning"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why put the headline number in the WhatsApp message itself?",
+     "options": [
+      "An attachment often goes unopened, while a figure in the text gets read",
+      "It reduces the file size",
+      "It is required for PDF export",
+      "Charts do not render in messages"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "c5c2e8cc-f618-47c0-a992-168612fce2ef",
+   "title": "How I Made $100K as an Excel Freelancer",
+   "objectives": [
+    "Read an income claim critically",
+    "Identify the spreadsheet work that genuinely pays here",
+    "Win the first paid job without a portfolio"
+   ],
+   "notes": "Treat the figure in the title as marketing. It is one person, over an unstated period, in a market with different rates, and it says nothing about what you will earn. Watch it for the shape of the work, not the number.\n\nWHAT THE WORK ACTUALLY IS, and none of it is exotic: cleaning messy data, building a tracker or a costing model, joining two lists that should match, automating a report somebody produces by hand every month, fixing a spreadsheet that broke, and teaching a team to use what they already have.\n\nWHERE THE MONEY IS HERE, in order of how often it comes up:\nRECONCILIATION. Matching an M-Pesa or bank statement against a sales record and finding what does not agree. Every small business needs it, most do it by hand, and it is exactly the lookup skill from Module 5.\nCLEANING EXPORTED DATA into something usable - the unglamorous job that clients will happily pay to avoid.\nMONTHLY REPORTING that someone currently rebuilds by hand for two days. Automate it once and the value is obvious every month afterwards.\nCOSTING AND QUOTING MODELS for businesses that price by feel.\nTRAINING, which pays well and comes with referrals.\n\nHOW TO GET THE FIRST JOB WITH NO PORTFOLIO: build three sample files on invented but realistic data - a reconciliation, a dashboard, a tracker - and show those. Nobody asks whose data it was. Then offer to fix one real spreadsheet for someone you know, do it properly, and ask what else is painful.\n\nADDITION BEYOND THE VIDEO - the realities of selling this locally. Clients will not ask for a spreadsheet; they will describe a PROBLEM - the stock figures never match, I do not know who owes me, it takes two days to close the month. Listen for those sentences, because they are the job. Expect the data to arrive as a PHOTOGRAPH OF A BOOK or a PDF export, and price the retyping honestly rather than absorbing it. Ask for a DEPOSIT before starting and the balance on handover, on M-Pesa, with the scope written in the WhatsApp thread. And hand over something MAINTAINABLE with a short written note or a two-minute recording of how it works, because the client who can keep using it comes back, and the client who cannot quietly returns to doing it by hand and tells nobody.",
+   "practice": "Build three sample files on invented but realistic data: a reconciliation of a payment list against a sales record, a small dashboard, and a tracker. Then find one person you know whose stock, debtors or monthly report is painful, fix it properly, and write down what they said the problem was in their own words.",
+   "quiz": [
+    {
+     "question": "How should the title figure be treated?",
+     "options": [
+      "As marketing - watch for the shape of the work, not the number",
+      "As a realistic local target",
+      "As a monthly rate",
+      "As an entry-level benchmark"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What does a client actually bring you?",
+     "options": [
+      "A problem - the stock never matches, I do not know who owes me",
+      "A specification for a spreadsheet",
+      "A dataset and a deadline",
+      "A template to copy"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "cfe08c53-12c4-4d5f-acb0-d5de6fa2fa2d",
+   "title": "How to Create Professional Looking Excel Spreadsheets",
+   "objectives": [
+    "Format a sheet so it is read rather than deciphered",
+    "Apply a consistent standard to every file you hand over",
+    "Prepare a file for someone else to maintain"
+   ],
+   "notes": "A spreadsheet is a document someone has to read. The difference between one that gets used and one that gets rebuilt is largely presentation, and it takes ten minutes.\n\nTHE BASELINE, applied to every file you hand over:\nONE CLEAR TITLE at the top saying what this is and what period it covers.\nHEADINGS THAT ARE OBVIOUSLY HEADINGS - bold, a fill, and frozen so they stay visible.\nCONSISTENT NUMBER FORMATS. Money with the same number of decimals throughout, thousands separated, and the currency stated once rather than typed into every cell. Dates in one format.\nCOLUMNS WIDE ENOUGH that nothing shows as hashes, and no wrapped text that hides half a line.\nALIGNMENT that follows the content: numbers right, text left, headings matching their column.\nNO GRIDLINE CLUTTER where you have borders, and no borders where gridlines already do the job.\nWHITE SPACE. A row between sections does more for readability than any colour.\n\nWHAT MAKES IT LOOK AMATEUR: many fonts, many colours, merged cells, a different format in every section, and decoration that carries no meaning. Merged cells deserve a specific warning - they break sorting, filtering and pivots, and they are almost never worth it.\n\nPREPARE IT FOR SOMEONE ELSE. Name the sheets meaningfully, delete the working columns you no longer need, remove test rows, return the cursor to cell A1 on every sheet before saving, and add a short notes sheet saying where the data comes from, what to update, and what not to touch.\n\nADDITION BEYOND THE VIDEO - the handover standard that keeps clients. STATE THE CURRENCY AND THE PERIOD in the title, because a sheet of unlabelled figures is ambiguous the moment it is forwarded - and if any figure was converted, say at what rate and on what date. PROTECT THE FORMULA CELLS and leave only the entry cells unlocked, since the commonest way a delivered spreadsheet breaks is a user typing over a formula. CHECK IT ON A PHONE, because that is where it will first be opened. And include the two-minute note on how to update it: the client who can maintain the file uses it for years and refers you, which is worth more than any amount of formatting.",
+   "practice": "Take one finished spreadsheet and apply the whole baseline: title with currency and period, frozen bold headings, consistent number and date formats, sensible alignment, no merged cells. Then protect the formula cells, leave the entry cells open, add a short notes sheet, set every sheet to A1, and check it on a phone.",
+   "quiz": [
+    {
+     "question": "Why avoid merged cells?",
+     "options": [
+      "They break sorting, filtering and pivot tables",
+      "They increase file size",
+      "They cannot be printed",
+      "They prevent freezing rows"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What most often breaks a delivered spreadsheet?",
+     "options": [
+      "A user typing over a formula, which protecting the formula cells prevents",
+      "A corrupted file",
+      "Too many sheets",
+      "An outdated version of the software"
+     ],
+     "correct_index": 0
+    }
+   ]
+  }
+ ]
+}

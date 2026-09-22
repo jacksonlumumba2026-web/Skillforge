@@ -718,7 +718,7 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 222. Eighteen courses are now fully
+      **Bare-lesson count: 438 → 210. Nineteen courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
@@ -727,7 +727,8 @@ custom authorization layer bolted on top.
       `ecommerce-online-selling` (17), `seo-search-engine-optimization`
       (17), `instagram-tiktok-growth` (12), `email-marketing` (16),
       `excel-spreadsheets-for-work` (17), `project-management-tools`
-      (16) and `ui-ux-design-figma` (16).**
+      (16), `ui-ux-design-figma` (16) and `bookkeeping-quickbooks`
+      (16).**
 
       **Only one enrolled course still carries bare lessons** —
       `google-workspace-productivity`, held back deliberately until the
@@ -1243,13 +1244,59 @@ custom authorization layer bolted on top.
       transcription; the fingerprint check caught it and `0124` restores
       the text `0123` already specifies.
 
-      Order of attack for the rest: the unenrolled twelves —
-      `bookkeeping-quickbooks`, `customer-service-virtual-call-center`,
-      `data-analysis-visualization`, `mobile-photography-content-creation`,
-      `podcasting-voice-over`, `python-programming-for-beginners`,
+      `bookkeeping-quickbooks` was nineteenth and is complete at 16 of
+      16 (`0125`, `0126`) — the first of the unenrolled twelves, taken
+      first because the skill converts to paid work faster than anything
+      else left in the backlog. Modules 3 and 4 were already written —
+      invoices, bills, connecting a bank account and what to do when
+      yours is not supported, categorising without guessing.
+
+      The course names the real problem before it names any software:
+      **business and personal money running through the same M-Pesa
+      number**. Fees, fare, shopping, stock and customer payments in one
+      statement, which no package fixes afterwards — the remedy is a
+      separate till or paybill and the owner taking a stated amount
+      recorded as drawings.
+
+      It is honest about QuickBooks. The subscription is billed in
+      foreign currency, **automatic bank feeds mostly do not work with
+      Kenyan banks and not with M-Pesa**, so the labour-saving that
+      justifies the cost elsewhere often never arrives here. Learn it
+      for employability and for the jobs that require it, and be the
+      person who says plainly that a well-built spreadsheet is the right
+      answer for many small clients.
+
+      The chart-of-accounts lesson adds what imported templates omit:
+      mobile money as its own asset account, transaction charges as
+      their own expense, owner drawings, bad debt (informal credit to
+      regular customers is normal and some is never collected), and
+      transport. The automation lesson names the three things a rule
+      must never touch — a bare personal name in an M-Pesa description,
+      transfers between the business's own accounts, and cash
+      withdrawals.
+
+      Two professional boundaries are stated outright: **never force a
+      reconciliation with an adjustment**, because it hides the error,
+      compounds monthly and is exactly what an auditor looks for; and
+      **you are not an auditor and, unless qualified and registered, not
+      their tax agent** — prepare the books so filing is straightforward
+      and say so before a client assumes otherwise.
+
+      The client lesson notes that the first deliverable that convinces
+      an owner is almost never the profit and loss — it is the list of
+      who owes them and for how long, because that is money they can
+      collect this week.
+
+      Order of attack for the rest: the remaining unenrolled twelves —
+      `customer-service-virtual-call-center`,
+      `data-analysis-visualization`, `podcasting-voice-over`,
       `resume-writing-linkedin-personal-branding`,
-      `transcription-translation-freelancing`, `youtube-channel-growth` —
-      then the eighteen courses sitting at six bare lessons each.
+      `transcription-translation-freelancing`, `youtube-channel-growth`
+      (`mobile-photography-content-creation` and
+      `python-programming-for-beginners` are held back alongside
+      `google-workspace-productivity` until the duplicate-lesson
+      question below is settled) — then the eighteen courses sitting at
+      six bare lessons each.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

@@ -1,0 +1,203 @@
+{
+ "course": "email-marketing",
+ "lessons": [
+  {
+   "id": "db5e2ea2-b501-45a2-ab74-1bbe1f52ed5e",
+   "title": "THIS Email Marketing Mistake Costs You A 25% DROP In Open Rates!",
+   "objectives": [
+    "Treat a headline statistic with the scepticism it deserves",
+    "Identify the mistakes that genuinely cost you the inbox",
+    "Fix the ones that are within your control this week"
+   ],
+   "notes": "Start with the number in the title. A specific percentage in a headline is a marketing device: it comes from one sender, one list, one period, and it will not transfer to yours. Watch the video for the mechanism it describes, and ignore the figure.\n\nTHE MISTAKES THAT GENUINELY COST YOU, in the order they cost most:\n\nSENDING TO PEOPLE WHO NEVER OPEN. This is the big one and almost nobody acts on it. Providers judge you on whether recipients engage, so a large inactive portion drags down delivery for everyone else on the list. Cleaning a list usually RAISES the numbers even though it shrinks the audience.\n\nSENDING FROM AN ADDRESS THAT IS NOT YOURS. A free webmail sender address puts you in the same bucket as everyone else using it. Your own domain, properly set up, is the single biggest technical improvement available.\n\nINCONSISTENCY. Nothing for five months and then three emails in a week reads as a stranger, and people who have forgotten you report you.\n\nTHE SAME EMAIL TO EVERYONE forever, which trains people not to open.\n\nA SUBJECT LINE THAT OVERSELLS. It wins one open and loses the next five, because people remember.\n\nNO CLEAR SINGLE ACTION. An email asking for four things gets none of them.\n\nWHAT IS RARELY THE PROBLEM: the send time, the template, and the number of emojis. These get most of the attention because they are easy to change.\n\nADDITION BEYOND THE VIDEO - the two that matter most for a small sender here. First, SENDER AUTHENTICATION. Setting up the domain records that prove you are allowed to send as your domain is a one-hour job with your domain provider, it is free, and without it mail from a small unknown domain is treated with suspicion no matter how good the content. Ask the client for access to the domain and do it before the first campaign. Second, VOLUME DISCIPLINE ON A NEW DOMAIN - do not send to four thousand people on the first day from a domain that has never sent anything. Start with your most engaged few hundred and build up over a few weeks. A cold domain sending a large first batch looks exactly like a compromised one.",
+   "practice": "Audit one real account against the six mistakes and score each. Then do the two that are within reach this week: identify everyone who has not opened in six months and separate them out, and check whether the sending domain is authenticated. Record the open and click rates before and after cleaning.",
+   "quiz": [
+    {
+     "question": "Why does cleaning a list often raise your numbers?",
+     "options": [
+      "Providers judge you on engagement, so inactive contacts drag down delivery for everyone",
+      "Smaller lists are cheaper to send to",
+      "The averages improve arithmetically only",
+      "Platforms reward smaller audiences"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What should a brand-new sending domain avoid?",
+     "options": [
+      "A large first batch - it looks like a compromised domain",
+      "Sending in the morning",
+      "Using plain text",
+      "Including images"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "64768a81-aaa5-44ac-87ac-761446540d42",
+   "title": "Avoid This Email Marketing Strategy At All Costs",
+   "objectives": [
+    "Recognise the strategies that work briefly and cost permanently",
+    "Explain to a client why you will not do them",
+    "Replace each one with something that lasts"
+   ],
+   "notes": "Some tactics produce a short rise and a long decline. They are worth knowing precisely, because clients ask for them and you need the argument ready.\n\nBUYING OR RENTING A LIST. Never. The people did not agree, complaints follow immediately, and the damage attaches to your domain rather than to the list you bought. It is also a data protection exposure under the Act. The replacement is slower and works: collect addresses with a reason at every point of contact.\n\nMANUFACTURED URGENCY. A deadline that moves, a countdown that resets, stock that is never actually low. It sells once. Then people learn your deadlines are decorative and stop responding to any of them, including the real ones. Use real deadlines and real limits, and say plainly when there is neither.\n\nMISLEADING SUBJECT LINES. Re: on an email that is not a reply, a fake personal note, a false notification. Every one wins an open and loses a reader, and complaints follow.\n\nDAILY SENDING because more is more. Frequency without something to say is the fastest route to unsubscribes, and the people who leave first are the engaged ones who noticed.\n\nHIDING THE UNSUBSCRIBE. It converts a quiet exit into a spam complaint, which is far more expensive.\n\nCHASING VANITY NUMBERS - buying signups, running a competition for an unrelated prize, importing a contact book. All grow the count and lower the value of every future send.\n\nTHE REPLACEMENT IS THE SAME IN EVERY CASE: something genuinely worth opening, sent to people who asked, at a rhythm you can keep.\n\nADDITION BEYOND THE VIDEO - how to have this conversation with a client here, because you will. Clients arrive with a spreadsheet of contacts from a trade fair, a WhatsApp group export, or a list a cousin supplied, and they expect you to send to it. Say what happens: complaints, a domain that stops reaching anyone, and an exposure under the Data Protection Act, which gives people a right to object and provides for penalties. Offer the alternative in the same breath - an invitation campaign from the client's own recognised address asking those contacts to opt in properly, which keeps the ones who were ever going to buy and discards the rest. That conversation loses you an afternoon and saves the client a domain, and it is the reason serious clients keep a freelancer.",
+   "practice": "Write, in plain language, what you would say to a client who hands you a bought list - what will happen, what the law says, and what you propose instead. Then check one real account for the six anti-patterns and write a one-page replacement plan for any you find.",
+   "quiz": [
+    {
+     "question": "Why does manufactured urgency fail over time?",
+     "options": [
+      "People learn the deadlines are decorative and stop responding to the real ones",
+      "Platforms detect and block countdowns",
+      "It increases unsubscribes immediately",
+      "It cannot be automated"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What should you offer a client who hands you a bought list?",
+     "options": [
+      "An opt-in invitation from their own recognised address, keeping only those who agree",
+      "Sending to it once, carefully",
+      "Splitting it across several weeks",
+      "Sending from a separate new domain"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "33ebac1a-00aa-4255-b1df-2fc18d80bfcb",
+   "title": "Swipe My Launch Email Sequence Strategy",
+   "objectives": [
+    "Structure a sequence that builds towards a single decision",
+    "Time a launch around when people can actually pay",
+    "Adapt a large-audience launch to a small list"
+   ],
+   "notes": "A launch sequence is a set of emails leading to one decision by one date. Its shape is the same whether you are selling a course, opening bookings, or clearing stock.\n\nTHE STANDARD SHAPE:\nBEFORE - one or two emails that raise the problem and say something is coming. No selling yet.\nOPEN - the announcement: what it is, who it is for, what it costs, how to get it.\nPROOF - a real story of someone it worked for.\nOBJECTION - the honest answer to the reason people do not buy, which is usually price, time, or doubt that it applies to them.\nLAST CHANCE - a short, true reminder that it closes.\nAFTER - to those who did not buy, something useful and no hard feelings; to those who did, the welcome.\n\nWHAT MAKES IT WORK IS THE ORDER, not the number of emails. Selling before establishing the problem fails. A deadline with nothing behind it fails.\n\nSEND MORE THAN YOU WANT TO NEAR THE END. Most sales happen on the last day, and the email you are embarrassed to send is usually the one that earns. That is only true when the deadline is real.\n\nSEGMENT OUT THE BUYERS as they buy, immediately.\n\nADDITION BEYOND THE VIDEO - launching to a Kenyan audience, where timing is the variable nobody adjusts. TIME THE CLOSE TO WHEN PEOPLE HAVE MONEY. End of month and the days just after are materially different from the third week; school fee terms, harvest, and December all move household cash. A launch closing on the 18th and the same launch closing on the 2nd are not the same launch. Second, STATE THE PAYMENT METHOD IN THE EMAILS. If it is M-Pesa, say so in the launch email, because a buyer who reaches a card-only checkout leaves and does not come back. Third, ADAPT THE SHAPE TO A SMALL LIST - with three hundred people, six emails over ten days is right and fifteen is harassment, and for a list that small a personal message to the twenty most engaged will often outsell the entire sequence.",
+   "practice": "Plan a real launch for something you or a client could actually sell. Write the six emails as one line each in order, set a close date chosen around when your buyers have money, and state the payment method in the announcement. List the twenty most engaged contacts you would also message personally.",
+   "quiz": [
+    {
+     "question": "What makes a launch sequence work?",
+     "options": [
+      "The order - problem before offer, and a deadline with something real behind it",
+      "The number of emails sent",
+      "The design of the templates",
+      "The time of day each is sent"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why does the close date matter so much here?",
+     "options": [
+      "End of month and school fee or harvest timing change whether buyers have money at all",
+      "Providers deliver better at month end",
+      "Competitors launch mid-month",
+      "Platforms charge less at month end"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "945cfa19-7e34-4302-94d1-41c5002be942",
+   "title": "Write These Emails for Your Next Launch",
+   "objectives": [
+    "Write each launch email so it does one job",
+    "Answer an objection without arguing",
+    "Write in a voice a Kenyan reader recognises"
+   ],
+   "notes": "The previous lesson gave the sequence. This one is the writing.\n\nONE EMAIL, ONE JOB. Before you write, say in six words what this email is for. If you cannot, it will do nothing.\n\nTHE PROBLEM EMAIL describes the situation the reader is in, accurately enough that they feel recognised, and stops. No offer. Getting this right is most of the launch, and rushing past it is the commonest failure.\n\nTHE ANNOUNCEMENT states plainly what it is, who it is for, what it costs, when it closes, and how to buy. Do not bury the price. People who cannot find the price assume it is bad news and leave.\n\nTHE PROOF EMAIL tells one person's story with real detail - what they were struggling with, what they did, what changed. One specific story beats five testimonials.\n\nTHE OBJECTION EMAIL names the real reason out loud and answers it honestly. On price: what it costs against what the problem is costing them, and who it is genuinely not for. Saying who should not buy makes everything else more believable.\n\nTHE LAST CHANCE is short. What closes, when, and the link. Nothing else.\n\nRULES THROUGHOUT: write to one person, use the words they use, short paragraphs, one button, and cut the first paragraph of every draft because it is almost always throat-clearing.\n\nADDITION BEYOND THE VIDEO - writing for a reader here. Foreign launch copy is loud, and that register reads as a scam to a Kenyan reader who has seen plenty of them. Plain, specific and calm outsells excited. PRICE IN SHILLINGS, always, and never leave someone to convert a figure. Name the payment method and the delivery reality - M-Pesa, the till, pay on delivery, how long the courier takes to Kisumu. Mention the actual place where it is relevant, because specificity is what separates you from the identical email everyone receives from abroad. And if your reader mixes English and Kiswahili in speech, a line of it in the email is recognition rather than decoration - used once and naturally, not scattered for effect.",
+   "practice": "Write all six launch emails in full for something real. Before each, write the six-word statement of its job. Then delete the first paragraph of each and check it still works, put the price in shillings in the announcement, and name the payment method. Read the whole sequence aloud in one sitting.",
+   "quiz": [
+    {
+     "question": "What is the commonest failure in a launch sequence?",
+     "options": [
+      "Rushing past the problem email and selling too early",
+      "Sending too few reminders",
+      "Poor template design",
+      "Not testing the subject lines"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why name who the offer is NOT for?",
+     "options": [
+      "It makes everything else you claim more believable",
+      "It reduces refund requests",
+      "It shortens the email",
+      "Platforms require a disclaimer"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "00b7e5d6-ef33-45f2-af26-e2a9301de8c0",
+   "title": "Freelance Email Marketing 101: What You Need to Know",
+   "objectives": [
+    "Define what you actually sell as an email freelancer",
+    "Run an engagement from access to reporting",
+    "Find the clients for whom email genuinely works"
+   ],
+   "notes": "Email is one of the better freelance services to sell, because the result is countable. You can show a client revenue attributable to a sequence, which is more than most marketing services can do.\n\nWHAT YOU ARE SELLING, and it is not sending emails: a list that grows, a welcome sequence that runs by itself, campaigns that get read, and a number at the end of the month.\n\nTHE ENGAGEMENT, in order:\n1. AUDIT. How the list was built, its size, how much of it is active, whether the domain is authenticated, what is already automated. Write down the starting numbers before you change anything.\n2. FIX DELIVERY. Authentication, sender address, and removing the dead weight. Do this first, because everything after depends on it.\n3. BUILD THE WELCOME SEQUENCE. The highest-return thing you will do.\n4. SET UP COLLECTION so the list grows without anyone remembering to ask.\n5. RUN THE CAMPAIGNS on an agreed rhythm.\n6. REPORT monthly, in the client's terms.\n\nGET ACCESS IN THEIR NAME. The email platform, the domain records, the site. The client owns all of it and you are added. When the work ends they keep the list and its history - and say this at the start, because it is a reason to hire you rather than someone who will hold the account hostage.\n\nWHO TO APPROACH: businesses selling to other businesses, training providers, schools, clinics, associations with a membership, anyone selling to the diaspora, and anyone who already has a list they do nothing with. That last group is the easiest sale in this course - the asset exists and is idle.\n\nADDITION BEYOND THE VIDEO - three things specific to doing this here. First, MANY CLIENTS SHOULD NOT BE SOLD EMAIL AT ALL, and saying so wins you the WhatsApp or social work instead and the referral after. Second, THE LIST IS USUALLY WORSE THAN THE CLIENT THINKS - expect a spreadsheet of unclear origin, and make the audit a small paid first piece of work so the discovery is funded rather than free. Third, YOU WILL HANDLE PERSONAL DATA on someone else's behalf, so know what the Data Protection Act asks: consent recorded, purpose stated, removal honoured. Put in writing that you will not send to addresses collected without consent. That paragraph has ended arguments before they started and marks you as someone who knows the work.",
+   "practice": "Write your engagement outline as six numbered steps with what the client gets at each. Then find three businesses that already have an idle list, and prepare a one-page audit offer for them: what you will check, what they get, and a fixed price for the audit alone.",
+   "quiz": [
+    {
+     "question": "What should be fixed before anything else in an engagement?",
+     "options": [
+      "Delivery - authentication, sender address, and removing inactive contacts",
+      "The welcome sequence",
+      "List growth",
+      "The reporting format"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Who is the easiest email client to sell to?",
+     "options": [
+      "A business that already has a list and does nothing with it",
+      "A retail shop with walk-in customers",
+      "A new business with no customers yet",
+      "A business already sending daily"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "dd348e8a-c98a-4543-b154-8c1e53ea3a2c",
+   "title": "How Much To Charge For Email Marketing Freelance",
+   "objectives": [
+    "Choose a pricing model suited to email work",
+    "Price the first piece of work so a client can say yes",
+    "Set the terms that protect a fair price"
+   ],
+   "notes": "Email pricing is more comfortable than most marketing services, because the work has visible outputs and countable results.\n\nTHE MODELS:\n\nTHE AUDIT, priced on its own. A fixed fee for examining the list, the delivery setup and the existing automation, delivered as a short report with a priority order. It is the ideal first sale: small, defined, visibly useful, and it tells you what the real job is before you quote for it.\n\nTHE SETUP PROJECT. Delivery fixed, welcome sequence built, collection set up. A defined scope for a defined price. Most small clients need this and nothing more for several months.\n\nTHE MONTHLY RETAINER, once there is genuinely recurring work - campaigns, list care, reporting. State the number of campaigns, the revision limit, and what is excluded.\n\nPER-SEQUENCE WRITING for clients who have a platform and need the words.\n\nDO NOT PRICE BY THE HOUR, and do not price by the email. Both punish you for the fact that a good sequence is short and a bad one is long.\n\nCOUNT THE WHOLE JOB before quoting: the audit, domain setup, writing, building, testing, the client's amendments, and the monthly report. Beginners quote for writing and deliver everything else free.\n\nSET A FLOOR from what you need monthly divided by the clients you can serve well, and hold it.\n\nADDITION BEYOND THE VIDEO - the terms that decide whether you are paid, and the honest conversation about tools. TAKE A DEPOSIT before the work starts and the balance on delivery, on M-Pesa, with the scope written into the WhatsApp thread, which is your record. QUOTE THE PLATFORM SUBSCRIPTION AS THE CLIENT'S SEPARATE COST, in their name on their card, never inside your fee and never on your card - a client who leaves owing you a foreign-currency subscription is a problem you can avoid entirely by never starting it. STATE A REVISION LIMIT, because copy invites endless opinions. And price the AUDIT low enough that a cautious client says yes, because that first small piece of work is how nearly every longer engagement in this field begins.",
+   "practice": "Write three offers - an audit, a setup project and a monthly retainer - each with scope, exclusions, revision limit and payment terms. List every task in a month of retainer work and estimate the hours honestly, then calculate your floor and check the retainer clears it.",
+   "quiz": [
+    {
+     "question": "Why is the audit the ideal first sale?",
+     "options": [
+      "It is small, defined and visibly useful, and it shows you the real job before you quote",
+      "It is the most profitable piece of work",
+      "Clients expect to pay for audits",
+      "It requires no platform access"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "How should the platform subscription be handled?",
+     "options": [
+      "As the client's separate cost, in their name on their card",
+      "Inside your monthly fee",
+      "On your card, reimbursed later",
+      "Split between you and the client"
+     ],
+     "correct_index": 0
+    }
+   ]
+  }
+ ]
+}

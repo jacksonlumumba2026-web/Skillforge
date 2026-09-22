@@ -1,0 +1,203 @@
+{
+ "course": "project-management-tools",
+ "lessons": [
+  {
+   "id": "d1523285-6265-480f-b54e-3114bdf9f246",
+   "title": "How to use TRELLO - Tutorial for Beginners",
+   "objectives": [
+    "Set up a board that reflects how work really moves",
+    "Write a card that someone else could pick up and finish",
+    "Choose a tool that the team will actually keep updated"
+   ],
+   "notes": "A board is a picture of work in progress. Columns are the stages a piece of work passes through, cards are the pieces of work, and moving a card is how the team says what is happening without a meeting.\n\nTHE COLUMNS SHOULD MATCH YOUR REAL PROCESS, not a template. If work here goes waiting, being done, waiting for the client, done, then say so - most boards fail because they use someone else's four columns and nobody knows where to put a card that is stuck with the client. A column for waiting on someone else is the one small teams need most and almost never have.\n\nA CARD IS A PROMISE, and it needs four things or it is a wish: what finished looks like, who owns it, when it is due, and where the files or details are. A card saying \"website\" is useless; a card saying \"write and send the three product descriptions to Alice by Friday\" can be picked up by anyone.\n\nONE OWNER PER CARD. Two names means nobody.\n\nCHECKLISTS inside a card, comments for the conversation about it, labels for the category, due dates for what is time-bound. Use them sparingly - a board with nine labels is a board nobody reads.\n\nTHE BOARD IS ONLY TRUE IF PEOPLE MOVE THE CARDS. This is the whole game. An out-of-date board is worse than no board, because people make decisions from it. If your team will not update it, the fix is fewer columns and fewer fields, not more training.\n\nADDITION BEYOND THE VIDEO - the realities of running a board with a Kenyan small team. WHATSAPP IS ALREADY THE PROJECT TOOL and it is not going away, so do not try to replace it. Let WhatsApp stay the conversation and make the board the RECORD - what was agreed, who owns it, when it is due - and end each discussion by saying which card was updated. Teams that try to move all talk into the tool abandon the tool within a month. Second, CHOOSE FOR THE FREE TIER AND FOR DATA: the free plans of these tools are genuinely enough for a small team, paid seats are billed per person in foreign currency, and a lighter board loads far better on a bundle than a heavy workspace. Start free, stay free until the constraint is real.",
+   "practice": "Build a board for one real piece of work with columns matching your actual process, including one for waiting on someone else. Write every card with a finished-state, one owner, a due date and a link. Then ask someone else to read three cards and tell you what they would do - fix any card they cannot answer for.",
+   "quiz": [
+    {
+     "question": "What makes a card usable by someone else?",
+     "options": [
+      "What finished looks like, one owner, a due date and where the details are",
+      "A label and a colour",
+      "A checklist of at least five items",
+      "A detailed comment thread"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "The team will not update the board. What is the fix?",
+     "options": [
+      "Fewer columns and fewer fields, not more training",
+      "More reminders in the group",
+      "A paid plan with notifications",
+      "Assigning two owners per card"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "51cc755d-e920-441b-88dc-ebb4e33a5aec",
+   "title": "Getting Started in Notion with Francesco D'Alessio",
+   "objectives": [
+    "Explain what Notion is and what it is not",
+    "Build a simple database and view it in more than one way",
+    "Avoid the over-building that kills most Notion workspaces"
+   ],
+   "notes": "Notion is two things joined together: documents made of blocks, and databases that can be shown as a table, a board, a calendar or a list. That combination is why people find it powerful and why they get lost in it.\n\nTHE MENTAL MODEL: everything is a page. A page can hold text, images, and other pages. A DATABASE is a special page whose rows are themselves pages, each with properties - status, owner, date, category. The single most useful idea is that ONE DATABASE CAN BE VIEWED SEVERAL WAYS. The same tasks appear as a board for the person doing them, a calendar for the person scheduling, and a filtered table for the person reporting. Nothing is duplicated, so nothing falls out of step.\n\nSTART WITH ONE DATABASE. Tasks, with four properties: name, status, owner, due date. Then add a board view and a calendar view of it. That is already a working system, and most people never need much more.\n\nTHE FAILURE MODE IS BUILDING INSTEAD OF WORKING. Notion is enjoyable to arrange, and it is easy to spend three evenings on a beautiful workspace that is abandoned in a fortnight. The test is whether you used it today, not how it looks.\n\nTEMPLATES are worth using for the structure and worth deleting when they carry fields you do not fill in. An empty property is a small lie that spreads.\n\nADDITION BEYOND THE VIDEO - two practical points for using this here. Notion is HEAVY ON A PHONE AND ON MOBILE DATA - pages with many images and embedded databases are slow to load, so keep the daily page light and put the reference material somewhere deeper. If your team checks work from a phone in the field, a Trello board will be used and a rich Notion workspace often will not. Second, NOTION IS NOT A BACKUP. It is excellent for organising and poor as the only copy of anything that matters - export important pages periodically, and keep contracts, invoices and client files in real files as well. A workspace behind an account you can lose access to is not a filing system.",
+   "practice": "Build one tasks database with four properties and three views - board, calendar and a table filtered to just your own work. Use it for your real tasks for one week without changing the structure. At the end, write down what you actually used and delete every property you never filled in.",
+   "quiz": [
+    {
+     "question": "What is the most useful idea in Notion?",
+     "options": [
+      "One database can be viewed several ways, so nothing is duplicated",
+      "Pages can be nested infinitely",
+      "Templates cover most use cases",
+      "It replaces documents and spreadsheets"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What is the common Notion failure mode?",
+     "options": [
+      "Building a beautiful workspace instead of working, then abandoning it",
+      "Choosing the wrong template",
+      "Adding too few properties",
+      "Sharing pages too widely"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "9aaeae56-360f-4e7b-a64b-3537cf2d3cc3",
+   "title": "7 FREE Trello Power-Ups You Should Be Using Right Now!",
+   "objectives": [
+    "Judge whether an add-on solves a problem you actually have",
+    "Add capability without making the board heavier to use",
+    "Keep a board working inside the free tier"
+   ],
+   "notes": "Power-ups are add-ons that give a board extra capability - a calendar, a repeating card, a link to another service, a way to see card ageing.\n\nTHE RULE FOR ALL OF THEM: ADD ONE TO SOLVE A PROBLEM YOU HAVE ALREADY FELT. Adding six because a video recommended them makes the board slower, more confusing for the person who joins next month, and no more likely to be updated. Every addition has a cost in attention.\n\nTHE ONES THAT GENUINELY EARN A PLACE, for most small teams:\nA CALENDAR VIEW, so deadlines are visible as dates rather than as a list.\nREPEATING CARDS, for anything that happens weekly or monthly - the report, the stock count, the invoice run. This removes real forgetting.\nCARD AGEING, which visibly fades cards nobody has touched. It is the cheapest way to surface work that has quietly stalled, which is the commonest failure in a small team.\nA VOTING OR PRIORITY MECHANISM if you genuinely have more requests than capacity.\n\nWHAT TO BE CAREFUL WITH: anything that syncs to another service you do not already rely on, and anything that adds fields to every card. Both create work.\n\nCHECK THE FREE-TIER LIMIT before you build a habit on an add-on. Free plans cap how many you can enable per board, and discovering that after training a team is avoidable.\n\nADDITION BEYOND THE VIDEO - the three that matter most in the conditions people here actually work in. CARD AGEING first, because a stalled card in a small team usually means someone is waiting on an answer and said nothing, and making that visible is worth more than any automation. REPEATING CARDS second, since so much small business work is monthly and cyclical - statements, licences, rent, stock. And be sparing with ANYTHING THAT LOADS EXTERNAL CONTENT on every card, because on a bundle that turns a quick board check into a slow one, and a board that is slow to open stops being opened. Test the finished board on a phone on mobile data before you hand it to a team.",
+   "practice": "List the three problems your board actually has - stalled work, forgotten repeats, invisible deadlines. Enable only the power-ups that solve those, no more than three. Then open the board on a phone on mobile data and time it; remove anything that made it noticeably slower.",
+   "quiz": [
+    {
+     "question": "When should a power-up be added?",
+     "options": [
+      "To solve a problem you have already felt",
+      "When a tutorial recommends it",
+      "At setup, before the team starts",
+      "Once the board has more than twenty cards"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why is card ageing so useful in a small team?",
+     "options": [
+      "A stalled card usually means someone is waiting on an answer and said nothing",
+      "It automatically reassigns work",
+      "It archives old cards",
+      "It sends reminder emails"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "4ec5a15a-0b1d-4ab0-9023-86c58657ef89",
+   "title": "Asana Team Management: How to Use Asana as a Team",
+   "objectives": [
+    "Set a team up so the tool is used rather than resented",
+    "Make ownership and status unambiguous",
+    "Run the short routine that keeps a shared board honest"
+   ],
+   "notes": "Getting one person organised is easy. Getting a team to keep a shared system honest is the actual skill, and it is much less about the software than the videos suggest.\n\nTHE SETUP THAT WORKS: one project per real piece of work, one task per thing someone must do, one assignee, one due date. Sections or columns that match your stages. Nothing else until the team asks for it.\n\nTHE RULES THE TEAM AGREES TO, written down where everyone can see them:\nEVERY TASK HAS ONE OWNER. Shared ownership is the commonest reason things are not done.\nTHE STATUS IS CHANGED BY THE OWNER, not by the manager chasing.\nIF IT IS NOT IN THE TOOL IT DOES NOT EXIST. This is the hard one and it only works if you enforce it upward too - the manager who assigns work by voice note undermines the whole thing in one message.\nA TASK STUCK WAITING ON SOMEONE IS FLAGGED, not left silently.\n\nTHE ROUTINE THAT KEEPS IT ALIVE: a short weekly pass through the board, fifteen minutes, looking only at what has not moved and what is due next. Not a status meeting where everyone recites what they did - that is what the board is for.\n\nEXPECT RESISTANCE, and expect it to be about effort rather than about the tool. If updating a task takes four fields, people will stop. Remove fields until it takes one tap.\n\nADDITION BEYOND THE VIDEO - making this work with a team that lives on WhatsApp and a phone. THE RULE THAT ACTUALLY LANDS is that the group chat is fine for discussion, but a decision is not a decision until it is a task with an owner and a date, and whoever makes the decision says so in the chat with the task named. Second, INTRODUCE THE TOOL WITH ONE REAL PROJECT, not with training - people learn it by using it on work that matters, and a training session on a demo board is forgotten by Thursday. Third, WATCH THE SEAT COST: free plans cover a small team, and per-person billing in foreign currency arrives quickly once you add everyone including people who only need to look. Give viewers a shared link rather than a paid seat.",
+   "practice": "Set up one real project with one task per action, one owner and one due date each. Write the four team rules somewhere visible and agree them out loud. Then run one fifteen-minute weekly pass looking only at what has not moved, and note how many stalled tasks you find.",
+   "quiz": [
+    {
+     "question": "What most often prevents a task from being done?",
+     "options": [
+      "Shared ownership - two names means nobody",
+      "A missing due date",
+      "An unclear title",
+      "Too few status options"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "How should a decision made in a group chat be handled?",
+     "options": [
+      "It is not a decision until it is a task with an owner and a date, named in the chat",
+      "Summarised weekly by the manager",
+      "Left in the chat where everyone saw it",
+      "Recorded in meeting minutes"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "e37fec59-f512-4816-a62b-b43125b46b6c",
+   "title": "Connecting Your Data with Notion Relations & Rollups",
+   "objectives": [
+    "Link two databases so each knows about the other",
+    "Summarise linked records with a rollup",
+    "Judge when connected databases are worth the complexity"
+   ],
+   "notes": "A relation links a row in one database to rows in another - a task to a project, a project to a client, an invoice to a job. A rollup then summarises across that link: how many tasks in this project, how many are done, what the total of these invoices comes to.\n\nWHY IT MATTERS: without relations you keep the same information in several places and they drift apart. With them, a client page can show every project, every task and every unpaid invoice without anything being typed twice.\n\nTHE PATTERN THAT COVERS MOST REAL WORK: three databases - CLIENTS, PROJECTS and TASKS. Each project relates to one client; each task relates to one project. Then roll up from tasks to project to get a count of open tasks, and from projects to client to see everything for that client on one page. That structure serves a freelancer, a small agency or a workshop equally well.\n\nROLLUPS ARE READ-ONLY summaries. They count, sum, show the latest date, or list values. They do not replace a proper calculation and they are slow to load when they span thousands of rows.\n\nWHERE PEOPLE GO WRONG: relating everything to everything. Each relation is another thing to maintain and another thing to explain to whoever inherits the workspace. Add one, use it for a fortnight, then add the next.\n\nADDITION BEYOND THE VIDEO - the honest test of whether you need this at all. IF YOU HAVE THREE CLIENTS AND FIFTEEN TASKS, YOU DO NOT. A single tasks database with a text field for the client name will serve you perfectly, and the hours spent wiring up relations would be better spent finding a fourth client. The structure earns its keep when you cannot hold the picture in your head - roughly when several clients run at once and someone asks a question you cannot answer from memory. Note too that a workspace with many relations and rollups loads SLOWLY ON MOBILE DATA, so if the people using it work from a phone, keep the everyday view simple and let the connected structure sit behind it. And when you build this for a client, write down in plain words how it is wired, because an elaborate workspace nobody understands is abandoned the moment you stop maintaining it.",
+   "practice": "Build the three-database pattern - clients, projects, tasks - with one relation each way, and one rollup showing open tasks per project. Use real work. Then open a client page and answer, without looking anywhere else, what is outstanding for them. If you could already answer that from memory, write down why the structure is not yet needed.",
+   "quiz": [
+    {
+     "question": "What does a rollup do?",
+     "options": [
+      "Summarises across a relation - counts, sums or shows the latest date",
+      "Copies data between databases",
+      "Creates a new linked record",
+      "Replaces a formula property"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "When do connected databases genuinely earn their complexity?",
+     "options": [
+      "When you can no longer hold the picture in your head across several clients",
+      "As soon as you have two databases",
+      "Before taking on any clients",
+      "Whenever a template includes them"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "5c432690-f3bd-40b0-9ce6-f0576fd7b858",
+   "title": "Automating Repetitive Work with Asana Rules",
+   "objectives": [
+    "Automate the steps people reliably forget",
+    "Write a rule as a trigger, a condition and an action",
+    "Recognise what should never be automated"
+   ],
+   "notes": "A rule watches for something happening and then does something about it, without anyone remembering. Every rule has the same three parts: a TRIGGER (a task moves to Done), an optional CONDITION (and it is in the Invoicing section), and an ACTION (assign it to Grace and set a due date in three days).\n\nWHAT IS GENUINELY WORTH AUTOMATING, and the pattern is always the same - the handover that people forget:\nWHEN A TASK MOVES TO A STAGE, ASSIGN IT TO WHOEVER OWNS THAT STAGE. This alone removes most of the chasing in a small team.\nWHEN A TASK IS CREATED IN A PROJECT, ADD THE STANDARD CHECKLIST, so nobody works from memory.\nWHEN A DUE DATE PASSES WITH THE TASK UNFINISHED, FLAG IT rather than letting it sink.\nWHEN SOMETHING IS MARKED COMPLETE, MOVE IT OUT OF THE WORKING VIEW so the board shows only live work.\n\nWHAT SHOULD NOT BE AUTOMATED: judgement, and anything that sends a message to a person who did not agree to receive it. A rule that posts in a channel every time anything changes trains everyone to ignore that channel, and then real messages are missed too.\n\nAUTOMATE A PROCESS PEOPLE ALREADY FOLLOW. Automating a process nobody follows makes the mess faster. If work does not reliably move through your stages by hand, fix that first.\n\nTEST EVERY RULE with a throwaway task before letting it loose, and write down what each rule does, because a workspace full of invisible rules is very hard for the next person to understand.\n\nADDITION BEYOND THE VIDEO - what to automate first in a small team here, and the trap. The single most valuable rule is the HANDOVER ASSIGNMENT, because the commonest cause of delay is not laziness but a piece of work sitting finished in one person's hands with the next person unaware. The second is the RECURRING TASK for monthly obligations - statutory filings, licences, rent, stock counts - which are exactly the things that get remembered late. The trap is NOTIFICATION VOLUME: people here mostly work from a phone where every alert competes with everything else, so keep rules to those that change who owns something, not those that announce that something happened.",
+   "practice": "Write down the three handovers in your process where work waits because the next person does not know. Build one rule for the most costly one, as trigger, condition and action, and test it with a throwaway task. Then add one recurring task for a monthly obligation and write both rules down where the team can see them.",
+   "quiz": [
+    {
+     "question": "Which rule is usually worth building first?",
+     "options": [
+      "Assigning a task to the next owner when it reaches their stage",
+      "Posting a message whenever anything changes",
+      "Archiving completed tasks",
+      "Setting a priority on every new task"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What happens if you automate a process nobody follows?",
+     "options": [
+      "It makes the mess faster - fix the process by hand first",
+      "The rule fails silently",
+      "The tool disables the rule",
+      "People follow it once it is automated"
+     ],
+     "correct_index": 0
+    }
+   ]
+  }
+ ]
+}

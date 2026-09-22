@@ -1,0 +1,203 @@
+{
+ "course": "project-management-tools",
+ "lessons": [
+  {
+   "id": "4a121b58-ee86-4b97-8cfb-bee4bc5333ed",
+   "title": "5 Asana Tips That Will Save You Time",
+   "objectives": [
+    "Adopt the habits that remove daily friction",
+    "Use views and filters instead of scrolling",
+    "Keep a workspace usable six months in"
+   ],
+   "notes": "Take a tips list as a menu. Two habits used every day beat five tricks you remember for a week.\n\nTHE ONES THAT GENUINELY SAVE TIME:\nMY TASKS, FILTERED TO TODAY AND OVERDUE. This is the only screen most people need each morning. Everything else is context, and going straight to a filtered personal list removes the daily scroll through other people's work.\nMULTIPLE VIEWS OF THE SAME PROJECT. A board for the person doing the work, a calendar for whoever schedules, a list filtered by owner for whoever reports. Nothing duplicated, so nothing drifts apart.\nTASK TEMPLATES for work you repeat. Every recurring job has a checklist you currently hold in your head, and writing it down once is the difference between a good week and a forgotten step.\nKEYBOARD SHORTCUTS for creating and assigning, which sound trivial and are the difference between capturing a task in the moment and losing it.\nSUBTASKS SPARINGLY. They hide work. A subtask nobody sees on the board is a task that will be late.\n\nWHAT ACTUALLY KEEPS A WORKSPACE ALIVE, more than any tip: archive finished projects rather than leaving them visible, delete the fields nobody fills in, and keep one place where work is captured so nothing lives only in someone's head.\n\nADDITION BEYOND THE VIDEO - the habits that matter when you are working from a phone and paying for data. SET UP THE FILTERED PERSONAL VIEW ONCE and make it the only thing anyone opens daily, because a light, filtered view loads on a bundle and a full project view often does not. CAPTURE FAST AND TIDY LATER - a task with only a title, created in ten seconds while someone is telling you something, is worth far more than the perfectly filled-in task you never created. And be careful with NOTIFICATIONS: a phone that buzzes for every change gets silenced, and once it is silenced the genuinely urgent message is missed too, so notify on assignment and on mention, and nothing else.",
+   "practice": "Build your filtered personal view of today and overdue, and use only that as your morning screen for a week. Create one task template for a job you repeat. Then turn off every notification except assignment and mention, and note whether you missed anything real.",
+   "quiz": [
+    {
+     "question": "What should most people open each morning?",
+     "options": [
+      "A personal list filtered to today and overdue",
+      "The full project board",
+      "The team calendar",
+      "The notification inbox"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why use subtasks sparingly?",
+     "options": [
+      "They hide work - a subtask nobody sees on the board will be late",
+      "They cannot be assigned",
+      "They break templates",
+      "They are a paid feature"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "c28ebdcb-a1c4-427b-94ad-a7cb8e80b105",
+   "title": "How To Use Notion (Productive Dude Step By Step Guide)",
+   "objectives": [
+    "Work quickly in Notion rather than arranging it",
+    "Build views and templates that remove daily decisions",
+    "Keep a workspace maintainable over months"
+   ],
+   "notes": "Module 1 covered what Notion is. This lesson is about working in it quickly, and about the difference between a workspace that survives six months and one that is quietly abandoned.\n\nSPEED COMES FROM THREE THINGS. The slash command, which inserts anything without leaving the keyboard. DATABASE TEMPLATES, so a new client, project or article page arrives with its structure already in place rather than being rebuilt each time. And SAVED VIEWS, so the filtering you would do every morning is done once and named.\n\nTHE ONE-PAGE HOME. Make a single page that holds what you need today - your filtered tasks, this week, and links to the three things you open most - and open only that. A workspace you have to navigate is a workspace you stop opening.\n\nCAPTURE BEFORE ORGANISING. Have one inbox where anything can be dropped with no fields filled in, and tidy it once a week. The alternative is deciding where something belongs at the moment you are busiest, which is how things end up uncaptured.\n\nWHAT KILLS A WORKSPACE OVER MONTHS: properties nobody fills in, databases created for one experiment and never deleted, nested pages five levels deep, and templates copied from someone whose work is nothing like yours. Prune it every few months and delete without sentiment.\n\nADDITION BEYOND THE VIDEO - three things for keeping this usable in real conditions. KEEP THE DAILY PAGE LIGHT, because a home page with several embedded databases and a gallery of images is slow to load on mobile data, and slow to load means not opened. HAVE AN OFFLINE FALLBACK for anything you genuinely need in the field - a printed list, a note, or a Trello board - since Notion is poor without connection and a site visit with no signal is a normal working day here. And EXPORT PERIODICALLY: this is your working record, an account can be lost or a subscription lapse, and an export of the pages that matter costs one minute a month.",
+   "practice": "Build a one-page home holding your filtered tasks, this week, and three links, and open only that for a week. Create a database template for the kind of page you make most often, and an inbox for uncategorised capture. Then time the home page on a phone on mobile data and remove whatever makes it slow.",
+   "quiz": [
+    {
+     "question": "Why capture before organising?",
+     "options": [
+      "Deciding where something belongs when you are busiest is how things go uncaptured",
+      "Organising takes longer than capturing",
+      "Inboxes are easier to search",
+      "Templates require an inbox"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What should you do about a workspace you have to navigate?",
+     "options": [
+      "Replace it with one light home page holding what you need today",
+      "Add more nested pages for clarity",
+      "Increase the number of saved views",
+      "Rebuild it from a template"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "c8e03722-f17b-4ecd-9f87-ad2bfbd479d0",
+   "title": "Building and Running a Full Project Board in Trello",
+   "objectives": [
+    "Run a real project from setup to close on one board",
+    "Keep the board honest while the work is happening",
+    "Close a project properly so the next one is easier"
+   ],
+   "notes": "This is the applied project. Choose something real with a deadline and several people, and run it end to end. A rehearsal on invented work teaches very little.\n\nSET UP, in this order: the columns that match your real stages, including one for waiting on someone else; every known piece of work as a card with a finished-state, an owner and a date; a card for the things you know will be needed but cannot yet describe; and the deadline visible somewhere on the board.\n\nWHILE IT RUNS, the discipline is small and daily. The owner moves their own cards. Anything blocked is flagged the same day with what it is waiting for and from whom. New work becomes a card rather than a message. And the board is looked at as a whole once a week, not to recite status but to find what has not moved.\n\nTHE TWO FAILURES to expect. First, WORK THAT NEVER BECOMES A CARD - the favour asked in a corridor, the change agreed on a call - which is how a project quietly grows beyond what was agreed. Second, THE BOARD DRIFTING FROM REALITY, usually starting with one person who stops updating. Both are fixed by a person, not a feature.\n\nCLOSE IT PROPERLY. Check every card is genuinely done or consciously dropped, archive the board rather than deleting it, and write half a page while it is fresh: what took longer than expected, what was forgotten at the start, what you would set up differently. That half page is the most valuable thing the project produces after the work itself.\n\nADDITION BEYOND THE VIDEO - running this in conditions that will test it. EXPECT THE WAITING COLUMN TO BE THE BUSIEST, because much of the delay in real projects here is external - a supplier, a payment, an approval, a document from an office - and a project plan that assumes everything is within your control will be wrong in week one. Give those cards a named person and a date you will chase, rather than leaving them as passive waiting. Second, AGREE THE SCOPE IN WRITING before the board exists, because a board makes added work visible but does not make it paid - when a card is added that was not in the agreement, say so at the time, in the chat, in one sentence. And keep a LOCAL NOTE of the current state before any meeting where connection may be poor.",
+   "practice": "Run one real project end to end on a board, including a waiting column with a named chaser and a date on every blocked card. Hold one weekly pass looking only at what has not moved. When it closes, archive the board and write the half page on what took longer, what was forgotten and what you would change.",
+   "quiz": [
+    {
+     "question": "What is the commonest way a project quietly grows beyond its agreement?",
+     "options": [
+      "Work that never becomes a card - the favour asked, the change agreed on a call",
+      "Cards being moved too early",
+      "Too many columns",
+      "Missing due dates"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "How should a blocked card be handled?",
+     "options": [
+      "Flagged the same day with what it waits for, from whom, and when you will chase",
+      "Left in place until it clears",
+      "Moved back to the start",
+      "Assigned to the manager"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "fead9243-fbc9-4bfa-89e4-37be02c77e21",
+   "title": "Build a Complete Project Management System in Notion",
+   "objectives": [
+    "Assemble a connected system rather than a single board",
+    "Decide how much structure your actual work justifies",
+    "Hand a system over so someone else can run it"
+   ],
+   "notes": "This build joins the pieces: clients, projects, tasks, and the views that make them usable. Follow it, then rebuild it smaller for your own work, because the version you design yourself is the one you will keep.\n\nTHE MINIMUM SYSTEM THAT REALLY WORKS:\nTASKS, with name, status, owner, due date, and a relation to a project.\nPROJECTS, with status, client, deadline, and a rollup of open tasks.\nCLIENTS, with contact details, and everything of theirs visible on one page.\nTHREE VIEWS: my tasks due this week, everything blocked, and each project's board.\nThat is the whole thing. Anything more should be added because you felt its absence.\n\nBUILD IT IN THE ORDER THE WORK FLOWS - tasks first, because that is what you touch daily, then projects, then clients. Building the client database first produces a handsome directory and no task management.\n\nTHE DASHBOARD PAGE is the point of the system: one page you open each morning that answers what is due, what is stuck, and what is next. If the system cannot answer those three from one screen, it is a filing cabinet rather than a management system.\n\nHANDING IT OVER, which is what turns this into paid work: a short written note saying what each database is for, what to fill in and what not to touch; templates so new records arrive correctly; and someone shown how to use it on their own real work, not on a demo.\n\nADDITION BEYOND THE VIDEO - the judgement that matters most when you build this for a client here. MOST SMALL CLIENTS NEED FAR LESS THAN THIS. A single board with clear cards and a weekly routine will serve a five-person business better than a connected system nobody maintains, and the consultant who says so is the one who gets called again. Build the full system when several projects run at once and questions cannot be answered from memory. Where you do build it, KEEP THE DAILY DASHBOARD LIGHT for mobile data, make sure the client - not you - OWNS THE WORKSPACE AND THE ACCOUNT, and record a two-minute walkthrough on the phone, because a written manual goes unread and a short recording gets watched.",
+   "practice": "Build the minimum system - tasks, projects, clients, three views and one dashboard page - for your own real work, in that order. Use it for a fortnight without adding anything. Then write the handover note and record a two-minute walkthrough as though giving it to a client.",
+   "quiz": [
+    {
+     "question": "What must a dashboard answer from one screen?",
+     "options": [
+      "What is due, what is stuck, and what is next",
+      "How many tasks exist in total",
+      "Which client is most profitable",
+      "What was completed last month"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What should you build first?",
+     "options": [
+      "Tasks, because that is what you touch daily",
+      "Clients, to establish the structure",
+      "Projects, to hold everything together",
+      "The dashboard, to set the layout"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "ac7f98f2-62c1-4caf-a734-b1d6b74173f3",
+   "title": "Becoming a Notion Consultant (No Experience Needed)",
+   "objectives": [
+    "Define a service a small business will actually buy",
+    "Build proof without having had a client",
+    "Price and scope the work so it stays profitable"
+   ],
+   "notes": "Treat the no-experience-needed framing carefully. You do need experience - you need to have built and lived with a system - but you do not need a job title or a certificate, and the experience can be your own.\n\nWHAT CLIENTS ACTUALLY BUY, and it is rarely a workspace: an end to work being lost, a way to see what is outstanding without asking four people, and a routine the team keeps. Sell the outcome. The workspace is how you deliver it.\n\nTHE SERVICES THAT SELL, smallest first:\nA SETUP - one system built for their real work, with templates and a dashboard.\nTRAINING on their own workspace with their own work, which is often more valuable than the build and is easier to sell.\nA CLEAN-UP of an abandoned workspace, which is common and quick.\nTEMPLATES as a product, if you have a niche you know.\nA SMALL ONGOING ARRANGEMENT for changes and questions, once trust exists.\n\nPROOF WITHOUT CLIENTS: build three systems for realistic situations - a small agency, a shop with stock and suppliers, a freelancer with several clients - and record a short walkthrough of each. Showing the thing working beats any description of what you could do.\n\nSCOPE IT TIGHTLY. The danger in this work is the client who keeps asking for one more small addition. Agree what is included, how many revisions, and what a change costs, before you start.\n\nADDITION BEYOND THE VIDEO - selling this in a market that has not heard of the job. NOBODY HERE IS SEARCHING FOR A NOTION CONSULTANT, so do not advertise the title - describe the problem you solve, in their words: you cannot see what is outstanding, work gets lost between people, closing the month takes two days. Second, TRAINING AND SIMPLICITY ARE THE SALE. A five-person business does not need an elaborate workspace; it needs one board, clear rules and someone to show them, and doing exactly that well earns the referral. Third, the practical terms: DEPOSIT BEFORE THE BUILD and balance on handover, on M-Pesa, scope in the WhatsApp thread, THE CLIENT OWNS THE ACCOUNT, and any subscription is in their name on their card - never yours. And be honest when a spreadsheet would do the job, because that answer is remembered.",
+   "practice": "Build three sample systems for realistic situations and record a short walkthrough of each. Then write your offer in the client's words rather than as a job title, with what is included, the revision limit, and the price. Show it to one person who runs a small business and note which sentence they react to.",
+   "quiz": [
+    {
+     "question": "What do clients actually buy?",
+     "options": [
+      "An end to work being lost and a way to see what is outstanding",
+      "A well-designed workspace",
+      "A set of templates",
+      "Ongoing access to a consultant"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "How should the service be advertised here?",
+     "options": [
+      "By the problem in the client's words, since nobody searches for the job title",
+      "With the job title, to establish credibility",
+      "As a certified qualification",
+      "By listing the tools you know"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "833610b0-93a5-4d6d-9b03-00f3938d4751",
+   "title": "10 Places to Find Freelance Project Management Work",
+   "objectives": [
+    "Find project coordination work that is realistically winnable",
+    "Present experience you already have in the right language",
+    "Judge remote listings and get paid reliably"
+   ],
+   "notes": "Project management freelancing divides into two very different markets, and confusing them wastes months.\n\nTHE REMOTE INTERNATIONAL MARKET pays well, is heavily contested, and mostly wants a track record and overlapping hours. Realistic entry is as a coordinator or virtual assistant with project duties rather than as a project manager, and it usually comes after proof somewhere else.\n\nTHE LOCAL MARKET is where most people here will actually start, and it is underserved. Small businesses, NGOs, contractors, event organisers, schools and clinics all run projects badly and know it. They will not advertise for a project manager. They will say they cannot keep track of things.\n\nWHERE THE WORK IS, in order of realism:\nBUSINESSES YOU ALREADY KNOW, where you can see the disorganisation yourself.\nNGOS AND PROGRAMMES, which have real projects, reporting obligations and funded budgets.\nCONTRACTORS AND EVENT ORGANISERS, whose work is projects by nature and is usually run from memory and a phone.\nPEOPLE ALREADY DOING IT BADLY IN A SPREADSHEET, who are the easiest conversation of all.\nLOCAL BUSINESS AND PROFESSIONAL GROUPS, where being useful publicly wins work.\nONLINE PLATFORMS, crowded and low-priced, but a place to collect early reviews.\nAGENCIES AND STUDIOS that need coordination they cannot yet justify hiring for.\n\nPRESENT WHAT YOU HAVE ALREADY DONE. Most people have run something - an event, a committee, a fundraiser, a move, a small build - and have never described it as project management. Write it as scope, timeline, people coordinated, budget and outcome, and it reads as experience because it is.\n\nADDITION BEYOND THE VIDEO - the practical realities. Be honest about REMOTE INTERNATIONAL WORK: hours overlapping Europe are workable and the Americas often mean evenings, so decide what you will actually sustain before committing, and get paid through a route that works from here - Wise or Payoneer rather than an arrangement that strands the money. Ask for a DEPOSIT locally and milestone payments on longer work, on M-Pesa, with the scope written down. Watch for the listing that is really FIVE JOBS IN ONE - project manager, designer, writer, support and social media - which is common and is a signal about how the client works. And remember the most winnable local job is small and concrete: set up the board, write the routine, train the team, then review it monthly.",
+   "practice": "Write up one thing you have already organised as scope, timeline, people coordinated, budget and outcome. Then list ten local organisations that clearly run projects badly, and approach three of them describing the problem in their words with one small concrete offer - set up, train, review monthly.",
+   "quiz": [
+    {
+     "question": "How will a local client describe their need?",
+     "options": [
+      "They cannot keep track of things - not as a request for a project manager",
+      "As a project management vacancy",
+      "As a need for better software",
+      "As a training requirement"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What does a listing combining PM, design, writing, support and social media tell you?",
+     "options": [
+      "It is five jobs in one, and a signal about how that client works",
+      "That the role is senior",
+      "That the budget is large",
+      "That the work is short-term"
+     ],
+     "correct_index": 0
+    }
+   ]
+  }
+ ]
+}

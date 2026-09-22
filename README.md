@@ -718,7 +718,7 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 210. Nineteen courses are now fully
+      **Bare-lesson count: 438 → 198. Twenty courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
@@ -727,8 +727,8 @@ custom authorization layer bolted on top.
       `ecommerce-online-selling` (17), `seo-search-engine-optimization`
       (17), `instagram-tiktok-growth` (12), `email-marketing` (16),
       `excel-spreadsheets-for-work` (17), `project-management-tools`
-      (16), `ui-ux-design-figma` (16) and `bookkeeping-quickbooks`
-      (16).**
+      (16), `ui-ux-design-figma` (16), `bookkeeping-quickbooks` (16) and
+      `transcription-translation-freelancing` (12).**
 
       **Only one enrolled course still carries bare lessons** —
       `google-workspace-productivity`, held back deliberately until the
@@ -1287,13 +1287,49 @@ custom authorization layer bolted on top.
       who owes them and for how long, because that is money they can
       collect this week.
 
+      `transcription-translation-freelancing` was twentieth and is
+      complete at 12 of 12 (`0127`, `0128`) — wholly bare before this,
+      with no module already written, so the whole course is new.
+
+      It is the course that most needed an honest update, because
+      **automatic speech recognition has already taken the work these
+      videos were made to teach**. Clear single-speaker English
+      transcription is no longer an income. What remains paid is named
+      explicitly: difficult multi-speaker audio, work where accuracy is
+      not optional, and editing machine output — which is now a large
+      share of the market and a distinct skill, since the machine is
+      fluent, confident and never signals doubt.
+
+      The Kenyan advantage is the spine of the course. **Swahili, Sheng
+      and English-Swahili code-switching are exactly what the machines
+      handle worst**, along with Kenyan-accented English and the other
+      Kenyan languages. The demand is local and specific — research
+      interviews, NGO and county programme work, media houses,
+      subtitling, legal recordings — and one good research client is
+      worth a year of platform work. English–Swahili translation is
+      framed the same way: a real, underserved pair where machine
+      translation is much weaker than in European pairs, so post-editing
+      grids designed for those pairs do not apply and a sample should be
+      quoted on instead.
+
+      Professional boundaries are stated plainly: translate only into
+      the language you write natively; certified or sworn translation is
+      a separate formally recognised thing; never guess at an inaudible
+      passage; and never paste a client's confidential document into a
+      public online tool, which for research and clinical recordings is
+      both a breach of confidence and a Data Protection Act matter.
+
+      The code-switching convention is treated as something to agree in
+      writing before starting — transcribe each language as spoken,
+      translate the Swahili inline, or both — because deciding it
+      silently changes what the transcript is.
+
       Order of attack for the rest: the remaining unenrolled twelves —
       `customer-service-virtual-call-center`,
       `data-analysis-visualization`, `podcasting-voice-over`,
       `resume-writing-linkedin-personal-branding`,
-      `transcription-translation-freelancing`, `youtube-channel-growth`
-      (`mobile-photography-content-creation` and
-      `python-programming-for-beginners` are held back alongside
+      `youtube-channel-growth` (`mobile-photography-content-creation`
+      and `python-programming-for-beginners` are held back alongside
       `google-workspace-productivity` until the duplicate-lesson
       question below is settled) — then the eighteen courses sitting at
       six bare lessons each.

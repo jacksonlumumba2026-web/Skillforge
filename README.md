@@ -718,14 +718,15 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 258. Fifteen courses are now fully
+      **Bare-lesson count: 438 → 246. Sixteen courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
       `social-media-management` (16), `digital-marketing` (16),
       `copywriting-content-writing` (16), `google-facebook-ads` (16),
       `ecommerce-online-selling` (17), `seo-search-engine-optimization`
-      (17), `instagram-tiktok-growth` (12) and `email-marketing` (16).**
+      (17), `instagram-tiktok-growth` (12), `email-marketing` (16) and
+      `excel-spreadsheets-for-work` (17).**
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -1123,11 +1124,45 @@ custom authorization layer bolted on top.
       belongs in the launch email, because a buyer who reaches a
       card-only checkout does not come back.
 
+      `excel-spreadsheets-for-work` was sixteenth and is complete at 17
+      of 17 (`0118`, `0119`). Modules 3 and 4 were already written —
+      tables, sorting, filtering, absolute references and error values —
+      so the lookup and pivot lessons build on them directly.
+
+      The course names the tool most learners should actually use.
+      Employers say Excel, the skills transfer exactly, but **Google
+      Sheets is the practical daily tool here**: no licence in foreign
+      currency, works on a phone, saves itself, survives a dead laptop
+      or an infected flash disk, and its version history means a shared
+      file cannot really be destroyed. Two sharing traps are made
+      explicit — set the locale before entering dates, and format the
+      phone column as text before the leading zero is lost.
+
+      The applied thread throughout is **reconciliation**, which is the
+      spreadsheet job small businesses here actually pay for. The lookup
+      lesson teaches matching an M-Pesa statement against a sales
+      record: build one clean key column because numbers arrive as
+      0722, +254722 and 254722 in the same job, force transaction codes
+      to text, and filter the not-founds, because the not-founds are the
+      work. The budget tracker carries a transaction-code column, a
+      category for transaction charges, and a structure built for
+      irregular income and lumpy costs — school fees, rent paid several
+      months at a time, harvest inputs — rather than a tidy monthly
+      salary.
+
+      The freelance lesson treats its own title figure as marketing and
+      teaches the sentence that is really the job: the stock never
+      matches, I do not know who owes me, it takes two days to close the
+      month. And the dashboard lesson designs for the screen the client
+      will actually use — a PDF opened on a phone in WhatsApp, with the
+      headline number in the message text because the attachment often
+      goes unopened.
+
       Order of attack for the rest: enrolled courses at 12 bare lessons
-      each — `excel-spreadsheets-for-work`, `project-management-tools`,
-      `ui-ux-design-figma` (`google-workspace-productivity` is held back
-      until the duplicate-lesson question below is settled), then the
-      unenrolled twelves and the sixes.
+      each — `project-management-tools`, `ui-ux-design-figma`
+      (`google-workspace-productivity` is held back until the
+      duplicate-lesson question below is settled), then the unenrolled
+      twelves and the sixes.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

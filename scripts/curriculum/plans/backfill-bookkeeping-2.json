@@ -1,0 +1,203 @@
+{
+ "course": "bookkeeping-quickbooks",
+ "lessons": [
+  {
+   "id": "7303101a-09db-4d20-b615-262eb6b57d36",
+   "title": "Easy Bookkeeping Steps for Beginners (QuickBooks Online)",
+   "objectives": [
+    "Run a repeatable weekly and monthly routine",
+    "Close a month so the figures can be relied on",
+    "Keep records that stand up when they are questioned"
+   ],
+   "notes": "Bookkeeping done in a panic at year end is expensive and usually wrong. Done as a short routine it is quick, and the figures are worth something.\n\nTHE WEEKLY PASS, thirty minutes: bring in the week's transactions, categorise them, chase anything you cannot identify while the owner still remembers it, and file the receipts. The chasing is the part beginners skip and it is the part that only works while memory is fresh - a payment nobody can explain in January was explainable in November.\n\nTHE MONTHLY CLOSE, which is what makes figures trustworthy:\nRECONCILE every account against its statement.\nCHECK WHO OWES YOU and how long it has been outstanding.\nCHECK WHAT YOU OWE and what falls due next.\nREVIEW THE UNCATEGORISED pile until it is empty.\nPRODUCE THE REPORTS and read them before sending them.\nLOCK THE PERIOD so nobody edits a month that has been reported on.\n\nTHAT LAST STEP MATTERS more than it sounds. Books that can be quietly changed after they were reported on are not a record, and a figure that differs from the one you sent last month with no explanation destroys a client's confidence in everything else.\n\nKEEP THE EVIDENCE. Every figure should be traceable to a receipt, an invoice or a statement line. The test is whether a stranger could follow any number back to its source.\n\nADDITION BEYOND THE VIDEO - the routine adapted to how these businesses actually run. GET THE FULL M-PESA STATEMENT MONTHLY rather than reading the app, and make requesting it a fixed part of the close. Photograph receipts as they are collected - thermal paper fades within months here, and a faded receipt is no evidence at all. Keep records for the period the law requires and store them somewhere that survives a lost or stolen phone, which means a cloud folder rather than the handset. And be deliberate about DEADLINES: a business has filing obligations with their own dates, and part of the value you provide is that the books are ready before the deadline rather than in the week of it. Confirm which obligations actually apply to each client on iTax rather than assuming from what a similar business does, because they differ by registration and turnover and they change.",
+   "practice": "Write your own weekly and monthly checklists for one real business, including requesting the full M-Pesa statement and locking the period. Run one complete monthly close against them. Then pick five figures at random from the reports and trace each back to its receipt, invoice or statement line.",
+   "quiz": [
+    {
+     "question": "Why chase unidentified transactions weekly rather than at year end?",
+     "options": [
+      "A payment nobody can explain in January was explainable in November",
+      "Weekly chasing is required by software",
+      "It reduces the number of transactions",
+      "It avoids duplicate entries"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why lock a period after reporting on it?",
+     "options": [
+      "A figure that later differs with no explanation destroys confidence in everything else",
+      "The software runs faster",
+      "It is required before filing",
+      "It prevents new transactions being added"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "b01b3a4e-e352-44e6-896f-48edb1cb7c7e",
+   "title": "How To Start a Bookkeeping Business",
+   "objectives": [
+    "Decide what service you offer and what you do not",
+    "Set up the working arrangements before the first client",
+    "Know the boundary of your own competence"
+   ],
+   "notes": "Bookkeeping is one of the more dependable services in this catalogue: every business needs it, it recurs monthly, and the client cannot easily stop halfway through a year.\n\nWHAT YOU ARE OFFERING, stated plainly so a client understands: their transactions recorded and categorised, their accounts reconciled, a monthly report they can understand, and their records ready when they are needed. That is a complete and honest service.\n\nWHAT YOU ARE NOT OFFERING, and say this out loud: you are not an auditor, and unless you are qualified and registered you are not their tax agent. Prepare the books so that filing is straightforward and work alongside whoever handles that. A beginner who implies otherwise creates a problem for a client that is far larger than the fee.\n\nTHE SET-UP, before the first client: how you receive documents, where you store them, how you ask questions, when you report, and what you do when the owner does not reply. Most of the friction in this work is document chasing, so design for it.\n\nA CLIENT FOLDER PER BUSINESS, organised the same way every time - statements, receipts, invoices, reports, by month. Consistency is what lets you pick up a client you have not touched in three weeks.\n\nWRITE DOWN WHAT YOU AGREED: what you do, what they must send and by when, what you charge, and what happens if the records arrive late. Late records are the commonest cause of a bad month.\n\nADDITION BEYOND THE VIDEO - the shape of this business here. WORK IN WHATEVER THE CLIENT ALREADY USES rather than insisting on one package - a shop with a notebook and an M-Pesa statement is a real client, and a good spreadsheet is a legitimate professional deliverable. Insisting on a foreign subscription loses the client and helps nobody. Second, EXPECT THE DOCUMENTS TO ARRIVE ON WHATSAPP as photographs, and build for that: a folder per client per month, files renamed by date and amount as they come in, and a fixed day you chase what is missing. Third, YOU ARE HANDLING SOMEONE'S FINANCIAL DATA - agree in writing what you may do with it, keep it somewhere access-controlled rather than in a shared gallery, and remember that the Data Protection Act applies to the customer information inside their books as much as to your own client list.",
+   "practice": "Write your service description in plain language, including the sentence saying what you do not do. Then set up your document flow for one imagined client - how files arrive, where they are stored, the naming convention, your report day, and your chase day - and write the short agreement covering what they send, by when, and what late records mean.",
+   "quiz": [
+    {
+     "question": "What must you say out loud to a client?",
+     "options": [
+      "That you are not an auditor and, unless qualified and registered, not their tax agent",
+      "That you use QuickBooks",
+      "That you work monthly",
+      "That you charge in advance"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What is the commonest cause of a bad month in this work?",
+     "options": [
+      "Records arriving late",
+      "Software errors",
+      "Incorrect categorisation",
+      "Reconciliation differences"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "57a2cace-0934-4c28-8ba2-5173b8341b5b",
+   "title": "Setting Up a Company's Chart of Accounts",
+   "objectives": [
+    "Design a chart that fits one real business",
+    "Keep it small enough that categorising stays consistent",
+    "Set it up so the reports answer real questions"
+   ],
+   "notes": "The chart of accounts is the list of categories every transaction is filed into. It decides what your reports can tell anyone, which makes it the most consequential setup decision in the whole system.\n\nDESIGN IT FROM THE QUESTIONS THE OWNER ASKS. If they want to know which branch earns more, branches must be distinguishable. If they want to know what deliveries cost, delivery needs its own account. A chart copied from a template answers a stranger's questions.\n\nTHE STRUCTURE follows the five types from Module 1 - assets, liabilities, equity, income, expenses - with numbered ranges so related accounts sit together and new ones slot in.\n\nFEWER THAN YOU THINK. The failure mode is ninety accounts, inconsistent filing, and reports nobody trusts. A small shop needs perhaps twenty-five. If an account will hold three transactions a year, it belongs inside a larger one.\n\nSEPARATE THE DIRECT COST OF WHAT YOU SELL from the running costs. Without that split there is no gross profit figure, and gross profit is the number that tells an owner whether their pricing works.\n\nNAME THEM IN THE OWNER'S WORDS. Stock, not Inventory, if that is what they say. They have to read these reports.\n\nADDITION BEYOND THE VIDEO - the accounts a chart built for this market needs and an imported template omits. MOBILE MONEY as its own asset account, separate from the bank and from cash, because it is a distinct pot with its own statement. MOBILE MONEY AND BANK CHARGES as an expense account of their own - they are invisible individually and material annually. OWNER DRAWINGS, so money the owner takes is never miscounted as an expense. BAD DEBT, because informal credit to regular customers is normal here and some of it is never collected, and writing it off honestly is better than a debtors figure everyone knows is fiction. DELIVERY AND TRANSPORT as a real cost centre, since boda and courier charges are a genuine line in most small businesses here. And if the business has a TILL AND A PAYBILL, or more than one number, give each its own account - reconciling a combined pot is where errors hide.",
+   "practice": "Interview one real owner about the questions they want answered, then build a chart of no more than thirty accounts that answers them, with direct costs separated from running costs and named in their words. Include mobile money, charges, drawings, bad debt and transport. Then categorise fifty of their real transactions and note every one that did not fit cleanly.",
+   "quiz": [
+    {
+     "question": "What should the chart of accounts be designed from?",
+     "options": [
+      "The questions the owner actually asks",
+      "A standard industry template",
+      "The software default",
+      "The tax return categories"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why separate direct costs from running costs?",
+     "options": [
+      "Without the split there is no gross profit figure, which is what shows whether pricing works",
+      "Tax requires it",
+      "It reduces the number of accounts",
+      "It speeds up reconciliation"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "06943462-03f8-4ea1-91bd-b49478891062",
+   "title": "Reconciling a Bank Account End to End",
+   "objectives": [
+    "Complete a full reconciliation on real data",
+    "Investigate a difference until it is explained",
+    "Document what you did so it can be checked"
+   ],
+   "notes": "Module 2 covered the reconciliation screen. This is doing a real one, on a real month, where the numbers do not agree and finding out why is the job.\n\nTHE FULL SEQUENCE: get the statement for the period; check the opening balance matches your closing balance from last month, because if it does not the problem is older than this month and must be fixed first; tick off every matching transaction; list what is unmatched on both sides; investigate each one; correct the records where you were wrong and note where the statement is the odd one out; confirm the closing balance agrees; then lock the period.\n\nINVESTIGATING PROPERLY means going back to the evidence - the receipt, the message, the invoice - rather than deciding what a transaction probably was. Probably is how wrong books get built.\n\nTHE PATTERNS YOU WILL ACTUALLY MEET: charges never recorded; the owner paying a personal expense from the business account; a customer paying an odd amount because they deducted something; a payment recorded on the day it was seen rather than the day it happened; and the same transaction entered twice under slightly different descriptions.\n\nWHEN YOU GENUINELY CANNOT EXPLAIN A DIFFERENCE, do not bury it. Write down what it is, what you checked, and what it might be, and put it in front of the owner. An honest unexplained item is a professional result; a forced adjustment is not.\n\nDOCUMENT THE RECONCILIATION: the period, the statement closing balance, what you corrected and why, and anything left open. That record is what makes your work checkable, and it is what a lender or an accountant will ask for.\n\nADDITION BEYOND THE VIDEO - the realities of doing this on a Kenyan set of books. WORK FROM THE FULL M-PESA STATEMENT rather than the app history, and reconcile each source separately - till, paybill, personal number if business money still runs through it, bank, cash. Expect the OWNER'S OWN TRANSFERS between these to be the largest category of apparent difference, and remember they are neither income nor expense. Expect CASH SALES WITH NO RECORD, which cannot be reconciled at all and must be fixed upstream with a daily sales record rather than argued about monthly. And be careful with REVERSED TRANSACTIONS: a payment sent to a wrong number and reversed appears twice in the statement and nets to nothing, and recording only one side of it produces a difference that will cost you an hour if you do not know to look for it.",
+   "practice": "Reconcile one real month end to end, on each source separately, starting by checking the opening balance against last month's close. Investigate every unmatched item back to its evidence. Write the reconciliation note - period, closing balance, corrections made, anything unexplained - and give the unexplained items to the owner as a list.",
+   "quiz": [
+    {
+     "question": "The opening balance does not match last month's closing balance. What does that mean?",
+     "options": [
+      "The problem is older than this month and must be fixed first",
+      "The statement is wrong",
+      "A transaction was duplicated this month",
+      "The period was locked incorrectly"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "How should a genuinely unexplained difference be handled?",
+     "options": [
+      "Documented with what you checked and put in front of the owner",
+      "Adjusted so the accounts agree",
+      "Carried forward to next month silently",
+      "Split across expense categories"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "a50ef4e3-7031-4568-b2d9-aa679bdeb0af",
+   "title": "Getting Your First Bookkeeping Client",
+   "objectives": [
+    "Find businesses that genuinely need this work",
+    "Open the conversation in the owner's language",
+    "Win trust before you have a track record"
+   ],
+   "notes": "Bookkeeping clients are easier to find than most freelance clients, because the need is universal and the pain is felt. The difficulty is trust, since you are asking for access to their money.\n\nWHO NEEDS IT MOST, and they are everywhere: shops and hardware stores, salons and barbers, small restaurants and food businesses, schools and clinics, contractors, transport operators, and anyone who has taken a loan or intends to.\n\nTHE SIGNS a business needs you: the owner cannot say whether last month was profitable, everything lives in a notebook or nowhere, stock figures never match, they dread filing season, or they have been asked for statements by a lender and cannot produce them.\n\nHOW TO OPEN THE CONVERSATION - not by offering bookkeeping, which sounds like a cost, but by naming what they feel: you cannot tell what you are actually making, you do not know who owes you, the books are a panic every year. Then say what you would do about it and what it costs.\n\nBUILDING TRUST WITHOUT A TRACK RECORD: do one month properly at a small fixed price and let the result speak. Show them the reconciliation, the report and the list of who owes them. That first month sells the year.\n\nSTART WITH PEOPLE WHO KNOW YOU. Trust transfers, and this is work where trust is the whole barrier.\n\nADDITION BEYOND THE VIDEO - what actually makes this work locally. LEAD WITH THE ONE-MONTH CLEAN-UP, priced small and defined. It is easy to say yes to, it shows them something they have never seen, and it tells you what the real job is before you quote for the year. Second, BE READY FOR THE NOTEBOOK AND THE PHOTOGRAPHS: many businesses have no digital records at all, so price the data entry honestly as its own piece of work rather than absorbing it. Third, THE FIRST DELIVERABLE THAT CONVINCES AN OWNER is almost never the profit and loss - it is the LIST OF WHO OWES THEM AND FOR HOW LONG, because that is money they can go and collect this week. Produce that first. And handle the trust question directly: agree in writing what access you have, never ask for their PIN or to transact on their behalf, and be explicit that you record and report but do not move money.",
+   "practice": "List fifteen businesses you can reach that show the signs above. Write your opening in the owner's words, not as an offer of bookkeeping. Then do one month properly for one of them at a small fixed price, and lead the delivery with the list of who owes them and for how long.",
+   "quiz": [
+    {
+     "question": "What first deliverable most convinces an owner?",
+     "options": [
+      "The list of who owes them and for how long - money they can collect this week",
+      "The profit and loss statement",
+      "The balance sheet",
+      "The reconciliation report"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "How should the trust question be handled?",
+     "options": [
+      "Agree access in writing, never ask for a PIN, and be explicit that you do not move money",
+      "Offer references from other clients",
+      "Provide a written guarantee",
+      "Work on site only"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "2eb28d33-7422-4bb5-adac-f271a098e65e",
+   "title": "Pricing Your Bookkeeping Services",
+   "objectives": [
+    "Price by the work rather than by the hour",
+    "Quote from what the records are actually like",
+    "Set terms that make a monthly service sustainable"
+   ],
+   "notes": "Bookkeeping prices well because it is recurring and the value is visible. It prices badly when you quote before seeing the records.\n\nPRICE MONTHLY, NOT HOURLY. The client is buying a service that runs, and hourly pricing punishes you as you get faster - which you will, substantially, within a few months.\n\nWHAT DRIVES THE PRICE, and quote from these rather than from a rate card: the NUMBER OF TRANSACTIONS a month, the NUMBER OF SOURCES to reconcile - a business with a till, a paybill, a bank account and cash is four reconciliations - whether the records arrive digitally or as photographs of a notebook, whether there is a VAT position to maintain, and how disciplined the owner is about sending things.\n\nNEVER QUOTE BEFORE SEEING THE RECORDS. Ask for one recent month. The difference between tidy and chaotic is several times the work, and the quote you give blind will be the wrong one in one direction or the other.\n\nCHARGE THE CLEAN-UP SEPARATELY. Bringing a year of neglected books up to date is a project with its own price, not something absorbed into the first month. Do it as a defined piece of work, then start the monthly service from a clean position.\n\nSET A FLOOR from what you need monthly divided by the clients you can genuinely serve well, and raise your price for new clients as you get better.\n\nADDITION BEYOND THE VIDEO - the terms that make this sustainable here. TAKE THE FEE MONTHLY IN ADVANCE on M-Pesa, because a bookkeeper chasing their own payment while preparing someone else's debtors report is in an absurd position, and it happens constantly. WRITE THE LATE-RECORDS TERM into the agreement: what you need, by which day, and that a month whose records arrive late is closed late - without it, you absorb the cost of the client's disorganisation every month. QUOTE ANY SOFTWARE SUBSCRIPTION AS THEIR SEPARATE COST in their name on their card, never inside your fee. And price the DATA ENTRY of a notebook or a stack of photographs as its own line, because it is real hours and it is the single commonest way bookkeepers here end up working for far less than they agreed.",
+   "practice": "Ask a real business for one recent month of records before quoting anything. Count the transactions, count the sources to reconcile, and assess how they arrive. Then write a quote with three parts - a clean-up price, a monthly fee, and the data entry as its own line - plus your payment and late-records terms.",
+   "quiz": [
+    {
+     "question": "Why never quote before seeing the records?",
+     "options": [
+      "Tidy and chaotic records differ by several times the work",
+      "Clients expect a delay",
+      "It allows you to check references",
+      "Software pricing varies"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "How should a year of neglected books be handled?",
+     "options": [
+      "As a separate clean-up project with its own price, before the monthly service starts",
+      "Absorbed into the first month",
+      "Spread across the first six months",
+      "Declined"
+     ],
+     "correct_index": 0
+    }
+   ]
+  }
+ ]
+}

@@ -718,7 +718,7 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 234. Seventeen courses are now fully
+      **Bare-lesson count: 438 → 222. Eighteen courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
@@ -726,8 +726,12 @@ custom authorization layer bolted on top.
       `copywriting-content-writing` (16), `google-facebook-ads` (16),
       `ecommerce-online-selling` (17), `seo-search-engine-optimization`
       (17), `instagram-tiktok-growth` (12), `email-marketing` (16),
-      `excel-spreadsheets-for-work` (17) and `project-management-tools`
-      (16).**
+      `excel-spreadsheets-for-work` (17), `project-management-tools`
+      (16) and `ui-ux-design-figma` (16).**
+
+      **Only one enrolled course still carries bare lessons** —
+      `google-workspace-productivity`, held back deliberately until the
+      duplicate-lesson question below is settled.
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -1196,10 +1200,56 @@ custom authorization layer bolted on top.
       concrete: set up the board, write the routine, train the team,
       review it monthly.
 
-      Order of attack for the rest: `ui-ux-design-figma` is the last
-      enrolled course at 12 bare lessons (`google-workspace-productivity`
-      is held back until the duplicate-lesson question below is
-      settled), then the unenrolled twelves and the sixes.
+      `ui-ux-design-figma` was eighteenth and is complete at 16 of 16
+      (`0122`, `0123`). Modules 3 and 4 were already written — what user
+      research actually is, user flows before screens, auto layout, and
+      components and variants — so the tool lessons build on them.
+
+      The course's through-line is that **a design must be judged on the
+      device it will be used on, not the one it was made on**. Tutorials
+      design on a large recent handset; most users here hold a
+      mid-range or older Android with a smaller screen and an enlarged
+      system font. Contrast is treated as a functional requirement
+      rather than taste, because pale grey on white disappears on a
+      cheap screen in sunlight. And **weight is named as a design
+      decision**: a designer who specifies three typefaces and a hero
+      video has spent the user's money on a data bundle.
+
+      Two things the source videos do not cover are made explicit. The
+      wireframing and design-system lessons treat **loading, empty,
+      failed and offline as first-class states** rather than edge cases,
+      because a dropped connection mid-action is routine here. And the
+      prototyping lesson designs the **M-Pesa handoff** — the user
+      leaves the app for a prompt and returns — including what they see
+      if the prompt never arrives and how to check without paying twice,
+      which is where real purchases are abandoned.
+
+      The practice lesson points learners at Kenyan apps rather than
+      design showpieces, since a careful rebuild of a payment
+      confirmation screen teaches more about this market than ten
+      foreign portfolio pieces — and it insists on real content: long
+      names that do not fit a neat field, shillings with separators,
+      descriptive addresses rather than a postcode.
+
+      The freelance module says many clients asking for a website need a
+      WhatsApp catalogue and two good pages instead, and that saying so
+      wins the relationship. The portfolio lesson carries two versions
+      of every case study: the full write-up for agencies, and a
+      one-screen before-and-after with one sentence of outcome for the
+      small business owner reading it on WhatsApp.
+
+      `0124` is a repair, not new content. Two fields in `0123` were
+      applied to production with possessive apostrophes dropped in
+      transcription; the fingerprint check caught it and `0124` restores
+      the text `0123` already specifies.
+
+      Order of attack for the rest: the unenrolled twelves —
+      `bookkeeping-quickbooks`, `customer-service-virtual-call-center`,
+      `data-analysis-visualization`, `mobile-photography-content-creation`,
+      `podcasting-voice-over`, `python-programming-for-beginners`,
+      `resume-writing-linkedin-personal-branding`,
+      `transcription-translation-freelancing`, `youtube-channel-growth` —
+      then the eighteen courses sitting at six bare lessons each.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

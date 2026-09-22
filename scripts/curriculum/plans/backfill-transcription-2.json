@@ -1,0 +1,203 @@
+{
+ "course": "transcription-translation-freelancing",
+ "lessons": [
+  {
+   "id": "96540387-d228-486c-ace4-d2fa61659b0d",
+   "title": "How to Improve Your Transcription Skills: Tips and Techniques",
+   "objectives": [
+    "Get faster without losing accuracy",
+    "Research names and terms properly",
+    "Edit machine output, which is now much of the work"
+   ],
+   "notes": "Speed in transcription comes from removing hesitation, not from typing faster. Most beginners are slow because they stop to think about formatting, spelling and what a word might have been.\n\nWHAT ACTUALLY MAKES YOU FASTER:\nTOUCH TYPING, genuinely. If you look at the keyboard you cannot watch the text while listening, and that costs more than any software.\nTEXT EXPANSION for the phrases you type constantly - speaker labels, standard headers, recurring terminology.\nDECIDING THE FORMAT BEFORE YOU START rather than mid-file.\nNOT REWINDING OUT OF ANXIETY. One pass, then a checking pass. Rewinding over a word you already have is the commonest waste of time.\nDOING THE RESEARCH ONCE, at the start: skim the audio for names, organisations and technical terms, look them up, and put them in a list before you type a word.\n\nACCURACY IS THE PRODUCT, not speed. A transcript delivered fast with three wrong names is worth less than nothing, because the client must check everything.\n\nALWAYS DO A CHECKING PASS with the audio playing, reading against what you typed. Catching your own errors is a separate task from typing and needs its own pass.\n\nEDITING MACHINE OUTPUT is now a large share of paid transcription work, and it is a distinct skill. The machine produces fluent, confident, plausible text and never signals doubt, so you must read against the audio rather than proofreading the text - which is what everyone does at first and why they miss things. Machines are most wrong on exactly what matters: names, numbers, technical terms, and who is speaking.\n\nADDITION BEYOND THE VIDEO - where machine output fails in this market, which is your paid advantage. It mangles KENYAN NAMES, PLACES AND ORGANISATIONS, invents plausible English words for Swahili and Sheng, collapses code-switching into nonsense, and cannot keep speakers apart in a group discussion - which is the format of most research and community recordings here. Price this work by the HOUR OF YOUR TIME OR BY THE AUDIO HOUR, never per word, because a fluent-looking machine transcript of a hard recording can take longer to fix than typing it fresh - and when it does, say so and renegotiate rather than absorbing it. Build a personal list of names, places, institutions and terms as you go: after a few projects in one sector it is a genuine professional asset.",
+   "practice": "Take one hour of difficult multi-speaker audio. Skim it first and build a list of names and terms before typing. Transcribe it in one pass, then do a separate checking pass against the audio. Then run the same file through an automatic tool, edit that output against the audio, and compare which was faster and which was more accurate.",
+   "quiz": [
+    {
+     "question": "How should machine output be checked?",
+     "options": [
+      "Read against the audio, because the text is fluent and never signals doubt",
+      "Proofread for grammar and spelling",
+      "Compared with a second machine transcript",
+      "Spot-checked at intervals"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why not price machine-editing work per word?",
+     "options": [
+      "A fluent transcript of hard audio can take longer to fix than typing it fresh",
+      "Word counts are hard to measure",
+      "Clients prefer hourly billing",
+      "Per-word rates are not used in transcription"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "391cb58c-3fa8-4ac8-855d-69800594e716",
+   "title": "CAT Tools Increase Productivity (Freelance Translator)",
+   "objectives": [
+    "Use memory, glossary and checks together",
+    "Handle machine translation post-editing knowingly",
+    "Protect your rate as the tools get better"
+   ],
+   "notes": "A CAT tool pays for itself through three things used together: the memory, the glossary, and the automated quality checks.\n\nTHE QUALITY CHECKS are the underrated part. They catch untranslated segments, numbers that differ between source and target, inconsistent terminology, missing tags and double spaces. These are the errors that make a client doubt everything else, and they are all mechanical to catch. Run them before every delivery, always.\n\nCONCORDANCE SEARCH is the feature experienced translators use most: search your memory for how you handled a phrase before. It is what keeps a large or long-running project consistent when you cannot remember what you did in March.\n\nMACHINE TRANSLATION POST-EDITING is now a standard, separately named service. Understand the two levels clients ask for: LIGHT post-editing, fixing only what is actually wrong and accepting awkward phrasing, for text that only needs to be understood; and FULL post-editing, bringing it to publishable quality. They are very different amounts of work and must be priced differently. Agree which is wanted, in writing, before starting.\n\nTHE HONEST WARNING ABOUT POST-EDITING RATES: it is routinely priced as though it were proofreading. On a good machine output in a well-supported pair, that can be fair. On a poor output, editing is slower than translating from scratch, and accepting a proofreading rate for it means working for very little. You are allowed to look at a sample first, and you should.\n\nADDITION BEYOND THE VIDEO - what this means for English and Swahili specifically. MACHINE TRANSLATION IS MUCH WEAKER IN THIS PAIR than in European ones, especially on anything technical, legal, medical or idiomatic. That cuts both ways and both are in your favour: post-editing rates designed for well-supported pairs are usually unrealistic here, so ASK FOR A SAMPLE AND QUOTE ON WHAT YOU SEE rather than on a published grid; and genuine human translation retains its value, so you are not competing with a free tool the way a translator in a crowded pair is. Two further points: ALWAYS RUN THE NUMBER CHECK, because figures in health, agricultural and financial material are where a translation error does real harm; and never paste a client's confidential document into a public online tool - it is a breach of the confidentiality you agreed and, where the document contains personal data, a matter the Data Protection Act speaks to.",
+   "practice": "Translate one document with the memory, glossary and quality checks all in use, and run every check before delivery. Then take a machine-translated Swahili or English text and post-edit it twice - once lightly, once to publishable quality - timing both, and work out what each would need to pay per hour to clear your floor.",
+   "quiz": [
+    {
+     "question": "What are the two levels of post-editing?",
+     "options": [
+      "Light, fixing only what is wrong, and full, bringing it to publishable quality",
+      "Draft and final",
+      "Automatic and manual",
+      "Internal and client-facing"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why quote post-editing from a sample rather than a published grid?",
+     "options": [
+      "Machine output is much weaker in English-Swahili, so editing can be slower than translating fresh",
+      "Grids change frequently",
+      "Samples prove your ability",
+      "Agencies expect negotiation"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "e3fc2acc-884b-4707-9505-afe846fa190d",
+   "title": "Transcribe a Real Audio File to Text",
+   "objectives": [
+    "Complete a full transcription job to a professional standard",
+    "Apply a style guide consistently from start to finish",
+    "Deliver work a client can use without asking questions"
+   ],
+   "notes": "This is the applied project. Use a real recording of reasonable length and difficulty, and take it all the way to delivery as if it were paid.\n\nBEFORE YOU TYPE ANYTHING: listen to the first few minutes and skim through the rest. Identify how many speakers there are, how clear the audio is, what the subject is, and what names and terms will recur. Build the term list now. This twenty minutes saves hours.\n\nAGREE OR SET THE STYLE: clean or full verbatim, speaker labels, timestamp frequency, how inaudible passages are marked, how numbers are written, and what happens where languages switch.\n\nTHE PASSES:\nFIRST PASS - transcribe steadily, marking anything uncertain in a consistent way so you can find it again. Do not stop to perfect a word.\nSECOND PASS - play the audio through against your text and fix what you marked. This is where accuracy is actually produced.\nTHIRD PASS - read the text alone for formatting, spelling and consistency of names.\n\nDELIVERY: the format the client asked for, a sensible filename, speaker labels consistent throughout, and a short note listing any timestamps you could not resolve and the names you were unsure of. That note is what marks a professional, because it tells the client exactly where to look rather than leaving them to discover a problem.\n\nTIME IT HONESTLY and write the figure down. Your real ratio of working time to audio length is the basis of every quote you will give.\n\nADDITION BEYOND THE VIDEO - deliver it the way it will actually be used. Ask what the transcript is FOR: a researcher coding interviews wants speaker labels and timestamps and does not want the text tidied; a media client wants readable text; a legal client wants full verbatim and exact timings. The same audio produces three different correct deliverables. Handle CONFIDENTIALITY properly, because a research or clinical recording contains personal information about people who consented to a study rather than to you: keep it in a folder only you can reach, do not upload it to a public tool, delete it when the job is done and the client confirms, and say in writing that you will. And where the recording mixes languages, deliver exactly the convention you agreed, noting in your delivery message which convention you used so nobody has to guess.",
+   "practice": "Take one real recording of at least thirty minutes with multiple speakers. Set your style guide, build the term list first, then work the three passes and time each. Deliver it with a note listing unresolved timestamps and uncertain names, and state which code-switching convention you used.",
+   "quiz": [
+    {
+     "question": "What produces accuracy in a transcription job?",
+     "options": [
+      "A separate second pass playing the audio against the text",
+      "Typing slowly in the first pass",
+      "Using better software",
+      "Rewinding whenever unsure"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What marks a professional delivery?",
+     "options": [
+      "A note listing unresolved timestamps and uncertain names",
+      "A faster turnaround",
+      "A lower price",
+      "A formatted cover page"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "fd37212e-1bb1-4bf7-bf5d-2dd18db663e4",
+   "title": "Translate a Document in Smartcat",
+   "objectives": [
+    "Complete a translation job in a browser-based CAT platform",
+    "Use memory, glossary and checks on a real file",
+    "Deliver a translation ready for the client to use"
+   ],
+   "notes": "Smartcat is a CAT tool that runs in a browser, which matters when you are working on a machine you do not control or moving between computers. The concepts are those from Module 2; this is doing a whole job in one.\n\nTHE SEQUENCE: create the project and set the language pair; upload the source document; attach or create a translation memory and a glossary; translate segment by segment, confirming as you go; run the quality checks; then export the translated document in its original format.\n\nWORK SEGMENT BY SEGMENT AND RESIST TIDYING AS YOU GO. Translate the whole file first, then read it through as a document. Polishing while translating is slow and produces text that reads as a series of sentences rather than a document.\n\nREAD THE FINAL TEXT WITHOUT THE SOURCE. This is the step that separates translation from segment replacement. If it reads as though it were written in that language, it is done; if you can hear the source language behind it, it is not.\n\nCHECK WHAT THE EXPORT LOOKS LIKE. Formatting, tags, tables and numbering can break, and a client who receives a broken document remembers that rather than your translation.\n\nDELIVER BOTH the translated file and any note the client needs: terms you chose deliberately, anything ambiguous in the source, and anything you would flag as an error in the original. Translators who quietly translate an obvious mistake in the source are less useful than those who point it out.\n\nADDITION BEYOND THE VIDEO - three practical points. BROWSER-BASED TOOLS NEED CONNECTION, so on an unreliable one confirm segments frequently rather than working for an hour and losing it, and keep an offline copy of your memory - a deadline missed because a platform was unreachable is still your missed deadline. Second, CHECK WHO OWNS THE MEMORY on a platform: work done inside some systems builds a memory the platform or agency keeps, not you, and your memory is your compounding asset, so know which arrangement you are in before a long project. Third, on ENGLISH-SWAHILI work especially, deliver a short TERMINOLOGY NOTE with your choices for contested terms - health, legal and governance vocabulary is genuinely unsettled, and a translator who shows their reasoning is trusted with the next job.",
+   "practice": "Translate one real document end to end in a browser CAT tool with memory and glossary attached, confirming segments as you go. Run every quality check, export it, and compare the formatting against the source. Deliver it with a terminology note covering your choices and anything ambiguous in the original.",
+   "quiz": [
+    {
+     "question": "What is the step that separates translation from segment replacement?",
+     "options": [
+      "Reading the final text without the source, to hear whether it sounds written in that language",
+      "Running the quality checks",
+      "Confirming every segment",
+      "Checking the glossary"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why check who owns the translation memory on a platform?",
+     "options": [
+      "Your memory is your compounding asset, and some platforms keep it instead",
+      "It affects the file format",
+      "Memories cannot be exported",
+      "It determines the quality checks available"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "40587f6e-0864-42a4-aa98-81bbfb12b2b8",
+   "title": "Are Transcription Platforms Worth It?",
+   "objectives": [
+    "Judge platform economics honestly",
+    "Use platforms for what they are actually good for",
+    "Get paid reliably from here"
+   ],
+   "notes": "Transcription platforms accept applications, send you work, and pay a set rate. They are the obvious starting point and they are not a career.\n\nWHAT THEY GIVE YOU: work without having to find clients, a test that tells you whether your accuracy is good enough, a first record of completed jobs, and a routine that builds speed quickly.\n\nWHAT THEY COST YOU: the rate. The platform takes a large share, and the pay is usually quoted PER AUDIO MINUTE, which is the figure to watch. If an hour of audio takes you four hours to transcribe, divide the per-audio-hour rate by four to see what you are really earning. Many people never do that arithmetic and conclude they are slow.\n\nTHE OTHER COSTS: no relationship with the end client, so no repeat work and no reference; rating systems where one difficult file damages your access to better work; and unpredictable availability.\n\nUSE THEM DELIBERATELY: to learn, to build speed, and to find out what you can do in an hour. Then move toward direct clients, where the same hour of audio pays several times as much because nobody is taking a share.\n\nWATCH FOR THE STRAIGHTFORWARDLY BAD ONES: unpaid test files of suspicious length, rates that fall after you qualify, payment thresholds so high you rarely reach them, and rules that let work be rejected without a reason after you have done it.\n\nADDITION BEYOND THE VIDEO - two things that decide whether this works from Kenya. FIRST, GETTING PAID. Check the payout method before you do a single file, because some platforms pay only through routes that are awkward or unavailable here. Payoneer and Wise generally work; confirm the fees and the minimum threshold, and be wary of a platform whose only option leaves your earnings stranded. SECOND, AND MORE IMPORTANT, THE LOCAL DIRECT MARKET IS BETTER THAN THE PLATFORMS AND ALMOST NOBODY WORKS IT. Researchers at universities and institutes, NGOs and programmes running community interviews, market research firms, media houses, county communication offices and law practices all have recordings and deadlines, most of it in Swahili, Sheng or accented English that platform workers abroad cannot do. One good research client is worth a year of platform work. Start on platforms to build speed; build the local client list from month one.",
+   "practice": "Work out your real earnings on a platform: take its per-audio-hour rate and divide by your honest ratio of working time to audio length. Compare that to your floor. Then list ten local organisations that generate recordings - universities, research firms, NGOs, media, law practices - and contact three.",
+   "quiz": [
+    {
+     "question": "How do you find what a platform really pays you?",
+     "options": [
+      "Divide the per-audio-hour rate by your real ratio of working time to audio length",
+      "Read the advertised hourly rate",
+      "Compare it with other platforms",
+      "Count completed files per week"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What is worth more than a year of platform work?",
+     "options": [
+      "One good local research client with recordings in Swahili or accented English",
+      "A higher platform rating",
+      "A faster typing speed",
+      "A second platform account"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "4318325a-e984-4a0f-8efe-3a24ffa5e5fa",
+   "title": "Finding Your First Translation Clients",
+   "objectives": [
+    "Find translation clients who need your specific pair",
+    "Present yourself credibly without a formal qualification",
+    "Price and get paid on terms that work from here"
+   ],
+   "notes": "Translation clients come from two directions: agencies, which bring volume at lower rates, and direct clients, which pay several times more and take longer to find. Do both, starting with whichever you can reach.\n\nAGENCIES: apply properly rather than in bulk. They want your pair, your specialisms, your rate, your daily capacity, and evidence. Expect a test piece; do it carefully, since it is the only sample they will judge. Being on twenty agency rosters produces occasional steady work.\n\nDIRECT CLIENTS, which is where this becomes a living. For English and Swahili the demand is nearby and specific: NGOs and development programmes, public health and agricultural organisations, research institutes needing instruments and consent forms, county governments, publishers, law firms, and increasingly anyone subtitling video.\n\nHOW TO PRESENT YOURSELF without a translation degree: your pair, stated plainly with the direction you work into; your specialism; samples you have produced, including work you did unpaid for a real organisation; and a clear, professional way of answering. Most clients here are not checking qualifications; they are checking whether you are reliable and whether the Swahili is good.\n\nPROOF WITHOUT CLIENTS: translate three real public documents in your chosen field - a health leaflet, a set of programme guidelines, a page of official information - well, and use those as samples. Nobody minds that they were unpaid.\n\nSPECIALISE EARLY. A translator who knows health terminology, or agricultural terminology, or court vocabulary, is worth more than a general one and is remembered when that work appears.\n\nADDITION BEYOND THE VIDEO - the terms that make this work from here. QUOTE PER WORD FOR TRANSLATION AND PER AUDIO HOUR FOR TRANSCRIPTION, and never per page, because pages are not a unit of anything. Ask for the full document before quoting - a rate agreed on a sample and applied to a technical annex is a bad month. TAKE A DEPOSIT from direct clients and set a payment term in writing; with international agencies expect to be paid on their cycle, which is usually thirty days or more, so plan your cash accordingly and do not take a large first job from an unknown agency. Get paid through Wise or Payoneer rather than a route that strands the money, and for local clients M-Pesa or a bank transfer against an invoice. And treat CONFIDENTIALITY as part of the service: much of this work carries personal or sensitive information, so say in writing how you store and delete it, and never run a client document through a public online tool.",
+   "practice": "Translate three real public documents in one field and keep them as samples. Write your one-paragraph profile stating your pair, direction, specialism and capacity. Apply properly to five agencies, and approach five local organisations that clearly produce Swahili material, with your samples attached.",
+   "quiz": [
+    {
+     "question": "How should translation and transcription be quoted?",
+     "options": [
+      "Per word for translation and per audio hour for transcription, never per page",
+      "Per page for both",
+      "Per hour for both",
+      "Per project, always"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why ask for the full document before quoting?",
+     "options": [
+      "A rate agreed on a sample and applied to a technical annex is a bad month",
+      "Clients expect a delay",
+      "It allows a deposit to be requested",
+      "File formats vary"
+     ],
+     "correct_index": 0
+    }
+   ]
+  }
+ ]
+}

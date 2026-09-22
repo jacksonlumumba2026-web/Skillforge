@@ -1,0 +1,203 @@
+{
+ "course": "transcription-translation-freelancing",
+ "lessons": [
+  {
+   "id": "5d9d960b-6ca8-4bf4-b887-ab81d64cf8c1",
+   "title": "How to Become a Transcriptionist with No Experience",
+   "objectives": [
+    "Describe what transcription work actually involves",
+    "Judge the market honestly now that machines transcribe well",
+    "Identify where your own advantage lies"
+   ],
+   "notes": "Transcription is turning recorded speech into accurate written text. The entry barrier is genuinely low - good hearing, good typing, careful attention and patience - and that is both the appeal and the problem.\n\nWHAT THE WORK IS: you listen in short passages, type, go back, check names and terms, and produce a document in whatever format the client wants. A useful rule for planning your time is that ordinary audio takes roughly three to four times its own length to transcribe, and difficult audio considerably more. Anyone quoting a price without knowing that ratio will lose money.\n\nBE HONEST ABOUT WHAT HAS CHANGED, because most videos on this subject were made before it. AUTOMATIC SPEECH RECOGNITION IS NOW GOOD on clear, single-speaker English. Straightforward English transcription has largely stopped being a job you can build an income on, and courses that ignore this are selling something that has moved.\n\nWHAT IS STILL GENUINELY PAID WORK, and it is substantial:\nDIFFICULT AUDIO - several speakers talking over each other, background noise, poor recordings, a field interview on a windy day. Machines fail at exactly this.\nACCENTS AND LANGUAGES THE MACHINES HANDLE BADLY.\nWORK WHERE ACCURACY IS NOT OPTIONAL - legal, medical, research, anything that will be quoted or relied on.\nEDITING MACHINE OUTPUT, which is now a large share of the market. It is a real skill: reading against audio, catching the confident mistakes, and knowing that a machine never says it is unsure.\n\nADDITION BEYOND THE VIDEO - where a Kenyan transcriptionist has an advantage nobody abroad can copy. SWAHILI, SHENG AND CODE-SWITCHING between English and Swahili in the same sentence, which is how people here actually speak and which automatic systems handle poorly. The same is true of Kenyan-accented English and of Somali, Luo, Kikuyu, Luhya and Kalenjin recordings. The demand is real and local: qualitative research interviews, NGO and county programme work, media houses, documentary subtitling, and legal recordings. Compete there rather than for clean American English, where you are bidding against everyone and against a machine. Two practical notes: HEADPHONES MATTER MORE THAN ANY OTHER EQUIPMENT, more than the computer; and AUDIO FILES ARE LARGE, so downloading several hours on a bundle is a real cost that belongs in your pricing.",
+   "practice": "Transcribe ten minutes of genuinely difficult audio - a recording with two or more speakers and background noise, ideally mixing English and Swahili. Time yourself and work out your real ratio of working time to audio length. Then run the same audio through a free automatic transcription tool and list every mistake it made confidently.",
+   "quiz": [
+    {
+     "question": "Which transcription work has largely stopped being a sustainable income?",
+     "options": [
+      "Clear, single-speaker English, which machines now handle well",
+      "Legal transcription",
+      "Research interviews",
+      "Multi-speaker recordings"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Where does a Kenyan transcriptionist have an advantage nobody abroad can copy?",
+     "options": [
+      "Swahili, Sheng and English-Swahili code-switching, which machines handle poorly",
+      "Faster typing speed",
+      "Lower prices",
+      "Longer working hours"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "ed1f92f2-65a6-4226-adbf-3880b3cc6535",
+   "title": "How to Become a Freelance Translator Online",
+   "objectives": [
+    "Explain what professional translation actually requires",
+    "Apply the native-language rule to your own pairs",
+    "Find the demand your languages genuinely serve"
+   ],
+   "notes": "Translation is carrying meaning from one language into another so that it reads as though it were written in the second. It is not word replacement, which is why machine output still reads like machine output on anything that matters.\n\nTHE RULE THE PROFESSION WORKS BY: YOU TRANSLATE INTO YOUR STRONGEST WRITTEN LANGUAGE, not out of it. Understanding a language well enough to read it is not the same as writing it well enough that a native reader does not notice. Accepting work into a language you do not write natively is the fastest way to lose a client and a reputation, and no rate makes it worth it.\n\nWHAT CLIENTS ARE ACTUALLY BUYING: accuracy, yes, but also tone and audience. A public health leaflet, a contract and a marketing page need three different registers, and getting the register wrong is the commonest reason competent translation is rejected.\n\nSPECIALISM IS WHERE THE MONEY IS. General translation competes with everyone and with free tools. Legal, medical, technical, financial and academic translation pay better because they require knowing the subject, and because getting them wrong has consequences.\n\nBE CLEAR ABOUT WHAT YOU ARE NOT: certified or sworn translation of official documents is a separate, formally recognised thing. Do not present ordinary translation as certified, and refer that work on when it is asked for.\n\nMACHINE TRANSLATION HAS CHANGED THE FIELD, not ended it. A great deal of paid work is now editing machine output, which Module 4 covers. It is genuine skilled work, and it is priced differently - know which you are being asked for before you quote.\n\nADDITION BEYOND THE VIDEO - the opportunity that is actually here. ENGLISH AND SWAHILI IS A REAL, UNDERSERVED PAIR, and you have it natively in a way almost no European agency roster does. The demand is nearby and specific: NGOs and development programmes translating materials for communities, public health and agricultural information, county government communication, research instruments and consent forms, and increasingly subtitling for media and online video. The same applies to the other Kenyan languages, where qualified translators are genuinely scarce. Two cautions. FIRST, TRANSLATING INTO SWAHILI IS A REAL SKILL: standard written Swahili is not the Swahili of everyday Nairobi speech, and clients who work nationally will notice. Second, WATCH WHO YOU TRANSLATE FOR - consent forms, medical leaflets and legal notices carry consequences when they are wrong, so take the subject seriously or decline it.",
+   "practice": "Write down your language pairs and mark honestly which direction you can write natively - that is the only direction you should sell. Then translate one real short document into that language, in three registers: formal, plain public information, and conversational. Ask a native reader which parts sound translated.",
+   "quiz": [
+    {
+     "question": "Which direction should you translate in?",
+     "options": [
+      "Into your strongest written language, never out of it",
+      "Whichever pays more",
+      "Into the language you speak most often",
+      "Both directions equally"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why is general translation poorly paid?",
+     "options": [
+      "It competes with everyone and with free tools; specialism pays because it requires knowing the subject",
+      "Clients prefer specialists socially",
+      "General work takes longer",
+      "Agencies do not accept general translators"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "75f40752-38bd-4a9a-8f97-43a952f3a077",
+   "title": "Express Scribe Transcription Software Tutorial",
+   "objectives": [
+    "Set up a working transcription environment",
+    "Control audio without leaving the keyboard",
+    "Build a file and delivery routine you can repeat"
+   ],
+   "notes": "Transcription software exists to solve one problem: stopping, rewinding and restarting audio without taking your hands off the keyboard. That is most of the speed gain, and it is why people who transcribe in a media player are slow.\n\nWHAT IT GIVES YOU: hotkeys for play, pause and a short rewind; adjustable playback speed; automatic rewind on pause so you never lose the last few words; timestamps; and a place to keep your files organised.\n\nTHE SETTINGS THAT MATTER MOST: the AUTOMATIC BACK-STEP on pause, set to two or three seconds, which removes the constant manual rewinding; and PLAYBACK SPEED, slowed for difficult passages and raised slightly for clear ones once you are confident.\n\nA FOOT PEDAL is a genuine improvement if you do this daily, because it frees both hands entirely. It is not necessary to start, and hotkeys get you most of the way.\n\nWORK IN SHORT PASSES. Listen to a phrase, type it, move on. Trying to hold long stretches in your head is slower and less accurate than it feels.\n\nFILE DISCIPLINE: name files so you can find them - client, date, subject - keep the audio and the transcript together, and save constantly. Losing forty minutes of typing to a crash or a power cut is a lesson nobody needs twice.\n\nADDITION BEYOND THE VIDEO - the practical setup here. CLOSED-BACK HEADPHONES ARE THE PURCHASE THAT MATTERS, not the laptop and not the pedal. They let you hear a mumbled word in a noisy recording, which is the whole job, and a cheap pair of earphones will cost you accuracy on exactly the difficult audio you are being paid for. Second, POWER AND DATA ARE PART OF THE WORKFLOW: save every few minutes because an interruption mid-file is normal, and download large audio files on wifi rather than a bundle - several hours of recording is a real expense, so factor it into your quote or ask the client for compressed audio. Third, WORK OFFLINE WHERE YOU CAN: a local tool and a local file keep working when the connection does not, which is a genuine advantage over browser-only platforms when you are against a deadline.",
+   "practice": "Set up the software with hotkeys, a two-second automatic back-step and adjustable speed, and transcribe fifteen minutes of audio without touching the mouse. Time it, then transcribe another fifteen minutes in a plain media player and compare. Write down both times and your file naming convention.",
+   "quiz": [
+    {
+     "question": "What is the main speed gain from transcription software?",
+     "options": [
+      "Controlling the audio without taking your hands off the keyboard",
+      "Automatic spelling correction",
+      "Built-in speech recognition",
+      "Cloud storage of files"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Which purchase matters most for accuracy?",
+     "options": [
+      "Closed-back headphones, which let you hear a mumbled word in noisy audio",
+      "A faster laptop",
+      "A foot pedal",
+      "A mechanical keyboard"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "c5df8918-36ee-4c09-967d-99c5ccc377c4",
+   "title": "OmegaT CAT Tool Tutorial for Beginner Translators",
+   "objectives": [
+    "Explain what a CAT tool does and does not do",
+    "Build a translation memory and a glossary",
+    "Work through a file segment by segment"
+   ],
+   "notes": "A CAT tool is computer-assisted translation, and the name causes constant confusion: it does NOT translate for you. It is a workbench that splits a document into segments, shows you each one, stores your translation, and offers it back the next time something similar appears.\n\nTHE TWO THINGS IT BUILDS FOR YOU:\nA TRANSLATION MEMORY - every sentence you have translated, stored as a pair. When a similar sentence appears in a later job, the tool offers what you wrote before. Over a year this is a large and compounding time saving, and the memory belongs to you.\nA GLOSSARY - the terms this client or this field uses, translated consistently. This is what stops the same term appearing three ways in one document, which is the commonest complaint about inconsistent translation.\n\nWHY IT MATTERS BEYOND SPEED: consistency, and the ability to handle formatted documents without destroying the formatting. The tool keeps the layout and lets you work on the text.\n\nOMEGAT IS FREE AND OPEN SOURCE, which matters here: the well-known commercial tools are licensed in foreign currency at a price that is a serious barrier, and OmegaT does the core job. Learn the concepts on it and you can use any of them.\n\nTHE WORKFLOW: create a project, add the source file, work segment by segment, confirm each one into the memory, check the glossary is being used, then produce the translated document.\n\nADDITION BEYOND THE VIDEO - three things that matter for how this work actually pays. YOUR TRANSLATION MEMORY IS AN ASSET YOU OWN - keep it, back it up, and build it deliberately across jobs, because after a year of NGO or public health work your memory makes you faster than a newcomer can be at any price. Second, AGENCIES OFTEN PAY LESS FOR REPEATED SEGMENTS the memory fills in, which Module 3 covers - understand the rules before you accept the rate, because a job that looks well paid can be mostly repetition. Third, BUILD YOUR ENGLISH-SWAHILI GLOSSARY AS A PROFESSIONAL RESOURCE: terminology in health, agriculture, law and governance is genuinely unsettled, and a translator with a consistent, defensible glossary is worth more to a serious client than one who decides each term afresh.",
+   "practice": "Install OmegaT and translate one real short document end to end, confirming every segment into the memory and adding at least fifteen terms to a glossary. Then translate a second document in the same field and note how often the memory or glossary offered you something useful.",
+   "quiz": [
+    {
+     "question": "What does a CAT tool do?",
+     "options": [
+      "Splits the document into segments and stores your own translations for reuse",
+      "Translates the text automatically",
+      "Checks grammar in the target language",
+      "Converts file formats only"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why is your translation memory an asset?",
+     "options": [
+      "It compounds - after a year in a field it makes you faster than any newcomer",
+      "It can be sold to agencies",
+      "It proves your experience to clients",
+      "It replaces the need for a glossary"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "56f41e96-2183-4a96-b855-61f3c6b8fc51",
+   "title": "Clean vs Full Verbatim Transcription",
+   "objectives": [
+    "Distinguish the main transcription styles",
+    "Follow a client style guide precisely",
+    "Handle the passages that force a judgement"
+   ],
+   "notes": "Two transcripts of the same recording can be correct and completely different, because the client asked for different things. Getting this wrong is the commonest reason good work is rejected.\n\nCLEAN VERBATIM removes what does not carry meaning: the ums and ers, false starts, stutters, repeated words, and filler. The result reads smoothly and says what the speaker said. This is what most research, business and media clients want.\n\nFULL VERBATIM keeps everything - every hesitation, repetition, stammer, laugh, pause and interruption - because HOW something was said matters. Legal recordings, some clinical work, and qualitative research on how people speak need this. It is slower and should be priced higher.\n\nINTELLIGENT VERBATIM goes further than clean and lightly tidies grammar so the text reads as written prose. Some clients want it, and it carries a risk: the more you tidy, the more you are deciding what someone meant.\n\nTHE CONVENTIONS THAT MUST BE AGREED BEFORE YOU START: how speakers are labelled, whether timestamps are wanted and how often, what to do with an inaudible passage, how to mark overlapping speech, and how numbers, currency and abbreviations are written. Ask for the style guide. If there is not one, propose yours in writing and get a yes.\n\nTHE INAUDIBLE PASSAGE is the test of a professional. Never guess and never quietly omit. Mark it in the agreed way, with a timestamp, so the client can check it themselves. A guessed word in a legal or medical transcript is a serious error.\n\nADDITION BEYOND THE VIDEO - the judgements that come up constantly in Kenyan audio and that no international style guide covers. CODE-SWITCHING: when a speaker moves between English and Swahili mid-sentence, agree in advance whether you transcribe each language as spoken, translate the Swahili inline, or provide both. Never decide this silently - it changes what the transcript is. Second, NAMES AND PLACES will not be in any spell-checker and are exactly what a client notices; keep a list per project and verify spellings rather than approximating. Third, SHENG AND LOCAL IDIOM: transcribe what was said rather than a cleaned-up standard version, and where meaning would be lost to a non-local reader, follow the client's convention for a translator's note rather than substituting your own wording.",
+   "practice": "Transcribe the same five minutes of multi-speaker audio three times - clean verbatim, full verbatim, and intelligent verbatim - and compare how long each took. Write your own one-page style guide covering speaker labels, timestamps, inaudible passages, numbers and code-switching, then use it on a real file.",
+   "quiz": [
+    {
+     "question": "How should an inaudible passage be handled?",
+     "options": [
+      "Marked in the agreed way with a timestamp, never guessed or omitted",
+      "Replaced with the most likely word",
+      "Left blank without comment",
+      "Summarised in your own words"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What must be agreed before transcribing Kenyan audio with code-switching?",
+     "options": [
+      "Whether each language is transcribed as spoken, translated inline, or both",
+      "Which dialect to standardise to",
+      "Whether to charge extra",
+      "Which speaker to label first"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "a04ba2a0-52ba-48bc-80bd-1147b85eb5e5",
+   "title": "Understanding CAT Tool Matches",
+   "objectives": [
+    "Read a match analysis and what each band means",
+    "Understand how discounts on matches affect your pay",
+    "Check a job before accepting the rate"
+   ],
+   "notes": "When an agency sends a job, they usually send an ANALYSIS: a breakdown of how much of the document your memory or theirs already covers. Understanding it is the difference between a fair rate and an unpleasant surprise.\n\nTHE BANDS:\nREPETITIONS - the same segment appearing several times within this one document.\nA 100 PERCENT MATCH - identical to something already in the memory.\nA CONTEXT OR PERFECT MATCH - identical AND surrounded by the same neighbouring segments, so it is safer to reuse.\nFUZZY MATCHES, usually banded - something like 95 to 99 percent similar, 85 to 94, 75 to 84. The lower the band, the more work it needs.\nNO MATCH - new text, translated from scratch.\n\nAGENCIES APPLY A DISCOUNT GRID, paying a reduced rate on the matched portions. That can be reasonable and it can be abusive, and the only way to know is to look.\n\nWHAT TO CHECK BEFORE ACCEPTING:\n100 PERCENT MATCHES STILL NEED READING. A sentence identical in isolation can be wrong in a new context, particularly across languages with different agreement and word order. If you are paid nothing for them but are held responsible for errors in them, that is not a fair grid.\nLOW FUZZY MATCHES CAN TAKE LONGER THAN NEW TEXT, because you must read the old version, compare, and rework it. A heavy discount on a 75 percent match often means working below your rate.\nWHOSE MEMORY IS IT? If it is theirs and its quality is poor, you are being asked to pay for their bad data through the discount.\n\nDO THE ARITHMETIC. Multiply the word counts by the discounted rates, total it, divide by the hours you honestly expect. That figure, not the headline rate, is what you are being offered.\n\nADDITION BEYOND THE VIDEO - how to handle this from here without losing work. Ask for the ANALYSIS AND THE GRID BEFORE ACCEPTING, always, and treat a client who will not send them as a warning. Where the grid is poor, negotiate on the specific band rather than the whole rate - asking for a fair rate on low fuzzy matches is a normal professional conversation and is usually granted. Remember also that FOR ENGLISH AND SWAHILI THE MEMORIES ARE OFTEN SMALL, so match discounts frequently matter less than they do in European pairs, and the leverage is yours: there are few qualified translators in this pair, and you are entitled to price accordingly rather than accepting a grid designed for a crowded market.",
+   "practice": "Take a real or sample analysis and calculate your actual earnings against the discount grid, then divide by the hours you honestly expect the job to take. Compare that to your floor. Then write the two sentences you would send to negotiate the low fuzzy band.",
+   "quiz": [
+    {
+     "question": "Why do 100 percent matches still need reading?",
+     "options": [
+      "A sentence identical in isolation can be wrong in a new context",
+      "Agencies require confirmation of each segment",
+      "The memory may be corrupted",
+      "Formatting changes between documents"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What tells you what you are really being offered?",
+     "options": [
+      "Word counts times discounted rates, totalled, divided by the hours you honestly expect",
+      "The headline per-word rate",
+      "The total word count",
+      "The deadline"
+     ],
+     "correct_index": 0
+    }
+   ]
+  }
+ ]
+}

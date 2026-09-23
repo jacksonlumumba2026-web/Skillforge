@@ -1,0 +1,203 @@
+{
+ "course": "mobile-photography-content-creation",
+ "lessons": [
+  {
+   "id": "015e2c12-6bcd-4eb0-89ae-5ae124244d99",
+   "title": "How To Shoot Epic Product Photography With a Phone",
+   "objectives": [
+    "Build a product setup from things you already own",
+    "Light a product so its shape and texture read",
+    "Shoot the angles a shop actually needs"
+   ],
+   "notes": "WATCH THE SETUP AND LIGHTING SECTIONS of this video. Module 5 uses the same video for the applied shoot, so treat this lesson as the technique and that one as the job.\n\nTHE SETUP, and none of it needs to be bought:\nA SURFACE beside a window - a table, a stool, a board.\nA BACKGROUND that curves up behind the product rather than meeting it in a corner line: a sheet of manila paper, a painted board, a plain cloth, taped to the wall and sloping down onto the table. That curve is what makes a background look seamless.\nA REFLECTOR opposite the window to bounce light back into the shadow side. A sheet of white paper, a white plate, or the inside of a cereal box works.\nSOMETHING TO BRACE THE PHONE.\n\nTHE LIGHT: one window, to the side rather than behind you. Side light is what reveals texture and shape; light from the camera position flattens everything. Diffuse harsh sun with a white curtain, a sheet, or by moving to a shaded window.\n\nTHE ANGLES A SHOP NEEDS, and shoot all of them: straight on at the product's own height, a three-quarter view, directly overhead, a close detail of texture or label, and one showing scale or the product in use.\n\nCONSISTENCY ACROSS A SET matters more than any single photograph. Same background, same light, same height, same distance, same white balance. A catalogue where every item matches looks professional; one where each was shot differently looks like a phone.\n\nCLEAN THE PRODUCT. Dust, fingerprints and creases are invisible to your eye and obvious in the photograph.\n\nADDITION BEYOND THE VIDEO - what sells goods here specifically. SHOOT FOR WHATSAPP AND INSTAGRAM FIRST, because that is where the product will be sold: a clean square image that reads at thumbnail size beats a beautiful wide shot nobody can see on a small screen. SHOW SCALE, always - a hand holding it, a common object beside it - because the commonest complaint in online selling here is that the item was smaller than it looked, and one honest photograph prevents a return and an argument. Shoot the product on a REAL SURFACE as well as a plain one, since buyers who are cautious about paying in advance are reassured by a photograph that looks like a real place rather than a catalogue. And keep the colour honest - Module 3's fixed white balance matters commercially, because a customer who receives a different shade will say so publicly.",
+   "practice": "Build the setup from what you own: window, table, manila paper or cloth curved up the wall, white paper as a reflector, phone braced. Shoot one product through all five angles with one fixed white balance. Then shoot a second product the same way and check the two sets match.",
+   "quiz": [
+    {
+     "question": "Why should the background curve up behind the product?",
+     "options": [
+      "It removes the corner line, which is what makes a background look seamless",
+      "It reflects more light",
+      "It saves space",
+      "It keeps the product steady"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why include a photograph showing scale?",
+     "options": [
+      "The commonest complaint in online selling here is that the item was smaller than it looked",
+      "It improves the composition",
+      "It helps with white balance",
+      "Platforms require it"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "9105ebd4-0d3b-41ff-8d15-ada81e4f1413",
+   "title": "How To Shoot Vertical Videos For Social Content",
+   "objectives": [
+    "Plan a short video before recording it",
+    "Shoot cutaways that make an edit possible",
+    "Keep a shoot repeatable so you can batch"
+   ],
+   "notes": "Module 2 covered the setup. This lesson is about shooting enough, and the right things, that the edit is possible - which is where most first attempts fail.\n\nPLAN THE SHOTS BEFORE YOU RECORD. Even three lines on paper: what the opening frame is, what happens in the middle, how it ends. A video shot without a plan is edited into something shorter and worse.\n\nSHOOT COVERAGE, NOT A TAKE. For anything explained to camera you want: the piece to camera itself, and CUTAWAYS - hands doing the thing, a close-up of the product, the surroundings. Cutaways are what let you cut out a stumble without a visible jump, and they are what beginners forget entirely.\n\nHOLD EVERY SHOT LONGER THAN FEELS RIGHT. Three seconds of nothing before and after each action gives the editor somewhere to cut. Running out of frame is the commonest reason a clip is unusable.\n\nSHOOT THE SAME ACTION TWICE, at different distances - one wide, one close. Cutting between them is the simplest edit there is and it makes a video look considered.\n\nKEEP THE SETUP FIXED so clips match: same spot, same light, same distance. If you move the phone between clips the edit will look broken however well it was shot.\n\nWATCH CONTINUITY: the same clothes, the same background, the product in the same state. Shooting half today and half tomorrow shows.\n\nADDITION BEYOND THE VIDEO - shoot to batch, because that is what makes this sustainable here. ONE SESSION OF GOOD LIGHT SHOULD PRODUCE A FORTNIGHT OF CLIPS: set up once, work through a list, change the shirt between groups so it does not read as one long session. That single habit is the difference between people who keep posting and people who stop, and it matters more when daylight and data both cost you something. Second, RECORD A CLEAN THIRTY SECONDS OF THE ROOM with nobody speaking - room tone - which an editor can lay under cuts to stop the sound jumping. Third, BACK UP AS YOU GO: a phone that is lost, stolen or full takes the shoot with it, so move the files off at the end of every session rather than at the end of the project.",
+   "practice": "Plan one short video in three lines, then shoot it properly: the piece to camera, at least four cutaways, every shot held three seconds longer than feels right, and each action shot both wide and close. Record thirty seconds of room tone. Then back the whole session up before editing.",
+   "quiz": [
+    {
+     "question": "What do beginners forget to shoot?",
+     "options": [
+      "Cutaways, which are what let you remove a stumble without a visible jump",
+      "The opening frame",
+      "The ending",
+      "Room tone only"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why shoot a fortnight of clips in one session?",
+     "options": [
+      "It is what makes posting sustainable when daylight and data both cost something",
+      "It uses less storage",
+      "It improves continuity between projects",
+      "Platforms favour batched uploads"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "1dbd5f2b-6f8c-4ac0-960c-ee1aaf5800fb",
+   "title": "Product Photography Shoot With Just a Phone",
+   "objectives": [
+    "Run a complete product shoot for a real seller",
+    "Deliver a matched set a shop can post immediately",
+    "Price and scope the job before you start"
+   ],
+   "notes": "This is the applied project, and it uses the same video as the Module 4 technique lesson - REWATCH IT AS A WORKED EXAMPLE OF A WHOLE SHOOT rather than for the setup, which you already have. The job here is your own shoot for a real seller, start to finish.\n\nBEFORE THE SHOOT, agree in writing: how many products, how many images each, the background, whether lifestyle shots are included, the delivery format, and the price. Product photography expands without this - a seller with forty items will hand you all forty if the number is not agreed.\n\nPREPARE THE PRODUCTS. Clean them, remove stickers, steam or fold fabric, arrange anything with a lid or a pair. This takes longer than the photography and is what separates a usable set from a passable one.\n\nTHE SHOOT, in order: set up and lock white balance and exposure; shoot one product completely through all the angles; check it on the screen at full zoom before moving on; then work through the rest without moving the setup.\n\nCHECK AS YOU GO, not at the end. A focus or exposure fault found after the seller has gone home means reshooting everything.\n\nDELIVER A MATCHED SET: same crop, same background, same colour, named sensibly - product name, not IMG_4471. Give a square set for the catalogue and a tall set for stories, plus the originals if they want them.\n\nADDITION BEYOND THE VIDEO - running this as paid work here. THIS IS ONE OF THE MOST SELLABLE SKILLS IN THIS WHOLE CATALOGUE, because every shop, boutique, hardware, salon and food seller on WhatsApp and Instagram needs photographs and almost all of them are using bad ones. Approach them with three photographs of their own products already taken, which wins the job far more reliably than a message. PRICE PER SHOOT WITH A STATED NUMBER OF PRODUCTS AND IMAGES, never per hour, and charge separately if you travel. TAKE A DEPOSIT before the shoot and the balance before you hand over the files, on M-Pesa, with the scope in the WhatsApp thread. And DELIVER COMPRESSED FILES SIZED FOR POSTING alongside the originals, because a seller who cannot open or send your files on their phone will go back to using their own snapshots.",
+   "practice": "Find a real seller, agree the scope and price in writing, and run a full shoot: products prepared, setup locked, every item through the same angles, checked at full zoom as you go. Deliver a matched set named by product, square and tall, compressed for posting. Write down how long it took and what you would charge next time.",
+   "quiz": [
+    {
+     "question": "What must be agreed in writing before a product shoot?",
+     "options": [
+      "How many products and images, the background, the format and the price",
+      "The editing style",
+      "The delivery date only",
+      "Which phone will be used"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What wins this work more reliably than a message?",
+     "options": [
+      "Arriving with three photographs of their own products already taken",
+      "A lower price",
+      "A portfolio of other industries",
+      "A written proposal"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "3ee58e12-9b1b-4336-bf96-380d88acad69",
+   "title": "Editing a Short-Form Video in CapCut",
+   "objectives": [
+    "Cut a short video into something worth watching",
+    "Add captions and sound that survive muted viewing",
+    "Build a template so editing stops taking all evening"
+   ],
+   "notes": "CapCut is free, runs on the phone you shot with, and does everything a short video needs.\n\nTHE ORDER THAT SAVES TIME: cut first, then captions, then sound, then the cover frame. Editing out of order means recaptioning everything after a re-cut, which is the commonest way an evening disappears.\n\nCUTTING: remove every pause, every breath before a sentence, and everything before the first useful word. The first frame should already be the hook. Cut to the cutaways you shot in Module 4 to hide the joins.\n\nPACE: something changes every two or three seconds - a cut, a zoom, a new image. Not frantic, never still.\n\nCAPTIONS: auto-generate then read every line and fix it. Names, places and local words come out wrong every time, and a wrong caption is exactly what viewers notice. Keep text inside the safe zone from Module 2.\n\nSOUND: music under speech, quiet enough that the words win. Where there is no speech the sound carries the video.\n\nTHE LOOP: make the last frame run naturally into the first, because a clean loop earns rewatches and rewatches are the strongest multiplier there is.\n\nEXPORT at the highest setting the phone allows.\n\nADDITION BEYOND THE VIDEO - three things that decide whether you keep doing this. BUILD A TEMPLATE: save one project with your caption style, font, size and position already set and duplicate it for every video. That turns a forty-minute edit into ten and is the actual difference between people who sustain posting and people who stop. Second, EDIT FOR SOUND OFF - most viewing here is muted, so the video must make sense from the captions and pictures alone. Third, WATCH STORAGE AND UPLOAD: exports are large, a full phone stops an edit dead, and uploading on a bundle costs real money, so clear space before you start and upload on wifi where you can find it.",
+   "practice": "Edit one video in the order given - cut, captions, sound, cover - timing yourself, and cut to your cutaways to hide the joins. Fix every auto-caption error and keep the text in the safe zone. Save the project as your template, then edit a second video from it and compare the two times.",
+   "quiz": [
+    {
+     "question": "What is the right order to edit in?",
+     "options": [
+      "Cut, then captions, then sound, then the cover frame",
+      "Captions first, then cut",
+      "Sound, then captions, then cut",
+      "Cover, then cut, then captions"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why build a saved template?",
+     "options": [
+      "It turns a forty-minute edit into ten, which is what makes posting sustainable",
+      "It improves export quality",
+      "It reduces file size",
+      "Platforms rank templated videos higher"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "cc284cb4-085b-4830-ae56-220b682d211d",
+   "title": "Becoming a Paid UGC Creator",
+   "objectives": [
+    "Explain what user-generated content work actually is",
+    "Judge the market honestly from here",
+    "Produce a first paid-quality piece"
+   ],
+   "notes": "User-generated content work means being paid by a brand to make content that looks like an ordinary customer made it. The brand uses it in their own advertising. You are not being paid for your audience - you are being paid to produce footage, which is why it is open to people with no following at all.\n\nWHAT A BRAND IS BUYING: a short video of a real person using a product, shot on a phone, that does not look like an advertisement. Usually a hook, the product in use, a genuine-sounding reason it is good, and a closing line.\n\nWHAT MAKES ONE GOOD: it looks unstaged and is in fact carefully made. Good light, clean sound, steady framing, a real setting, and a delivery that sounds like a person rather than a script.\n\nTHE FORMATS you will be asked for: a talking piece to camera, a demonstration with voiceover, an unboxing, a before-and-after, and a short testimonial.\n\nYOU DO NOT NEED FOLLOWERS. You need a small set of examples that show you can produce the format reliably.\n\nRATES VARY ENORMOUSLY and are quoted per video or per package, usually with usage terms attached - how long the brand may use it and where. Read those terms, because perpetual use across paid advertising is worth considerably more than one organic post.\n\nADDITION BEYOND THE VIDEO - the honest market picture from Kenya, which these videos do not give. THE WELL-PAID UGC MARKET IS MOSTLY INTERNATIONAL and mostly pays in foreign currency, so getting paid means Wise, Payoneer or a platform that pays here - check that before you accept a brief, not after. Local brands do commission this work and generally pay considerably less, and a good number will offer products instead of money, which is not income and should be declined politely unless you genuinely want the product. Second, YOUR ADVANTAGE IS AUTHENTIC LOCAL SETTING for any brand selling into this market - a real kitchen, a real shop, a real street reads as true in a way a stock-looking studio never will. Third, BE CAREFUL WITH BRIEFS THAT ASK YOU TO CLAIM A RESULT you have not had, particularly for skincare, health or income products: saying something untrue on camera is your reputation, not the brand's, and it follows you.",
+   "practice": "Make one piece in each of three formats - a piece to camera, a demonstration with voiceover, and a before-and-after - for products you actually own and use. Shoot in real settings with good light and clean sound. Then check which payment routes reach you from abroad before you approach anyone.",
+   "quiz": [
+    {
+     "question": "What is a brand buying in UGC work?",
+     "options": [
+      "Footage of a real person using the product, not access to your audience",
+      "Your follower count",
+      "Advertising space on your account",
+      "Exclusive rights to your channel"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What should you check before accepting a brief?",
+     "options": [
+      "That the payment route actually reaches you here, and what the usage terms allow",
+      "The brand's follower count",
+      "The shooting deadline",
+      "Which app to edit in"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "2ea676ad-610b-4c17-ab83-216528309834",
+   "title": "Building a UGC Portfolio to Pitch Brands",
+   "objectives": [
+    "Build a portfolio without having had a client",
+    "Pitch a brand in a way that gets read",
+    "Set terms that protect the work and get you paid"
+   ],
+   "notes": "A portfolio here is proof that you can produce the format, and you can build it entirely from products you already own.\n\nWHAT IT SHOULD CONTAIN: three to six short videos, each in a different format, each for a different kind of product, all made to the standard you would deliver. Use real brands you actually use and say plainly that these are speculative samples rather than commissioned work. Nobody minds; they mind finding out later.\n\nSHOW THE FORMATS A BRAND BUYS: a hook-led talking piece, a demonstration, an unboxing, a testimonial, a before-and-after.\n\nKEEP IT SOMEWHERE THAT OPENS INSTANTLY - a simple page, a shared folder, or a highlight on a profile. A slow or awkward portfolio does not get watched.\n\nTHE PITCH: short, specific, and about them. Which product, which format you would make, why it suits their audience, and a link. Not a paragraph about your passion for content.\n\nPITCH BRANDS THAT ALREADY ADVERTISE, since they have a budget and understand paying for creative.\n\nFOLLOW UP ONCE, a week later. Most replies come from the follow-up, and most people never send it.\n\nADDITION BEYOND THE VIDEO - the terms and the practicalities that decide whether this becomes income. AGREE USAGE IN WRITING: how long, on which platforms, and whether paid advertising is included. Perpetual worldwide use in paid advertising is worth several times a single organic post, and a beginner who does not ask usually grants it for free. Second, TAKE FIFTY PER CENT BEFORE YOU SHOOT and the balance on delivery, with the scope, the number of revisions and the deadline written in the thread - a shoot you have already paid for in products and time is not a place to be trusting. Third, KEEP EVERY RAW FILE until the job is closed and paid, and deliver compressed versions first. And be realistic: START WITH LOCAL BRANDS TO BUILD THE PORTFOLIO and pitch international ones once you have work to show, because the international market pays better and expects to see that you have done this before.",
+   "practice": "Build three to six sample videos across the formats, using products you own, and put them somewhere that opens instantly on a phone. Write your pitch in four sentences naming the product, the format and why it suits them. Send it to ten brands that already advertise, and follow up once a week later.",
+   "quiz": [
+    {
+     "question": "What should a speculative sample say?",
+     "options": [
+      "Plainly that it is speculative rather than commissioned work",
+      "Nothing - brands assume it",
+      "That the brand approved it",
+      "Only the format used"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What do beginners usually grant for free without asking?",
+     "options": [
+      "Perpetual worldwide usage in paid advertising",
+      "Exclusive rights to their account",
+      "Unlimited revisions",
+      "The raw files"
+     ],
+     "correct_index": 0
+    }
+   ]
+  }
+ ]
+}

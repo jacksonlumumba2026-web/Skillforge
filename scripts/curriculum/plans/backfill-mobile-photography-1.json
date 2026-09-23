@@ -1,0 +1,203 @@
+{
+ "course": "mobile-photography-content-creation",
+ "lessons": [
+  {
+   "id": "b8ca9bf7-facf-4c7a-be4d-6f4720df7ef1",
+   "title": "12 Tips and Tricks for Better Smartphone Photos",
+   "objectives": [
+    "Control the three things that decide whether a photo works",
+    "Use light rather than fight it",
+    "Fix the habits that spoil most phone photographs"
+   ],
+   "notes": "Modern phone cameras are genuinely good. Almost every bad phone photograph is bad for a reason that has nothing to do with the phone.\n\nTHE THREE THINGS THAT DECIDE A PHOTOGRAPH, in order:\nLIGHT. Where it comes from, how hard it is, what colour it is. This matters more than everything else combined.\nCOMPOSITION. What is in the frame and where.\nFOCUS AND EXPOSURE. Tap to set both, deliberately, rather than letting the phone guess.\n\nLIGHT, PRACTICALLY: soft light flatters, hard light exposes every flaw. An overcast sky is a giant softbox. Indoors, put your subject beside a window and never directly under a ceiling light, which drops shadows into eye sockets and under noses.\n\nNEVER SHOOT INTO THE LIGHT unless you mean to. A subject with a window behind them becomes a silhouette, because the phone exposes for the bright background.\n\nCLEAN THE LENS. Seriously. A phone lives in a pocket, and a smeared lens is the single commonest cause of hazy, low-contrast photographs. Wipe it before every shoot.\n\nTAP TO FOCUS, THEN SLIDE TO EXPOSE. One tap tells the phone what matters; the slider that appears lets you darken or brighten. Two seconds, and it is the difference between a snapshot and a photograph.\n\nGET CLOSER AND MOVE YOUR FEET rather than using the zoom, which on most phones is a crop and loses real detail.\n\nHOLD IT STILL: two hands, elbows in, brace against a wall, and breathe out as you press.\n\nADDITION BEYOND THE VIDEO - the light you actually have here. EQUATORIAL MIDDAY SUN IS THE HARDEST LIGHT YOU WILL EVER SHOOT IN: overhead, contrasty, and unflattering to faces and products alike. The hour after sunrise and the hour before sunset are transformingly better, and OPEN SHADE - under a tree, a veranda, the shaded side of a building - is the most reliable light available for most of the day. Shooting a product on a windowsill in the morning will beat anything you do at one in the afternoon in the open. Second, WATCH YOUR STORAGE AND DATA: high-resolution photographs fill a phone quickly and cost real money to send, so clear space before a shoot rather than during one, and compress before sending to a client rather than uploading full-size files on a bundle.",
+   "practice": "Photograph the same object three times today: in open shade, in direct midday sun, and beside a window in the last hour of daylight. Clean the lens first, tap to focus and set exposure each time, and hold still. Compare them and write down what light did to the picture.",
+   "quiz": [
+    {
+     "question": "What decides a photograph more than anything else?",
+     "options": [
+      "Light - where it comes from, how hard it is, what colour it is",
+      "The phone model",
+      "The editing app",
+      "The composition"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What is the most reliable light for most of the day here?",
+     "options": [
+      "Open shade - under a tree, a veranda, the shaded side of a building",
+      "Direct midday sun",
+      "Indoor ceiling light",
+      "Camera flash"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "a747d499-5c5f-4605-a23e-ec7494bb161e",
+   "title": "iPhone Photography Fundamentals & Tips",
+   "objectives": [
+    "Work the camera app deliberately rather than pointing and hoping",
+    "Translate iPhone instructions to whatever phone you own",
+    "Set up your camera before a shoot rather than during it"
+   ],
+   "notes": "This video is shot on an iPhone. MOST LEARNERS HERE ARE ON ANDROID, and almost everything in it transfers - the names differ, the controls do not. Watch it for what each setting DOES and find the equivalent on your own phone.\n\nTHE SETTINGS WORTH FINDING ON ANY PHONE:\nGRID LINES, on. They make level horizons and sensible composition almost automatic.\nRESOLUTION AND FORMAT. Higher resolution gives you room to crop; it also fills storage faster, so choose deliberately.\nHDR, which balances a bright sky against a dark subject. Useful outdoors, occasionally strange on faces.\nFOCUS AND EXPOSURE LOCK - press and hold to lock both so they stop shifting as you recompose. This is the single most useful control on any phone camera.\nTHE LENSES. Most phones now have a wide and an ultra-wide, some a telephoto. The ultra-wide distorts faces badly up close and is superb for rooms and landscapes.\nBURST, for anything moving.\nTIMER, for anything where your hand on the shutter would shake the phone.\n\nPORTRAIT MODE blurs the background by software rather than optics. It is convincing on simple outlines and gives itself away on hair, spectacles and the handles of products. Check the edges before you use it for anything paid.\n\nSET UP BEFORE YOU SHOOT: grid on, resolution chosen, lens chosen, lens cleaned. Fiddling during a shoot is how you lose the moment and the client's patience.\n\nADDITION BEYOND THE VIDEO - the Android translation and what it means for your work. Every principle here exists on a mid-range Android, usually under PRO or MANUAL mode, which Module 3 covers properly - so do not conclude you need an iPhone. What actually differs is LOW LIGHT, where expensive phones genuinely pull ahead, so plan to shoot in good light rather than trying to rescue a dark room, which is advice that serves everyone. Second, SHOOT IN THE STANDARD FORMAT unless you have a reason: some phones default to a space-saving format that clients and older computers cannot open, and a file the client cannot open is a file you did not deliver. Third, TURN OFF ANY BEAUTY OR SMOOTHING FILTER that is on by default, since it quietly destroys skin and fabric texture and cannot be undone afterwards.",
+   "practice": "Go through your own phone's camera settings and find each item on the list - grid, resolution and format, HDR, focus and exposure lock, the lenses, burst, timer - and write down where each lives. Turn the grid on, turn off any smoothing filter, and confirm your photos save in a format a client could open.",
+   "quiz": [
+    {
+     "question": "What is the most useful control on any phone camera?",
+     "options": [
+      "Focus and exposure lock, so neither shifts as you recompose",
+      "The zoom slider",
+      "Portrait mode",
+      "The flash"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why check the default file format?",
+     "options": [
+      "Some phones save in a format clients and older computers cannot open",
+      "It affects image quality",
+      "It changes the resolution",
+      "It disables HDR"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "ffe49ff8-773f-4c1d-8949-31df24f8e342",
+   "title": "10 Pro iPhone Photography Tips for Incredible Photos",
+   "objectives": [
+    "Compose deliberately rather than centring everything",
+    "Use angle and distance as decisions",
+    "Build a habit of taking more than one frame"
+   ],
+   "notes": "Module 1 covered the camera. This lesson is about what you point it at, which is where the difference between a snapshot and a photograph actually lives. As before, the phone in the video is not the point.\n\nCOMPOSITION, in the order it pays:\nFILL THE FRAME. The commonest fault in amateur photographs is the subject being too small and surrounded by things nobody cares about. Move closer.\nPUT THE SUBJECT OFF CENTRE, roughly on a third. The grid exists for this.\nWATCH THE BACKGROUND. A pole growing out of someone's head, a bin, laundry, a stranger. Take one step sideways and it goes.\nLOOK FOR LINES that lead the eye toward the subject - a road, a fence, a table edge.\nLEAVE SPACE in the direction a person is looking or moving.\nFIND A FRAME - a doorway, branches, a window - to sit the subject inside.\n\nANGLE IS A DECISION, and almost everyone takes every photograph from standing height. Crouch. Get above. Put the phone on the table for a product. Changing height changes the picture more than any filter.\n\nTAKE MORE THAN ONE. Three or four frames of anything that matters, varying the angle slightly. Photographs are free; regret is not.\n\nSIMPLIFY. If something in the frame is not helping, remove it, move it, or move yourself.\n\nADDITION BEYOND THE VIDEO - composition for what you will actually be paid to shoot here. FOR A PRODUCT, background discipline is the whole job: a clean surface and a plain backdrop turn a phone photograph into something a shop can post, and manila paper, a painted board or a plain kitenge cloth costs almost nothing and does what a studio does. FOR PEOPLE, watch the light on faces before you watch anything else, and remember that harsh overhead sun and deep shade together - the normal outdoor condition here in the middle of the day - is the hardest situation for any camera, so move your subject rather than trying to fix it afterwards. And SHOOT WITH THE CROP IN MIND: a shop needs a square for a catalogue and a tall frame for a status or a reel, so leave room around the subject and deliver both rather than reshooting.",
+   "practice": "Photograph one subject ten times, changing only the angle and distance - crouching, from above, close, further back, from the side. Check the background in every frame before pressing. Then choose the best three and say in one sentence why each works, and crop one to a square and one to a tall frame.",
+   "quiz": [
+    {
+     "question": "What is the commonest fault in amateur photographs?",
+     "options": [
+      "The subject is too small and surrounded by things nobody cares about",
+      "Poor colour",
+      "Wrong exposure",
+      "Camera shake"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why shoot with the crop in mind?",
+     "options": [
+      "A shop needs a square for a catalogue and a tall frame for a status, and reshooting costs a session",
+      "It saves storage",
+      "It improves sharpness",
+      "Crops cannot be made later"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "f4cfc873-41ee-4968-ae40-c49601af0e25",
+   "title": "Vertical Video Setup for Instagram Reels, TikTok & YouTube Shorts",
+   "objectives": [
+    "Frame vertical video so nothing important is covered",
+    "Set up a stable, well-lit shot with what you own",
+    "Record sound that is worth keeping"
+   ],
+   "notes": "Vertical video is not a rotated horizontal video. The frame is tall and narrow, the interface covers parts of it, and it is watched on a small screen held in one hand - all of which change how you set up.\n\nTHE SAFE ZONE is the part of the frame no interface sits on. Captions, usernames, buttons and the progress bar occupy the top and bottom and the right edge. KEEP ANYTHING IMPORTANT - your face, the product, any text you add - IN THE MIDDLE BAND. Watch back on the actual platform before delivering, because the preview in the editor lies about this.\n\nTHE SETUP, in order of what it does for you:\nSTABILITY. A phone leaned against a stack of books is steadier than any handheld shot. A cheap clamp or tripod is the single most useful purchase in this course.\nLIGHT ON THE FACE, coming from in front, not behind. A window is enough.\nDISTANCE: closer than feels natural. The frame is narrow and a distant subject disappears.\nBACKGROUND: uncluttered and not moving.\nSOUND, which is where most phone video actually fails - see below.\n\nSHOOT SLIGHTLY WIDER THAN YOUR FINAL FRAME so you can reframe in the edit without running out of picture.\n\nLOCK FOCUS AND EXPOSURE before you start, or the shot will visibly hunt and shift every time you move.\n\nADDITION BEYOND THE VIDEO - the two things that decide whether phone video is usable here. SOUND IS THE HALF NOBODY PREPARES FOR: the phone microphone is fine close up and useless across a room, so get within a metre, record indoors with soft furnishings rather than in a bare echoing room, and shoot away from traffic, generators and wind. A visually beautiful clip with unusable sound is unusable. The cheapest genuine upgrade in this whole course is a wired lapel microphone, well below the cost of any lens accessory. Second, SHOOT FOR SOUND OFF AS WELL: most viewing here is muted, so plan on-screen text for the key points and make the video make sense without audio. And mind STORAGE AND DATA - video fills a phone fast and uploads cost money, so clear space before the shoot and upload on wifi.",
+   "practice": "Record a one-minute vertical piece to camera with the phone braced, light from a window on your face, within a metre of the microphone, in a room with soft furnishings. Keep everything important in the middle band. Then watch it back on the actual platform with the sound off and note what is covered or unclear.",
+   "quiz": [
+    {
+     "question": "Where must anything important sit in a vertical frame?",
+     "options": [
+      "In the middle band, since the interface covers the top, bottom and right edge",
+      "At the top of the frame",
+      "Along the bottom third",
+      "Centred exactly"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What is the cheapest genuine upgrade for phone video?",
+     "options": [
+      "A wired lapel microphone, since sound is where phone video usually fails",
+      "A lens attachment",
+      "A ring light",
+      "A newer phone"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "486d6bd0-8419-4dea-9b45-4730ebc57fbe",
+   "title": "Manual Camera Controls (ISO, Shutter Speed, White Balance)",
+   "objectives": [
+    "Explain what each manual control actually does",
+    "Choose settings for a situation rather than guessing",
+    "Know when automatic is the better choice"
+   ],
+   "notes": "Manual mode - PRO mode on most Android phones - gives you the three controls that decide exposure, plus colour. Understanding them is what turns a phone into a camera you are driving rather than one that is driving you.\n\nSHUTTER SPEED: how long the sensor is exposed. Fast freezes motion and darkens the image; slow gathers light and blurs anything moving, including your hands. Handheld, below roughly a fiftieth of a second you will see shake unless the phone is braced.\n\nISO: how much the signal is amplified. Low ISO is clean; high ISO is brighter and noisier, and phone sensors are small so noise arrives early. ALWAYS RAISE LIGHT BEFORE RAISING ISO.\n\nAPERTURE is fixed on almost every phone, which simplifies matters: you are balancing two controls, not three.\n\nWHITE BALANCE: what the camera treats as white. Automatic guesses, and it guesses badly under mixed light - a room lit by a window and a bulb together will come out either orange or blue. Setting it manually is the fastest fix for colour that looks wrong, and it matters enormously for product work where the customer must see the true colour.\n\nWHEN TO USE AUTOMATIC: anything fast, unpredictable or changing. Automatic is genuinely good now, and manual is a tool for controlled situations, not a badge.\n\nSHOOT RAW IF YOUR PHONE OFFERS IT and the shot matters - far more latitude in editing, at the cost of much larger files.\n\nADDITION BEYOND THE VIDEO - the settings that matter for the work you will be paid for here. FOR PRODUCT PHOTOGRAPHY, set white balance manually and leave it fixed for the whole shoot, so every item in a catalogue matches - a set where the same shirt is three different colours is the commonest reason a shop rejects a batch, and it cannot be fully fixed afterwards. Keep ISO as low as the light allows and brace the phone rather than raising it. Second, MIXED LIGHT IS THE LOCAL NORM - daylight through a doorway plus a fluorescent tube - and it is exactly what automatic white balance handles worst, so turn one light source off rather than trying to balance two. Third, RAW FILES ARE LARGE: shooting a full catalogue in raw will fill a phone and cost you in data when sending, so use it for the shots that matter and standard files for the rest.",
+   "practice": "In PRO or manual mode, photograph one object at three ISO settings and compare the noise at full zoom. Then photograph it under mixed light with automatic white balance and again with white balance set manually, and compare the colour. Finally shoot a set of five items with one fixed white balance and check they match.",
+   "quiz": [
+    {
+     "question": "What should you do before raising ISO?",
+     "options": [
+      "Raise the light, since phone sensors are small and noise arrives early",
+      "Lower the shutter speed",
+      "Switch to raw",
+      "Change white balance"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why fix white balance for a product shoot?",
+     "options": [
+      "So every item in a catalogue matches - varying colour is the commonest reason a batch is rejected",
+      "To reduce file size",
+      "To allow a slower shutter",
+      "Because automatic is disabled in manual mode"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "90bc59f8-e8c2-4045-ad72-cfc290c47ff2",
+   "title": "Color Grading in Lightroom Mobile",
+   "objectives": [
+    "Edit a photograph in a sensible order",
+    "Build a look you can apply consistently",
+    "Choose an editing app you can actually afford"
+   ],
+   "notes": "Editing is finishing, not rescuing. A well-lit photograph edits in a minute; a badly lit one cannot be saved, which is why every lesson before this one was about light.\n\nTHE ORDER TO EDIT IN, and doing it out of order means redoing it:\n1. CROP AND STRAIGHTEN.\n2. EXPOSURE - overall brightness.\n3. CONTRAST, and the highlight and shadow sliders, which recover a blown sky or open up a dark face.\n4. WHITE BALANCE, to make whites white and skin look like skin.\n5. SATURATION AND VIBRANCE, gently. Vibrance is the kinder of the two.\n6. SHARPENING, last and lightly.\n\nCOLOUR GRADING is the deliberate part: pushing the colour of the shadows and highlights to give a consistent look. Used well it is a signature; used heavily it is a filter, and filters date.\n\nRESTRAINT IS THE WHOLE SKILL. The commonest beginner edit is too much of everything - crushed shadows, orange skin, oversaturated greens. Edit, leave it, come back in ten minutes, and you will pull almost everything back.\n\nSAVE A PRESET once you have a look you like, and apply it across a set so a client's photographs match. Then adjust each one individually, because a preset is a starting point.\n\nKEEP THE ORIGINALS. Editing should never be destructive, and a client asking for a different crop next month is normal.\n\nADDITION BEYOND THE VIDEO - editing on the tools and terms you actually have. LIGHTROOM MOBILE IS FREE FOR THE FEATURES IN THIS LESSON and asks for a subscription in foreign currency for the rest - which you mostly do not need. SNAPSEED IS FREE WITH NO SUBSCRIPTION AT ALL and does everything here competently, so learn the principles and use whichever you can afford; the order above is the same in both. Second, PRODUCT WORK IS DIFFERENT FROM PERSONAL WORK: a customer is buying a colour, so edit for accuracy rather than mood, and resist the grade that makes the photograph attractive and the shirt the wrong shade. Third, EXPORT SENSIBLY - full-resolution files fill a client's phone and cost both of you data, so deliver a web-sized set for posting and keep the originals for anything to be printed.",
+   "practice": "Edit one photograph through the six steps in order, then set it aside for ten minutes and come back and reduce every adjustment. Save it as a preset, apply it to four more from the same shoot, and adjust each individually. Then export a web-sized set and check the product colour against the real object.",
+   "quiz": [
+    {
+     "question": "What is the correct first step in editing?",
+     "options": [
+      "Crop and straighten, before any tonal adjustment",
+      "White balance",
+      "Exposure",
+      "Sharpening"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "How should product photographs be edited differently?",
+     "options": [
+      "For colour accuracy rather than mood, because the customer is buying the colour",
+      "With more contrast",
+      "With a stronger preset",
+      "At higher resolution only"
+     ],
+     "correct_index": 0
+    }
+   ]
+  }
+ ]
+}

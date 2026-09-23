@@ -733,7 +733,7 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 162. Twenty-three courses are now fully
+      **Bare-lesson count: 438 → 150. Twenty-four courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
@@ -745,8 +745,9 @@ custom authorization layer bolted on top.
       (16), `ui-ux-design-figma` (16), `bookkeeping-quickbooks` (16),
       `transcription-translation-freelancing` (12),
       `customer-service-virtual-call-center` (12),
-      `data-analysis-visualization` (16) and
-      `resume-writing-linkedin-personal-branding` (16).**
+      `data-analysis-visualization` (16),
+      `resume-writing-linkedin-personal-branding` (16) and
+      `mobile-photography-content-creation` (12).**
 
       **Only one enrolled course still carries bare lessons** —
       `google-workspace-productivity`, held back deliberately until the

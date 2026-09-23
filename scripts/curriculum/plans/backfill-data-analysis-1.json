@@ -1,0 +1,203 @@
+{
+ "course": "data-analysis-visualization",
+ "lessons": [
+  {
+   "id": "7349bc4d-dbbe-4249-af6e-e91ae593095d",
+   "title": "Power BI Tutorial for Beginners (Step-by-Step in 30 Minutes)",
+   "objectives": [
+    "Explain what a business intelligence tool adds over a spreadsheet",
+    "Follow the four stages every BI tool works in",
+    "Choose a tool you can actually run and afford"
+   ],
+   "notes": "A business intelligence tool connects to data, cleans it, models it and shows it - and then refreshes the whole thing when the data changes. That last part is the real difference from a spreadsheet, where someone rebuilds the report every month by hand.\n\nTHE FOUR STAGES, and they are the same in every tool:\nCONNECT to the source - a file, a database, an online service.\nTRANSFORM: remove the rubbish, fix the types, split and combine columns, filter out what you do not need. This is most of the work and beginners always underestimate it.\nMODEL: tell the tool how your tables relate to each other, and write the measures you want to calculate.\nVISUALISE: build the report, then refresh it rather than rebuilding it.\n\nWHAT IT GIVES YOU OVER EXCEL: it handles far more rows, it repeats the cleaning automatically every refresh, it keeps relationships between tables properly, and the report updates itself. What Excel still wins at is quick one-off work and anything you need to hand to someone who will edit the numbers.\n\nDO THE TRANSFORM PROPERLY. A chart built on a badly cleaned table is confidently wrong, which is worse than obviously broken. Module 3 covers what dirty data looks like and it applies directly here.\n\nADDITION BEYOND THE VIDEO - choosing the tool you can actually use from here, because this decides whether you finish the course. POWER BI DESKTOP IS FREE BUT RUNS ONLY ON WINDOWS and needs a reasonably capable machine, and SHARING a report with others requires a paid licence per person in foreign currency. Learn it, because Kenyan employers name it in job adverts and that alone makes it worth having. LOOKER STUDIO IS FREE, RUNS IN A BROWSER ON ANY MACHINE, and sharing costs nothing - which makes it the practical tool for client work here and for anyone without a Windows laptop. Learn both: Power BI for employability, Looker Studio for the work you will actually be paid for this year. The four stages above transfer completely between them, so nothing is wasted.",
+   "practice": "Take one real dataset - your own sales, expenses or an M-Pesa statement export - and run it through all four stages in whichever tool you can install. Write down how long the transform stage took compared with the visualisation, and check one number in your report by hand against the source.",
+   "quiz": [
+    {
+     "question": "What is the real difference between a BI tool and a spreadsheet report?",
+     "options": [
+      "It repeats the cleaning and refreshes itself when the data changes",
+      "It produces better-looking charts",
+      "It handles text data",
+      "It is easier to learn"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why learn Looker Studio alongside Power BI from here?",
+     "options": [
+      "It is free, runs in a browser on any machine, and sharing costs nothing",
+      "It is more powerful",
+      "Employers ask for it more often",
+      "It handles larger datasets"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "50f62c0b-12f8-41ba-9e6f-d9effbbdc939",
+   "title": "Looker Studio Tutorial For Beginners",
+   "objectives": [
+    "Connect a data source and build a report in the browser",
+    "Use calculated fields, filters and date ranges",
+    "Share a report so the right people can read it"
+   ],
+   "notes": "Looker Studio is free, runs in a browser, and connects directly to Sheets, databases and a long list of online services. For most client work in this market it is the tool that will actually be used, because nobody has to install or buy anything to read the result.\n\nTHE STRUCTURE: a DATA SOURCE, which is the connection plus how each field is typed; the REPORT, one or more pages of charts; and CONTROLS - date ranges, dropdowns - that let a reader filter without asking you for a new version.\n\nGET THE DATA SOURCE RIGHT FIRST. Every field has a type and a role, and a date stored as text or a number stored as text will produce charts that are wrong rather than charts that fail. Fix it at the source, not in the chart.\n\nCALCULATED FIELDS let you compute what the source does not hold - a margin, a ratio, a grouping. Keep them few and named clearly, because a report full of unexplained calculated fields is unmaintainable by anyone else.\n\nCONTROLS ARE THE FEATURE THAT SAVES YOU WORK. A date range and two dropdowns turn one report into the twenty variations a client would otherwise ask you for one at a time.\n\nSHARING works like a document: view access for readers, edit for collaborators. A link that anyone can open is a decision, not a default - think about what is in the data before you use it.\n\nREFRESH: the report reads the source each time, so keeping the source updated is what keeps the report true. Say clearly on the page when the data was last updated.\n\nADDITION BEYOND THE VIDEO - building for how this will actually be read. MOST CLIENTS HERE WILL OPEN THIS ON A PHONE, so build for one narrow column: few charts per page, large type, no wide table that needs scrolling sideways. Check it on a phone before delivering, every time. Second, KEEP IT LIGHT - a report with fifteen charts across four pages is slow on a bundle and will be opened once; three charts that answer the actual question get used weekly. Third, MIND WHAT IS IN THE DATA BEFORE SHARING: a report built over a customer list or a survey holds personal information, so share it with named people rather than by open link, and remember that responsibility for that data is yours as much as the client's under the Data Protection Act.",
+   "practice": "Connect one real source and build a three-chart report with a date range control and one dropdown. Fix every field type at the source rather than in the charts. Then open it on a phone, remove whatever is unreadable, add a last-updated note, and share it with one named person rather than by open link.",
+   "quiz": [
+    {
+     "question": "Where should a wrongly typed field be fixed?",
+     "options": [
+      "At the data source, not in the chart",
+      "In each chart that uses it",
+      "In a calculated field",
+      "In the filter control"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What does adding controls to a report save you?",
+     "options": [
+      "The twenty variations a client would otherwise request one at a time",
+      "Data source connection time",
+      "Storage space",
+      "Licence costs"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "0d5d1df5-d9b7-4615-bcb4-80f3296511cf",
+   "title": "Complete Power BI Tutorial for Beginners in 3 Hours",
+   "objectives": [
+    "Work through the full Power BI cycle on real data",
+    "Do the transform stage properly before modelling",
+    "Build relationships between tables correctly"
+   ],
+   "notes": "This is a long tutorial. WATCH IT IN PARTS, over several sessions, with the tool open and following along - streaming three hours in one sitting is expensive on a bundle and you will retain very little of it. Download it on wifi if you can.\n\nTHE TRANSFORM STAGE is where the real skill is, and where this tutorial earns its length. What you are doing there: removing rows that are not data, promoting the real header row, setting every column to its correct type, splitting combined columns, removing what you will not use, and handling blanks deliberately rather than letting them become zeros.\n\nEVERY STEP IS RECORDED AND REPLAYED on refresh. That is the point: clean it once properly and it stays clean forever. It also means a careless step is repeated forever, so name your steps and check the result after each.\n\nMODELLING - relationships between tables - is the part beginners skip and then cannot explain why their totals are wrong. The usual shape is a table of transactions related to smaller tables describing products, customers, dates and locations. Get the direction and the one-to-many side right; a wrong relationship produces numbers that look plausible and are not.\n\nA DATE TABLE is worth building early. Almost every real question is about time - this month against last, this quarter against the same quarter last year - and doing that properly needs a proper date table rather than the date column in your data.\n\nCHECK YOUR TOTALS AGAINST THE SOURCE before you show anyone anything. One reconciled number is worth more than a beautiful report nobody trusts after the first error.\n\nADDITION BEYOND THE VIDEO - the data you will actually be handed here, and it is rarely tidy. EXPECT M-PESA AND BANK STATEMENT EXPORTS, spreadsheets typed by several people, and survey exports from field data tools, which arrive with one column per question and names that are unusable. Expect DATES IN MIXED FORMATS, amounts stored as text with commas or a currency symbol typed in, phone numbers that have lost their leading zero, and place names spelt four ways. Budget most of your time for the transform stage, and build one clean key column rather than trying to match what you were given. And check the DATE LOCALE before anything else: a foreign default will read the third of April as the fourth of March across the entire dataset and every chart will be wrong in a way that is very hard to see.",
+   "practice": "Take one genuinely messy real dataset and work the full cycle in parts across several sessions. Set the locale first, then do the transform properly - types, splits, blanks - naming every step. Build a date table and at least one relationship, then reconcile one total against the source by hand before building any chart.",
+   "quiz": [
+    {
+     "question": "Why does a careless transform step matter more in a BI tool than in a spreadsheet?",
+     "options": [
+      "Every step is recorded and replayed on every refresh, so it repeats forever",
+      "It cannot be undone",
+      "It slows the refresh",
+      "It breaks the relationships"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What should be checked before anything else on a new dataset?",
+     "options": [
+      "The date locale, since a foreign default silently misreads every date",
+      "The number of rows",
+      "The file size",
+      "The column order"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "c919661f-471a-4220-b651-a1d9c21014eb",
+   "title": "Build Your First Dashboard — Looker Studio Full Tutorial",
+   "objectives": [
+    "Build a complete dashboard from a real source",
+    "Lay a page out so it answers questions in order",
+    "Deliver something a client will actually open"
+   ],
+   "notes": "This is the applied build. Use real data you care about rather than a sample file, because sample data is always clean and teaches you nothing about the actual job.\n\nSTART WITH THE QUESTIONS, WRITTEN DOWN, before opening the tool. Three to five, in the reader's words. Every element on the page must answer one, and anything answering none comes off however good it looks. This is the same discipline as the Excel dashboard lesson and it is the one that separates a useful report from a decorated one.\n\nTHE LAYOUT THAT WORKS: the headline number top left, because that is where the eye lands; the trend next, because the second question is always whether it is going up or down; the breakdown after that; and the detail table last, for the person who wants to check. Controls at the top.\n\nONE IDEA PER CHART. A chart trying to show three things shows none.\n\nSCORECARDS - a single large number with a comparison against the previous period - do more work than any chart and are used too little.\n\nLABEL EVERYTHING: what the number is, what period it covers, and what it is compared against. An unlabelled figure is a figure someone will misread and then quote.\n\nPUT THE LAST-UPDATED DATE ON THE PAGE. A dashboard with no date is untrusted the first time anyone suspects it is stale.\n\nADDITION BEYOND THE VIDEO - deliver it the way it will be used here. BUILD ONE PAGE, NOT FOUR, and design it to be read on a phone in a WhatsApp message, because that is where a client will open it. PUT THE HEADLINE NUMBER IN THE MESSAGE TEXT as well as in the report - a figure in the text gets read, and a link often does not get opened. Use SHILLINGS with thousands separators and never leave a converted figure unexplained. And agree who may see it before you share: a dashboard over customer or survey data is personal information, so share it with named people, not an open link, and say in writing how long you will keep the underlying data.",
+   "practice": "Write the five questions first, then build a single-page dashboard answering them from real data, with a scorecard, a trend, a breakdown, controls and a last-updated date. Open it on a phone and cut whatever does not read. Then send it to someone with the headline number in the message text and note whether they opened the link.",
+   "quiz": [
+    {
+     "question": "What goes top left on a dashboard?",
+     "options": [
+      "The headline number, because that is where the eye lands",
+      "The date control",
+      "The detail table",
+      "The company logo"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why put the headline number in the message text?",
+     "options": [
+      "A figure in the text gets read, while a link often is not opened",
+      "It reduces the report size",
+      "It avoids sharing permissions",
+      "Charts do not render on phones"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "0dccbb28-84d4-474e-80f6-b0315a3cc0fe",
+   "title": "Advanced Pandas: GroupBy, Merge & Cleaning",
+   "objectives": [
+    "Do in code what a spreadsheet cannot repeat reliably",
+    "Group, join and reshape a real dataset",
+    "Run Python without a capable laptop"
+   ],
+   "notes": "Pandas is a Python library for working with tables. It does what you already did in Excel in Module 3 - filter, group, join, clean - with one large difference: the work is written down as code, so it runs again on next month's file without anyone remembering the steps.\n\nWHEN CODE IS WORTH IT: when the same cleaning happens every month, when the file is too large for a spreadsheet, when the steps are too many to repeat reliably by hand, or when you must show exactly what you did. When it is not worth it: a one-off question you can answer with a pivot table in four minutes.\n\nTHE THREE OPERATIONS THAT DO MOST OF THE WORK:\nGROUPBY - split the data by a column, calculate something per group, put it back together. This is a pivot table written down.\nMERGE - join two tables on a shared key. This is a lookup, with the same failure modes: mismatched types, trailing spaces, and keys that are not as unique as you assumed.\nCLEANING - types, missing values, duplicates, text tidying. Decide what a blank means before you fill it, because filling missing values with zero silently turns absent into none and changes every average.\n\nALWAYS CHECK THE SHAPE AFTER A MERGE. If the row count grew, your key was not unique and you have just multiplied your data - which is the commonest serious error in this work and produces totals that are confidently and enormously wrong.\n\nADDITION BEYOND THE VIDEO - how to actually run this from here. USE A FREE BROWSER NOTEBOOK rather than installing Python, if your machine is modest or is not yours. It needs no installation, it runs the code on someone else's computer, and it works on a low-specification laptop or a borrowed one - which removes the hardware barrier that stops most people at this point. Download your notebook when you finish, because a session ends and takes its files with it. Two practical notes on the data you will meet: SURVEY EXPORTS from field data tools come with long unusable column names and one column per question, so renaming and reshaping is the first hour of the job; and MOBILE MONEY EXPORTS need the amount column stripped of commas and currency text before anything arithmetic will work at all. Neither appears in any tutorial and both appear in real work here constantly.",
+   "practice": "Take two real tables that share a key and merge them in a notebook, checking the row count before and after. Then group and summarise, clean the text columns, and decide explicitly what each blank means rather than filling with zero. Download the notebook when you finish.",
+   "quiz": [
+    {
+     "question": "What must you check immediately after a merge?",
+     "options": [
+      "The row count - if it grew, the key was not unique and the data has been multiplied",
+      "The column order",
+      "The data types",
+      "The memory used"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why use a free browser notebook from here?",
+     "options": [
+      "It needs no installation and runs on a modest or borrowed machine",
+      "It is faster than a local install",
+      "It stores files permanently",
+      "It includes the datasets"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "8bdd8dcf-785e-4ec4-8af4-5887778b2a34",
+   "title": "Building a Marketing Dashboard with Matplotlib & Seaborn",
+   "objectives": [
+    "Produce charts in code that are readable by someone else",
+    "Choose the chart from the question, as in Module 4",
+    "Know when a coded chart beats a dashboard tool"
+   ],
+   "notes": "Matplotlib and Seaborn draw charts from code. The advantage over a dashboard tool is repeatability and control: the same script produces the same chart from next month's data, and you can make it look exactly as you want.\n\nWHEN TO USE THIS RATHER THAN A DASHBOARD TOOL: when the output is a report or a document rather than something interactive; when the chart must be produced automatically on a schedule; when you need a chart type the dashboard tool does not have; and when the work must be reproducible by someone else checking it.\n\nTHE RULES FROM MODULE 4 APPLY UNCHANGED. Line for change over time, bar for comparing categories, horizontal bar when the labels are long, and scatter for a relationship. Code makes it easy to produce a bad chart quickly.\n\nWHAT MAKES A CODED CHART READABLE, and it is nearly always what is missing: a title that states the finding rather than the variable, axis labels with units, a sensible axis starting at zero for bars, readable text sizes, and no legend where direct labels would do.\n\nSAVE AT A SENSIBLE SIZE AND RESOLUTION. A chart that is unreadable when dropped into a document has failed, however correct it is.\n\nBUILD A FUNCTION for the chart you make repeatedly, so your styling is consistent and you stop making the same decisions. That is the real productivity gain from doing this in code.\n\nADDITION BEYOND THE VIDEO - three things for the work you will actually deliver. WRITE THE TITLE AS THE FINDING - sales fell in three counties after March, not monthly sales by county - because a reader who takes one thing from your chart should take the point rather than the topic. Second, CHECK EVERY CHART IN GREYSCALE AND AT PHONE SIZE, since reports here are printed in black and white and read on phones, and a chart distinguishing five series only by colour is useless in both. Third, EXPORT LIGHT: a report of high-resolution images is a file nobody can open on a bundle, so size the images for the medium and keep the whole document small enough to send on WhatsApp, which is how it will travel.",
+   "practice": "Rebuild three charts from a real dataset in code, each with a title stating the finding, labelled axes with units, and no legend where direct labels work. Write one reusable styling function and apply it to all three. Then print them in greyscale and view them at phone size, and fix whatever fails.",
+   "quiz": [
+    {
+     "question": "How should a chart title be written?",
+     "options": [
+      "As the finding, not the topic - what the reader should take away",
+      "As the variable names",
+      "As the date range",
+      "As the data source"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why check charts in greyscale and at phone size?",
+     "options": [
+      "Reports here are printed in black and white and read on phones",
+      "Colour printing is expensive",
+      "Greyscale renders faster",
+      "It is required for accessibility compliance"
+     ],
+     "correct_index": 0
+    }
+   ]
+  }
+ ]
+}

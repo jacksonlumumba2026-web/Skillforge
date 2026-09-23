@@ -1,0 +1,203 @@
+{
+ "course": "customer-service-virtual-call-center",
+ "lessons": [
+  {
+   "id": "32ad3a58-6d60-420d-8e6e-a26618aef472",
+   "title": "How to Get a Remote Job with No Experience — Customer Support",
+   "objectives": [
+    "Present transferable experience you already have",
+    "Meet the requirements that are genuinely non-negotiable",
+    "Apply in a way that survives the first filter"
+   ],
+   "notes": "Customer support is one of the few genuinely open doors into remote work, because employers hire on demonstrated ability rather than on a degree.\n\nWHAT THEY ACTUALLY REQUIRE: clear written and spoken English, a reliable connection, a quiet place to work, availability for their hours, and evidence that you can stay calm with a difficult person. Nothing else is fixed.\n\nYOU HAVE MORE EXPERIENCE THAN YOU THINK. Anyone who has served customers in a shop, handled complaints, worked a front desk, taught a class, run a stall, managed a church or community group, or dealt with the public in any way has done this work. Write it as support experience, because it is: the number of people handled, the kinds of problems, how complaints were resolved.\n\nWHAT MAKES AN APPLICATION SURVIVE THE FIRST FILTER: following the instructions exactly, which a surprising share of applicants do not; writing clearly and without errors, since your writing IS the sample for a support role; naming the hours you can work in their time zone rather than yours; and answering why this company rather than sending the same paragraph everywhere.\n\nEXPECT A WRITTEN TEST: a mock customer email or chat to answer. This is the real interview. Answer it as you would on the job - acknowledge, answer, next step - rather than explaining what you would do.\n\nSTART WHERE THE BAR IS LOWER: smaller companies, a local BPO, part-time or overflow work. A few months of demonstrable support work changes what you can apply for.\n\nADDITION BEYOND THE VIDEO - the requirements that are non-negotiable from here, and applying with them handled is most of the advantage. INTERNET AND POWER: say plainly in your application what your setup is - your connection, your backup SIM on a different network, and your backup power. Employers hiring across Africa ask about exactly this, and an applicant who has already solved it stands out immediately against one who has not thought about it. A QUIET, PRIVATE SPACE for the hours of a shift, genuinely - not a plan to ask people to be quiet. A HEADSET WITH A PROPER MICROPHONE, which is the one purchase worth making before you apply, because phone earphones are audibly poor and it is the first thing heard in a voice interview. And be realistic about TIME ZONES before accepting: decide what you can sustain for a year rather than agreeing to nights you will resent by month three.",
+   "practice": "Rewrite everything you have ever done that involved the public as support experience, with numbers where you can. Set up and test your connection, backup SIM, backup power and headset, then write the two sentences describing that setup for an application. Answer one mock support email exactly as you would on the job.",
+   "quiz": [
+    {
+     "question": "What is the real interview for a support role?",
+     "options": [
+      "The written test - a mock customer email or chat, answered as you would on the job",
+      "The video call",
+      "The reference check",
+      "The application form"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What makes an application from here stand out immediately?",
+     "options": [
+      "Stating your connection, backup SIM and backup power, already solved",
+      "A longer cover letter",
+      "A lower salary expectation",
+      "Listing more software"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "0422b507-100c-427d-ae16-acf6908b174b",
+   "title": "How to Land a Remote Customer Service Job",
+   "objectives": [
+    "Judge an employer and a contract before accepting",
+    "Prepare for the stages of a remote hiring process",
+    "Set up to be paid reliably"
+   ],
+   "notes": "Getting hired is a process with stages, and knowing them removes most of the anxiety.\n\nTHE STAGES, usually: an application with a written element; an assessment - a mock ticket, a typing or English test, sometimes a situational questionnaire; a video interview; occasionally a paid or unpaid trial shift; then an offer.\n\nTHE VIDEO INTERVIEW is partly a test of your setup. Good light, a plain background, a headset, and a quiet room. They are checking what a customer would experience. Test the whole thing beforehand on the actual connection you will use.\n\nWHAT THEY ASK, and prepare a real example for each: a difficult customer you handled, a time you did not know the answer, a mistake you made, how you organise yourself without supervision, and why remote work suits you. Use real situations - invented ones collapse under a follow-up question.\n\nJUDGE THE EMPLOYER WHILE THEY JUDGE YOU. Ask which metric matters most, what the shift pattern really is, how training works, and how many people they hired for this role last year. High turnover tells you what the job is like.\n\nWATCH FOR THE BAD ONES: unpaid trial periods of unreasonable length, pay that is vague or conditional, being asked to pay for training or equipment, no written contract, and a role that turns out to be several jobs.\n\nADDITION BEYOND THE VIDEO - the two things that decide whether a remote job works from here. FIRST, HOW YOU WILL BE PAID AND ENGAGED. Most foreign companies will engage you as a contractor rather than an employee, which means no local employment protection, no leave, and tax and statutory contributions that are yours to handle - that can be a perfectly good arrangement, but know you are in it. Confirm the payment route before signing: an employer-of-record platform, Wise or Payoneer all work; an arrangement that depends on a route unavailable here does not. Ask about the exchange rate and who carries the fees. SECOND, COMPARE HONESTLY WITH LOCAL BPO WORK. A Nairobi contact centre pays less and gives you employment terms, colleagues, training and a building with power. A direct foreign contract usually pays more and gives you none of that. Neither is obviously better; choose knowingly rather than assuming remote and foreign means better.",
+   "practice": "Prepare a real two-minute answer for each of the five standard questions, using situations that actually happened. Run a full video interview rehearsal on your real connection with your real setup. Then write the four questions you will ask them, including which metric matters most and what the shift pattern really is.",
+   "quiz": [
+    {
+     "question": "What does the video interview also test?",
+     "options": [
+      "Your setup - light, sound, connection - because that is what a customer experiences",
+      "Your typing speed",
+      "Your product knowledge",
+      "Your availability"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What does engagement as a contractor with a foreign company mean?",
+     "options": [
+      "No local employment protection or leave, and tax and statutory contributions are yours to handle",
+      "That the pay is unreliable",
+      "That the role is temporary",
+      "That you cannot work for anyone else"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "ea3d58ba-81e3-4d8a-ac89-a4b1841847dd",
+   "title": "Zendesk Tutorial for Beginners (CRM)",
+   "objectives": [
+    "Work a ticket queue in a helpdesk system",
+    "Write notes and macros other agents can use",
+    "Understand what the system records about you"
+   ],
+   "notes": "A helpdesk system is where support work actually happens. Learning one teaches you all of them, because they share the same parts under different names.\n\nTHE PARTS: TICKETS, one per customer issue; the QUEUE or views, filtered lists of what needs attention; MACROS, saved replies for common situations; the CUSTOMER RECORD showing history; TAGS for categorising; and REPORTS.\n\nWORKING A QUEUE: take the oldest or the most urgent by whatever rule your employer sets rather than picking the easy ones, which is visible and noticed. Keep the queue moving - a ticket you cannot resolve should be updated with what you have tried, not left open and silent.\n\nTHE CUSTOMER HISTORY IS THE FIRST THING TO READ. A customer contacting for the third time about the same thing needs a different response from a first-timer, and nothing angers people more than being treated as though the previous two conversations never happened.\n\nMACROS SAVE TIME AND COST GOODWILL IF USED LAZILY. Edit every one to the actual question. A macro answering a different question than the one asked is worse than a slower original reply.\n\nTAGGING PROPERLY is how a company finds out that forty people had the same problem this week. It feels pointless per ticket and is how products actually get fixed.\n\nINTERNAL NOTES versus public replies: know which is which, absolutely and always. A note intended for a colleague sent to the customer is a serious and memorable mistake.\n\nADDITION BEYOND THE VIDEO - two things worth knowing before your first shift. THE SYSTEM RECORDS EVERYTHING ABOUT YOUR WORK: response times, how long tickets sit with you, how often they are reopened, what you wrote. That is normal in this industry rather than distrust, and the practical consequence is that consistency matters more than heroic days - a steady queue worked properly reads far better than bursts. Second, YOU WILL BE HANDLING PERSONAL DATA all day: names, addresses, order histories, sometimes partial payment details. Keep it in the system. Do not copy customer details into personal notes, a spreadsheet of your own, a chat with a colleague or any outside tool, do not access records you have no reason to open, and be aware that both your employer and the Data Protection Act treat this seriously. Agents lose jobs over curiosity far more often than over mistakes.",
+   "practice": "Set up a free helpdesk trial and work through ten practice tickets: read the history first, edit a macro to fit each actual question, tag properly, and write an internal note on three of them. Then check which of your replies would have been wrong if sent as a macro unedited.",
+   "quiz": [
+    {
+     "question": "What should you read first on a ticket?",
+     "options": [
+      "The customer history, since a third contact needs a different response",
+      "The tags",
+      "The macro list",
+      "The ticket subject only"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What do agents most often lose jobs over?",
+     "options": [
+      "Curiosity - opening or copying customer records they had no reason to touch",
+      "Slow response times",
+      "Spelling errors",
+      "Escalating too often"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "16ac0719-677f-45ed-aef8-485875527f72",
+   "title": "How to Empathize in Call Center Customer Service — Scripts, Mock Calls",
+   "objectives": [
+    "Use empathy language that does not sound scripted",
+    "Practise with mock calls that improve your delivery",
+    "Adapt a script without breaking the rules"
+   ],
+   "notes": "Empathy phrases exist because they work. They stop working the moment they sound recited, and a customer can hear the difference immediately.\n\nTHE PRINCIPLE: empathy is showing you understood the SPECIFIC situation. I understand your frustration is a phrase. You have been without the service for four days and nobody called you back as promised is empathy, because it proves you listened.\n\nUSE THE SCRIPT AS A STRUCTURE, NOT A SPEECH. Learn what each line is FOR - this one acknowledges, this one sets expectation, this one confirms - and then say it in your own words. Agents who recite word for word sound like a recording, and customers respond to a recording by asking for a human.\n\nWHAT SOUNDS FAKE: stacking three empathy phrases before doing anything, apologising repeatedly without acting, and using the same phrase twice in one call.\n\nMOCK CALLS ARE HOW YOU GET BETTER, and they must be recorded or you learn nothing. Have someone play a difficult customer, record it, and listen back for pace, interruptions, filler and the moment the customer stopped being angry - or did not.\n\nWHERE THE SCRIPT IS NOT NEGOTIABLE: legal wording, disclosures, verification questions, and anything about refunds or liability. Know which parts are fixed and say those exactly.\n\nVERIFICATION IS NOT OPTIONAL even when the customer is angry about it. Being firm and pleasant about identity checks protects them, and an agent who skips verification under pressure is the vulnerability a fraudster is looking for.\n\nADDITION BEYOND THE VIDEO - making this sound natural across a cultural gap, which is the real difficulty. FOREIGN SUPPORT SCRIPTS ARE WRITTEN IN A REGISTER THAT IS NOT YOURS, and delivering it word for word is exactly what makes it sound recited - so keep the structure and the fixed wording and let the rest be your own natural English. Watch two habits that read differently abroad: heavy formality can sound distant rather than respectful, and softening a no too much can leave a customer thinking they were promised something. Second, PRACTISE WITH SOMEONE WHO WILL BE GENUINELY DIFFICULT rather than a friend who is kind, and practise in the environment you will actually work in, at the hour you will actually work. An agent who has only rehearsed at midday is not ready for a two in the morning call.",
+   "practice": "Take one company script and mark which lines are legally fixed and which are yours to reword. Rewrite the rest in your own natural English. Then record three mock calls with someone genuinely difficult, at the hour you would really be working, and listen back for pace, filler and the moment the anger turned.",
+   "quiz": [
+    {
+     "question": "What makes empathy language work?",
+     "options": [
+      "Naming the specific situation, which proves you listened",
+      "Using the recommended phrase early",
+      "Apologising more than once",
+      "Speaking more slowly"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Which parts of a script must be said exactly?",
+     "options": [
+      "Legal wording, disclosures, verification questions and anything about refunds or liability",
+      "The greeting and the close",
+      "The empathy phrases",
+      "The hold message"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "0d465269-6159-4e12-989c-81a82cc76023",
+   "title": "20 Places to Find Remote Customer Service Jobs Online",
+   "objectives": [
+    "Search where roles open to your region are actually posted",
+    "Filter out the listings that will not hire you",
+    "Apply at a rate that produces results"
+   ],
+   "notes": "The listings exist in volume. The difficulty is that most of them will not hire someone in your country, and working that out after applying wastes months.\n\nWHERE TO LOOK: remote job boards, the careers pages of companies that are remote by design, support-specific boards, outsourcing firms hiring for foreign clients, freelance platforms for part-time overflow work, and local BPO companies, which are a real and underrated route.\n\nTHE FILTER THAT SAVES THE MOST TIME: read the location line before anything else. Many remote roles mean remote within one country, for tax and legal reasons. Look for roles stating remote worldwide, remote EMEA, or naming Africa or Kenya. Where it is ambiguous, ask in one short message before investing an hour.\n\nSET UP ALERTS rather than browsing. Good support roles fill quickly, and applying on the first day materially changes your odds.\n\nWHAT MAKES A LISTING WORTH APPLYING TO: a stated salary or range, a clear description of the product, named hours, and a company you can find independently. Vagueness on any of those is usually vagueness in the job.\n\nAPPLY IN VOLUME BUT NOT IDENTICALLY. Twenty tailored applications beat two hundred copies. Tailoring here means two sentences: why this company and what hours you can work in their time zone.\n\nWATCH FOR SCAMS, which are common in this category: any request for payment for training, equipment or a background check; an interview conducted entirely by text message; an offer with no video call; and anyone asking for your bank or M-Pesa PIN. Legitimate employers pay you, not the reverse.\n\nADDITION BEYOND THE VIDEO - the routes that actually work from Kenya. LOCAL BPO AND OUTSOURCING FIRMS hiring in Nairobi and other towns for foreign clients are the most reliable first job: they train you, the equipment and power problem is theirs, and a year there makes you employable directly. Do not skip them because they pay less than a foreign contract you have not been offered. Second, EMPLOYER-OF-RECORD PLATFORMS are increasingly how foreign companies hire here legally, so roles mentioning them are worth prioritising. Third, be specific about TIME ZONE AVAILABILITY in the application, because it is one of the first things filtered on and stating it plainly moves you up the pile. And keep a simple record of every application - where, when, and the outcome - because after forty applications it tells you which route is working, which nobody tracks and everybody guesses at.",
+   "practice": "Set up alerts on five boards with the filters that matter, and apply to twenty roles, checking the location line first and tailoring two sentences each. Apply to three local BPO firms in the same week. Keep a record of every application and its outcome, and after two weeks work out which route is producing replies.",
+   "quiz": [
+    {
+     "question": "What should you read first in a remote listing?",
+     "options": [
+      "The location line, since many remote roles mean remote within one country",
+      "The salary",
+      "The required experience",
+      "The company description"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Which is the most reliable first support job from here?",
+     "options": [
+      "A local BPO or outsourcing firm, which trains you and owns the equipment and power problem",
+      "A foreign direct contract",
+      "A freelance platform",
+      "An unpaid internship"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "06ffa8c7-eb86-42f4-8a49-cdb5ea5e9527",
+   "title": "Customer Service Interview Questions & Answers (How to Pass)",
+   "objectives": [
+    "Answer the standard questions with real situations",
+    "Handle the questions designed to find out how you think",
+    "Ask questions that show judgement"
+   ],
+   "notes": "Support interviews are predictable, which means they are preparable. They are testing three things: whether you stay calm, whether you can be trusted without supervision, and whether you communicate clearly.\n\nTHE QUESTIONS YOU WILL BE ASKED, with a real example prepared for each:\nTELL ME ABOUT A DIFFICULT CUSTOMER. Use the shape: the situation, what you did, what happened. Choose one that ended reasonably, and do not make yourself the hero of a story where the customer was simply wrong.\nWHAT DO YOU DO WHEN YOU DO NOT KNOW THE ANSWER. The correct answer is that you say so, find out, and come back when you said you would. Never that you guess.\nTELL ME ABOUT A MISTAKE. They want to see that you noticed it, fixed it and said something. A candidate who cannot name a mistake is a candidate who hides them.\nHOW DO YOU ORGANISE YOURSELF WITHOUT A SUPERVISOR. This is the real remote-work question.\nWHY SUPPORT, and why this company. Have an actual reason for both.\n\nTHE SITUATIONAL ONES: a customer wants a refund policy does not allow; a customer is abusive; you realise a colleague gave wrong information. They are watching your reasoning, not looking for one right answer, so think aloud.\n\nASK GOOD QUESTIONS AT THE END, and make them real: which metric matters most, what training looks like in week one, what the shift pattern actually is, and why the last person left. Those mark a candidate who has done the work.\n\nADDITION BEYOND THE VIDEO - handling the questions a remote employer hiring across borders will certainly ask, and having the answer ready is a genuine edge. WHAT IS YOUR INTERNET AND POWER SETUP - answer with specifics: the connection, the backup SIM on a different network, the backup power, and what you do during an outage. WHAT IS YOUR WORKING SPACE - describe an actual room. WHAT HOURS CAN YOU WORK IN OUR TIME ZONE - state it in their time zone, having done the arithmetic, and commit only to what you can sustain. Second, ON THE VIDEO CALL ITSELF, the setup is being assessed as much as the answers: headset, good light, plain quiet background, and a test run on the connection you will actually use. Third, ASK HOW YOU WILL BE PAID AND ENGAGED - contractor or employee, which route, who carries the fees - because it is a normal professional question and the answer tells you what kind of employer this is.",
+   "practice": "Prepare a real two-minute answer for each of the five standard questions and talk through two situational ones aloud, reasoning as you go. Write your setup answer with specifics and your availability in the employer's time zone. Then do a full rehearsal on video with your real equipment and watch it back.",
+   "quiz": [
+    {
+     "question": "What is the correct answer to not knowing something?",
+     "options": [
+      "Say so, find out, and come back when you said you would",
+      "Give your best guess confidently",
+      "Transfer the customer immediately",
+      "Check with a colleague while the customer waits in silence"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What does a candidate who cannot name a mistake signal?",
+     "options": [
+      "That they hide mistakes",
+      "That they are inexperienced",
+      "That they are overqualified",
+      "That they were poorly managed"
+     ],
+     "correct_index": 0
+    }
+   ]
+  }
+ ]
+}

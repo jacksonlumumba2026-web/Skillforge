@@ -718,7 +718,7 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 186. Twenty-one courses are now fully
+      **Bare-lesson count: 438 → 174. Twenty-two courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
@@ -728,8 +728,9 @@ custom authorization layer bolted on top.
       (17), `instagram-tiktok-growth` (12), `email-marketing` (16),
       `excel-spreadsheets-for-work` (17), `project-management-tools`
       (16), `ui-ux-design-figma` (16), `bookkeeping-quickbooks` (16),
-      `transcription-translation-freelancing` (12) and
-      `customer-service-virtual-call-center` (12).**
+      `transcription-translation-freelancing` (12),
+      `customer-service-virtual-call-center` (12) and
+      `data-analysis-visualization` (16).**
 
       **Only one enrolled course still carries bare lessons** —
       `google-workspace-productivity`, held back deliberately until the
@@ -1369,8 +1370,50 @@ custom authorization layer bolted on top.
       `0129` specifies. That is the second such slip, both caught the
       same way.
 
+      `data-analysis-visualization` was twenty-second and is complete at
+      16 of 16 (`0132`, `0133`). Modules 3 and 4 were already written —
+      what dirty data looks like, cleaning it, choosing the right chart,
+      and how charts mislead — so the tool lessons build on them.
+
+      The course makes the tool decision honestly rather than following
+      the videos. **Power BI Desktop is free but runs only on Windows,
+      and sharing a report properly needs a paid licence per viewer** in
+      foreign currency — which many small clients here will not sustain.
+      Learn it for employability, because Kenyan job adverts name it;
+      use **Looker Studio for the work you will actually be paid for
+      this year**, since it is free, runs in a browser on any machine,
+      and costs nothing to share. The four stages transfer completely,
+      so nothing is wasted. The Power BI project lesson pushes that
+      further: settle at quoting stage what viewing will cost the
+      client, and if the honest answer is that the owner reads it on a
+      phone once a week, a one-page PDF is the deliverable and the
+      Power BI file is your internal tool.
+
+      The pandas lesson removes the hardware barrier that stops most
+      people at that point: **use a free browser notebook rather than
+      installing Python**, which runs on a modest or borrowed machine.
+      And the data described throughout is the data people here are
+      actually handed — M-Pesa and bank exports with amounts stored as
+      text, survey exports from field data tools with unusable column
+      names, place names spelt four ways — with the warning that a
+      foreign date locale silently misreads every date in the set.
+
+      The freelance lesson names where the demand really is, which is
+      not where most people look: **NGOs and development programmes with
+      monitoring and evaluation obligations** are the largest and most
+      reliable source of data work in this market, alongside SACCOs,
+      county offices, health facilities and agribusinesses. The first
+      deliverable that convinces anyone is a clean answer to one
+      question they have been arguing about, not a dashboard.
+
+      Two safeguards run through it: reconcile one number by hand before
+      showing any report, because a report wrong once is never trusted
+      again; and aggregate before publishing anything that could
+      identify individuals, never putting personal data in a public
+      portfolio repository.
+
       Order of attack for the rest: the remaining unenrolled twelves —
-      `data-analysis-visualization`, `podcasting-voice-over`,
+      `podcasting-voice-over`,
       `resume-writing-linkedin-personal-branding`,
       `youtube-channel-growth` (`mobile-photography-content-creation`
       and `python-programming-for-beginners` are held back alongside

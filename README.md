@@ -718,7 +718,7 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 198. Twenty courses are now fully
+      **Bare-lesson count: 438 → 186. Twenty-one courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
@@ -727,8 +727,9 @@ custom authorization layer bolted on top.
       `ecommerce-online-selling` (17), `seo-search-engine-optimization`
       (17), `instagram-tiktok-growth` (12), `email-marketing` (16),
       `excel-spreadsheets-for-work` (17), `project-management-tools`
-      (16), `ui-ux-design-figma` (16), `bookkeeping-quickbooks` (16) and
-      `transcription-translation-freelancing` (12).**
+      (16), `ui-ux-design-figma` (16), `bookkeeping-quickbooks` (16),
+      `transcription-translation-freelancing` (12) and
+      `customer-service-virtual-call-center` (12).**
 
       **Only one enrolled course still carries bare lessons** —
       `google-workspace-productivity`, held back deliberately until the
@@ -1324,8 +1325,51 @@ custom authorization layer bolted on top.
       translate the Swahili inline, or both — because deciding it
       silently changes what the transcript is.
 
+      `customer-service-virtual-call-center` was twenty-first and is
+      complete at 12 of 12 (`0129`, `0130`) — wholly bare, no module
+      previously written.
+
+      The course is built around the requirements no international
+      support video mentions and that actually decide whether someone
+      here keeps the job: **your connection and power are the job**. An
+      agent who drops mid-call loses the contract, so a backup SIM on a
+      different network and enough power to finish a shift through an
+      outage are treated as prerequisites, stated in the application,
+      and named as what makes a Kenyan applicant stand out rather than
+      what disqualifies them. A genuinely quiet room, and a headset with
+      a real microphone, are the other two.
+
+      On accent it takes a clear position: **clear, paced,
+      well-pronounced English matters and accent neutralisation largely
+      does not**. Being hard to follow is the only real problem, and a
+      caller who turns hostile about your accent or your country is
+      being abusive, not giving feedback — the same policy applies as to
+      any other abuse.
+
+      It also routes people honestly. **Chat and email support are often
+      the better entry from here**, because they remove the two things
+      that most often cost people a phone role — a noisy environment and
+      accent anxiety — and suit anyone whose written English and typing
+      are strong. And it compares local BPO work with direct foreign
+      contracts without pretending one is obviously better: a Nairobi
+      contact centre pays less and gives you training, colleagues,
+      employment terms and a building with power, while a foreign
+      contract usually pays more and gives you none of that, usually as
+      a contractor with tax and statutory contributions your own.
+
+      The de-escalation lesson rejects its own title — you are not
+      making anyone back down — and adds the part that decides whether
+      someone lasts: take the thirty seconds between calls, keep a
+      record when a call is abusive, and treat exhaustion from absorbing
+      other people's anger as real rather than as a personal failing.
+
+      `0131` is a repair. One knowledge-check question in `0129` was
+      applied with its quoted phrase paraphrased away in transcription;
+      the fingerprint check caught it and `0131` restores the wording
+      `0129` specifies. That is the second such slip, both caught the
+      same way.
+
       Order of attack for the rest: the remaining unenrolled twelves —
-      `customer-service-virtual-call-center`,
       `data-analysis-visualization`, `podcasting-voice-over`,
       `resume-writing-linkedin-personal-branding`,
       `youtube-channel-growth` (`mobile-photography-content-creation`

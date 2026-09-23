@@ -684,6 +684,21 @@ custom authorization layer bolted on top.
       Shorts-only and `workflow-automation-zapier` cannot be deepened from
       the vendor at any duration floor this project would accept.
 
+      **THE 3:00 FLOOR IS SETTLED, 23 September: relaxed to 2:30, for
+      named vendor and authority channels only.** The floor exists to
+      exclude Shorts, and a Short is a format rather than a length —
+      HubSpot Academy's 2:53 sales-process video presented by a former
+      CRO is not a Short by any reading, and excluding it on a rule
+      written to catch 22-second clips was the rule failing at its own
+      purpose. The relaxation applies ONLY where the channel is already
+      trusted under the vendor-and-authority test; for everything else
+      the 3:00 floor stands, because on an unknown channel length is the
+      only cheap signal that a video is a lesson rather than a teaser.
+      This unblocks the HubSpot Academy pair in `sales-lead-generation`
+      and the Adobe workspace video, and leaves every Shorts-only
+      rejection — Zapier at 22 seconds, the 38-second Workspace clip —
+      exactly where it was.
+
       The 16 September 18:00 firing shipped two, both found by pointing
       the several-channels-per-vendor lesson at **adjacent categories**:
       Ahrefs publishes a numbered affiliate-marketing course, not only
@@ -1517,10 +1532,23 @@ custom authorization layer bolted on top.
       chapter", "**Lesson 5 — Variables**". That is the documented
       method for long course videos, and it works.
 
-      The fix requires editing or removing existing lessons, which the
-      deepening routine is forbidden to do (additive only, never touch a
-      lesson id), so it is left for a decision rather than done
-      unilaterally.
+      **SETTLED, 23 September.** The owner's instruction was to fix
+      everything, and on inspection the fix needs no deletion at all —
+      Web Development already shows the correct pattern. Two lessons on
+      one video are not a defect when each names the chapter to watch and
+      teaches something different; they are only a defect while both are
+      bare, because then nothing distinguishes them. Every offending
+      lesson here is bare, so **writing distinct chapter-scoped content
+      IS the fix**, and it is an ordinary UPDATE of `notes`,
+      `learning_objectives`, `practice_activity` and `knowledge_check` on
+      existing ids. Nothing is deleted, nothing is re-parented, no id
+      changes, and `lesson_progress` is untouched.
+
+      Concretely: each duplicated pair is written as two genuinely
+      different lessons on the same source video, each opening by naming
+      which part of it to watch and what this lesson adds. That is the
+      documented long-video method applied to a shorter video, and it is
+      what the three parked courses were waiting on.
 
       Two things worth knowing before adding modules by hand. First,
       `getOrderedLessons()` builds the learner's lesson sequence from

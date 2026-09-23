@@ -718,7 +718,7 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 174. Twenty-two courses are now fully
+      **Bare-lesson count: 438 → 162. Twenty-three courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
@@ -729,8 +729,9 @@ custom authorization layer bolted on top.
       `excel-spreadsheets-for-work` (17), `project-management-tools`
       (16), `ui-ux-design-figma` (16), `bookkeeping-quickbooks` (16),
       `transcription-translation-freelancing` (12),
-      `customer-service-virtual-call-center` (12) and
-      `data-analysis-visualization` (16).**
+      `customer-service-virtual-call-center` (12),
+      `data-analysis-visualization` (16) and
+      `resume-writing-linkedin-personal-branding` (16).**
 
       **Only one enrolled course still carries bare lessons** —
       `google-workspace-productivity`, held back deliberately until the
@@ -1412,10 +1413,56 @@ custom authorization layer bolted on top.
       identify individuals, never putting personal data in a public
       portfolio repository.
 
+      `resume-writing-linkedin-personal-branding` was twenty-third and is
+      complete at 16 of 16 (`0134`, `0135`). Modules 3 and 4 were already
+      written — the cover letter, interview preparation, the common
+      questions and STAR.
+
+      The most useful thing in it is a distinction no international
+      careers video makes: **the Kenyan CV and the international resume
+      are different documents**, and sending the wrong one hurts either
+      way. A local CV runs to two pages, names referees with contacts,
+      and often carries personal details and a photograph, because that
+      is what many employers here expect. An international or remote
+      resume is one page with none of those. The course teaches both and
+      tells learners to keep both versions — and the CV-writing service
+      lesson makes "are you applying locally or abroad?" the first
+      question, because it is what makes a writer visibly better than
+      someone charging half.
+
+      It is equally careful about ATS advice, which is written for a
+      market that is not entirely ours: **an applicant tracking system
+      is almost certainly in use for international, corporate and large
+      NGO roles, and often is not** for local jobs applied to by email,
+      a county portal, or a printed copy. The same clean single-column
+      document serves both, so the fix is the same either way.
+
+      On LinkedIn it says where the effort actually pays: genuinely for
+      remote, international, professional and technical roles; much less
+      for local informal hiring, trades and small businesses that hire
+      by referral and WhatsApp. The honest consequence is stated
+      plainly — **inbound recruiter interest is much thinner in this
+      market than these videos imply**, so a good profile makes you
+      findable and credible when someone checks you, and the
+      applications you send and the people who know you remain the main
+      channel.
+
+      Two protections run through it. **A legitimate employer never asks
+      you to pay** for a job, a placement, training or a medical, and an
+      offer with no interview and a request for money is a fraud every
+      time. And scanned certificates and identification are valuable to
+      a fraudster, so they go only to an employer you have verified —
+      never to an advert that arrived by WhatsApp from someone you
+      cannot identify.
+
+      This was the first course applied by echoing the generated
+      migration file verbatim rather than retyping from the plan, after
+      three transcription slips caught by the fingerprint check. Zero
+      mismatches, on a set carrying six apostrophes including several
+      inside quiz options — the exact construction that failed before.
+
       Order of attack for the rest: the remaining unenrolled twelves —
-      `podcasting-voice-over`,
-      `resume-writing-linkedin-personal-branding`,
-      `youtube-channel-growth` (`mobile-photography-content-creation`
+      `podcasting-voice-over`, `youtube-channel-growth` (`mobile-photography-content-creation`
       and `python-programming-for-beginners` are held back alongside
       `google-workspace-productivity` until the duplicate-lesson
       question below is settled) — then the eighteen courses sitting at

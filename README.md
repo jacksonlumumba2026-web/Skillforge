@@ -733,7 +733,7 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 150. Twenty-four courses are now fully
+      **Bare-lesson count: 438 → 138. Twenty-five courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
@@ -746,8 +746,9 @@ custom authorization layer bolted on top.
       `transcription-translation-freelancing` (12),
       `customer-service-virtual-call-center` (12),
       `data-analysis-visualization` (16),
-      `resume-writing-linkedin-personal-branding` (16) and
-      `mobile-photography-content-creation` (12).**
+      `resume-writing-linkedin-personal-branding` (16),
+      `mobile-photography-content-creation` (12) and
+      `python-programming-for-beginners` (16).**
 
       **Only one enrolled course still carries bare lessons** —
       `google-workspace-productivity`, held back deliberately until the
@@ -1477,12 +1478,26 @@ custom authorization layer bolted on top.
       mismatches, on a set carrying six apostrophes including several
       inside quiz options — the exact construction that failed before.
 
-      Order of attack for the rest: the remaining unenrolled twelves —
-      `podcasting-voice-over`, `youtube-channel-growth` (`mobile-photography-content-creation`
-      and `python-programming-for-beginners` are held back alongside
-      `google-workspace-productivity` until the duplicate-lesson
-      question below is settled) — then the eighteen courses sitting at
-      six bare lessons each.
+      Order of attack for the rest: `google-workspace-productivity` —
+      the last course held back by the duplicate-lesson question, now
+      settled — then the remaining unenrolled twelves,
+      `podcasting-voice-over` and `youtube-channel-growth`, then the
+      eighteen courses sitting at six bare lessons each.
+
+      **Python closed the duplicate-lesson question in practice.** It
+      carried both of the genuine duplicate pairs: `v-pUon2F5L8` in
+      modules 6 and 7, and `kFhOLYaosDc` in modules 6 and 8. Neither was
+      deleted. Each pair is now two different lessons on one video, each
+      opening by naming which part to watch and what it adds. Module 6
+      reads the automation projects for the PATTERN that makes a task
+      automatable — the three tests — while module 7 returns to the same
+      video and BUILDS one end to end, with the habits that matter on real
+      files: work on copies, be safe to run twice, print what it will do
+      before doing it. Module 6 asks whether Python freelancing is
+      realistic and what the work actually consists of; module 8 takes the
+      finished script from module 7 and turns it into a proposal, a price
+      and a paid first job. That is the documented long-video method
+      applied to a short video, and it worked.
 
       This also resolves something the sourcing work could not. Freelancing
       was dropped twice for having no authoritative video on pricing,

@@ -771,6 +771,36 @@ produces exactly the reported symptom, it is not proven to be the one
 they hit. The iOS version, or the console line from Settings > Safari >
 Advanced > Web Inspector, would close that gap.
 
+### YouTube Channel Growth — DRAFTED, NOT APPLIED
+
+`youtube-channel-growth` still has all twelve of its bare lessons. The
+content was written and the SQL generated, but applying it was DECLINED at
+the tool prompt and was not retried. The first migration was the one
+refused and the second was never attempted, so PRODUCTION IS UNTOUCHED for
+this course — no partial application to clean up.
+
+The drafted content is kept as
+`scripts/curriculum/plans/backfill-youtube-{1,2}.json`. The generated .sql
+files were deleted deliberately rather than committed, so that nothing in
+`supabase/migrations/` implies a database state that does not exist. To
+pick this up, regenerate and apply:
+
+    python3 scripts/curriculum/build-backfill-sql.py \
+      scripts/curriculum/plans/backfill-youtube-1.json \
+      supabase/migrations/0144_backfill_youtube_part1.sql
+
+The twelve cover modules 1, 2, 5, 6, 7 and 8 (modules 3 and 4 were already
+written). Two pairs needed deliberate separation: module 3 teaches where
+the analytics screens ARE while module 6 teaches what to CHANGE because of
+them; module 5 explains how search ranking works while module 6 teaches the
+keyword-research process. The beyond-the-video additions are the honest
+income picture — what YouTube pays per thousand views depends heavily on
+where viewers are, so for a mainly Kenyan audience a local sponsor or your
+own offer beats AdSense — plus export at 1080p not 4K to cut upload data,
+DaVinci Resolve being too heavy for modest machines with the proxy-media
+fix and the phone-editor fallback, and freelance editing as the income that
+does not depend on your own channel growing.
+
 ### Backfilling the 438 bare lessons — started 17 September
 
       **Bare-lesson count: 438 → 114. Twenty-seven courses are now fully

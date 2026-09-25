@@ -1,0 +1,203 @@
+{
+ "course": "youtube-channel-growth",
+ "lessons": [
+  {
+   "id": "b22e0072-7ce4-48c5-bda9-1a8b56dc14da",
+   "title": "How to Create a YouTube Channel for Beginners (Step-by-Step)",
+   "objectives": [
+    "Set a channel up properly the first time",
+    "Decide what the channel is actually for before you film",
+    "Get the account safe and the basics right"
+   ],
+   "notes": "SET IT UP ONCE, PROPERLY. Renaming and re-branding later is possible but it costs you the small recognition you have built, so spend an hour on this rather than ten minutes.\n\nTHE CHANNEL NAME should be searchable and sayable. People will type it and tell friends about it out loud. Avoid clever spellings, numbers and underscores, all of which get typed wrong.\n\nA BRAND ACCOUNT, NOT YOUR PERSONAL ONE, if there is any chance somebody else will ever help you run it. A brand account lets you add managers without handing over your personal Google password, and it lets ownership move later. Setting this up now is far easier than migrating afterwards.\n\nTHE ONE-SENTENCE DESCRIPTION IS THE REAL WORK: who this channel is for and what they get. Write it before you film anything. A channel that cannot finish the sentence - this channel helps ... do ... - is the commonest reason a channel stalls at forty subscribers, because nobody can tell whether to subscribe.\n\nTHE BASICS THAT ACTUALLY MATTER: a clear profile picture that is legible as a small circle on a phone, a banner whose text sits in the middle safe area so it is not cropped, and the About section filled in with the words people would search.\n\nADDITION BEYOND THE VIDEO - the things a beginner here should settle on day one.\n\nTURN ON TWO-FACTOR AUTHENTICATION IMMEDIATELY. Channels get stolen, and a channel with an audience is a target. Recovering a hijacked channel is slow and often unsuccessful. Fifteen minutes now.\n\nDECIDE THE LANGUAGE QUESTION DELIBERATELY, because it decides your ceiling and your income. English reaches the widest audience and the most competition. Swahili or Sheng reaches a smaller audience with far less competition and much stronger loyalty - and for a local business wanting to advertise, that audience is worth more per viewer than a scattered international one. There is no universally right answer, but drifting between languages is the wrong one. Pick, and say so in your description.\n\nBE HONEST WITH YOURSELF ABOUT UPLOAD COST. Every video you publish costs data to upload, and that is a real running cost here. Plan to upload on wifi, and see the editing lessons in module 7 for export settings that cut the size substantially without a viewer noticing.\n\nAND KNOW THE ONE NUMBER THAT SHAPES EVERYTHING: your first thirty videos are training, not a business. Almost nobody's early videos do well. The people who succeed are the ones still publishing at video forty.",
+   "practice": "Set up the channel with a brand account, two-factor authentication switched on, a profile picture that is legible as a small circle on a phone, and a filled-in About section. Then write the one sentence - this channel helps WHO do WHAT - and decide your language. Put both in writing where you will see them.",
+   "quiz": [
+    {
+     "question": "Why use a brand account rather than a personal Google account?",
+     "options": [
+      "It lets you add managers without sharing your password, and ownership can move later",
+      "It removes adverts from your videos",
+      "It is required before you can monetise",
+      "It gives you more upload storage"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What should be written before you film anything?",
+     "options": [
+      "One sentence saying who the channel is for and what they get",
+      "A full script for the first ten videos",
+      "The channel's monetisation plan",
+      "A list of keywords to target"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "01c0cf28-b31c-48e2-9d9e-57bf87c1923a",
+   "title": "The YouTube Algorithm Explained",
+   "objectives": [
+    "Understand what the recommendation system is actually optimising for",
+    "Stop blaming the algorithm for things it does not do",
+    "Know which of your own numbers you can move"
+   ],
+   "notes": "THE ALGORITHM IS NOT PROMOTING YOU OR PUNISHING YOU. It is matching VIEWERS to VIDEOS, and it is trying to find, for each individual person, the next thing they are most likely to watch and enjoy. It is not judging your effort, your subscriber count or your deservingness. Getting this straight removes most of the anguish beginners carry.\n\nTHE TWO NUMBERS IT WATCHES MOST: CLICK-THROUGH RATE, which is the share of people who saw your thumbnail and title and chose to click, and RETENTION, which is how much of the video they then actually watched. Broadly, the thumbnail and title earn the click; the video earns the watch time. They are separate skills and they fail separately.\n\nA VIDEO IS SHOWN TO A SMALL GROUP FIRST. If those people click and stay, it gets shown to a larger one. This is why a video can do nothing for a week and then move - and why the first hours are not a verdict.\n\nSUBSCRIBERS MATTER LESS THAN BEGINNERS THINK. A subscriber is a hint, not a promise of delivery. Plenty of channels with modest subscriber counts get far more views than larger ones, because their videos earn clicks and watch time.\n\nCLICKBAIT THAT DOES NOT DELIVER IS SELF-DEFEATING, mathematically. It raises the click rate and then destroys retention, which is a worse signal overall than never having been clicked. Promise something true and then deliver it fast.\n\nSESSION TIME MATTERS TOO: YouTube favours videos that keep somebody on YouTube afterwards, which is why ending with a genuine reason to watch your next video is worth doing.\n\nADDITION BEYOND THE VIDEO - what this means for a channel built here.\n\nWHERE YOUR VIEWERS ARE MATTERS AS MUCH AS HOW MANY, for income. Advertising pays vastly more for some audiences than others, and a channel watched mainly in Kenya earns a small fraction per thousand views of what the same channel would earn watched mainly in the United States. That is not a reason to chase a foreign audience you cannot serve; it IS a reason to read module 8 before planning your income around advert revenue.\n\nTHE ALGORITHM CANNOT FIX A TOPIC NOBODY SEARCHES FOR OR CLICKS ON. If nothing is working, the answer is almost never posting more of the same. It is a different topic, a different title, or a different thumbnail.\n\nNEVER BUY VIEWS OR SUBSCRIBERS. Bought traffic does not watch, which wrecks exactly the two numbers the system uses, and it risks the channel itself. Every shilling spent there actively makes your channel worse.",
+   "practice": "Take three videos from a channel in your topic - one that clearly did well and two that did not. For each, write down what the thumbnail and title promised, and whether the first fifteen seconds delivered it. Then write which of the two numbers, click-through or retention, you think failed on the weaker ones.",
+   "quiz": [
+    {
+     "question": "What is the recommendation system actually trying to do?",
+     "options": [
+      "Match each individual viewer to the next video they are most likely to watch and enjoy",
+      "Reward channels that upload most often",
+      "Promote videos from larger channels first",
+      "Rank videos by how many subscribers the creator has"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why is clickbait that does not deliver self-defeating?",
+     "options": [
+      "It raises clicks but destroys retention, which is a worse overall signal",
+      "YouTube manually reviews and removes it",
+      "It stops the video appearing in search",
+      "It has no effect either way"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "8ffaf430-8b68-4d9f-9884-913e08ba5506",
+   "title": "How to Make Thumbnails That Get Views",
+   "objectives": [
+    "Design a thumbnail that works at the size people actually see it",
+    "Make the thumbnail and title do different jobs",
+    "Test rather than guess"
+   ],
+   "notes": "THE THUMBNAIL IS THE MOST IMPORTANT THING YOU MAKE, and most beginners spend two hours filming and four minutes on it. Reverse that ratio and your channel changes.\n\nDESIGN IT AT THE SIZE IT IS SEEN. On a phone, a thumbnail is roughly the size of a postage stamp. Make it, then shrink it on screen until it is that small and look again. If you cannot tell what it is at that size, it has failed, and no amount of detail you added will be seen.\n\nTHE RULES THAT FOLLOW FROM THAT: ONE clear subject. THREE OR FOUR WORDS at most, in a heavy font, and only if the words add something the image cannot. HIGH CONTRAST between the subject and the background, because a thumbnail that blends into a pale feed disappears.\n\nA FACE WITH A CLEAR EXPRESSION works, genuinely and consistently, because people look at faces first. The expression must match the video - surprise, concentration, dismay - and not be a random grin.\n\nTHE THUMBNAIL AND THE TITLE MUST NOT SAY THE SAME THING. Together they are one sentence. If the title says what it is, the thumbnail should show the stake or the outcome. Repeating the title in the thumbnail wastes half your space.\n\nLOOK AT WHAT IS ALREADY THERE. Search your topic and look at the row of competing thumbnails. Yours has to stand out FROM THOSE, which sometimes means going brighter and sometimes means going plain when everything else is shouting.\n\nADDITION BEYOND THE VIDEO - making this work on the equipment you have.\n\nFREE TOOLS ARE ENOUGH. A free design tool in a browser, or a phone app, makes perfectly competitive thumbnails. Nobody can tell what you designed it in.\n\nTEST ON A CHEAP PHONE IN DAYLIGHT, which is how a great many of your viewers will see it - a dim screen outdoors flattens contrast badly, and a thumbnail that looked rich on your laptop can turn to mud. This one check catches more failures than any design rule.\n\nBUILD A RECOGNISABLE LOOK, not an identical template: a consistent colour, a consistent font, a consistent corner where your face sits. Regular viewers should recognise your video in a crowded feed before they read anything.\n\nKEEP THE FILE SMALL and use the image size YouTube asks for, so it stays sharp rather than being re-compressed into blur.\n\nAND SAVE YOUR THUMBNAILS. When you learn what works, you will want to go back and replace the early ones - which is allowed, effective, and something almost nobody does.",
+   "practice": "Make three different thumbnails for one video you plan to publish. Shrink each to postage-stamp size on screen and look at them. Then open them on a cheap phone outdoors in daylight. Pick the one that still reads, and write one sentence saying what it promises that the title does not.",
+   "quiz": [
+    {
+     "question": "At what size should a thumbnail be judged?",
+     "options": [
+      "Shrunk to roughly postage-stamp size, as it appears on a phone",
+      "Full screen on a laptop, where the detail is visible",
+      "At the exact pixel size YouTube recommends for upload",
+      "Printed out"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "How should the thumbnail relate to the title?",
+     "options": [
+      "They should say different things and work together as one sentence",
+      "The thumbnail should repeat the title so the message is clear",
+      "The thumbnail should contain the full title text",
+      "They are judged separately and need no relationship"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "3c24437a-f385-470d-9ae6-3462364f5090",
+   "title": "How to Write Clickable Titles for Every Video",
+   "objectives": [
+    "Write a title that earns a click without lying",
+    "Use the words people actually type",
+    "Write several and choose, rather than settling for the first"
+   ],
+   "notes": "A TITLE HAS TWO JOBS AT ONCE, and they pull in different directions. It must contain the words somebody would SEARCH, and it must give somebody scrolling a REASON to stop. A title that only does the first gets found and not clicked; one that only does the second gets clicked and never found.\n\nFRONT-LOAD THE IMPORTANT WORDS. Titles are cut off on phones, often around fifty or sixty characters, and the end is what disappears. Put the subject and the promise first and the decoration last, if at all.\n\nBE SPECIFIC RATHER THAN CLEVER. Specific numbers, specific outcomes, specific problems. How I cut my data bill by half beats Data saving tips, every time, because it makes a concrete promise.\n\nPROMISE SOMETHING TRUE. A title is a contract with the viewer, and module 1 covered why breaking it costs you more than the click was worth. Do not write a promise the video does not keep in the first thirty seconds.\n\nWRITE FIVE AND PICK ONE. The first title you think of is almost never the best, and this step takes three minutes. Read them aloud - a title that is awkward to say is usually awkward to read.\n\nNO ALL-CAPITALS SHOUTING and no pile of emojis. It reads as desperate and it does not help you rank.\n\nADDITION BEYOND THE VIDEO - writing for the audience you actually have.\n\nMATCH THE WORDS YOUR VIEWERS TYPE, NOT THE WORDS THE INDUSTRY USES. Somebody here searches for how to do something using the words they would actually say - including local terms, local prices in shillings, and local brand names. A title using those words has far less competition than the international phrasing and reaches exactly the person you can help.\n\nNAME THE PLACE WHEN IT IS RELEVANT. If your video is genuinely about doing something in Kenya, saying so is not a limitation, it is the whole reason somebody here will pick yours over an American video that does not apply to them.\n\nYOU CAN CHANGE A TITLE AFTER PUBLISHING, and you should. If a video gets shown and not clicked, the title and thumbnail are the suspects - change one, not both, so you learn which did it. Module 6 covers reading the numbers that tell you.\n\nWRITE THE TITLE BEFORE YOU FILM. It keeps the video pointed at one promise, and a video that knows what it is promising is much easier to edit.",
+   "practice": "Take one video idea and write five titles for it. Check each one is under about sixty characters with the important words first, and read them aloud. Search your topic on YouTube and note which words the existing titles use, then rewrite your best title using the words a viewer here would actually type.",
+   "quiz": [
+    {
+     "question": "Why front-load the important words in a title?",
+     "options": [
+      "Titles get cut off on phones, and the end is what disappears",
+      "YouTube only indexes the first few words",
+      "It makes the title rank higher in search",
+      "Short titles are required by the platform"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "If a video is shown a lot but rarely clicked, what should you change?",
+     "options": [
+      "The title or the thumbnail - and only one at a time, so you learn which did it",
+      "The content of the video",
+      "The upload schedule",
+      "Nothing - wait for the algorithm to catch up"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "7f80283b-0b62-4c36-aa58-e9ff6a8c71c2",
+   "title": "How YouTube Search Ranking Works",
+   "objectives": [
+    "Understand how search differs from recommendation",
+    "See why search is the realistic route for a small channel",
+    "Make a video findable without stuffing keywords"
+   ],
+   "notes": "SEARCH AND RECOMMENDATION ARE DIFFERENT SYSTEMS, and confusing them is why beginners give contradictory advice. RECOMMENDATION pushes a video at people who were not looking for it. SEARCH answers somebody who typed a question. Module 1 covered recommendation; this is the other one.\n\nSEARCH IS THE BETTER BET FOR A SMALL CHANNEL, and this is the practical point of the lesson. To be recommended you have to beat established channels for attention. To rank in search you only have to be the best answer to a specific question - and there are many specific questions that no good video currently answers. That is a gap you can actually fill in your first year.\n\nWHAT RANKING ACTUALLY USES: whether your title, description and spoken content match what was typed; and then, among matching videos, which ones people click and watch to the end. Relevance gets you considered; performance decides the order.\n\nTHE SPOKEN WORDS COUNT. YouTube transcribes your audio, so SAYING the thing clearly in the video matters. A video about registering a business that never says the phrase out loud is harder to match.\n\nTHE DESCRIPTION: the first two lines are what a viewer sees, so write those for a person. Below that, a real paragraph describing the content in normal sentences. NOT a wall of keywords, which does not work and reads badly.\n\nTAGS BARELY MATTER. Fill a few in and move on; they are a minor signal and beginners waste hours there.\n\nADDITION BEYOND THE VIDEO - where the openings genuinely are.\n\nTHE GAP IS LOCAL AND SPECIFIC. Enormous numbers of questions that people here type have no good video answer, because the international videos answer a different country's version - anything involving local prices, local providers, local procedures, local forms, local exam syllabuses. Being the only decent answer to a question a thousand people a month type is a far better position than being the four hundredth video on a popular international topic.\n\nSEARCH TRAFFIC KEEPS ARRIVING. A recommended video spikes and dies; a video that ranks for a real question brings viewers for years with no further work. For somebody who cannot publish daily, this is the strategy that fits.\n\nANSWER THE QUESTION EARLY, not after four minutes of introduction. Somebody who searched has a specific need and will leave if you make them wait, and leaving early is exactly the signal that pushes you down the results.",
+   "practice": "Write down ten questions people you know have actually asked about your topic, in their own words. Search each on YouTube and note which have no good answer, or only a foreign one that would not apply here. Pick the best gap and draft a title and a first line that answers it in the opening fifteen seconds.",
+   "quiz": [
+    {
+     "question": "Why is search a better route than recommendation for a small channel?",
+     "options": [
+      "You only need to be the best answer to a specific question, not beat big channels for attention",
+      "Search traffic pays more per view",
+      "Recommendation is only available to monetised channels",
+      "Search results ignore watch time"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "How should the video description be written?",
+     "options": [
+      "First two lines for a person, then a real paragraph in normal sentences",
+      "A dense list of every relevant keyword",
+      "A copy of the video title repeated several times",
+      "Left blank, since it is not used for ranking"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "7ae31674-67b7-4faf-aae9-450b3f2a78de",
+   "title": "Live Thumbnail-Design Workshop",
+   "objectives": [
+    "Apply the thumbnail principles by actually building one",
+    "Work through the decisions a designer makes in order",
+    "Build a look you can repeat every week"
+   ],
+   "notes": "MODULE 2 TAUGHT THE PRINCIPLES. THIS IS THE WORKSHOP, so watch it with the design tool open and build alongside, pausing constantly. Watching somebody design without designing teaches you very little; this is the lesson where you should have two windows open.\n\nTHE ORDER THE DECISIONS ARE MADE IN, which is the real thing to take from a workshop: decide the ONE idea the thumbnail communicates, choose the image or take the photograph, cut the subject out from the background, place it off to one side, put a contrasting colour behind, then add three words if and only if they add something. Beginners do these in a jumbled order and fight the result.\n\nCUTTING THE SUBJECT OUT is the technique that separates amateur from professional thumbnails, and free tools now do it in one click. A subject cleanly separated from a solid or blurred background reads instantly at small size; a raw photograph almost never does.\n\nCONTRAST IS THE WHOLE GAME. Light subject on dark ground, or dark on light. If you squint at your thumbnail and the subject merges into the background, nothing else you do will save it.\n\nTEXT: heavy, short, and large enough to read at stamp size. If the words do not fit at that size, use fewer words rather than a smaller font.\n\nADDITION BEYOND THE VIDEO - making it repeatable and local.\n\nBUILD A TEMPLATE AFTER YOUR THIRD ONE. Save the layout, the font, the colours and the position of your face as a reusable file, so each new thumbnail is fifteen minutes rather than ninety. The consistency also makes your videos recognisable in a feed, which is worth more than any individual clever design.\n\nSHOOT YOUR OWN THUMBNAIL PHOTOS DELIBERATELY, in daylight next to a window, after you finish filming, while you are still dressed the same. Three expressions, plain background. That is a two-minute habit that removes the worst part of thumbnail-making forever.\n\nUSE IMAGES YOU ARE ACTUALLY ALLOWED TO USE. Pulling a photograph off a search results page is a copyright problem that can reach your channel. Free stock libraries and your own photographs are the safe routes, and your own photographs usually perform better anyway because they look real.\n\nAND PUT SOMETHING RECOGNISABLY LOCAL IN THE FRAME when the video is for a local audience - a real place, a real receipt, a real shop front. It signals immediately that this video is about here, which is exactly the advantage module 5 said to lean on.",
+   "practice": "Build one thumbnail alongside the workshop, following the decision order: one idea, image, cut out the subject, off-centre placement, contrasting background, then three words only if needed. Then take your own thumbnail photos by a window in three expressions, and save your layout as a reusable template.",
+   "quiz": [
+    {
+     "question": "Which technique most separates amateur from professional thumbnails?",
+     "options": [
+      "Cutting the subject out from its background so it reads instantly at small size",
+      "Adding a drop shadow to the text",
+      "Using the highest possible resolution",
+      "Including the channel logo"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Where should thumbnail images come from?",
+     "options": [
+      "Your own photographs or genuinely free stock - pulling images off search results is a copyright problem",
+      "Any image found through a web search, if credited",
+      "Screenshots of other creators' videos",
+      "Whatever the design tool provides by default"
+     ],
+     "correct_index": 0
+    }
+   ]
+  }
+ ]
+}

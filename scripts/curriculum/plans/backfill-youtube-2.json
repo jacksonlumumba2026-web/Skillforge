@@ -1,0 +1,203 @@
+{
+ "course": "youtube-channel-growth",
+ "lessons": [
+  {
+   "id": "f2c94624-66cd-47d6-a0da-802f4625d339",
+   "title": "How to Use YouTube Analytics to Grow Your Channel",
+   "objectives": [
+    "Turn the numbers into a specific decision about the next video",
+    "Diagnose which of the two failures a weak video had",
+    "Ignore the numbers that do not change what you do"
+   ],
+   "notes": "MODULE 3 SHOWED YOU WHERE THE NUMBERS LIVE. This lesson is about DECIDING something because of them, which is a different skill and the one almost nobody develops. Watching your analytics without changing anything is a hobby.\n\nEVERY WEAK VIDEO FAILED IN ONE OF TWO PLACES, and the numbers tell you which. If IMPRESSIONS were high but the CLICK-THROUGH RATE was low, people saw it and did not want it - that is a title and thumbnail problem. If the click rate was fine but RETENTION fell away, they wanted it and you did not deliver - that is a content problem. The fixes are completely different, and treating one as the other is why people work hard and do not improve.\n\nTHE RETENTION GRAPH IS THE MOST USEFUL SCREEN ON THE WHOLE SITE. Look for the shape, not the average. A CLIFF in the first thirty seconds means your opening is wasting time - go and watch what you actually said there. A steady slide is normal. A sudden drop in the middle means you lost them at a specific moment, and you can go and watch that exact moment and see why. A little BUMP means people rewatched something, which usually means it was the useful bit and should have come sooner.\n\nCOMPARE A VIDEO ONLY WITH YOUR OWN OTHER VIDEOS, at the same age. Comparing a two-day-old video with a two-year-old one, or with somebody else's channel, tells you nothing.\n\nTHE NUMBERS THAT MOSTLY DO NOT CHANGE WHAT YOU DO: total subscribers, total views, and the live count on any given day. They feel important and they are not actionable. Look at them monthly, not hourly.\n\nADDITION BEYOND THE VIDEO - the two screens worth a specific look here.\n\nCHECK YOUR AUDIENCE GEOGRAPHY, because it is the single biggest determinant of what you can earn per view and most beginners never look. A channel watched mainly in Kenya earns a small fraction per thousand views of what the identical channel earns watched mainly in the United States or Britain. That is not an argument for abandoning a local audience - it IS the reason module 8 puts advert revenue last and local sponsorship first. Know your number before you plan your income.\n\nCHECK WHAT DEVICE AND RESOLUTION people watch on. If most of your viewers are on phones at low resolution, then small on-screen text is invisible to them, 4K exports are wasted effort and wasted upload data, and your thumbnails must survive a small dim screen. Let the data decide your export settings rather than habit.\n\nTHEN DO ONE THING. After each video, write a single sentence: because retention fell at forty seconds, the next video starts with the demonstration. One deliberate change per video, tested, beats ten changes at once from which you learn nothing.",
+   "practice": "Open the retention graph for your three most recent videos and describe the shape of each in one sentence. For your weakest video, decide from impressions and click-through rate whether it failed at the click or at the content. Then write one specific change for your next video, and check your audience geography and device report while you are there.",
+   "quiz": [
+    {
+     "question": "High impressions but a low click-through rate means what?",
+     "options": [
+      "People saw it and did not want it - a title and thumbnail problem",
+      "The video content was too long",
+      "YouTube is suppressing the video",
+      "The upload time was wrong"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What does a cliff in the first thirty seconds of the retention graph tell you?",
+     "options": [
+      "The opening is wasting time - go and watch what you actually said there",
+      "The video is too short overall",
+      "The thumbnail was misleading",
+      "Viewers were on slow connections"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "3a7d45d4-fa48-4e3a-98af-f4c47b157a0c",
+   "title": "YouTube SEO Keyword Research Tutorial",
+   "objectives": [
+    "Find real questions people type before you film",
+    "Judge whether you can realistically rank for one",
+    "Build a queue of video ideas you know somebody wants"
+   ],
+   "notes": "MODULE 5 EXPLAINED HOW SEARCH RANKING WORKS. THIS IS THE RESEARCH PROCESS - the thing you do BEFORE filming, so that you are answering a question somebody is actually asking rather than one you assumed.\n\nTHE FREE METHOD THAT COSTS NOTHING AND WORKS: start typing your topic into the YouTube search box and read the suggestions that appear. Those suggestions are real things real people type, ordered by how often. That alone is a keyword tool, and for a beginner it is enough.\n\nDO THE SAME IN A SEARCH ENGINE and read the related-questions section. Then look at the comments under the most popular videos in your topic - the questions people ask there are videos nobody has made yet, written in the asker's own words.\n\nJUDGING WHETHER YOU CAN RANK: search the phrase and look at what comes back. If the first page is all large established channels who answered it well and recently, that is a hard fight. If the results are old, foreign, badly made, or only half answer it, that is your opening. This judgement matters more than any search-volume number.\n\nGO NARROWER THAN FEELS COMFORTABLE. A broad phrase has enormous competition. A specific one has far less, and the person typing it wants exactly what you have. Small and certain beats big and hopeless.\n\nONE VIDEO, ONE QUESTION. A video that tries to answer five questions ranks for none of them and loses the viewer who came for one.\n\nTHEN USE THE PHRASE NATURALLY: in the title, spoken aloud early in the video, and in the first lines of the description. Not stuffed, just present.\n\nADDITION BEYOND THE VIDEO - where the real gaps are for somebody here.\n\nTHE HIGHEST-VALUE RESEARCH YOU CAN DO IS LISTENING TO PEOPLE AROUND YOU. The questions your friends, family and customers ask out loud, in their own words, are the ones with the least competition and the clearest intent - anything touching local prices in shillings, local providers, local procedures, local forms, local exam syllabuses. The international videos answering those questions are answering a different country's version and are therefore useless to the person searching.\n\nKEEP A RUNNING LIST, one line per question, in your phone. Never sit down to think of a video idea from nothing; that is how weeks get lost.\n\nMIND THE RESEARCH DATA COST. Watching competitor videos to size up a topic burns bundle quickly. Read titles, descriptions and comments - which are cheap - and only watch the one or two that genuinely matter, on wifi.\n\nAND BEWARE PAID KEYWORD TOOLS at this stage. They are charged in dollars monthly, their volume figures are estimates, and the free method above plus your own judgement will serve you well past your first hundred videos.",
+   "practice": "Type your topic into the YouTube search box and write down every suggestion that appears. Do the same with two related phrases. Read the comments on the three most popular videos in your topic and note every question asked. Turn the ten best into a written queue, and for the top one, search it and write one sentence on whether you could realistically beat what is already there.",
+   "quiz": [
+    {
+     "question": "What is the free keyword tool available to everyone?",
+     "options": [
+      "The YouTube search box suggestions, which are real phrases people type, ordered by frequency",
+      "The tags on competitors' videos",
+      "The subscriber counts of similar channels",
+      "The trending page"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "How do you judge whether you can rank for a phrase?",
+     "options": [
+      "Search it and look at whether existing results are old, foreign, or only half answer it",
+      "Check that the search volume number is above a threshold",
+      "Count how many videos exist on the topic",
+      "See whether large channels have covered it, and copy them"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "abba8a84-6298-4548-9b94-31364ca6cec6",
+   "title": "Edit Your First YouTube Video, Step-by-Step",
+   "objectives": [
+    "Get one video filmed, cut and published",
+    "Spend your effort where it changes retention",
+    "Export at settings that suit your viewers and your bundle"
+   ],
+   "notes": "THIS IS THE APPLIED PROJECT. One video, filmed, cut and published. Not a good video - a finished one.\n\nWHAT ACTUALLY MOVES RETENTION, in order, and it is not what beginners think. FIRST, the opening fifteen seconds: say what the video gives them and start giving it. Cut the greeting, the channel introduction and the request to subscribe - every one of those is a reason to leave, and they belong at the end if anywhere. SECOND, pace: cut every pause, every repeated sentence, every moment where nothing happens. THIRD, sound quality, which matters more than picture quality - people forgive a soft image and leave immediately over bad audio. FOURTH, and last, the visual polish that beginners start with.\n\nTHE EDIT ITSELF IS MOSTLY DELETING. Lay the footage down, remove everything that is not needed, and stop. Transitions, effects and music do not rescue a slow video and usually make it worse.\n\nCAPTIONS ARE WORTH THE TIME. A great many people watch without sound, and auto-captions plus a five-minute correction pass makes your video usable to them and easier to find.\n\nADDITION BEYOND THE VIDEO - what makes this practical on the equipment and connection you have.\n\nFILM BY A WINDOW. Light is the single biggest difference between footage that looks amateur and footage that looks fine, and daylight from a window is free and better than most lighting anybody buys. Face it, do not stand with it behind you.\n\nA PHONE IS A REAL CAMERA. Modern phone video is entirely good enough for YouTube. Clean the lens, brace the phone on something solid, and spend nothing. What you should not skimp on is sound - get the phone close, or record audio separately in a soft room, exactly as the podcasting course teaches.\n\nEXPORT AT 1080p, NOT 4K, unless you have a specific reason. 4K multiplies your upload time and data cost enormously, and your analytics will almost certainly show most viewers watching at far lower resolution on a phone, where they cannot tell. This is one of the largest and easiest savings available to a creator here.\n\nUPLOAD ON WIFI, and use the scheduling feature so you can upload whenever the connection is good and publish whenever suits your audience.\n\nIF YOUR MACHINE STRUGGLES: edit in a phone editor rather than fighting desktop software on a low-specification laptop. A finished video edited on a phone beats an unfinished one on a computer, every time.\n\nAND KEEP THE ORIGINAL FOOTAGE until the video is published and stable.",
+   "practice": "Film, cut and publish one video of three to five minutes. Judge it only on this: does it say what it gives you in the first fifteen seconds, is every dead pause cut, and is the audio clear. Export at 1080p, add corrected captions, upload on wifi, and publish it.",
+   "quiz": [
+    {
+     "question": "What belongs in the first fifteen seconds?",
+     "options": [
+      "What the video gives them, and the beginning of giving it",
+      "A greeting and an introduction to the channel",
+      "A request to like and subscribe",
+      "An outline of everything that will be covered"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why export at 1080p rather than 4K?",
+     "options": [
+      "It hugely cuts upload time and data cost, and most viewers on phones cannot tell",
+      "YouTube rejects 4K from new channels",
+      "4K reduces your search ranking",
+      "1080p improves retention directly"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "721064d7-925a-4a7d-8178-4a0cf1a497a6",
+   "title": "DaVinci Resolve Start-to-Finish Edit",
+   "objectives": [
+    "Work through a complete edit in a professional free editor",
+    "Learn the small set of tools that does most of the job",
+    "Decide honestly whether this software suits your machine"
+   ],
+   "notes": "DAVINCI RESOLVE IS GENUINELY PROFESSIONAL AND GENUINELY FREE, with no watermark and no subscription. That combination is rare and it is why this course teaches it. Follow this edit with the software open and your own footage in it, pausing constantly.\n\nREAD THIS BEFORE YOU DOWNLOAD IT. Resolve is demanding: it wants a reasonably modern machine with plenty of memory, and the installer itself is a large download. On a modest or older laptop it will be slow or will not run, and that is the software, not you. IF THAT IS YOUR SITUATION, USE A PHONE EDITOR OR A LIGHTER DESKTOP EDITOR INSTEAD and come back to this lesson later - the editing PRINCIPLES in module 7 lesson 1 are what matter and they transfer to any tool. Do not let a heavy download stop you finishing videos.\n\nTHE PAGES: Resolve is organised into pages across the bottom, and for ordinary YouTube work you need two of them - the CUT or EDIT page to assemble, and DELIVER to export. The colour and audio pages are excellent and you can ignore them for a long time.\n\nTHE SMALL SET OF TOOLS THAT DOES ALMOST EVERYTHING: import your clips, drop them on the timeline, split a clip, delete the part you do not want, close the gap, add text, adjust audio levels. That list is the whole job for most videos. Everything else is refinement.\n\nSAVE CONSTANTLY AND ENABLE THE AUTOMATIC BACKUP. Where power is unreliable this is not optional - an hour of editing lost to a power cut is the fastest way to abandon a channel.\n\nPROXY OR OPTIMISED MEDIA is the setting that makes a heavy project usable on a modest machine: the editor works with a smaller temporary copy and uses the full-quality footage only at export. If playback stutters, this is the fix, and it is the single most useful thing in this lesson for anybody on older hardware.\n\nADDITION BEYOND THE VIDEO.\n\nEXPORT USING THE YOUTUBE PRESET, then change the resolution to 1080p for the reasons in the previous lesson. The preset handles the technical settings correctly so you do not have to understand them yet.\n\nKEEP PROJECT FILES AND FOOTAGE IN ONE FOLDER PER VIDEO, named by date. Resolve refers to files where they were when you imported them, and moving them afterwards breaks the project in a way that is tedious to repair.\n\nAND KNOW THAT THIS SKILL IS SELLABLE ON ITS OWN. Being able to edit competently in Resolve is a paid freelance service, quite separate from having a successful channel of your own - which is exactly what the last lesson of this course is about, and for many people it becomes the income long before the channel does.",
+   "practice": "Import your own footage into Resolve and complete one edit end to end: assemble on the timeline, split and remove what you do not need, close the gaps, add one title, balance the audio, and export with the YouTube preset at 1080p. If playback stutters, turn on optimised media and note the difference. If the software will not run acceptably, do the same edit in a phone editor and write down what was harder.",
+   "quiz": [
+    {
+     "question": "What should you do if Resolve plays back slowly on your machine?",
+     "options": [
+      "Turn on proxy or optimised media, so it edits a smaller copy and uses full quality only at export",
+      "Export at a lower resolution",
+      "Reduce the length of the video",
+      "Reinstall the software"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why keep the project file and footage in one folder per video?",
+     "options": [
+      "Resolve refers to files where they were when imported, and moving them breaks the project",
+      "It makes exporting faster",
+      "It is required for the YouTube preset to work",
+      "It reduces the project file size"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "4b18d41f-8a9a-431b-918b-958b3caf6578",
+   "title": "14 Proven Ways to Make Money on YouTube",
+   "objectives": [
+    "Know which income routes suit a channel of your size and audience",
+    "Understand why advert revenue alone is a weak plan here",
+    "Pick the two routes to pursue first"
+   ],
+   "notes": "THE VIDEO LISTS MANY ROUTES. Most of them will not suit you yet, and the useful work is deciding WHICH TWO to pursue rather than being impressed by the list.\n\nMODULE 4 COVERED THE PARTNER PROGRAMME AND HOW SHORTS EARN DIFFERENTLY. This lesson is about everything that is not advert revenue, which for most channels here is where the actual money is.\n\nTHE ROUTES THAT NEED THE SMALLEST AUDIENCE: selling your own service or product to the viewers you have; affiliate arrangements where you genuinely use the thing; and a sponsor who wants exactly your viewers. All three work at a few hundred engaged viewers. Advert revenue, by contrast, needs a lot of views before it is meaningful.\n\nTHE HARD NUMBER YOU MUST KNOW BEFORE PLANNING ANYTHING. What YouTube pays per thousand views depends enormously on WHERE your viewers are and what your topic is. A channel watched mainly in Kenya earns a small fraction, per thousand views, of what the identical channel earns watched mainly in the United States or Britain. Module 6 told you to check your audience geography; this is why. Planning a living around advert revenue from a local audience means needing a very large number of views, and most people who try it give up before reaching it.\n\nWHICH IS WHY, FOR A CHANNEL BUILT HERE, LOCAL SPONSORSHIP AND YOUR OWN OFFER USUALLY BEAT ADSENSE. A sacco, a school, a shop, a clinic or a small brand that wants to reach exactly your viewers will pay far more for a mention than the same views earn in advertising - and you can meet them, which no international creator competing for your topic can do. A channel with a few thousand engaged local viewers is a genuinely sellable advertising channel in a way its AdSense figure completely fails to reflect.\n\nADDITION BEYOND THE VIDEO - the practicalities of actually receiving it.\n\nMONETISATION MEANS AN ADSENSE ACCOUNT with your real name and address, verified, and it pays only once the balance passes a threshold - which, on a small channel with a local audience, can take many months. Set it up properly and early so it is not the thing delaying you, and expect the first payment to be slow.\n\nDECLARE AND RECORD FROM THE BEGINNING. Keep a simple record of every payment - sponsorship, affiliate, AdSense - from the first shilling. It is far easier than reconstructing it later.\n\nDISCLOSE PAID CONTENT HONESTLY. Tick the paid-promotion box and say it out loud. Audiences here are not fooled and a channel that hides it loses the trust that made it worth sponsoring.\n\nAND PICK TWO ROUTES, NOT FOURTEEN. Write them down with a first action each.",
+   "practice": "Open your audience geography report and write down where your viewers actually are. Then choose the two income routes that genuinely fit your size and audience, and reject the rest in writing with a reason. For your first route, name one real local business that would want to reach your viewers, and write the sentence you would open with.",
+   "quiz": [
+    {
+     "question": "Why is advert revenue alone a weak plan for a channel with a mainly Kenyan audience?",
+     "options": [
+      "Payment per thousand views depends heavily on viewer location, so it needs a very large number of views to be meaningful",
+      "YouTube does not pay creators in Kenya",
+      "Adverts cannot be shown to viewers in Kenya",
+      "Local audiences skip adverts more often"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What often pays better than AdSense for a small local channel?",
+     "options": [
+      "A local sponsor who wants exactly your viewers, or your own service sold to them",
+      "Increasing upload frequency to raise total views",
+      "Making Shorts instead of long videos",
+      "Targeting an international audience regardless of topic"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "869bf1b2-6733-44a7-ba6b-875a9ad523e6",
+   "title": "Get More Video Editing Clients as a Freelancer",
+   "objectives": [
+    "See editing as an income that does not depend on your own channel growing",
+    "Find and approach creators who need an editor",
+    "Price and run the work so it repeats"
+   ],
+   "notes": "THIS IS THE MOST RELIABLE INCOME IN THE COURSE AND IT DOES NOT DEPEND ON YOUR CHANNEL SUCCEEDING AT ALL. Your own channel might take two years to pay. Editing for other people can pay next month, and the skills are the ones you already built in module 7.\n\nWHY THE WORK EXISTS: every creator starts by editing their own videos, and editing is the part they come to dread. The moment a channel earns anything at all, the first thing most of them buy is an editor. That is a large and constantly renewing market.\n\nIT IS RECURRING, which is what makes it valuable. One creator publishing weekly is fifty jobs a year from a single relationship. Three such clients is a real income, and it is far steadier than chasing one-off work.\n\nHOW TO FIND THEM: look for channels whose content is good and whose editing is not - long dead pauses, uneven audio, no captions, irregular uploads because editing is the bottleneck. Mid-sized and local channels are the right target; the very large ones already have editors and the very small ones cannot pay.\n\nTHE APPROACH THAT WORKS IS A DEMONSTRATION, NOT A PITCH. Take two minutes of one of their actual videos, edit it properly, and send both versions with one short line: here is two minutes of your video on X, tightened, it took me forty minutes, I can do this every week. That converts far better than any message describing your skills, because it removes all the guessing.\n\nPRICE PER VIDEO, NOT PER HOUR, and define the scope in writing before the first one: what you cut, how many revision rounds, what turnaround, and what happens when they send three hours of footage instead of one.\n\nADDITION BEYOND THE VIDEO - making it work from here.\n\nTHE FILE TRANSFER IS THE REAL CONSTRAINT, and you must plan for it rather than be surprised. Raw video footage is very large and it will arrive on a connection that cannot comfortably carry it. Agree a shared folder, ask clients to send compressed or lower-resolution proxy footage where the finished quality allows, do the heavy downloading on wifi, and build that reality into the turnaround you promise. An editor who misses deadlines because of uploads loses the client regardless of how good the edit was.\n\nYOUR TIME ZONE IS A SELLING POINT. Kenyan hours overlap the European working day and reach the American morning, so a creator can send footage at the end of their day and wake up to a finished edit. Say that plainly.\n\nAGREE THE PAYMENT ROUTE BEFORE THE FIRST JOB, and know what the fees actually cost you, exactly as the podcasting course sets out. Price with those deducted.\n\nBUILD A PER-CLIENT TEMPLATE - their intro, their captions style, their export settings, their file naming - so each video is a repeatable forty minutes rather than a fresh set of decisions. That is what lets you hold several clients at once.\n\nAND THE WORK MAKES YOUR OWN CHANNEL BETTER. You will watch, closely, what does and does not hold attention across many videos - which is the best editing education available, and you are paid to receive it.",
+   "practice": "Find three channels with good content and weak editing that you could realistically reach. Take two minutes of one real video, edit it properly, and write the one-line note you would send with the before and after. Then write your per-video price and a five-line scope: what is included, what is not, turnaround, revisions, and what oversized footage costs.",
+   "quiz": [
+    {
+     "question": "Why is editing for others more reliable than your own channel?",
+     "options": [
+      "It is recurring and pays now - one weekly creator is fifty jobs a year - and does not need your channel to grow",
+      "It pays a higher rate per hour",
+      "It requires less skill than running a channel",
+      "Clients always pay in advance"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What is the real constraint to plan around when editing remotely from here?",
+     "options": [
+      "Transferring large raw footage on a limited connection - agree proxies, use wifi, and price it into the turnaround",
+      "Finding editing software that runs offline",
+      "Language differences with clients",
+      "The cost of a second monitor"
+     ],
+     "correct_index": 0
+    }
+   ]
+  }
+ ]
+}

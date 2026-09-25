@@ -731,7 +731,47 @@ custom authorization layer bolted on top.
       costs money here. **A course with no vendor channel may still have a
       long course video with named chapters already in it.**
 
-      ### Backfilling the 438 bare lessons — started 17 September
+      ### iPhone login showed "app error" — fixed 25 September
+
+A learner reported that logging in on an iPhone gave an application
+error. It was not the login code. Next.js 16 with Turbopack, given no
+`browserslist`, compiles the client bundle for modern browsers only, and
+the shipped App Router chunk contained a CLASS STATIC INITIALIZATION
+BLOCK:
+
+    class _ extends i.default.Component{static{this.contextType=...}}
+
+That is Safari 16.4+ syntax. An iPhone below iOS 16.4 throws a
+SyntaxError while PARSING that chunk, so React never hydrates and Next
+renders "Application error: a client-side exception has occurred". It is
+invisible everywhere else: desktop Chrome, Android Chrome and even
+Chromium at an iPhone viewport all parse it fine, which is why it reads
+as an iPhone-only fault. Nothing reaches the server, so Vercel's runtime
+errors and logs stay empty -- confirmed, both were clean.
+
+The fix is the `browserslist` key now in `package.json`. It makes the
+build down-compile the syntax and emit runtime polyfills for
+`Object.hasOwn` and `Array.prototype.at`. Verified on the built output:
+zero class static blocks in any JS chunk afterwards, both polyfills
+present, and the cost is 6KB uncompressed across the whole bundle
+(888,954 -> 895,115 bytes, 0.7%), roughly 2KB on the wire.
+
+Checked for a styling regression and there is none -- Tailwind still
+resolves to `display: flex`, a 24px nav gap and the mobile hamburger at
+iPhone width. An earlier run that appeared to break the layout was a
+stale `next start` holding port 3000 and serving HTML pointing at deleted
+chunk hashes; every one of those 500s disappeared on a clean restart.
+Worth remembering: kill the old server before judging a rebuild.
+
+CAVEAT, not resolved. Tailwind v4 itself targets Safari 16.4+ -- it emits
+`@property`, `color-mix()` and cascade layers. This fix makes the page
+RUN below iOS 16.4; it does not promise it looks right. And the learner's
+actual iOS version was never captured, so while this is a real bug that
+produces exactly the reported symptom, it is not proven to be the one
+they hit. The iOS version, or the console line from Settings > Safari >
+Advanced > Web Inspector, would close that gap.
+
+### Backfilling the 438 bare lessons — started 17 September
 
       **Bare-lesson count: 438 → 126. Twenty-six courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),

@@ -773,7 +773,7 @@ Advanced > Web Inspector, would close that gap.
 
 ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 126. Twenty-six courses are now fully
+      **Bare-lesson count: 438 → 114. Twenty-seven courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
@@ -788,8 +788,9 @@ Advanced > Web Inspector, would close that gap.
       `data-analysis-visualization` (16),
       `resume-writing-linkedin-personal-branding` (16),
       `mobile-photography-content-creation` (12),
-      `python-programming-for-beginners` (16) and
-      `google-workspace-productivity` (16).**
+      `python-programming-for-beginners` (16),
+      `google-workspace-productivity` (16) and
+      `podcasting-voice-over` (12).**
 
       **No enrolled course carries a bare lesson any more.**
       `google-workspace-productivity` was the last one, held back until the
@@ -1520,9 +1521,25 @@ Advanced > Web Inspector, would close that gap.
       mismatches, on a set carrying six apostrophes including several
       inside quiz options — the exact construction that failed before.
 
-      Order of attack for the rest: the remaining unenrolled twelves,
-      `podcasting-voice-over` and `youtube-channel-growth`, then the
-      eighteen courses sitting at six bare lessons each.
+      Order of attack for the rest: `youtube-channel-growth`, the last
+      unenrolled twelve, then the eighteen courses sitting at six bare
+      lessons each.
+
+      **Podcasting & Voice-Over, written 25 September** (`0142`, `0143`),
+      twelve of twelve, verified clean. Its beyond-the-video additions are
+      the ones an international audio tutorial cannot give: the room
+      matters more than the microphone, and a phone in a wardrobe full of
+      clothes beats a studio-priced mic in a bare room; dollar equipment
+      prices are not the landed price here once shipping and duty are on
+      them; export speech as MONO MP3 at 64kbps, which halves what your
+      listeners pay to download and what you pay to upload; the noise
+      floor you actually record against - matatu traffic, a fridge, rain
+      on an iron roof, dawn roosters, mains hum; and the honest market
+      point that the global voice-over market is accent-sensitive, so the
+      work genuinely open to a beginner here is Kenyan English, Swahili
+      and Sheng for local radio, bank and sacco phone menus, NGO training
+      and regional channels - start where you have the advantage, not the
+      handicap.
 
       **Google Workspace used the same video three times, and that is
       correct.** `aoMMDlwEtwM` already carried two written module 4
@@ -1533,17 +1550,16 @@ Advanced > Web Inspector, would close that gap.
       editable link. Three lessons, one video, three genuinely different
       things to learn, each naming which part to watch.
 
-      **A note on verification for `0140` and `0141`.** The post-apply
-      fingerprint comparison was declined at the tool prompt and was not
-      re-run, so unlike every course before it this pair is recorded as
-      APPLIED BUT NOT FINGERPRINT-VERIFIED. The generator's doubled-
-      apostrophe guard did fire during authoring — on `SOMEBODY ELSE'S
-      PERSONAL DATA` in the Drive-habits lesson — and was fixed in the plan
-      JSON before the SQL was generated, which is the guard working as
-      intended. Anyone picking this up should re-run the md5 check of
-      notes, practice and objectives plus the semantic quiz canonical
-      string against the two plan JSONs before trusting these twelve
-      lessons.
+      **Verification note for `0140` and `0141`.** The post-apply
+      fingerprint comparison was declined at the tool prompt on the day,
+      so this pair was recorded as applied but unverified. It was RE-RUN
+      AND PASSED on 25 September: all twelve match the plan JSONs on both
+      the md5 of notes, practice and objectives and the semantic quiz
+      canonical string. The pair is now verified like every other course.
+      The generator's doubled-apostrophe guard also fired during authoring
+      — on `SOMEBODY ELSE'S PERSONAL DATA` in the Drive-habits lesson —
+      and was fixed in the plan JSON before the SQL was generated, which
+      is the guard doing exactly its job.
 
       **Python closed the duplicate-lesson question in practice.** It
       carried both of the genuine duplicate pairs: `v-pUon2F5L8` in

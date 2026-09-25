@@ -733,7 +733,7 @@ custom authorization layer bolted on top.
 
       ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 138. Twenty-five courses are now fully
+      **Bare-lesson count: 438 → 126. Twenty-six courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
@@ -747,12 +747,14 @@ custom authorization layer bolted on top.
       `customer-service-virtual-call-center` (12),
       `data-analysis-visualization` (16),
       `resume-writing-linkedin-personal-branding` (16),
-      `mobile-photography-content-creation` (12) and
-      `python-programming-for-beginners` (16).**
+      `mobile-photography-content-creation` (12),
+      `python-programming-for-beginners` (16) and
+      `google-workspace-productivity` (16).**
 
-      **Only one enrolled course still carries bare lessons** —
-      `google-workspace-productivity`, held back deliberately until the
-      duplicate-lesson question below is settled.
+      **No enrolled course carries a bare lesson any more.**
+      `google-workspace-productivity` was the last one, held back until the
+      duplicate-lesson question below was settled, and is now complete at
+      16 of 16 (`0140`, `0141`). Everything still bare is unenrolled.
 
       Two different things were both being called "depth". One is Level 1
       breadth, which the routine has been adding — 50 new lessons across
@@ -1478,11 +1480,30 @@ custom authorization layer bolted on top.
       mismatches, on a set carrying six apostrophes including several
       inside quiz options — the exact construction that failed before.
 
-      Order of attack for the rest: `google-workspace-productivity` —
-      the last course held back by the duplicate-lesson question, now
-      settled — then the remaining unenrolled twelves,
+      Order of attack for the rest: the remaining unenrolled twelves,
       `podcasting-voice-over` and `youtube-channel-growth`, then the
       eighteen courses sitting at six bare lessons each.
+
+      **Google Workspace used the same video three times, and that is
+      correct.** `aoMMDlwEtwM` already carried two written module 4
+      lessons — comments and suggesting mode, then version history, both
+      about working WITH other people. The bare module 6 lesson became the
+      third: document structure — real heading styles, the outline, a
+      self-updating table of contents, and sending a PDF rather than an
+      editable link. Three lessons, one video, three genuinely different
+      things to learn, each naming which part to watch.
+
+      **A note on verification for `0140` and `0141`.** The post-apply
+      fingerprint comparison was declined at the tool prompt and was not
+      re-run, so unlike every course before it this pair is recorded as
+      APPLIED BUT NOT FINGERPRINT-VERIFIED. The generator's doubled-
+      apostrophe guard did fire during authoring — on `SOMEBODY ELSE'S
+      PERSONAL DATA` in the Drive-habits lesson — and was fixed in the plan
+      JSON before the SQL was generated, which is the guard working as
+      intended. Anyone picking this up should re-run the md5 check of
+      notes, practice and objectives plus the semantic quiz canonical
+      string against the two plan JSONs before trusting these twelve
+      lessons.
 
       **Python closed the duplicate-lesson question in practice.** It
       carried both of the genuine duplicate pairs: `v-pUon2F5L8` in

@@ -1,0 +1,203 @@
+{
+ "course": "google-workspace-productivity",
+ "lessons": [
+  {
+   "id": "1d78bf35-7e76-4607-915f-11d91e8ce354",
+   "title": "Google Docs Tutorial for Beginners - EVERYTHING You Need To Know",
+   "objectives": [
+    "Structure a long document with headings so it navigates itself",
+    "Produce a document that looks professional without fiddling",
+    "Send it in the form the recipient actually wants"
+   ],
+   "notes": "THIS IS THE THIRD LESSON BUILT ON THIS VIDEO, AND THAT IS DELIBERATE. Module 4 used it twice: once for comments, suggesting mode and mentions, and once for version history. Both of those were about working WITH other people. This lesson uses the sections you have not watched yet - the ones about the document itself, and making it look like something somebody paid for.\n\nUSE REAL HEADINGS, NOT BIG BOLD TEXT. Applying Heading 1 and Heading 2 from the styles menu does three things at once that bold eighteen-point text does none of: it builds the outline in the left panel so you can jump around a forty-page file, it lets you insert a table of contents that updates itself, and it makes the document readable by somebody using a screen reader. This is the single clearest difference between an amateur document and a professional one, and it takes no extra time.\n\nSET YOUR STYLES ONCE. Format one heading the way you want it, then update the style to match. Every existing heading follows, and the next one you type is already correct.\n\nPASTE WITHOUT FORMATTING when copying from anywhere else, especially a website. Otherwise you import somebody else's fonts, colours and spacing, and spend twenty minutes undoing it by hand.\n\nTABLES ARE FOR TABULAR INFORMATION INSIDE A DOCUMENT and nothing more. Anything you will calculate with belongs in Sheets - and you can paste a Sheets range into a Doc as a linked table that updates when the sheet changes.\n\nPAGE SETUP BEFORE LAYOUT, not after. And when a finished document goes to a client, SEND A PDF unless they specifically need to edit it. A PDF looks the same on their machine as on yours, and an editable link is an invitation to change your work without telling you.\n\nADDITION BEYOND THE VIDEO.\n\nDOCUMENTS ARE HOW YOU ARE JUDGED BEFORE ANYONE MEETS YOU. A quotation with consistent headings, aligned figures and your name on it wins work against a cheaper one typed carelessly. That is not vanity, it is the least expensive credibility available to you.\n\nVOICE TYPING is built in and genuinely useful for a first draft, particularly if your typing is slow. It will mangle local names and places, so draft with it and then edit - do not send anything it produced unread.\n\nCHECK WHO THE DOCUMENT IS SHARED WITH BEFORE YOU SEND THE LINK. Open the sharing panel and look, every single time. Anyone with the link means anyone at all. Module 3 taught the settings; this is the habit of actually looking at them, and it is the one that saves a job.",
+   "practice": "Take a document of at least two pages and rebuild it using real Heading 1 and Heading 2 styles. Insert a table of contents and confirm the outline panel lets you jump between sections. Change the look of one heading and update the style so every heading follows. Export it as a PDF and open the PDF to check nothing has moved.",
+   "quiz": [
+    {
+     "question": "Why use real heading styles instead of large bold text?",
+     "options": [
+      "They build the outline, allow a self-updating table of contents, and make the document navigable and accessible",
+      "They make the file smaller",
+      "They are required before a document can be shared",
+      "They prevent other people editing the document"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "How should a finished document go to a client who does not need to edit it?",
+     "options": [
+      "As a PDF, so it looks the same on their machine and cannot be changed without telling you",
+      "As an editable link, so they can fix anything themselves",
+      "As a Word file, which everyone can open",
+      "Pasted into the body of an email"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "dfcc6186-1a24-4386-87d7-826e1b5980ed",
+   "title": "30 Time-Saving G Suite Tips to Help Your Employees be More Productive",
+   "objectives": [
+    "Choose the few tips that fit how you actually work",
+    "Turn a chosen tip into a habit rather than a memory",
+    "Avoid collecting productivity advice you never use"
+   ],
+   "notes": "THIRTY TIPS IS FAR TOO MANY TO ADOPT, AND THAT IS FINE. Watch for the three or four that match something you genuinely do every week. One tip you use daily is worth more than twenty-nine you half remember.\n\nTHE TEST FOR A TIP WORTH KEEPING has two halves. Do I do this thing at least weekly? And does the tip REMOVE a step, rather than swapping one step for a different step? Most tips fail the second half, and that is why most tips do not stick.\n\nTHE CATEGORIES THAT PAY OFF MOST for the kind of work this course leads to: templates for anything written more than twice, keyboard shortcuts for the three actions you repeat most, filters and saved replies in mail, and anything at all that removes a manual copy between two apps.\n\nWRITE THE CHOSEN ONES DOWN where you will see them, and use each deliberately for a week. A habit takes roughly that long to form, and a tip you do not deliberately practise is gone by Friday.\n\nBEWARE THE PRODUCTIVITY TRAP. Time spent arranging your system is not work. Two hours building an elaborate labelling scheme that saves one minute a day pays back in four months, and most people rebuild their system before then. Be suspicious of any setup that feels satisfying.\n\nADDITION BEYOND THE VIDEO.\n\nKEEP A SNIPPETS DOCUMENT. One Doc holding the paragraphs you retype: your introduction to a new client, your payment terms, your standard hand-over note, the explanation you give every time. Copying from it is faster than remembering, and it makes you consistent - which is what reads as professional from the outside.\n\nMEASURE ONE THING. Take the chore you most resent, time it honestly once, apply what you have learned, and time it again. That number is what you put in front of a client in module 8, and it is also the only honest way to know whether any of this made a difference.\n\nAND KNOW WHAT NOT TO SPEED UP: anything where a mistake reaches another person before you have seen it.",
+   "practice": "Pick exactly three tips from the video that pass both halves of the test. Write them on a note where you work and use each one deliberately every day for a week. Then start a snippets document containing the three paragraphs you retype most often.",
+   "quiz": [
+    {
+     "question": "What is the two-part test for a tip worth keeping?",
+     "options": [
+      "You do the thing at least weekly, and the tip removes a step rather than swapping one for another",
+      "It is quick to learn and looks impressive",
+      "It works on both phone and computer",
+      "It was near the start of the video"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What is the productivity trap?",
+     "options": [
+      "Spending time arranging a system instead of working, on a setup that gets rebuilt before it pays back",
+      "Using too many keyboard shortcuts at once",
+      "Working without templates",
+      "Checking mail too often"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "eb4d0dec-0d05-4411-804e-57a2f4f6aebd",
+   "title": "Building a Complete Budget Tracker in Google Sheets",
+   "objectives": [
+    "Build a tracker somebody will actually keep using",
+    "Set up categories and entry so the data stays consistent",
+    "Handle the messy real input a budget here actually has"
+   ],
+   "notes": "THE TRACKER THAT GETS ABANDONED is the one that takes more than a minute a day to update. Design it for the laziest version of yourself, because that is who will be filling it in on a Thursday night. Every extra field is one more reason to stop.\n\nTHE STRUCTURE IS THREE TABS AND NOTHING ELSE. One tab of transactions, one row each - date, category, description, amount, and whether money came in or went out. One settings tab holding the list of categories. One summary tab built with SUMIF or QUERY. Follow the one-row-per-thing rule from module 2 and everything downstream simply works.\n\nCATEGORIES COME FROM A DROPDOWN, NEVER TYPED. Data validation pointing at the settings tab means you can never end up with Transport, transport and Trasport competing for the same total. Hand-typed categories are what quietly ruins every tracker by about week three.\n\nDATES: use the keyboard shortcut that inserts today rather than typing, and set the spreadsheet locale so the order matches how you write them.\n\nDO NOT BUDGET WHAT YOU HAVE NOT MEASURED. Spend the first month recording only. The categories you invent before you have any data will be wrong; the ones the data suggests will be right, and arguing with yourself about targets before then is wasted effort.\n\nADDITION BEYOND THE VIDEO - what makes this work with real money here.\n\nTHE M-PESA STATEMENT IS YOUR INPUT. You can request a full statement and it arrives as a password-protected PDF. Getting that into a sheet cleanly IS the real task, and doing it well is a service people will pay you for. The descriptions are inconsistent, so build a small lookup table mapping recognisable fragments of text to your categories, and accept that a handful of rows will always need a human eye. That is normal, not failure.\n\nCASH IS THE HOLE IN EVERY TRACKER. Money that never touches the phone is invisible to the statement, so add one row a day called cash spent, estimated. An approximate number in the right category beats a missing one.\n\nAND IF YOU BUILD THIS FOR SOMEBODY ELSE: a statement is a detailed record of a person's life. Keep it out of shared folders, do not keep a copy once the work ends, and never paste any of it anywhere to get help with a formula.",
+   "practice": "Build the three-tab tracker with a category dropdown fed by the settings tab. Enter two weeks of your own real spending, including a daily cash estimate. Write the summary with SUMIF, then look at which category surprised you and write one sentence about why.",
+   "quiz": [
+    {
+     "question": "Why must categories come from a dropdown rather than being typed?",
+     "options": [
+      "Typed categories drift into near-identical variants that never total correctly",
+      "Dropdowns make the sheet load faster",
+      "Typed text cannot be used in SUMIF",
+      "Google requires validation on shared sheets"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What should the first month of a new tracker be used for?",
+     "options": [
+      "Recording only - categories invented before there is data will be the wrong ones",
+      "Setting strict targets for every category",
+      "Building the dashboard",
+      "Comparing against last year"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "5247f095-c4cd-45bb-b24b-5f829763f7fd",
+   "title": "Building a Project/Event Expense Tracker Dashboard",
+   "objectives": [
+    "Turn a tracker into one screen that answers a question",
+    "Choose charts that say something rather than decorate",
+    "Build it so a client can use it without you"
+   ],
+   "notes": "A DASHBOARD ANSWERS A QUESTION. It does not display data. Before you place a single thing, write down the three questions it must answer - are we over budget, what is the largest cost, is it getting better or worse. Anything on the page that answers none of them comes off.\n\nONE SCREEN, NO SCROLLING. Three headline numbers at the top, large. Charts below them. All the detail somewhere else. If somebody has to scroll to reach the point, the point is in the wrong place.\n\nCHART CHOICE, briefly. Bars to compare categories. A line for change over time. Almost never a pie chart - people cannot compare angles reliably, and past about four slices it communicates nothing. Very often the best chart on the page is a single large number.\n\nBUILD IT ON FORMULAS, NOT PASTED VALUES. Every number on the dashboard must trace back to the transactions tab, so that entering one row updates everything. A dashboard somebody has to refresh by hand stops being true within a week and then quietly misleads.\n\nLOCK IT DOWN. Protect the dashboard and settings tabs so that only the transactions tab can be edited. The commonest way these break is somebody typing over a formula, and protection costs one click.\n\nADDITION BEYOND THE VIDEO - what turns this from an exercise into a deliverable.\n\nDESIGN FOR THE PHONE. The person who most needs this will open it on a phone. Put the headline numbers at the top left, which is what the mobile app shows first, and keep charts wide rather than tall.\n\nWRITE THE HAND-OVER NOTE ON THE SHEET ITSELF: what to enter, where, how often, and who to ask. A dashboard with no instructions is abandoned the week you stop being available to explain it.\n\nAND THIS IS A SELLABLE THING. A shop, a school department, a chama, an event committee - all of them keep this in a book or in somebody's head. A working tracker plus one screen of numbers, built once and handed over with instructions, is a realistic first paid job. It is exactly the piece of work module 8 tells you to turn into a client.",
+   "practice": "On top of your module 7 tracker, build a dashboard tab that answers three questions you have written down, using three headline numbers and at most two charts. Protect every tab except transactions. Then open it on a phone and fix whatever is unreadable.",
+   "quiz": [
+    {
+     "question": "What must a dashboard be built on?",
+     "options": [
+      "Formulas tracing back to the data, so entering one row updates everything",
+      "Values pasted in at the end of each month",
+      "A separate copy of the spreadsheet",
+      "Charts drawn from a fixed range"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "Why is a pie chart usually the wrong choice?",
+     "options": [
+      "People cannot compare angles reliably, and past about four slices it says nothing",
+      "It cannot be printed in colour",
+      "Sheets does not update it automatically",
+      "It takes too long to build"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "d3527449-921f-4577-a643-3baf8a4b20af",
+   "title": "Virtual Assistant Skills Clients Actually Pay For",
+   "objectives": [
+    "Know which of these skills people genuinely pay for",
+    "Describe what you do as an outcome rather than a tool list",
+    "Choose the two things to be genuinely good at"
+   ],
+   "notes": "CLIENTS DO NOT BUY GOOGLE WORKSPACE SKILLS. They buy hours back and worry removed. A list of tools matters only as evidence that you can take one specific chore away from them.\n\nWHAT ACTUALLY GETS PAID FOR, roughly in order: inbox and calendar management, data entry and cleanup, building and maintaining a tracker or a report, document formatting, research and list-building, and customer follow-up. Notice how much of that list is this course.\n\nBE NARROW ON PURPOSE. A general virtual assistant competes with everybody. Somebody who sorts out messy spreadsheets and produces a weekly one-page report competes with far fewer people and can charge more for it. Pick two things and be genuinely good at them.\n\nRELIABILITY BEATS BRILLIANCE, and it is not close. Replying when you said you would, saying early when something will be late, and delivering the same quality on a bad week is what makes a client keep you. Assistants are lost over communication far more often than over competence.\n\nDESCRIBE OUTCOMES, NOT TOOLS. Not - I know Google Sheets. Instead - I take your monthly sales export and give you a one-page report on the second of every month. Only one of those two sentences has a price attached to it.\n\nADDITION BEYOND THE VIDEO - the practical realities of doing this from here.\n\nTIME ZONES ARE AN ADVANTAGE AND YOU SHOULD SAY SO. Kenyan working hours overlap the European day almost entirely and catch the American morning, which is better placed than most of the world's remote workforce. That is a selling point, not a footnote.\n\nGETTING PAID. Agree the method before the work, never after. Wise and Payoneer are the usual routes and both carry costs; on a small job an ordinary bank transfer can eat a real share of the fee. Quote in a currency you both understand and state plainly who bears the transfer charge.\n\nCONFIDENTIALITY IS PART OF THE JOB. You will hold customer lists, invoices and somebody's mail. Hold only what the task needs, keep it out of your personal drive, and delete it when the work ends. Saying this to a client reassures them, and under the Data Protection Act it is also simply your obligation.\n\nAND THE HONEST TIMELINE: expect to be underpaid on the first two jobs, and to learn more from them than from the next ten videos.",
+   "practice": "Write a one-sentence description of what you do, phrased as an outcome with a frequency and a deliverable, and containing no tool names at all. List the two skills you will be genuinely good at and one you will decline. Then send the sentence to somebody who knows nothing about this field and ask them to tell you what they think you do.",
+   "quiz": [
+    {
+     "question": "What are clients actually buying?",
+     "options": [
+      "Hours back and worry removed - the tool list is only evidence you can remove a chore",
+      "Proof that you have completed a course",
+      "The lowest hourly rate available",
+      "Familiarity with as many apps as possible"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What most often loses a virtual assistant a client?",
+     "options": [
+      "Communication - going quiet or missing a deadline without warning - rather than lack of skill",
+      "Charging slightly too much",
+      "Working in a different time zone",
+      "Not knowing advanced spreadsheet functions"
+     ],
+     "correct_index": 0
+    }
+   ]
+  },
+  {
+   "id": "2b33fc69-b425-403c-8bc0-86f09bc3dc96",
+   "title": "Getting Your First VA Clients Without Cold Pitching",
+   "objectives": [
+    "Find a first client through people who already know you",
+    "Make an approach specific enough that somebody can answer it",
+    "Run that first job so it produces a testimonial and a second job"
+   ],
+   "notes": "COLD PITCHING IS THE HARDEST POSSIBLE ROUTE AND IT IS WHERE ALMOST EVERY BEGINNER STARTS. A stranger has no reason to believe anything you say. Somebody who already knows you only has to believe one specific claim.\n\nTHE LIST: everybody you know who runs anything at all - a shop, a school department, a clinic, a sacco, a chama, a church office, a small contractor, a relative's business. Twenty names is plenty. You are not looking for twenty clients. You are looking for one.\n\nTHE APPROACH IS SPECIFIC, NEVER GENERAL. Do not ask whether they need a virtual assistant, because almost nobody knows what that means. Name the chore instead: I noticed you spend Saturday mornings writing up the week's sales by hand, I can turn that into a sheet that totals itself, and I can show you in twenty minutes. A general offer gets a polite nothing. A specific one gets a question back, and a question is the beginning.\n\nDO ONE SMALL THING FREE, ONCE, DELIBERATELY, AND WITH A STATED LIMIT. Build the module 7 tracker for one of them and hand it over properly. Then ask for exactly two things in return: a few written sentences about the result, and an introduction to one other person. That is the entire engine of a freelance practice.\n\nPROOF BEATS PROMISES. A screenshot of the dashboard you built, with the numbers changed, is worth more than any profile page. One honest before-and-after - three hours became four minutes - is the most persuasive thing you will ever own.\n\nTHE ONLINE PLATFORMS COME AFTER THIS, NOT BEFORE. With a testimonial, a portfolio piece and a clear one-line description, you are a completely different applicant from the person who signed up yesterday with none of them.\n\nADDITION BEYOND THE VIDEO - how a first job stops being the last one.\n\nPUT THE SCOPE IN WRITING BEFORE YOU START, even when it is a favour. What is included, what is not, and by when. The commonest way a small job goes bad is the fourth extra request arriving after the price was agreed.\n\nCHARGE FROM THE SECOND JOB, AND SAY SO IN ADVANCE: this one is on me, the next one has a price. Free work with no stated end quietly becomes permanent, and resented by both sides.\n\nASK FOR THE INTRODUCTION WHILE THEY ARE STILL PLEASED, which is the day you hand over - not three months later when the feeling has faded.\n\nAND KEEP THE RECEIPTS: one folder holding each finished piece of work, the note you got back about it, and what it saved. In six months that folder is your entire case, and it is worth more than a certificate.",
+   "practice": "Write the list of twenty people you know who run something. Choose one, name the specific chore you believe you can remove, and write the approach in three sentences with no jargon in them. Then write down what you will ask for in return and the date by which you will have asked.",
+   "quiz": [
+    {
+     "question": "Why is a specific approach better than offering virtual assistant services?",
+     "options": [
+      "Naming the actual chore gives the person something they can answer - a general offer gets a polite nothing",
+      "It sounds more professional",
+      "It allows you to charge more",
+      "It avoids having to explain your rates"
+     ],
+     "correct_index": 0
+    },
+    {
+     "question": "What should you ask for after doing one small job free?",
+     "options": [
+      "A few written sentences about the result and an introduction to one other person, on the day you hand over",
+      "A commitment to a monthly retainer",
+      "A review on a freelance platform",
+      "Nothing - asking would spoil the goodwill"
+     ],
+     "correct_index": 0
+    }
+   ]
+  }
+ ]
+}

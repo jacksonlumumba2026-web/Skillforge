@@ -1,15 +1,31 @@
 import "server-only";
 
-/** Extracts the video ID from common YouTube URL formats (watch, youtu.be, embed). */
+/**
+ * Extracts the video ID from any YouTube URL a curator is likely to paste:
+ * watch?v=, youtu.be/, /embed/, /shorts/ and /live/.
+ *
+ * Shorts matter in practice — somebody copying a link from the YouTube app on
+ * a phone gets a /shorts/ URL, and that used to yield null and render as
+ * "Video not available yet" with no clue why.
+ */
+const PATH_PREFIXES = ["/embed/", "/shorts/", "/live/", "/v/"];
+
 export function getYouTubeVideoId(url: string): string | null {
   try {
     const parsed = new URL(url);
+
     if (parsed.hostname.includes("youtu.be")) {
-      return parsed.pathname.slice(1) || null;
+      // youtu.be/<id>, sometimes with a trailing path or ?t=
+      return parsed.pathname.split("/").filter(Boolean)[0] ?? null;
     }
-    if (parsed.pathname.startsWith("/embed/")) {
-      return parsed.pathname.replace("/embed/", "") || null;
+
+    const prefix = PATH_PREFIXES.find((p) => parsed.pathname.startsWith(p));
+    if (prefix) {
+      // Take only the first segment: /embed/<id>/anything must not yield
+      // "<id>/anything", which would produce a broken embed src.
+      return parsed.pathname.slice(prefix.length).split("/").filter(Boolean)[0] ?? null;
     }
+
     return parsed.searchParams.get("v");
   } catch {
     return null;

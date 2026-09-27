@@ -18,7 +18,9 @@ export default function YouTubeEmbed({ url, title }: { url: string; title: strin
     <div className="rounded-xl overflow-hidden bg-black" style={{ aspectRatio: "16 / 9" }}>
       <iframe
         className="w-full h-full"
-        src={`https://www.youtube.com/embed/${videoId}`}
+        // youtube-nocookie serves the same player without setting tracking
+        // cookies until the learner actually presses play.
+        src={`https://www.youtube-nocookie.com/embed/${videoId}`}
         title={title}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen

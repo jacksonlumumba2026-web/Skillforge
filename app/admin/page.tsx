@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { createAdminClient } from "@/lib/supabase/admin";
 import PublishToggle from "./PublishToggle";
+import BackfillDurationsButton from "./BackfillDurationsButton";
 
 // Admin pages read via the service-role client, not the RLS-scoped one —
 // courses.published=true is the only public read policy, so an admin
@@ -14,6 +15,15 @@ export default async function AdminPage() {
     .from("courses")
     .select("*")
     .order("display_order", { ascending: true });
+
+  // Lessons that have a video but no known length. Those are exactly the ones
+  // where lib/dataCost.ts has nothing to work from and the learner sees
+  // general data-saving guidance instead of a real "about N MB" figure.
+  const { count: lessonsMissingDuration } = await supabase
+    .from("lessons")
+    .select("id", { count: "exact", head: true })
+    .is("duration_seconds", null)
+    .not("youtube_url", "is", null);
 
   const courseIds = (courses ?? []).map((c) => c.id);
   const counts = new Map<string, { modules: number; lessons: number; enrollments: number }>();
@@ -67,6 +77,8 @@ export default async function AdminPage() {
           </Link>
         </div>
       </div>
+
+      <BackfillDurationsButton missing={lessonsMissingDuration ?? 0} />
 
       <div className="card overflow-x-auto">
         <table className="w-full text-sm">

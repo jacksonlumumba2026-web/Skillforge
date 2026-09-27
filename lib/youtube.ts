@@ -161,6 +161,29 @@ export async function getVideoDuration(videoId: string): Promise<number | null> 
   }
 }
 
+/**
+ * Looks up many durations at once, keyed by video id.
+ *
+ * The videos endpoint accepts 50 ids per request, so a whole catalogue is a
+ * handful of calls rather than hundreds. Ids missing from the response are
+ * deleted, private or region-blocked and are simply absent from the map —
+ * the caller reports them rather than storing a guess.
+ */
+export async function getVideoDurations(videoIds: string[]): Promise<Map<string, number>> {
+  const apiKey = process.env.YOUTUBE_API_KEY;
+  const out = new Map<string, number>();
+  if (!apiKey || videoIds.length === 0) return out;
+
+  for (let i = 0; i < videoIds.length; i += 50) {
+    const items = await fetchVideoDetails(videoIds.slice(i, i + 50), apiKey);
+    for (const item of items) {
+      const seconds = iso8601DurationToSeconds(item.contentDetails.duration);
+      if (seconds > 0) out.set(item.id, seconds);
+    }
+  }
+  return out;
+}
+
 function scoreVideo(v: RawVideoItem): number {
   const views = Number(v.statistics.viewCount ?? 0);
   const likes = Number(v.statistics.likeCount ?? 0);

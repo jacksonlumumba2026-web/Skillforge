@@ -4,6 +4,7 @@ import { cookies } from "next/headers";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BundleBar from "@/components/BundleBar";
 import { LocaleProvider } from "@/components/LocaleProvider";
 import { LOCALE_COOKIE, type Locale } from "@/lib/i18n";
 import { SITE_URL } from "@/lib/site";
@@ -57,6 +58,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
           <Navbar locale={locale} />
           <main className="flex-1">{children}</main>
           <Footer locale={locale} />
+          <BundleBar />
         </LocaleProvider>
       </body>
     </html>

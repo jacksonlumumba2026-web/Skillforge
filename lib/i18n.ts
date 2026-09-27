@@ -100,6 +100,8 @@ const en: Dictionary = {
   "dashboard.welcome": "Welcome",
   "dashboard.subtitle": "Here's where you left off.",
 
+  "bundleBar.dismiss": "Hide this offer",
+
   "purchase.payNow": "Pay Now",
   "purchase.haveDiscountCode": "Have a discount code?",
   "purchase.acceptedMethods": "Pay by M-Pesa or card on the next screen — secured by Paystack.",
@@ -168,6 +170,8 @@ const sw: Dictionary = {
   "purchase.payNow": "Lipa Sasa",
   "purchase.haveDiscountCode": "Una msimbo wa punguzo?",
   "purchase.acceptedMethods": "Lipa kwa M-Pesa au kadi kwenye skrini inayofuata — kupitia Paystack.",
+
+  "bundleBar.dismiss": "Ficha ofa hii",
 
   "login.forgotPassword": "Umesahau nenosiri?",
   "login.linkExpired": "Kiungo hicho kimepita muda wake au kimetumika tayari.",

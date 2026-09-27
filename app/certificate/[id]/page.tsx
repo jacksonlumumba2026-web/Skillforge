@@ -67,6 +67,12 @@ export default async function CertificatePage({
       </div>
 
       <div className="text-center mt-8">
+        <a href={`/certificate/${id}/download`} className="btn btn-primary" download>
+          Download PDF
+        </a>
+      </div>
+
+      <div className="text-center mt-6">
         <Link href="/courses" className="text-sm" style={{ color: "var(--primary)" }}>
           Explore more Learning Paths on SkillPath Africa
         </Link>

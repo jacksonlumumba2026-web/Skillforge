@@ -16,10 +16,21 @@ export default function CertificateButton({
   const [error, setError] = useState<string | null>(null);
 
   if (existingCertificateId) {
+    // Both routes offered side by side: the page is the shareable link, the
+    // PDF is the file an employer asks to be sent.
     return (
-      <Link href={`/certificate/${existingCertificateId}`} className="btn btn-secondary">
-        🎓 View Certificate
-      </Link>
+      <div className="flex flex-wrap gap-2">
+        <Link href={`/certificate/${existingCertificateId}`} className="btn btn-secondary">
+          🎓 View Certificate
+        </Link>
+        <a
+          href={`/certificate/${existingCertificateId}/download`}
+          className="btn btn-secondary"
+          download
+        >
+          ⬇ Download PDF
+        </a>
+      </div>
     );
   }
 

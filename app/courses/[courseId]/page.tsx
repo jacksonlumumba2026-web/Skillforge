@@ -7,6 +7,7 @@ import { SITE_URL } from "@/lib/site";
 import PurchaseSection from "@/components/PurchaseSection";
 import StarRating from "@/components/StarRating";
 import DataSaverNote from "@/components/DataSaverNote";
+import { formatDataCostShort } from "@/lib/dataCost";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import ReviewForm from "./ReviewForm";
 import type { CourseModule, LessonPreview } from "@/lib/types";
@@ -155,6 +156,7 @@ export default async function CourseDetailPage({
             {moduleLessons.map((lesson, i) => {
               const label = `Lesson ${i + 1} — ${lesson.title}`;
               const duration = lesson.duration_seconds ? formatDuration(lesson.duration_seconds) : null;
+              const dataCost = formatDataCostShort(lesson.duration_seconds);
               return (
                 <li key={lesson.id}>
                   {isEnrolled ? (
@@ -165,11 +167,13 @@ export default async function CourseDetailPage({
                     >
                       <span aria-hidden>▶</span> {label}
                       {duration && <span className="text-[var(--muted)]">· {duration}</span>}
+                      {dataCost && <span className="text-[var(--muted)]">· {dataCost}</span>}
                     </Link>
                   ) : (
                     <div className="flex items-center gap-2 text-sm text-[var(--muted)]">
                       <span aria-hidden>🔒</span> {label}
                       {duration && <span>· {duration}</span>}
+                      {dataCost && <span>· {dataCost}</span>}
                     </div>
                   )}
                   {lesson.description && (

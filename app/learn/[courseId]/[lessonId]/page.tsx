@@ -148,7 +148,7 @@ export default async function LessonPage({
 
         <YouTubeEmbed url={lesson.youtube_url} title={lesson.title} />
         <div className="mt-3">
-          <DataSaverNote />
+          <DataSaverNote durationSeconds={lesson.duration_seconds} />
         </div>
 
         {lesson.notes && (

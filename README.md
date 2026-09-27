@@ -1880,6 +1880,50 @@ back to English on a missing key, so a Swahili gap renders English rather than
 erroring and the build will not catch it — check key parity between the two
 blocks when adding any.
 
+### Per-lesson data costs, and why they can be trusted
+
+`DataSaverNote` has two modes. Where `lessons.duration_seconds` is known it
+says *"This lesson uses about 58 MB at 480p"*. Where it is not, it falls back
+to general advice about picking 480p — **never an invented figure**. Somebody
+deciding whether they can afford to open a lesson would budget against a
+number, so a wrong one is worse than none.
+
+The arithmetic is in `lib/dataCost.ts`: typical YouTube streaming bitrates
+including audio, rendered with "about" and the quality assumed. `480p` is the
+default because that is the quality the note itself tells learners to pick, so
+the estimate matches the advice instead of contradicting it.
+
+**The durations have to be filled in for the figure to appear at all.** They
+come from the YouTube Data API via **Admin → "Backfill durations from
+YouTube"**, which posts to `app/api/admin/lessons/backfill-durations`. The
+admin page shows how many lessons are still missing one.
+
+That runs server-side rather than as a local script for a reason worth
+recording: `YOUTUBE_API_KEY` is stored on Vercel as a **sensitive** variable,
+which is write-only. It cannot be read back through the API by anyone,
+including the project owner — `get_project_env` returns `"decrypted": false`
+with no value field. So no script outside a deployment can ever use it.
+Running the backfill as an admin route keeps the secret inside Vercel and
+means the owner can re-run it when lessons are added, without a developer
+holding a copy of the key. `scripts/backfill-lesson-durations.mjs` remains for
+anyone who does have their own key.
+
+The route groups lessons by video id before calling the API — videos are
+deliberately reused across lessons, one long video taught by chapter — then
+groups lesson ids by the duration they need, so each distinct value is a
+single `UPDATE ... IN (...)`. It reads only rows where `duration_seconds` is
+null, so it is safe to re-run after a partial failure. Nothing is inserted,
+deleted or re-parented and no lesson id changes, so `lesson_progress` is
+untouched.
+
+Videos the API does not return are **reported, not defaulted** — an absent id
+means deleted, private or region-blocked, which also means that lesson's video
+will not play for a learner. That list is worth acting on.
+
+Until the backfill has been run, `home.value.dataBody` ("Every lesson shows
+its data cost first.") is the loosest claim in `PROOF_KEYS`: what shows is the
+general guidance, not a figure. One admin click makes it literally true.
+
 ### Pricing: one path KSh 500, or pick any 10 for KSh 1,000
 
 Two things to buy, and only one payment button for either.

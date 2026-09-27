@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { useTranslate } from "@/components/LocaleProvider";
+import GoogleSignInButton from "@/components/GoogleSignInButton";
 
 function friendlyError(message: string): string {
   const lower = message.toLowerCase();
@@ -69,6 +70,8 @@ function LoginForm() {
           </Link>
         </p>
       )}
+
+      <GoogleSignInButton redirectTo={redirectTo} />
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>

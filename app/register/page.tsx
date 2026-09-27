@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { useTranslate } from "@/components/LocaleProvider";
+import GoogleSignInButton from "@/components/GoogleSignInButton";
 
 function friendlyError(message: string): string {
   const lower = message.toLowerCase();
@@ -72,6 +73,8 @@ export default function RegisterPage() {
     <div className="container-page py-16 max-w-md">
       <h1 className="text-2xl font-bold mb-2">{t("register.title")}</h1>
       <p className="text-[var(--muted)] mb-8">{t("register.subtitle")}</p>
+
+      <GoogleSignInButton redirectTo="/dashboard" />
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>

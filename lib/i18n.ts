@@ -102,6 +102,10 @@ const en: Dictionary = {
 
   "bundleBar.dismiss": "Hide this offer",
 
+  "auth.continueWithGoogle": "Continue with Google",
+  "auth.or": "or",
+  "auth.googleFailed": "Could not start Google sign-in. Please try again, or use your email and password below.",
+
   "purchase.payNow": "Pay Now",
   "purchase.haveDiscountCode": "Have a discount code?",
   "purchase.acceptedMethods": "Pay by M-Pesa or card on the next screen — secured by Paystack.",
@@ -172,6 +176,10 @@ const sw: Dictionary = {
   "purchase.acceptedMethods": "Lipa kwa M-Pesa au kadi kwenye skrini inayofuata — kupitia Paystack.",
 
   "bundleBar.dismiss": "Ficha ofa hii",
+
+  "auth.continueWithGoogle": "Endelea na Google",
+  "auth.or": "au",
+  "auth.googleFailed": "Imeshindwa kuanza kuingia na Google. Jaribu tena, au tumia barua pepe na nenosiri hapa chini.",
 
   "login.forgotPassword": "Umesahau nenosiri?",
   "login.linkExpired": "Kiungo hicho kimepita muda wake au kimetumika tayari.",

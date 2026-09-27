@@ -23,6 +23,7 @@ function LoginForm() {
   const t = useTranslate();
   const redirectTo = searchParams.get("redirect") || "/dashboard";
   const justRegistered = searchParams.get("confirm") === "1";
+  const linkExpired = searchParams.get("link") === "expired";
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -60,6 +61,15 @@ function LoginForm() {
         </p>
       )}
 
+      {linkExpired && (
+        <p className="text-sm mb-4 text-red-600">
+          {t("login.linkExpired")}{" "}
+          <Link href="/forgot-password" className="font-medium underline">
+            {t("reset.requestNew")}
+          </Link>
+        </p>
+      )}
+
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label className="field-label" htmlFor="email">
@@ -94,6 +104,12 @@ function LoginForm() {
           {loading ? t("login.submitting") : t("login.submit")}
         </button>
       </form>
+
+      <p className="text-sm mt-4 text-center">
+        <Link href="/forgot-password" style={{ color: "var(--primary)" }}>
+          {t("login.forgotPassword")}
+        </Link>
+      </p>
 
       <p className="text-sm text-[var(--muted)] mt-6 text-center">
         {t("login.newHere")}{" "}

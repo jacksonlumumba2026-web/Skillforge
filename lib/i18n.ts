@@ -64,6 +64,27 @@ const en: Dictionary = {
   "login.submit": "Log in",
   "login.newHere": "New here?",
   "login.createAccount": "Create an account",
+  "login.forgotPassword": "Forgot your password?",
+  "login.linkExpired": "That link has expired or was already used.",
+
+  "forgot.title": "Reset your password",
+  "forgot.subtitle": "Enter your email and we'll send you a link to set a new password.",
+  "forgot.emailLabel": "Email",
+  "forgot.submit": "Send me a link",
+  "forgot.submitting": "Sending…",
+  "forgot.sentTitle": "Check your email",
+  "forgot.sentBody": "If an account exists with that email, we've sent a link to set a new password. The link works for one hour and can only be used once.",
+  "forgot.backToLogin": "Back to log in",
+
+  "reset.title": "Set a new password",
+  "reset.subtitle": "Choose a new password for your account.",
+  "reset.passwordLabel": "New password",
+  "reset.confirmLabel": "Confirm password",
+  "reset.submit": "Save password",
+  "reset.submitting": "Saving…",
+  "reset.expiredTitle": "This link no longer works",
+  "reset.expiredBody": "Password reset links expire after an hour and can only be used once. Ask for a new one and it will arrive in a moment.",
+  "reset.requestNew": "Request a new link",
 
   "register.title": "Create your account",
   "register.subtitle": "Start learning practical digital skills today.",
@@ -147,6 +168,28 @@ const sw: Dictionary = {
   "purchase.payNow": "Lipa Sasa",
   "purchase.haveDiscountCode": "Una msimbo wa punguzo?",
   "purchase.acceptedMethods": "Lipa kwa M-Pesa au kadi kwenye skrini inayofuata — kupitia Paystack.",
+
+  "login.forgotPassword": "Umesahau nenosiri?",
+  "login.linkExpired": "Kiungo hicho kimepita muda wake au kimetumika tayari.",
+
+  "forgot.title": "Weka nenosiri jipya",
+  "forgot.subtitle": "Weka barua pepe yako na tutakutumia kiungo cha kuweka nenosiri jipya.",
+  "forgot.emailLabel": "Barua pepe",
+  "forgot.submit": "Nitumie kiungo",
+  "forgot.submitting": "Inatuma…",
+  "forgot.sentTitle": "Angalia barua pepe yako",
+  "forgot.sentBody": "Kama kuna akaunti yenye barua pepe hiyo, tumetuma kiungo cha kuweka nenosiri jipya. Kiungo hufanya kazi kwa saa moja na hutumika mara moja tu.",
+  "forgot.backToLogin": "Rudi kuingia",
+
+  "reset.title": "Weka nenosiri jipya",
+  "reset.subtitle": "Chagua nenosiri jipya la akaunti yako.",
+  "reset.passwordLabel": "Nenosiri jipya",
+  "reset.confirmLabel": "Thibitisha nenosiri",
+  "reset.submit": "Hifadhi nenosiri",
+  "reset.submitting": "Inahifadhi…",
+  "reset.expiredTitle": "Kiungo hiki hakifanyi kazi tena",
+  "reset.expiredBody": "Viungo vya kuweka nenosiri jipya hupita muda wake baada ya saa moja na hutumika mara moja tu. Omba kingine na kitafika mara moja.",
+  "reset.requestNew": "Omba kiungo kipya",
 };
 
 export const dictionaries: Record<Locale, Dictionary> = { en, sw };

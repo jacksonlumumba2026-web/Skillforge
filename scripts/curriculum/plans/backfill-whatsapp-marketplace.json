@@ -1,0 +1,203 @@
+{
+  "course": "WhatsApp Business & Facebook Marketplace Selling (whatsapp-business-facebook-marketplace-selling) — all six bare lessons",
+  "lessons": [
+    {
+      "id": "fa2b0c4f-00e3-4f12-9c4c-9e73c170e460",
+      "title": "Setting Up Your WhatsApp Business Account",
+      "objectives": [
+        "Separate the business number from your personal one before you grow",
+        "Fill in the profile fields customers actually judge you on",
+        "Set up greeting, away and quick replies so you stop retyping"
+      ],
+      "notes": "WHATSAPP BUSINESS IS A FREE APP WITH A PROFILE, A CATALOGUE, LABELS AND AUTOMATIC REPLIES. Everything else works exactly like the WhatsApp you already use, which is why it is the cheapest shop you will ever open.\n\nDECIDE THE NUMBER FIRST, because it is painful to change later. A separate line for business is worth the SIM: your customers get a number that is answered in business hours, your family does not appear in the same list as your orders, and you can hand the business on or let somebody else help without giving away your private chats. If you must start with one number, start with it deliberately and plan the move.\n\nBACK UP BEFORE YOU CONVERT. Moving an existing number to the Business app migrates your chats, but a backup first is the difference between a bad hour and a disaster. You cannot run both apps on the same number.\n\nFILL IN THE WHOLE PROFILE, because it is what a stranger uses to decide whether you are real. Business name that matches what you advertise, a clear category, a description saying exactly what you sell, your area and delivery range, your hours, and an address or landmark if customers can collect. A profile picture of your actual product or shop beats a logo you made in five minutes. An empty profile reads as a scam, however honest you are.\n\nSET THE THREE AUTOMATIC MESSAGES AND KEEP THEM HONEST. A GREETING for first contact: what you sell and what you need from them to quote. An AWAY message for outside your hours — and if you say you reply within an hour, reply within an hour, because a promise you break is worse than no promise. QUICK REPLIES for the answers you type twenty times a day: price list, delivery charge, payment details, location.\n\nUSE LABELS FROM DAY ONE. New enquiry, waiting for payment, to deliver, paid, repeat customer. Five labels turn a chat list into an order book, and the whole method of this course depends on you being able to find who owes you what.\n\nNOW THE PART ABOUT MONEY, BECAUSE THIS IS WHERE PEOPLE LOSE IT. WhatsApp is not a payment system. You will be paid by mobile money, and the rule is absolute: CONFIRM THE MONEY IN YOUR OWN ACCOUNT BEFORE YOU RELEASE GOODS. A forwarded confirmation message, a screenshot, or an SMS that looks official are all trivially faked, and this is the single commonest fraud against small sellers. Check your balance yourself, every time, no exceptions, no matter how convincing or how rushed the buyer sounds.",
+      "practice": "Set up the account properly in one sitting. Fill in every profile field — name, category, description, hours, area, delivery range — and use a photograph of your real product or premises. Write the three automatic messages, and make the away message state hours you can actually keep. Create five labels and apply them to your existing chats. Then write your payment details as a quick reply, with the exact till, paybill or number, and one sentence for yourself at the top of it: confirm in my own account before releasing goods.",
+      "quiz": [
+        {
+          "question": "A buyer sends you a screenshot showing they have paid, and asks you to send the goods now. What should you do?",
+          "options": [
+            "Check the money has arrived in your own account before releasing anything — screenshots and forwarded messages are easily faked",
+            "Send the goods, since a payment confirmation message is proof of payment",
+            "Send half the order and wait for the rest to clear",
+            "Ask them to resend the screenshot more clearly"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why does this lesson recommend a separate number for the business?",
+          "options": [
+            "It keeps business hours, chats and handover separate from your personal life, and it is painful to change later",
+            "WhatsApp Business does not work on a personal number",
+            "Customers cannot find you without a dedicated business line",
+            "It makes the catalogue feature available"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "055afed1-89ba-4fd4-bd18-681d7fd2d181",
+      "title": "How to Use Facebook Marketplace",
+      "objectives": [
+        "Understand how buyers actually find a listing",
+        "Judge a price by looking at what comparable items are selling for",
+        "Spot the common buyer-side scams before they cost you"
+      ],
+      "notes": "MARKETPLACE IS A CLASSIFIEDS BOARD ATTACHED TO THE LARGEST SOCIAL NETWORK MOST OF YOUR CUSTOMERS ALREADY USE. It costs nothing to list, it is local by default, and that combination is why it works for small sellers.\n\nBUYERS FIND YOU IN TWO WAYS, AND BOTH DEPEND ON WHAT YOU TYPE. Some browse a category within a distance of where they are; some search words. So put the words a buyer would actually type into your title — the brand, the model, the size, the common name and the one people misspell — rather than a clever description. If you sell a Samsung A14 phone, the title says Samsung A14, not great phone for sale.\n\nSET THE LOCATION HONESTLY AND SPECIFICALLY. Marketplace is sorted by distance, and buyers filter hard on it. Listing a Nairobi item as being somewhere else to reach more people wastes everybody's time and gets you reported.\n\nBEFORE YOU PRICE, SEARCH FOR YOUR OWN ITEM AND LOOK AT WHAT IS ACTUALLY LISTED. Note the range, and note which listings look like they have been sitting for weeks — those are the ones priced above the market. Price is the single biggest factor in how fast something sells, and the market is on your screen in thirty seconds.\n\nYOUR ACCOUNT IS PART OF THE OFFER. A profile with a real photo, some history and mutual friends sells faster than an account created yesterday, because buyers are also afraid of being cheated. If your account is new, expect slower sales and more questions, and answer them patiently.\n\nLEARN THE SCAMS NOW RATHER THAN LATER, because they are the same few every time. Somebody who wants to pay more than you asked and have you refund the difference. Somebody who insists on paying through a service you have never used, or who sends a link to click to receive your money. Somebody who says a courier will collect and pay on delivery, so please hand it over. Somebody who asks for a verification code sent to your phone — that code is a login to YOUR account and handing it over loses you the account. And anyone who creates urgency to stop you thinking. THE DEFENCE IS ONE RULE: money in your own account first, meeting in person second, and no code ever leaves your phone.\n\nAND REPLY FAST. Most Marketplace sales go to whoever answers first, not whoever is cheapest.",
+      "practice": "Search Marketplace for something you already own and might sell, and write down the five most recent listings for the same item: their price, their title and how far away they are. That is your market. Then rewrite one of those titles the way this lesson describes — the words a buyer would type — and note the difference. Finally, look at your own Facebook profile the way a stranger would and write down one thing you could change to make a buyer more willing to meet you.",
+      "quiz": [
+        {
+          "question": "What belongs in a Marketplace title?",
+          "options": [
+            "The words a buyer would actually type — brand, model, size, common name",
+            "A description of the condition and why you are selling",
+            "Your location and preferred payment method",
+            "A short persuasive phrase such as bargain or must go"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "A buyer asks you to read back a verification code that was just sent to your phone. What is happening?",
+          "options": [
+            "It is an attempt to take over your account — that code never leaves your phone",
+            "It is a normal Marketplace step for confirming a seller",
+            "They are verifying that your number is reachable before paying",
+            "The code confirms delivery once the item is handed over"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "74518374-1f1b-48e6-801e-b5cf093c5e31",
+      "title": "Creating a Product Catalog in WhatsApp Business",
+      "objectives": [
+        "Photograph products on a phone so they look worth the price",
+        "Write item descriptions that answer the questions buyers always ask",
+        "Keep the catalogue accurate so it saves you work instead of creating it"
+      ],
+      "notes": "THE CATALOGUE IS THE DIFFERENCE BETWEEN ANSWERING THE SAME FOUR QUESTIONS ALL DAY AND SENDING A LINK. It holds your items with photos, prices and descriptions, and a customer can browse it inside the chat.\n\nPHOTOGRAPHS DECIDE MOST SALES, AND YOUR PHONE IS ENOUGH. Four rules cover almost everything. Shoot in DAYLIGHT, near a window or outside in shade — never under a bare bulb at night, which turns everything yellow. Use a PLAIN BACKGROUND, a wall or a cloth, so the product is the only thing to look at. Show SCALE by including something familiar, or state the dimensions. And take SEVERAL ANGLES including any flaw. Showing the scratch loses one sale and prevents five arguments, and the buyer who came anyway arrives already knowing.\n\nWRITE THE DESCRIPTION AS THE ANSWER TO THE THREE QUESTIONS YOU ARE ALWAYS ASKED: what exactly is it (size, colour, material, model), what condition is it in, and what does it cost delivered. If delivery is extra, say so in the item rather than in a later message, because a price that grows after the customer has decided is the fastest way to lose them and to be remembered badly.\n\nPUT REAL PRICES IN. Hiding the price to force a conversation feels like a sales technique and reads as untrustworthy. It also wastes your day on people who were never going to pay your price.\n\nKEEP IT ACCURATE OR IT WILL COST YOU. A catalogue with sold-out items is worse than no catalogue, because the customer chooses the thing you cannot supply and you start the relationship with a disappointment. Hide or remove what is gone, the same day.\n\nORDER IT BY WHAT SELLS. Your best sellers first, because most people do not scroll far.\n\nAND USE IT AS THE WORK-SAVER IT IS. Link the catalogue in your greeting message, share single items into a chat when somebody asks, and keep a quick reply that sends the catalogue link with one line of text. The point is that your price list, photographs and terms are written once, correctly, rather than retyped differently every time — which is also what stops you quoting two different prices to two customers who know each other.",
+      "practice": "Photograph three products today using the four rules: daylight, plain background, something for scale, and several angles including any flaw. Put them in the catalogue with full descriptions that answer all three standard questions, and with the delivered price stated. Then send the catalogue link to one friend and ask them what they would still need to ask you before buying. Whatever they say is what is missing from your descriptions — add it, and check the catalogue matches what you can actually supply today.",
+      "quiz": [
+        {
+          "question": "Should a photograph show a flaw in the item?",
+          "options": [
+            "Yes — it loses one sale but prevents arguments, and the buyer arrives already knowing",
+            "No, since it reduces the number of enquiries",
+            "Only if the buyer asks about the condition",
+            "Only for second-hand goods sold at full price"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why does this lesson say to put real prices in the catalogue?",
+          "options": [
+            "Hiding the price reads as untrustworthy and wastes your day on people who will not pay it",
+            "WhatsApp requires a price on every catalogue item",
+            "Prices make the catalogue appear higher in search",
+            "It prevents customers from negotiating"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "87151f44-3413-40ed-a1e9-c621282b93f9",
+      "title": "Selling on Facebook Marketplace: Complete Walkthrough",
+      "objectives": [
+        "Write a listing that answers questions before they are asked",
+        "Handle enquiries, negotiation and no-shows without wasting days",
+        "Meet and get paid safely"
+      ],
+      "notes": "A LISTING IS A TITLE, PHOTOS, A PRICE, A LOCATION AND A DESCRIPTION. The listing does the selling; the chat only closes it.\n\nTHE TITLE CARRIES THE SEARCH, so it holds the words a buyer types. The FIRST PHOTO carries the click, so it is the clearest, brightest, plainest picture you have — the rest can show detail and flaws. The DESCRIPTION answers, in this order: exactly what it is, its condition, why you are selling it, what is included, where the buyer collects, and whether you deliver and at what cost.\n\nENQUIRIES ARE MOSTLY NOISE, AND THAT IS NORMAL. Expect is this available, a lowball offer, and people who vanish. Reply to everyone politely, once, and let the serious ones identify themselves by answering a question back: when are you free to collect, or which area are you in?\n\nNEGOTIATION IS EXPECTED HERE, SO PRICE FOR IT. Decide your floor before you list, and list slightly above it so there is room to give something. When an offer is too low, do not argue — reply once with your lowest and let it stand. Sellers lose far more to days of haggling than to the two hundred shillings they refused to drop.\n\nMEETING SAFELY IS NOT OPTIONAL, AND IT IS THE PART THIS COURSE WILL NOT SOFTEN. Meet in a PUBLIC, BUSY PLACE in DAYLIGHT — a mall entrance, a petrol station, outside a bank, somewhere with cameras and people. Tell somebody where you are going and when you expect to be back, and take somebody with you when the item is valuable. Do not invite strangers to your home and do not go alone to theirs. If the buyer insists on a quiet place or a late hour, that is the whole conversation: decline and move on. A sale is never worth the risk, and a genuine buyer will agree to a public meeting without argument.\n\nGET PAID BEFORE THE GOODS CHANGE HANDS, and confirm it in your own account rather than from anything the buyer shows you. This is the same rule as the first lesson and it is broken most often under time pressure, standing in a car park with somebody saying they are late.\n\nIF YOU DELIVER BY RIDER, settle two things first: who pays the fare, and whether the rider collects the money. A rider you have not used before, carrying goods you have not been paid for, is an unsecured loan to a stranger. Payment first, then dispatch.\n\nAND EXPECT NO-SHOWS. Confirm the morning of the meeting, keep the listing live until the money has arrived, and do not stop replying to other buyers because one person said they would come.",
+      "practice": "Write one complete listing for something you could sell this week: a searchable title, at least four photos with the clearest one first, an honest description covering condition and what is included, your delivered price, and your real location. Before you publish it, write down two numbers privately — the price you are asking and the lowest you will accept — and one line naming the public place where you will meet buyers. Having all three decided in advance is what stops you being talked into something in the moment.",
+      "quiz": [
+        {
+          "question": "A buyer will only meet you at their home, late in the evening. What does this lesson advise?",
+          "options": [
+            "Decline and move on — meet in a public, busy place in daylight, or not at all",
+            "Agree if the item is valuable enough to justify the trip",
+            "Go, but tell somebody where you are",
+            "Ask them to pay in advance, then agree to the meeting"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "You are sending goods by rider. What should be settled first?",
+          "options": [
+            "That payment has arrived in your account, and who pays the fare",
+            "Only who pays the fare, since the rider collects the money",
+            "Nothing — riders handle payment as standard",
+            "That the buyer will inspect the goods before paying"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "9c94486b-af9e-4dd6-9ba9-9d2cc7422f25",
+      "title": "Broadcast Lists: Send Bulk Messages Like a Pro",
+      "objectives": [
+        "Know the one condition a broadcast needs to be delivered at all",
+        "Write a broadcast that reads as personal rather than bulk",
+        "Set a cadence that keeps customers instead of getting you blocked"
+      ],
+      "notes": "A BROADCAST SENDS ONE MESSAGE TO MANY PEOPLE, AND EACH RECIPIENT SEES IT AS A NORMAL PRIVATE CHAT. Nobody sees who else received it, and replies come back to you individually. It is the most useful selling tool in the app.\n\nTHERE IS ONE CONDITION AND EVERYTHING DEPENDS ON IT: A BROADCAST ONLY REACHES PEOPLE WHO HAVE YOUR NUMBER SAVED IN THEIR PHONE. If they have not saved you, the message is not delivered at all, and you will never know. So getting saved is the actual job. Ask for it explicitly at the point where the customer is happiest — right after a good sale: save my number as [business name] so you see the new stock first. Put the same line in your greeting message and on your receipts.\n\nWRITE FOR ONE PERSON. A message that opens with Dear valued customers reads as bulk and gets ignored. Use the tone you use in a real chat, keep it to a few lines, and include one photograph and one clear action: reply YES for the price, or come to the shop before Saturday.\n\nEVERY BROADCAST SHOULD BE WORTH RECEIVING. New stock, a genuine discount with an end date, something back in stock that people asked for, a useful reminder. If you cannot say why the recipient would be glad to get it, do not send it.\n\nCADENCE IS WHAT DECIDES WHETHER THIS KEEPS WORKING. Once a week is usually safe, twice is the ceiling for most small businesses, and daily will get you blocked and reported. REPORTING IS THE REAL RISK: enough reports and the number itself can be restricted or banned, and your entire customer list is attached to that number. Treat the list as something you can lose, because you can.\n\nMAKE LEAVING EASY. One line — reply STOP if you would rather not get these — costs you a few contacts and saves you the reports that cost you the number. Honour it immediately.\n\nSEGMENT RATHER THAN SENDING EVERYTHING TO EVERYONE. Separate lists for past buyers, for people who enquired but did not buy, and for a particular product category. A smaller list that is relevant outperforms a large list that is not, on every measure that matters.\n\nAND MEASURE REPLIES, NOT SENDS. The number that tells you whether it worked is how many people answered and how many bought — not how many messages left your phone.",
+      "practice": "Build one broadcast list of past buyers only, then write a message for it in four lines: what is new, one photograph, the price, and one clear action. Add the opt-out line. Before sending, check how many of those contacts have actually saved your number by asking three of them directly — the answer usually surprises people, and it tells you whether your real problem is the message or the fact that nobody receives it. After sending, write down how many replied, not how many you sent.",
+      "quiz": [
+        {
+          "question": "Why do many broadcasts reach nobody?",
+          "options": [
+            "A broadcast is only delivered to people who have saved your number in their phone",
+            "WhatsApp limits broadcasts to a small number of recipients per day",
+            "Messages with photographs are filtered out",
+            "Recipients must reply once before any broadcast is delivered"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What is the real risk of broadcasting too often?",
+          "options": [
+            "Enough reports can get the number itself restricted, and your whole customer list is attached to it",
+            "The messages start arriving more slowly",
+            "You are charged for messages over a monthly limit",
+            "Customers see who else is on the list"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "88adfe23-f71f-4138-b210-7520d7531efa",
+      "title": "Turning Facebook Marketplace Into Real Income",
+      "objectives": [
+        "Work out the true cost of an item so you know the real margin",
+        "Keep records that tell you what is worth restocking",
+        "Grow through repeat customers rather than constant new listings"
+      ],
+      "notes": "A SIDE INCOME BECOMES A BUSINESS AT THE POINT WHERE YOU KNOW YOUR NUMBERS. Everything in this lesson is about that shift.\n\nTHE PRICE YOU PAID IS NOT THE COST. The real cost of an item is what you paid, PLUS transport to get it, PLUS mobile money charges on the way in and out, PLUS packaging, PLUS delivery you absorbed, PLUS any discount you gave, PLUS the item you could not sell and had to drop. Sellers who only count the purchase price routinely believe they are making thirty per cent when they are making eight, and they find out when the stock runs out and the money is not there.\n\nSO CALCULATE MARGIN PER ITEM, IN WRITING, BEFORE YOU BUY MORE. Selling price minus true cost. Do this for every line you carry and you will usually find that a small number of items make most of the money and a few make almost none — and that is the information that decides what you restock.\n\nKEEP THE SIMPLEST POSSIBLE RECORD, because a complicated one gets abandoned. One row per sale: date, item, what it cost you, what it sold for, delivery, and what is left. A notebook is fine; a spreadsheet is better because it adds up. Without this you cannot answer the only two questions that matter — which items make money, and how much money is actually mine.\n\nSEPARATE THE BUSINESS MONEY FROM YOUR OWN. Stock money that lives in the same place as shopping money gets spent, and then there is nothing to restock with. Pay yourself deliberately, as the personal-finance course puts it, rather than taking from the float.\n\nREPEAT CUSTOMERS ARE THE CHEAPEST INCOME YOU WILL EVER GET. Finding a new buyer costs you a listing, replies, negotiation and a meeting. Selling again to somebody who already trusts you costs one message. This is why the saved number, the labels and the broadcast list from the earlier lessons matter more than another listing: they are how you sell twice to one person.\n\nTHE SCAMS AT THIS SCALE ARE BIGGER, so the rule hardens. Payment confirmed in your own account before goods move — always. Be especially careful with anyone who wants a large order sent before payment, who overpays and asks for a refund of the difference, or who pressures you to move off the platform immediately and then hurries you.\n\nAND AS YOU GROW, FIND OUT WHAT IS ACTUALLY REQUIRED OF YOU. Registration, permits and tax obligations depend on what and how much you sell, and the rules change. Check the current requirements with KRA and your county rather than relying on what another seller told you — the cost of being wrong rises with your turnover, and a business that looks properly run also wins more customers.",
+      "practice": "Take your last ten sales and work out the true cost of each: purchase price plus transport, charges, packaging, delivery and any discount given. Subtract from what you actually received. Write the margin next to each. Then rank them and look at the bottom three — those are the items to stop carrying or to reprice. Finally, set up the one-row-per-sale record for the coming month, and keep a separate place for stock money so restocking is never competing with shopping.",
+      "quiz": [
+        {
+          "question": "What does this lesson count as the true cost of an item?",
+          "options": [
+            "The purchase price plus transport, mobile money charges, packaging, absorbed delivery, discounts and unsold stock",
+            "The purchase price, which is the only cost that leaves your account",
+            "The purchase price plus the delivery the customer paid for",
+            "Whatever a competitor is selling it for, minus your target margin"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why do repeat customers matter more than new listings?",
+          "options": [
+            "Selling again to somebody who trusts you costs one message, while a new buyer costs a listing, replies, negotiation and a meeting",
+            "Repeat customers pay higher prices",
+            "New listings are limited per account",
+            "Repeat customers do not need to be met in person"
+          ],
+          "correct_index": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "course": "Personal Finance & Budgeting Basics (personal-finance-budgeting) — Level 1, 2 and 3 bare lessons",
+  "lessons": [
+    {
+      "id": "b2ed18c0-0d8a-4551-8d32-4014b048a2fb",
+      "title": "What a Budget Actually Is",
+      "objectives": [
+        "Describe a budget as a plan for money you have already earned, not a restriction",
+        "Find the gap between what you think you spend and what you actually spend",
+        "Give every shilling a job, including the costs that are irregular but certain"
+      ],
+      "notes": "A BUDGET IS A PLAN FOR MONEY YOU HAVE ALREADY EARNED. It is not a diet and it is not a punishment. It is deciding, in advance and while you are calm, where money goes — so that the decision is not made for you later by whoever asks first.\n\nMOST PEOPLE DO NOT KNOW WHAT THEY SPEND. Not roughly — at all. The difference between what people estimate and what their statement shows is usually large, and it is almost never the big things. It is fare, airtime, data, lunch, a delivery fee, a shilling here. Before you can plan, you need the real number, and the real number is on your M-Pesa and bank statements, not in your memory.\n\nSO START BY COUNTING, NOT CUTTING. Take last month. Write down every amount that left your hands, in whatever categories make sense to you: rent, food, transport, airtime and data, family, loan repayments, everything else. Do not judge any of it yet. Most people find one category is roughly double what they assumed, and that category is where their plan is actually made.\n\nTHEN GIVE EVERY SHILLING A JOB. Income minus fixed costs minus variable costs should end at zero — not because you spend it all, but because savings is one of the jobs. Money with no assigned job gets spent by default, and you will not be able to say afterwards where it went.\n\nTHE REASON MOST BUDGETS COLLAPSE IS NOT WEAKNESS. It is that they only plan for monthly costs. School fees, a harambee, a funeral contribution, a family member who needs help, a phone that dies, a trip upcountry — these are irregular but they are not surprises. They happen every year. A budget that has no line for them breaks the first time one arrives, and then feels like it failed. Divide the annual cost by twelve and set that aside monthly. The cost stops being a shock and becomes a bill.\n\nBUDGET ON WHAT YOU RECEIVE, NOT WHAT YOU ARE PROMISED. Take-home pay, after deductions. For freelance or business income, what actually landed, not what was invoiced.\n\nAND WRITE IT DOWN SOMEWHERE YOU WILL SEE IT. A budget held in your head is a hope. Paper, a notebook, the notes app, or a spreadsheet all work equally well — the tool has never been the hard part.",
+      "practice": "Open your M-Pesa statement for last month (the app, or the statement request on *334#) and your bank statement if you have one. Write down every outgoing amount in five columns: rent and bills, food, transport, airtime and data, everything else. Add up each column. Then write beside each total what you would have guessed before counting. Circle the biggest gap between guess and reality — that number is where your budget starts, and you now know something about your money that you did not know this morning.",
+      "quiz": [
+        {
+          "question": "What is a budget, as this lesson defines it?",
+          "options": [
+            "A plan made in advance for money you have already earned",
+            "A limit set by your bank on how much you can spend",
+            "A way to stop spending money on things you enjoy",
+            "A forecast of how much you hope to earn next year"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why do budgets that only account for monthly costs tend to collapse?",
+          "options": [
+            "Irregular but certain costs such as school fees and family contributions have no line, so the first one breaks the plan",
+            "Monthly costs are impossible to predict accurately",
+            "Banks charge extra when a budget is set monthly",
+            "Because savings should always be calculated weekly instead"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "07bfe6a4-047c-4536-9aca-85f274ad48b8",
+      "title": "Mobile Money 101: What Is M-PESA",
+      "objectives": [
+        "Explain what mobile money is and what the agent network replaces",
+        "Identify where fees quietly take money and change your habits to reduce them",
+        "Tell a balance apart from credit, and keep your account safe"
+      ],
+      "notes": "MOBILE MONEY IS A BANK ACCOUNT THAT LIVES ON YOUR PHONE NUMBER. The float is real money held in trust; the agent is the branch; your SIM is the card and the PIN is the signature. Understanding it that way makes the rest obvious — including why an agent never needs your PIN.\n\nTHE FEES ARE THE PART PEOPLE UNDERESTIMATE. Sending, withdrawing and paying a bill each carry a charge that varies by amount and by service, and the tariffs change from time to time — so never trust a number you half-remember, including one from a video. Check the current tariff on the official app or USSD menu. What does not change is the shape of it: MANY SMALL WITHDRAWALS COST FAR MORE THAN ONE LARGER ONE. Somebody who withdraws four times a week is paying a fee four times for the same money. Planning fewer, larger withdrawals is free money, and for most people it is the single biggest saving available in how they handle cash.\n\nREAD YOUR STATEMENT ONCE A MONTH. You can request it on the USSD menu or open it in the app. It is the only honest record of your spending, and the exercise at the end of the previous lesson depends on it. People who look at it monthly describe the same experience: a subscription they forgot, a repeated charge they did not recognise, or simply the true size of one category.\n\nA BALANCE AND CREDIT ARE NOT THE SAME THING. An overdraft facility that completes a payment when your balance is short is a LOAN, with a fee, and it repays itself out of your next deposit — which is why money can arrive and vanish the same minute. It is useful in a genuine emergency and expensive as a habit. Know whether yours is switched on, and know what it charges.\n\nSAFETY, PLAINLY. Your PIN is never needed by an agent, by customer care, or by anyone who calls you. Nobody legitimate asks you to send money to reverse a payment made to you in error. A message saying you have received money is not proof that you have — check your balance yourself before releasing goods. And if you do send money to a wrong number, act within minutes rather than days: there is an official reversal process, it works far better while the money is still untouched, and the current steps are worth saving before you need them.\n\nFINALLY, MOBILE MONEY IS NOT SAVINGS. It is a wallet, sitting where it is easiest to spend. Money you intend to keep belongs somewhere that takes deliberate effort to reach — which is the subject of the next module.",
+      "practice": "Do two things on your own phone. First, open the tariff or charges list in the app or USSD menu and write down what it actually costs you to withdraw the amount you usually withdraw — then multiply that by the number of times you withdrew last month. That total is what your withdrawal habit costs per month. Second, check whether an overdraft or credit facility is active on your line and what it charges. Write both numbers down. Most people are surprised by at least one of them.",
+      "quiz": [
+        {
+          "question": "Why does withdrawing cash in several small amounts cost more than withdrawing once?",
+          "options": [
+            "A withdrawal fee is charged each time, so the same money is charged for repeatedly",
+            "Small withdrawals are taxed at a higher rate by law",
+            "Agents are allowed to set their own prices for small amounts",
+            "The fee is a fixed percentage, so the amount makes no difference"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "An overdraft facility completes a payment when your balance is short. What is it?",
+          "options": [
+            "A loan with a fee, repaid out of your next deposit",
+            "A free service that tops up your balance",
+            "Part of your savings held back by the network",
+            "A reversal of the payment you just made"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "3953429e-1b88-4840-acd7-649abd251ee3",
+      "title": "Build a 50/30/20 Budget With Real Numbers",
+      "objectives": [
+        "Split take-home income into needs, wants and savings using real figures",
+        "Judge honestly which of your costs are needs and which are wants",
+        "Adapt the proportions when rent and food genuinely exceed half your income"
+      ],
+      "notes": "THE RULE IS SIMPLE: about 50 per cent of take-home income to needs, 30 to wants, 20 to savings and debt repayment. Its value is not the exact numbers. It is that it forces you to name three totals instead of arguing about forty small decisions.\n\nUSE TAKE-HOME PAY. What reaches you after tax and statutory deductions. If your income varies, use the LOWEST of your last six months, not the average — the reason is the whole of the irregular-income lesson later in this course.\n\nNEEDS ARE WHAT YOU CANNOT WORK OR LIVE WITHOUT. Rent, food, transport to work, electricity and water, the data bundle you need to do your job, the minimum payment on a debt. WANTS ARE EVERYTHING ELSE, and being honest here is the whole exercise. A data bundle used for work is a need; the streaming subscription on the same bundle is a want. Lunch is a need; lunch bought rather than carried is partly a want. Nobody is checking your answers, which is exactly why they have to be honest.\n\nNOW THE PART THE RULE DOES NOT SAY OUT LOUD. It was written for salaried earners in places where housing takes a quarter of income. If you earn KSh 20,000 and rent is 7,000 and food is 8,000, your needs are already 75 per cent, and no amount of discipline makes them 50. THAT IS NOT A FAILURE OF THE BUDGET — it is a fact about the income, and pretending otherwise is how people conclude that budgeting does not work for them.\n\nWHEN NEEDS EXCEED HALF, DO THIS INSTEAD. Keep the structure and change the numbers: protect a savings percentage you can actually sustain, even 5 per cent, and treat it as non-negotiable rather than aspirational. A sustained 5 per cent beats an abandoned 20 in every month that follows. Then work the two levers that genuinely move needs — the cost of housing and the cost of transport — because trimming wants that are already small changes very little.\n\nRECALCULATE EVERY FEW MONTHS, and every time your income changes. A budget is a plan, and plans age.\n\nONE WARNING. When income rises, needs have a habit of rising to meet it. Deciding in advance what share of a raise goes to savings — before the money arrives — is the difference between earning more and having more.",
+      "practice": "Write your actual take-home figure at the top of a page, or the lowest of your last six months if it varies. Under it, list every cost you have and mark each one N for need or W for want, with no third column and no arguing. Total the Ns and the Ws, divide each by your income, and write the two percentages down. Then write what is left as your savings percentage. If the needs figure is above 50 per cent, do not adjust the list to look better — instead write one sentence naming which of housing or transport you could realistically change this year, and by how much.",
+      "quiz": [
+        {
+          "question": "Which figure should the 50/30/20 split be calculated on?",
+          "options": [
+            "Take-home pay after tax and statutory deductions, or your lowest recent month if income varies",
+            "Gross salary before deductions",
+            "The average of your best three months",
+            "The amount you hope to be earning next year"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Your rent and food alone come to 75 per cent of your income. What does this lesson recommend?",
+          "options": [
+            "Keep the structure but protect a smaller savings percentage you can sustain, and work on housing and transport costs",
+            "Reclassify some of the food spending as a want so the numbers fit",
+            "Abandon budgeting until your income is higher",
+            "Borrow the difference so the 50/30/20 split can be maintained"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "a5a7c422-cca5-46e7-a79a-9d2a5e6979bc",
+      "title": "Build Your Emergency Fund in 5 Steps",
+      "objectives": [
+        "Say what an emergency fund is for, and what it is not for",
+        "Set a first milestone small enough to actually reach",
+        "Keep the money reachable in a day but not instantly spendable"
+      ],
+      "notes": "AN EMERGENCY FUND EXISTS TO STOP AN EMERGENCY BECOMING A LOAN. That is its entire job. Every expensive borrowing story starts with an ordinary event — a hospital deposit, a phone that died, fare to get home, a week of lost work — arriving on a day when there was nothing set aside.\n\nIGNORE THE THREE-MONTHS ADVICE AT FIRST. Three to six months of expenses is the standard target and it is correct eventually. It is also so far away that it stops people starting. YOUR FIRST MILESTONE IS WHATEVER COVERS THE MOST LIKELY REAL EMERGENCY — for many people that is a few thousand shillings: a clinic visit, a replacement phone, transport home. Reach that, and you have already removed the most common reason people borrow at terrible rates. Then aim at one month of expenses, then three.\n\nWHERE YOU KEEP IT DECIDES WHETHER IT SURVIVES. Two requirements, in tension: you must be able to reach it within about a day, and you must not be able to spend it by accident. Money left in your mobile wallet fails the second test — it sits exactly where you spend from. A separate account, a fixed-term lock savings product, or a SACCO all add the friction that protects it. Anything that takes weeks to access, or that can lose value in the meantime, fails the first test and is an investment, not an emergency fund.\n\nDISTINGUISH AN EMERGENCY FROM A KNOWN BILL. School fees in January is not an emergency; it is a date on the calendar and it belongs in its own set-aside, as the first lesson described. Keeping the two separate is what stops January from emptying the fund that exists for February.\n\nFUND IT THE SAME WAY YOU SAVE ANYTHING — FIRST, AUTOMATICALLY, AND SMALL ENOUGH TO SURVIVE A BAD MONTH. A hundred shillings a week that never stops beats a thousand that stops in March.\n\nAND WHEN YOU USE IT, THAT IS NOT FAILURE — THAT IS THE FUND WORKING. The only rule is that refilling it becomes the next goal, immediately, before anything else resumes.\n\nONE HONEST DIFFICULTY. Visible savings attract requests from family, and refusing can be genuinely hard. Keeping the fund somewhere not instantly accessible is a practical answer, and deciding in advance what you will say is part of the skill rather than a sign of meanness.",
+      "practice": "Name your most likely real emergency — the one that has actually happened to you or someone close to you in the last two years — and write down what it cost. That figure, not three months of expenses, is your first target. Then choose where the money will live, using the two tests: can you reach it within a day, and is it awkward enough that you will not spend it by accident? Open or identify that place today and move any amount into it, however small, so the account exists rather than remaining a plan.",
+      "quiz": [
+        {
+          "question": "Why does this lesson advise a small first milestone rather than the standard three months of expenses?",
+          "options": [
+            "Covering the most likely real emergency already removes the commonest reason people borrow, and it is close enough to actually reach",
+            "Three months of expenses is bad advice at any stage",
+            "Small amounts earn a higher rate of interest",
+            "Because emergency funds should never hold more than a few thousand shillings"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Which place fails the test for holding an emergency fund?",
+          "options": [
+            "Your everyday mobile money wallet, because it sits where you spend from",
+            "A separate account you can reach within a day",
+            "A lock savings product with a short fixed term",
+            "A SACCO where withdrawing takes deliberate effort"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "1be38b25-ec2f-4b9a-b2a0-29ae77be70fc",
+      "title": "Budgeting on Irregular Income (Complete Guide)",
+      "objectives": [
+        "Budget from your floor rather than your average month",
+        "Separate money arriving from money you live on, and pay yourself monthly",
+        "Set aside tax and slow-payment cover before treating income as yours"
+      ],
+      "notes": "IRREGULAR INCOME IS NOT UNBUDGETABLE. It just cannot be budgeted the way a salary is, and most people fail because they try anyway — planning against a good month, then treating every normal month as a crisis.\n\nBUDGET ON YOUR FLOOR, NOT YOUR AVERAGE. Look at the last six months of actual receipts and take the LOWEST one. That is the number your fixed costs must fit inside. An average guarantees that roughly half your months break the plan; a floor guarantees that almost none do, and every month above it feels like progress rather than relief.\n\nUSE TWO PLACES FOR MONEY. Everything you earn lands in one account and you do not spend from it. Once a month you move a FIXED amount from there into the account you live on — you pay yourself a salary. Good months raise the balance in the first account, not your spending. This one habit converts a lumpy income into a regular one, and it is the whole technique in a sentence.\n\nBUILD A BUFFER MONTH BEFORE ANYTHING ELSE. One full month of expenses sitting in the income account, untouched, is what lets you pay yourself on time when a client pays late. It is separate from the emergency fund and does a different job: the buffer absorbs TIMING, the emergency fund absorbs EVENTS.\n\nALLOCATE BY PERCENTAGE, NOT BY AMOUNT. Decide once what share of every payment goes to savings, to tax, and to the buffer, and apply it the day the money arrives. Percentages adapt to a good month and a bad one without a new decision each time.\n\nSET ASIDE TAX THE DAY YOU ARE PAID. Freelance and business income does not arrive with deductions already taken, which makes it feel larger than it is. Money for tax is not your money; it is money you are holding. Confirm your own obligation with the current KRA guidance rather than a rule of thumb, and keep that share somewhere you cannot reach by accident.\n\nAND SEPARATE INVOICED FROM RECEIVED. Work delivered is not income until it lands. A pipeline full of unpaid invoices has ruined more freelancers than a quiet month ever has — which is why the floor, the buffer and the fixed self-payment all matter more here than in any salaried plan.\n\nONE LAST THING THAT IS REALLY A MONEY SKILL. Work priced below what it costs you to deliver does not become profitable at volume; it just fills the time that better-paid work needed.",
+      "practice": "List what you actually received in each of the last six months. Circle the lowest figure — that is your planning income from now on. Write your fixed monthly costs beneath it and check whether they fit inside that number; if they do not, you have found the real problem, and it is the size of the fixed costs rather than the variability. Then set the fixed amount you will pay yourself each month, and the three percentages you will take off every payment on the day it arrives: savings, tax, and buffer.",
+      "quiz": [
+        {
+          "question": "Which figure should fixed costs fit inside when income varies?",
+          "options": [
+            "The lowest of the last six months of actual receipts",
+            "The average of the last six months",
+            "The best month, since you can catch up later",
+            "The total you invoiced, whether or not it has been paid"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What different jobs do a buffer month and an emergency fund do?",
+          "options": [
+            "The buffer absorbs late payment and timing; the emergency fund absorbs unexpected events",
+            "They are two names for the same savings",
+            "The buffer is for tax and the emergency fund is for rent",
+            "The buffer is invested while the emergency fund is spent"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "2b015412-2d30-4006-8e89-cd358605a31b",
+      "title": "How to Avoid Debt Traps",
+      "objectives": [
+        "Convert a monthly or per-week fee into what it costs over a year",
+        "Recognise the borrowing patterns that turn one loan into several",
+        "Follow a clear order of moves to get out, and the one thing that keeps you out"
+      ],
+      "notes": "A DEBT TRAP IS RARELY BUILT BY ONE BAD LOAN. It is built by a small one, priced in a way that hides its size, taken at a moment when there was no alternative.\n\nLEARN TO CONVERT THE PRICE. Short-term lenders quote a flat fee for a short period — a percentage per month, or per week, or a one-off facility fee. A fee that sounds small multiplies: a charge of 7.5 per cent for a month, rolled over each month, is not 7.5 per cent a year, it is roughly 90 per cent and higher once it compounds. ALWAYS ASK WHAT THE SAME PRICE COMES TO OVER TWELVE MONTHS before you agree, and get the real figure from the lender rather than a remembered one, because these prices change and differ between products.\n\nTHE PATTERN THAT CATCHES PEOPLE has three steps and it is always the same. One, borrow a small amount to cover an ordinary shortfall. Two, repay it out of income that was already spoken for, which creates the next shortfall. Three, borrow again — often from a second lender, because the first is not yet repaid. From there the number of lenders grows, repayment dates fall in different weeks, and the whole of each income is spent servicing fees rather than reducing what is owed.\n\nAN ALWAYS-ON OVERDRAFT DESERVES ITS OWN WARNING. When a facility completes payments you cannot afford and then takes its repayment from your next deposit, you can be permanently one deposit behind while never seeing a loan statement. Money arrives, money disappears, and nothing looks like borrowing.\n\nTHE ORDER OF MOVES TO GET OUT, and the order matters. First, STOP NEW BORROWING — nothing else works while the hole is still being dug, and that usually means switching off the convenient facilities rather than resolving to resist them. Second, WRITE EVERY DEBT DOWN with what is owed, the repayment date, and the real cost. Most people have never seen the list in one place and it is often smaller than the fear of it. Third, pay the MOST EXPENSIVE one down first while paying the minimum on the rest; that is the mathematically correct order. Fourth, TALK TO THE LENDER before you default rather than after — a restructured payment plan is ordinary and being listed as a defaulter follows you for years. Fifth, only then increase repayments.\n\nAND THE THING THAT KEEPS YOU OUT IS NOT DISCIPLINE — IT IS A BUFFER. The previous lessons in this course are the actual answer to this one. A person with a small emergency fund does not need a payday loan when their phone breaks; a person with none will need one every time.\n\nBORROWING IS NOT ALWAYS THE ENEMY. Debt for something that earns — stock you can sell, a tool that raises your rate, fees for a qualification that changes your income — can be sound if the return is real and you have checked the actual cost. Debt for consumption almost never is.",
+      "practice": "Write down every debt you currently owe, including overdraft facilities and money owed to family, with three columns: the amount, the date it is due, and what it costs you in fees or interest. For each one, work out what that fee comes to over a full year. Then rank them most expensive first. That ranking is your repayment order. If the list turns out to be empty, do the exercise anyway with the last loan you took — knowing how to price one is what stops the next one from being expensive.",
+      "quiz": [
+        {
+          "question": "A lender charges 7.5 per cent for one month. What does this lesson tell you to do before agreeing?",
+          "options": [
+            "Work out what the same price comes to over twelve months, using the lender's real figures",
+            "Compare it to the fee your bank charges for a withdrawal",
+            "Assume it is affordable because the period is short",
+            "Take the loan and repay early, which removes the fee"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What is the first move when getting out of a debt spiral?",
+          "options": [
+            "Stop new borrowing, including switching off convenient credit facilities",
+            "Increase your repayments as much as possible",
+            "Borrow once more at a lower rate to clear the others",
+            "Wait to be listed, then negotiate"
+          ],
+          "correct_index": 0
+        }
+      ]
+    }
+  ]
+}

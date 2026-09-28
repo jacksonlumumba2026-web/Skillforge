@@ -801,9 +801,29 @@ DaVinci Resolve being too heavy for modest machines with the proxy-media
 fix and the phone-editor fallback, and freelance editing as the income that
 does not depend on your own channel growing.
 
+### Knowledge-check options are shuffled, because position leaked the answer
+
+Options used to render in the order they are stored. Across the catalogue the
+correct answer sits first in 849 of 1,242 questions — 68 per cent — because the
+natural way to write a question is the right answer first and the distractors
+after it. Rendered in stored order, "tap the first option" passed most of the
+platform without reading anything, and a self-check you can pass without
+reading is not a self-check.
+
+`components/KnowledgeCheck.tsx` now derives a display order from a hash of the
+question text. That matters for two reasons: it is identical on the server and
+in the browser, so there is no hydration mismatch, and it is stable across
+re-renders, so options do not jump while somebody is reading them. Measured
+over 20,000 question strings the stored first option now lands in each of the
+four positions about a quarter of the time, and all 24 permutations occur.
+
+`correct_index` still means exactly what it says in the database — only the
+display order changes — so no stored row had to be rewritten and the 1,242
+existing questions were fixed by one component.
+
 ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 114. Twenty-seven courses are now fully
+      **Bare-lesson count: 438 → 108. Twenty-eight courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
@@ -819,8 +839,8 @@ does not depend on your own channel growing.
       `resume-writing-linkedin-personal-branding` (16),
       `mobile-photography-content-creation` (12),
       `python-programming-for-beginners` (16),
-      `google-workspace-productivity` (16) and
-      `podcasting-voice-over` (12).**
+      `google-workspace-productivity` (16), `podcasting-voice-over` (12)
+      and `personal-finance-budgeting` (10, `0144`).**
 
       **No enrolled course carries a bare lesson any more.**
       `google-workspace-productivity` was the last one, held back until the

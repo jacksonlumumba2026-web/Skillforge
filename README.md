@@ -823,7 +823,7 @@ existing questions were fixed by one component.
 
 ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 108. Twenty-eight courses are now fully
+      **Bare-lesson count: 438 → 102. Twenty-nine courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
@@ -840,7 +840,8 @@ existing questions were fixed by one component.
       `mobile-photography-content-creation` (12),
       `python-programming-for-beginners` (16),
       `google-workspace-productivity` (16), `podcasting-voice-over` (12)
-      and `personal-finance-budgeting` (10, `0144`).**
+      `personal-finance-budgeting` (10, `0144`) and
+      `public-speaking-communication-skills` (10, `0145`).**
 
       **No enrolled course carries a bare lesson any more.**
       `google-workspace-productivity` was the last one, held back until the

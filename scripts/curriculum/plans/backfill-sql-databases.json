@@ -1,0 +1,203 @@
+{
+  "course": "SQL & Databases for Beginners (sql-databases-for-beginners) — all six bare lessons",
+  "lessons": [
+    {
+      "id": "120639b6-a13f-406e-87e4-133c7f2d320d",
+      "title": "What a Database Is and Why SQL Matters",
+      "objectives": [
+        "Say what a database gives you that a spreadsheet does not",
+        "Read a table in terms of rows, columns, keys and relationships",
+        "Start practising without installing anything"
+      ],
+      "notes": "A DATABASE IS NOT A BIGGER SPREADSHEET. A spreadsheet is a grid that a person reads. A database is a store that a PROGRAM reads, that many people can use at once, and that refuses to hold nonsense. Those three differences are the whole reason the job exists.\n\nTHE VOCABULARY, WHICH IS SMALL. A TABLE is one kind of thing — customers, orders, students. A ROW is one of them. A COLUMN is one fact about each of them. A PRIMARY KEY is the column that says which row is which, uniquely and forever. A FOREIGN KEY is a column in one table holding the key of a row in another, and that is how tables are related.\n\nTHE IDEA UNDERNEATH ALL OF IT: EACH FACT LIVES IN EXACTLY ONE PLACE. A customer's phone number is stored once, in the customers table, and every order refers to that customer by key. In a spreadsheet the number gets typed into every order, and then somebody updates one of them. The database version cannot drift out of agreement with itself, and that is worth more than any feature.\n\nSQL IS HOW YOU ASK. It is closer to English than most programming and it is learnable in an evening: SELECT what you want, FROM where, WHERE some condition holds. Everything in this course is that shape, plus refinements.\n\nSQL IS ALSO REMARKABLY PORTABLE. The core of it is the same in PostgreSQL, MySQL, SQL Server, SQLite and inside most business tools. Small differences exist at the edges, but what you learn here transfers across employers, which is unusual and is part of why it is worth learning.\n\nPRACTISE WITHOUT INSTALLING ANYTHING. There are free browser-based SQL playgrounds that give you a database and an editor in a tab, with sample tables already loaded. Use one. Installing a database server on a low-specification laptop over a metered connection is a large download and a common reason people quit in week one, and it teaches you nothing about SQL. Install later, when a job actually requires it.\n\nAND KNOW WHY THIS SKILL PAYS. Almost every organisation has data it cannot answer questions about, because the only people who can ask are technical. Being the person in a non-technical team who can write a query is a genuine, repeatedly hireable position — and it is the foundation under data analysis, reporting and most backend work.",
+      "practice": "Open a free browser SQL playground and look at the sample tables it gives you. For one table, write down in plain words what one ROW represents, which column is the primary key, and one column that refers to another table. Then find the same information a second way: pick any two tables and write one sentence saying how they are related. Do not write any SQL yet — being able to describe the shape of the data is what makes the queries in the next lesson obvious.",
+      "quiz": [
+        {
+          "question": "What is the core advantage of a database over a spreadsheet?",
+          "options": [
+            "Each fact lives in exactly one place, so the data cannot drift out of agreement with itself",
+            "It can hold more rows",
+            "It calculates formulas faster",
+            "It can be opened by more people at once"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why does this lesson recommend a browser playground rather than installing a database?",
+          "options": [
+            "Installing a server is a large download and a common reason beginners quit, and it teaches nothing about SQL",
+            "Installed databases cannot run the queries in this course",
+            "Browser playgrounds are more powerful",
+            "Local installations are not allowed by most employers"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "97eea033-0d4e-4368-89f8-b41199b8670a",
+      "title": "SELECT Basics: Retrieving Data",
+      "objectives": [
+        "Write and read a basic SELECT query",
+        "Know the order the database actually processes a query in",
+        "Limit what you pull back, for speed and for data cost"
+      ],
+      "notes": "SELECT column, column FROM table. That is the whole of it, and everything else in SQL is added onto that sentence.\n\nTHE SINGLE MOST CLARIFYING FACT FOR A BEGINNER IS THAT THE DATABASE DOES NOT READ YOUR QUERY IN THE ORDER YOU WROTE IT. You write SELECT first, but the database starts with FROM — it finds the table — then applies WHERE to choose rows, then GROUP BY, then finally SELECT to pick columns, then ORDER BY, then LIMIT. Once you know that, several confusing errors stop being mysterious: it is why you cannot use a column alias you invented in SELECT inside your WHERE, and why filtering happens before grouping. Learn this order and most beginner confusion disappears.\n\nSELECT * MEANS EVERY COLUMN. It is fine while exploring and a bad habit in anything that will be run again: it pulls columns you do not need, breaks when somebody adds a column, and hides what the query actually depends on. Name your columns once you know what you want.\n\nALWAYS PUT A LIMIT ON AN EXPLORATORY QUERY. LIMIT 10 while you are finding your way around costs nothing; the same query without it against a large table can return millions of rows, hang your session and, on a metered connection, cost real money in transferred data. Make LIMIT a reflex when looking at an unfamiliar table.\n\nALIASES MAKE OUTPUT READABLE: SELECT first_name AS name. Use them for anything a person will read.\n\nCASE DOES NOT MATTER to the database, but convention helps people: keywords in capitals, your own names in lower case. Write for the person who reads it next, which is often you in six months.\n\nAND READ WHAT COMES BACK RATHER THAN ASSUMING IT. Check the number of rows, look at whether any column is unexpectedly empty, and see whether numbers are the magnitude you expected. A query that runs without error and returns the wrong thing is the normal failure in this work, and nothing but looking catches it.",
+      "practice": "In your playground, pick one table and write three queries: everything with a LIMIT of 10, then just three named columns, then the same three with readable aliases. Now predict the number of rows before you run a fourth query, then run it and compare. Finally, write out the order the database processes a query in, from memory, on paper — FROM, WHERE, GROUP BY, SELECT, ORDER BY, LIMIT — because the next two lessons assume it.",
+      "quiz": [
+        {
+          "question": "In what order does the database actually process a query?",
+          "options": [
+            "FROM, then WHERE, then GROUP BY, then SELECT, then ORDER BY, then LIMIT",
+            "Exactly the order you wrote it, starting with SELECT",
+            "SELECT and FROM together, then everything else at once",
+            "The order varies depending on the database engine"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why put LIMIT on an exploratory query?",
+          "options": [
+            "Without it a large table can return millions of rows, hang the session and cost real money in transferred data",
+            "Queries without LIMIT are rejected by most databases",
+            "It makes the results more accurate",
+            "It is required whenever you use SELECT *"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "8d8090eb-b972-4ea1-bdce-ec83673a7585",
+      "title": "Filtering Data with WHERE",
+      "objectives": [
+        "Filter rows with comparisons, AND, OR and parentheses",
+        "Handle empty values correctly, which is where beginners get wrong answers",
+        "Check a destructive change before you make it"
+      ],
+      "notes": "WHERE CHOOSES ROWS. Everything else in this lesson is detail on how to say what you mean.\n\nTHE COMPARISONS: equals, not equals, greater and less than, BETWEEN for a range, IN for a list, LIKE for partial text. Strings and dates go in single quotes; numbers do not. Getting a number wrapped in quotes is a common beginner error that sometimes works and sometimes silently does not.\n\nAND BINDS TIGHTER THAN OR, and this quietly produces wrong answers. Written without brackets, a filter meaning county is Nairobi or Kisumu, and status is active, will often return every Nairobi row regardless of status. USE PARENTHESES whenever AND and OR appear in the same WHERE, every time, even when you are sure. This single habit prevents one of the most common wrong-but-plausible results in SQL.\n\nNOW THE ONE THAT CATCHES EVERYONE: EMPTY VALUES ARE NOT EQUAL TO ANYTHING, INCLUDING THEMSELVES. A column with no value in it does not match equals, and it does not match not-equals either. So a filter for status not equal to cancelled will silently drop every row whose status was never filled in. Use IS NULL and IS NOT NULL to test for emptiness, and whenever a count comes back smaller than you expected, empty values are the first suspect.\n\nLIKE MATCHES PATTERNS, with the percent sign meaning any run of characters. Be aware that whether it cares about upper and lower case differs between databases, so do not assume.\n\nAND THE SAFETY RULE THAT MATTERS MORE THAN ANY OF THE ABOVE. Before you ever run an UPDATE or a DELETE, run a SELECT with the SAME WHERE clause and look at exactly which rows come back. If that returns 4,000 rows when you expected six, you have just saved yourself a catastrophe instead of causing one. Every experienced person does this, every time, and the ones who learned it the hard way are the most rigorous about it. Nothing in this course will do more to protect a job than this habit.",
+      "practice": "Write a filter that combines AND and OR without parentheses, look at the row count, then add the parentheses you meant and compare — see the difference for yourself rather than taking it on trust. Then find a column in your sample data with empty values, and write two queries: one using not-equals, one using IS NOT NULL, and explain the difference in row counts. Finally, write a DELETE you will not run, and above it the SELECT with the identical WHERE that you would check first.",
+      "quiz": [
+        {
+          "question": "Why must you use parentheses when AND and OR appear in the same WHERE?",
+          "options": [
+            "AND binds tighter than OR, so without them the query quietly returns the wrong rows",
+            "Some databases reject queries with both",
+            "It makes the query run faster",
+            "OR is evaluated first, which reverses your intent"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "A filter for status not equal to cancelled returns fewer rows than expected. What is the likely cause?",
+          "options": [
+            "Rows with an empty status do not match not-equals — empty values are not equal to anything",
+            "The comparison needs to be case-sensitive",
+            "not-equals is not supported on text columns",
+            "The rows were deleted by an earlier query"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "3423b892-a480-4036-9f0f-ab46e0027797",
+      "title": "JOINs: Combining Data Across Tables",
+      "objectives": [
+        "Join two tables on a key and read the result",
+        "Choose between an inner join and a left join deliberately",
+        "Recognise the two join mistakes that produce wrong numbers"
+      ],
+      "notes": "A JOIN PUTS TWO TABLES SIDE BY SIDE, matching rows using a key. This is where SQL starts to pay, because the interesting questions always span tables: which customers ordered, which students sat which paper, which invoices went unpaid.\n\nAN INNER JOIN KEEPS ONLY ROWS THAT MATCH ON BOTH SIDES. A LEFT JOIN keeps every row from the first table, filling in empty values where the second has no match. That difference is the entire decision, and it is a decision about the QUESTION you are asking, not about style.\n\nUSE THE QUESTION TO CHOOSE. Which customers placed an order — inner join. How many orders has each customer placed, INCLUDING the ones who placed none — left join, and the ones with none show a count of zero. If a result set is smaller than you expected, ask whether you wanted a left join; that is the single most common cause.\n\nRIGHT JOINS EXIST AND ARE RARE. Anything a right join does, a left join does with the tables the other way round, and teams generally standardise on left because reading a query full of mixed directions is unpleasant. Learn to recognise one; prefer not to write one.\n\nTHE TWO MISTAKES THAT PRODUCE CONFIDENTLY WRONG NUMBERS.\n\nFIRST, JOINING WITHOUT A CONDITION, which pairs every row with every row. Two tables of a thousand rows become a million, and the totals are nonsense in a way that looks like data. If a join makes your row count explode, this is why.\n\nSECOND, JOINING ON A COLUMN THAT IS NOT UNIQUE. If the right-hand table has three rows per key, every left-hand row is duplicated three times — and if you then add up a money column, the total is triple the truth. This one is dangerous precisely because nothing looks broken. ALWAYS CHECK THE ROW COUNT BEFORE AND AFTER A JOIN. If it grew, understand exactly why before you trust anything you calculate from it.\n\nALIAS YOUR TABLES with short names and put the alias in front of every column. It is a few extra characters and it makes a three-table query readable instead of a puzzle.\n\nAND FILTER AFTER YOU HAVE CHECKED THE JOIN, not before — get the join right and verified first, then narrow it.",
+      "practice": "Join two tables in your sample data and write down the row count before and after. Then deliberately break it: remove the join condition and see the row count explode, so you recognise the symptom later. Next, answer one question with an inner join and the same question with a left join, and write one sentence explaining which rows the left join kept and why that changes the answer. Finish by writing the question that would make each of the two correct.",
+      "quiz": [
+        {
+          "question": "When do you need a left join rather than an inner join?",
+          "options": [
+            "When the question includes rows with no match, such as customers who placed no orders",
+            "When one table is much larger than the other",
+            "When the join column is not a primary key",
+            "When you want the query to run faster"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Your money total triples after adding a join. What is the likely cause?",
+          "options": [
+            "The joined table has several rows per key, so each row was duplicated — check row counts before and after every join",
+            "The join condition was written backwards",
+            "An inner join was used where a left join was needed",
+            "The money column needs to be cast to a number"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "6bc7e3ce-9259-4ada-8a31-c635f72ce893",
+      "title": "Grouping and Sorting: GROUP BY and ORDER BY",
+      "objectives": [
+        "Summarise rows into counts, totals and averages",
+        "Use HAVING and WHERE in the right places",
+        "Sort and take the top results correctly"
+      ],
+      "notes": "GROUP BY TURNS MANY ROWS INTO ONE ROW PER GROUP, and the aggregate functions — COUNT, SUM, AVG, MIN, MAX — say what to do with the rows inside each group. Sales per county, orders per customer, average mark per class: all the same shape.\n\nTHE RULE THE DATABASE ENFORCES: every column in your SELECT must either be in the GROUP BY or be inside an aggregate function. This confuses everyone once. The reason is simple — if you group by county, there is one row per county, so there is no single customer name to show, and the database refuses to pick one arbitrarily.\n\nCOUNT(*) AND COUNT(column) ARE DIFFERENT AND THE DIFFERENCE MATTERS. COUNT(*) counts rows. COUNT(column) counts rows where that column is NOT EMPTY. When somebody says the two numbers disagree, that gap is exactly the count of missing values — which makes it a fast and genuinely useful way to measure how complete your data is.\n\nWHERE AND HAVING BOTH FILTER, AT DIFFERENT MOMENTS, and this is the single most common confusion in the lesson. WHERE runs BEFORE the grouping and filters individual rows. HAVING runs AFTER and filters the groups themselves. So: exclude cancelled orders before counting — WHERE. Show only customers with more than five orders — HAVING, because the count does not exist until after grouping. Recall the processing order from the SELECT lesson and this stops being something to memorise.\n\nORDER BY SORTS THE OUTPUT, ascending by default, descending when asked. Combined with LIMIT it answers every top-ten question you will ever be given.\n\nONE TRAP WORTH KNOWING: numbers stored in a text column sort alphabetically, so 100 comes before 20. If a sort looks wrong in that specific way, the column is text and needs converting.\n\nAND SANITY-CHECK AGGREGATES RATHER THAN TRUSTING THEM. Does the total of your groups equal the total of the whole table? If not, rows fell out — usually an inner join or a WHERE excluding empty values. An aggregate is a confident-looking number, and a wrong one is more dangerous than an error message.",
+      "practice": "Write a query that counts rows per group and sorts by that count, largest first, with a LIMIT of five. Then run COUNT(*) and COUNT(column) on the same table and explain the difference in one sentence. Now write two filters on the same query: one that belongs in WHERE and one that belongs in HAVING, and say why each goes where it does. Finally, check whether your group totals add up to the total for the whole table, and if not, find out which rows fell out.",
+      "quiz": [
+        {
+          "question": "You want only customers with more than five orders. Where does that filter go?",
+          "options": [
+            "HAVING — the count does not exist until after grouping",
+            "WHERE, because it filters rows",
+            "Either one works identically",
+            "In the ORDER BY clause"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "COUNT(*) and COUNT(column) return different numbers. What does the gap represent?",
+          "options": [
+            "The number of rows where that column is empty",
+            "Rows that were excluded by the WHERE clause",
+            "Duplicate rows in the table",
+            "An error in the grouping"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "e544ecde-5275-4c9f-8b47-9f38a3d41e53",
+      "title": "A Full SQL Data Exploration Project",
+      "objectives": [
+        "Explore an unfamiliar dataset in a deliberate order",
+        "Check your own findings before you report them",
+        "Turn the work into something an employer can look at"
+      ],
+      "notes": "THIS IS THE LESSON THAT TURNS A LIST OF COMMANDS INTO A SKILL. The difference between someone who knows SQL syntax and someone employable is that the second one has a METHOD for meeting a dataset they have never seen.\n\nTHE ORDER TO EXPLORE IN, and it is always roughly this. How many rows are there. What does one row actually represent — say it in a sentence, out loud. What columns exist and what type is each. How complete is each column, using the COUNT(*) against COUNT(column) trick from the last lesson. What are the distinct values in the categorical columns, and are there duplicates that are really the same thing spelled differently. What is the range of the dates and the numbers, and are there impossible values — a negative age, a date in 2087, a price of zero. Only THEN start answering questions.\n\nWRITE THE QUESTION DOWN BEFORE WRITING THE QUERY. A written question stops you drifting into whatever the data makes easy, and it makes the answer checkable. Hunting through data with no question is how a day disappears with nothing to show.\n\nCHECK YOUR OWN WORK, because nobody else will, and this is the habit that separates a trustworthy analyst from a fast one. Do the totals of your groups reconcile with the total of the table. Is the magnitude plausible. Can you get the same number a second way. If a result surprises you, assume your query is wrong before you assume the business is — that instinct is right far more often than not, and stating a wrong number confidently is the fastest way to lose the trust that makes this work valuable.\n\nRECORD WHAT YOU FIND, not just what you asked. Missing values, duplicates, odd categories — those findings are often more useful to the organisation than the answer you were asked for.\n\nNOW MAKE IT A PORTFOLIO PIECE, because the point of the project is getting hired. A good one is: a short written question, the queries in a file with comments saying why, the results, and a paragraph of what you found and what you would check next. That last paragraph is what an employer reads.\n\nAND CHOOSE A DATASET SOMEBODY HERE WOULD CARE ABOUT. Another analysis of an American film dataset looks like everybody else's. County budget data, national statistics, agricultural prices, exam results, matatu routes, election data — public sources exist, the questions are real, and an interviewer can immediately see you thinking about their world instead of repeating a tutorial. That choice does more for your chances than any additional SQL feature.",
+      "practice": "Take any dataset you can get and run the exploration in order: row count, what one row represents, column types, completeness, distinct values, ranges and impossible values — writing down what you find as you go. Then write ONE question in a sentence, answer it with a query, and verify the answer a second way. Package it as a file of commented queries plus a short paragraph of findings. Use a local dataset if you can find one, and write the closing paragraph as though an employer is the only person who will read it, because that is the part they will.",
+      "quiz": [
+        {
+          "question": "What should you do before writing any query against a new dataset?",
+          "options": [
+            "Explore it in order — row count, what one row represents, column completeness, distinct values, ranges and impossible values",
+            "Start answering the question you were given, to save time",
+            "Import it into a spreadsheet to look at it",
+            "Build the joins you expect to need"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "A result surprises you. What should you assume first?",
+          "options": [
+            "That your query is wrong — that instinct is right far more often than not",
+            "That the data is corrupted",
+            "That the business genuinely changed",
+            "That the database engine has a bug"
+          ],
+          "correct_index": 0
+        }
+      ]
+    }
+  ]
+}

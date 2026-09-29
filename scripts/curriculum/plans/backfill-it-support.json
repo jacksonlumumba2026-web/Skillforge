@@ -1,0 +1,203 @@
+{
+  "course": "IT Support & Help Desk Fundamentals (it-support-help-desk) — all six bare lessons",
+  "lessons": [
+    {
+      "id": "a81aea2f-4976-4a7c-89bb-59654ee74eb9",
+      "title": "What an IT Support Role Involves",
+      "objectives": [
+        "Describe what the job actually consists of day to day",
+        "Understand support tiers, escalation and what a response target means",
+        "See where the role leads and which employers hire for it here"
+      ],
+      "notes": "IT SUPPORT IS THE MOST REACHABLE ENTRY POINT INTO A TECHNOLOGY CAREER, and the reason is that it is hired on evidence of competence rather than on a degree. That makes it one of the few technical jobs you can genuinely talk your way into from self-study.\n\nTHE PART THAT SURPRISES PEOPLE: ROUGHLY HALF THE JOB IS COMMUNICATION. You are usually talking to somebody who is frustrated, under time pressure, and not technical. The technician who explains calmly, sets expectations and follows up gets promoted ahead of the one who knows more and communicates badly. That is not a consolation prize, it is how the field actually works.\n\nTHE SHAPE OF A DAY: a queue of tickets, each one somebody who cannot work. Password resets and account lockouts. Software that will not install. A machine that will not start. Printers, which are a genuinely permanent feature of this job. Network faults. Setting up equipment for new staff. Very little of it is dramatic and all of it is blocking somebody.\n\nTIERS AND ESCALATION. First line takes everything and resolves the common cases. Second line takes what first line cannot. Escalating is not failure — it is the system working, and holding onto a ticket you cannot solve while somebody waits is the actual mistake. What matters is escalating WITH EVIDENCE: what you observed, what you tried, what happened. Lesson 5 covers exactly how to write that.\n\nA RESPONSE TARGET IS A PROMISE ABOUT TIME, not about solving it. Acknowledging within the promised window and saying honestly what happens next is most of what people want; silence is what generates complaints.\n\nWHERE IT LEADS. Support is a foundation, not a ceiling: system administration, networking, cloud, security and data all recruit from it, and most people in those roles started here. Two years of solid support experience plus one specialisation is a substantial career.\n\nAND WHO HIRES HERE. Business process outsourcing and call centres hire support staff in volume and are often willing to train. Managed service providers support many small firms at once and give you enormous variety quickly. Banks, saccos, schools, hospitals and NGOs all employ internal support. And support is one of the genuinely remote-friendly roles — a technician here can hold a help desk position for a company elsewhere, which the time zone actively helps with. That last route pays substantially better and is worth aiming at deliberately.",
+      "practice": "Write down three problems you have personally solved on a computer or phone for somebody else — anything, however small. For each, write what the person reported, what you found, and what fixed it. That is the exact shape of a support ticket and it is also the shape of an interview answer. Then find three real support job advertisements and write down every requirement they share; that list is your study plan for the rest of this course.",
+      "quiz": [
+        {
+          "question": "What does this lesson say is roughly half the job?",
+          "options": [
+            "Communication with frustrated, non-technical people",
+            "Repairing hardware",
+            "Configuring networks",
+            "Writing scripts to automate fixes"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What is the right way to think about escalating a ticket?",
+          "options": [
+            "It is the system working — escalate with evidence of what you observed and tried",
+            "It is a last resort that counts against you",
+            "It should only happen after a full working day on the ticket",
+            "It means the ticket was logged at the wrong tier"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "164ac653-5fa5-4396-9030-f13ef5ddb7e0",
+      "title": "Computer Hardware Basics",
+      "objectives": [
+        "Name the main components and what each one actually does",
+        "Use symptoms to reason about which component is at fault",
+        "Advise on the cheapest change that makes a real difference"
+      ],
+      "notes": "LEARN THE COMPONENTS AS CAUSES OF SYMPTOMS, not as a list to memorise. The point of knowing what RAM does is being able to say why this particular machine is slow.\n\nTHE FOUR THAT MATTER. The PROCESSOR does the work. RAM is the desk space it works on — too little and the machine constantly puts things away and fetches them back, which is why a machine with insufficient RAM feels slow rather than merely being slow. STORAGE is the filing cabinet, and it comes in two kinds that matter enormously. The MOTHERBOARD connects everything.\n\nTHE SINGLE MOST USEFUL PIECE OF HARDWARE KNOWLEDGE IN THIS WHOLE COURSE: A MECHANICAL HARD DISK IS THE USUAL REASON AN OTHERWISE FINE OLDER MACHINE FEELS UNUSABLE, and replacing it with a solid-state drive transforms it more than any other upgrade for the money. A machine somebody was about to replace often becomes perfectly pleasant for a fraction of the cost. Being the person who knows this, and can do it, is immediately valuable — to an employer and as paid work of your own.\n\nSYMPTOM TO CAUSE, roughly. Slow when several programs are open — usually RAM. Slow at everything, especially starting up and opening files — usually a mechanical disk. Random restarts or shutdowns under load — power supply, or heat. Will not power on at all — power first, always. Strange faults that come and go — heat, dust, or a loose connection, in that order of likelihood.\n\nHEAT AND DUST ARE THE COMMONEST PHYSICAL CAUSES and they are dramatically more common in dusty conditions. A machine that shuts down after twenty minutes of work is almost always thermal. Opening it and clearing the dust out of the fan and vents fixes a great many faults that look serious, and it costs nothing.\n\nPOWER QUALITY DESERVES ITS OWN PARAGRAPH BECAUSE IT DESTROYS EQUIPMENT HERE. Surges, brownouts and abrupt cuts damage power supplies, corrupt drives and shorten the life of everything. A surge protector is cheap and an uninterruptible power supply is not expensive relative to what it protects. Recommending them is part of doing this job properly, and diagnosing repeat failures without asking about the power supply is how you keep replacing the same part.\n\nAND FOR ANY MACHINE YOU TOUCH: BACK THE DATA UP FIRST. Hardware is replaceable and the photographs and documents are not. Every experienced technician has a story about the time they skipped this, and it is the story they tell as a warning.",
+      "practice": "Open a machine you are allowed to open — an old laptop or desktop — and physically identify the processor, the RAM, the storage and the power supply. Check whether the storage is mechanical or solid-state, and clear the dust from the fan and vents while you are in there. Then take three real slow-or-faulty machines you know of, and for each write the symptom and the component you would suspect first, and what you would check to confirm it.",
+      "quiz": [
+        {
+          "question": "An older machine is slow at everything, especially starting up and opening files. What is the usual cause?",
+          "options": [
+            "A mechanical hard disk — replacing it with a solid-state drive transforms the machine for the money",
+            "Insufficient RAM",
+            "A failing processor",
+            "Too many programs installed"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "A machine shuts down after about twenty minutes of use. What should you suspect?",
+          "options": [
+            "Heat — usually dust in the fan and vents, which costs nothing to clear",
+            "A corrupted operating system",
+            "Insufficient storage space",
+            "A network fault"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "29989a9d-b87a-4bbe-ae65-5365d1bbfe50",
+      "title": "The Troubleshooting Method",
+      "objectives": [
+        "Follow a repeatable method instead of guessing",
+        "Change one thing at a time so you know what fixed it",
+        "Protect the user's data before you change anything"
+      ],
+      "notes": "THIS IS THE MOST TRANSFERABLE LESSON IN THE COURSE. The method below works on a laptop, a network, a printer, a phone and a piece of software you have never seen, and it is what separates a technician from somebody who tries things.\n\nTHE STEPS, IN ORDER. IDENTIFY the problem — what exactly happens, when did it start, what changed. FORM A THEORY of the most likely cause. TEST the theory. If it was wrong, form the next one, or escalate. Once confirmed, PLAN the fix and consider what it might break. APPLY it and VERIFY that the original problem is actually gone. Then DOCUMENT what you did.\n\nWHAT CHANGED IS THE HIGHEST-VALUE QUESTION IN SUPPORT. Machines rarely break spontaneously. An update, a new program, a cable moved, a setting changed, a power cut mid-write. Asking what changed, and being patient when the first answer is nothing, solves an enormous share of tickets before any diagnosis begins.\n\nREPRODUCE IT BEFORE YOU DIAGNOSE IT. Watch it happen, ideally on the machine itself. Reported symptoms are frequently a description of something adjacent — it will not print often means it will not open the document. You cannot confirm a fix for a fault you never saw.\n\nCHANGE ONE THING AT A TIME. This is the rule people break under time pressure, and it costs them the whole benefit of the method: if you change four settings and it works, you have learned nothing, you cannot document it, and you cannot fix it again next week. One change, test, next.\n\nWORK FROM SIMPLE AND LIKELY TO COMPLEX AND RARE. Is it plugged in, is it switched on, is it the only machine affected, has it been restarted. Experienced technicians do these faster, not less often — a senior person checking the cable is not being condescending, they are being efficient.\n\nBACK UP BEFORE ANY CHANGE THAT COULD TOUCH DATA. Reinstalling, repartitioning, replacing a drive. The fix that loses somebody's documents is remembered as the fault, whoever caused it.\n\nAND VERIFY WITH THE USER, IN FRONT OF THEM. Have them do the thing that failed. It is the only real confirmation, and it is also the moment the ticket is genuinely closed — a ticket you closed that they reopen tomorrow is worse for you than one you never closed.\n\nFINALLY: IF YOU CANNOT DESCRIBE THE FAULT IN ONE SENTENCE, YOU DO NOT UNDERSTAND IT YET. Go back to identifying it. That sentence is also what you escalate with.",
+      "practice": "Take one real fault — on your own machine or somebody else's — and work it in writing, step by step. Write the one-sentence description of the problem, what changed, your first theory, how you tested it, and what happened. Change only one thing at a time and record each. Whether or not you fix it, you should end with a written record another technician could pick up, and that document is the deliverable, not the fix.",
+      "quiz": [
+        {
+          "question": "Why change only one thing at a time?",
+          "options": [
+            "If you change four things and it works, you have learned nothing and cannot document or repeat the fix",
+            "Multiple changes take longer to apply",
+            "The system can only process one change at once",
+            "It reduces the risk of hardware damage"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What is the highest-value question when a machine has just started misbehaving?",
+          "options": [
+            "What changed — an update, a new program, a moved cable, a power cut",
+            "How old is the machine",
+            "Has it ever worked properly",
+            "Which antivirus is installed"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "8836f452-c32b-4ba8-bfe9-12e4f6b92fa6",
+      "title": "Troubleshooting Windows",
+      "objectives": [
+        "Work through the faults that fill a real help desk queue",
+        "Use the built-in diagnostic tools rather than reinstalling",
+        "Carry a toolkit that works when the connection does not"
+      ],
+      "notes": "THE PREVIOUS LESSON GAVE YOU THE METHOD. This one gives you the specific knowledge that makes you fast on the platform most of your tickets will be about.\n\nTHE QUEUE IS MOSTLY THE SAME SIX THINGS: it will not start, it is very slow, there is no network, the printer will not work, an update failed, or the user cannot sign in. Get genuinely good at those six and you can hold a first-line job.\n\nWILL NOT START — establish where it stops. No lights and no fan is power. Manufacturer logo then nothing is usually the drive or the boot configuration. Repeated restarting is often a failed update or a driver. Safe mode is the tool here: if it starts in safe mode, the hardware is fine and something loading at startup is the culprit, which narrows the problem enormously.\n\nVERY SLOW — check what is actually consuming the machine before assuming anything. The task manager tells you whether it is the processor, the memory or the disk that is saturated, and that single look chooses your fix. A disk pinned at full use on an older machine is the mechanical-disk problem from lesson 2.\n\nNO NETWORK — triage in this order, because it tells you whose problem it is: is it this machine only, this room, or everybody. One machine is a configuration or driver issue. One room is usually a switch or a cable. Everybody is the provider or the router, and that ticket is not yours to fix but IS yours to report clearly.\n\nPRINTERS — most printer tickets are the queue, the driver, or the printer being offline rather than broken. Clearing the queue and re-adding the printer resolves a majority of them.\n\nCANNOT SIGN IN — check whether the account is locked, whether the password recently changed, and whether the machine can actually reach the domain or account service, which is often the real fault wearing a password-problem costume.\n\nTHE BUILT-IN TOOLS ARE ENOUGH FOR MOST OF THIS: task manager, event viewer for what happened at the moment it broke, disk and system file checks, safe mode, and device manager for driver problems. Learn these rather than collecting third-party utilities, many of which are unnecessary and some of which are malicious.\n\nAND CARRY AN OFFLINE TOOLKIT, which matters more here than most training admits. A flash drive holding installation media, common drivers, your diagnostic tools and the installers you reach for most. A machine with no network is exactly the machine that needs a driver downloaded, and being able to fix it without a connection is a genuine professional advantage where connections are slow, metered or absent.\n\nONE MORE THING WORTH SAYING PLAINLY: UNLICENSED WINDOWS AND ACTIVATION CRACKS ARE COMMON AND THEY CAUSE REAL SUPPORT PROBLEMS — missing security updates, tools that are themselves malware, and machines that cannot be legitimately repaired. Part of doing this job well is being able to explain that cost to a client honestly, and knowing the genuine licensing routes so you can offer a real alternative rather than a lecture.",
+      "practice": "On a machine you can experiment with, deliberately practise three things: start it in safe mode and note what is different, open the event viewer and find the entries from the last time something went wrong, and open the task manager under load to see which resource saturates. Then build your flash-drive toolkit with installation media, common drivers and your diagnostic tools, and write on the drive itself the date you last updated it.",
+      "quiz": [
+        {
+          "question": "A machine starts normally in safe mode but not otherwise. What does that tell you?",
+          "options": [
+            "The hardware is fine and something loading at startup is the culprit",
+            "The drive is failing",
+            "The operating system must be reinstalled",
+            "It is a power supply fault"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "How should you triage a network fault?",
+          "options": [
+            "Establish whether it affects this machine only, this room, or everybody — that says whose problem it is",
+            "Reinstall the network drivers first",
+            "Replace the cable, then the network card",
+            "Restart the router before investigating"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "6f457b73-c8df-4070-973a-8fedcabb8ab3",
+      "title": "Ticketing Systems and Documentation",
+      "objectives": [
+        "Write a ticket another technician could pick up cold",
+        "Use priority and response targets the way a team actually does",
+        "Keep documentation that protects the user and advances your career"
+      ],
+      "notes": "A TICKET IS NOT ADMINISTRATION. It is the memory of the support team, and it is also the clearest evidence of how good you are that anybody will ever see.\n\nWHAT EVERY TICKET NEEDS, and the test is whether a colleague could pick it up cold: WHO reported it and how to reach them. WHAT happens, in their words and then in yours. WHEN it started and what changed. WHAT YOU HAVE TRIED and exactly what happened each time. WHERE it stands now. And, when closed, WHAT FIXED IT — specifically enough to repeat, because in six months that will be somebody searching for this exact symptom, quite possibly you.\n\nTHE COMMONEST FAILURE IS THE RESOLUTION NOTE THAT SAYS FIXED, or resolved, or sorted. That is worthless to the next person and it wastes the only durable value the ticket had. One specific sentence is enough: reinstalled the printer driver from the manufacturer site, cleared the stuck queue, confirmed printing with the user.\n\nPRIORITY IS ABOUT IMPACT, NOT VOLUME. One person who cannot work is a normal ticket; a department that cannot work is urgent. The loudest requester is not automatically the highest priority, and a team that lets volume set priority ends up serving whoever complains most.\n\nUPDATE THE TICKET WHILE YOU WAIT, not only when you finish. Most complaints about support are about silence, not speed. A line saying you are waiting for a part, with the date you expect it, prevents almost all of them.\n\nTWO RULES THAT ARE ABOUT THE USER, NOT THE PROCESS. NEVER PUT A PASSWORD IN A TICKET — not the user's, not an administrator's, not temporarily. Tickets are searchable, exportable, and read by people who are not you. And treat what you see on a user's machine as confidential; support access is privileged access, and the technician who gossips about what was on somebody's screen does not keep the job or deserve to.\n\nDOCUMENTATION BEYOND TICKETS IS CAREER LEVERAGE, and this is the part most people miss. The person who writes the short guide for the thing everybody asks about becomes the person who is consulted, and consulted people get promoted. It also directly reduces your own queue.\n\nAND KEEP YOUR OWN RECORD. A private note of every substantial problem you solved, what it was and how you fixed it, is the raw material for your CV and for every interview answer you will need. Start it today; reconstructing it two years later is impossible and everybody who did not do it regrets it.",
+      "practice": "Take a real problem you solved recently and write it as a proper ticket: reporter, symptom in their words and yours, when it started, what changed, each thing you tried and what happened, and a resolution note specific enough for a stranger to repeat. Then hand it to somebody non-technical and ask whether they can tell what happened. Finally, start your own private log with that entry, and add to it every time you fix something substantial.",
+      "quiz": [
+        {
+          "question": "What is wrong with a resolution note that says fixed?",
+          "options": [
+            "It is worthless to the next person searching for the same symptom, which is the ticket's only durable value",
+            "It is too short for most ticketing systems",
+            "It does not record the time spent",
+            "It fails to identify the reporter"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Where should a password be recorded while working a ticket?",
+          "options": [
+            "Nowhere in the ticket — tickets are searchable, exportable and read by people who are not you",
+            "In the ticket, but only temporarily",
+            "In the resolution note, so the fix can be repeated",
+            "In a private comment visible only to technicians"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "5b6bb607-e49f-450e-9b1c-0669b0155ec5",
+      "title": "Getting Certified: The CompTIA A+ Path",
+      "objectives": [
+        "Understand what the A+ is and what it is worth",
+        "Weigh its real cost against the alternatives before committing",
+        "Prepare in a way that suits a limited budget"
+      ],
+      "notes": "THE A+ IS THE RECOGNISED ENTRY-LEVEL CERTIFICATION FOR THIS FIELD. It is two separate exams and you need both; it covers hardware, operating systems, networking basics, security basics and troubleshooting procedure — most of which this course has now introduced.\n\nWHAT IT IS ACTUALLY FOR: getting past the filter. It does not make you competent — the practice does — but many employers and recruitment systems screen on it, and it is a recognised signal from somebody with no formal qualification and no work history. That is a real and specific value, and it is worth being clear-eyed that it is the value.\n\nNOW THE HONEST PART ABOUT COST, because most training on this subject glosses over it. Two exams, each priced in dollars, is a significant sum in shillings — for many people here a serious commitment rather than a routine expense, and the prices change, so check the current official figure yourself rather than trusting any number you read. BEFORE YOU COMMIT, WEIGH IT AGAINST THE ALTERNATIVES: cheaper or subscription-based certifications that some employers accept equally; a demonstrable portfolio of machines you have actually repaired and documented; and, crucially, asking the specific employers you want to work for what they screen on. Some genuinely require it. Many will take demonstrated skill and a good interview. Finding out costs nothing and can save you a great deal.\n\nIF YOU DO GO FOR IT. Get the official exam objectives, which are published free, and treat them as your syllabus — they are precise about what is examinable. Study to those objectives rather than watching video at random. Use practice questions heavily and treat every wrong answer as a topic to study rather than a score. Book the exam before you feel ready, because an unbooked exam is indefinitely postponed.\n\nBOOK DIRECTLY THROUGH THE OFFICIAL CHANNELS AND TEST CENTRES. Do not pay an intermediary who offers to arrange it, and be alert to anybody selling exam questions or guaranteed passes — that is fraud, it is detectable, and it invalidates the certification you paid for.\n\nDISCOUNTS EXIST AND ARE UNDER-USED: student and academic pricing, training-provider bundles that include a voucher, and occasional promotional pricing. Ask before paying full price.\n\nAND WHATEVER YOU DECIDE, KEEP FIXING REAL MACHINES. The certificate opens a door; the first week on the other side of it is judged entirely on whether you can actually diagnose a fault in front of a frustrated person. Everything in the previous five lessons is what that week is made of.",
+      "practice": "Download the official exam objectives and mark each line as confident, shaky or unknown — that marked-up document is your study plan and it is more useful than any course outline. Then do the research that most people skip: find three employers you would actually want to work for, and find out what they screen on, by reading their job advertisements carefully or by asking someone who works there. Decide from that whether the A+ is your next step or whether a documented portfolio of real repairs would serve you better.",
+      "quiz": [
+        {
+          "question": "What is the A+ mainly worth, according to this lesson?",
+          "options": [
+            "Getting past the screening filter — it is a recognised signal, not a substitute for competence",
+            "It proves you can already do the job",
+            "It is required by law for IT work",
+            "It replaces the need for a portfolio or interview"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What should you do before committing to the exam fees?",
+          "options": [
+            "Check the current official price and ask the specific employers you want to work for what they actually screen on",
+            "Book both exams at once to secure the current price",
+            "Buy a practice-question bundle from a reseller",
+            "Complete a full training course first"
+          ],
+          "correct_index": 0
+        }
+      ]
+    }
+  ]
+}

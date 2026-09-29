@@ -771,23 +771,26 @@ produces exactly the reported symptom, it is not proven to be the one
 they hit. The iOS version, or the console line from Settings > Safari >
 Advanced > Web Inspector, would close that gap.
 
-### YouTube Channel Growth — DRAFTED, NOT APPLIED
+### YouTube Channel Growth — drafted, declined once, now applied
 
-`youtube-channel-growth` still has all twelve of its bare lessons. The
-content was written and the SQL generated, but applying it was DECLINED at
-the tool prompt and was not retried. The first migration was the one
-refused and the second was never attempted, so PRODUCTION IS UNTOUCHED for
-this course — no partial application to clean up.
+All twelve bare lessons in `youtube-channel-growth` now carry full
+content, applied as `0148` and `0149` and verified by fingerprint. The
+course is complete at 16 of 16.
 
-The drafted content is kept as
-`scripts/curriculum/plans/backfill-youtube-{1,2}.json`. The generated .sql
-files were deleted deliberately rather than committed, so that nothing in
-`supabase/migrations/` implies a database state that does not exist. To
-pick this up, regenerate and apply:
+**This took two attempts and the reason is worth keeping.** The content was
+written in an earlier firing and the SQL generated, but applying the first
+migration was DECLINED at the tool prompt. Nothing partial was left behind:
+the second migration was never sent, so production was untouched. The plan
+JSON was kept, and the generated .sql files were deliberately DELETED rather
+than committed, so that nothing in `supabase/migrations/` implied a database
+state that did not exist. That is what made the work recoverable months of
+firings later — the SQL was simply regenerated from the plans, the twelve
+lesson ids were re-checked against the database to confirm they were still
+exactly the bare ones, and both parts applied cleanly.
 
-    python3 scripts/curriculum/build-backfill-sql.py \
-      scripts/curriculum/plans/backfill-youtube-1.json \
-      supabase/migrations/0144_backfill_youtube_part1.sql
+The rule that follows: when an apply is declined, keep the plan, delete the
+generated SQL, and write down which migration was refused and which was
+never attempted.
 
 The twelve cover modules 1, 2, 5, 6, 7 and 8 (modules 3 and 4 were already
 written). Two pairs needed deliberate separation: module 3 teaches where
@@ -823,7 +826,7 @@ existing questions were fixed by one component.
 
 ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 90. Thirty-one courses are now fully
+      **Bare-lesson count: 438 → 78. Thirty-two courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
@@ -842,8 +845,9 @@ existing questions were fixed by one component.
       `google-workspace-productivity` (16), `podcasting-voice-over` (12)
       `personal-finance-budgeting` (10, `0144`),
       `public-speaking-communication-skills` (10, `0145`),
-      `time-management-productivity-remote-work` (10, `0146`) and
-      `whatsapp-business-facebook-marketplace-selling` (6, `0147`).**
+      `time-management-productivity-remote-work` (10, `0146`),
+      `whatsapp-business-facebook-marketplace-selling` (6, `0147`) and
+      `youtube-channel-growth` (16, `0148`/`0149`).**
 
       **No enrolled course carries a bare lesson any more.**
       `google-workspace-productivity` was the last one, held back until the

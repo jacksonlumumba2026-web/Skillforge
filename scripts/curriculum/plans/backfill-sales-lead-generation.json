@@ -1,0 +1,203 @@
+{
+  "course": "Sales & Lead Generation for Small Business (sales-lead-generation) — all six bare lessons",
+  "lessons": [
+    {
+      "id": "e5f6c05b-41ba-42e1-9c54-24df154470e5",
+      "title": "Sales Fundamentals for People Who Hate Selling",
+      "objectives": [
+        "Treat selling as diagnosis rather than persuasion",
+        "Ask more than you talk, and qualify people out early",
+        "Follow up, which is where most sales actually happen"
+      ],
+      "notes": "MOST PEOPLE WHO HATE SELLING HATE A PARTICULAR KIND OF SELLING: pushing something at somebody who does not want it. That reluctance is good judgement, not a weakness, and the fix is not to become thick-skinned. It is to sell differently.\n\nSELLING IS DIAGNOSIS. A doctor who prescribed before examining would be dangerous, and a seller who pitches before understanding is doing the same thing less harmfully. Find out what the person is actually trying to achieve, what is in the way, and what it costs them to leave it unsolved. Only then say whether you can help.\n\nWHICH MEANS ASKING MORE THAN YOU TALK. The rough target is that the other person speaks most of the time. Useful questions: what are you using now, what is the problem with it, what happens if this is not solved, who else decides. People will tell you exactly how to sell to them if you let them finish.\n\nQUALIFY PEOPLE OUT, FAST, AND DO IT DELIBERATELY. Not everybody is your customer, and the expensive mistake is spending three weeks on somebody who was never going to buy. Three things must be true: they have the problem, it bothers them enough to spend money, and the person you are talking to can decide or can reach the person who can. If one is missing, say so politely and move on. A quick no is a gift; it returns your week to you.\n\nTHE PRICE CONVERSATION GOES BETTER WHEN IT IS EARLY AND PLAIN. Say what things cost. Hiding it until the end wastes both sides and makes you look uncertain of your own value.\n\nAND THE FOLLOW-UP IS WHERE THE WORK IS. Most sales do not happen on first contact, and most people never make a second. One message a few days later — short, adding something useful rather than only asking — converts more than any clever pitch. It is also the single easiest thing to start doing this week.\n\nONE LAST THING THAT MATTERS ESPECIALLY IN A SMALL MARKET. You will meet the same people repeatedly, and reputation travels fast in a way it does not in a large anonymous one. Overselling once can cost you a network. Being the person who says this is not for you is worth more over five years than any single closed deal.",
+      "practice": "Take your next real conversation with a potential customer and prepare five questions before it — about their situation, not about your offer. During the conversation, count roughly how much of the talking you do; aim to be under half. Afterwards write down which of the three qualifying conditions were true: do they have the problem, does it bother them enough to pay, can they decide. Then send one follow-up message three days later that adds something useful rather than only asking for an answer.",
+      "quiz": [
+        {
+          "question": "What does this lesson say selling actually is?",
+          "options": [
+            "Diagnosis — understand the problem before you say whether you can help",
+            "Persuading somebody who is undecided",
+            "Presenting your offer as clearly as possible",
+            "Building rapport until the person feels obliged"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why is a quick no valuable?",
+          "options": [
+            "It returns your week to you instead of being spent on somebody who was never going to buy",
+            "It means the price was too low",
+            "It gives you a reason to follow up later",
+            "It proves you qualified them correctly"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "d654cb15-4953-4529-b0fa-d07ef6a36767",
+      "title": "Identifying Your Ideal Customer",
+      "objectives": [
+        "Describe your customer specifically enough to go and find them",
+        "Test the description against real people rather than assuming",
+        "Write down who you do not serve"
+      ],
+      "notes": "EVERYBODY IS NOT A CUSTOMER, and trying to sell to everybody produces a message so general that it persuades nobody. Narrowing feels like giving up business and is the opposite.\n\nTHREE TESTS, AND ALL THREE MUST HOLD. They have the problem you solve. It hurts enough that they will pay to remove it. And they can be REACHED — you know where they are, physically or online. That third one is where most descriptions fail: a perfectly accurate description of somebody you cannot find is not useful.\n\nBE SPECIFIC ENOUGH TO ACT ON IT. Small businesses is not a description. Salons in Kasarani with one to three staff who take bookings on WhatsApp and lose slots to no-shows is a description, because it tells you exactly where to go, what to say and what to charge.\n\nNOW THE STEP ALMOST NOBODY DOES: GO AND TALK TO FIVE OF THEM. Not to sell — to ask. What is the most annoying part of this, what do you do about it now, what have you tried, what would make you pay to fix it. An hour of that beats a week of guessing, and the words they use become the words you sell with, which is worth the exercise on its own.\n\nLOOK AT WHO ALREADY BUYS FROM YOU, if anybody does. Your best existing customers — the ones who paid without arguing, got real value and came back — are the description. Most people have this evidence and never look at it.\n\nWRITE DOWN WHO YOU DO NOT SERVE, explicitly. The client who wants it cheapest, the one who needs it yesterday, the one who wants something outside your competence. A written not-for-me list is what lets you decline quickly and without guilt, and declining quickly is what protects the time your real customers need.\n\nAND EXPECT THE DESCRIPTION TO CHANGE. After twenty customers you will know things you cannot know now. Revisit it rather than treating the first version as permanent.\n\nONE CAUTION ON PAYING CAPACITY, because it decides your whole business. A customer who has the problem and genuinely cannot afford the solution is not your customer, however much you want to help — and pricing down to reach them usually means serving everybody badly. Either find the segment that can pay, or design a genuinely cheaper offer on purpose. What does not work is the same offer at a price that does not sustain you.",
+      "practice": "Write your customer description in one sentence specific enough that somebody else could go and find three of them tomorrow — including where they are and how you would reach them. Then actually talk to five people who fit it, asking about their problem rather than pitching, and write down the exact words they use for it. Finally write your not-for-me list: three kinds of client you will decline, and the sentence you will use to decline them.",
+      "quiz": [
+        {
+          "question": "Which test do most customer descriptions fail?",
+          "options": [
+            "Reachability — knowing where they actually are and how to reach them",
+            "Whether they have the problem",
+            "Whether the problem is expensive",
+            "Whether the market is large enough"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What should you do with someone who has the problem but genuinely cannot afford your solution?",
+          "options": [
+            "Accept they are not your customer, and either find a segment that can pay or design a cheaper offer deliberately",
+            "Discount until they can afford it",
+            "Sell on credit and collect later",
+            "Keep following up until their situation changes"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "0c4452f9-d889-48a1-80a3-b9d761c80319",
+      "title": "Lead Generation That Actually Works",
+      "objectives": [
+        "Pick one channel and work it properly instead of five badly",
+        "Capture leads in a way people here will actually use",
+        "Respond fast, and keep a record you can work from"
+      ],
+      "notes": "A LEAD IS SOMEBODY WHO HAS SHOWN INTEREST AND WHOM YOU CAN CONTACT AGAIN. Both halves matter: interest with no way to follow up is not a lead, and a contact with no interest is a stranger.\n\nPICK ONE CHANNEL AND DO IT PROPERLY. Beginners spread themselves across five platforms, post irregularly on all of them and conclude that marketing does not work. One channel worked consistently for three months beats five worked for two weeks, every time. Choose the one where your customers already are, which the previous lesson should have told you.\n\nREFERRALS CONVERT BETTER THAN ANYTHING ELSE AND ARE THE MOST NEGLECTED. Somebody arriving with a recommendation has already decided to trust you. The reason most people get few referrals is not that customers are unwilling — it is that nobody ever asked. Ask at the moment of visible satisfaction, and be specific: who else do you know with this problem.\n\nCAPTURE SHOULD MATCH HOW PEOPLE HERE ACTUALLY COMMUNICATE. A form demanding an email address is friction; a WhatsApp button or a phone number is not. Many people will message a business on WhatsApp who would never fill in a form, and a sizeable share do not use email at all outside work. Design for that rather than copying advice written elsewhere.\n\nGIVE SOMETHING TO GET SOMETHING, and make it genuinely useful — a checklist, a price guide, a sample, a free assessment. Something valuable enough that they would have paid a little for it.\n\nSPEED BEATS POLISH. The business that replies in ten minutes usually wins over the one that replies tomorrow with a better message. If you cannot be available, say your hours plainly and use an automatic reply that sets expectations — the WhatsApp Business course covers exactly this.\n\nKEEP A RECORD, AND A SPREADSHEET IS FINE. Name, contact, what they wanted, what you said, when to follow up. Leads are lost far more often to being forgotten than to being rejected, and a list you look at weekly is what turns that around. Sophisticated tools can wait until the list is too big for a spreadsheet, which will take longer than you think.\n\nAND MEASURE TWO NUMBERS ONLY: how many leads arrived, and how many became customers. If leads are few, the problem is the channel. If leads are many and sales are few, the problem is the offer or the conversation — and those are different repairs.",
+      "practice": "Choose ONE channel and commit to it for a month, in writing. Set up a capture route your customers will actually use — a WhatsApp link or a phone number in the profile — and write the automatic reply that sets expectations. Start a spreadsheet with name, contact, what they wanted, what you said and the follow-up date, and put a weekly slot in your calendar to work it. Then ask three past customers, specifically, who else they know with the same problem.",
+      "quiz": [
+        {
+          "question": "Why do most people get few referrals?",
+          "options": [
+            "Because nobody ever asked — ask specifically, at the moment of visible satisfaction",
+            "Because customers do not like recommending services",
+            "Because referrals only work for large businesses",
+            "Because they have not offered a reward"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "You get plenty of leads but few sales. Where is the problem?",
+          "options": [
+            "In the offer or the conversation, not the channel — those are different repairs",
+            "In the channel, which is attracting the wrong people",
+            "In the speed of your first reply",
+            "In the capture form"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "7fc06c12-7b5b-4365-8e49-ea44f45cd1e3",
+      "title": "Cold Email That Gets Replies",
+      "objectives": [
+        "Write a short first message built around them rather than you",
+        "Follow up properly without becoming a nuisance",
+        "Approach people lawfully and in the channel they actually use"
+      ],
+      "notes": "A COLD MESSAGE IS ASKING A STRANGER FOR THEIR ATTENTION, so it has to be worth the thirty seconds it costs them. Almost everything that fails, fails because it was written about the sender.\n\nRESEARCH ONE SPECIFIC THING FIRST. Something you actually noticed about their business — a slow website, a full car park, an announcement, a review complaining about something you fix. One genuinely specific line proves you are not sending the same message to four hundred people, and that is the entire difference between a reply and a delete.\n\nTHE STRUCTURE THAT WORKS, AND IT IS SHORT. One line saying who you are. One line of the specific observation. One line on what you could do about it, stated as a result rather than a service. One clear, small ask — fifteen minutes, or a yes-or-no question they can answer in four words. Nothing else. Five sentences beats fifteen, reliably.\n\nTHE SUBJECT LINE, WHERE EMAIL APPLIES, SHOULD SOUND LIKE A PERSON: three or four plain words about them. Anything that reads like a campaign gets treated as one.\n\nNO ATTACHMENTS AND NO BROCHURE ON FIRST CONTACT. Attachments from strangers are not opened and often not delivered. Earn the reply first.\n\nFOLLOW UP TWO OR THREE TIMES, spaced several days apart, each adding something small rather than repeating the ask. Most replies come after the first message, and almost nobody sends a second. Then stop, and say so in the last one — a polite closing note gets a surprising number of answers by itself.\n\nNOW THE PART THAT MATTERS LOCALLY AND THAT GENERIC ADVICE MISSES. FOR SMALL BUSINESSES HERE, EMAIL IS OFTEN NOT THE CHANNEL. A WhatsApp message or a phone call reaches the owner where email does not get read for a week, and a short visit in person beats both for a business with premises. The structure above does not change; the medium does. Match the channel to the customer rather than to the advice.\n\nAND BE CAREFUL AND LAWFUL ABOUT CONTACT DETAILS. Kenya has data protection law governing how personal data, including phone numbers, may be collected and used for marketing, and the rules and enforcement change — check the current requirements with the Office of the Data Protection Commissioner rather than assuming. In practice: use business contact details that were published for that purpose, do not buy or scrape lists, say who you are, and stop immediately when somebody asks you to. That is both the lawful position and the one that protects your reputation in a market where word travels.",
+      "practice": "Pick five real businesses you could genuinely help and research one specific thing about each. Write each a five-sentence message: who you are, the specific observation, the result you could produce, and one small ask. Send them in the channel that business actually uses, which for most small businesses here means WhatsApp or a phone call rather than email. Then schedule two follow-ups several days apart, and write the polite closing line you will send if there is no reply.",
+      "quiz": [
+        {
+          "question": "What single element most distinguishes a message that gets replied to?",
+          "options": [
+            "One genuinely specific observation about their business, proving it was not sent to four hundred people",
+            "A well-designed brochure attached",
+            "A longer explanation of your services",
+            "An impressive subject line"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "How should you handle contact details when approaching people cold?",
+          "options": [
+            "Use business details published for that purpose, never buy or scrape lists, and check the current data protection requirements",
+            "Any number you can find is acceptable for business use",
+            "Buy a verified list to save research time",
+            "Collect numbers from social media profiles"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "e28d8eba-cd6f-4343-a502-fd975bc7f8a9",
+      "title": "Handling Objections",
+      "objectives": [
+        "Read an objection as missing information rather than rejection",
+        "Ask before answering, so you address the real concern",
+        "Recognise a genuine no and accept it well"
+      ],
+      "notes": "AN OBJECTION IS NOT A REFUSAL. It is usually the person telling you what is still unresolved, and somebody who raises one is more engaged than somebody who says they will think about it and disappears.\n\nTHE FIRST MOVE IS ALWAYS THE SAME: ASK, DO NOT ANSWER. Most objections are ambiguous and answering the wrong version wastes your best argument. When you hear it is too expensive, ask what they are comparing it to. You will learn which of three completely different things they meant, and only then can you respond usefully.\n\nBECAUSE TOO EXPENSIVE MEANS ONE OF THREE THINGS. I do not see enough value for that price — which is a value problem, and the answer is to connect the price to what it saves or earns them. I have the money but not for this right now — which is a priority problem, and the answer is what it costs them to wait. Or I genuinely do not have it — which is not an objection at all, and the honest responses are a smaller offer, a payment arrangement, or a polite no. Discounting to rescue the third case is how people build businesses that do not sustain them.\n\nNOT NOW is usually either a real timing constraint, which you can diarise and revisit, or a soft no, which you can uncover by asking what would need to be true for this to be the right time. The answer tells you which one it was.\n\nI NEED TO THINK ABOUT IT almost always means one specific thing is unresolved. Ask what it is. People will tell you.\n\nTRUST OBJECTIONS — spoken or not — are resolved with evidence rather than reassurance. A past example, a reference they can call, a smaller first piece of work, a guarantee you can honour. In a market where people have been burned by suppliers who took a deposit and vanished, this is frequently the real objection behind everything else, and proposing a small paid first step removes it faster than any amount of persuasion.\n\nUSE THE PAUSE. After answering, stop talking. The silence is uncomfortable and it is where people decide. Filling it with another argument is how deals get talked out of.\n\nAND LEARN TO HEAR A GENUINE NO, AND TAKE IT WELL. Thank them, ask if you may check back in a few months, and leave the door open. Pushing past a real no costs you the future business and the referral — and in a small market it costs you the reputation too.",
+      "practice": "Write down the three objections you actually hear most often. For each, write the QUESTION you will ask before answering, then the three things it might really mean, then your response to each. Rehearse the too-expensive one aloud until it is comfortable, since that is the one that arrives under pressure. Then, on your next real objection, ask your question first and notice how often the answer is not what you assumed.",
+      "quiz": [
+        {
+          "question": "What is the first move when you hear an objection?",
+          "options": [
+            "Ask what they mean, because most objections are ambiguous and the wrong answer wastes your best argument",
+            "Answer it immediately and confidently",
+            "Offer a discount to remove it",
+            "Move on to a different benefit"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Which reading of too expensive is NOT an objection to overcome?",
+          "options": [
+            "They genuinely do not have the money — the honest answers are a smaller offer, an arrangement, or a polite no",
+            "They do not see enough value for the price",
+            "They have the money but not for this right now",
+            "They are comparing you to a cheaper competitor"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "32487313-5c98-4c5e-ac8b-ec0732759a7c",
+      "title": "Building Repeat Customers",
+      "objectives": [
+        "See repeat business as the cheapest revenue available",
+        "Close the gap that opens right after somebody pays",
+        "Ask for referrals and reviews at the moment they are earned"
+      ],
+      "notes": "WINNING A NEW CUSTOMER COSTS YOU MARKETING, TIME, NEGOTIATION AND TRUST-BUILDING. Selling again to somebody who already trusts you costs a message. That ratio is why this lesson is worth more than the lead-generation one to anybody who already has customers.\n\nTHE GAP OPENS IMMEDIATELY AFTER PAYMENT. Attention goes to the next prospect, and the person who just paid — who is at their most positive — hears nothing. Almost all the repeat business that never happens is lost right there.\n\nSO CLOSE IT DELIBERATELY. Confirm what happens next, in writing, so there is no anxious wondering. Deliver, and tell them it is done rather than leaving them to notice. Check in once afterwards to ask whether it is working — that message alone separates you from most of your competitors, because hardly anybody sends it.\n\nOVER-DELIVER SLIGHTLY AND SPECIFICALLY. One small thing beyond what was agreed, done on purpose, is remembered and repeated to other people. Note the difference from over-PROMISING, which is the fastest way to lose somebody: promise what you can certainly do, then exceed it a little.\n\nASK FOR THE REFERRAL AND THE REVIEW AT THE MOMENT OF SATISFACTION, which is when the work has just landed well — not months later. Be specific rather than general: who else do you know running a shop like yours, or would you write two lines about this where other people can see them. A public review is a permanent asset that keeps working; a private thank-you disappears.\n\nKEEP RECORDS THAT LET YOU COME BACK. What they bought, when, what they mentioned wanting later, anything personal they told you. Then contact them for a REASON rather than a broadcast: your licence is due next month, the thing you asked about is now available. The WhatsApp course explains why a broadcast only reaches people who saved your number, and this is exactly the list that should be saving it.\n\nREACTIVATION IS THE EASIEST SALE IN YOUR BUSINESS. A short honest message to somebody who bought a year ago — noticed it has been a while, here is what is new, is it still working for you — outperforms almost any cold outreach, and costs nothing but the sending.\n\nAND WHEN SOMETHING GOES WRONG, HOW YOU HANDLE IT DECIDES WHETHER THEY RETURN. Answer quickly, say what happened without excuses, fix it, and say what you have changed. A problem handled well produces more loyalty than a job where nothing went wrong, which sounds like a consolation and is a repeatedly observed fact.",
+      "practice": "Write the three messages you are currently not sending and schedule them: the confirmation of what happens next, the check-in a week after delivery, and the reactivation message for somebody who bought a year ago. Send the reactivation one to five past customers this week and count the replies. Then add a column to your customer record for what they mentioned wanting later, and go back through your last ten customers filling it in from memory.",
+      "quiz": [
+        {
+          "question": "Where is most repeat business lost?",
+          "options": [
+            "In the gap right after payment, when attention moves to the next prospect and the customer hears nothing",
+            "At the point of the second purchase decision",
+            "During price negotiation",
+            "When a competitor offers less"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "When should you ask for a referral or a review?",
+          "options": [
+            "At the moment of satisfaction, when the work has just landed well",
+            "Several months later, once they have had time to see results",
+            "At the start, as part of agreeing terms",
+            "Only if they mention being happy first"
+          ],
+          "correct_index": 0
+        }
+      ]
+    }
+  ]
+}

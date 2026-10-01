@@ -1,0 +1,203 @@
+{
+  "course": "Workflow Automation with Zapier (workflow-automation-zapier) — all six bare lessons",
+  "lessons": [
+    {
+      "id": "d30a3345-7d8f-41db-b285-49871b913f20",
+      "title": "What Workflow Automation Can Replace",
+      "objectives": [
+        "Describe any automation as a trigger followed by actions",
+        "Tell which tasks are worth automating and which are not",
+        "Count the monthly cost before designing anything"
+      ],
+      "notes": "EVERY AUTOMATION IS THE SAME SHAPE: WHEN THIS HAPPENS, DO THAT. The trigger is an event in one application — a form is submitted, an email arrives, a row is added. The actions are what happens next, in other applications. That is the entire concept, and everything else is detail.\n\nWHAT AUTOMATION IS GENUINELY GOOD AT: moving the same piece of information between places, notifying somebody, logging a record, creating a file from a template, and doing it the same way every time without getting bored. If you are copying a name and a number from one screen into another screen, that is the work.\n\nWHAT IT IS BAD AT, AND THIS MATTERS MORE: anything requiring judgement, anything with lots of exceptions, and anything where being wrong is expensive. An automation does the wrong thing enthusiastically and at scale.\n\nTHE RULE THAT PREVENTS MOST FAILED AUTOMATION PROJECTS: ONLY AUTOMATE A PROCESS THAT ALREADY WORKS MANUALLY AND THAT YOU HAVE WRITTEN DOWN. Automating a messy process does not clean it up; it makes the mess happen faster and in more places. Write the steps on paper first, in order, and fix the process. Often that written process is itself most of the value, and sometimes it reveals that two of the five steps were never needed.\n\nTRIGGERS COME IN TWO KINDS AND IT AFFECTS YOUR DESIGN. Some are instant, fired by the application the moment something happens. Others are POLLED — the service checks every few minutes — so an automation that must react in seconds may not be the right tool.\n\nNOW THE PART THAT GENERIC TRAINING LEAVES OUT, AND IT DECIDES WHETHER ANY OF THIS IS WORTH BUILDING HERE. THESE SERVICES CHARGE PER TASK, PER MONTH, IN DOLLARS. Every action in every run counts. A five-step automation running two hundred times a month is a thousand tasks, and that is a real recurring cost in shillings on top of whatever else the business pays. So BEFORE you design anything: estimate how many times a month it will run, multiply by the number of steps, and check that figure against the pricing tiers. Then compare it honestly against what the manual work actually costs. For a task done twice a week by somebody already at a desk, automation may simply not pay.\n\nAND KNOW THE CHEAPER ALTERNATIVES, because recommending them is part of being useful rather than being a salesperson for a subscription. A Google Sheet with a formula or a short script, a form that writes straight into a spreadsheet, the automation already built into the application you are using, or simply a better checklist — each of these is free and solves a great many of the problems people reach for a paid automation tool to fix.",
+      "practice": "Take one repetitive task you or somebody you know does every week and write it out on paper as numbered steps, exactly as it happens now including the exceptions. Mark each step as judgement or mechanical. Then count: how many times a month does this run, and how many mechanical steps would an automation need? Multiply those and look up what that number of tasks would cost per month. Finally write one sentence saying whether it is worth automating, worth simplifying, or worth leaving alone — all three are legitimate answers.",
+      "quiz": [
+        {
+          "question": "What is the rule that prevents most failed automation projects?",
+          "options": [
+            "Only automate a process that already works manually and that you have written down",
+            "Always start with the most complex process, since it saves the most time",
+            "Automate everything that happens more than once a week",
+            "Build the automation first and document it afterwards"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why must you estimate runs and steps before designing an automation?",
+          "options": [
+            "These services charge per task per month in dollars, so runs multiplied by steps is a real recurring cost",
+            "The tool limits how many steps a single automation may have",
+            "Triggers become slower as the number of steps grows",
+            "It determines which applications can be connected"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "bfc3a9d3-327e-4a69-bc64-9740ae2c7261",
+      "title": "Building Your First Zap",
+      "objectives": [
+        "Connect two applications and get one automation running",
+        "Test with data you control before anything real depends on it",
+        "Name and monitor it so you can find it again in six months"
+      ],
+      "notes": "THE FIRST ONE SHOULD BE DELIBERATELY TRIVIAL. A form submission that writes a row to a spreadsheet. The point is not usefulness, it is seeing the whole loop work so the mechanics stop being mysterious.\n\nTHE SEQUENCE IS ALWAYS THE SAME: choose the trigger application and the event, connect the account, pull in a sample, choose the action application and what it should do, map the fields, test, turn it on.\n\nFIELD MAPPING IS WHERE BEGINNERS LOSE TIME AND IT IS WORTH SLOWING DOWN FOR. You are telling the automation that THIS piece of the incoming data goes in THAT box. If the sample data is empty or unrepresentative the mapping will look right and be wrong, so submit a REAL test entry through the form first, with recognisable values — use obvious nonsense like TESTNAME and 0700000000 so you can see immediately where each value landed, and find it later.\n\nTEST BEFORE YOU TURN IT ON, AND TEST WITH SOMETHING YOU CONTROL. Never connect a live customer-facing account and discover the mapping is wrong on real data. Where possible build against a copy — a test spreadsheet, a test form — and switch to the real one once it works.\n\nTHEN WATCH THE HISTORY FOR THE FIRST FEW RUNS. The run history shows every execution, what data came in, and what each step did. This is the only honest way to know it works, and it is the first place to look when somebody says it has stopped.\n\nNAME IT PROPERLY, because in a year there will be fifteen of these and they will all be called Zap. Use a name that says what it does and which applications it touches: Website enquiry to sheet and WhatsApp alert. Your future self and whoever inherits it will thank you.\n\nTWO THINGS THAT WILL CATCH YOU EARLY. First, DUPLICATES: if a trigger fires twice, or you edit and re-test repeatedly, you will create duplicate records — check the destination after testing and clean up. Second, TURNING IT OFF IS A REAL STEP; an automation you abandoned but left switched on quietly consumes tasks and sometimes does something embarrassing months later.\n\nAND MIND THE TASK METER FROM THE FIRST DAY. Tests consume tasks. So does every failed run. Keep an eye on the usage figure while you are learning, because a month spent experimenting can eat an allowance you intended to use for something real.",
+      "practice": "Build one automation end to end: a free form that writes a row into a spreadsheet. Submit a real test entry using obvious nonsense values so you can see exactly where each field lands, then check the destination and delete the test rows. Give it a name that says what it does and which applications it touches. Open the run history and read one successful run from start to finish. Finally check your task usage, so you know what the exercise cost.",
+      "quiz": [
+        {
+          "question": "Why should a test entry use obvious nonsense values?",
+          "options": [
+            "So you can see immediately where each value landed and find the test records later",
+            "Because real data is not permitted in test mode",
+            "To avoid consuming tasks",
+            "So the automation runs faster during testing"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What is the risk of leaving an abandoned automation switched on?",
+          "options": [
+            "It quietly consumes tasks and may do something embarrassing months later",
+            "It blocks you from creating new automations",
+            "It slows down the other automations in the account",
+            "Nothing — a disconnected automation is harmless"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "5d956cf5-407d-4be5-b575-4e41bd1100aa",
+      "title": "Multi-Step Zaps",
+      "objectives": [
+        "Chain several actions so one trigger does real work",
+        "Pass and reshape data between steps",
+        "Design for the step that fails, and avoid doing things twice"
+      ],
+      "notes": "ONE TRIGGER, SEVERAL ACTIONS, IN ORDER. A new enquiry arrives: add it to the sheet, send yourself a notification, send the customer an acknowledgement, create a task. This is where automation starts replacing real work rather than demonstrating a concept.\n\nEACH STEP CAN USE THE OUTPUT OF ANY EARLIER STEP, which is the actual power. Step two creates a record and returns its identifier; step four can reference that identifier. Think of it as a short assembly line where everything produced so far is available further down.\n\nORDER MATTERS MORE THAN BEGINNERS EXPECT. Put the step that RECORDS the data before the step that notifies anybody. If the notification fails you still have the data; if the record fails after you have told the customer it is handled, you have lost it and promised otherwise.\n\nFORMATTING STEPS EARN THEIR PLACE. Dates in the wrong format, names needing splitting, numbers arriving as text, phone numbers in five different shapes. A formatting step between the trigger and the action fixes these, and it is usually the difference between an automation that mostly works and one that works.\n\nNOW THE TWO THINGS THAT CAUSE REAL DAMAGE, and neither is covered by most tutorials.\n\nFIRST, WHAT HAPPENS WHEN A STEP FAILS. The run stops at that step. Everything before it already happened; everything after it did not. So a four-step automation that fails at step three leaves the world half-changed — the record created, the customer not told. Know for each automation what a half-run looks like, and order the steps so the half-way state is survivable. Turn on the error notifications so you find out from the tool rather than from a customer.\n\nSECOND, DOING THINGS TWICE. If a trigger fires twice, or you replay a failed run, any step that CREATES something will create it again. Two invoices, two messages, two payments requested. Where it matters, prefer an action that updates a record identified by something unique — an order number, an email address — over one that blindly creates. This is the single most expensive mistake in automation and it is entirely avoidable by thinking about it once.\n\nAND KEEP THEM SHORT, FOR A SPECIFIC REASON: every step in every run is a billed task. A seven-step automation costs more than twice a three-step one. Combine where you can, drop the steps that are merely nice, and put the cheap filter before the expensive actions — which is the next lesson.",
+      "practice": "Extend your first automation to four steps: record the data, format one field properly, notify yourself, and acknowledge the sender. Deliberately break step three — use a wrong address or a disconnected account — and run it, then look at what did and did not happen. Write down the half-finished state in one sentence, then reorder the steps so that state is survivable. Finally switch on the error notifications and confirm you receive one.",
+      "quiz": [
+        {
+          "question": "What happens to a multi-step automation when step three fails?",
+          "options": [
+            "The run stops there — steps one and two already happened, four did not, leaving the world half-changed",
+            "The whole run is rolled back automatically",
+            "It retries from the beginning until it succeeds",
+            "The remaining steps run with empty data"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "How do you avoid an automation creating the same thing twice?",
+          "options": [
+            "Prefer actions that update a record identified by something unique over actions that blindly create",
+            "Add a delay step before every create action",
+            "Turn the automation off between runs",
+            "Keep the automation to a single step"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "118b0118-0f97-40b3-8bd5-d745431ce923",
+      "title": "Filtering with Filter by Zapier",
+      "objectives": [
+        "Stop a run when the conditions are not the ones you care about",
+        "Place the filter early, to protect both data and budget",
+        "Test the fail path as carefully as the pass path"
+      ],
+      "notes": "A FILTER STOPS THE RUN UNLESS A CONDITION IS TRUE. Only orders over a certain value. Only enquiries mentioning a particular product. Only submissions from a real address. Without filters an automation treats every event identically, which is rarely what anybody wants.\n\nPUT THE FILTER AS EARLY AS POSSIBLE, IMMEDIATELY AFTER THE TRIGGER, for two separate reasons. It prevents the later steps from acting on something they should not. And since every step that runs is a billed task, filtering first is the single easiest way to cut what an automation costs each month — an automation that triggers four hundred times and should only act on forty is wasting nine tenths of its budget if the filter is at step four instead of step one.\n\nTHE CONDITIONS ARE ORDINARY: equals, does not equal, contains, greater than, is empty. You can combine them with and, and build alternatives with or.\n\nNOW THE BUG THAT CATCHES EVERYONE, and it is worth stating as a rule. FILTERING ON A FIELD THAT IS SOMETIMES EMPTY behaves in ways people do not expect: a condition like county does not equal Nairobi may pass or fail unpredictably when county was never filled in, and you will not notice because the automation keeps running. So whenever you filter on a field that is not mandatory, add an explicit check that it EXISTS, and decide deliberately what should happen when it is missing. Most silent filter failures are this.\n\nTEST BOTH DIRECTIONS, DELIBERATELY. Send one event that should pass and confirm the actions happened. Send one that should NOT pass and confirm nothing happened. Almost everybody tests only the first, which is how automations that never filter anything end up in production — they look like they work because the thing you tested worked.\n\nUSE PATHS WHEN YOU NEED DIFFERENT TREATMENT rather than different automations. A filter is yes or no; paths let one trigger do one thing for a large order and another for a small one, which is cleaner than maintaining two near-identical automations that will drift apart.\n\nAND READ THE RUN HISTORY FOR THE FILTERED-OUT RUNS TOO. They are recorded as stopped by filter, and scanning them occasionally tells you whether your condition is doing what you believe — including the day the form adds a field and your filter quietly starts rejecting everything.",
+      "practice": "Add a filter to your automation so it only continues for entries meeting one condition you choose. Then test both directions: submit something that should pass and confirm the actions ran, and submit something that should not and confirm nothing happened. Now submit an entry leaving the filtered field EMPTY and see what the filter does — then add an explicit check that the field exists and decide what should happen when it is missing. Finally move the filter to immediately after the trigger if it is not already there.",
+      "quiz": [
+        {
+          "question": "Why place a filter immediately after the trigger?",
+          "options": [
+            "It stops later steps acting wrongly and cuts cost, since every step that runs is a billed task",
+            "Filters only work in the first position",
+            "It makes the trigger fire more reliably",
+            "Later filters cannot access the trigger data"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What is the most common silent filter bug?",
+          "options": [
+            "Filtering on a field that is sometimes empty, which passes or fails unpredictably without anybody noticing",
+            "Using contains instead of equals",
+            "Combining too many conditions with and",
+            "Filtering on a numeric field"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "7e225790-a5c7-40c2-99e3-85f36cad6eda",
+      "title": "Automating a Real Business Workflow",
+      "objectives": [
+        "Map a real process before building any of it",
+        "Build, monitor and document an automation somebody depends on",
+        "Handle other people's personal data responsibly"
+      ],
+      "notes": "THIS IS THE APPLIED PROJECT, AND THE DIFFERENCE FROM EVERY PREVIOUS LESSON IS THAT SOMEBODY WILL DEPEND ON IT. That changes how carefully you work rather than what you build.\n\nMAP THE PROCESS FIRST, ON PAPER, WITH THE PERSON WHO DOES IT. Every step, in order, including the parts they do without thinking and the exceptions they handle by judgement. Watch them do it once rather than asking them to describe it; the description always omits something.\n\nTHEN AUTOMATE THE SMALLEST USEFUL PART — the step that happens most often and needs the least judgement. Not the whole process. A first automation that reliably does one thing earns the trust you need to do the next, and a half-working attempt at everything destroys it.\n\nLEAVE THE JUDGEMENT WITH THE HUMAN, DELIBERATELY. Good automations gather, format and present, then stop and let a person decide. A process that automatically sends money, cancels something, or messages a customer with no review is where automation does damage.\n\nBUILD AGAINST TEST DATA, THEN SWITCH OVER. Test spreadsheet, test address, obvious fake values, exactly as in the first lesson. Only when every path works do you point it at the real accounts.\n\nTHEN MONITOR IT FOR A WEEK BEFORE CALLING IT FINISHED, which is the step everybody skips. Read the run history daily. You will find the entry with no phone number, the name with an apostrophe, the submission at 2am, the week the volume tripled. Those are the real test, and no amount of careful building substitutes for watching it meet reality.\n\nDOCUMENT IT IN ONE PAGE, because an automation nobody understands is a liability the day it breaks: what it does, what triggers it, every step, which accounts it uses, what to check when it fails, and how to turn it off. Give that page to the business owner, not just to whoever asked you to build it.\n\nNOW THE PART THAT CARRIES REAL OBLIGATION. AUTOMATIONS MOVE OTHER PEOPLE'S PERSONAL DATA BETWEEN SERVICES — names, phone numbers, addresses, sometimes payment details — and often to companies and countries the business has never thought about. Kenya has data protection law governing that, and the requirements and enforcement change, so check the current position with the Office of the Data Protection Commissioner rather than assuming. In practice: know exactly what personal data each automation moves and where it ends up; move only what the task actually needs rather than everything the form collected; never put customer data into a spreadsheet or document that is publicly shared; and tell the business owner plainly what is being sent where, because it is their obligation and they usually do not know.\n\nAND AGREE WHO OWNS THE ACCOUNT BEFORE YOU BUILD, which the next lesson returns to: the automation account should be the client's, paid by the client, with you added — never yours holding their business.",
+      "practice": "Find a real process — in a business you know, a church, a sacco, a shop — and map it on paper by watching somebody do it. Identify the one step that happens most often and needs least judgement, and automate exactly that, built against test data first. Monitor the run history every day for a week and write down each surprise. Then write the one-page document: what it does, every step, which accounts, what to check when it fails, how to turn it off. Finally list every piece of personal data it moves and where that data ends up, and show that list to the owner.",
+      "quiz": [
+        {
+          "question": "Which part of a mapped process should you automate first?",
+          "options": [
+            "The step that happens most often and needs the least judgement",
+            "The whole process, so the benefit is immediate",
+            "The step the owner complains about most",
+            "The step involving the most applications"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What obligation comes with automations that move customer data between services?",
+          "options": [
+            "Know exactly what personal data moves and where it ends up, move only what is needed, and tell the owner plainly",
+            "Nothing, provided the services are reputable",
+            "Encrypt the spreadsheet the data lands in",
+            "Delete the data from the automation tool each month"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "b527d672-4e8b-45b5-a989-907f313c46a9",
+      "title": "Selling Automation as a Service",
+      "objectives": [
+        "Price automation on the time it saves rather than the hours you spend",
+        "Quote the client's real monthly running cost before building",
+        "Earn recurring income from monitoring and ownership done properly"
+      ],
+      "notes": "THIS IS A GENUINELY SELLABLE SERVICE AND IT IS UNDERSUPPLIED, because most people who understand small business do not build automations and most people who build automations do not understand small business. Being both is the whole opportunity.\n\nWHO PAYS: any business where somebody spends hours retyping the same information. A shop reconciling orders by hand. A school copying admissions into three places. A sacco keying in member records. A clinic typing appointment details. You will see these everywhere once you look, and the owners rarely know the work is avoidable.\n\nPRICE ON WHAT IT SAVES, NOT WHAT IT COSTS YOU. If a process consumes six hours a week and you remove five of them, the value is those hours every week for years, and that is the conversation to have — not your hourly rate. Quote a fixed price for a defined automation, and quote an audit separately: a paid first engagement where you map the processes and recommend what is worth automating is both genuinely valuable and the best possible way to win the build.\n\nNOW THE THING THAT SEPARATES AN HONEST PRACTITIONER FROM A PROBLEM, AND IT MATTERS ESPECIALLY HERE. TELL THE CLIENT THE MONTHLY RUNNING COST, IN SHILLINGS, BEFORE YOU BUILD ANYTHING. These tools are subscriptions priced in dollars and billed per task; a business that cannot sustain that bill will have its automation switched off in three months, and you will have taken money for something that stopped working. Count the expected runs, multiply by the steps, find the tier, convert it, and put that figure in the proposal next to your fee. Where the numbers do not work, say so and build the cheaper thing — a spreadsheet, a form, a script, or the automation already inside the application they pay for.\n\nTHE ACCOUNT BELONGS TO THE CLIENT, PAID BY THE CLIENT, WITH YOU GIVEN ACCESS. Never run client automations from your own account as a convenience. When the relationship ends, or your card fails, or you are unreachable, their business stops — and holding it is a form of hostage-taking even when nothing is meant by it. This is the same rule as domains in the WordPress course, for the same reason, and saying it out loud wins work.\n\nTHE RECURRING INCOME IS IN MONITORING, and it is the right thing to sell rather than an upsell. Automations break when applications change, when a form gains a field, when a connection expires. A modest monthly fee to watch the run history, fix breakages and make small changes is worth more over a year than the build, and it is what turns this from a series of jobs into a business.\n\nAND PRESENT RESULTS IN THEIR NUMBERS, NOT YOURS. Not a five-step Zap with a formatter — fourteen hours a month returned, and nothing retyped twice. That is what gets referred to the next business owner, which is how this work actually spreads.",
+      "practice": "Write a one-page offer: a fixed price for a process audit, a fixed price for a defined automation build, and a monthly monitoring fee. Then take one real business you know, estimate the runs and steps for the automation they most need, work out the monthly subscription cost in shillings, and put it beside your fee — including the honest sentence you would say if the numbers do not justify it. Finally write the sentence explaining that the automation account will be in their name and paid by them.",
+      "quiz": [
+        {
+          "question": "What must you tell a client before building their automation?",
+          "options": [
+            "The monthly running cost in shillings, because an unsustainable subscription means it is switched off in three months",
+            "The number of steps the automation will contain",
+            "Which other clients you have built for",
+            "How long the build will take you in hours"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Where does the recurring income in automation work come from?",
+          "options": [
+            "Monitoring — watching the run history, fixing breakages when applications change, and small changes",
+            "Charging for each run above an agreed volume",
+            "Reselling the subscription at a margin",
+            "Rebuilding the automation annually"
+          ],
+          "correct_index": 0
+        }
+      ]
+    }
+  ]
+}

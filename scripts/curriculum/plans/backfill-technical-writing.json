@@ -1,0 +1,203 @@
+{
+  "course": "Technical Writing & Documentation (technical-writing-documentation) — all six bare lessons",
+  "lessons": [
+    {
+      "id": "e74e9702-5dbe-4134-a7a6-8403ba32052b",
+      "title": "What a Technical Writer Actually Does",
+      "objectives": [
+        "Describe the job honestly, including the parts that are not writing",
+        "Recognise the two routes into it and which one you are on",
+        "See which employers hire for it and why it travels well"
+      ],
+      "notes": "WRITING IS PERHAPS HALF OF THIS JOB. The other half is finding out what is true. You interview engineers who are busy, read code and specifications you did not write, use the product until you understand it, and decide what a reader actually needs — and only then write. People who want to write prose all day are often disappointed; people who like working out how things function usually love it.\n\nWHAT YOU PRODUCE, roughly in order of how much of it exists: how-to guides, reference material, getting-started guides, release notes, internal process documents, and the occasional explainer. Most of it is instructions for somebody trying to do a specific task while slightly frustrated.\n\nTHERE ARE TWO ROUTES IN AND BOTH ARE REAL. Writers who learned the technology, and technical people who learned to write. Neither is better. What matters is being able to do both adequately — a brilliant writer who cannot read an error message, and an excellent engineer whose paragraphs cannot be followed, are equally unemployable in this role. Work out which half you already have and deliberately build the other.\n\nWHO HIRES: software companies, anybody selling a product with an interface, hardware manufacturers, banks and insurers documenting internal process, NGOs writing operational manuals, and government or regulated bodies with compliance documentation. Documentation is also one of the first things outsourced, which works in your favour.\n\nAND IT IS ONE OF THE MOST REMOTE-FRIENDLY TECHNICAL ROLES THERE IS, which matters enormously from here. The work is asynchronous by nature: you read, you ask questions in writing, you draft, you get reviewed. Nothing about it requires being in a room, and the usual objection to remote hiring — can we supervise them — is answered by the fact that the output is a document anybody can read. Kenyan hours also overlap the European working day and reach the American morning, so an engineer can answer your questions at the end of their day and find a draft waiting.\n\nONE HONEST NOTE ABOUT WHERE THE MONEY IS. Technical writing for international software companies pays well; writing marketing-adjacent content for small local clients usually does not. The skills overlap but the markets do not, and knowing which one you are selling into decides what you should charge and where you should look.\n\nAND THE QUALITY THAT MOST DISTINGUISHES GOOD TECHNICAL WRITERS: being willing to say I do not understand this yet. The documentation that confuses readers is almost always written by somebody who pretended to themselves that they had followed it.",
+      "practice": "Find the documentation for a product you use and read its getting-started guide while actually following it. Write down every point where you had to guess, look something up elsewhere, or reread a sentence. That list is what a technical writer is paid to eliminate, and producing it is the core skill. Then decide honestly which of the two routes you are on — writer learning technology, or technical person learning to write — and name the one specific thing you will build first.",
+      "quiz": [
+        {
+          "question": "What makes up roughly half of a technical writer's job besides writing?",
+          "options": [
+            "Finding out what is true — interviewing engineers, reading specifications, and using the product",
+            "Formatting and publishing documents",
+            "Editing other people's writing",
+            "Managing the documentation tools"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "Why is technical writing unusually remote-friendly?",
+          "options": [
+            "The work is asynchronous by nature and the output is a document anybody can read",
+            "The tools are all browser-based",
+            "It requires no contact with engineers",
+            "Documentation has no deadlines"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "da52ce02-000d-41d1-887d-bc5ea3d7830c",
+      "title": "The Principles of Clear Technical Writing",
+      "objectives": [
+        "Write for the reader's task rather than the product's features",
+        "Use one instruction per step, in the imperative, and test it",
+        "Keep terminology identical even when that feels repetitive"
+      ],
+      "notes": "ALL OF TECHNICAL WRITING REDUCES TO ONE QUESTION: WHAT IS THE READER TRYING TO DO? Documentation organised around the product's features reads like an inventory. Organised around the reader's tasks, the same material becomes usable. Start every document by writing the task in the reader's own words.\n\nONE INSTRUCTION PER STEP, IN THE IMPERATIVE. Click Save. Enter your phone number. Not you should then be able to click the save button, which hides the action inside a sentence about possibility. Numbered steps, one action each, in the order they happen.\n\nTHEN TEST YOUR OWN INSTRUCTIONS BY FOLLOWING THEM EXACTLY AND DOING NOTHING ELSE. This is the single highest-value habit in the craft and almost nobody does it. You will find the step you left out because it was obvious to you, the button that is called something slightly different on screen, and the assumption that the reader has already logged in. Every one of those would have become a support ticket.\n\nSAY WHERE THINGS ARE, not what they are called in isolation. In the top right, select Settings beats select Settings, because the reader is looking at a screen and cannot find it.\n\nDELETE SIMPLY, JUST, EASILY AND OBVIOUSLY. They add nothing when the reader succeeds and make them feel stupid when they fail. Simply click Deploy is actively hostile to the person for whom it did not simply work.\n\nUSE THE SAME WORD FOR THE SAME THING, EVERY TIME, even when it feels repetitive — and it will. Varying your vocabulary is good creative writing and bad technical writing: the reader cannot tell whether a sign-in page and a login screen are the same thing, and that doubt stops them. Keep a short list of your chosen terms and stick to it.\n\nDEFINE A TERM ONCE, AT FIRST USE, in a few words. Do not send the reader to a glossary mid-task.\n\nFRONT-LOAD EVERY PARAGRAPH AND EVERY PAGE. Readers scan; they do not read. The conclusion goes first, the explanation after, and if the page has prerequisites they go at the very top where they can still be acted on.\n\nAND REMEMBER THAT YOUR READER IS PROBABLY STUCK, SLIGHTLY ANNOYED, AND READING ON A PHONE. Short sentences. Short paragraphs. No decoration. Nobody has ever complained that documentation was too easy to follow.\n\nONE ADDITION BEYOND THE VIDEO: WRITE FOR A READER WHOSE FIRST LANGUAGE IS NOT YOURS, because in practice much of the world's documentation is read that way. That means plain words over idiom, active voice, one clause per sentence, and no humour that depends on culture. It is also simply better writing for everybody.",
+      "practice": "Take a process you know well and write it as numbered steps, one instruction per step, in the imperative. Then hand it to somebody who does not know the process and watch them follow it without helping them. Write down every place they hesitated or asked a question — those are your defects, and they are always more numerous than you expect. Rewrite once, then check your terminology: list every term you used for the same thing and reduce each set to one word.",
+      "quiz": [
+        {
+          "question": "Why should documentation use the same word for the same thing every time?",
+          "options": [
+            "A reader cannot tell whether a sign-in page and a login screen are the same thing, and that doubt stops them",
+            "Search engines rank consistent terminology higher",
+            "It makes the document shorter",
+            "Style guides require it for legal reasons"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What is the single highest-value habit in technical writing?",
+          "options": [
+            "Following your own instructions exactly and doing nothing else, to find the steps you left out",
+            "Having an editor review every document",
+            "Using a consistent template",
+            "Writing a glossary before you start"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "ac755ac7-8d8d-43bc-a496-5bba0760fbe3",
+      "title": "How Professional Technical Documents Get Written",
+      "objectives": [
+        "Plan a document before writing a sentence of it",
+        "Get what you need from a busy expert in one short conversation",
+        "Handle review without letting the document fill up with jargon"
+      ],
+      "notes": "THE WRITING IS THE SHORT PART. A professional document is mostly planning, interviewing and revising, and treating drafting as the whole job is why amateur documentation reads the way it does.\n\nBEFORE A SENTENCE, ANSWER FOUR QUESTIONS IN WRITING. Who is the reader, specifically. What are they trying to do. What do they already know. And what does success look like — how will they know it worked. A document whose author cannot answer those will wander, and no amount of editing fixes it afterwards.\n\nTHEN OUTLINE IN HEADINGS AND GET THE OUTLINE AGREED before writing prose. Rearranging headings costs minutes; rearranging finished paragraphs costs a day and hurts.\n\nNOW THE SUBJECT-MATTER EXPERT, WHO IS THE REAL SKILL IN THIS LESSON. They are busy, they have explained this before, and they are doing you a favour. So: DO YOUR HOMEWORK FIRST — read what exists, try the product, and arrive already able to describe roughly what you think happens. Never open with tell me about the system; open with I think it works like this, where am I wrong. That turns an hour of lecture into ten minutes of correction, and experts respond to it enormously better.\n\nASK FOR A DEMONSTRATION rather than an explanation, and record it with permission. Watching somebody do the thing tells you the order of operations, the detours and the bits they do without mentioning.\n\nTHE MOST PRODUCTIVE QUESTION YOU CAN ASK AN EXPERT IS WHAT DO PEOPLE GET WRONG. The answer is your troubleshooting section, written for you, and it is the part readers need most.\n\nSEND THE DRAFT BACK FOR FACTUAL REVIEW, AND ASK FOR EXACTLY THAT. Experts asked to review documentation often rewrite it in their own register, which is precisely the register the reader cannot follow. Say plainly: please check whether anything here is WRONG, and leave the wording to me. Accept every factual correction without argument; push back politely on jargon that would lose the reader, and explain who the reader is when you do.\n\nALSO HAVE SOMEBODY WHO IS NOT AN EXPERT TRY TO USE IT. The expert tells you whether it is true; the novice tells you whether it works. You need both and they find completely different problems.\n\nAND PLAN THE MAINTENANCE WHEN YOU PUBLISH, which is the part that is always skipped: who owns this page, what change to the product makes it wrong, and when will somebody check. Documentation that is quietly out of date is worse than none, because it is trusted. Note the date and the version it was written against, right on the page.",
+      "practice": "Pick something somebody you know does well that you do not understand — a process at their work, a craft, a piece of software. Write the four questions and answer them, then build a heading outline. Now interview them for fifteen minutes using the method here: open with your own rough understanding and ask where you are wrong, ask for a demonstration, and finish with what do people get wrong. Draft it, send it back asking only for factual corrections, and separately give it to somebody who does not know the process to follow.",
+      "quiz": [
+        {
+          "question": "How should you open an interview with a busy expert?",
+          "options": [
+            "With your own rough understanding, asking where you are wrong — which turns a lecture into a correction",
+            "By asking them to explain the system from the beginning",
+            "By asking what documentation already exists",
+            "With a list of your prepared questions in order"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What should you ask an expert to do when reviewing your draft?",
+          "options": [
+            "Check only whether anything is factually wrong, and leave the wording to you",
+            "Rewrite anything that does not sound right to them",
+            "Approve or reject the document as a whole",
+            "Add any technical detail they feel is missing"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "5a70e057-d627-407e-8360-6d8a3c700fdf",
+      "title": "API Documentation Basics",
+      "objectives": [
+        "Name the four parts of a complete set of API documentation",
+        "Write an endpoint reference that a developer can act on",
+        "Produce a working example you have actually run"
+      ],
+      "notes": "API DOCUMENTATION IS THE BEST-PAID CORNER OF THIS FIELD, because fewer writers are comfortable in it. You do not need to be a developer. You do need to be able to read an example, run it, and tell when the result is wrong.\n\nA COMPLETE SET HAS FOUR PARTS AND THEY DO DIFFERENT JOBS. The QUICKSTART gets somebody from nothing to one successful call, as fast as possible. GUIDES walk through real tasks that take several calls. The REFERENCE documents every endpoint exhaustively. And the CHANGELOG says what changed and when. Teams routinely build only the reference and then wonder why nobody adopts the product; the quickstart is what decides adoption.\n\nEVERY ENDPOINT NEEDS THE SAME SIX THINGS. What it does, in one sentence. The method and the path. Every parameter, with its type, whether it is required, and what happens if you omit it. A complete example REQUEST. A complete example RESPONSE. And the ERRORS it can return, with what each one means and what to do about it.\n\nTHE SINGLE MOST VALUABLE ELEMENT IN THE WHOLE DOCUMENT IS A WORKING, COPY-PASTEABLE EXAMPLE — and it must be one you ran yourself. An example with a placeholder that was never substituted, or a field name changed two releases ago, costs a developer an hour and costs your product their goodwill. Run every example before you publish it, and run them again when the product changes.\n\nAUTHENTICATION IS WHERE MOST READERS GET STUCK, so document it first and completely: where the key comes from, exactly how it is sent, and what a failure looks like. And never put a real key in an example.\n\nDOCUMENT THE ERRORS PROPERLY, because the happy path is the easy part. A developer meets your error messages at the worst moment, and a list of codes with what caused this and what to do next is often the most used page you will write.\n\nSTATE VERSIONS AND SAY WHAT IS DEPRECATED, with dates. Silence about a change is how integrations break.\n\nONE ADDITION BEYOND THE VIDEO, AND IT IS A LOCAL OPPORTUNITY. The payment and messaging APIs that matter most in this region — mobile money, local gateways, bulk messaging — are often documented poorly, inconsistently, or in a way that assumes you already know the system. Developers here lose days to that. Writing a genuinely clear integration guide for one of them, published publicly, is simultaneously a portfolio piece nobody else has, a real contribution, and a direct line to the local companies that most need technical writers. Read the official documentation first and never publish credentials, test or otherwise.\n\nAND TEST THE DOCUMENTATION THE WAY A STRANGER WOULD: new account, no prior knowledge, follow it exactly. That is the only honest measure of whether it works.",
+      "practice": "Choose any free public API and write its quickstart yourself: from nothing to one successful call, with every step the reader must take. Run every command you write, from a clean start, and remove or fix anything that does not work exactly as printed. Then document one endpoint fully using all six elements, including the errors with what to do about each. Finally hand the quickstart to somebody who has never used that API and watch where they stop.",
+      "quiz": [
+        {
+          "question": "Which part of API documentation most decides whether a product gets adopted?",
+          "options": [
+            "The quickstart, which gets somebody from nothing to one successful call",
+            "The complete endpoint reference",
+            "The changelog",
+            "The authentication section"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What must be true of every example you publish?",
+          "options": [
+            "You ran it yourself, from a clean start, exactly as printed",
+            "It covers the most common use case",
+            "It is written in the reader's preferred language",
+            "It includes a working API key for testing"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "492a1274-3abf-4602-aebe-179b0f751166",
+      "title": "The Tools Technical Writers Use",
+      "objectives": [
+        "Work in the docs-as-code way most technical teams expect",
+        "Learn the small amount of Markdown and Git the job needs",
+        "Use screenshots and diagrams in a way that does not rot"
+      ],
+      "notes": "DOCS-AS-CODE MEANS DOCUMENTATION LIVES WHERE THE SOFTWARE LIVES: plain text files, in the same version control, reviewed the same way, published automatically. Most software teams now work this way, and being comfortable in it is often the difference between getting a technical writing job and not.\n\nWHY IT IS DONE, because the reasoning tells you how to behave: the documentation is versioned with the product so you can see exactly what changed and when; a reviewer can comment on a specific line; the engineer who changes the behaviour can change the sentence in the same submission; and publishing is automatic rather than somebody remembering.\n\nTHE AMOUNT YOU ACTUALLY NEED TO LEARN IS SMALL, and beginners dramatically overestimate it. MARKDOWN is an afternoon: headings, lists, links, bold, code blocks, tables. That is genuinely all of it. GIT is five operations: clone a repository, make a branch, commit a change, push it, open a request for review. You do not need to understand rebasing to document software, and anybody who tells you otherwise is describing their own job rather than yours.\n\nA PLAIN TEXT EDITOR plus those two is a complete professional toolkit. The documentation is then built into a website by a static site generator, which somebody has usually already configured; your job is to write the files correctly, not to run the machinery.\n\nTHIS SUITS A MODEST MACHINE AND A POOR CONNECTION BETTER THAN ANYTHING ELSE IN TECHNOLOGY, which is worth stating plainly. Text files are tiny. You can write offline for hours and push once. There is no heavy application to install, no subscription in dollars, and nothing that needs a powerful computer. Compared with design or video work, the barrier here is almost nothing — which is part of why this is one of the most reachable well-paid technical careers from here.\n\nSCREENSHOTS: use them for orientation, not for every step, and know that they ROT. The interface changes and your screenshot silently becomes a lie that readers trust more than the text. Crop tightly, never embed text you would have to retake the image to correct, keep the originals, and record which version of the product each one shows. Where a sentence will do, prefer the sentence.\n\nDIAGRAMS EARN THEIR PLACE where a relationship or a sequence is genuinely hard in prose. Prefer diagrams written as text, which can be version-controlled and edited by the next person, over images somebody drew in an application nobody else has.\n\nAND WRITE A STYLE GUIDE EVEN IF YOU ARE THE ONLY WRITER. One page: terminology list, voice, how you format steps, what you capitalise. It makes your own work consistent and it is the thing that lets a second writer join without the documentation splitting into two dialects.",
+      "practice": "Learn the five Git operations by using them: create a repository, make a branch, write a page in Markdown, commit it, push it, and open a review request against your own repository. Then take a page of documentation you have written and publish it with a free static site generator so it is a real URL. Finally write your one-page style guide — terminology, voice, step format, capitalisation — and keep it where you will actually use it.",
+      "quiz": [
+        {
+          "question": "How much Git does a technical writer realistically need?",
+          "options": [
+            "Five operations: clone, branch, commit, push, and open a request for review",
+            "Enough to resolve complex merge conflicts and rebase branches",
+            "None — documentation is kept separately from code",
+            "Only the web interface of the hosting provider"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "What is the main risk of using screenshots for every step?",
+          "options": [
+            "They rot — the interface changes and the image becomes a lie readers trust more than the text",
+            "They make the page load slowly",
+            "They cannot be translated",
+            "They are hard to version control"
+          ],
+          "correct_index": 0
+        }
+      ]
+    },
+    {
+      "id": "170be6df-2331-4d43-a221-95a041d3cf07",
+      "title": "Building a Technical Writing Portfolio",
+      "objectives": [
+        "Choose three pieces that demonstrate different skills",
+        "Create real samples without waiting for a client",
+        "Present the work so a hiring manager can judge it in two minutes"
+      ],
+      "notes": "IN THIS FIELD THE PORTFOLIO MATTERS MORE THAN THE CURRICULUM VITAE, and that is good news for anybody without a formal qualification. Nobody can tell whether you write clearly from a list of jobs. They can tell in ninety seconds from a page of your documentation.\n\nTHREE STRONG PIECES BEAT TWENTY. More than that and the reviewer reads the weakest one. Choose three that show DIFFERENT things: a step-by-step how-to guide, an API quickstart or reference, and a before-and-after rewrite of something genuinely bad.\n\nTHE BEFORE-AND-AFTER IS THE MOST PERSUASIVE PIECE YOU CAN MAKE and almost nobody includes it. Take a page of real documentation that is confusing, show it, show your rewrite, and explain in three bullet points what you changed and why. That demonstrates judgement rather than just competence, and judgement is what is being hired.\n\nYOU DO NOT NEED A CLIENT TO HAVE REAL SAMPLES. Document a real product nobody has documented well. Contribute documentation to an open-source project, which is genuinely welcomed and gives you a public record of accepted work. Write the guide you needed last month and could not find. All of these are real work and all are yours to publish.\n\nAND THE LOCAL VERSION OF THAT IS YOUR STRONGEST CARD. Write the clear guide to integrating a Kenyan payment or messaging API, or to completing a government e-service process, or to using a product local businesses rely on. Those documents are genuinely needed, nobody else in a pile of applications will have one, and they prove you can take something messy and undocumented and make it usable — which is the actual job.\n\nPRESENT IT SO IT CAN BE JUDGED IN TWO MINUTES. A simple page listing the three pieces, each with one line saying who the reader was and what the document had to achieve. Published as a real website, not a folder of attachments. For each piece, a short note on your process is worth more than the piece alone: who the audience was, how you found out what was true, what you cut.\n\nTWO RULES THAT ARE ABOUT INTEGRITY. Never publish client or employer documentation without written permission — much of it is confidential, and doing so is the fastest way to be unhireable. If you cannot show real client work, write new samples instead; that is the normal and accepted answer. And never present somebody else's writing as a sample of yours, including a page you only lightly edited; it is checkable and it ends careers.\n\nTHEN SEND IT TO SOMEBODY AND ASK THEM TO FOLLOW IT. A portfolio piece that has been tested by a stranger is a different thing from one that has only been admired.",
+      "practice": "Build all three pieces: a how-to guide for a task you know, an API quickstart you have run yourself, and a before-and-after rewrite of a genuinely confusing page with three bullet points on what you changed. Make at least one of them something local and genuinely undocumented. Publish them on one simple page with a line of context for each and a short note on your process. Then give the how-to to somebody who does not know the task and fix whatever they stumble on before you send it anywhere.",
+      "quiz": [
+        {
+          "question": "Which portfolio piece best demonstrates judgement rather than just competence?",
+          "options": [
+            "A before-and-after rewrite of genuinely bad documentation, with what you changed and why",
+            "A complete API reference for a large product",
+            "A long how-to guide covering many tasks",
+            "A list of the documentation tools you know"
+          ],
+          "correct_index": 0
+        },
+        {
+          "question": "You have no client work you are allowed to show. What is the right move?",
+          "options": [
+            "Write new samples — documenting a real undocumented product is normal and accepted",
+            "Publish the client work anyway with the names removed",
+            "Use a colleague's documentation with their permission",
+            "Wait until you have permission before applying"
+          ],
+          "correct_index": 0
+        }
+      ]
+    }
+  ]
+}

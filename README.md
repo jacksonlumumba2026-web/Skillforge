@@ -826,7 +826,7 @@ existing questions were fixed by one component.
 
 ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 42. Thirty-eight courses are now fully
+      **Bare-lesson count: 438 → 36. Thirty-nine courses are now fully
       written: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
@@ -852,8 +852,9 @@ existing questions were fixed by one component.
       `it-support-help-desk` (10, `0151`),
       `sales-lead-generation` (6, `0152`),
       `wordpress-website-building` (10, `0153`),
-      `technical-writing-documentation` (6, `0154`) and
-      `workflow-automation-zapier` (6, `0155`).**
+      `technical-writing-documentation` (6, `0154`),
+      `workflow-automation-zapier` (6, `0155`) and
+      `affiliate-marketing` (6, `0156`).**
 
       **No enrolled course carries a bare lesson any more.**
       `google-workspace-productivity` was the last one, held back until the

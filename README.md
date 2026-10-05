@@ -826,8 +826,13 @@ existing questions were fixed by one component.
 
 ### Backfilling the 438 bare lessons — started 17 September
 
-      **Bare-lesson count: 438 → 6. Forty-four courses are now fully
-      written: `freelancing` (12 lessons), `presentation-design` (19),
+      **SWEEP COMPLETE: bare-lesson count 438 → 0.** Every one of the
+      735 lessons in the catalogue now carries notes, learning
+      objectives, a practice activity and a two-question knowledge
+      check. Verified by SQL on 5 October: 735 of 735 lessons have
+      both notes and a practice activity, 0 lack objectives, 0 lack a
+      knowledge check, across all 52 courses. The courses written,
+      in order: `freelancing` (12 lessons), `presentation-design` (19),
       `ai-tools` (16), `vibe-coding` (16), `video-editing` (12),
       `virtual-assistance-data-entry` (12), `graphic-design` (18),
       `social-media-management` (16), `digital-marketing` (16),
@@ -858,8 +863,16 @@ existing questions were fixed by one component.
       `online-tutoring-course-creation` (6, `0157`),
       `cloud-computing-aws-fundamentals` (6, `0158`),
       `no-code-app-building` (6, `0159`),
-      `digital-illustration-procreate-fresco` (6, `0160`) and
-      `motion-graphics-after-effects` (6, `0161`).**
+      `digital-illustration-procreate-fresco` (6, `0160`),
+      `motion-graphics-after-effects` (6, `0161`) and
+      `virtual-event-planning-webinar-hosting` (6, `0162`).
+
+      Note for whoever reads this next: the routine's stored prompt
+      still says 48 courses and a bare-lesson invariant of 438. Both
+      are now stale - the catalogue holds 52 courses and the bare
+      count is 0. The invariant that remains worth checking on every
+      migration is the safety set: 735 lessons, 317 modules, 24
+      enrollments, 13 completions, 0 draft courses.
 
       **No enrolled course carries a bare lesson any more.**
       `google-workspace-productivity` was the last one, held back until the

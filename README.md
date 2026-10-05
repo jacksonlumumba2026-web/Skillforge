@@ -824,6 +824,63 @@ four positions about a quarter of the time, and all 24 permutations occur.
 display order changes — so no stored row had to be rewritten and the 1,242
 existing questions were fixed by one component.
 
+### Level 1 breadth — the next phase, and what blocks it
+
+      The quality backfill is finished (section below). The routine's
+      remaining job is BREADTH: adding video-backed lessons to the thin
+      Level 1 rows. That is blocked in this container, and the block is
+      structural rather than a matter of effort.
+
+      `lessons.youtube_url` is NOT NULL, so a new lesson cannot exist
+      without a video, and the routine's own rule is that every video id
+      must be confirmed against the YouTube Data API before a word of
+      lesson content is written. `.env.local` in this container holds
+      exactly two keys — `NEXT_PUBLIC_SUPABASE_URL` and
+      `NEXT_PUBLIC_SUPABASE_ANON_KEY`. There is no `YOUTUBE_API_KEY`,
+      checked repeatedly across many firings. So no lesson can be added
+      honestly: the alternative is inventing video ids, which is exactly
+      what the routine forbids.
+
+      The analysis is done and waiting, so that the firing after the key
+      lands does not repeat it. Twenty-nine courses have a Level 1 of
+      fewer than eight lessons. In priority order, live enrollments
+      first:
+
+      **Four with live enrollments, 2 modules / 4 lessons each:**
+      `freelancing`, `instagram-tiktok-growth`, `video-editing`,
+      `virtual-assistance-data-entry`.
+
+      **Five at the thinnest, 1 module / 2 lessons:**
+      `power-bi-data-reporting`, `sales-lead-generation`,
+      `technical-writing-documentation`,
+      `whatsapp-business-facebook-marketplace-selling`,
+      `workflow-automation-zapier`.
+
+      **Twelve at 2 modules / 4 lessons:** `affiliate-marketing`,
+      `customer-service-virtual-call-center`,
+      `mobile-photography-content-creation`,
+      `motion-graphics-after-effects`, `no-code-app-building`,
+      `notion-for-work`, `online-tutoring-course-creation`,
+      `photo-editing-photoshop`, `podcasting-voice-over`,
+      `print-on-demand`, `sql-databases-for-beginners`,
+      `transcription-translation-freelancing`.
+
+      **Eight at 3 modules / 6 lessons:**
+      `cloud-computing-aws-fundamentals`,
+      `digital-illustration-procreate-fresco`, `it-support-help-desk`,
+      `personal-finance-budgeting`,
+      `public-speaking-communication-skills`,
+      `time-management-productivity-remote-work`,
+      `virtual-event-planning-webinar-hosting`,
+      `wordpress-website-building`.
+
+      Counted 5 October against the live database. Note that the
+      routine's stored prompt is stale in three places: it says 48
+      courses (actual 52), a bare-lesson invariant of 438 (actual 0),
+      and 12 completions (actual 13). The invariant still worth
+      checking on every migration is the safety set: 735 lessons, 317
+      modules, 24 enrollments, 13 completions, 0 draft courses.
+
 ### Backfilling the 438 bare lessons — started 17 September
 
       **SWEEP COMPLETE: bare-lesson count 438 → 0.** Every one of the

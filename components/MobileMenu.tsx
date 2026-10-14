@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useLocale } from "@/components/LocaleProvider";
 import { t, type Locale } from "@/lib/i18n";
 
 export default function MobileMenu({
@@ -14,6 +15,7 @@ export default function MobileMenu({
   locale: Locale;
 }) {
   const [open, setOpen] = useState(false);
+  const { setLocale } = useLocale();
 
   return (
     <div className="sm:hidden">
@@ -50,6 +52,25 @@ export default function MobileMenu({
                 {t(locale, "nav.login")}
               </Link>
             )}
+
+            {/* The SW/EN toggle in the navbar is hidden below the sm breakpoint,
+                so without this there is no way to reach the Swahili translation
+                on a phone — which is most of the audience. The label is the
+                language you are switching TO, written in that language: a
+                learner looking for Swahili scans for "Kiswahili", not for a
+                two-letter code. Endonyms, so they are deliberately not run
+                through t(). */}
+            <button
+              type="button"
+              onClick={() => {
+                setLocale(locale === "en" ? "sw" : "en");
+                setOpen(false);
+              }}
+              className="py-2 text-left border-t border-[var(--border)] mt-1 pt-3"
+              style={{ color: "var(--primary)" }}
+            >
+              {locale === "en" ? "Kiswahili" : "English"}
+            </button>
           </nav>
         </div>
       )}

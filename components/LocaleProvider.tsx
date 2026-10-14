@@ -1,7 +1,6 @@
 "use client";
 
 import { createContext, useContext, useState } from "react";
-import { useRouter } from "next/navigation";
 import { LOCALE_COOKIE, t, type Locale } from "@/lib/i18n";
 
 const LocaleContext = createContext<{ locale: Locale; setLocale: (locale: Locale) => void }>({
@@ -16,13 +15,22 @@ export function LocaleProvider({
   initialLocale: Locale;
   children: React.ReactNode;
 }) {
-  const router = useRouter();
   const [locale, setLocaleState] = useState<Locale>(initialLocale);
 
   function setLocale(next: Locale) {
     document.cookie = `${LOCALE_COOKIE}=${next}; path=/; max-age=31536000`;
     setLocaleState(next);
-    router.refresh();
+
+    // A full reload, not router.refresh(). Every string on the page is
+    // translated server-side from this cookie, and refresh() did not re-read
+    // it: the cookie changed, the toggle's own label flipped, and the page
+    // stayed in English. That made the switch look functional while doing
+    // nothing, on desktop and mobile alike.
+    //
+    // Reloading costs a round trip, which matters on a slow connection — but
+    // a learner changes language roughly once, and a switch that works beats
+    // one that is cheap.
+    window.location.reload();
   }
 
   return <LocaleContext.Provider value={{ locale, setLocale }}>{children}</LocaleContext.Provider>;

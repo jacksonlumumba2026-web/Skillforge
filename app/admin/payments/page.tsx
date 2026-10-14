@@ -29,7 +29,14 @@ export default async function AdminPaymentsPage() {
   const { data: payments, error: paymentsError } = await admin
     .from("payments")
     .select(
-      "id, user_id, reference, amount, status, provider, phone, mpesa_manual_code, manual_channel, manual_verified_at, created_at, courses(title)",
+      // `courses!payments_course_id_fkey` names the foreign key explicitly.
+      // A plain `courses(title)` fails with PGRST201: payment_bundle_courses
+      // has foreign keys to both payments and courses, so PostgREST sees a
+      // many-to-many path alongside the direct payments.course_id one and
+      // refuses to guess which was meant. That ambiguity appeared the moment
+      // bundles were added, and it has been blanking this page ever since —
+      // which is why five consecutive stuck Paystack payments went unseen.
+      "id, user_id, reference, amount, status, provider, phone, mpesa_manual_code, manual_channel, manual_verified_at, created_at, courses!payments_course_id_fkey(title)",
     )
     .order("created_at", { ascending: false })
     .limit(200);

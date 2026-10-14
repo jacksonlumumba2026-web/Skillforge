@@ -3,6 +3,7 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { verifyTransaction } from "@/lib/paystack";
 import { queryStkPushStatus } from "@/lib/mpesa";
 import { recordDiscountRedemption } from "@/lib/discountCodes";
+import { creditReferralOnFirstPurchase } from "@/lib/referrals";
 
 /**
  * Finalizes a Paystack payment by re-verifying it directly with Paystack
@@ -75,6 +76,10 @@ export async function finalizePayment(
   if (payment.discount_code_id) {
     await recordDiscountRedemption(payment.discount_code_id, payment.user_id, payment.id);
   }
+  // Pays out a referral if this buyer was invited by someone. Deliberately
+  // after access is granted, and it never throws, so a referral problem can
+  // never cost a paying customer the course they just bought.
+  await creditReferralOnFirstPurchase(payment.user_id);
 
   return { ok: true, courseId: payment.course_id };
 }
@@ -153,6 +158,7 @@ export async function finalizeMpesaPayment(
   if (payment.discount_code_id) {
     await recordDiscountRedemption(payment.discount_code_id, payment.user_id, payment.id);
   }
+  await creditReferralOnFirstPurchase(payment.user_id);
 
   return { ok: true, courseId: payment.course_id };
 }

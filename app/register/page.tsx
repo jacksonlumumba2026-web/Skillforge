@@ -69,10 +69,17 @@ export default function RegisterPage() {
     }
 
     if (!data.session) {
-      // Email confirmation is required by the Supabase project settings.
+      // Email confirmation is required by the Supabase project settings, so
+      // the session arrives later via /auth/callback — which records any
+      // pending referral itself.
       router.push("/login?confirm=1");
       return;
     }
+
+    // Signed in straight away (confirmation turned off), so /auth/callback is
+    // never visited and the referral cookie would otherwise go unredeemed.
+    // Failing this must not block a successful signup, hence the catch.
+    await fetch("/api/referrals/claim", { method: "POST" }).catch(() => {});
 
     router.push("/dashboard");
     router.refresh();

@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { createClient } from "@/lib/supabase/server";
+import { claimReferral, REFERRAL_COOKIE } from "@/lib/referrals";
 
 /**
  * Turns the token in an emailed link into a real session cookie.
@@ -28,6 +29,28 @@ function safeNext(raw: string | null): string {
   return raw;
 }
 
+/**
+ * Attaches a pending referral, if one is waiting in a cookie, to the learner
+ * who has just authenticated. This is the point where a referral finally has
+ * a real user to hang off — the share link itself only left a cookie.
+ *
+ * Runs for email confirmation, magic links and Google sign-in alike, since
+ * all three land here. claimReferral() decides whether it actually counts
+ * (unknown code, self-referral, an account too old) and never throws, so a
+ * referral can't break the way into the dashboard. The cookie is cleared
+ * either way: it has had its one chance.
+ */
+async function attachPendingReferral(
+  request: NextRequest,
+  response: NextResponse,
+  userId: string | undefined,
+): Promise<NextResponse> {
+  const pending = request.cookies.get(REFERRAL_COOKIE)?.value;
+  if (pending && userId) await claimReferral(userId, pending);
+  if (pending) response.cookies.delete(REFERRAL_COOKIE);
+  return response;
+}
+
 export async function GET(request: NextRequest) {
   const { searchParams, origin } = new URL(request.url);
   const code = searchParams.get("code");
@@ -38,14 +61,18 @@ export async function GET(request: NextRequest) {
   const supabase = await createClient();
 
   if (code) {
-    const { error } = await supabase.auth.exchangeCodeForSession(code);
-    if (!error) return NextResponse.redirect(`${origin}${next}`);
+    const { data, error } = await supabase.auth.exchangeCodeForSession(code);
+    if (!error) {
+      return attachPendingReferral(request, NextResponse.redirect(`${origin}${next}`), data.user?.id);
+    }
   } else if (tokenHash && type) {
-    const { error } = await supabase.auth.verifyOtp({
+    const { data, error } = await supabase.auth.verifyOtp({
       type: type as "recovery" | "signup" | "email" | "magiclink" | "email_change",
       token_hash: tokenHash,
     });
-    if (!error) return NextResponse.redirect(`${origin}${next}`);
+    if (!error) {
+      return attachPendingReferral(request, NextResponse.redirect(`${origin}${next}`), data.user?.id);
+    }
   }
 
   // Expired, already used, or opened in a different browser from the one that

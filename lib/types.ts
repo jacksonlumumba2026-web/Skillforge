@@ -24,6 +24,11 @@ export type Profile = {
   email: string;
   role: UserRole;
   created_at: string;
+  /** The learner's own share code. Unique, set by default on insert and
+   *  backfilled for every existing row by migration 0164, so this is never
+   *  null in practice — it stays non-optional so a missing one is a type
+   *  error rather than a silently broken share link. */
+  referral_code: string;
 };
 
 export type Course = {
@@ -242,6 +247,21 @@ export type DiscountCodeRedemption = {
   created_at: string;
 };
 
+/**
+ * Who invited whom. One row per invitee (referred_user_id is unique), so a
+ * learner can only ever be referred once, by one person.
+ */
+export type Referral = {
+  id: string;
+  referrer_user_id: string;
+  referred_user_id: string;
+  created_at: string;
+  /** Set the moment the invitee's first payment succeeds. */
+  qualified_at: string | null;
+  /** The single-use discount minted for the referrer at that moment. */
+  reward_discount_code_id: string | null;
+};
+
 /** Shareable completion certificate — publicly readable, issued only after real completion. */
 export type Certificate = {
   id: string;
@@ -440,6 +460,18 @@ export type Database = {
             columns: ["payment_id"];
             isOneToOne: false;
             referencedRelation: "payments";
+            referencedColumns: ["id"];
+          },
+        ]
+      >;
+      referrals: Table<
+        Referral,
+        [
+          {
+            foreignKeyName: "referrals_reward_discount_code_id_fkey";
+            columns: ["reward_discount_code_id"];
+            isOneToOne: false;
+            referencedRelation: "discount_codes";
             referencedColumns: ["id"];
           },
         ]

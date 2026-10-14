@@ -3,6 +3,7 @@ import { z } from "zod";
 import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { validateDiscountCode, recordDiscountRedemption } from "@/lib/discountCodes";
+import { creditReferralOnFirstPurchase } from "@/lib/referrals";
 
 // Real M-Pesa confirmation codes are 10 uppercase letters/digits
 // (e.g. "QJI7XXXX9A"). This is just a format sanity check, not proof the
@@ -135,6 +136,10 @@ export async function POST(request: Request) {
     .from("enrollments")
     .upsert({ user_id: user.id, course_id: course.id, status: "active" }, { onConflict: "user_id,course_id" });
   if (discountCodeId) await recordDiscountRedemption(discountCodeId, user.id, payment.id);
+  // This route is grant-then-audit, so the referral pays out on a claim an
+  // admin has not confirmed yet. That is the same trade the enrollment above
+  // already makes, and the reward is a 10% code rather than money.
+  await creditReferralOnFirstPurchase(user.id);
 
   return NextResponse.json({ ok: true, courseId: course.id });
 }

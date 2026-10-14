@@ -2,9 +2,12 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { cookies } from "next/headers";
 import { createClient } from "@/lib/supabase/server";
+import { createAdminClient } from "@/lib/supabase/admin";
+import { SITE_URL } from "@/lib/site";
 import { getOrderedLessons } from "@/lib/courses";
 import CertificateButton from "@/components/CertificateButton";
 import ReminderSetup from "@/components/ReminderSetup";
+import ReferralCard from "@/components/ReferralCard";
 import { t, LOCALE_COOKIE, type Locale } from "@/lib/i18n";
 
 export default async function DashboardPage() {
@@ -16,7 +19,7 @@ export default async function DashboardPage() {
 
   const { data: profile } = await supabase
     .from("profiles")
-    .select("full_name")
+    .select("full_name, referral_code")
     .eq("user_id", user.id)
     .single();
 
@@ -73,6 +76,36 @@ export default async function DashboardPage() {
     .maybeSingle();
   const showReminderSetup = courses.length > 0 && !existingReminder;
 
+  // Referral standing. The counts come through the user's own client, which
+  // referrals_select_own already scopes to rows they are part of. The reward
+  // codes need the service role: discount_codes has RLS on with no policies
+  // at all, so nothing but the service role can read it — and the query is
+  // pinned to this learner's own referral rows, never a free read of the
+  // codes table.
+  const { data: myReferrals } = await supabase
+    .from("referrals")
+    .select("qualified_at, reward_discount_code_id")
+    .eq("referrer_user_id", user.id);
+
+  const invited = (myReferrals ?? []).length;
+  const qualified = (myReferrals ?? []).filter((r) => r.qualified_at !== null).length;
+
+  const rewardCodeIds = (myReferrals ?? [])
+    .map((r) => r.reward_discount_code_id)
+    .filter((id): id is string => id !== null);
+
+  let rewards: { code: string; used: boolean }[] = [];
+  if (rewardCodeIds.length > 0) {
+    const { data: rewardCodes } = await createAdminClient()
+      .from("discount_codes")
+      .select("code, redemption_count")
+      .in("id", rewardCodeIds);
+    rewards = (rewardCodes ?? []).map((c) => ({
+      code: c.code,
+      used: c.redemption_count > 0,
+    }));
+  }
+
   const cookieStore = await cookies();
   const locale: Locale = cookieStore.get(LOCALE_COOKIE)?.value === "sw" ? "sw" : "en";
 
@@ -85,6 +118,15 @@ export default async function DashboardPage() {
       <p className="text-[var(--muted)] mb-10">{t(locale, "dashboard.subtitle")}</p>
 
       {showReminderSetup && <ReminderSetup />}
+
+      {profile?.referral_code && (
+        <ReferralCard
+          shareUrl={`${SITE_URL}/r/${profile.referral_code}`}
+          invited={invited}
+          qualified={qualified}
+          rewards={rewards}
+        />
+      )}
 
       <h2 className="text-lg font-semibold mb-4">My Learning Paths</h2>
 

@@ -1,6 +1,7 @@
 import { createAdminClient } from "@/lib/supabase/admin";
 import RefundButton from "./RefundButton";
 import MarkVerifiedButton from "./MarkVerifiedButton";
+import RecheckButton from "./RecheckButton";
 
 const STATUS_STYLE: Record<string, { background: string; color: string }> = {
   success: { background: "var(--success)", color: "white" },
@@ -88,6 +89,12 @@ export default async function AdminPaymentsPage() {
                   </td>
                   <td className="p-4 text-right">
                     <div className="flex justify-end gap-2">
+                      {/* A pending row may be a buyer who paid and got nothing;
+                          a failed one may have been judged before the provider
+                          had finished. Both are worth re-asking about, and the
+                          provider's answer decides. */}
+                      {(payment.status === "pending" || payment.status === "failed") &&
+                        payment.provider !== "mpesa_manual" && <RecheckButton paymentId={payment.id} />}
                       {payment.provider === "mpesa_manual" && !payment.manual_verified_at && (
                         <MarkVerifiedButton paymentId={payment.id} />
                       )}

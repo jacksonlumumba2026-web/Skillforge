@@ -50,7 +50,16 @@ export default function RegisterPage() {
     const { data, error: signUpError } = await supabase.auth.signUp({
       email,
       password,
-      options: { data: { full_name: fullName } },
+      options: {
+        data: { full_name: fullName },
+        // Without this, Supabase builds the confirmation link from the
+        // project's Site URL instead. That was still localhost:3000, so
+        // every confirmation email sent a new learner to a page that
+        // refuses to connect and they could never finish signing up —
+        // which is the shape of a platform with almost no accounts.
+        // Forgot-password and Google sign-in already pass their own.
+        emailRedirectTo: `${window.location.origin}/auth/callback?next=/dashboard`,
+      },
     });
 
     if (signUpError) {

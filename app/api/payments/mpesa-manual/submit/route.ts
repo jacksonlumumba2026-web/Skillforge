@@ -61,6 +61,38 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "You already have access to this course." }, { status: 400 });
   }
 
+  const admin = createAdminClient();
+
+  // One unchecked claim at a time.
+  //
+  // This route is grant-then-audit by design (see migration 0029): Safaricom
+  // offers no API to verify a Send Money payment into a personal number, so
+  // access is granted on a code that merely LOOKS valid and an admin
+  // confirms it against the real statement later. That is a deliberate
+  // trade, but without a limit one person could type ten plausible codes and
+  // walk off with ten Learning Paths before anyone looked.
+  //
+  // Capping unchecked claims at one bounds the loss to a single course while
+  // leaving honest buyers alone — they claim one, it gets confirmed, they
+  // buy the next. A claim that was rejected and refunded does not count,
+  // so a mistyped code is not a life sentence.
+  const { count: unverifiedClaims } = await admin
+    .from("payments")
+    .select("id", { count: "exact", head: true })
+    .eq("user_id", user.id)
+    .eq("provider", "mpesa_manual")
+    .is("manual_verified_at", null)
+    .neq("status", "refunded");
+  if ((unverifiedClaims ?? 0) > 0) {
+    return NextResponse.json(
+      {
+        error:
+          "You already have an M-Pesa payment waiting to be checked against our statement. Once it's confirmed you can buy another Learning Path. If it's been a while, contact us and we'll sort it out.",
+      },
+      { status: 400 },
+    );
+  }
+
   let amount = course.price;
   let discountCodeId: string | null = null;
   let originalAmount: number | null = null;
@@ -74,7 +106,6 @@ export async function POST(request: Request) {
     originalAmount = course.price;
   }
 
-  const admin = createAdminClient();
   const reference = `mpesamanual_${course.id.slice(0, 8)}_${Date.now()}`;
   const { data: payment, error: insertError } = await admin
     .from("payments")

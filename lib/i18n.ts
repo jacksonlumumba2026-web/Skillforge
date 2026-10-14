@@ -26,6 +26,7 @@ const en: Dictionary = {
   "footer.allPaths": "All Learning Paths",
   "footer.teachWithUs": "Teach with us",
   "footer.terms": "Terms",
+  "footer.privacy": "Privacy",
   "footer.refunds": "Refunds",
 
   "home.heroBadge": "Made in Kenya, for Kenyan phones",
@@ -126,6 +127,7 @@ const sw: Dictionary = {
   "footer.allPaths": "Njia zote za kujifunza",
   "footer.teachWithUs": "Fundisha nasi",
   "footer.terms": "Masharti",
+  "footer.privacy": "Faragha",
   "footer.refunds": "Marejesho",
 
   "home.heroBadge": "Imetengenezwa Kenya, kwa simu za Kenya",

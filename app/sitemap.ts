@@ -6,6 +6,7 @@ const staticPages: MetadataRoute.Sitemap = [
   { url: SITE_URL, changeFrequency: "weekly", priority: 1 },
   { url: `${SITE_URL}/courses`, changeFrequency: "daily", priority: 0.9 },
   { url: `${SITE_URL}/terms`, changeFrequency: "yearly", priority: 0.2 },
+  { url: `${SITE_URL}/privacy`, changeFrequency: "yearly", priority: 0.2 },
   { url: `${SITE_URL}/refund-policy`, changeFrequency: "yearly", priority: 0.2 },
 ];
 

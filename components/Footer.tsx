@@ -39,6 +39,9 @@ export default function Footer({ locale }: { locale: Locale }) {
                 <Link href="/terms">{t(locale, "footer.terms")}</Link>
               </li>
               <li>
+                <Link href="/privacy">{t(locale, "footer.privacy")}</Link>
+              </li>
+              <li>
                 <Link href="/refund-policy">{t(locale, "footer.refunds")}</Link>
               </li>
             </ul>

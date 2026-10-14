@@ -5,6 +5,7 @@ import { createClient } from "@/lib/supabase/server";
 import { formatDuration, getFreePreviewLesson, getLevelsForCourse } from "@/lib/courses";
 import { SITE_URL } from "@/lib/site";
 import PurchaseSection from "@/components/PurchaseSection";
+import SpinWheel from "@/components/SpinWheel";
 import StarRating from "@/components/StarRating";
 import DataSaverNote from "@/components/DataSaverNote";
 import { formatDataCostShort } from "@/lib/dataCost";
@@ -335,9 +336,15 @@ export default async function CourseDetailPage({
         ) : user ? (
           <PurchaseSection courseId={course.id} price={course.price} />
         ) : (
-          <Link href="/register" className="btn btn-primary">
-            Get Full Access — KSh {course.price.toLocaleString()}
-          </Link>
+          /* A visitor who has not signed up yet is exactly who the wheel is
+             for. It only reveals the code here — applying it needs an
+             account, because a discount is one per learner. */
+          <div className="max-w-xs mx-auto space-y-4">
+            <SpinWheel />
+            <Link href="/register" className="btn btn-primary w-full">
+              Get Full Access — KSh {course.price.toLocaleString()}
+            </Link>
+          </div>
         )}
       </div>
 

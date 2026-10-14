@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import PayButton from "@/components/PayButton";
+import SpinWheel from "@/components/SpinWheel";
 import { useTranslate } from "@/components/LocaleProvider";
 import { BUNDLE_PRICE, BUNDLE_COURSE_COUNT } from "@/lib/pricing";
 
@@ -22,23 +23,40 @@ export default function PurchaseSection({
   const [applyError, setApplyError] = useState<string | null>(null);
   const [applied, setApplied] = useState<Applied | null>(null);
 
-  async function handleApply(e: React.FormEvent) {
-    e.preventDefault();
+  // The server decides whether a code is valid and what it is worth. The
+  // wheel hands a code to this same route rather than discounting anything
+  // client-side, so a spun reward is checked exactly like a typed one.
+  async function applyCode(rawCode: string) {
+    const code = rawCode.trim();
+    if (!code) return;
     setApplying(true);
     setApplyError(null);
     const res = await fetch("/api/payments/discount-code/validate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ courseId, code: codeInput }),
+      body: JSON.stringify({ courseId, code }),
     });
     const data = await res.json();
     setApplying(false);
     if (!res.ok) {
-      setApplyError(data.error ?? "That code didn't work.");
+      // A logged-out visitor can spin the wheel but cannot have a code
+      // checked, since discounts are one-per-learner and there is no learner
+      // yet. Saying "you must be logged in" as if they did something wrong
+      // is a poor first interaction — tell them the code is safe instead.
+      setApplyError(
+        res.status === 401
+          ? `Sign in and enter ${code} at checkout to use it.`
+          : (data.error ?? "That code didn't work."),
+      );
       setApplied(null);
       return;
     }
-    setApplied({ code: codeInput.trim(), percentOff: data.percentOff, discountedPrice: data.discountedPrice });
+    setApplied({ code, percentOff: data.percentOff, discountedPrice: data.discountedPrice });
+  }
+
+  async function handleApply(e: React.FormEvent) {
+    e.preventDefault();
+    await applyCode(codeInput);
   }
 
   const effectivePrice = applied ? applied.discountedPrice : price;
@@ -52,6 +70,8 @@ export default function PurchaseSection({
             : `${applied.percentOff}% off applied — KSh ${effectivePrice.toLocaleString()}.`}
         </p>
       )}
+
+      {!applied && <SpinWheel onWin={applyCode} />}
 
       {/* One button, deliberately. Paystack's own checkout page offers card
           AND M-Pesa, so a second in-app payment button would only duplicate

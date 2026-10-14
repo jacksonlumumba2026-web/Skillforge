@@ -72,6 +72,25 @@ export async function generateCourseForRequest(input: {
     moduleGroups,
   });
 
+  // The content model failed or returned something unusable, so `content` is
+  // placeholder copy: "Part 1" module titles and "Watch and follow along
+  // with …" lesson text. Publishing that as a KSh 500 course would be
+  // selling filler, and the refund policy says all sales are final — so
+  // refuse instead. Any course that does get created here is still built on
+  // API-confirmed videos; this only stops the written copy being fake.
+  if (content.usedFallback) {
+    console.error("[generateCourseForRequest] refusing to publish fallback copy", {
+      topic,
+      level: input.level,
+      requestedBy: input.requestedBy,
+    });
+    return {
+      ok: false,
+      error:
+        "Course generation is temporarily unavailable — we couldn't write the course text. Nothing has been charged. Please try again later.",
+    };
+  }
+
   const { data: course, error: courseError } = await admin
     .from("courses")
     .insert({

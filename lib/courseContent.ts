@@ -13,6 +13,14 @@ export interface GeneratedCourseContent {
   courseDescription: string;
   moduleTitles: string[];
   lessonDescriptions: string[];
+  /**
+   * True when the model call failed or returned something unusable and the
+   * generic placeholder copy below was substituted. The caller must not
+   * publish a sellable course on this — "Part 1" modules and "Watch and
+   * follow along with …" lesson text is filler, and this platform does not
+   * sell filler. See the refusal in courseGenerator.
+   */
+  usedFallback: boolean;
 }
 
 const SYSTEM_PROMPT = `You write short, plain-English course content for a beginner-friendly digital skills platform.
@@ -89,7 +97,7 @@ function parseCourseContent(
       moduleTitles.length === input.moduleGroups.length &&
       lessonDescriptions.length === input.videos.length
     ) {
-      return { courseDescription, moduleTitles, lessonDescriptions };
+      return { courseDescription, moduleTitles, lessonDescriptions, usedFallback: false };
     }
   } catch {
     // fall through to default below
@@ -99,5 +107,6 @@ function parseCourseContent(
     courseDescription: `A practical, ${input.level}-level introduction to ${input.topic}.`,
     moduleTitles: input.moduleGroups.map((_, i) => `Part ${i + 1}`),
     lessonDescriptions: input.videos.map((v) => `Watch and follow along with "${v.title}".`),
+    usedFallback: true,
   };
 }

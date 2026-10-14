@@ -9,6 +9,16 @@ const PRICE_KES = 500;
 const LESSONS_PER_MODULE = 2;
 const DAILY_GENERATION_LIMIT = 3;
 
+// Per-learner caps don't bound a shared resource: 3 each across enough
+// accounts still drains the YouTube Data API's 10,000 units/day, and when
+// that runs out it takes the lesson-duration backfill down with it.
+//
+// One generation costs about 606 units (six stage searches at 100 each,
+// plus a few videos.list calls at 1), so 12 is roughly 7,300 — leaving
+// comfortable headroom for the backfill, which needs only ~15 units for the
+// whole catalogue. Raise this if the project's quota is raised.
+const GLOBAL_DAILY_GENERATION_LIMIT = 12;
+
 export type GenerateCourseResult =
   | { ok: true; courseId: string; slug: string; reused: boolean }
   | { ok: false; error: string };
@@ -55,6 +65,27 @@ export async function generateCourseForRequest(input: {
     return {
       ok: false,
       error: `You've reached today's limit of ${DAILY_GENERATION_LIMIT} new course requests. Try again tomorrow, or check if one of your existing courses already covers this.`,
+    };
+  }
+
+  // And a ceiling across everyone, for the shared API quota. Checked before
+  // any YouTube call so hitting the cap costs nothing. Phrased so the
+  // learner knows it isn't their fault and they haven't been charged.
+  const { count: generatedPlatformWide } = await admin
+    .from("courses")
+    .select("id", { count: "exact", head: true })
+    .not("generated_by", "is", null)
+    .gte("created_at", since);
+  if ((generatedPlatformWide ?? 0) >= GLOBAL_DAILY_GENERATION_LIMIT) {
+    console.error("[generateCourseForRequest] global daily generation cap reached", {
+      cap: GLOBAL_DAILY_GENERATION_LIMIT,
+      requestedBy: input.requestedBy,
+      topic,
+    });
+    return {
+      ok: false,
+      error:
+        "We've hit today's limit on new course requests across the platform. Nothing has been charged — please try again tomorrow.",
     };
   }
 

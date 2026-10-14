@@ -18,7 +18,7 @@ export async function finalizePayment(
 
   const { data: payment } = await admin
     .from("payments")
-    .select("id, user_id, course_id, kind, status, discount_code_id")
+    .select("id, user_id, course_id, kind, status, amount, discount_code_id")
     .eq("reference", reference)
     .maybeSingle();
   if (!payment) return { ok: false, error: "Unknown payment reference." };
@@ -33,6 +33,22 @@ export async function finalizePayment(
   if (verification.data.status !== "success") {
     await admin.from("payments").update({ status: "failed" }).eq("reference", reference);
     return { ok: false, error: "Payment was not successful." };
+  }
+
+  // A `success` status alone does not mean the right amount arrived.
+  // Paystack reports what was actually charged, in the subunit, so check it
+  // against the price this row was created with rather than assuming the
+  // amount we sent at initialize is the amount that came back. Overpayment
+  // still grants access — the buyer is not at fault for paying too much.
+  const expectedSubunit = Math.round(Number(payment.amount) * 100);
+  if (verification.data.currency !== "KES" || verification.data.amount < expectedSubunit) {
+    console.error("[finalizePayment] amount or currency mismatch, refusing to grant access", {
+      reference,
+      expectedSubunit,
+      paidSubunit: verification.data.amount,
+      currency: verification.data.currency,
+    });
+    return { ok: false, error: "The amount paid does not match this course's price." };
   }
 
   // Which courses this payment buys. A single-course payment names one; a

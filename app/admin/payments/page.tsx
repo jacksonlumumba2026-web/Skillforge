@@ -1,4 +1,5 @@
 import { createAdminClient } from "@/lib/supabase/admin";
+import { getPaystackHealth } from "@/lib/paystackHealth";
 import RefundButton from "./RefundButton";
 import MarkVerifiedButton from "./MarkVerifiedButton";
 import RecheckButton from "./RecheckButton";
@@ -29,6 +30,12 @@ export default async function AdminPaymentsPage() {
     .order("created_at", { ascending: false })
     .limit(200);
 
+  const {
+    attempts: paystackAttempts,
+    keyMode,
+    looksBroken: paystackLooksBroken,
+  } = await getPaystackHealth(admin);
+
   const userIds = [...new Set((payments ?? []).map((p) => p.user_id))];
   const { data: profiles } = await admin
     .from("profiles")
@@ -43,6 +50,33 @@ export default async function AdminPaymentsPage() {
         The public policy is no refunds. &quot;Refund&quot; here is for our own billing errors only —
         a duplicate charge, or a payment that went through without granting access.
       </p>
+
+      {(paystackLooksBroken || keyMode !== "live") && (
+        <div
+          className="card mb-8"
+          style={{
+            borderColor: paystackLooksBroken ? "#dc2626" : "#f59e0b",
+            borderWidth: 2,
+          }}
+        >
+          <h2 className="font-semibold mb-1">
+            {paystackLooksBroken ? "Paystack is not completing payments" : "Check the Paystack key"}
+          </h2>
+          {paystackLooksBroken && (
+            <p className="text-sm mb-2">
+              {paystackAttempts} Paystack {paystackAttempts === 1 ? "attempt" : "attempts"} in the
+              last 30 days and <strong>none succeeded</strong>. Buyers are being charged and getting
+              nothing.
+            </p>
+          )}
+          <p className="text-sm text-[var(--muted)]">
+            <code>PAYSTACK_SECRET_KEY</code> is currently a{" "}
+            <strong>{keyMode === "unknown" ? "key of unrecognised format" : `${keyMode} key`}</strong>
+            . Live charges verified against a test key never match, which leaves paid rows stuck on{" "}
+            <em>pending</em>. Fix the variable, redeploy, then use Re-check on the stuck rows below.
+          </p>
+        </div>
+      )}
 
       <div className="card overflow-x-auto">
         <table className="w-full text-sm">

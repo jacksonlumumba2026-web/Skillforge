@@ -22,13 +22,25 @@ const PROVIDER_LABEL: Record<string, string> = {
 export default async function AdminPaymentsPage() {
   const admin = createAdminClient();
 
-  const { data: payments } = await admin
+  // The error is captured, not discarded. A failed query returns null data,
+  // which renders as an empty table — identical to having no payments at
+  // all. That is the worst possible way for this page to fail: it quietly
+  // tells the owner that nobody has paid.
+  const { data: payments, error: paymentsError } = await admin
     .from("payments")
     .select(
       "id, user_id, reference, amount, status, provider, phone, mpesa_manual_code, manual_channel, manual_verified_at, created_at, courses(title)",
     )
     .order("created_at", { ascending: false })
     .limit(200);
+
+  if (paymentsError) {
+    console.error("[admin/payments] could not read payments", {
+      message: paymentsError.message,
+      code: paymentsError.code,
+      details: paymentsError.details,
+    });
+  }
 
   const {
     attempts: paystackAttempts,
@@ -78,6 +90,20 @@ export default async function AdminPaymentsPage() {
         </div>
       )}
 
+      {paymentsError && (
+        <div className="card mb-8" style={{ borderColor: "#dc2626", borderWidth: 2 }}>
+          <h2 className="font-semibold mb-1">Could not load payments</h2>
+          <p className="text-sm mb-2">
+            The table below is empty because the query failed, not because nobody has paid. Do not
+            read it as &quot;no sales&quot;.
+          </p>
+          <p className="text-sm text-[var(--muted)]">
+            <code>{paymentsError.message}</code>
+            {paymentsError.code && <> (code {paymentsError.code})</>}
+          </p>
+        </div>
+      )}
+
       <div className="card overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
@@ -92,6 +118,13 @@ export default async function AdminPaymentsPage() {
             </tr>
           </thead>
           <tbody>
+            {!paymentsError && (payments ?? []).length === 0 && (
+              <tr>
+                <td colSpan={7} className="p-6 text-center text-[var(--muted)]">
+                  No payments recorded yet.
+                </td>
+              </tr>
+            )}
             {(payments ?? []).map((payment) => {
               const course = payment.courses as unknown as { title: string } | null;
               const style = STATUS_STYLE[payment.status] ?? STATUS_STYLE.pending;

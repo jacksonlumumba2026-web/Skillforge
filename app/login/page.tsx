@@ -6,6 +6,7 @@ import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { useTranslate } from "@/components/LocaleProvider";
 import GoogleSignInButton from "@/components/GoogleSignInButton";
+import { safeRedirect } from "@/lib/safeRedirect";
 
 function friendlyError(message: string): string {
   const lower = message.toLowerCase();
@@ -22,7 +23,7 @@ function LoginForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const t = useTranslate();
-  const redirectTo = searchParams.get("redirect") || "/dashboard";
+  const redirectTo = safeRedirect(searchParams.get("redirect"));
   const justRegistered = searchParams.get("confirm") === "1";
   const linkExpired = searchParams.get("link") === "expired";
 
@@ -116,7 +117,11 @@ function LoginForm() {
 
       <p className="text-sm text-[var(--muted)] mt-6 text-center">
         {t("login.newHere")}{" "}
-        <Link href="/register" className="font-medium" style={{ color: "var(--primary)" }}>
+        <Link
+          href={redirectTo === "/dashboard" ? "/register" : `/register?redirect=${encodeURIComponent(redirectTo)}`}
+          className="font-medium"
+          style={{ color: "var(--primary)" }}
+        >
           {t("login.createAccount")}
         </Link>
       </p>

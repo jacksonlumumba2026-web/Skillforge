@@ -1900,8 +1900,18 @@ works end to end for topics outside the curated 10.
 
 ### Free preview lessons
 
-Every published course exposes its genuine first lesson publicly, so a visitor
-can judge the teaching before paying or even creating an account.
+Every published course offers its genuine first lesson free, so a visitor can
+judge the teaching before paying. Since migration `0166` that takes a free
+account: the course page shows signed-out visitors what the free lesson is and
+asks them to sign up, then `?redirect=` brings them straight back to watch it.
+The gate is in the view, not just the page — `youtube_url` is emitted only when
+`auth.uid()` is set, so the public API returns no video to an anonymous caller.
+
+`0166` also closed a write hole. `lesson_previews` carried Supabase's default
+INSERT/UPDATE/DELETE grants to `anon`; as an auto-updatable view running as its
+owner (`postgres`, which bypasses RLS) those writes reached `lessons` directly.
+It is read-only by intent and now grants SELECT only. If the view is ever
+recreated with `drop view`, re-run that `revoke` — the defaults come back.
 
 The gate is in the database, not in application code. `lessons` and its
 enrolled-only RLS policy are untouched, so notes, practice activity and

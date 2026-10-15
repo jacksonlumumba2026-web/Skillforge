@@ -191,10 +191,14 @@ export async function getLevelsForCourse(
 }
 
 /**
- * The one lesson per course that anyone may watch before paying, if the course
+ * The one lesson per course that may be watched before paying, if the course
  * has one. Reads the public `lesson_previews` view, which emits `youtube_url`
- * only where `is_free_preview` is set — so this is safe to call for a signed-out
- * visitor and cannot return a paid lesson's video.
+ * only where `is_free_preview` is set AND the caller is signed in (migration
+ * 0166) — so it can never return a paid lesson's video.
+ *
+ * For a signed-out visitor the lesson still comes back, with `youtube_url`
+ * null, so the course page can say what the free lesson is and ask them to
+ * create a free account to watch it rather than hiding it altogether.
  */
 export async function getFreePreviewLesson(
   supabase: SupabaseClient<Database>,
@@ -212,7 +216,6 @@ export async function getFreePreviewLesson(
     .select("*")
     .in("module_id", moduleIds)
     .eq("is_free_preview", true)
-    .not("youtube_url", "is", null)
     .limit(1)
     .maybeSingle();
   return data ?? null;

@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { Suspense, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { useTranslate } from "@/components/LocaleProvider";
 import GoogleSignInButton from "@/components/GoogleSignInButton";
+import { safeRedirect } from "@/lib/safeRedirect";
 
 function friendlyError(message: string): string {
   const lower = message.toLowerCase();
@@ -18,9 +19,14 @@ function friendlyError(message: string): string {
   return message;
 }
 
-export default function RegisterPage() {
+function RegisterForm() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const t = useTranslate();
+  // Where to land after signing up. A course page sends learners here to
+  // unlock its free first lesson, so they should come straight back to it
+  // rather than to an empty dashboard.
+  const redirectTo = safeRedirect(searchParams.get("redirect"));
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -58,7 +64,7 @@ export default function RegisterPage() {
         // refuses to connect and they could never finish signing up —
         // which is the shape of a platform with almost no accounts.
         // Forgot-password and Google sign-in already pass their own.
-        emailRedirectTo: `${window.location.origin}/auth/callback?next=/dashboard`,
+        emailRedirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(redirectTo)}`,
       },
     });
 
@@ -72,7 +78,11 @@ export default function RegisterPage() {
       // Email confirmation is required by the Supabase project settings, so
       // the session arrives later via /auth/callback — which records any
       // pending referral itself.
-      router.push("/login?confirm=1");
+      router.push(
+        redirectTo === "/dashboard"
+          ? "/login?confirm=1"
+          : `/login?confirm=1&redirect=${encodeURIComponent(redirectTo)}`,
+      );
       return;
     }
 
@@ -81,7 +91,7 @@ export default function RegisterPage() {
     // Failing this must not block a successful signup, hence the catch.
     await fetch("/api/referrals/claim", { method: "POST" }).catch(() => {});
 
-    router.push("/dashboard");
+    router.push(redirectTo);
     router.refresh();
   }
 
@@ -90,7 +100,7 @@ export default function RegisterPage() {
       <h1 className="text-2xl font-bold mb-2">{t("register.title")}</h1>
       <p className="text-[var(--muted)] mb-8">{t("register.subtitle")}</p>
 
-      <GoogleSignInButton redirectTo="/dashboard" />
+      <GoogleSignInButton redirectTo={redirectTo} />
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
@@ -155,10 +165,23 @@ export default function RegisterPage() {
 
       <p className="text-sm text-[var(--muted)] mt-6 text-center">
         {t("register.alreadyHaveAccount")}{" "}
-        <Link href="/login" className="font-medium" style={{ color: "var(--primary)" }}>
+        <Link
+          href={redirectTo === "/dashboard" ? "/login" : `/login?redirect=${encodeURIComponent(redirectTo)}`}
+          className="font-medium"
+          style={{ color: "var(--primary)" }}
+        >
           {t("register.logIn")}
         </Link>
       </p>
     </div>
+  );
+}
+
+export default function RegisterPage() {
+  // useSearchParams() needs a Suspense boundary to prerender, same as /login.
+  return (
+    <Suspense fallback={null}>
+      <RegisterForm />
+    </Suspense>
   );
 }

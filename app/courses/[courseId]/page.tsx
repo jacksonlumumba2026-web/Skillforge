@@ -259,12 +259,42 @@ export default async function CourseDetailPage({
             : `${guidedLessonCount} of the ${lessonCount} lessons come with written notes, a practice task and a knowledge check. The rest are curated videos in a deliberate order, and are being written up over time.`}
       </p>
 
-      {previewLesson?.youtube_url && !isEnrolled && (
+      {previewLesson && !user && (
+        // Signed out: the database withholds the video URL (migration 0166),
+        // so say what the free lesson is and ask for a free account. The
+        // redirect brings them straight back here, now able to watch it.
+        <section className="card p-6 mb-10 text-center">
+          <p className="text-3xl mb-2" aria-hidden>
+            ▶
+          </p>
+          <h2 className="text-lg font-semibold mb-1">Watch the first lesson free</h2>
+          <p className="text-sm text-[var(--muted)] mb-1">
+            <span className="font-medium text-[var(--foreground)]">{previewLesson.title}</span>
+            {previewLesson.description && <> — {previewLesson.description}</>}
+          </p>
+          <p className="text-sm text-[var(--muted)] mb-5">
+            Create a free account to watch it. No payment needed.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link
+              href={`/register?redirect=/courses/${course.id}`}
+              className="btn btn-primary"
+            >
+              Create free account
+            </Link>
+            <Link href={`/login?redirect=/courses/${course.id}`} className="btn btn-secondary">
+              Log in
+            </Link>
+          </div>
+        </section>
+      )}
+
+      {previewLesson?.youtube_url && user && !isEnrolled && (
         <section className="mb-10">
           <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-3">
             <h2 className="text-lg font-semibold">Watch the first lesson free</h2>
             <span className="text-sm text-[var(--muted)]">
-              No account needed — see the real teaching before you pay.
+              See the real teaching before you pay.
             </span>
           </div>
           <YouTubeEmbed url={previewLesson.youtube_url} title={previewLesson.title} />
